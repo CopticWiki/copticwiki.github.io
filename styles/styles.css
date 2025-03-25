@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 body {
 	margin: 1em;
 }
@@ -10,4 +11,40 @@ body {
 	//outline: 1px solid gold;
 	background: coral;
 	filter: invert(1);
+=======
+@import url("./fonts.css");
+@import url("./interactive.css");
+
+body {
+	font-size: 16px;
+	color: gray;
+	background: #111;
+	font-family: "Noto Sans", sans-serif;
+	margin: 0em;
+	padding: 0em;
+	//outline: 1px dotted lightgreen;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-weight: normal;
+	margin: 0;
+}
+
+h1 {
+	color: lightblue;
+}
+
+h2 {
+	color: gold;
+}
+
+a {
+	text-decoration: none;
+	color: lightgreen;
+}
+#container {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+>>>>>>> 47211ca8b081f06a79527234fd2ee527f726c113
 }

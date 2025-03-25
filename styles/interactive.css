@@ -1,0 +1,60 @@
+/*
+:is(h2, h3):before {
+	content: "▷";
+	position: absolute;
+	left: -1em;
+	color: #ffb60022;
+	display: inline-block;
+	transform: rotate(90deg);
+	transition:
+		transform .2s ease-in-out,
+		color .2s ease-in-out;
+}
+
+.collapse:has(> h2) > :not(h2):not(h3) {
+	display: none;
+}
+
+.collapse:has(> h3) > :not(h3) {
+	display: none;
+}
+
+h2, h3 {
+	position: relative;
+	left: 1em;
+}
+
+:is(h2, h3):hover:before {
+	color: #ffb600ff;
+}
+
+.collapse :is(h2, h3):before {
+	transform: rotate(0deg);
+}
+
+
+
+.entry > ul > li:first-child:before {
+	content: "▷";
+	color: #ffb60022;
+	position: absolute;
+	left: -1em;
+	transform: rotate(90deg);
+	transition:
+		transform .2s ease-in-out,
+		color .2s ease-in-out;
+	line-height: 1.5;
+}
+
+.entry > ul:hover > li:first-child:before {
+	color: #ffb600ff;
+}
+
+.entry > ul > li:first-child.collapse:before {
+	transform: rotate(0deg);
+}
+
+.entry > ul > li:first-child.collapse + li {
+	display: none;
+}
+*/
