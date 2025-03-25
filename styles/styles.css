@@ -1,19 +1,15 @@
-<<<<<<< HEAD
+@import url("./fonts.css");
+@import url("./interactive.css");
+
 body {
 	margin: 1em;
-}
-
-.hKKbgb {
-	
 }
 
 .patreon-widget {
 	//outline: 1px solid gold;
 	background: coral;
 	filter: invert(1);
-=======
-@import url("./fonts.css");
-@import url("./interactive.css");
+}
 
 body {
 	font-size: 16px;
@@ -42,9 +38,9 @@ a {
 	text-decoration: none;
 	color: lightgreen;
 }
+
 #container {
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
->>>>>>> 47211ca8b081f06a79527234fd2ee527f726c113
 }
