@@ -1,0 +1,201 @@
+@font-face {
+	font-family: rk_coptic;
+	src: url("./fonts/NotoSansCoptic.ttf");
+	unicode-range:
+		U+03E2-03EF, /* greek and coptic */ 
+		U+2C80-2CFF, /* coptic */
+		U+0304, /* normal stroke */
+		U+0305, /* number, abbr., etc. */
+		U+033F, /* double stroke */
+		U+0FE24, /* left half stroke */
+		U+0FE26, /* long stroke */
+		U+0FE25, /* right half stroke */
+		U+035E, /* double combine stroke */
+		U+0323, /* combine dot under */
+		U+0307, /* combine dot over */
+		U+0301, /* combine acute */
+		U+0300, /* combine grave */
+		U+0302, /* combine circumflex pointed */
+		U+0311, /* combine circumflex curved */
+		U+0361, /* wide inverted breve */
+		U+0308, /* combine diaeresis */
+		U+00B7, /* middle dot */
+		U+2E17, /* slanted double hyphen */
+		U+1AB4, /* combining triple dot above*/
+		U+0028, /* left parenthesis */
+		U+0029, /* right parenthesis */
+		U+002C, /* comma */
+		U+002E, /* period */
+		U+003A, /* colon */
+		U+003F, /* question mark */
+		U+2018, /* single quote left */
+		U+2019, /* single quote right */
+		U+201C, /* double quote left */
+		U+201D, /* double quote right */
+		U+003B; /* semicolon */
+}
+
+@font-face {
+	font-family: rk_greek;
+	//src: url("./fonts/SBL_grk.ttf");
+	//src: url("./fonts/LiakDemoExtraLightItalic-x3ABV.ttf");
+	src: url("./fonts/GentiumPlus-Regular.ttf");
+	unicode-range:
+		U+0323,
+		U+0028, /* left parenthesis */
+		U+0029, /* right parenthesis */
+		U+0370-03FF,
+		U+1F00-1FFF;
+}
+
+@font-face {
+	font-family: rk_arabic;
+	src: url("./fonts/NotoSansArabic.ttf");
+	unicode-range:
+		U+0600-06FF,
+}
+
+@font-face {
+	font-family: rk_hebrew;
+	src: url("./fonts/NotoSansHebrew.ttf");
+	unicode-range:
+		U+0590-05FF;
+}
+
+@font-face {
+	font-family: rk_aramaic;
+	src: url("./fonts/SertoAntiochBible.ttf");
+	unicode-range:
+		U+0700-074f;
+}
+
+@font-face {
+	font-family: rk_amharic;
+	src: url("./fonts/NotoSansEthiopic.ttf");
+	unicode-range:
+		U+1200-137f,
+		U+1380-139f,
+		U+2d80-2ddf,
+		U+ab00-ab2f,
+		U+1e7e0-1e7ff;
+}
+
+@font-face {
+	font-family: rk_egypt-hiero;
+	src: url("./fonts/eot.ttf");
+	unicode-range:
+		U+FE00-FE0F, /* variation selectors */
+		U+13000-1342F, /* hieroglyphs */
+		U+13430-1345F, /* format controls */
+		U+13460-143FF; /* hieroglyphs extended-a */
+}
+
+@font-face {
+	font-family: rk_variant-selectors;
+	src: url("./fonts/NOILMP-SpecialsUC6.ttf");
+}
+
+@font-face {
+	font-family: rk_egypt-format;
+	/*src: url("./fonts/eot.ttf");*/
+	src: local("Open Sans");
+	unicode-range:
+		U+13430-1345F; /* format controls */
+}
+
+@font-face {
+	font-family: rk_egypt-hiero-pdf;
+	src: url("./fonts/NMHNNB-SpecialsUC6.ttf");
+}
+
+@font-face {
+	font-family: rk_egypt-hiero-pdf-2;
+	src: url("./fonts/NMHOPK-UniHieroglyphica.ttf");
+}
+
+@font-face {
+	font-family: rk_egypt-translit;
+	src: url("./fonts/newathu5_8.ttf");
+	unicode-range:
+		U+002E, /* period */
+		U+A723, /* egyptological alef */
+		U+A725, /* egyptological ayin */
+		U+A7BD, /* egyptological iota */
+		U+00EF, /* i with diaeresis */
+		U+1E25, /* 2nd h */
+		U+1E2B, /* 3rd h */
+		U+1E96, /* 4th h */
+		U+015B, /* s with acute */
+		U+0161, /* s with caron */
+		U+1E33, /* k with dot below */
+		U+010D, /* c with caron */
+		U+1E6F, /* t with line below */
+		U+1E6D, /* t with dot below */
+		U+1E71, /* demotic t */
+		U+1E0F, /* d with line below */
+		U+27E8, /* left angle bracket */
+		U+27E9, /* right angle bracket */
+		U+2E22, /* left half bracket */
+		U+2E23, /* right half bracket */
+		U+2E17; /* coptic oblique hyphen */
+}
+
+.coptic {
+	color: goldenrod;
+	font-family: rk_coptic;
+}
+
+.greek {
+	color: darkseagreen;
+	font-family: rk_coptic, rk_greek;
+	//font-size: 1.1em;
+}
+
+.arabic,
+.hebrew,
+.aramaic {
+	direction: rtl;
+	unicode-bidi:isolate;
+}
+
+.arabic {
+	color: springgreen;
+	font-family: rk_arabic, rk_hebrew;
+	//font-size: 1.2em;
+}
+
+.hebrew {
+	color: pink;
+	font-family: rk_hebrew;
+	//font-size: 1.5em;
+}
+
+.aramaic {
+	color: coral;
+	font-family: rk_aramaic;
+	//font-size: 1.5em;
+}
+
+.amharic {
+	color: lightseagreen;
+	font-family: rk_amharic;
+}
+
+.egypt-hiero {
+	color: gold;
+	font-family: rk_egypt-hiero;
+	//font-size: 1.5em;
+}
+
+.egypt-hiero-test {
+	color: gold;
+	font-family: rk_egypt-hiero-pdf, rk_egypt-hiero-pdf-2;
+	//font-size: 1.5em;
+}
+
+.egypt-translit {
+	color: lightblue;
+	font-family: rk_egypt-translit;
+	//font-size: 1.2em;
+	//font-style: italic;
+}
