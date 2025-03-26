@@ -1,6 +1,8 @@
+@import url("./fonts.css");
+
 body {
 	color: #330033;
-	font-family: "Noto Sans Coptic", sans-serif;
+	font-family: rk_default;
 	margin: 0em;
 	padding: 0 1em;
 	border: 1em solid;
