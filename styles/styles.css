@@ -1,23 +1,42 @@
 @import url("./fonts.css");
 
-body {
-	color: #330033;
-	background: #ffffff;
-	font-family: rk_sansserif;
-	margin: 0em;
-	padding: 0 1em;
-	border: 1em solid;
+* {
+	box-sizing: border-box;
 }
 
-h1 span {
+::selection {
+	background: black;
+	color: violet;
+}
+
+body {
+	color: #99ab94;
+	background: #1a1a1a;
+	font-family: rk_sansserif;
+	margin: .5em;
+	padding: .5em 1em;
+	//border: 1em solid;
+	outline: 1px solid;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-weight: normal;
+	margin: .0em 0em;
+	//padding: .5em 0;
+}
+
+h1 {
 	font-family: rk_serif;
-	color: #880088;
-	letter-spacing: 1px;
+	font-weight: bold;
+}
+
+h2 + h2 {
+	margin-top: 0em;
 }
 
 h3 {
-	text-transform: uppercase;
-	letter-spacing: 1px;
+	//text-transform: uppercase;
+	//letter-spacing: 1px;
 	text-decoration: underline;
 }
 a {
@@ -26,26 +45,29 @@ a {
 	text-decoration: none;
 }
 
+a:hover {
+	color: lightblue;
+}
+
 p {
 	text-indent: 2em;
 }
 
 li {
-	//list-style-type: "⳾\00a0";
-	//list-style-type: none;
 	list-style-type: square;
-	//font-size: 2em;
-	//line-height: 1;
-}
-li::before {
-	//content: "⳾\00a0";
-	//display: inline-block;
-	//transform: rotate(0deg);
-	//font-size: 3em;
-	//line-height: 0px;
-	//height: 16px;
 }
 ul {
 	padding-left: 0em;
 	list-style-position: inside;
+}
+
+#container {
+	display: flex;
+	flex-direction: column;
+	gap: .5em;
+}
+
+#container > * {
+	//outline: 1px solid gold;
+	margin: 0em;
 }
