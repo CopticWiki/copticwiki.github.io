@@ -1,9 +1,9 @@
-<<<<<<< HEAD
 @import url("./fonts.css");
 @import url("./interactive.css");
 
 body {
 	margin: 1em;
+	background: linear-gradient(to right, black, violet);
 }
 
 .patreon-widget {
@@ -44,8 +44,4 @@ a {
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
-=======
-body {
-	background: linear-gradient(to right, black, violet);
->>>>>>> e4d99667d3becbee9fbbcaa8701333cfe6850c13
 }
