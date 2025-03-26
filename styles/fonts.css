@@ -1,6 +1,11 @@
 @font-face {
-	font-family: rk_default;
+	font-family: rk_sansserif;
 	src: url("./fonts/OpenSans.ttf");
+}
+
+@font-face {
+	font-family: rk_serif;
+	src: url("./fonts/AbyssinicaSIL.ttf");
 }
 
 @font-face {
