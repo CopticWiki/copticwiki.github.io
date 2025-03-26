@@ -1,4 +1,9 @@
 @font-face {
+	font-family: rk_default;
+	src: url("./fonts/OpenSans.ttf");
+}
+
+@font-face {
 	font-family: rk_coptic;
 	src: url("./fonts/NotoSansCoptic.ttf");
 	unicode-range:
