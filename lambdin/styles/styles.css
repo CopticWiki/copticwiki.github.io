@@ -1,6 +1,3 @@
-@import url("../../../styles/styles.css");
-@import url("../../styles/styles.css");
-
 ol.lower-alpha {
 	list-style-type: lower-alpha;
 }
