@@ -9,6 +9,20 @@
 	display: none !important;
 }
 
+div[data-section] {
+	padding-left: 1em;
+	position: relative;
+}
+
+[data-section]:before {
+	content: attr(data-section);
+	display: block;
+	position: absolute;
+	color: violet;
+	left: 0;
+	top: 0;
+}
+
 .side-by-side {
 //	background: linear-gradient(145deg, #ffffff44, #ffffff00);
 //	outline: 1px dashed gold;
@@ -209,7 +223,8 @@ h4 {
 	margin-top: 1em;
 }
 
-div[id^="lesson_"] table {
+/*div[id^="lesson_"] table,*/
+table {
 	//border-collapse: collapse;
 	border-spacing: 0;
 	border: 1px solid steelblue;
@@ -219,8 +234,9 @@ div[id^="lesson_"] table {
 	margin-block-end: 1em;
 }
 
-div[id^="lesson_"] td,
-#lesson_01 th {
+/*div[id^="lesson_"] td,
+#lesson_01 th*/
+td, th {
 	border: 1px solid #ffffff22;
 	padding: .5em;
 }
