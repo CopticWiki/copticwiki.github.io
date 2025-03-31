@@ -3,7 +3,7 @@ import arrayStyling from "../../scripts/dictionary_regexes.js";
 const xmlhttp = new XMLHttpRequest();
 let url = "";
 
-url = "../../coptic/crum/scripts/crum_entries.json";
+url = "../../crum/scripts/crum_entries.json";
 xmlhttp.onreadystatechange = function() {
 	if (this.readyState == 4 && this.status == 200) {
 		const fetchFromJSON = JSON.parse(this.responseText);
