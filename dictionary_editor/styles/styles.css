@@ -7,11 +7,22 @@
 
 body {
 	margin: 1em;
+	font-size: 1.5em;
+	color: grey;
+}
+
+.dialect {
+	font-family: revert;
 }
 
 h1,
 #info {
 	display: none;
+}
+
+b,
+i {
+	font-family: rk_serif;
 }
 
 fieldset {
@@ -112,12 +123,14 @@ code {
 	//border-bottom: .25em solid #222 !important;
 	outline: none;
 	caret-color: lightgreen;
+	padding-bottom: 2em !important;
 }
 
 #rendered_view {
 	grid-area: 2/2/3/3;
 	line-height: 1.5;
 	//border-top: .25em solid #222 !important;
+	//text-align: justify;
 }
 
 #editor_text,
