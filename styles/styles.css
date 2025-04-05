@@ -9,6 +9,22 @@
 	color: violet;
 }
 
+.author {
+	font-variant: small-caps;
+}
+
+.dialect {
+	color: steelblue;
+}
+
+.egypt-translit sup {
+	//font-size: .8em;
+	//vertical-align: initial;
+	//vertical-align: text-top;
+	padding: 0 0px 0 2px;
+	//padding-top: 50%;
+}
+
 body {
 	color: #99ab94;
 	background: #1a1a1a;

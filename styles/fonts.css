@@ -101,6 +101,12 @@
 }
 
 @font-face {
+	font-family: rk_egypt-hiero_precomposed;
+	//src: url("./fonts/EgyptianHiero4.03.ttf");
+	src: url("./fonts/EgyptianHiero3.03b.woff");
+}
+
+@font-face {
 	font-family: rk_variant-selectors;
 	src: url("./fonts/NOILMP-SpecialsUC6.ttf");
 }
@@ -195,6 +201,13 @@
 	color: gold;
 	font-family: rk_egypt-hiero;
 	//font-size: 1.5em;
+	font-size: 2em;
+}
+
+.egypt-hiero_precomposed {
+	color: lightgreen;
+	font-family: rk_egypt-hiero_precomposed;
+	font-size: 2em;
 }
 
 .egypt-hiero-test {
@@ -207,5 +220,5 @@
 	color: lightblue;
 	font-family: rk_egypt-translit;
 	//font-size: 1.2em;
-	//font-style: italic;
+	font-style: italic;
 }
