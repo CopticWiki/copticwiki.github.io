@@ -5,6 +5,25 @@
 	box-sizing: border-box;
 }
 
+
+.mallon h2 {
+	color: lightblue;
+	text-align: center;
+}
+
+.mallon h3 {
+	color: lightblue;
+	text-decoration: none;
+}
+
+.mallon h4 {
+	color: lightblue;
+}
+
+.mallon ol li {
+	list-style-type: decimal;
+}
+
 .hide {
 	display: none !important;
 }
