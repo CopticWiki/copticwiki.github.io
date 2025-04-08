@@ -245,3 +245,32 @@ i.dialect {
 	border: none;
 	//white-space: pre-wrap;
 }
+
+
+/*
+dictionary_editor
+	panels change width on hover
+	
+VVVVVVVVVVVVVVVVVVVVVVVVV
+*/
+
+
+#editor_text, #rendered_view {
+	scrollbar-color: #64496a transparent;
+	//scrollbar-color: transparent transparent;
+	overflow: scroll;
+	transition: width .2s;
+	outline: none;
+}
+
+#editor_text {
+	width: 50%;
+}
+
+#editor_text:hover {
+	width: 100%;
+}
+
+#interface:hover #rendered_view {
+	width: 50%;
+}
