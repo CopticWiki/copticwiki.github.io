@@ -8,141 +8,149 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<style>
 			body {
-				//font-family: sans-serif;
 				outline: none;
 				margin: .5em;
 			}
-			p {
-			
-			}
-			.coptic {
-				//unicode-bidi: isolate;
-			}
-			#gloss .trans {
-				color: #bec777;
-				font-family: "Open Sans", sans-serif;
-				font-family: serif;
-				line-height: 1.2;
-				text-indent: 1em;
+			::selection {
+				color: revert;
+				background: revert;
 			}
 			#container {
-				font-size: 1.5em;
-				//display: grid;
-				//grid-template-columns: repeat(2, 1fr);
-				//grid-template-columns: repeat(2, 1fr);
-				//gap: .5em;
 				display: initial;
 			}
-			#container div {
-				//font-size: 1.5em;
-			}
-			#translation {
+			#plain,
+			#bohairic,
+			#english {
 				display: none;
 			}
-			#original {
-				display: none;
+			#interlinear {
+				font-size: 1.5em;
+				margin-top: 3em;
 			}
-			#gloss {
-				color: cadetblue;
-				//font-size: 2em;
-				//width: 15em;
+			.line {
+				display: flex;
+				flex-direction: row;
+				flex-wrap: wrap;
+				gap: .2em .5em;
+				margin-top: .2em;
 			}
-			#gloss p {
-				line-height: 4;
-				text-indent: 0em;
+			p + .line {
+				margin-top: 3em;
 			}
-			#gloss p > ruby > rt {
-				color: violet;
-				padding: .5em 0;
-				font-variant: small-caps;
+			.line .group {
+				display: flex;
+				flex-direction: row;
+				//border: 1px solid #ffffff77;
+				//background: #212e39;
+				//background: #796b43;
+				border-radius: .2em;
+				//mix-blend-mode: hard-light;
 			}
-			#gloss ruby {
-				//color: grey;
-				//color: seagreen;
-				//color: steelblue;
-				ruby-position: over;
-				ruby-align: center;
-				//animation: breathe 1s infinite alternate;
-			}
-			#gloss ruby:hover {
-				//color: lightblue;
-				//color: grey;
-				//color: lightgreen;
-				//background: green;
-				//animation: breathe .5s alternate ease-in-out forwards;
-			}
-			#gloss p > ruby {
-				color: cadetblue;
-				//display: inline-block;
-				//border: 1px solid lightgreen;
-			}
-			#gloss p > ruby + ruby {
-				//border-left: 1px solid lightgreen;
-				margin-left: .2em;
-			}
-			#gloss p > ruby {
-				//margin-right: 1em;
-				//border-radius: .5em;
-				//padding: .2em;
-				white-space: nowrap;
-			}
-			#gloss ruby rt + ruby:before {
-				content: "· ";
-				color: goldenrod;
-			}
-			#gloss ruby ruby + rt:before {
-				content: "• ";
-				color: goldenrod;
-			}
-			#gloss ruby rt + ruby rt:before {
-				content: "• ";
-				color: goldenrod;
-			}
-			#gloss ruby ruby + rt:first-of-type:before {
-				content: none;
-			}
-			#gloss p > ruby:hover {
-				color: lightgreen;
-			}
-			#gloss p > ruby:hover rt {
-				color: inherit;
-			}
-			#gloss p > *:hover {
-				//color: lightgreen;
-			}
-			#gloss p > ruby:hover > rt {
-				//color: red;
-			}
-			#gloss ruby ruby:hover {
-				//color: lightgreen;
-			}
-			#gloss ruby ruby:hover rt {
-				//color: lightgreen;
-			}
-			#gloss ruby rt {
-				font-family: sans-serif;
-			}
-			#gloss ruby ruby {
-				//ruby-align: center;
-				ruby-position: under;
-			}
-			#gloss ruby ruby rt {
-				//color: goldenrod;
-				padding-top: .5em;
-			}
-			#gloss p > ruby + ruby:before {
-				//content: "    ";
-				//margin-left: 1em;
-			}
-			#gloss p > ruby:hover {
-				//color: lightgreen !important;
+			.group .morpheme {
+				color: #ffffff77;
+				display: flex;
+				flex-direction: column;
+				padding: .2em 0;
+				font-size: 1em;
+				align-items: center;
+				border-left: 1px dashed;
+				//border-width: 1px;
+				//border-style: dashed;
+				//border-image: linear-gradient(to bottom, transparent, transparent, #ffffff77, #ffffff77, #ffffff77, transparent, transparent) 1 100%;
+				//border-top: none;
+				//border-bottom: none;
+				//border-right: none;
+				transition: opacity .2s;
 			}
 			
+			.group .morpheme:nth-child(1) {
+				border-left: none;
+				
+			}
+			.group .morpheme:before {
+				//content: "•";
+				//flex-direction: row;
+			}
+			.group:hover {
+				cursor: pointer;
+			}
+			.group:hover .morpheme,
+			.group:active .morpheme {
+				color: #ffffff;
+				//border-color: #ffffff77;
+				border-color: transparent;
+				//filter: grayscale(1);
+				opacity: .1;
+				//mix-blend-mode: hard-light;
+				//transition: border-color .2s;
+			}
+			.group:hover .morpheme:hover {
+				//filter: grayscale(0);
+				opacity: 1;
+				//border-color: #ffffff22;
+			}
+			.group:hover .morpheme:hover span:nth-child(1) {
+				//border-left: revert;
+			}
+			
+			.morpheme + .morpheme span:nth-child(1) {
+				//border-left: none;
+			}
+			.morpheme:first-child span:nth-child(1) {
+				//border-left: none;
+				//border-right: transparent;
+				//border-image: none;
+				border-top-left-radius: .2em;
+				border-bottom-left-radius: .2em;
+			}
+			.morpheme:last-child span:nth-child(1) {
+				//border-left: transparent;
+				//border-right: none;
+				border-top-right-radius: .2em;
+				border-bottom-right-radius: .2em;
+			}
+			.morpheme span {
+				line-height: 1;
+				padding: 0 .5em;
+			}
+			.morpheme span:nth-child(1) {
+				order: 2;
+				color: lightgreen;
+				color: #90c5df;
+				background: #ffffff11;
+				background: #2c2d31;
+				//border: 1px dashed #ffffff;
+				//border-top: none;
+				//border-bottom: none;
+				//border: 1px solid;
+				//border-left: none;
+				//border-right: none;
+				width: 100%;
+				text-align: center;
+				font-family: rk_coptic;
+				padding: .2em .5em .2em;
+			}
+			.morpheme span:nth-child(2) {
+				order: 3;
+				color: violet;
+				opacity: .75;
+				font-size: .5em;
+				font-family: sans-serif;
+				padding-top: .5em;
+			}
+			.morpheme span:nth-child(3) {
+				order: 1;
+				color: gold;
+				opacity: .75;
+				font-size: .5em;
+				font-family: sans-serif;
+				font-variant: small-caps;
+				padding-bottom: .5em;
+			}
 			@keyframes breathe {
 				from {
 					color: transparent;
 					color: steelblue;
-					//color: seagreen;
 				}
 				to {
 					color: seagreen;
@@ -156,496 +164,877 @@
 		<h1>CopticWiki</h1>
 		<h2>The North Wind and the Sun</h2>
 		<div id="container">
-			<div id="translation" class="coptic">
-				<!--<h3>Sahidic</h3>-->
+			<div id="plain" class="coptic">
 				<p>ⲡⲧⲟⲩⲙϩⲓⲧ ⲙⲛ̄ⲡⲣⲏ ⲛⲉⲩϯⲧⲱⲛ ⲙⲛ̄ⲛⲉⲩⲉⲣⲏⲩ ϫⲉ ⲛⲓⲙ ⲡⲉ ⲡϫⲱⲱⲣⲉ ⲉⲧⲛ̄ϩⲏⲧⲟⲩ ϩⲙ̄ⲡⲧⲣⲉϥⲃⲱⲕ ⲛ̄ϭⲓⲟⲩⲣⲉϥⲙⲟⲟϣⲉ ⲉϥϭⲟⲟⲗⲉ ⲛ̄ⲟⲩⲣϣⲱⲛ ⲉϥϩⲏⲙ.</p>
 				<p>ⲁⲩⲥⲙⲓⲛⲉ ⲙ̄ⲙⲟⲥ ϫⲉ ⲡⲉⲧⲛⲁⲣ̄ϣⲟⲣⲡ ⲉⲡⲕⲉⲟⲩⲁ ⲉⲧⲣⲉ-ⲡⲣⲉϥⲙⲟⲟϣⲉ ⲕⲁⲁϥ ⲕⲁϩⲏⲩ ⲙ̄ⲡⲉϥⲣϣⲱⲛ ⲉϥⲉϣⲱⲡⲉ ⲛ̄ⲧⲟⲟⲧⲟⲩ ϩⲱⲥ ⲡϫⲱⲱⲣⲉ ⲙ̄ⲡⲉⲥⲛⲁⲩ.</p>
 				<p>ⲧⲟⲧⲉ ⲁϥⲛⲓϥⲉ ⲛ̄ϭⲓⲡⲧⲟⲩⲙϩⲓⲧ ϩⲛ̄ⲧⲉϥϭⲟⲙ ⲧⲏⲣⲥ̄, ϩⲟⲥⲟⲛ ⲇⲉ ⲁϥⲛⲓϥⲉ, ⲡⲣⲉϥⲙⲟⲟϣⲉ ⲛ̄ϩⲟⲩⲟ ⲟⲛ ⲉϥⲥⲟⲩⲟⲗⲟⲩⲗ ⲙ̄ⲙⲟϥ ϩⲙ̄ⲡⲉϥⲣϣⲱⲛ.</p>
 				<p>ⲗⲟⲓⲡⲟⲛ ⲁϥⲗⲟ ⲉϥϫⲱⲛⲧ ⲛ̄ϭⲓⲡⲧⲟⲩⲙϩⲓⲧ. ⲧⲟⲧⲉ ⲁ-ⲡⲣⲏ ⲣ̄ⲟⲩⲟⲉⲓⲛ ⲉⲃⲟⲗ ϩⲛ̄ⲟⲩϩⲙⲙⲉ, ⲁⲩⲱ ⲛ̄ⲧⲉⲩⲛⲟⲩ ⲁ-ⲡⲣⲉϥⲙⲟⲟϣⲉ ⲕⲁⲁϥ ⲕⲁϩⲏⲩ ⲙ̄ⲡⲉϥⲣϣⲱⲛ.</p>
 				<p>ⲛ̄ⲧⲉⲓϩⲉ ⲛⲉⲣⲉ-ⲡⲧⲟⲩⲙϩⲓⲧ ⲙⲏⲣ ⲉϩⲟⲙⲟⲗⲟⲅⲉⲓ ϫⲉ ⲡⲣⲏ ⲡⲉⲧϫⲱⲱⲣⲉ ⲙ̄ⲡⲉⲥⲛⲁⲩ.</p>
 			</div>
-			<div style="display: none;" class="coptic">
-				<h3>Bohairic (WIP)</h3>
+			<div id="bohairic" class="coptic">
 				<p>ⲡⲑⲏⲟⲩ ⲛ̀ⲉⲙϩⲓⲧ ⲛⲉⲙ ⲫⲣⲏ ⲛⲁⲣⲉϣϭⲛⲏⲛ ⲛⲉⲙ ⲛⲟⲩⲉⲣⲏⲟⲩ ϫⲉ ⲛⲓⲙ ⲫⲏ ⲉⲧϫⲱⲣ</p>
 				<p>ⲁⲩⲥⲉⲙⲛⲏⲧⲥ ϫⲉ ⲡⲏ ⲉⲑⲛⲁⲉⲣ</p>
 				<p></p>
 				<p></p>
 				<p></p>
 			</div>
-			<div id="gloss" class="coptic">
-				<p>
-					<!--
-					<ruby>
-						<ruby>coptic
-						<rt>gloss</ruby>
-						<rt>pos<rb>
-						<ruby>coptic
-						<rt>gloss</ruby>
-						<rt>pos
-					</ruby>
-					-->
-					<!--
-					<ruby>
-						<ruby>ⲡ
-						<rt>the</ruby>
-						<rt>def. art.<rb>
-						<ruby>ⲧⲟⲩⲙϩⲓⲧ
-						<rt>wind (of the)-north</ruby>
-						<rt>noun (m.s.)
-					</ruby>
-					-->
-					<ruby>
-						<ruby>ⲡ<rt>the</rt></ruby>
-						<rt>def. art. (m.)</rt>
-						<ruby>ⲧⲟⲩⲙϩⲓⲧ<rt>north wind</rt></ruby>
-						<rt>n. (m.)</rt>
-					</ruby>
-					<ruby>
-						<ruby>ⲙⲛ̄<rt>and</rt></ruby>
-						<rt>conj.</rt>
-						<ruby>ⲡ<rt>the</rt></ruby>
-						<rt>def. art. (m.)</rt>
-						<ruby>ⲣⲏ<rt>sun</rt></ruby>
-						<rt>n. (m.)</rt>
-					</ruby>
-					<ruby>
-						<ruby>ⲛⲉ<rt>were</rt></ruby>
-						<rt>impf.</rt>
-						<ruby>ⲩ<rt>they</rt></ruby>
-						<rt>nom.</rt>
-						<ruby>ϯⲧⲱⲛ<rt>be contentious, argue</rt></ruby>
-						<rt>v.</rt>
-					</ruby>
-					<ruby>
-						<ruby>ⲙⲛ̄<rt>with</rt></ruby>
-						<rt>conj.</rt>
-						<ruby>ⲛⲉⲩ<rt>their</rt></ruby>
-						<rt>poss. (pl.)</rt>
-						<ruby>ⲉⲣⲏⲩ<rt>each other</rt></ruby>
-						<rt>n.</rt>
-					</ruby>
-					<ruby>
-						<ruby>ϫⲉ<rt>that</rt></ruby>
-						<rt>conj.</rt>
-					</ruby>
-					<ruby>
-						<ruby>ⲛⲓⲙ<rt>who</rt></ruby>
-						<rt>wh.</rt>
-					</ruby>
-					<ruby>
-						<ruby>ⲡⲉ<rt>be</rt></ruby>
-						<rt>cop. (m.)</rt>
-					</ruby>
-					<ruby>
-						<ruby>ⲡ<rt>the</rt></ruby>
-						<rt>def. art. (m.)</rt>
-						<ruby>ϫⲱⲱⲣⲉ<rt>strong, victorious</rt></ruby>
-						<rt>n.</rt>
-					</ruby>
-					<ruby>
-						<ruby>ⲉⲧ<rt>that</rt></ruby>
-						<rt>rel.</rt>
-						<ruby>ⲛ̄ϩⲏⲧ<rt>in</rt></ruby>
-						<rt>prep.</rt>
-						<ruby>ⲟⲩ<rt>they</rt></ruby>
-						<rt>gen.</rt>
-					</ruby>
-					<ruby>
-						<ruby>ϩⲙ̄ⲡⲧⲣⲉ<rt>whilst, as</rt></ruby>
-						<rt>prep.</rt>
-						<ruby>ϥ<rt>he</rt></ruby>
-						<rt>nom.</rt>
-						<ruby>ⲃⲱⲕ<rt>go</rt></ruby>
-						<rt>v.</rt>
-					</ruby>
-					<ruby>
-						<ruby>ⲛ̄ϭⲓ<rt>namely</rt></ruby>
-						<rt>particle</rt>
-						<ruby>ⲟⲩ<rt>a</rt></ruby>
-						<rt>indef. art.</rt>
-						<ruby>ⲣⲉϥⲙⲟⲟϣⲉ<rt>walker, traveller</rt></ruby>
-						<rt>n. (m.)</rt>
-					</ruby>
-					<ruby>
-						<ruby>ⲉ<rt></rt></ruby>
-						<rt>circ.</rt>
-						<ruby>ϥ<rt>he</rt></ruby>
-						<rt>nom.</rt>
-						<ruby>ϭⲟⲟⲗⲉ<rt>wrap</rt></ruby>
-						<rt>stat.</rt>
-					</ruby>
-					<ruby>
-						<ruby>ⲛ̄<rt></rt></ruby>
-						<rt>d.o.</rt>
-						<ruby>ⲟⲩ<rt>a</rt></ruby>
-						<rt>indef. art.</rt>
-						<ruby>ⲣϣⲱⲛ<rt>cloak</rt></ruby>
-						<rt>n. (m.)</rt>
-					</ruby>
-					<ruby>
-						<ruby>ⲉ<rt></rt></ruby>
-						<rt>circ.</rt>
-						<ruby>ϥ<rt>he</rt></ruby>
-						<rt>nom.</rt>
-						<ruby>ϩⲏⲙ<rt>be(come) warm</rt></ruby>
-						<rt>stat.</rt>
-					</ruby>.
-				</p>
-				<p class="trans">The North Wind and the Sun were disputing which was the stronger, when a traveler came along wrapped in a warm cloak.</p>
-				<p>
-					<ruby>
-						<ruby>ⲁ<rt>did</rt></ruby>
-						<rt>prf.</rt>
-						<ruby>ⲩ<rt>they</rt></ruby>
-						<rt>nom.</rt>
-						<ruby>ⲥⲙⲓⲛⲉ<rt>establish, settle</rt></ruby>
-						<rt>v.</rt>
-					</ruby>
-					<ruby>
-						<ruby>ⲙ̄ⲙⲟ<rt></rt></ruby>
-						<rt>d.o.</rt>
-						<ruby>ⲥ<rt>she</rt></ruby>
-						<rt>acc.</rt>
-					</ruby>
-					<ruby>
-						<ruby>ϫⲉ<rt>that</rt></ruby>
-						<rt>conj.</rt>
-					</ruby>
-					<ruby>
-						<ruby>ⲡ<rt>the</rt></ruby>
-						<rt>def. art. (m.)</rt>
-						<ruby>ⲉⲧ<rt>that, who</rt></ruby>
-						<rt>rel.</rt>
-						<ruby>ⲛⲁ<rt>will</rt></ruby>
-						<rt>fut.</rt>
-						<ruby>ⲣ̄ϣⲟⲣⲡ<rt>precede, be first</rt></ruby>
-						<rt>v.</rt>
-					</ruby>
-					<ruby>
-						<ruby>ⲉ<rt></rt></ruby>
-						<rt>circ.</rt>
-						<ruby>ⲡ<rt>the</rt></ruby>
-						<rt>def. art. (m.)</rt>
-						<ruby>ⲕⲉ<rt>other</rt></ruby>
-						<rt>det.</rt>
-						<ruby>ⲟⲩⲁ<rt>1, (some)one</rt></ruby>
-						<rt>n. (m.)</rt>
-					</ruby>
-					<ruby>
-						<ruby>ⲉⲧⲣⲉ-<rt></rt></ruby>
-						<rt>caus.</rt>
-					</ruby>
-					<ruby>
-						<ruby>ⲡ<rt>the</rt></ruby>
-						<rt>def. art. (m.)</rt>
-						<ruby>ⲣⲉϥⲙⲟⲟϣⲉ<rt>walker, traveller</rt></ruby>
-						<rt>n. (m.)</rt>
-					</ruby>
-					<ruby>
-						<ruby>ⲕⲁⲁ<rt>put, place</rt></ruby>
-						<rt>v.</rt>
-						<ruby>ϥ<rt>he</rt></ruby>
-						<rt>acc.</rt>
-					</ruby>
-					<ruby>
-						<ruby>ⲕⲁϩⲏⲩ<rt>strip, undress</rt></ruby>
-						<rt>v.</rt>
-					</ruby>
-					<ruby>
-						<ruby>ⲙ̄<rt></rt></ruby>
-						<rt>d.o.</rt>
-						<ruby>ⲡⲉϥ<rt>his</rt></ruby>
-						<rt>poss. (m.)</rt>
-						<ruby>ⲣϣⲱⲛ<rt>cloak</rt></ruby>
-						<rt>n. (m.)</rt>
-					</ruby>
-					<ruby>
-						<ruby>ⲉϥⲉ<rt>shall</rt></ruby>
-						<rt>opt.</rt>
-						<ruby>ϣⲱⲡⲉ<rt>be(come), happen, exist</rt></ruby>
-						<rt>v.</rt>
-					</ruby>
-					<ruby>
-						<ruby>ⲛ̄ⲧⲟⲟⲧ<rt>in the hand(s) of</rt></ruby>
-						<rt>prep.</rt>
-						<ruby>ⲟⲩ<rt>they</rt></ruby>
-						<rt>gen.</rt>
-					</ruby>
-					<ruby>
-						<ruby>ϩⲱⲥ<rt>as (if)</rt></ruby>
-						<rt>prep.</rt>
-					</ruby>
-					<ruby>
-						<ruby>ⲡ<rt>the</rt></ruby>
-						<rt>def. art. (m.)</rt>
-						<ruby>ϫⲱⲱⲣⲉ<rt>strong, victorious</rt></ruby>
-						<rt>n. (m.)</rt>
-					</ruby>
-					<ruby>
-						<ruby>ⲙ̄<rt>of</rt></ruby>
-						<rt>gen.</rt>
-						<ruby>ⲡⲉ<rt>the</rt></ruby>
-						<rt>def. art. (m.)</rt>
-						<ruby>ⲥⲛⲁⲩ<rt>2</rt></ruby>
-						<rt>n. (m.)</rt>
-					</ruby>.
-				</p>
-				<p class="trans">They agreed that the one who first succeeded in making the traveler take his cloak off should be considered stronger than the other.</p>
-				<p>
-					<ruby>
-						<ruby>ⲧⲟⲧⲉ<rt>then</rt></ruby>
-						<rt>adv.</rt>
-					</ruby>
-					<ruby>
-						<ruby>ⲁ<rt>did</rt></ruby>
-						<rt>prf.</rt>
-						<ruby>ϥ<rt>he</rt></ruby>
-						<rt>nom.</rt>
-						<ruby>ⲛⲓϥⲉ<rt>blow, breathe</rt></ruby>
-						<rt>v.</rt>
-					</ruby>
-					<ruby>
-						<ruby>ⲛ̄ϭⲓ<rt>namely</rt></ruby>
-						<rt>pvp.</rt>
-						<ruby>ⲡ<rt>the</rt></ruby>
-						<rt>def. art. (m.)</rt>
-						<ruby>ⲧⲟⲩⲙϩⲓⲧ<rt>north wind</rt></ruby>
-						<rt>n. (m.)</rt>
-					</ruby>
-					<ruby>
-						<ruby>ϩⲛ̄<rt>in</rt></ruby>
-						<rt>prep.</rt>
-						<ruby>ⲧⲉϥ<rt>his</rt></ruby>
-						<rt>poss. (f.)</rt>
-						<ruby>ϭⲟⲙ<rt>power, might</rt></ruby>
-						<rt>n. (f.)</rt>
-					</ruby>
-					<ruby>
-						<ruby>ⲧⲏⲣ<rt>whole, entire</rt></ruby>
-						<rt>adj.</rt>
-						<ruby>ⲥ̄<rt>she</rt></ruby>
-						<rt>gen.</rt>
-					</ruby>
-					<ruby>
-						<ruby>ϩⲟⲥⲟⲛ<rt>as much as</rt></ruby>
-						<rt>adv.</rt>
-					</ruby>
-					<ruby>
-						<ruby>ⲇⲉ<rt>and, but</rt></ruby>
-						<rt>conj.</rt>
-					</ruby>
-					<ruby>
-						<ruby>ⲁ<rt>did</rt></ruby>
-						<rt>prf.</rt>
-						<ruby>ϥ<rt>he</rt></ruby>
-						<rt>nom.</rt>
-						<ruby>ⲛⲓϥⲉ<rt>blow, breathe</rt></ruby>
-						<rt>v.</rt>
-					</ruby>
-					<ruby>
-						<ruby>ⲡ<rt>the</rt></ruby>
-						<rt>def. art. (m.)</rt>
-						<ruby>ⲣⲉϥⲙⲟⲟϣⲉ<rt>walker, traveller</rt></ruby>
-						<rt>n. (m.)</rt>
-					</ruby>
-					<ruby>
-						<ruby>ⲛ̄ϩⲟⲩⲟ<rt>more</rt></ruby>
-						<rt>adv.</rt>
-					</ruby>
-					<ruby>
-						<ruby>ⲟⲛ<rt>again, still, yet</rt></ruby>
-						<rt>adv.</rt>
-					</ruby>
-					<ruby>
-						<ruby>ⲉ<rt></rt></ruby>
-						<rt>circ.</rt>
-						<ruby>ϥ<rt>he</rt></ruby>
-						<rt>nom.</rt>
-						<ruby>ⲥⲟⲩⲟⲗⲟⲩⲗ<rt>wrap, bundle</rt></ruby>
-						<rt>v.</rt>
-					</ruby>
-					<ruby>
-						<ruby>ⲙ̄ⲙⲟ<rt></rt></ruby>
-						<rt>d.o.</rt>
-						<ruby>ϥ<rt>he</rt></ruby>
-						<rt>acc.</rt>
-					</ruby>
-					<ruby>
-						<ruby>ϩⲙ̄<rt>in</rt></ruby>
-						<rt>prep.</rt>
-						<ruby>ⲡⲉϥ<rt>his</rt></ruby>
-						<rt>poss. (m.)</rt>
-						<ruby>ⲣϣⲱⲛ<rt>cloak</rt></ruby>
-						<rt>n. (m.)</rt>
-					</ruby>.
-				</p>
-				<p class="trans">Then the North Wind blew as hard as he could, but the more he blew the more closely did the traveler fold his cloak around him;</p>
-				<p>
-					<ruby>
-						<ruby>ⲗⲟⲓⲡⲟⲛ<rt>at last, anyway</rt></ruby>
-						<rt>conj.</rt>
-					</ruby>
-					<ruby>
-						<ruby>ⲁ<rt>did</rt></ruby>
-						<rt>prf.</rt>
-						<ruby>ϥ<rt>he</rt></ruby>
-						<rt>nom.</rt>
-						<ruby>ⲗⲟ<rt>stop, cease</rt></ruby>
-						<rt>v.</rt>
-					</ruby>
-					<ruby>
-						<ruby>ⲉ<rt></rt></ruby>
-						<rt>circ.</rt>
-						<ruby>ϥ<rt>he</rt></ruby>
-						<rt>nom.</rt>
-						<ruby>ϫⲱⲛⲧ<rt>try, attempt</rt></ruby>
-						<rt>v.</rt>
-					</ruby>
-					<ruby>
-						<ruby>ⲛ̄ϭⲓ<rt>namely</rt></ruby>
-						<rt>pvp.</rt>
-						<ruby>ⲡ<rt>the</rt></ruby>
-						<rt>def. art. (m.)</rt>
-						<ruby>ⲧⲟⲩⲙϩⲓⲧ<rt>north wind</rt></ruby>
-						<rt>n. (m.)</rt>
-					</ruby>
-					<ruby>
-						<ruby>ⲧⲟⲧⲉ<rt>then</rt></ruby>
-						<rt>adv.</rt>
-					</ruby>
-					<ruby>
-						<ruby>ⲁ-<rt>did</rt></ruby>
-						<rt>prf.</rt>
-						<ruby>ⲡ<rt>the</rt></ruby>
-						<rt>def. art. (m.)</rt>
-						<ruby>ⲣⲏ<rt>sun</rt></ruby>
-						<rt>n. (m.)</rt>
-					</ruby>
-					<ruby>
-						<ruby>ⲣ̄ⲟⲩⲟⲉⲓⲛ<rt>be(come) light, shine, illuminate</rt></ruby>
-						<rt>v.</rt>
-					</ruby>
-					<ruby>
-						<ruby>ⲉⲃⲟⲗ<rt>out, away</rt></ruby>
-						<rt>adv.</rt>
-					</ruby>
-					<ruby>
-						<ruby>ϩⲛ̄<rt>in</rt></ruby>
-						<rt>prep.</rt>
-						<ruby>ⲟⲩ<rt>a</rt></ruby>
-						<rt>indef. art.</rt>
-						<ruby>ϩⲙⲙⲉ<rt>heat, warmth</rt></ruby>
-						<rt>n. (m.)</rt>
-					</ruby>
-					<ruby>
-						<ruby>ⲁⲩⲱ<rt>and</rt></ruby>
-						<rt>conj.</rt>
-					</ruby>
-					<ruby>
-						<ruby>ⲛ̄ⲧⲉⲩⲛⲟⲩ<rt>immediately, in the moment</rt></ruby>
-						<rt>adv.</rt>
-					</ruby>
-					<ruby>
-						<ruby>ⲁ-<rt>did</rt></ruby>
-						<rt>prf.</rt>
-						<ruby>ⲡ<rt>the</rt></ruby>
-						<rt>def. art. (m.)</rt>
-						<ruby>ⲣⲉϥⲙⲟⲟϣⲉ<rt>walker, traveller</rt></ruby>
-						<rt>n. (m.)</rt>
-					</ruby>
-					<ruby>
-						<ruby>ⲕⲁⲁ<rt>put, place</rt></ruby>
-						<rt>v.</rt>
-						<ruby>ϥ<rt>he</rt></ruby>
-						<rt>acc.</rt>
-					</ruby>
-					<ruby>
-						<ruby>ⲕⲁϩⲏⲩ<rt>strip, undress</rt></ruby>
-						<rt>v.</rt>
-					</ruby>
-					<ruby>
-						<ruby>ⲙ̄<rt></rt></ruby>
-						<rt>d.o.</rt>
-						<ruby>ⲡⲉϥ<rt>his</rt></ruby>
-						<rt>poss. (m.)</rt>
-						<ruby>ⲣϣⲱⲛ<rt>cloak</rt></ruby>
-						<rt>n. (m.)</rt>
-					</ruby>.
-				</p>
-				<p class="trans">and at last the North Wind gave up the attempt. Then the Sun shined out warmly, and immediately the traveler took off his cloak.</p>
-				<p>
-					<ruby>
-						<ruby>ⲛ̄ⲧⲉⲓϩⲉ<rt>like this, in this way</rt></ruby>
-						<rt>adv.</rt>
-					</ruby>
-					<ruby>
-						<ruby>ⲛⲉⲣⲉ-<rt>was, were</rt></ruby>
-						<rt>impf.</rt>
-						<ruby>ⲡ<rt>the</rt></ruby>
-						<rt>def. art. (m.)</rt>
-						<ruby>ⲧⲟⲩⲙϩⲓⲧ<rt>north wind</rt></ruby>
-						<rt>n. (m.)</rt>
-					</ruby>
-					<ruby>
-						<ruby>ⲙⲏⲣ<rt>bind</rt></ruby>
-						<rt>stat.</rt>
-					</ruby>
-					<ruby>
-						<ruby>ⲉ<rt>(in order) to</rt></ruby>
-						<rt>prep.</rt>
-						<ruby>ϩⲟⲙⲟⲗⲟⲅⲉⲓ<rt>admit, confess</rt></ruby>
-						<rt>v.</rt>
-					</ruby>
-					<ruby>
-						<ruby>ϫⲉ<rt>that</rt></ruby>
-						<rt>conj.</rt>
-					</ruby>
-					<ruby>
-						<ruby>ⲡ<rt>the</rt></ruby>
-						<rt>def. art. (m.)</rt>
-						<ruby>ⲣⲏ<rt>sun</rt></ruby>
-						<rt>n. (m.)</rt>
-					</ruby>
-					<ruby>
-						<ruby>ⲡ<rt>the</rt></ruby>
-						<rt>def. art. (m.)</rt>
-						<ruby>ⲉⲧ<rt>that, who</rt></ruby>
-						<rt>rel.</rt>
-						<ruby>ϫⲱⲱⲣⲉ<rt>be strong, victorious</rt></ruby>
-						<rt>v.</rt>
-					</ruby>
-					<ruby>
-						<ruby>ⲙ̄<rt>of</rt></ruby>
-						<rt>gen.</rt>
-						<ruby>ⲡⲉ<rt>the</rt></ruby>
-						<rt>def. art. (m.)</rt>
-						<ruby>ⲥⲛⲁⲩ<rt>2</rt></ruby>
-						<rt>n. (m.)</rt>
-					</ruby>.
-				</p>
-				<p class="trans">And so the North Wind was obliged to confess that the Sun was the stronger of the two.</p>
+			<div id="interlinear">
+				<div class="line">
+					<div class="group">
+						<div class="morpheme">
+							<span>ⲡ</span>
+							<span>the</span>
+							<span>def. art. (m.)</span>
+						</div>
+						<div class="morpheme">
+							<span>ⲧⲟⲩⲙϩⲓⲧ</span>
+							<span>north wind</span>
+							<span>n. (m.)</span>
+						</div>
+					</div>
+					<div class="group">
+						<div class="morpheme">
+							<span>ⲙⲛ̄</span>
+							<span>and</span>
+							<span>conj.</span>
+						</div>
+						<div class="morpheme">
+							<span>ⲡ</span>
+							<span>the</span>
+							<span>def. art. (m.)</span>
+						</div>
+						<div class="morpheme">
+							<span>ⲣⲏ</span>
+							<span>sun</span>
+							<span>n. (m.)</span>
+						</div>
+					</div>
+					<div class="group">
+						<div class="morpheme">
+							<span>ⲛⲉ</span>
+							<span>were</span>
+							<span>impf.</span>
+						</div>
+						<div class="morpheme">
+							<span>ⲩ</span>
+							<span>they</span>
+							<span>nom.</span>
+						</div>
+						<div class="morpheme">
+							<span>ϯⲧⲱⲛ</span>
+							<span>be contentious, argue</span>
+							<span>v.</span>
+						</div>
+					</div>
+					<div class="group">
+						<div class="morpheme">
+							<span>ⲙⲛ̄</span>
+							<span>with</span>
+							<span>conj.</span>
+						</div>
+						<div class="morpheme">
+							<span>ⲛⲉⲩ</span>
+							<span>their</span>
+							<span>poss. (pl.)</span>
+						</div>
+						<div class="morpheme">
+							<span>ⲉⲣⲏⲩ</span>
+							<span>each other</span>
+							<span>n.</span>
+						</div>
+					</div>
+					<div class="group">
+						<div class="morpheme">
+							<span>ϫⲉ</span>
+							<span>that</span>
+							<span>conj.</span>
+						</div>
+					</div>
+					<div class="group">
+						<div class="morpheme">
+							<span>ⲛⲓⲙ</span>
+							<span>who</span>
+							<span>wh.</span>
+						</div>
+					</div>
+					<div class="group">
+						<div class="morpheme">
+							<span>ⲡⲉ</span>
+							<span>be</span>
+							<span>cop. (m.)</span>
+						</div>
+					</div>
+					<div class="group">
+						<div class="morpheme">
+							<span>ⲡ</span>
+							<span>the</span>
+							<span>def. art. (m.)</span>
+						</div>
+						<div class="morpheme">
+							<span>ϫⲱⲱⲣⲉ</span>
+							<span>strong, victorious</span>
+							<span>n.</span>
+						</div>
+					</div>
+					<div class="group">
+						<div class="morpheme">
+							<span>ⲉⲧ</span>
+							<span>that</span>
+							<span>rel.</span>
+						</div>
+						<div class="morpheme">
+							<span>ⲛ̄ϩⲏⲧ</span>
+							<span>in</span>
+							<span>prep.</span>
+						</div>
+						<div class="morpheme">
+							<span>ⲟⲩ</span>
+							<span>they</span>
+							<span>gen.</span>
+						</div>
+					</div>
+					<div class="group">
+						<div class="morpheme">
+							<span>ϩⲙ̄ⲡⲧⲣⲉ</span>
+							<span>whilst, as</span>
+							<span>prep.</span>
+						</div>
+						<div class="morpheme">
+							<span>ϥ</span>
+							<span>he</span>
+							<span>nom.</span>
+						</div>
+						<div class="morpheme">
+							<span>ⲃⲱⲕ</span>
+							<span>go</span>
+							<span>v.</span>
+						</div>
+					</div>
+					<div class="group">
+						<div class="morpheme">
+							<span>ⲛ̄ϭⲓ</span>
+							<span>namely</span>
+							<span>particle</span>
+						</div>
+						<div class="morpheme">
+							<span>ⲟⲩ</span>
+							<span>a</span>
+							<span>indef. art.</span>
+						</div>
+						<div class="morpheme">
+							<span>ⲣⲉϥⲙⲟⲟϣⲉ</span>
+							<span>walker, traveller</span>
+							<span>n. (m.)</span>
+						</div>
+					</div>
+					<div class="group">
+						<div class="morpheme">
+							<span>ⲉ</span>
+							<span></span>
+							<span>circ.</span>
+						</div>
+						<div class="morpheme">
+							<span>ϥ</span>
+							<span>he</span>
+							<span>nom.</span>
+						</div>
+						<div class="morpheme">
+							<span>ϭⲟⲟⲗⲉ</span>
+							<span>wrap</span>
+							<span>stat.</span>
+						</div>
+					</div>
+					<div class="group">
+						<div class="morpheme">
+							<span>ⲛ̄</span>
+							<span></span>
+							<span>d.o.</span>
+						</div>
+						<div class="morpheme">
+							<span>ⲟⲩ</span>
+							<span>a</span>
+							<span>indef. art.</span>
+						</div>
+						<div class="morpheme">
+							<span>ⲣϣⲱⲛ</span>
+							<span>cloak</span>
+							<span>n. (m.)</span>
+						</div>
+					</div>
+					<div class="group">
+						<div class="morpheme">
+							<span>ⲉ</span>
+							<span></span>
+							<span>circ.</span>
+						</div>
+						<div class="morpheme">
+							<span>ϥ</span>
+							<span>he</span>
+							<span>nom.</span>
+						</div>
+						<div class="morpheme">
+							<span>ϩⲏⲙ</span>
+							<span>be(come) warm</span>
+							<span>stat.</span>
+						</div>
+					</div>
+				</div>
+				<p>The North Wind and the Sun were disputing which was the stronger, when a traveler came along wrapped in a warm cloak.</p>
+				<div class="line">
+					<div class="group">
+						<div class="morpheme">
+							<span>ⲁ</span>
+							<span>did</span>
+							<span>prf.</span>
+						</div>
+						<div class="morpheme">
+							<span>ⲩ</span>
+							<span>they</span>
+							<span>nom.</span>
+						</div>
+						<div class="morpheme">
+							<span>ⲥⲙⲓⲛⲉ</span>
+							<span>establish, settle</span>
+							<span>v.</span>
+						</div>
+					</div>
+					<div class="group">
+						<div class="morpheme">
+							<span>ⲙ̄ⲙⲟ</span>
+							<span></span>
+							<span>d.o.</span>
+						</div>
+						<div class="morpheme">
+							<span>ⲥ</span>
+							<span>she</span>
+							<span>acc.</span>
+						</div>
+					</div>
+					<div class="group">
+						<div class="morpheme">
+							<span>ϫⲉ</span>
+							<span>that</span>
+							<span>conj.</span>
+						</div>
+					</div>
+					<div class="group">
+						<div class="morpheme">
+							<span>ⲡ</span>
+							<span>the</span>
+							<span>def. art. (m.)</span>
+						</div>
+						<div class="morpheme">
+							<span>ⲉⲧ</span>
+							<span>that, who</span>
+							<span>rel.</span>
+						</div>
+						<div class="morpheme">
+							<span>ⲛⲁ</span>
+							<span>will</span>
+							<span>fut.</span>
+						</div>
+						<div class="morpheme">
+							<span>ⲣ̄ϣⲟⲣⲡ</span>
+							<span>precede, be first</span>
+							<span>v.</span>
+						</div>
+					</div>
+					<div class="group">
+						<div class="morpheme">
+							<span>ⲉ</span>
+							<span></span>
+							<span>circ.</span>
+						</div>
+						<div class="morpheme">
+							<span>ⲡ</span>
+							<span>the</span>
+							<span>def. art. (m.)</span>
+						</div>
+						<div class="morpheme">
+							<span>ⲕⲉ</span>
+							<span>other</span>
+							<span>det.</span>
+						</div>
+						<div class="morpheme">
+							<span>ⲟⲩⲁ</span>
+							<span>1, (some)one</span>
+							<span>n. (m.)</span>
+						</div>
+					</div>
+					<div class="group">
+						<div class="morpheme">
+							<span>ⲉⲧⲣⲉ-</span>
+							<span>cause to do</span>
+							<span>caus.</span>
+						</div>
+						<div class="morpheme">
+							<span>ⲡ</span>
+							<span>the</span>
+							<span>def. art. (m.)</span>
+						</div>
+						<div class="morpheme">
+							<span>ⲣⲉϥⲙⲟⲟϣⲉ</span>
+							<span>walker, traveller</span>
+							<span>n. (m.)</span>
+						</div>
+					</div>
+					<div class="group">
+						<div class="morpheme">
+							<span>ⲕⲁⲁ</span>
+							<span>put, place</span>
+							<span>v.</span>
+						</div>
+						<div class="morpheme">
+							<span>ϥ</span>
+							<span>he</span>
+							<span>acc.</span>
+						</div>
+						<div class="morpheme">
+							<span>ⲕⲁϩⲏⲩ</span>
+							<span>strip, undress</span>
+							<span>v.</span>
+						</div>
+					</div>
+					<div class="group">
+						<div class="morpheme">
+							<span>ⲙ̄</span>
+							<span></span>
+							<span>d.o.</span>
+						</div>
+						<div class="morpheme">
+							<span>ⲡⲉϥ</span>
+							<span>his</span>
+							<span>poss. (m.)</span>
+						</div>
+						<div class="morpheme">
+							<span>ⲣϣⲱⲛ</span>
+							<span>cloak</span>
+							<span>n. (m.)</span>
+						</div>
+					</div>
+					<div class="group">
+						<div class="morpheme">
+							<span>ⲉϥⲉ</span>
+							<span>shall</span>
+							<span>opt.</span>
+						</div>
+						<div class="morpheme">
+							<span>ϣⲱⲡⲉ</span>
+							<span>be(come), happen, exist</span>
+							<span>v.</span>
+						</div>
+					</div>
+					<div class="group">
+						<div class="morpheme">
+							<span>ⲛ̄ⲧⲟⲟⲧ</span>
+							<span>in the hand(s) of</span>
+							<span>prep.</span>
+						</div>
+						<div class="morpheme">
+							<span>ⲟⲩ</span>
+							<span>they</span>
+							<span>gen.</span>
+						</div>
+					</div>
+					<div class="group">
+						<div class="morpheme">
+							<span>ϩⲱⲥ</span>
+							<span>as (if)</span>
+							<span>prep.</span>
+						</div>
+						<div class="morpheme">
+							<span>ⲡ</span>
+							<span>the</span>
+							<span>def. art. (m.)</span>
+						</div>
+						<div class="morpheme">
+							<span>ϫⲱⲱⲣⲉ</span>
+							<span>strong, victorious</span>
+							<span>n. (m.)</span>
+						</div>
+					</div>
+					<div class="group">
+						<div class="morpheme">
+							<span>ⲙ̄</span>
+							<span>of</span>
+							<span>gen.</span>
+						</div>
+						<div class="morpheme">
+							<span>ⲡⲉ</span>
+							<span>the</span>
+							<span>def. art. (m.)</span>
+						</div>
+						<div class="morpheme">
+							<span>ⲥⲛⲁⲩ</span>
+							<span>2</span>
+							<span>n. (m.)</span>
+						</div>
+					</div>
+				</div>
+				<p>They agreed that the one who first succeeded in making the traveler take his cloak off should be considered stronger than the other.</p>
+				<div class="line">
+					<div class="group">
+						<div class="morpheme">
+							<span>ⲧⲟⲧⲉ</span>
+							<span>then</span>
+							<span>adv.</span>
+						</div>
+					</div>
+					<div class="group">
+						<div class="morpheme">
+							<span>ⲁ</span>
+							<span>did</span>
+							<span>prf.</span>
+						</div>
+						<div class="morpheme">
+							<span>ϥ</span>
+							<span>he</span>
+							<span>nom.</span>
+						</div>
+						<div class="morpheme">
+							<span>ⲛⲓϥⲉ</span>
+							<span>blow, breathe</span>
+							<span>v.</span>
+						</div>
+					</div>
+					<div class="group">
+						<div class="morpheme">
+							<span>ⲛ̄ϭⲓ</span>
+							<span>namely</span>
+							<span>pvp.</span>
+						</div>
+						<div class="morpheme">
+							<span>ⲡ</span>
+							<span>the</span>
+							<span>def. art. (m.)</span>
+						</div>
+						<div class="morpheme">
+							<span>ⲧⲟⲩⲙϩⲓⲧ</span>
+							<span>north wind</span>
+							<span>n. (m.)</span>
+						</div>
+					</div>
+					<div class="group">
+						<div class="morpheme">
+							<span>ϩⲛ̄</span>
+							<span>in</span>
+							<span>prep.</span>
+						</div>
+						<div class="morpheme">
+							<span>ⲧⲉϥ</span>
+							<span>his</span>
+							<span>poss. (f.)</span>
+						</div>
+						<div class="morpheme">
+							<span>ϭⲟⲙ</span>
+							<span>power, might</span>
+							<span>n. (f.)</span>
+						</div>
+					</div>
+					<div class="group">
+						<div class="morpheme">
+							<span>ⲧⲏⲣ</span>
+							<span>whole, entire</span>
+							<span>adj.</span>
+						</div>
+						<div class="morpheme">
+							<span>ⲥ̄</span>
+							<span>she</span>
+							<span>gen.</span>
+						</div>
+					</div>
+					<div class="group">
+						<div class="morpheme">
+							<span>ϩⲟⲥⲟⲛ</span>
+							<span>as much as</span>
+							<span>adv.</span>
+						</div>
+					</div>
+					<div class="group">
+						<div class="morpheme">
+							<span>ⲇⲉ</span>
+							<span>and, but</span>
+							<span>conj.</span>
+						</div>
+					</div>
+					<div class="group">
+						<div class="morpheme">
+							<span>ⲁ</span>
+							<span>did</span>
+							<span>prf.</span>
+						</div>
+						<div class="morpheme">
+							<span>ϥ</span>
+							<span>he</span>
+							<span>nom.</span>
+						</div>
+						<div class="morpheme">
+							<span>ⲛⲓϥⲉ</span>
+							<span>blow, breathe</span>
+							<span>v.</span>
+						</div>
+					</div>
+					<div class="group">
+						<div class="morpheme">
+							<span>ⲡ</span>
+							<span>the</span>
+							<span>def. art. (m.)</span>
+						</div>
+						<div class="morpheme">
+							<span>ⲣⲉϥⲙⲟⲟϣⲉ</span>
+							<span>walker, traveller</span>
+							<span>n. (m.)</span>
+						</div>
+					</div>
+					<div class="group">
+						<div class="morpheme">
+							<span>ⲛ̄ϩⲟⲩⲟ</span>
+							<span>more</span>
+							<span>adv.</span>
+						</div>
+					</div>
+					<div class="group">
+						<div class="morpheme">
+							<span>ⲟⲛ</span>
+							<span>again, still, yet</span>
+							<span>adv.</span>
+						</div>
+					</div>
+					<div class="group">
+						<div class="morpheme">
+							<span>ⲉ</span>
+							<span></span>
+							<span>circ.</span>
+						</div>
+						<div class="morpheme">
+							<span>ϥ</span>
+							<span>he</span>
+							<span>nom.</span>
+						</div>
+						<div class="morpheme">
+							<span>ⲥⲟⲩⲟⲗⲟⲩⲗ</span>
+							<span>wrap, bundle</span>
+							<span>v.</span>
+						</div>
+					</div>
+					<div class="group">
+						<div class="morpheme">
+							<span>ⲙ̄ⲙⲟ</span>
+							<span></span>
+							<span>d.o.</span>
+						</div>
+						<div class="morpheme">
+							<span>ϥ</span>
+							<span>he</span>
+							<span>acc.</span>
+						</div>
+					</div>
+					<div class="group">
+						<div class="morpheme">
+							<span>ϩⲙ̄</span>
+							<span>in</span>
+							<span>prep.</span>
+						</div>
+						<div class="morpheme">
+							<span>ⲡⲉϥ</span>
+							<span>his</span>
+							<span>poss. (m.)</span>
+						</div>
+						<div class="morpheme">
+							<span>ⲣϣⲱⲛ</span>
+							<span>cloak</span>
+							<span>n. (m.)</span>
+						</div>
+					</div>
+				</div>
+				<p>Then the North Wind blew as hard as he could, but the more he blew the more closely did the traveler fold his cloak around him;</p>
+				<div class="line">
+					<div class="group">
+						<div class="morpheme">
+							<span>ⲗⲟⲓⲡⲟⲛ</span>
+							<span>at last, anyway</span>
+							<span>conj.</span>
+						</div>
+					</div>
+					<div class="group">
+						<div class="morpheme">
+							<span>ⲁ</span>
+							<span>did</span>
+							<span>prf.</span>
+						</div>
+						<div class="morpheme">
+							<span>ϥ</span>
+							<span>he</span>
+							<span>nom.</span>
+						</div>
+						<div class="morpheme">
+							<span>ⲗⲟ</span>
+							<span>stop, cease</span>
+							<span>v.</span>
+						</div>
+					</div>
+					<div class="group">
+						<div class="morpheme">
+							<span>ⲉ</span>
+							<span></span>
+							<span>circ.</span>
+						</div>
+						<div class="morpheme">
+							<span>ϥ</span>
+							<span>he</span>
+							<span>nom.</span>
+						</div>
+						<div class="morpheme">
+							<span>ϫⲱⲛⲧ</span>
+							<span>try, attempt</span>
+							<span>v.</span>
+						</div>
+					</div>
+					<div class="group">
+						<div class="morpheme">
+							<span>ⲛ̄ϭⲓ</span>
+							<span>namely</span>
+							<span>pvp.</span>
+						</div>
+						<div class="morpheme">
+							<span>ⲡ</span>
+							<span>the</span>
+							<span>def. art. (m.)</span>
+						</div>
+						<div class="morpheme">
+							<span>ⲧⲟⲩⲙϩⲓⲧ</span>
+							<span>north wind</span>
+							<span>n. (m.)</span>
+						</div>
+					</div>
+					<div class="group">
+						<div class="morpheme">
+							<span>ⲧⲟⲧⲉ</span>
+							<span>then</span>
+							<span>adv.</span>
+						</div>
+					</div>
+					<div class="group">
+						<div class="morpheme">
+							<span>ⲁ-</span>
+							<span>did</span>
+							<span>prf.</span>
+						</div>
+						<div class="morpheme">
+							<span>ⲡ</span>
+							<span>the</span>
+							<span>def. art. (m.)</span>
+						</div>
+						<div class="morpheme">
+							<span>ⲣⲏ</span>
+							<span>sun</span>
+							<span>n. (m.)</span>
+						</div>
+					</div>
+					<div class="group">
+						<div class="morpheme">
+							<span>ⲣ̄ⲟⲩⲟⲉⲓⲛ</span>
+							<span>be(come) light, shine, illuminate</span>
+							<span>v.</span>
+						</div>
+					</div>
+					<div class="group">
+						<div class="morpheme">
+							<span>ⲉⲃⲟⲗ</span>
+							<span>out, away</span>
+							<span>adv.</span>
+						</div>
+					</div>
+					<div class="group">
+						<div class="morpheme">
+							<span>ϩⲛ̄</span>
+							<span>in</span>
+							<span>prep.</span>
+						</div>
+						<div class="morpheme">
+							<span>ⲟⲩ</span>
+							<span>a</span>
+							<span>indef. art.</span>
+						</div>
+						<div class="morpheme">
+							<span>ϩⲙⲙⲉ</span>
+							<span>heat, warmth</span>
+							<span>n. (m.)</span>
+						</div>
+					</div>
+					<div class="group">
+						<div class="morpheme">
+							<span>ⲁⲩⲱ</span>
+							<span>and</span>
+							<span>conj.</span>
+						</div>
+					</div>
+					<div class="group">
+						<div class="morpheme">
+							<span>ⲛ̄ⲧⲉⲩⲛⲟⲩ</span>
+							<span>immediately, in the moment</span>
+							<span>adv.</span>
+						</div>
+					</div>
+					<div class="group">
+						<div class="morpheme">
+							<span>ⲁ-</span>
+							<span>did</span>
+							<span>prf.</span>
+						</div>
+						<div class="morpheme">
+							<span>ⲡ</span>
+							<span>the</span>
+							<span>def. art. (m.)</span>
+						</div>
+						<div class="morpheme">
+							<span>ⲣⲉϥⲙⲟⲟϣⲉ</span>
+							<span>walker, traveller</span>
+							<span>n. (m.)</span>
+						</div>
+					</div>
+					<div class="group">
+						<div class="morpheme">
+							<span>ⲕⲁⲁ</span>
+							<span>put, place</span>
+							<span>v.</span>
+						</div>
+						<div class="morpheme">
+							<span>ϥ</span>
+							<span>he</span>
+							<span>acc.</span>
+						</div>
+						<div class="morpheme">
+							<span>ⲕⲁϩⲏⲩ</span>
+							<span>strip, undress</span>
+							<span>v.</span>
+						</div>
+					</div>
+					<div class="group">
+						<div class="morpheme">
+							<span>ⲙ̄</span>
+							<span></span>
+							<span>d.o.</span>
+						</div>
+						<div class="morpheme">
+							<span>ⲡⲉϥ</span>
+							<span>his</span>
+							<span>poss. (m.)</span>
+						</div>
+						<div class="morpheme">
+							<span>ⲣϣⲱⲛ</span>
+							<span>cloak</span>
+							<span>n. (m.)</span>
+						</div>
+					</div>
+				</div>
+				<p>and at last the North Wind gave up the attempt. Then the Sun shined out warmly, and immediately the traveler took off his cloak.</p>
+				<div class="line">
+					<div class="group">
+						<div class="morpheme">
+							<span>ⲛ̄ⲧⲉⲓϩⲉ</span>
+							<span>like this, in this way</span>
+							<span>adv.</span>
+						</div>
+					</div>
+					<div class="group">
+						<div class="morpheme">
+							<span>ⲛⲉⲣⲉ-</span>
+							<span>was, were</span>
+							<span>impf.</span>
+						</div>
+						<div class="morpheme">
+							<span>ⲡ</span>
+							<span>the</span>
+							<span>def. art. (m.)</span>
+						</div>
+						<div class="morpheme">
+							<span>ⲧⲟⲩⲙϩⲓⲧ</span>
+							<span>north wind</span>
+							<span>n. (m.)</span>
+						</div>
+					</div>
+					<div class="group">
+						<div class="morpheme">
+							<span>ⲙⲏⲣ</span>
+							<span>bind</span>
+							<span>stat.</span>
+						</div>
+					</div>
+					<div class="group">
+						<div class="morpheme">
+							<span>ⲉ</span>
+							<span>(in order) to</span>
+							<span>prep.</span>
+						</div>
+						<div class="morpheme">
+							<span>ϩⲟⲙⲟⲗⲟⲅⲉⲓ</span>
+							<span>admit, confess</span>
+							<span>v.</span>
+						</div>
+					</div>
+					<div class="group">
+						<div class="morpheme">
+							<span>ϫⲉ</span>
+							<span>that</span>
+							<span>conj.</span>
+						</div>
+					</div>
+					<div class="group">
+						<div class="morpheme">
+							<span>ⲡ</span>
+							<span>the</span>
+							<span>def. art. (m.)</span>
+						</div>
+						<div class="morpheme">
+							<span>ⲣⲏ</span>
+							<span>sun</span>
+							<span>n. (m.)</span>
+						</div>
+					</div>
+					<div class="group">
+						<div class="morpheme">
+							<span>ⲡ</span>
+							<span>the</span>
+							<span>def. art. (m.)</span>
+						</div>
+						<div class="morpheme">
+							<span>ⲉⲧ</span>
+							<span>that, who</span>
+							<span>rel.</span>
+						</div>
+						<div class="morpheme">
+							<span>ϫⲱⲱⲣⲉ</span>
+							<span>be strong, victorious</span>
+							<span>v.</span>
+						</div>
+					</div>
+					<div class="group">
+						<div class="morpheme">
+							<span>ⲙ̄</span>
+							<span>of</span>
+							<span>gen.</span>
+						</div>
+						<div class="morpheme">
+							<span>ⲡⲉ</span>
+							<span>the</span>
+							<span>def. art. (m.)</span>
+						</div>
+						<div class="morpheme">
+							<span>ⲥⲛⲁⲩ</span>
+							<span>2</span>
+							<span>n. (m.)</span>
+						</div>
+					</div>
+				</div>
+				<p>And so the North Wind was obliged to confess that the Sun was the stronger of the two.</p>
 			</div>
-			<div style="display: none;" class="coptic">
-				<h3>Bohairic (WIP)</h3>
-				<p>ⲡⲑⲏⲟⲩ ⲛ̀ⲉⲙϩⲓⲧ ⲛⲉⲙ ⲫⲣⲏ ⲛⲁⲣⲉϣϭⲛⲏⲛ ⲛⲉⲙ ⲛⲟⲩⲉⲣⲏⲟⲩ ϫⲉ ⲛⲓⲙ ⲫⲏ ⲉⲧϫⲱⲣ</p>
-				<p>ⲁⲩⲥⲉⲙⲛⲏⲧⲥ ϫⲉ ⲡⲏ ⲉⲑⲛⲁⲉⲣ</p>
-				<p></p>
-				<p></p>
-				<p></p>
-			</div>
-			<div id="original">
+			<div id="english">
 				<p>The North Wind and the Sun were disputing which was the stronger, when a traveler came along wrapped in a warm cloak.</p>
 				<p>They agreed that the one who first succeeded in making the traveler take his cloak off should be considered stronger than the other.</p>
 				<p>Then the North Wind blew as hard as he could, but the more he blew the more closely did the traveler fold his cloak around him;</p>
 				<p>and at last the North Wind gave up the attempt. Then the Sun shined out warmly, and immediately the traveler took off his cloak.</p>
 				<p>And so the North Wind was obliged to confess that the Sun was the stronger of the two.</p>
-			</div>
-			<div style="display: none;" class="coptic" style="opacity: .2;">
-				<p>ⲡⲧⲏⲩ ⲛⲙϩⲓⲧ ⲙⲛ ⲡⲣⲏ ⲁⲩϯⲧⲱⲛ ⲙⲛ ⲛⲉⲩⲉⲣⲏⲩ ϫⲉ ⲛⲓⲙ ⲡⲉ ⲡϫⲱⲱⲣⲉ ⲉⲧⲛϩⲏⲧⲟⲩ ⲉϥⲛⲏⲩ ⲛϭⲓ ⲟⲩⲣⲉϥⲙⲟⲟϣⲉ ⲉϥϭⲟⲟⲗⲉ ⲛⲟⲩϩⲟⲉⲓⲧⲉ ⲉⲥⲑⲙⲙⲟ ⲙⲙⲟϥ.</p>
-				<p>ⲁⲩϥⲓ ⲙⲛ ⲛⲉⲩⲉⲣⲏⲩ ϫⲉ ⲡⲉⲧⲧⲣⲉⲡⲣⲉϥⲙⲟⲟϣⲉ ⲕⲱ ⲛⲧⲉϥϩⲟⲓⲧⲉ ⲉⲃⲟⲗ ⲛϣⲱⲣⲡ ⲡⲁⲓ ⲡⲉ ⲡϫⲱⲱⲣⲉ ⲉⲧⲛϩⲏⲧⲟⲩ.</p>
-				<p>ⲧⲟⲧⲉ ⲁϥⲛⲓϥⲉ ⲛϭⲓ ⲡⲧⲏⲩ ⲛⲙϩⲓⲧ ϩⲛⲟⲩϭⲟⲙ ⲧⲏⲣⲥ ⲛⲧⲁϥ ⲁⲗⲗⲁ ⲛϩⲟⲩⲟ ⲛⲉϥⲛⲓϥⲉ ⲛϩⲟⲩⲟ ⲛⲉⲣⲉⲡⲣⲉϥⲙⲟⲟϣⲉ ⲥⲟⲩⲟⲗⲟⲩⲗ ⲙⲙⲟϥ ϩⲛⲧⲉϥϩⲟⲓⲧⲉ. ⲙⲛⲛⲥⲱⲥ ⲡⲧⲏⲩ ⲛⲙϩⲓⲧ ⲁϥⲗⲟ ⲉϥϫⲱⲛⲧ.</p>
-				<p>ⲡⲣⲏ ⲇⲉ ⲁϥⲣⲟⲩⲟⲉⲓⲛ ϩⲛⲟⲩϩⲙⲟⲙ ⲁⲩⲱ ϩⲛⲧⲉⲟⲩⲛⲟⲩ ⲁϥⲕⲁⲧⲉϥϩⲟⲉⲓⲧⲉ ⲉⲃⲟⲗ ⲛϭⲓ ⲡⲣⲉϥⲙⲟⲟϣⲉ.</p>
-				<p>ⲁⲩⲱ ⲛⲧⲉⲓϩⲉ ⲁⲩⲕⲱⲱⲃⲉ ⲙⲡⲧⲏⲩ ⲛⲙϩⲓⲧ ϫⲉⲕⲁⲁⲥ ⲉϥⲉϫⲱ ⲙⲙⲟⲥ ϫⲉ ⲡⲣⲏ ⲡⲉⲧϫⲱⲱⲣⲉ ⲉⲧⲛϩⲏⲧⲟⲩ.</p>
 			</div>
 		</div>
 	</body>
