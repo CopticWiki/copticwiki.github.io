@@ -6,6 +6,7 @@
 		-->
 		<link rel="stylesheet" href="../styles/styles.css">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta charset="UTF-8">
 		<style>
 			body {
 				outline: none;
@@ -15,8 +16,22 @@
 				color: revert;
 				background: revert;
 			}
+			audio {
+				mix-blend-mode: lighten;
+				//background: cadetblue;
+				filter: invert(1);
+				width: 100%;
+				position: relative;
+				display: block;
+			}
+			audio:before {
+				//content: "QQQ";
+				//width: 100%;
+				//background: linear-gradient(to right, #ffffff77, transparent);
+				
+			}
 			#container {
-				display: initial;
+				margin-top: 1em;
 			}
 			#plain,
 			#bohairic,
@@ -25,7 +40,7 @@
 			}
 			#interlinear {
 				font-size: 1.5em;
-				margin-top: 3em;
+				//margin-top: 3em;
 			}
 			.line {
 				display: flex;
@@ -164,6 +179,7 @@
 		<h1>CopticWiki</h1>
 		<h2>The North Wind and the Sun</h2>
 		<div id="container">
+			 <audio controls src="./styles/North_Wind_and_the_Sun.wav"></audio>
 			<div id="plain" class="coptic">
 				<p>ⲡⲧⲟⲩⲙϩⲓⲧ ⲙⲛ̄ⲡⲣⲏ ⲛⲉⲩϯⲧⲱⲛ ⲙⲛ̄ⲛⲉⲩⲉⲣⲏⲩ ϫⲉ ⲛⲓⲙ ⲡⲉ ⲡϫⲱⲱⲣⲉ ⲉⲧⲛ̄ϩⲏⲧⲟⲩ ϩⲙ̄ⲡⲧⲣⲉϥⲃⲱⲕ ⲛ̄ϭⲓⲟⲩⲣⲉϥⲙⲟⲟϣⲉ ⲉϥϭⲟⲟⲗⲉ ⲛ̄ⲟⲩⲣϣⲱⲛ ⲉϥϩⲏⲙ.</p>
 				<p>ⲁⲩⲥⲙⲓⲛⲉ ⲙ̄ⲙⲟⲥ ϫⲉ ⲡⲉⲧⲛⲁⲣ̄ϣⲟⲣⲡ ⲉⲡⲕⲉⲟⲩⲁ ⲉⲧⲣⲉ-ⲡⲣⲉϥⲙⲟⲟϣⲉ ⲕⲁⲁϥ ⲕⲁϩⲏⲩ ⲙ̄ⲡⲉϥⲣϣⲱⲛ ⲉϥⲉϣⲱⲡⲉ ⲛ̄ⲧⲟⲟⲧⲟⲩ ϩⲱⲥ ⲡϫⲱⲱⲣⲉ ⲙ̄ⲡⲉⲥⲛⲁⲩ.</p>
