@@ -17,12 +17,24 @@
 				color: revert;
 				background: revert;
 			}
+			#player {
+				background: #ffffff88;
+				background: #1a1a1a;
+				position: sticky;
+				top: 0em;
+				//width: 100%;
+				//margin: 0 -2em;
+				z-index: 999;
+			}
 			audio {
 				mix-blend-mode: lighten;
 				//background: cadetblue;
+				//background: transparent;
 				filter: invert(1);
 				width: 100%;
-				position: relative;
+				//position: relative;
+				//left: 0;
+				//padding: 0 1em;
 				display: block;
 			}
 			audio:before {
@@ -30,6 +42,9 @@
 				//width: 100%;
 				//background: linear-gradient(to right, #ffffff77, transparent);
 				
+			}
+			.morpheme span.c {
+				transition: color .5s;
 			}
 
 			/* remove all glossing */
@@ -206,7 +221,9 @@
 		<h1>CopticWiki</h1>
 		<h2>The North Wind and the Sun</h2>
 		<div id="container">
-			 <audio controls src="./styles/North_Wind_and_the_Sun.wav"></audio>
+			<div id="player">
+				 <audio controls src="./styles/North_Wind_and_the_Sun.wav"></audio>
+			</div>
 			<div id="plain" class="coptic">
 				<p>ⲡⲧⲟⲩⲙϩⲓⲧ ⲙⲛ̄ⲡⲣⲏ ⲛⲉⲩϯⲧⲱⲛ ⲙⲛ̄ⲛⲉⲩⲉⲣⲏⲩ ϫⲉ ⲛⲓⲙ ⲡⲉ ⲡϫⲱⲱⲣⲉ ⲉⲧⲛ̄ϩⲏⲧⲟⲩ ϩⲙ̄ⲡⲧⲣⲉϥⲃⲱⲕ ⲛ̄ϭⲓⲟⲩⲣⲉϥⲙⲟⲟϣⲉ ⲉϥϭⲟⲟⲗⲉ ⲛ̄ⲟⲩⲣϣⲱⲛ ⲉϥϩⲏⲙ.</p>
 				<p>ⲁⲩⲥⲙⲓⲛⲉ ⲙ̄ⲙⲟⲥ ϫⲉ ⲡⲉⲧⲛⲁⲣ̄ϣⲟⲣⲡ ⲉⲡⲕⲉⲟⲩⲁ ⲉⲧⲣⲉ-ⲡⲣⲉϥⲙⲟⲟϣⲉ ⲕⲁⲁϥ ⲕⲁϩⲏⲩ ⲙ̄ⲡⲉϥⲣϣⲱⲛ ⲉϥⲉϣⲱⲡⲉ ⲛ̄ⲧⲟⲟⲧⲟⲩ ϩⲱⲥ ⲡϫⲱⲱⲣⲉ ⲙ̄ⲡⲉⲥⲛⲁⲩ.</p>
@@ -1084,18 +1101,186 @@
 			const morphemes = document.getElementsByClassName("c");
 			
 			let myAudio = document.querySelector("audio");
-			let myTimestamp = myAudio.currentTime;
-			let myCount = 0.25;
-			let c = 0;
+			//let myTimestamp = myAudio.currentTime;
+			let morphemeList = [
+				0.1,
+				0.11,
+				0.51,
+				0.52,
+				0.53,
+				1.2,
+				1.21,
+				1.22,
+				1.9,
+				1.91,
+				1.92,
+				2.9,
+				3.1,
+				3.2,
+				3.5,
+				3.51,
+				3.9,
+				3.91,
+				3.92,
+				5.4,
+				5.41,
+				5.42,
+				6.3,
+				6.31,
+				6.32,
+				7.7,
+				7.71,
+				7.72,
+				8.3,
+				8.31,
+				8.32,
+				8.9,
+				8.91,
+				8.92,
+				//
+				10.7,
+				10.71,
+				10.72,
+				11.1,
+				11.11,
+				11.4,
+				11.6,
+				11.61,
+				11.62,
+				11.63,
+				12.1,
+				12.11,
+				12.12,
+				12.13,
+				13.1,
+				13.11,
+				13.12,
+				14.2,
+				14.21,
+				14.22,
+				15.1,
+				15.11,
+				15.12,
+				16.3,
+				16.31,
+				16.9,
+				16.91,
+				17.9,
+				17.91,
+				17.92,
+				18.8,
+				18.81,
+				18.82,
+				//
+				20.4,
+				20.7,
+				20.71,
+				20.72,
+				21.3,
+				21.31,
+				21.32,
+				22.2,
+				22.21,
+				22.22,
+				22.8,
+				22.81,
+				24.0,
+				24.3,
+				24.5,
+				24.51,
+				24.52,
+				25.2,
+				25.21,
+				26.0,
+				26.5,
+				27.0,
+				27.01,
+				27.02,
+				27.6,
+				27.61,
+				28.3,
+				28.31,
+				28.32,
+				//
+				29.8,
+				30.4,
+				30.41,
+				30.42,
+				30.8,
+				30.81,
+				30.82,
+				31.3,
+				31.31,
+				31.32,
+				33.0,
+				33.3,
+				33.31,
+				33.32,
+				33.7,
+				34.2,
+				34.6,
+				34.61,
+				34.62,
+				35.8,
+				36.0,
+				37.0,
+				37.01,
+				37.02,
+				37.7,
+				37.71,
+				37.72,
+				38.4,
+				38.41,
+				38.42,
+				//
+				40.0,
+				40.8,
+				40.81,
+				40.82,
+				41.6,
+				41.8,
+				41.81,
+				42.9,
+				43.3,
+				43.31,
+				43.7,
+				43.71,
+				43.72,
+				44.7,
+				44.71,
+				44.72
+				//46.03356
+			];
+			let jumpToLine = [
+				[0, 0],
+				[9.511111, 500],
+				[20.0, 1000],
+				[29.0, 1500],
+				[39.0, 2000]
+			];
+			//let myCountPrev = morphemeList[0];
+			//let myCountNext = morphemeList[1];
+			//let totalTime = morphemeList[0];
 			myAudio.addEventListener("timeupdate", () => {
-				if (myAudio.currentTime > myCount) {
-					
-					console.log(myCount);
-					morphemes[c].style.color = "gold";
-					c++;
-					myCount += 0.25;
-					//myAudio.style.mixBlendMode = "normal";
+				for (i = 0; i < morphemes.length; i++) {
+					morphemes[i].style.color = "gray";
 				}
+				for (i = 0; i < morphemes.length; i++) {
+					if (morphemeList[i] < myAudio.currentTime) {
+						morphemes[i].style.color = "gold";
+					}
+				}
+				/*
+				for (j = 0; j < jumpToLine.length; j++) {
+					if (jumpToLine[j][0] <= myAudio.currentTime) {
+						console.log ("test");
+						window.scrollTo({
+							top: jumpToLine[j][1],
+							behavior: "smooth"
+						});
+					}
+				}
+				*/
 			});
 
 			
