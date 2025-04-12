@@ -11,6 +11,7 @@
 			body {
 				outline: none;
 				margin: .5em;
+				transition: background .2s;
 			}
 			::selection {
 				color: revert;
@@ -30,6 +31,32 @@
 				//background: linear-gradient(to right, #ffffff77, transparent);
 				
 			}
+
+			/* remove all glossing */
+			/*
+			.morpheme span.c {
+				color: #222222;
+				transition: color .5s;
+			}
+			.group .morpheme {
+				border-left: none !important;
+			}
+			.morpheme span:nth-child(1) {
+				padding: .2em 0em .2em !important;
+				background: transparent !important;
+			}
+			.morpheme span:nth-child(2),
+			.morpheme span:nth-child(3) {
+				display: none;
+			}
+			.line {
+				gap: 0em !important;
+			}
+			.line .group:after {
+				content: "\00a0";
+			}
+			*/
+			
 			#container {
 				margin-top: 1em;
 			}
@@ -198,198 +225,198 @@
 				<div class="line">
 					<div class="group">
 						<div class="morpheme">
-							<span>ⲡ</span>
+							<span class="c">ⲡ</span>
 							<span>the</span>
 							<span>def. art. (m.)</span>
 						</div>
 						<div class="morpheme">
-							<span>ⲧⲟⲩⲙϩⲓⲧ</span>
+							<span class="c">ⲧⲟⲩⲙϩⲓⲧ</span>
 							<span>north wind</span>
 							<span>n. (m.)</span>
 						</div>
 					</div>
 					<div class="group">
 						<div class="morpheme">
-							<span>ⲙⲛ̄</span>
+							<span class="c">ⲙⲛ̄</span>
 							<span>and</span>
 							<span>conj.</span>
 						</div>
 						<div class="morpheme">
-							<span>ⲡ</span>
+							<span class="c">ⲡ</span>
 							<span>the</span>
 							<span>def. art. (m.)</span>
 						</div>
 						<div class="morpheme">
-							<span>ⲣⲏ</span>
+							<span class="c">ⲣⲏ</span>
 							<span>sun</span>
 							<span>n. (m.)</span>
 						</div>
 					</div>
 					<div class="group">
 						<div class="morpheme">
-							<span>ⲛⲉ</span>
+							<span class="c">ⲛⲉ</span>
 							<span>were</span>
 							<span>impf.</span>
 						</div>
 						<div class="morpheme">
-							<span>ⲩ</span>
+							<span class="c">ⲩ</span>
 							<span>they</span>
 							<span>nom.</span>
 						</div>
 						<div class="morpheme">
-							<span>ϯⲧⲱⲛ</span>
+							<span class="c">ϯⲧⲱⲛ</span>
 							<span>be contentious, argue</span>
 							<span>v.</span>
 						</div>
 					</div>
 					<div class="group">
 						<div class="morpheme">
-							<span>ⲙⲛ̄</span>
+							<span class="c">ⲙⲛ̄</span>
 							<span>with</span>
 							<span>conj.</span>
 						</div>
 						<div class="morpheme">
-							<span>ⲛⲉⲩ</span>
+							<span class="c">ⲛⲉⲩ</span>
 							<span>their</span>
 							<span>poss. (pl.)</span>
 						</div>
 						<div class="morpheme">
-							<span>ⲉⲣⲏⲩ</span>
+							<span class="c">ⲉⲣⲏⲩ</span>
 							<span>each other</span>
 							<span>n.</span>
 						</div>
 					</div>
 					<div class="group">
 						<div class="morpheme">
-							<span>ϫⲉ</span>
+							<span class="c">ϫⲉ</span>
 							<span>that</span>
 							<span>conj.</span>
 						</div>
 					</div>
 					<div class="group">
 						<div class="morpheme">
-							<span>ⲛⲓⲙ</span>
+							<span class="c">ⲛⲓⲙ</span>
 							<span>who</span>
 							<span>wh.</span>
 						</div>
 					</div>
 					<div class="group">
 						<div class="morpheme">
-							<span>ⲡⲉ</span>
+							<span class="c">ⲡⲉ</span>
 							<span>be</span>
 							<span>cop. (m.)</span>
 						</div>
 					</div>
 					<div class="group">
 						<div class="morpheme">
-							<span>ⲡ</span>
+							<span class="c">ⲡ</span>
 							<span>the</span>
 							<span>def. art. (m.)</span>
 						</div>
 						<div class="morpheme">
-							<span>ϫⲱⲱⲣⲉ</span>
+							<span class="c">ϫⲱⲱⲣⲉ</span>
 							<span>strong, victorious</span>
 							<span>n.</span>
 						</div>
 					</div>
 					<div class="group">
 						<div class="morpheme">
-							<span>ⲉⲧ</span>
+							<span class="c">ⲉⲧ</span>
 							<span>that</span>
 							<span>rel.</span>
 						</div>
 						<div class="morpheme">
-							<span>ⲛ̄ϩⲏⲧ</span>
+							<span class="c">ⲛ̄ϩⲏⲧ</span>
 							<span>in</span>
 							<span>prep.</span>
 						</div>
 						<div class="morpheme">
-							<span>ⲟⲩ</span>
+							<span class="c">ⲟⲩ</span>
 							<span>they</span>
 							<span>gen.</span>
 						</div>
 					</div>
 					<div class="group">
 						<div class="morpheme">
-							<span>ϩⲙ̄ⲡⲧⲣⲉ</span>
+							<span class="c">ϩⲙ̄ⲡⲧⲣⲉ</span>
 							<span>whilst, as</span>
 							<span>prep.</span>
 						</div>
 						<div class="morpheme">
-							<span>ϥ</span>
+							<span class="c">ϥ</span>
 							<span>he</span>
 							<span>nom.</span>
 						</div>
 						<div class="morpheme">
-							<span>ⲃⲱⲕ</span>
+							<span class="c">ⲃⲱⲕ</span>
 							<span>go</span>
 							<span>v.</span>
 						</div>
 					</div>
 					<div class="group">
 						<div class="morpheme">
-							<span>ⲛ̄ϭⲓ</span>
+							<span class="c">ⲛ̄ϭⲓ</span>
 							<span>namely</span>
 							<span>particle</span>
 						</div>
 						<div class="morpheme">
-							<span>ⲟⲩ</span>
+							<span class="c">ⲟⲩ</span>
 							<span>a</span>
 							<span>indef. art.</span>
 						</div>
 						<div class="morpheme">
-							<span>ⲣⲉϥⲙⲟⲟϣⲉ</span>
+							<span class="c">ⲣⲉϥⲙⲟⲟϣⲉ</span>
 							<span>walker, traveller</span>
 							<span>n. (m.)</span>
 						</div>
 					</div>
 					<div class="group">
 						<div class="morpheme">
-							<span>ⲉ</span>
+							<span class="c">ⲉ</span>
 							<span></span>
 							<span>circ.</span>
 						</div>
 						<div class="morpheme">
-							<span>ϥ</span>
+							<span class="c">ϥ</span>
 							<span>he</span>
 							<span>nom.</span>
 						</div>
 						<div class="morpheme">
-							<span>ϭⲟⲟⲗⲉ</span>
+							<span class="c">ϭⲟⲟⲗⲉ</span>
 							<span>wrap</span>
 							<span>stat.</span>
 						</div>
 					</div>
 					<div class="group">
 						<div class="morpheme">
-							<span>ⲛ̄</span>
+							<span class="c">ⲛ̄</span>
 							<span></span>
 							<span>d.o.</span>
 						</div>
 						<div class="morpheme">
-							<span>ⲟⲩ</span>
+							<span class="c">ⲟⲩ</span>
 							<span>a</span>
 							<span>indef. art.</span>
 						</div>
 						<div class="morpheme">
-							<span>ⲣϣⲱⲛ</span>
+							<span class="c">ⲣϣⲱⲛ</span>
 							<span>cloak</span>
 							<span>n. (m.)</span>
 						</div>
 					</div>
 					<div class="group">
 						<div class="morpheme">
-							<span>ⲉ</span>
+							<span class="c">ⲉ</span>
 							<span></span>
 							<span>circ.</span>
 						</div>
 						<div class="morpheme">
-							<span>ϥ</span>
+							<span class="c">ϥ</span>
 							<span>he</span>
 							<span>nom.</span>
 						</div>
 						<div class="morpheme">
-							<span>ϩⲏⲙ</span>
+							<span class="c">ϩⲏⲙ</span>
 							<span>be(come) warm</span>
 							<span>stat.</span>
 						</div>
@@ -399,189 +426,189 @@
 				<div class="line">
 					<div class="group">
 						<div class="morpheme">
-							<span>ⲁ</span>
+							<span class="c">ⲁ</span>
 							<span>did</span>
 							<span>prf.</span>
 						</div>
 						<div class="morpheme">
-							<span>ⲩ</span>
+							<span class="c">ⲩ</span>
 							<span>they</span>
 							<span>nom.</span>
 						</div>
 						<div class="morpheme">
-							<span>ⲥⲙⲓⲛⲉ</span>
+							<span class="c">ⲥⲙⲓⲛⲉ</span>
 							<span>establish, settle</span>
 							<span>v.</span>
 						</div>
 					</div>
 					<div class="group">
 						<div class="morpheme">
-							<span>ⲙ̄ⲙⲟ</span>
+							<span class="c">ⲙ̄ⲙⲟ</span>
 							<span></span>
 							<span>d.o.</span>
 						</div>
 						<div class="morpheme">
-							<span>ⲥ</span>
+							<span class="c">ⲥ</span>
 							<span>she</span>
 							<span>acc.</span>
 						</div>
 					</div>
 					<div class="group">
 						<div class="morpheme">
-							<span>ϫⲉ</span>
+							<span class="c">ϫⲉ</span>
 							<span>that</span>
 							<span>conj.</span>
 						</div>
 					</div>
 					<div class="group">
 						<div class="morpheme">
-							<span>ⲡ</span>
+							<span class="c">ⲡ</span>
 							<span>the</span>
 							<span>def. art. (m.)</span>
 						</div>
 						<div class="morpheme">
-							<span>ⲉⲧ</span>
+							<span class="c">ⲉⲧ</span>
 							<span>that, who</span>
 							<span>rel.</span>
 						</div>
 						<div class="morpheme">
-							<span>ⲛⲁ</span>
+							<span class="c">ⲛⲁ</span>
 							<span>will</span>
 							<span>fut.</span>
 						</div>
 						<div class="morpheme">
-							<span>ⲣ̄ϣⲟⲣⲡ</span>
+							<span class="c">ⲣ̄ϣⲟⲣⲡ</span>
 							<span>precede, be first</span>
 							<span>v.</span>
 						</div>
 					</div>
 					<div class="group">
 						<div class="morpheme">
-							<span>ⲉ</span>
+							<span class="c">ⲉ</span>
 							<span></span>
 							<span>circ.</span>
 						</div>
 						<div class="morpheme">
-							<span>ⲡ</span>
+							<span class="c">ⲡ</span>
 							<span>the</span>
 							<span>def. art. (m.)</span>
 						</div>
 						<div class="morpheme">
-							<span>ⲕⲉ</span>
+							<span class="c">ⲕⲉ</span>
 							<span>other</span>
 							<span>det.</span>
 						</div>
 						<div class="morpheme">
-							<span>ⲟⲩⲁ</span>
+							<span class="c">ⲟⲩⲁ</span>
 							<span>1, (some)one</span>
 							<span>n. (m.)</span>
 						</div>
 					</div>
 					<div class="group">
 						<div class="morpheme">
-							<span>ⲉⲧⲣⲉ-</span>
+							<span class="c">ⲉⲧⲣⲉ-</span>
 							<span>cause to do</span>
 							<span>caus.</span>
 						</div>
 						<div class="morpheme">
-							<span>ⲡ</span>
+							<span class="c">ⲡ</span>
 							<span>the</span>
 							<span>def. art. (m.)</span>
 						</div>
 						<div class="morpheme">
-							<span>ⲣⲉϥⲙⲟⲟϣⲉ</span>
+							<span class="c">ⲣⲉϥⲙⲟⲟϣⲉ</span>
 							<span>walker, traveller</span>
 							<span>n. (m.)</span>
 						</div>
 					</div>
 					<div class="group">
 						<div class="morpheme">
-							<span>ⲕⲁⲁ</span>
+							<span class="c">ⲕⲁⲁ</span>
 							<span>put, place</span>
 							<span>v.</span>
 						</div>
 						<div class="morpheme">
-							<span>ϥ</span>
+							<span class="c">ϥ</span>
 							<span>he</span>
 							<span>acc.</span>
 						</div>
 						<div class="morpheme">
-							<span>ⲕⲁϩⲏⲩ</span>
+							<span class="c">ⲕⲁϩⲏⲩ</span>
 							<span>strip, undress</span>
 							<span>v.</span>
 						</div>
 					</div>
 					<div class="group">
 						<div class="morpheme">
-							<span>ⲙ̄</span>
+							<span class="c">ⲙ̄</span>
 							<span></span>
 							<span>d.o.</span>
 						</div>
 						<div class="morpheme">
-							<span>ⲡⲉϥ</span>
+							<span class="c">ⲡⲉϥ</span>
 							<span>his</span>
 							<span>poss. (m.)</span>
 						</div>
 						<div class="morpheme">
-							<span>ⲣϣⲱⲛ</span>
+							<span class="c">ⲣϣⲱⲛ</span>
 							<span>cloak</span>
 							<span>n. (m.)</span>
 						</div>
 					</div>
 					<div class="group">
 						<div class="morpheme">
-							<span>ⲉϥⲉ</span>
+							<span class="c">ⲉϥⲉ</span>
 							<span>shall</span>
 							<span>opt.</span>
 						</div>
 						<div class="morpheme">
-							<span>ϣⲱⲡⲉ</span>
+							<span class="c">ϣⲱⲡⲉ</span>
 							<span>be(come), happen, exist</span>
 							<span>v.</span>
 						</div>
 					</div>
 					<div class="group">
 						<div class="morpheme">
-							<span>ⲛ̄ⲧⲟⲟⲧ</span>
+							<span class="c">ⲛ̄ⲧⲟⲟⲧ</span>
 							<span>in the hand(s) of</span>
 							<span>prep.</span>
 						</div>
 						<div class="morpheme">
-							<span>ⲟⲩ</span>
+							<span class="c">ⲟⲩ</span>
 							<span>they</span>
 							<span>gen.</span>
 						</div>
 					</div>
 					<div class="group">
 						<div class="morpheme">
-							<span>ϩⲱⲥ</span>
+							<span class="c">ϩⲱⲥ</span>
 							<span>as (if)</span>
 							<span>prep.</span>
 						</div>
 						<div class="morpheme">
-							<span>ⲡ</span>
+							<span class="c">ⲡ</span>
 							<span>the</span>
 							<span>def. art. (m.)</span>
 						</div>
 						<div class="morpheme">
-							<span>ϫⲱⲱⲣⲉ</span>
+							<span class="c">ϫⲱⲱⲣⲉ</span>
 							<span>strong, victorious</span>
 							<span>n. (m.)</span>
 						</div>
 					</div>
 					<div class="group">
 						<div class="morpheme">
-							<span>ⲙ̄</span>
+							<span class="c">ⲙ̄</span>
 							<span>of</span>
 							<span>gen.</span>
 						</div>
 						<div class="morpheme">
-							<span>ⲡⲉ</span>
+							<span class="c">ⲡⲉ</span>
 							<span>the</span>
 							<span>def. art. (m.)</span>
 						</div>
 						<div class="morpheme">
-							<span>ⲥⲛⲁⲩ</span>
+							<span class="c">ⲥⲛⲁⲩ</span>
 							<span>2</span>
 							<span>n. (m.)</span>
 						</div>
@@ -591,173 +618,173 @@
 				<div class="line">
 					<div class="group">
 						<div class="morpheme">
-							<span>ⲧⲟⲧⲉ</span>
+							<span class="c">ⲧⲟⲧⲉ</span>
 							<span>then</span>
 							<span>adv.</span>
 						</div>
 					</div>
 					<div class="group">
 						<div class="morpheme">
-							<span>ⲁ</span>
+							<span class="c">ⲁ</span>
 							<span>did</span>
 							<span>prf.</span>
 						</div>
 						<div class="morpheme">
-							<span>ϥ</span>
+							<span class="c">ϥ</span>
 							<span>he</span>
 							<span>nom.</span>
 						</div>
 						<div class="morpheme">
-							<span>ⲛⲓϥⲉ</span>
+							<span class="c">ⲛⲓϥⲉ</span>
 							<span>blow, breathe</span>
 							<span>v.</span>
 						</div>
 					</div>
 					<div class="group">
 						<div class="morpheme">
-							<span>ⲛ̄ϭⲓ</span>
+							<span class="c">ⲛ̄ϭⲓ</span>
 							<span>namely</span>
 							<span>pvp.</span>
 						</div>
 						<div class="morpheme">
-							<span>ⲡ</span>
+							<span class="c">ⲡ</span>
 							<span>the</span>
 							<span>def. art. (m.)</span>
 						</div>
 						<div class="morpheme">
-							<span>ⲧⲟⲩⲙϩⲓⲧ</span>
+							<span class="c">ⲧⲟⲩⲙϩⲓⲧ</span>
 							<span>north wind</span>
 							<span>n. (m.)</span>
 						</div>
 					</div>
 					<div class="group">
 						<div class="morpheme">
-							<span>ϩⲛ̄</span>
+							<span class="c">ϩⲛ̄</span>
 							<span>in</span>
 							<span>prep.</span>
 						</div>
 						<div class="morpheme">
-							<span>ⲧⲉϥ</span>
+							<span class="c">ⲧⲉϥ</span>
 							<span>his</span>
 							<span>poss. (f.)</span>
 						</div>
 						<div class="morpheme">
-							<span>ϭⲟⲙ</span>
+							<span class="c">ϭⲟⲙ</span>
 							<span>power, might</span>
 							<span>n. (f.)</span>
 						</div>
 					</div>
 					<div class="group">
 						<div class="morpheme">
-							<span>ⲧⲏⲣ</span>
+							<span class="c">ⲧⲏⲣ</span>
 							<span>whole, entire</span>
 							<span>adj.</span>
 						</div>
 						<div class="morpheme">
-							<span>ⲥ̄</span>
+							<span class="c">ⲥ̄</span>
 							<span>she</span>
 							<span>gen.</span>
 						</div>
 					</div>
 					<div class="group">
 						<div class="morpheme">
-							<span>ϩⲟⲥⲟⲛ</span>
+							<span class="c">ϩⲟⲥⲟⲛ</span>
 							<span>as much as</span>
 							<span>adv.</span>
 						</div>
 					</div>
 					<div class="group">
 						<div class="morpheme">
-							<span>ⲇⲉ</span>
+							<span class="c">ⲇⲉ</span>
 							<span>and, but</span>
 							<span>conj.</span>
 						</div>
 					</div>
 					<div class="group">
 						<div class="morpheme">
-							<span>ⲁ</span>
+							<span class="c">ⲁ</span>
 							<span>did</span>
 							<span>prf.</span>
 						</div>
 						<div class="morpheme">
-							<span>ϥ</span>
+							<span class="c">ϥ</span>
 							<span>he</span>
 							<span>nom.</span>
 						</div>
 						<div class="morpheme">
-							<span>ⲛⲓϥⲉ</span>
+							<span class="c">ⲛⲓϥⲉ</span>
 							<span>blow, breathe</span>
 							<span>v.</span>
 						</div>
 					</div>
 					<div class="group">
 						<div class="morpheme">
-							<span>ⲡ</span>
+							<span class="c">ⲡ</span>
 							<span>the</span>
 							<span>def. art. (m.)</span>
 						</div>
 						<div class="morpheme">
-							<span>ⲣⲉϥⲙⲟⲟϣⲉ</span>
+							<span class="c">ⲣⲉϥⲙⲟⲟϣⲉ</span>
 							<span>walker, traveller</span>
 							<span>n. (m.)</span>
 						</div>
 					</div>
 					<div class="group">
 						<div class="morpheme">
-							<span>ⲛ̄ϩⲟⲩⲟ</span>
+							<span class="c">ⲛ̄ϩⲟⲩⲟ</span>
 							<span>more</span>
 							<span>adv.</span>
 						</div>
 					</div>
 					<div class="group">
 						<div class="morpheme">
-							<span>ⲟⲛ</span>
+							<span class="c">ⲟⲛ</span>
 							<span>again, still, yet</span>
 							<span>adv.</span>
 						</div>
 					</div>
 					<div class="group">
 						<div class="morpheme">
-							<span>ⲉ</span>
+							<span class="c">ⲉ</span>
 							<span></span>
 							<span>circ.</span>
 						</div>
 						<div class="morpheme">
-							<span>ϥ</span>
+							<span class="c">ϥ</span>
 							<span>he</span>
 							<span>nom.</span>
 						</div>
 						<div class="morpheme">
-							<span>ⲥⲟⲩⲟⲗⲟⲩⲗ</span>
+							<span class="c">ⲥⲟⲩⲟⲗⲟⲩⲗ</span>
 							<span>wrap, bundle</span>
 							<span>v.</span>
 						</div>
 					</div>
 					<div class="group">
 						<div class="morpheme">
-							<span>ⲙ̄ⲙⲟ</span>
+							<span class="c">ⲙ̄ⲙⲟ</span>
 							<span></span>
 							<span>d.o.</span>
 						</div>
 						<div class="morpheme">
-							<span>ϥ</span>
+							<span class="c">ϥ</span>
 							<span>he</span>
 							<span>acc.</span>
 						</div>
 					</div>
 					<div class="group">
 						<div class="morpheme">
-							<span>ϩⲙ̄</span>
+							<span class="c">ϩⲙ̄</span>
 							<span>in</span>
 							<span>prep.</span>
 						</div>
 						<div class="morpheme">
-							<span>ⲡⲉϥ</span>
+							<span class="c">ⲡⲉϥ</span>
 							<span>his</span>
 							<span>poss. (m.)</span>
 						</div>
 						<div class="morpheme">
-							<span>ⲣϣⲱⲛ</span>
+							<span class="c">ⲣϣⲱⲛ</span>
 							<span>cloak</span>
 							<span>n. (m.)</span>
 						</div>
@@ -767,178 +794,178 @@
 				<div class="line">
 					<div class="group">
 						<div class="morpheme">
-							<span>ⲗⲟⲓⲡⲟⲛ</span>
+							<span class="c">ⲗⲟⲓⲡⲟⲛ</span>
 							<span>at last, anyway</span>
 							<span>conj.</span>
 						</div>
 					</div>
 					<div class="group">
 						<div class="morpheme">
-							<span>ⲁ</span>
+							<span class="c">ⲁ</span>
 							<span>did</span>
 							<span>prf.</span>
 						</div>
 						<div class="morpheme">
-							<span>ϥ</span>
+							<span class="c">ϥ</span>
 							<span>he</span>
 							<span>nom.</span>
 						</div>
 						<div class="morpheme">
-							<span>ⲗⲟ</span>
+							<span class="c">ⲗⲟ</span>
 							<span>stop, cease</span>
 							<span>v.</span>
 						</div>
 					</div>
 					<div class="group">
 						<div class="morpheme">
-							<span>ⲉ</span>
+							<span class="c">ⲉ</span>
 							<span></span>
 							<span>circ.</span>
 						</div>
 						<div class="morpheme">
-							<span>ϥ</span>
+							<span class="c">ϥ</span>
 							<span>he</span>
 							<span>nom.</span>
 						</div>
 						<div class="morpheme">
-							<span>ϫⲱⲛⲧ</span>
+							<span class="c">ϫⲱⲛⲧ</span>
 							<span>try, attempt</span>
 							<span>v.</span>
 						</div>
 					</div>
 					<div class="group">
 						<div class="morpheme">
-							<span>ⲛ̄ϭⲓ</span>
+							<span class="c">ⲛ̄ϭⲓ</span>
 							<span>namely</span>
 							<span>pvp.</span>
 						</div>
 						<div class="morpheme">
-							<span>ⲡ</span>
+							<span class="c">ⲡ</span>
 							<span>the</span>
 							<span>def. art. (m.)</span>
 						</div>
 						<div class="morpheme">
-							<span>ⲧⲟⲩⲙϩⲓⲧ</span>
+							<span class="c">ⲧⲟⲩⲙϩⲓⲧ</span>
 							<span>north wind</span>
 							<span>n. (m.)</span>
 						</div>
 					</div>
 					<div class="group">
 						<div class="morpheme">
-							<span>ⲧⲟⲧⲉ</span>
+							<span class="c">ⲧⲟⲧⲉ</span>
 							<span>then</span>
 							<span>adv.</span>
 						</div>
 					</div>
 					<div class="group">
 						<div class="morpheme">
-							<span>ⲁ-</span>
+							<span class="c">ⲁ-</span>
 							<span>did</span>
 							<span>prf.</span>
 						</div>
 						<div class="morpheme">
-							<span>ⲡ</span>
+							<span class="c">ⲡ</span>
 							<span>the</span>
 							<span>def. art. (m.)</span>
 						</div>
 						<div class="morpheme">
-							<span>ⲣⲏ</span>
+							<span class="c">ⲣⲏ</span>
 							<span>sun</span>
 							<span>n. (m.)</span>
 						</div>
 					</div>
 					<div class="group">
 						<div class="morpheme">
-							<span>ⲣ̄ⲟⲩⲟⲉⲓⲛ</span>
+							<span class="c">ⲣ̄ⲟⲩⲟⲉⲓⲛ</span>
 							<span>be(come) light, shine, illuminate</span>
 							<span>v.</span>
 						</div>
 					</div>
 					<div class="group">
 						<div class="morpheme">
-							<span>ⲉⲃⲟⲗ</span>
+							<span class="c">ⲉⲃⲟⲗ</span>
 							<span>out, away</span>
 							<span>adv.</span>
 						</div>
 					</div>
 					<div class="group">
 						<div class="morpheme">
-							<span>ϩⲛ̄</span>
+							<span class="c">ϩⲛ̄</span>
 							<span>in</span>
 							<span>prep.</span>
 						</div>
 						<div class="morpheme">
-							<span>ⲟⲩ</span>
+							<span class="c">ⲟⲩ</span>
 							<span>a</span>
 							<span>indef. art.</span>
 						</div>
 						<div class="morpheme">
-							<span>ϩⲙⲙⲉ</span>
+							<span class="c">ϩⲙⲙⲉ</span>
 							<span>heat, warmth</span>
 							<span>n. (m.)</span>
 						</div>
 					</div>
 					<div class="group">
 						<div class="morpheme">
-							<span>ⲁⲩⲱ</span>
+							<span class="c">ⲁⲩⲱ</span>
 							<span>and</span>
 							<span>conj.</span>
 						</div>
 					</div>
 					<div class="group">
 						<div class="morpheme">
-							<span>ⲛ̄ⲧⲉⲩⲛⲟⲩ</span>
+							<span class="c">ⲛ̄ⲧⲉⲩⲛⲟⲩ</span>
 							<span>immediately, in the moment</span>
 							<span>adv.</span>
 						</div>
 					</div>
 					<div class="group">
 						<div class="morpheme">
-							<span>ⲁ-</span>
+							<span class="c">ⲁ-</span>
 							<span>did</span>
 							<span>prf.</span>
 						</div>
 						<div class="morpheme">
-							<span>ⲡ</span>
+							<span class="c">ⲡ</span>
 							<span>the</span>
 							<span>def. art. (m.)</span>
 						</div>
 						<div class="morpheme">
-							<span>ⲣⲉϥⲙⲟⲟϣⲉ</span>
+							<span class="c">ⲣⲉϥⲙⲟⲟϣⲉ</span>
 							<span>walker, traveller</span>
 							<span>n. (m.)</span>
 						</div>
 					</div>
 					<div class="group">
 						<div class="morpheme">
-							<span>ⲕⲁⲁ</span>
+							<span class="c">ⲕⲁⲁ</span>
 							<span>put, place</span>
 							<span>v.</span>
 						</div>
 						<div class="morpheme">
-							<span>ϥ</span>
+							<span class="c">ϥ</span>
 							<span>he</span>
 							<span>acc.</span>
 						</div>
 						<div class="morpheme">
-							<span>ⲕⲁϩⲏⲩ</span>
+							<span class="c">ⲕⲁϩⲏⲩ</span>
 							<span>strip, undress</span>
 							<span>v.</span>
 						</div>
 					</div>
 					<div class="group">
 						<div class="morpheme">
-							<span>ⲙ̄</span>
+							<span class="c">ⲙ̄</span>
 							<span></span>
 							<span>d.o.</span>
 						</div>
 						<div class="morpheme">
-							<span>ⲡⲉϥ</span>
+							<span class="c">ⲡⲉϥ</span>
 							<span>his</span>
 							<span>poss. (m.)</span>
 						</div>
 						<div class="morpheme">
-							<span>ⲣϣⲱⲛ</span>
+							<span class="c">ⲣϣⲱⲛ</span>
 							<span>cloak</span>
 							<span>n. (m.)</span>
 						</div>
@@ -948,96 +975,96 @@
 				<div class="line">
 					<div class="group">
 						<div class="morpheme">
-							<span>ⲛ̄ⲧⲉⲓϩⲉ</span>
+							<span class="c">ⲛ̄ⲧⲉⲓϩⲉ</span>
 							<span>like this, in this way</span>
 							<span>adv.</span>
 						</div>
 					</div>
 					<div class="group">
 						<div class="morpheme">
-							<span>ⲛⲉⲣⲉ-</span>
+							<span class="c">ⲛⲉⲣⲉ-</span>
 							<span>was, were</span>
 							<span>impf.</span>
 						</div>
 						<div class="morpheme">
-							<span>ⲡ</span>
+							<span class="c">ⲡ</span>
 							<span>the</span>
 							<span>def. art. (m.)</span>
 						</div>
 						<div class="morpheme">
-							<span>ⲧⲟⲩⲙϩⲓⲧ</span>
+							<span class="c">ⲧⲟⲩⲙϩⲓⲧ</span>
 							<span>north wind</span>
 							<span>n. (m.)</span>
 						</div>
 					</div>
 					<div class="group">
 						<div class="morpheme">
-							<span>ⲙⲏⲣ</span>
+							<span class="c">ⲙⲏⲣ</span>
 							<span>bind</span>
 							<span>stat.</span>
 						</div>
 					</div>
 					<div class="group">
 						<div class="morpheme">
-							<span>ⲉ</span>
+							<span class="c">ⲉ</span>
 							<span>(in order) to</span>
 							<span>prep.</span>
 						</div>
 						<div class="morpheme">
-							<span>ϩⲟⲙⲟⲗⲟⲅⲉⲓ</span>
+							<span class="c">ϩⲟⲙⲟⲗⲟⲅⲉⲓ</span>
 							<span>admit, confess</span>
 							<span>v.</span>
 						</div>
 					</div>
 					<div class="group">
 						<div class="morpheme">
-							<span>ϫⲉ</span>
+							<span class="c">ϫⲉ</span>
 							<span>that</span>
 							<span>conj.</span>
 						</div>
 					</div>
 					<div class="group">
 						<div class="morpheme">
-							<span>ⲡ</span>
+							<span class="c">ⲡ</span>
 							<span>the</span>
 							<span>def. art. (m.)</span>
 						</div>
 						<div class="morpheme">
-							<span>ⲣⲏ</span>
+							<span class="c">ⲣⲏ</span>
 							<span>sun</span>
 							<span>n. (m.)</span>
 						</div>
 					</div>
 					<div class="group">
 						<div class="morpheme">
-							<span>ⲡ</span>
+							<span class="c">ⲡ</span>
 							<span>the</span>
 							<span>def. art. (m.)</span>
 						</div>
 						<div class="morpheme">
-							<span>ⲉⲧ</span>
+							<span class="c">ⲉⲧ</span>
 							<span>that, who</span>
 							<span>rel.</span>
 						</div>
 						<div class="morpheme">
-							<span>ϫⲱⲱⲣⲉ</span>
+							<span class="c">ϫⲱⲱⲣⲉ</span>
 							<span>be strong, victorious</span>
 							<span>v.</span>
 						</div>
 					</div>
 					<div class="group">
 						<div class="morpheme">
-							<span>ⲙ̄</span>
+							<span class="c">ⲙ̄</span>
 							<span>of</span>
 							<span>gen.</span>
 						</div>
 						<div class="morpheme">
-							<span>ⲡⲉ</span>
+							<span class="c">ⲡⲉ</span>
 							<span>the</span>
 							<span>def. art. (m.)</span>
 						</div>
 						<div class="morpheme">
-							<span>ⲥⲛⲁⲩ</span>
+							<span class="c">ⲥⲛⲁⲩ</span>
 							<span>2</span>
 							<span>n. (m.)</span>
 						</div>
@@ -1053,5 +1080,25 @@
 				<p>And so the North Wind was obliged to confess that the Sun was the stronger of the two.</p>
 			</div>
 		</div>
+		<script>
+			const morphemes = document.getElementsByClassName("c");
+			
+			let myAudio = document.querySelector("audio");
+			let myTimestamp = myAudio.currentTime;
+			let myCount = 0.25;
+			let c = 0;
+			myAudio.addEventListener("timeupdate", () => {
+				if (myAudio.currentTime > myCount) {
+					
+					console.log(myCount);
+					morphemes[c].style.color = "gold";
+					c++;
+					myCount += 0.25;
+					//myAudio.style.mixBlendMode = "normal";
+				}
+			});
+
+			
+		</script>
 	</body>
 </html>
