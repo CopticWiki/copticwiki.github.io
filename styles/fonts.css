@@ -1,14 +1,4 @@
 @font-face {
-	font-family: rk_sansserif;
-	src: url("./fonts/OpenSans.ttf");
-}
-
-@font-face {
-	font-family: rk_serif;
-	src: url("./fonts/AbyssinicaSIL.ttf");
-}
-
-@font-face {
 	font-family: rk_coptic;
 	src: url("./fonts/NotoSansCoptic.ttf");
 	unicode-range:
@@ -45,10 +35,31 @@
 		U+003B; /* semicolon */
 }
 
+/* multi-purpose */
+
 @font-face {
-	font-family: rk_greek;
-	//src: url("./fonts/SBL_grk.ttf");
-	//src: url("./fonts/LiakDemoExtraLightItalic-x3ABV.ttf");
+	font-family: rk_ubuntu-sans;
+	src: url("./fonts/UbuntuSans.ttf");
+}
+
+@font-face {
+	font-family: rk_noto-sans;
+	src: url("./fonts/NotoSans.ttf");
+}
+
+@font-face {
+	font-family: rk_open-sans;
+	src: url("./fonts/OpenSans.ttf");
+}
+
+@font-face {
+	font-family: rk_noto-serif;
+	src: url("./fonts/NotoSerif.ttf");
+}
+
+
+@font-face {
+	font-family: rk_greek_gentium-plus;
 	src: url("./fonts/GentiumPlus-Regular.ttf");
 	unicode-range:
 		U+0323,
@@ -156,15 +167,14 @@
 		U+2E17; /* coptic oblique hyphen */
 }
 
+@font-face {
+	font-family: rk_abyssinicaSIL;
+	src: url("./fonts/AbyssinicaSIL.ttf");
+}
+
 .coptic {
 	color: goldenrod;
 	font-family: rk_coptic;
-}
-
-.greek {
-	color: darkseagreen;
-	font-family: rk_coptic, rk_greek;
-	//font-size: 1.1em;
 }
 
 .arabic,
