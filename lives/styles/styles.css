@@ -301,3 +301,18 @@ audio:hover {
 }
 
 */
+
+
+
+a {
+	text-decoration: none;
+	color: #438473;
+}
+
+a:hover {
+	color: #a3c054;
+}
+
+b {
+	color: grey;
+}
