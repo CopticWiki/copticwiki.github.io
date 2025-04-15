@@ -57,6 +57,10 @@
 	src: url("./fonts/NotoSerif.ttf");
 }
 
+@font-face {
+	font-family: rk_ubuntu-italic;
+	src: url("./fonts/Ubuntu-Italic.ttf");
+}
 
 @font-face {
 	font-family: rk_greek_gentium-plus;
@@ -172,9 +176,20 @@
 	src: url("./fonts/AbyssinicaSIL.ttf");
 }
 
+@font-face {
+	font-family: rk_firasans-italic;
+	src: url("./fonts/FiraSans-Italic.ttf");
+}
+
 .coptic {
 	color: goldenrod;
 	font-family: rk_coptic;
+}
+
+.greek {
+	font-family: rk_ubuntu-italic;
+	//font-style: italic;
+	font-weight: 300;
 }
 
 .arabic,
