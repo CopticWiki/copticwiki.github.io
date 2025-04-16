@@ -181,13 +181,19 @@
 	src: url("./fonts/FiraSans-Italic.ttf");
 }
 
+
+@font-face {
+	font-family: rk_gentiumplus_regular;
+	src: url("./fonts/GentiumPlus-Regular.ttf");
+}
+
 .coptic {
 	color: goldenrod;
 	font-family: rk_coptic;
 }
 
 .greek {
-	font-family: rk_ubuntu-italic;
+	font-family: rk_gentiumplus_regular, rk_ubuntu-italic;
 	//font-style: italic;
 	font-weight: 300;
 }
