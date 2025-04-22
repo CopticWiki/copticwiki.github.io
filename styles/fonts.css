@@ -189,6 +189,7 @@
 
 .coptic {
 	color: goldenrod;
+	//color: inherit;
 	font-family: rk_coptic;
 }
 
@@ -196,6 +197,12 @@
 	font-family: rk_gentiumplus_regular, rk_ubuntu-italic;
 	//font-style: italic;
 	font-weight: 300;
+}
+
+.greek {
+	color: #4dac82;
+	//color: inherit;
+	//font-family: rk_greek_gentium-plus;
 }
 
 .arabic,
@@ -207,6 +214,7 @@
 
 .arabic {
 	color: springgreen;
+	//color: inherit;
 	font-family: rk_arabic, rk_hebrew;
 	//font-size: 1.2em;
 }

@@ -7,37 +7,55 @@
 /* font- and text-related */
 
 body {
-	font-size: 1.2em;
+	font-size: 1em;
 	color: #727269;
+	color: #eeeeee;
+	background: linear-gradient(to right, #2c2c2c, black);
 	background: #2c2c2c;
 	background: #1c1c1c;
-	//background: linear-gradient(to right, #2c2c2c, black);
-	font-family: rk_ubuntu-sans, rk_open-sans, rk_noto-sans;
-	line-height: 1.5;
+	background: #0d1117;
+	//font-family: rk_ubuntu-sans, rk_open-sans, rk_noto-sans;
+	//line-height: 1.5;
 	margin: .5em;
-	padding: .5em 1em;
-	outline: 1px solid;
+	//padding: .5em 1em;
+	//outline: 1px solid;
 }
 
+.headword {
+	color: #9c27b0;
+	//color: inherit;
+	//font-size: 1.5em;
+}
+
+.dialect {
+	color: steelblue;
+	color: #a794f1;
+	//color: inherit;
+	font-family: rk_firasans-italic;
+	//font-size: 1.2em;
+}
+
+
+
 h1, h2, h3, h4, h5, h6 {
-	color: #6e8a8f;
-	color: #498587;
-	color: #88bbbc;
-	font-weight: normal;
-	margin: 0;
+	//color: #6e8a8f;
+	//color: #498587;
+	//color: #88bbbc;
+	//font-weight: normal;
+	//margin: 0;
 }
 
 h1 {
-	font-family: rk_noto-serif;
-	color: #769c81;
+	//font-family: rk_noto-serif;
+	//color: #769c81;
 }
 
 h2 {
-	color: grey;
+	//color: grey;
 }
 
 #container header table {
-	color: #428b9f;
+	//color: #428b9f;
 	width: 100%;
 	//background: #ffffff44;
 	border-collapse: collapse;
@@ -47,47 +65,44 @@ h2 {
 	//border: 1px solid;
 	//vertical-align: initial;
 	//line-height: 1;
-	line-height: 2rem;
+	//line-height: 2rem;
 }
 
 #container header table tr td h2,
 #container header table tr td h3,
 #container header table tr td p {
-	margin: 0;
+	//margin: 0;
 }
 
 
 
 #container header h2,
 #container header h3 {
-	color: inherit;
+	//color: inherit;
 	//font-size: inherit;
 }
 
 #container header table tr td:first-child {
-	text-align: left;
+	//text-align: left;
 	//border-left: 1px solid;
 }
 
 #container header table tr td:last-child {
-	text-align: right;
+	//text-align: right;
 	//border-right: 1px solid;
 }
 
 
 
 #container main p {
-	text-indent: 2em;
+	//text-indent: 2em;
 }
 
 i {
-	color: #71a77f;
+	//color: #71a77f;
 }
 
-.greek {
-	color: #4dac82;
-	//font-family: rk_greek_gentium-plus;
-}
+
 
 .cite-backlink a {
 	color: #85aeff;
@@ -97,25 +112,23 @@ i {
 
 sup {
 	line-height: 0;
-	margin-left: 2px;
+	//margin-left: 2px;
 }
 
 sup a {
-	text-decoration: none;
+	//text-decoration: none;
 }
 
 a {
-	color: #3ac5ed;
+	//color: #3ac5ed;
 }
 
 .author {
 	font-variant: small-caps;
 }
 
-.dialect {
-	color: steelblue;
-}
+
 
 .egypt-translit sup {
-	padding: 0 0px 0 2px;
+	//padding: 0 0px 0 2px;
 }
