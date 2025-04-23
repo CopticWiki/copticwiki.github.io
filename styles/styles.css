@@ -7,128 +7,153 @@
 /* font- and text-related */
 
 body {
-	font-size: 1em;
-	color: #727269;
-	color: #eeeeee;
-	background: linear-gradient(to right, #2c2c2c, black);
-	background: #2c2c2c;
-	background: #1c1c1c;
-	background: #0d1117;
-	//font-family: rk_ubuntu-sans, rk_open-sans, rk_noto-sans;
-	//line-height: 1.5;
+	font-family: body;
+	font-size: 16px;
+	font-weight: 300;
+	line-height: 1.5;
 	margin: .5em;
-	//padding: .5em 1em;
-	//outline: 1px solid;
-}
-
-.headword {
-	color: #9c27b0;
-	//color: inherit;
-	//font-size: 1.5em;
-}
-
-.dialect {
-	color: steelblue;
-	color: #a794f1;
-	//color: inherit;
-	font-family: rk_firasans-italic;
-	//font-size: 1.2em;
-}
-
-
-
-h1, h2, h3, h4, h5, h6 {
-	//color: #6e8a8f;
-	//color: #498587;
-	//color: #88bbbc;
-	//font-weight: normal;
-	//margin: 0;
+	color: #eeeeee88;
+	background: #0d1117;
 }
 
 h1 {
-	//font-family: rk_noto-serif;
-	//color: #769c81;
-}
-
-h2 {
-	//color: grey;
-}
-
-#container header table {
-	//color: #428b9f;
-	width: 100%;
-	//background: #ffffff44;
-	border-collapse: collapse;
-}
-
-#container header table tr td {
-	//border: 1px solid;
-	//vertical-align: initial;
-	//line-height: 1;
-	//line-height: 2rem;
-}
-
-#container header table tr td h2,
-#container header table tr td h3,
-#container header table tr td p {
-	//margin: 0;
-}
-
-
-
-#container header h2,
-#container header h3 {
-	//color: inherit;
-	//font-size: inherit;
-}
-
-#container header table tr td:first-child {
-	//text-align: left;
-	//border-left: 1px solid;
-}
-
-#container header table tr td:last-child {
-	//text-align: right;
-	//border-right: 1px solid;
-}
-
-
-
-#container main p {
-	//text-indent: 2em;
-}
-
-i {
-	//color: #71a77f;
-}
-
-
-
-.cite-backlink a {
-	color: #85aeff;
-	text-decoration: none;
-	margin-right: 5px;
-}
-
-sup {
-	line-height: 0;
-	//margin-left: 2px;
-}
-
-sup a {
-	//text-decoration: none;
+	font-family: serif;
 }
 
 a {
-	//color: #3ac5ed;
+	color: seagreen;
+	text-decoration: none;
+}
+
+i {
+	font-family: italic;
+	color: #eeeeeebb;
+	color: #c6b850;
+}
+
+b {
+	font-family: bold;
+	color: #7baba6;
+}
+
+sup,
+.headword {
+	line-height: 0;
+}
+
+sup.non-italic {
+	font-style: normal;
+}
+
+.arabic {
+	line-height: 0;
+}
+
+.arabic,
+.hebrew,
+.aramaic {
+	direction: rtl;
+	unicode-bidi: isolate;
+}
+
+.coptic {
+	font-size: inherit;
+	transition: font-size .5s;
+	font-family: rk_coptic;
+	color: #46a65d;
+	color: #397f50;
+	color: #5f8e6e;
+}
+
+.greek {
+	font-family: rk_greek;
+	color: #54b0c3;
+}
+
+.arabic {
+	font-family: rk_arabic, rk_hebrew;
+	font-size: 1.2em;
+	color: springgreen;
+	color: #ded97b;
+}
+
+.hebrew {
+	font-family: rk_hebrew;
+	color: pink;
+	color: #eeeeee88;
+	color: #d48b8b;
+}
+
+.aramaic {
+	font-family: rk_aramaic;
+	color: coral;
+	color: #eeeeee88;
+}
+
+.amharic {
+	font-family: rk_amharic;
+	color: lightseagreen;
+	color: #eeeeee88;
+}
+
+.egypt-hiero {
+	font-family: rk_egypt-hiero;
+	font-size: 2em;
+	color: gold;
+	color: #eeeeee88;
+}
+
+.egypt-hiero_precomposed {
+	font-family: rk_egypt-hiero_precomposed;
+	font-size: 2em;
+	color: lightgreen;
+}
+
+.egypt-hiero-test {
+	font-family: rk_egypt-hiero-pdf, rk_egypt-hiero-pdf-2;
+	color: gold;
+	color: #eeeeee88;
+}
+
+.egypt-translit {
+	font-family: rk_egypt-translit;
+	font-style: italic;
+	color: lightblue;
+	color: #eeeeee88;
 }
 
 .author {
 	font-variant: small-caps;
 }
 
+.headword {
+	font-size: 1.5em;
+	color: #9c27b0;
+	color: #eeeeee;
+	color: #89a66c;
+	color: #a75d96;
+}
 
+.dialect {
+	font-family: italic;
+	font-weight: 600;
+	color: #a794f1;
+	color: #eeeeee;
+	color: #9b5792;
+	color: #427daf;
+}
 
-.egypt-translit sup {
-	//padding: 0 0px 0 2px;
+.dialect.lycopolitan sup {
+	font-style: normal;
+}
+
+#container header table {
+	width: 100%;
+	border-collapse: collapse;
+}
+
+.cite-backlink a {
+	color: #85aeff;
+	text-decoration: none;
+	margin-right: 5px;
 }
