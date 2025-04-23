@@ -1,6 +1,7 @@
-@font-face {
+@font-face { /* coptic */
 	font-family: rk_coptic;
 	src: url("./fonts/NotoSansCoptic.ttf");
+/*	src: url("./fonts/Antinoou.ttf");*/
 	unicode-range:
 		U+03E2-03EF, /* greek and coptic */ 
 		U+2C80-2CFF, /* coptic */
@@ -34,36 +35,8 @@
 		U+201D, /* double quote right */
 		U+003B; /* semicolon */
 }
-
-/* multi-purpose */
-
-@font-face {
-	font-family: rk_ubuntu-sans;
-	src: url("./fonts/UbuntuSans.ttf");
-}
-
-@font-face {
-	font-family: rk_noto-sans;
-	src: url("./fonts/NotoSans.ttf");
-}
-
-@font-face {
-	font-family: rk_open-sans;
-	src: url("./fonts/OpenSans.ttf");
-}
-
-@font-face {
-	font-family: rk_noto-serif;
-	src: url("./fonts/NotoSerif.ttf");
-}
-
-@font-face {
-	font-family: rk_ubuntu-italic;
-	src: url("./fonts/Ubuntu-Italic.ttf");
-}
-
-@font-face {
-	font-family: rk_greek_gentium-plus;
+@font-face { /* greek */
+	font-family: rk_greek;
 	src: url("./fonts/GentiumPlus-Regular.ttf");
 	unicode-range:
 		U+0323,
@@ -72,29 +45,26 @@
 		U+0370-03FF,
 		U+1F00-1FFF;
 }
-
-@font-face {
+@font-face { /* arabic */
 	font-family: rk_arabic;
 	src: url("./fonts/NotoSansArabic.ttf");
 	unicode-range:
 		U+0600-06FF,
 }
-
-@font-face {
+@font-face { /* hebrew */
 	font-family: rk_hebrew;
 	src: url("./fonts/NotoSansHebrew.ttf");
+	src: url("./fonts/Arimo-VariableFont_wght.ttf");
 	unicode-range:
 		U+0590-05FF;
 }
-
-@font-face {
-	font-family: rk_aramaic;
+@font-face {/* aramaic */
+	font-family: rk_aramaic; 
 	src: url("./fonts/SertoAntiochBible.ttf");
 	unicode-range:
 		U+0700-074f;
 }
-
-@font-face {
+@font-face { /* amharic */
 	font-family: rk_amharic;
 	src: url("./fonts/NotoSansEthiopic.ttf");
 	unicode-range:
@@ -103,6 +73,29 @@
 		U+2d80-2ddf,
 		U+ab00-ab2f,
 		U+1e7e0-1e7ff;
+}
+
+@font-face {
+	font-family: body;
+	src: url("./fonts/UbuntuSans.ttf");
+	src: url("./fonts/OpenSans.ttf");
+	src: url("./fonts/NotoSans.ttf");
+	src: url("./fonts/Figtree-VariableFont_wght.ttf");
+	src: url("./fonts/Arvo-Regular.ttf");
+	src: url("./fonts/NunitoSans-VariableFont_YTLC,opsz,wdth,wght.ttf");
+}
+
+@font-face {
+	font-family: italic;
+	src: url("./fonts/FiraSans-Italic.ttf");
+	src: url("./fonts/Figtree-Italic-VariableFont_wght.ttf");
+	src: url("./fonts/Arvo-Italic.ttf");
+	src: url("./fonts/NunitoSans-Italic-VariableFont_YTLC,opsz,wdth,wght.ttf");
+}
+
+@font-face {
+	font-family: bold;
+	src: url("./fonts/Arvo-Bold.ttf");
 }
 
 @font-face {
@@ -169,95 +162,4 @@
 		U+2E22, /* left half bracket */
 		U+2E23, /* right half bracket */
 		U+2E17; /* coptic oblique hyphen */
-}
-
-@font-face {
-	font-family: rk_abyssinicaSIL;
-	src: url("./fonts/AbyssinicaSIL.ttf");
-}
-
-@font-face {
-	font-family: rk_firasans-italic;
-	src: url("./fonts/FiraSans-Italic.ttf");
-}
-
-
-@font-face {
-	font-family: rk_gentiumplus_regular;
-	src: url("./fonts/GentiumPlus-Regular.ttf");
-}
-
-.coptic {
-	color: goldenrod;
-	//color: inherit;
-	font-family: rk_coptic;
-}
-
-.greek {
-	font-family: rk_gentiumplus_regular, rk_ubuntu-italic;
-	//font-style: italic;
-	font-weight: 300;
-}
-
-.greek {
-	color: #4dac82;
-	//color: inherit;
-	//font-family: rk_greek_gentium-plus;
-}
-
-.arabic,
-.hebrew,
-.aramaic {
-	direction: rtl;
-	unicode-bidi:isolate;
-}
-
-.arabic {
-	color: springgreen;
-	//color: inherit;
-	font-family: rk_arabic, rk_hebrew;
-	//font-size: 1.2em;
-}
-
-.hebrew {
-	color: pink;
-	font-family: rk_hebrew;
-	//font-size: 1.5em;
-}
-
-.aramaic {
-	color: coral;
-	font-family: rk_aramaic;
-	//font-size: 1.5em;
-}
-
-.amharic {
-	color: lightseagreen;
-	font-family: rk_amharic;
-}
-
-.egypt-hiero {
-	color: gold;
-	font-family: rk_egypt-hiero;
-	//font-size: 1.5em;
-	font-size: 2em;
-}
-
-.egypt-hiero_precomposed {
-	color: lightgreen;
-	font-family: rk_egypt-hiero_precomposed;
-	font-size: 2em;
-}
-
-.egypt-hiero-test {
-	color: gold;
-	font-family: rk_egypt-hiero-pdf, rk_egypt-hiero-pdf-2;
-	//font-size: 1.5em;
-}
-
-.egypt-translit {
-	color: lightblue;
-	font-family: rk_egypt-translit;
-	//font-size: 1.2em;
-	font-style: italic;
 }
