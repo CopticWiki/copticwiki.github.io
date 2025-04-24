@@ -13,6 +13,7 @@
 	src: url("./fonts/Figtree-Italic-VariableFont_wght.ttf");
 	src: url("./fonts/Arvo-Italic.ttf");
 	src: url("./fonts/NunitoSans-Italic-VariableFont_YTLC,opsz,wdth,wght.ttf");
+	//src: url("./fonts/NunitoSans-VariableFont_YTLC,opsz,wdth,wght.ttf");
 }
 @font-face { /* b */
 	font-family: bold;

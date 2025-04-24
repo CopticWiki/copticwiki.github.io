@@ -51,6 +51,7 @@ a i {
 }
 
 i {
+	font-style: normal;
 	font-family: italic;
 	color: #eeeeeebb;
 	color: #c6b850;
@@ -80,8 +81,8 @@ em {
 }
 
 .dialect {
-	font-family: italic;
-	font-weight: 600;
+	//font-family: italic;
+	//font-weight: 600;
 	color: #a794f1;
 	color: #eeeeee;
 	color: #9b5792;
