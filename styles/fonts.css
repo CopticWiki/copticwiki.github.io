@@ -1,3 +1,28 @@
+@font-face { /* body */
+	font-family: body;
+	src: url("./fonts/UbuntuSans.ttf");
+	src: url("./fonts/OpenSans.ttf");
+	src: url("./fonts/NotoSans.ttf");
+	src: url("./fonts/Figtree-VariableFont_wght.ttf");
+	src: url("./fonts/Arvo-Regular.ttf");
+	src: url("./fonts/NunitoSans-VariableFont_YTLC,opsz,wdth,wght.ttf");
+}
+@font-face { /* i */
+	font-family: italic;
+	src: url("./fonts/FiraSans-Italic.ttf");
+	src: url("./fonts/Figtree-Italic-VariableFont_wght.ttf");
+	src: url("./fonts/Arvo-Italic.ttf");
+	src: url("./fonts/NunitoSans-Italic-VariableFont_YTLC,opsz,wdth,wght.ttf");
+}
+@font-face { /* b */
+	font-family: bold;
+	src: url("./fonts/Arvo-Bold.ttf");
+}
+@font-face { /* serif */
+	font-family: rk_serif;
+	src: url("./fonts/Merriweather-VariableFont_opsz,wdth,wght.ttf");
+}
+
 @font-face { /* coptic */
 	font-family: rk_coptic;
 	src: url("./fonts/NotoSansCoptic.ttf");
@@ -34,6 +59,10 @@
 		U+201C, /* double quote left */
 		U+201D, /* double quote right */
 		U+003B; /* semicolon */
+}
+@font-face { /* coptic -> headword */
+	font-family: headword;
+	src: url("./fonts/Antinoou.ttf");
 }
 @font-face { /* greek */
 	font-family: rk_greek;
@@ -73,29 +102,6 @@
 		U+2d80-2ddf,
 		U+ab00-ab2f,
 		U+1e7e0-1e7ff;
-}
-
-@font-face {
-	font-family: body;
-	src: url("./fonts/UbuntuSans.ttf");
-	src: url("./fonts/OpenSans.ttf");
-	src: url("./fonts/NotoSans.ttf");
-	src: url("./fonts/Figtree-VariableFont_wght.ttf");
-	src: url("./fonts/Arvo-Regular.ttf");
-	src: url("./fonts/NunitoSans-VariableFont_YTLC,opsz,wdth,wght.ttf");
-}
-
-@font-face {
-	font-family: italic;
-	src: url("./fonts/FiraSans-Italic.ttf");
-	src: url("./fonts/Figtree-Italic-VariableFont_wght.ttf");
-	src: url("./fonts/Arvo-Italic.ttf");
-	src: url("./fonts/NunitoSans-Italic-VariableFont_YTLC,opsz,wdth,wght.ttf");
-}
-
-@font-face {
-	font-family: bold;
-	src: url("./fonts/Arvo-Bold.ttf");
 }
 
 @font-face {
