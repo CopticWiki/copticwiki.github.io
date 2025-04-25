@@ -1,6 +1,6 @@
 @import url("../../styles/styles.css"); /* base styles */
 
-::selection {
+#rendered_view::selection {
 	background: transparent;
 	background: #33313122;
 	background: #ffb600;
