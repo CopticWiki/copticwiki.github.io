@@ -54,7 +54,16 @@ i {
 	font-style: normal;
 	font-family: italic;
 	color: #eeeeeebb;
-	color: #c6b850;
+	color: #c6b850bb;
+}
+
+i.dialect {
+	font-weight: 400;
+}
+
+em {
+	color: honeydew;
+	color: #d4b741;
 }
 
 b {
@@ -62,9 +71,6 @@ b {
 	color: #7baba6;
 }
 
-em {
-	color: honeydew;
-}
 
 .author {
 	font-variant: small-caps;
