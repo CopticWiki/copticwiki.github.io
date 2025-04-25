@@ -5,6 +5,18 @@
 	box-sizing: border-box;
 }
 
+.bilingual {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: .5em;
+}
+
+.bilingual > * {
+	background: #ffffff07;
+	outline: 1px solid #ffffff22;
+	padding: .5em;
+}
+
 
 .mallon h2 {
 	color: lightblue;
@@ -29,17 +41,23 @@
 }
 
 div[data-section] {
-	padding-left: 1em;
-	position: relative;
+	//padding-left: 1em;
+	//position: relative;
+	outline: 1px solid #ffffff22;
+	padding: 1em 1em 0;
+}
+
+div[data-section] + div[data-section] {
+	margin-top: 1em;
 }
 
 [data-section]:before {
 	content: attr(data-section);
 	display: block;
-	position: absolute;
+	//position: absolute;
 	color: violet;
-	left: 0;
-	top: 0;
+	//left: 0;
+	//top: 0;
 }
 
 .side-by-side {
@@ -47,7 +65,7 @@ div[data-section] {
 //	outline: 1px dashed gold;
 	width: 100%;
 	display: grid;
-	grid-template-columns: 1fr 1fr;
+	//grid-template-columns: 1fr 1fr;
 	gap: 1em;
 	padding: 1em;
 }
