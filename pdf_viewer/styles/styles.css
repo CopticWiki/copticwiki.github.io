@@ -1,0 +1,46 @@
+* {
+	//box-sizing: border-box;
+}
+body {
+	margin: 0em;
+}
+
+#container {
+	//position: relative;
+	width: 100%;
+	height: 100dvh;
+	background: linear-gradient(to right, steelblue, lightseagreen);
+	display: grid;
+	grid-template-columns: 1fr;
+}
+
+img {
+	max-width: 250%;
+	display: block;
+	filter: invert(1) contrast(1.2);
+	mix-blend-mode: color-burn;
+}
+img + img {
+	margin-top: 1em;
+}
+
+#document {
+	//resize: horizontal;
+	overflow: auto;
+	scrollbar-color: #64496a transparent;
+	background: linear-gradient(to right, rgb(90 155 152), rgb(209 165 134));
+}
+
+
+/*
+#document,
+#other {
+	border: 1px solid gold;
+	padding: 1em;
+}
+#document {
+
+}
+#other {
+	
+}
