@@ -1,15 +1,32 @@
-ol.lower-alpha {
-	list-style-type: lower-alpha;
+.hide {
+	display: none;
 }
 
-.section,
-#preface,
-#table_of_contents,
-#abbreviations_and_conventions,
-#introduction {
-	border: 1px solid #333333cc;
-	padding: 1em;
-	margin: 0;
+#container {
+	display: grid;
+	grid-template-columns: 200px 1fr;
+	background: inherit;
+}
+
+#toc_outline {
+	background: #000000;
+	//outline: 1px solid gold;
+	height: 500px;
+	overflow-y: auto;
+	position: sticky;
+	top: 0em;
+}
+
+#toc_outline ul {
+	//height: 70vh;
+}
+
+main {
+	background: inherit;
+}
+
+#preface p {
+	text-indent: 2rem;
 }
 
 #introduction #alphabet {
@@ -24,13 +41,148 @@ ol.lower-alpha {
 	align-content: center;
 }
 
-#introduction #alphabet li {
-	display: flex;
-	//background: #ffffff11;
+[id^="lesson_"] {
+	width: 100%;
+	padding: 0 2em;
+	background: inherit;
 }
 
-/*
+[id^="lesson_"] h3 {
+	color: steelblue;
+	color: gold;
+	text-transform: uppercase;
+	margin: 0em;
+	padding: 1em;
+	width: 100%;
+	display: inline-block;
+	position: sticky;
+	top: 0em;
+	background: inherit;
+}
 
+[id^="lesson_"] h4 {
+	color: orangered;
+	margin-top: 1em;
+}
+
+a.subchapter:before {
+	content: "🔗";
+}
+
+a.subchapter ~ a.subchapter:before {
+	//content: "";
+}
+
+[id^="lesson_"] td,
+[id^="lesson_"] th {
+	border: 1px solid #ffffff22;
+	padding: .5em;
+}
+
+[id^="lesson_"] th {
+	//border-bottom: 2px solid steelblue;
+}
+
+[id^="lesson_"] table {
+	border-collapse: collapse;
+	border-radius: 1rem;
+	border-style: hidden; /* hide standard table (collapsed) border */
+	box-shadow: 0 0 0 1px steelblue; /* this draws the table border  */ 
+	width: 100%;
+	padding: .5em;
+}
+
+
+
+
+
+
+
+
+
+
+
+.exercises.has-subsection {
+	padding-left: 0;
+	list-style-position: inside;
+}
+
+.exercises.has-subsection > li {
+	list-style-type: upper-alpha;
+}
+
+.exercises li.subsection ol > li {
+	//position: relative;
+}
+
+.exercises li.subsection ol > li > ul {
+	//position: absolute;
+	//top: 0em;
+	display: inline-grid;
+}
+
+.exercises li.subsection ol ul {
+	list-style-type: none;
+}
+
+ul {
+	list-style-type: none;
+}
+
+
+li:has(> input[type="checkbox"]) + li{
+	opacity: 0;
+	//color: lightgreen;
+	transition: opacity .5s ease;
+}
+
+li:has(> input[type="checkbox"]:checked) + li {
+	//visibility: visible;
+	opacity: 1;
+}
+
+
+/*
+div[id^="lesson_"] li:has(> :not(input[type="checkbox"]:checked)) > ul > li:last-child {
+	visibility: hidden;
+	opacity: 0;
+	transition: opacity .5s ease;
+}
+
+li:has(> input[type="checkbox"]:checked) > ul > li:last-child {
+	visibility: visible;
+	color: lightgreen;
+	opacity: 1;
+	transition: opacity .5s ease;
+}
+
+li > input[type="checkbox"] {
+	background: none;
+	filter: invert(1);
+	position: absolute;
+}
+
+li:has(> input[type="checkbox"]) {
+	position: relative;
+	list-style: decimal outside;
+	top: 0;
+}
+
+ul li:has(> input[type="checkbox"]) {
+	list-style: none;
+}
+
+li:has(> input[type="checkbox"]) > ul {
+	position: relative;
+	left: 1.5em;
+	list-style-type: none;
+	padding-left: 0;
+}
+*/
+
+
+/*
+alphabet sizing
 convertForClamp(840, 360, 2.5, 1);
 function convertForClamp(vOldMax, vOldMin, fMax, fMin) {
 	let vNewMax = vOldMax / 16;
@@ -42,6 +194,28 @@ function convertForClamp(vOldMax, vOldMin, fMax, fMin) {
 }
 
 */
+
+/*
+ol.lower-alpha {
+	list-style-type: lower-alpha;
+}
+
+.section,
+#preface,
+#table_of_contents,
+#abbreviations_and_conventions,
+#introduction {
+	border: 1px solid #333333cc;
+	padding: 1em;
+	margin: 0;
+}
+
+
+#introduction #alphabet li {
+	display: flex;
+	//background: #ffffff11;
+}
+
 
 #introduction #alphabet li .coptic {
 	margin-right: .2em;
@@ -208,6 +382,22 @@ li:has(> input[type="checkbox"]) > ul {
 	list-style-type: none;
 	padding-left: 0;
 }
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* regex:
 
