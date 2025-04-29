@@ -28,6 +28,56 @@ body {
 	background: #0d1117;
 }
 
+#crum_sample {
+	//background: linear-gradient(145deg, #ffffff22, transparent);
+	color: inherit;
+	padding: 1rem;
+	font-size: 1.5rem;
+	overflow-x: auto;
+	height: 500px;
+	//opacity: 0;
+	//transition: opacity .5s;
+	scrollbar-color: #64496a transparent;
+	transition: width .2s;
+	outline: none;
+}
+
+#crum_sample p {
+	margin-top: 0em;
+	opacity: 0;
+	text-indent: 2rem;
+	transition: opacity .5s ease-in;
+}
+
+#crum_sample p.loaded {
+	opacity: 1;
+}
+
+#crum_sample * {
+	color: inherit;
+}
+
+#crum_sample::selection {
+	background: transparent;
+	background: #33313122;
+	background: #ffb600;
+	color: #ae51a4;
+	color: #3daba7;
+	color: #eeeeee;
+	color: #000000;
+}
+
+
+
+#container.half {
+	//display: grid;
+	//grid-template-columns: 1fr 1fr;
+}
+
+#container.half .right {
+	//padding: 1rem;
+}
+
 h1 {
 	font-family: rk_serif;
 	font-weight: normal;
