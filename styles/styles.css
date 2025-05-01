@@ -67,11 +67,20 @@ body {
 	color: #000000;
 }
 
+#container.flex {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
 
+#container > * {
+	//outline: 1px solid #ffffff22;
+	padding: 1em;
+}
 
 #container.half {
-	//display: grid;
-	//grid-template-columns: 1fr 1fr;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
 }
 
 #container.half .right {

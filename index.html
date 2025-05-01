@@ -5,12 +5,65 @@
 		<link rel="stylesheet" href="./styles/styles.css">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<style>
-			
+			h3 {
+				color: goldenrod;
+			}
 		</style>
 	</head>
 	<body>
 		<h1>CopticWiki</h1>
-		<div id="container" class="half">
+		<p>Welcome to CopticWiki! This site is a repository of many useful resources and tools for learning the Coptic language. More to come soon!</p>
+		<div id="container" class="flex">
+			<div id="random_audio_sample">
+				<h3>Random sample of spoken Coptic:</h3>
+				<iframe style="border: none; height: 200px" scrolling="no" src="./audio_parser/index.html"></iframe>
+			</div>
+			<div id="demos">
+				<h3>Interactive demos</h3>
+				<ul>
+					<li><a href="./wip/north_wind.html">Aesop's <i>North Wind and the Sun</i></a></li>
+				</ul>
+			</div>
+			<div id="dictionaries">
+				<h3>Dictionaries</h3>
+				<ul>
+					<li><a href="./crum">Crum, <i>A Coptic Dictionary</i></a></li>
+					<li><a href="./kasser">Kasser, <i>Compléments au Dictionnaire Copte de Crum</i></a></li>
+					<li><a href="./vycichl">Vycichl, <i>Dictionnaire Étymologique de la Langue Copte</i></a></li>
+					<li><a href="./westendorf">Westendorf, <i>Koptisches Handwörterbuch</i></a></li>
+					<li><a href="./cerny">Černý, <i>Coptic Etymological Dictionary</i></a></li>
+				</ul>
+			</div>
+			<div id="grammars">
+				<h3>Grammars</h3>
+				<ul>
+					<li><a href="./lambdin">Lambdin, <i>Introduction to Sahidic Coptic</i></a></li>
+					<li><a href="./lambdin_bohairic">Lambdin (Bohairic version of above)</a></li>
+					<li><a href="./mallon">Mallon, <i>Grammaire Copte</i></a></li>
+				</ul>
+			</div>
+			<div id="lives">
+				<h3>Saints' Lives</h3>
+				<ul>
+					<li><a href="./lives/hilaria">Life of St. Hilaria</a></li>
+					<li><a href="./lives/seven_sleepers">Seven Sleepers of Ephesus</a></li>
+					<li><a href="./lives/silvanus">Teachings of Silvanus</a></li>
+				</ul>
+			</div>
+			<div id="tools">
+				<h3>Tools</h3>
+				<ul>
+					<li><a href="./dictionary_editor">Dictionary Entry Template</a></li>
+				</ul>
+			</div>
+			<div id="volunteer">
+				<h3>Contributions to Coptic SCRIPTORIUM</h3>
+				<ul>
+					<li><a href="https://data.copticscriptorium.org/search?text=&annotation=Randy+Komforty">Annotations</a></li>
+					<li><a href="https://data.copticscriptorium.org/search?text=&translation=Randy+Komforty">Translations</a></li>
+				</ul>
+			</div>
+		</div>
 			<!--
 			<div id="crum_sample">
 				<p></p>
@@ -19,43 +72,39 @@
 				<p></p>
 			</div>
 			-->
-			<div class="right">
-				<p>Welcome to CopticWiki! This site is a repository of many useful resources and tools for learning the Coptic language. More to come soon!</p>
-				<ul id="demos">
-					<h3>Interactive demos</h3>
-					<li><a href="./wip/north_wind.html">Aesop's <i>North Wind and the Sun</i></a></li>
-				</ul>
-				<ul id="dictionaries">
-					<h3>Dictionaries</h3>
-					<li><a href="./crum">Crum, <i>A Coptic Dictionary</i></a></li>
-					<li><a href="./kasser">Kasser, <i>Compléments au Dictionnaire Copte de Crum</i></a></li>
-					<li><a href="./vycichl">Vycichl, <i>Dictionnaire Étymologique de la Langue Copte</i></a></li>
-					<li><a href="./westendorf">Westendorf, <i>Koptisches Handwörterbuch</i></a></li>
-					<li><a href="./cerny">Černý, <i>Coptic Etymological Dictionary</i></a></li>
-				</ul>
-				<ul id="grammars">
-					<h3>Grammars</h3>
-					<li><a href="./lambdin">Lambdin, <i>Introduction to Sahidic Coptic</i></a></li>
-					<li><a href="./lambdin_bohairic">Lambdin (Bohairic version of above)</a></li>
-					<li><a href="./mallon">Mallon, <i>Grammaire Copte</i></a></li>
-				</ul>
-				<ul id="lives">
-					<h3>Saints' Lives</h3>
-					<li><a href="./lives/hilaria">Life of St. Hilaria</a></li>
-					<li><a href="./lives/seven_sleepers">Seven Sleepers of Ephesus</a></li>
-					<li><a href="./lives/silvanus">Teachings of Silvanus</a></li>
-				</ul>
-				<ul id="tools">
-					<h3>Tools</h3>
-					<li><a href="./dictionary_editor">Dictionary Entry Template</a></li>
-				</ul>
-				<ul id="volunteer">
-					<h3>Contributions to Coptic SCRIPTORIUM</h3>
-					<li><a href="https://data.copticscriptorium.org/search?text=&annotation=Randy+Komforty">Annotations</a></li>
-					<li><a href="https://data.copticscriptorium.org/search?text=&translation=Randy+Komforty">Translations</a></li>
-				</ul>
+			<!--
+			<div id="random_audio_sample">
+				<div id="interlinear">
+					<div class="line">
+						<div class="group">
+							<div class="morpheme">
+								<span class="c">ⲛⲧⲉⲧⲛ-</span>
+								<span>you</span>
+								<span>def. art. (m.)</span>
+							</div>
+							<div class="morpheme">
+								<span class="c">ⲛⲓⲙ</span>
+								<span>who</span>
+								<span>n. (m.)</span>
+							</div>
+						</div>
+						<div class="group">
+							<div class="morpheme">
+								<span class="c">&nbsp;ⲛⲧⲱⲧⲛ?</span>
+								<span>you</span>
+								<span>n. (m.)</span>
+							</div>
+						</div>
+					</div>
+					<div class="english">
+							<p>Who are <em>you</em>?</p>
+						</div>
+				</div>
+				<div id="player">
+					<audio controls src="./audio_parser/audio/20250430_0006.wav"></audio>
+				</div>
 			</div>
-		</div>
+			-->
 		<!--
 		-->
 		<footer>
