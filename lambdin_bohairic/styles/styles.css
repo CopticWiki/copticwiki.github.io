@@ -17,6 +17,16 @@
 	padding: .5em;
 }
 
+.example {
+	margin-left: 1em;
+	padding-left: 1em;
+	border-left: .5em solid #ffffff22;
+}
+
+.example p {
+	margin: 5px 0;
+}
+
 
 .mallon h2 {
 	color: lightblue;
