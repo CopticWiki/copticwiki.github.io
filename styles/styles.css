@@ -178,10 +178,6 @@ sup.non-italic {
 	font-family: body;
 }
 
-.arabic {
-	line-height: 0;
-}
-
 .arabic,
 .hebrew,
 .aramaic {
@@ -200,22 +196,28 @@ sup.non-italic {
 }
 
 .greek {
-	font-family: rk_greek;
+	font-family: rk_greek, rk_coptic;
 	color: #54b0c3;
 }
 
 .arabic {
 	font-family: rk_arabic, rk_hebrew;
 	font-size: 1.2em;
+	line-height: 0;
 	color: springgreen;
 	color: #ded97b;
 }
 
 .hebrew {
 	font-family: rk_hebrew;
+	line-height: 0;
 	color: pink;
 	color: #eeeeee88;
 	color: #d48b8b;
+	color: #82aaf5;
+	color: #5bb35a;
+	color: #a1bbff;
+	font-size: 1.2em;
 }
 
 .aramaic {
