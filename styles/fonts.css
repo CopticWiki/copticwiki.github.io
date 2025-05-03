@@ -73,7 +73,10 @@
 		U+0028, /* left parenthesis */
 		U+0029, /* right parenthesis */
 		U+0370-03FF,
-		U+1F00-1FFF;
+		U+1F00-1FFF,
+		U+0FE24, /* left half stroke */
+		U+0FE26, /* long stroke */
+		U+0FE25, /* right half stroke */;
 }
 @font-face { /* arabic */
 	font-family: rk_arabic;
@@ -85,6 +88,8 @@
 	font-family: rk_hebrew;
 	src: url("./fonts/NotoSansHebrew.ttf");
 	src: url("./fonts/Arimo-VariableFont_wght.ttf");
+	src: url("./fonts/SecularOne-Regular.ttf");
+	src: url("./fonts/BonaNovaSC-Regular.ttf");
 	unicode-range:
 		U+0590-05FF;
 }
