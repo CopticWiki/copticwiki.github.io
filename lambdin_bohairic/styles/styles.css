@@ -5,10 +5,23 @@
 	box-sizing: border-box;
 }
 
+body {
+	margin: 0em;
+}
+
+.chapter_title {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: .5em;
+	gap: 1em;
+	text-align: center;
+}
+
 .bilingual {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
 	gap: .5em;
+	gap: 1em;
 }
 
 .bilingual > * {
@@ -53,8 +66,8 @@
 div[data-section] {
 	//padding-left: 1em;
 	//position: relative;
-	outline: 1px solid #ffffff22;
-	padding: 1em 1em 0;
+	//outline: 1px solid #ffffff22;
+	//padding: 1em 1em 0;
 }
 
 div[data-section] + div[data-section] {
@@ -63,9 +76,12 @@ div[data-section] + div[data-section] {
 
 [data-section]:before {
 	content: attr(data-section);
+	text-align: center;
+	//border: 1px solid #ffffff22;
+	//background: #ffffff22;
 	display: block;
 	//position: absolute;
-	color: violet;
+	color: gold;
 	//left: 0;
 	//top: 0;
 }
@@ -266,7 +282,8 @@ div[id^="lesson_"] h3,
 }
 
 h4 {
-	color: orangered;
+	//color: orangered;
+	font-weight: normal;
 	margin-top: 1em;
 }
 
