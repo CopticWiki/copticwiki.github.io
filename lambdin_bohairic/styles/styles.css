@@ -1,6 +1,27 @@
 @import url("../../../styles/styles.css");
 @import url("../../styles/styles.css");
 
+p.en:empty:before {
+	content: "—english translation here—";
+	opacity: .5;
+}
+
+span.en:empty:before {
+	content: " -english here-";
+	opacity: .5;
+}
+
+span.fr,
+span.en {
+	color: #ffffffbb;
+}
+
+.section {
+	background: #ffffff07;
+	outline: 1px solid #ffffff22;
+	padding: .5em 1em;
+}
+
 * {
 	box-sizing: border-box;
 }
@@ -68,6 +89,10 @@ div[data-section] {
 	//position: relative;
 	//outline: 1px solid #ffffff22;
 	//padding: 1em 1em 0;
+}
+
+[data-section].needs-english .section {
+	outline: 1px solid #ffeb3b88;
 }
 
 div[data-section] + div[data-section] {
@@ -159,16 +184,6 @@ div[data-section] + div[data-section] {
 
 ol.lower-alpha {
 	list-style-type: lower-alpha;
-}
-
-.section,
-#preface,
-#table_of_contents,
-#abbreviations_and_conventions,
-#introduction {
-//	border: 1px solid #333333cc;
-//	padding: 1em;
-//	margin: 0;
 }
 
 #introduction #alphabet {
