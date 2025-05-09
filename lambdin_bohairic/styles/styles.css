@@ -1,6 +1,30 @@
 @import url("../../../styles/styles.css");
 @import url("../../styles/styles.css");
 
+#toggle-lang {
+	content: "";
+	background: firebrick;
+	background: #2e5144;
+	display: block;
+	width: 1.5rem;
+	height: 30dvh;
+	position: fixed;
+	right: 0em;
+	border-top-left-radius: .5em;
+	border-bottom-left-radius: .5em;
+	transition: background .5s;
+}
+
+#toggle-lang:hover {
+	background: #ff5722;
+	cursor: pointer;
+}
+
+.en-hide {
+	opacity: 0;
+	transition: opacity .5s;
+}
+
 p.en:empty:before {
 	content: "—english translation here—";
 	opacity: .5;
@@ -20,6 +44,14 @@ span.en {
 	background: #ffffff07;
 	outline: 1px solid #ffffff22;
 	padding: .5em 1em;
+}
+.scroll-horizontal {
+	overflow-x: auto;
+}
+
+[data-section="233"] .section {
+	//width: 50%;
+	overflow-x: auto;
 }
 
 * {
@@ -93,6 +125,10 @@ div[data-section] {
 
 [data-section].needs-english .section {
 	outline: 1px solid #ffeb3b88;
+}
+
+[data-section].good .section {
+	outline: 1px solid #09860e;
 }
 
 div[data-section] + div[data-section] {
