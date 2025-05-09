@@ -9,11 +9,16 @@
 			.collapse div {
 				display: none;
 			}
+			
+			body {
+				font-size: 1.2em;
+			}
 		</style>
 	</head>
 	<body>
 		<h1>CopticWiki</h1>
 		<h2>Introduction to Bohairic Coptic</h2>
+		<div id="toggle-lang"></div>
 		<div id="container">
 			<div id="mallon">
 				<div id="chapter_01" class="chapter">
@@ -75,64 +80,34 @@
 							</div>
 						</div>
 					</div>
-					<div data-section="42">
-						<div class="bilingual">
-							<div class="en">
-								<p>The strong article <span class="coptic">ⲡⲓ-</span> <span class="coptic">ϯ-</span> is a more precise determination. It indicates a particular individual.</p>
-								<table>
-									<tr>
-										<th colspan="2">Weak article</th>
-										<th colspan="2">Strong article</th>
-									</tr>
-									<tr>
-										<td><span class="coptic">ⲫ-ⲛⲟⲩϯ</span></td>
-										<td>God,</td>
-										<td><span class="coptic">ⲡⲓ-ⲛⲟⲩϯ</span></td>
-										<td>the god;</td>
-									</tr>
-									<tr>
-										<td><span class="coptic">ⲧ-ⲫⲉ</span></td>
-										<td>the sky, heaven</td>
-										<td><span class="coptic">ϯ-ⲫⲉ ⲙ̀ⲃⲉⲣⲓ</span></td>
-										<td>the new heaven<a href="#cite-footnote-chapter_01-001" class="footnote" id="footnote-chapter_01-001"><sup>[1]</sup></a>;</td>
-									</tr>
-									<tr>
-										<td><span class="coptic">ⲫ-ⲣⲏ</span></td>
-										<td>the sun,</td>
-										<td><span class="coptic">ⲡⲓ-ⲣⲏ ⲛ̀ⲧⲉ ϯ-ⲙⲉⲑⲙⲏⲓ</span></td>
-										<td>the Sun of Justice<a href="#cite-footnote-chapter_01-002" class="footnote" id="footnote-chapter_01-002"><sup>[1]</sup></a>.</td>
-									</tr>
-								</table>
-								<p>In general, the form of the article used depends on the degree of determination we want to give to the noun.</p>
-							</div>
-							<div class="fr">
-								<p>L'article fort <span class="coptic">ⲡⲓ-</span> <span class="coptic">ϯ-</span> détermine avec plus de précision, il indique un individu en particulier.</p>
-								<table>
-									<tr>
-										<th colspan="2">Weak article</th>
-										<th colspan="2">Strong article</th>
-									</tr>
-									<tr>
-										<td><span class="coptic">ⲫ-ⲛⲟⲩϯ</span></td>
-										<td>God,</td>
-										<td><span class="coptic">ⲡⲓ-ⲛⲟⲩϯ</span></td>
-										<td>the god;</td>
-									</tr>
-									<tr>
-										<td><span class="coptic">ⲧ-ⲫⲉ</span></td>
-										<td>the sky, heaven</td>
-										<td><span class="coptic">ϯ-ⲫⲉ ⲙ̀ⲃⲉⲣⲓ</span></td>
-										<td>the new heaven<a href="#cite-footnote-chapter_01-001" class="footnote" id="footnote-chapter_01-001"><sup>[1]</sup></a>;</td>
-									</tr>
-									<tr>
-										<td><span class="coptic">ⲫ-ⲣⲏ</span></td>
-										<td>the sun,</td>
-										<td><span class="coptic">ⲡⲓ-ⲣⲏ ⲛ̀ⲧⲉ ϯ-ⲙⲉⲑⲙⲏⲓ</span></td>
-										<td>the Sun of Justice<a href="#cite-footnote-chapter_01-002" class="footnote" id="footnote-chapter_01-002"><sup>[1]</sup></a>.</td>
-									</tr>
-								</table>
-								<p>En général, on emploie l'un ou l'autre article selon le degré de détermination qu'on veut donner au nom.</p>
-							</div>
+					<div id="042" data-section="42" class="wip">
+						<div class="section">
+							<p>L'article fort <span class="coptic">ⲡⲓ-</span> <span class="coptic">ϯ-</span> détermine avec plus de précision, il indique un individu en particulier.</p>
+							<table>
+								<tr>
+									<th colspan="2">Weak article</th>
+									<th colspan="2">Strong article</th>
+								</tr>
+								<tr>
+									<td><span class="coptic">ⲫ-ⲛⲟⲩϯ</span></td>
+									<td>God,</td>
+									<td><span class="coptic">ⲡⲓ-ⲛⲟⲩϯ</span></td>
+									<td>the god;</td>
+								</tr>
+								<tr>
+									<td><span class="coptic">ⲧ-ⲫⲉ</span></td>
+									<td>the sky, heaven</td>
+									<td><span class="coptic">ϯ-ⲫⲉ ⲙ̀ⲃⲉⲣⲓ</span></td>
+									<td>the new heaven<a href="#cite-footnote-chapter_01-001" class="footnote" id="footnote-chapter_01-001"><sup>[1]</sup></a>;</td>
+								</tr>
+								<tr>
+									<td><span class="coptic">ⲫ-ⲣⲏ</span></td>
+									<td>the sun,</td>
+									<td><span class="coptic">ⲡⲓ-ⲣⲏ ⲛ̀ⲧⲉ ϯ-ⲙⲉⲑⲙⲏⲓ</span></td>
+									<td>the Sun of Justice<a href="#cite-footnote-chapter_01-002" class="footnote" id="footnote-chapter_01-002"><sup>[1]</sup></a>.</td>
+								</tr>
+							</table>
+							<p>En général, on emploie l'un ou l'autre article selon le degré de détermination qu'on veut donner au nom.</p>
 						</div>
 					</div>
 					<div data-section="43">
@@ -805,238 +780,121 @@
 							</div>
 						</div>
 					</div>
-					<div data-section="61">
-						<div class="bilingual">
-							<div class="en">
-								<p>Comme exemple, nous donnons ici la suffixation aux deux prépositions les plus usitées <span class="coptic">ⲉ- ⲉⲣⲟ⸗</span> «vers, à <span class="arabic">الى</span>», <span class="coptic">ⲛ̀- ⲛ⸗</span> «à <span class="arabic">لِ</span>»:</p>
-								<p>Sur <span class="coptic">ⲛ̀-</span> se modèlent la particule du génitif <span class="coptic">ⲛ̀ⲧⲉ- ⲛ̀⸗</span> «de» et la préposition <span class="coptic">ⲛⲉⲙ⸗</span> «avec».</p>
-								<table>
-									<tr>
-										<td>Sing.</td>
-										<td>1.</td>
-										<td><span class="coptic">ⲉⲣⲟⲓ</span></td>
-										<td><span class="arabic">الي</span></td>
-										<td><span class="coptic">ⲛⲏⲓ</span></td>
-										<td><span class="arabic">لي</span></td>
-									</tr>
-									<tr>
-										<td></td>
-										<td>2. m.</td>
-										<td><span class="coptic">ⲉⲣⲟⲕ</span></td>
-										<td><span class="arabic">اليكَ</span></td>
-										<td><span class="coptic">ⲛⲁⲕ</span></td>
-										<td><span class="arabic">لكَ</span></td>
-									</tr>
-									<tr>
-										<td></td>
-										<td>f.</td>
-										<td><span class="coptic">ⲉⲣⲟ</span></td>
-										<td><span class="arabic">اليكِ</span></td>
-										<td><span class="coptic">ⲛⲉ</span></td>
-										<td><span class="arabic">لكِ</span></td>
-									</tr>
-									<tr>
-										<td></td>
-										<td>3. m.</td>
-										<td><span class="coptic">ⲉⲣⲟϥ</span></td>
-										<td><span class="arabic">اليه</span></td>
-										<td><span class="coptic">ⲛⲁϥ</span></td>
-										<td><span class="arabic">لهُ</span></td>
-									</tr>
-									<tr>
-										<td></td>
-										<td>f.</td>
-										<td><span class="coptic">ⲉⲣⲟⲥ</span></td>
-										<td><span class="arabic">اليها</span></td>
-										<td><span class="coptic">ⲛⲁⲥ</span></td>
-										<td><span class="arabic">لها</span></td>
-									</tr>
-									<tr>
-										<td>Pl.</td>
-										<td>1.</td>
-										<td><span class="coptic">ⲉⲣⲟⲛ</span></td>
-										<td><span class="arabic">الينا</span></td>
-										<td><span class="coptic">ⲛⲁⲛ</span></td>
-										<td><span class="arabic">لنا</span></td>
-									</tr>
-									<tr>
-										<td></td>
-										<td>2.</td>
-										<td><span class="coptic">ⲉⲣⲱⲧⲉⲛ</span></td>
-										<td><span class="arabic">اليكم</span></td>
-										<td><span class="coptic">ⲛⲱⲧⲉⲛ</span></td>
-										<td><span class="arabic">لكُم</span></td>
-									</tr>
-									<tr>
-										<td></td>
-										<td>3.</td>
-										<td><span class="coptic">ⲉⲣⲱⲟⲩ</span></td>
-										<td><span class="arabic">اليهم</span></td>
-										<td><span class="coptic">ⲛⲱⲟⲩ</span></td>
-										<td><span class="arabic">لهُم</span></td>
-									</tr>
-								</table>
-							</div>
-							<div class="fr">
-								<p>Comme exemple, nous donnons ici la suffixation aux deux prépositions les plus usitées <span class="coptic">ⲉ- ⲉⲣⲟ⸗</span> «vers, à <span class="arabic">الى</span>», <span class="coptic">ⲛ̀- ⲛ⸗</span> «à <span class="arabic">لِ</span>»:</p>
-								<p>Sur <span class="coptic">ⲛ̀-</span> se modèlent la particule du génitif <span class="coptic">ⲛ̀ⲧⲉ- ⲛ̀⸗</span> «de» et la préposition <span class="coptic">ⲛⲉⲙ⸗</span> «avec».</p>
-								<table>
-									<tr>
-										<td>Sing.</td>
-										<td>1.</td>
-										<td><span class="coptic">ⲉⲣⲟⲓ</span></td>
-										<td><span class="arabic">الي</span></td>
-										<td><span class="coptic">ⲛⲏⲓ</span></td>
-										<td><span class="arabic">لي</span></td>
-									</tr>
-									<tr>
-										<td></td>
-										<td>2. m.</td>
-										<td><span class="coptic">ⲉⲣⲟⲕ</span></td>
-										<td><span class="arabic">اليكَ</span></td>
-										<td><span class="coptic">ⲛⲁⲕ</span></td>
-										<td><span class="arabic">لكَ</span></td>
-									</tr>
-									<tr>
-										<td></td>
-										<td>f.</td>
-										<td><span class="coptic">ⲉⲣⲟ</span></td>
-										<td><span class="arabic">اليكِ</span></td>
-										<td><span class="coptic">ⲛⲉ</span></td>
-										<td><span class="arabic">لكِ</span></td>
-									</tr>
-									<tr>
-										<td></td>
-										<td>3. m.</td>
-										<td><span class="coptic">ⲉⲣⲟϥ</span></td>
-										<td><span class="arabic">اليه</span></td>
-										<td><span class="coptic">ⲛⲁϥ</span></td>
-										<td><span class="arabic">لهُ</span></td>
-									</tr>
-									<tr>
-										<td></td>
-										<td>f.</td>
-										<td><span class="coptic">ⲉⲣⲟⲥ</span></td>
-										<td><span class="arabic">اليها</span></td>
-										<td><span class="coptic">ⲛⲁⲥ</span></td>
-										<td><span class="arabic">لها</span></td>
-									</tr>
-									<tr>
-										<td>Pl.</td>
-										<td>1.</td>
-										<td><span class="coptic">ⲉⲣⲟⲛ</span></td>
-										<td><span class="arabic">الينا</span></td>
-										<td><span class="coptic">ⲛⲁⲛ</span></td>
-										<td><span class="arabic">لنا</span></td>
-									</tr>
-									<tr>
-										<td></td>
-										<td>2.</td>
-										<td><span class="coptic">ⲉⲣⲱⲧⲉⲛ</span></td>
-										<td><span class="arabic">اليكم</span></td>
-										<td><span class="coptic">ⲛⲱⲧⲉⲛ</span></td>
-										<td><span class="arabic">لكُم</span></td>
-									</tr>
-									<tr>
-										<td></td>
-										<td>3.</td>
-										<td><span class="coptic">ⲉⲣⲱⲟⲩ</span></td>
-										<td><span class="arabic">اليهم</span></td>
-										<td><span class="coptic">ⲛⲱⲟⲩ</span></td>
-										<td><span class="arabic">لهُم</span></td>
-									</tr>
-								</table>
-							</div>
+					<div id="061" data-section="61" class="wip">
+						<div class="section">
+							<p>Comme exemple, nous donnons ici la suffixation aux deux prépositions les plus usitées <span class="coptic">ⲉ- ⲉⲣⲟ⸗</span> «vers, à <span class="arabic">الى</span>», <span class="coptic">ⲛ̀- ⲛ⸗</span> «à <span class="arabic">لِ</span>»:</p>
+							<p>Sur <span class="coptic">ⲛ̀-</span> se modèlent la particule du génitif <span class="coptic">ⲛ̀ⲧⲉ- ⲛ̀⸗</span> «de» et la préposition <span class="coptic">ⲛⲉⲙ⸗</span> «avec».</p>
+							<table>
+								<tr>
+									<td>Sing.</td>
+									<td>1.</td>
+									<td><span class="coptic">ⲉⲣⲟⲓ</span></td>
+									<td><span class="arabic">الي</span></td>
+									<td><span class="coptic">ⲛⲏⲓ</span></td>
+									<td><span class="arabic">لي</span></td>
+								</tr>
+								<tr>
+									<td></td>
+									<td>2. m.</td>
+									<td><span class="coptic">ⲉⲣⲟⲕ</span></td>
+									<td><span class="arabic">اليكَ</span></td>
+									<td><span class="coptic">ⲛⲁⲕ</span></td>
+									<td><span class="arabic">لكَ</span></td>
+								</tr>
+								<tr>
+									<td></td>
+									<td>f.</td>
+									<td><span class="coptic">ⲉⲣⲟ</span></td>
+									<td><span class="arabic">اليكِ</span></td>
+									<td><span class="coptic">ⲛⲉ</span></td>
+									<td><span class="arabic">لكِ</span></td>
+								</tr>
+								<tr>
+									<td></td>
+									<td>3. m.</td>
+									<td><span class="coptic">ⲉⲣⲟϥ</span></td>
+									<td><span class="arabic">اليه</span></td>
+									<td><span class="coptic">ⲛⲁϥ</span></td>
+									<td><span class="arabic">لهُ</span></td>
+								</tr>
+								<tr>
+									<td></td>
+									<td>f.</td>
+									<td><span class="coptic">ⲉⲣⲟⲥ</span></td>
+									<td><span class="arabic">اليها</span></td>
+									<td><span class="coptic">ⲛⲁⲥ</span></td>
+									<td><span class="arabic">لها</span></td>
+								</tr>
+								<tr>
+									<td>Pl.</td>
+									<td>1.</td>
+									<td><span class="coptic">ⲉⲣⲟⲛ</span></td>
+									<td><span class="arabic">الينا</span></td>
+									<td><span class="coptic">ⲛⲁⲛ</span></td>
+									<td><span class="arabic">لنا</span></td>
+								</tr>
+								<tr>
+									<td></td>
+									<td>2.</td>
+									<td><span class="coptic">ⲉⲣⲱⲧⲉⲛ</span></td>
+									<td><span class="arabic">اليكم</span></td>
+									<td><span class="coptic">ⲛⲱⲧⲉⲛ</span></td>
+									<td><span class="arabic">لكُم</span></td>
+								</tr>
+								<tr>
+									<td></td>
+									<td>3.</td>
+									<td><span class="coptic">ⲉⲣⲱⲟⲩ</span></td>
+									<td><span class="arabic">اليهم</span></td>
+									<td><span class="coptic">ⲛⲱⲟⲩ</span></td>
+									<td><span class="arabic">لهُم</span></td>
+								</tr>
+							</table>
 						</div>
 					</div>
-					<div data-section="62">
-						<div class="bilingual">
-							<div class="en">
-								<p>II. Pronoms absolus.</p>
-								<table>
-									<tr>
-										<th colspan="3">Sing.</th>
-										<th colspan="3">Pl.</th>
-									</tr>
-									<tr>
-										<td>1.</td>
-										<td><span class="coptic">ⲁⲛⲟⲕ</span></td>
-										<td>moi</td>
-										<td>1.</td>
-										<td><span class="coptic">ⲁⲛⲟⲛ</span></td>
-										<td>nous</td>
-									</tr>
-									<tr>
-										<td>2 m.</td>
-										<td><span class="coptic">ⲛ̀ⲑⲟⲕ</span></td>
-										<td>toi</td>
-										<td rowspan="2">2.</td>
-										<td rowspan="2"><span class="coptic">ⲛ̀ⲑⲱⲧⲉⲛ</span></td>
-										<td rowspan="2">vous</td>
-									</tr>
-									<tr>
-										<td>f.</td>
-										<td><span class="coptic">ⲛ̀ⲑⲟ</span></td>
-										<td>toi <i>f.</i></td>
-									</tr>
-									<tr>
-										<td>3 m.</td>
-										<td><span class="coptic">ⲛ̀ⲑⲟϥ</span></td>
-										<td>lui</td>
-										<td rowspan="2">3.</td>
-										<td rowspan="2"><span class="coptic">ⲛ̀ⲑⲱⲟⲩ</span></td>
-										<td rowspan="2">eux, elles.</td>
-									</tr>
-									<tr>
-										<td>f.</td>
-										<td><span class="coptic">ⲛ̀ⲑⲟⲥ</span></td>
-										<td>elle</td>
-									</tr>
-								</table>
-							</div>
-							<div class="fr">
-								<p>II. Pronoms absolus.</p>
-								<table>
-									<tr>
-										<th colspan="3">Sing.</th>
-										<th colspan="3">Pl.</th>
-									</tr>
-									<tr>
-										<td>1.</td>
-										<td><span class="coptic">ⲁⲛⲟⲕ</span></td>
-										<td>moi</td>
-										<td>1.</td>
-										<td><span class="coptic">ⲁⲛⲟⲛ</span></td>
-										<td>nous</td>
-									</tr>
-									<tr>
-										<td>2 m.</td>
-										<td><span class="coptic">ⲛ̀ⲑⲟⲕ</span></td>
-										<td>toi</td>
-										<td rowspan="2">2.</td>
-										<td rowspan="2"><span class="coptic">ⲛ̀ⲑⲱⲧⲉⲛ</span></td>
-										<td rowspan="2">vous</td>
-									</tr>
-									<tr>
-										<td>f.</td>
-										<td><span class="coptic">ⲛ̀ⲑⲟ</span></td>
-										<td>toi <i>f.</i></td>
-									</tr>
-									<tr>
-										<td>3 m.</td>
-										<td><span class="coptic">ⲛ̀ⲑⲟϥ</span></td>
-										<td>lui</td>
-										<td rowspan="2">3.</td>
-										<td rowspan="2"><span class="coptic">ⲛ̀ⲑⲱⲟⲩ</span></td>
-										<td rowspan="2">eux, elles.</td>
-									</tr>
-									<tr>
-										<td>f.</td>
-										<td><span class="coptic">ⲛ̀ⲑⲟⲥ</span></td>
-										<td>elle</td>
-									</tr>
-								</table>
-							</div>
+					<div id="062" data-section="62" class="wip">
+						<div class="section">
+							<p>II. Pronoms absolus.</p>
+							<table>
+								<tr>
+									<th colspan="3">Sing.</th>
+									<th colspan="3">Pl.</th>
+								</tr>
+								<tr>
+									<td>1.</td>
+									<td><span class="coptic">ⲁⲛⲟⲕ</span></td>
+									<td>moi</td>
+									<td>1.</td>
+									<td><span class="coptic">ⲁⲛⲟⲛ</span></td>
+									<td>nous</td>
+								</tr>
+								<tr>
+									<td>2 m.</td>
+									<td><span class="coptic">ⲛ̀ⲑⲟⲕ</span></td>
+									<td>toi</td>
+									<td rowspan="2">2.</td>
+									<td rowspan="2"><span class="coptic">ⲛ̀ⲑⲱⲧⲉⲛ</span></td>
+									<td rowspan="2">vous</td>
+								</tr>
+								<tr>
+									<td>f.</td>
+									<td><span class="coptic">ⲛ̀ⲑⲟ</span></td>
+									<td>toi <i>f.</i></td>
+								</tr>
+								<tr>
+									<td>3 m.</td>
+									<td><span class="coptic">ⲛ̀ⲑⲟϥ</span></td>
+									<td>lui</td>
+									<td rowspan="2">3.</td>
+									<td rowspan="2"><span class="coptic">ⲛ̀ⲑⲱⲟⲩ</span></td>
+									<td rowspan="2">eux, elles.</td>
+								</tr>
+								<tr>
+									<td>f.</td>
+									<td><span class="coptic">ⲛ̀ⲑⲟⲥ</span></td>
+									<td>elle</td>
+								</tr>
+							</table>
 						</div>
 					</div>
 					<div data-section="63">
@@ -1688,189 +1546,96 @@
 						</div>
 					</div>
 					<div data-section="74">
-						<div class="bilingual">
-							<div class="en">
-								<p>Les adjectifs et pronoms possessifs sont formés de l'article et des pronoms personnels affixes.</p>
-								<p>I. Adjectifs possessifs.</p>
-								<table>
-									<tr>
-										<th colspan="2"></th>
-										<th colspan="4">Devant un nom sing.</th>
-										<th colspan="2">Devant un nom</th>
-									</tr>
-									<tr>
-										<td colspan="2"></td>
-										<td colspan="2">masculin</td>
-										<td colspan="2">féminin</td>
-										<td colspan="2">pluriel</td>
-									</tr>
-									<tr>
-										<td rowspan="5">Sing.</td>
-										<td>1.</td>
-										<td><span class="coptic">ⲡⲁ-</span></td>
-										<td>mon</td>
-										<td><span class="coptic">ⲧⲁ-</span></td>
-										<td>ma</td>
-										<td><span class="coptic">ⲛⲁ-</span></td>
-										<td>mes</td>
-									</tr>
-									<tr>
-										<td>2 m.</td>
-										<td><span class="coptic">ⲡⲉⲕ-</span></td>
-										<td>ton</td>
-										<td><span class="coptic">ⲧⲉⲕ-</span></td>
-										<td>ta</td>
-										<td><span class="coptic">ⲛⲉⲕ-</span></td>
-										<td>tes</td>
-									</tr>
-									<tr>
-										<td>f.</td>
-										<td><span class="coptic">ⲡⲉ-</span></td>
-										<td>ton</td>
-										<td><span class="coptic">ⲧⲉ-</span></td>
-										<td>ta</td>
-										<td><span class="coptic">ⲛⲉ-</span></td>
-										<td>tes</td>
-									</tr>
-									<tr>
-										<td>3 m.</td>
-										<td><span class="coptic">ⲡⲉϥ-</span></td>
-										<td>son</td>
-										<td><span class="coptic">ⲧⲉϥ-</span></td>
-										<td>sa</td>
-										<td><span class="coptic">ⲛⲉϥ-</span></td>
-										<td>ses</td>
-									</tr>
-									<tr>
-										<td>f.</td>
-										<td><span class="coptic">ⲡⲉⲥ-</span></td>
-										<td>son</td>
-										<td><span class="coptic">ⲧⲉⲥ-</span></td>
-										<td>sa</td>
-										<td><span class="coptic">ⲛⲉⲥ-</span></td>
-										<td>ses</td>
-									</tr>
-									<tr>
-										<td rowspan="3">Pl.</td>
-										<td>1.</td>
-										<td><span class="coptic">ⲡⲉⲛ-</span></td>
-										<td>notre</td>
-										<td><span class="coptic">ⲧⲉⲛ-</span></td>
-										<td>notre</td>
-										<td><span class="coptic">ⲛⲉⲛ-</span></td>
-										<td>nos</td>
-									</tr>
-									<tr>
-										<td>2.</td>
-										<td><span class="coptic">ⲡⲉⲧⲉⲛ-</span></td>
-										<td>votre</td>
-										<td><span class="coptic">ⲧⲉⲧⲉⲛ-</span></td>
-										<td>votre</td>
-										<td><span class="coptic">ⲛⲉⲧⲉⲛ-</span></td>
-										<td>vos</td>
-									</tr>
-									<tr>
-										<td>3.</td>
-										<td><span class="coptic">ⲡⲟⲩ-</span></td>
-										<td>leur</td>
-										<td><span class="coptic">ⲧⲟⲩ-</span></td>
-										<td>leur</td>
-										<td><span class="coptic">ⲛⲟⲩ-</span></td>
-										<td>leurs</td>
-									</tr>
-								</table>
-							</div>
-							<div class="fr">
-								<p>Les adjectifs et pronoms possessifs sont formés de l'article et des pronoms personnels affixes.</p>
-								<p>I. Adjectifs possessifs.</p>
-								<table>
-									<tr>
-										<th colspan="2"></th>
-										<th colspan="4">Devant un nom sing.</th>
-										<th colspan="2">Devant un nom</th>
-									</tr>
-									<tr>
-										<td colspan="2"></td>
-										<td colspan="2">masculin</td>
-										<td colspan="2">féminin</td>
-										<td colspan="2">pluriel</td>
-									</tr>
-									<tr>
-										<td rowspan="5">Sing.</td>
-										<td>1.</td>
-										<td><span class="coptic">ⲡⲁ-</span></td>
-										<td>mon</td>
-										<td><span class="coptic">ⲧⲁ-</span></td>
-										<td>ma</td>
-										<td><span class="coptic">ⲛⲁ-</span></td>
-										<td>mes</td>
-									</tr>
-									<tr>
-										<td>2 m.</td>
-										<td><span class="coptic">ⲡⲉⲕ-</span></td>
-										<td>ton</td>
-										<td><span class="coptic">ⲧⲉⲕ-</span></td>
-										<td>ta</td>
-										<td><span class="coptic">ⲛⲉⲕ-</span></td>
-										<td>tes</td>
-									</tr>
-									<tr>
-										<td>f.</td>
-										<td><span class="coptic">ⲡⲉ-</span></td>
-										<td>ton</td>
-										<td><span class="coptic">ⲧⲉ-</span></td>
-										<td>ta</td>
-										<td><span class="coptic">ⲛⲉ-</span></td>
-										<td>tes</td>
-									</tr>
-									<tr>
-										<td>3 m.</td>
-										<td><span class="coptic">ⲡⲉϥ-</span></td>
-										<td>son</td>
-										<td><span class="coptic">ⲧⲉϥ-</span></td>
-										<td>sa</td>
-										<td><span class="coptic">ⲛⲉϥ-</span></td>
-										<td>ses</td>
-									</tr>
-									<tr>
-										<td>f.</td>
-										<td><span class="coptic">ⲡⲉⲥ-</span></td>
-										<td>son</td>
-										<td><span class="coptic">ⲧⲉⲥ-</span></td>
-										<td>sa</td>
-										<td><span class="coptic">ⲛⲉⲥ-</span></td>
-										<td>ses</td>
-									</tr>
-									<tr>
-										<td rowspan="3">Pl.</td>
-										<td>1.</td>
-										<td><span class="coptic">ⲡⲉⲛ-</span></td>
-										<td>notre</td>
-										<td><span class="coptic">ⲧⲉⲛ-</span></td>
-										<td>notre</td>
-										<td><span class="coptic">ⲛⲉⲛ-</span></td>
-										<td>nos</td>
-									</tr>
-									<tr>
-										<td>2.</td>
-										<td><span class="coptic">ⲡⲉⲧⲉⲛ-</span></td>
-										<td>votre</td>
-										<td><span class="coptic">ⲧⲉⲧⲉⲛ-</span></td>
-										<td>votre</td>
-										<td><span class="coptic">ⲛⲉⲧⲉⲛ-</span></td>
-										<td>vos</td>
-									</tr>
-									<tr>
-										<td>3.</td>
-										<td><span class="coptic">ⲡⲟⲩ-</span></td>
-										<td>leur</td>
-										<td><span class="coptic">ⲧⲟⲩ-</span></td>
-										<td>leur</td>
-										<td><span class="coptic">ⲛⲟⲩ-</span></td>
-										<td>leurs</td>
-									</tr>
-								</table>
-							</div>
+						<div class="section">
+							<p>Les adjectifs et pronoms possessifs sont formés de l'article et des pronoms personnels affixes.</p>
+							<p>I. Adjectifs possessifs.</p>
+							<table>
+								<tr>
+									<th colspan="2"></th>
+									<th colspan="4">Devant un nom sing.</th>
+									<th colspan="2">Devant un nom</th>
+								</tr>
+								<tr>
+									<td colspan="2"></td>
+									<td colspan="2">masculin</td>
+									<td colspan="2">féminin</td>
+									<td colspan="2">pluriel</td>
+								</tr>
+								<tr>
+									<td rowspan="5">Sing.</td>
+									<td>1.</td>
+									<td><span class="coptic">ⲡⲁ-</span></td>
+									<td>mon</td>
+									<td><span class="coptic">ⲧⲁ-</span></td>
+									<td>ma</td>
+									<td><span class="coptic">ⲛⲁ-</span></td>
+									<td>mes</td>
+								</tr>
+								<tr>
+									<td>2 m.</td>
+									<td><span class="coptic">ⲡⲉⲕ-</span></td>
+									<td>ton</td>
+									<td><span class="coptic">ⲧⲉⲕ-</span></td>
+									<td>ta</td>
+									<td><span class="coptic">ⲛⲉⲕ-</span></td>
+									<td>tes</td>
+								</tr>
+								<tr>
+									<td>f.</td>
+									<td><span class="coptic">ⲡⲉ-</span></td>
+									<td>ton</td>
+									<td><span class="coptic">ⲧⲉ-</span></td>
+									<td>ta</td>
+									<td><span class="coptic">ⲛⲉ-</span></td>
+									<td>tes</td>
+								</tr>
+								<tr>
+									<td>3 m.</td>
+									<td><span class="coptic">ⲡⲉϥ-</span></td>
+									<td>son</td>
+									<td><span class="coptic">ⲧⲉϥ-</span></td>
+									<td>sa</td>
+									<td><span class="coptic">ⲛⲉϥ-</span></td>
+									<td>ses</td>
+								</tr>
+								<tr>
+									<td>f.</td>
+									<td><span class="coptic">ⲡⲉⲥ-</span></td>
+									<td>son</td>
+									<td><span class="coptic">ⲧⲉⲥ-</span></td>
+									<td>sa</td>
+									<td><span class="coptic">ⲛⲉⲥ-</span></td>
+									<td>ses</td>
+								</tr>
+								<tr>
+									<td rowspan="3">Pl.</td>
+									<td>1.</td>
+									<td><span class="coptic">ⲡⲉⲛ-</span></td>
+									<td>notre</td>
+									<td><span class="coptic">ⲧⲉⲛ-</span></td>
+									<td>notre</td>
+									<td><span class="coptic">ⲛⲉⲛ-</span></td>
+									<td>nos</td>
+								</tr>
+								<tr>
+									<td>2.</td>
+									<td><span class="coptic">ⲡⲉⲧⲉⲛ-</span></td>
+									<td>votre</td>
+									<td><span class="coptic">ⲧⲉⲧⲉⲛ-</span></td>
+									<td>votre</td>
+									<td><span class="coptic">ⲛⲉⲧⲉⲛ-</span></td>
+									<td>vos</td>
+								</tr>
+								<tr>
+									<td>3.</td>
+									<td><span class="coptic">ⲡⲟⲩ-</span></td>
+									<td>leur</td>
+									<td><span class="coptic">ⲧⲟⲩ-</span></td>
+									<td>leur</td>
+									<td><span class="coptic">ⲛⲟⲩ-</span></td>
+									<td>leurs</td>
+								</tr>
+							</table>
 						</div>
 					</div>
 					<div data-section="75">
@@ -2345,170 +2110,87 @@
 							</div>
 						</div>
 					</div>
-					<div data-section="86">
-						<div class="bilingual">
-							<div class="en">
-								<p>II. Pronoms possessifs.</p>
-								<p><i><b>1.</b> Formes.</i></p>
-								<p>Le pronom possessif a deux formes:</p>
-								<p><b>1.</b> une forme abrégée:</p>
-								<table>
-									<tr>
-										<th colspan="2">Sing.</th>
-										<th rowspan="2">Pl.</th>
-									</tr>
-									<tr>
-										<th>masc.</th>
-										<th>fém.</th>
-									</tr>
-									<tr>
-										<td><span class="coptic">ⲫⲁ-</span></td>
-										<td><span class="coptic">ⲑⲁ-</span></td>
-										<td><span class="coptic">ⲛⲁ-</span></td>
-									</tr>
-								</table>
-								<p><b>2.</b> une forme avec suffixes:</p>
-								<table>
-									<tr>
-										<th colspan="2"></th>
-										<th>masc. sing.</th>
-										<th>fém. sing.</th>
-										<th>pluriel</th>
-									</tr>
-									<tr>
-										<td rowspan="5">Sing.</td>
-										<td>1.</td>
-										<td><span class="coptic">ⲫⲱⲓ</span></td>
-										<td><span class="coptic">ⲑⲱⲓ</span></td>
-										<td><span class="coptic">ⲛⲟⲩⲓ</span></td>
-									</tr>
-									<tr>
-										<td>2 m.</td>
-										<td><span class="coptic">ⲫⲱⲕ</span></td>
-										<td><span class="coptic">ⲑⲱⲕ</span></td>
-										<td><span class="coptic">ⲛⲟⲩⲕ</span></td>
-									</tr>
-									<tr>
-										<td>f.</td>
-										<td><span class="coptic">ⲫⲱ</span></td>
-										<td><span class="coptic">ⲑⲱ</span></td>
-										<td><span class="coptic">ⲛⲟⲩ</span></td>
-									</tr>
-									<tr>
-										<td>3 m.</td>
-										<td><span class="coptic">ⲫⲱϥ</span></td>
-										<td><span class="coptic">ⲑⲱϥ</span></td>
-										<td><span class="coptic">ⲛⲟⲩϥ</span></td>
-									</tr>
-									<tr>
-										<td>f.</td>
-										<td><span class="coptic">ⲫⲱⲥ</span></td>
-										<td><span class="coptic">ⲑⲱⲥ</span></td>
-										<td><span class="coptic">ⲛⲟⲩⲥ</span></td>
-									</tr>
-									<tr>
-										<td rowspan="3">Plur.</td>
-										<td>1.</td>
-										<td><span class="coptic">ⲫⲱⲛ</span></td>
-										<td><span class="coptic">ⲑⲱⲛ</span></td>
-										<td><span class="coptic">ⲛⲟⲩⲛ</span></td>
-									</tr>
-									<tr>
-										<td>2.</td>
-										<td><span class="coptic">ⲫⲱⲧⲉⲛ</span></td>
-										<td><span class="coptic">ⲑⲱⲧⲉⲛ</span></td>
-										<td><span class="coptic">ⲛⲟⲩⲧⲉⲛ</span></td>
-									</tr>
-									<tr>
-										<td>3.</td>
-										<td><span class="coptic">ⲫⲱⲟⲩ</span></td>
-										<td><span class="coptic">ⲑⲱⲟⲩ</span></td>
-										<td><span class="coptic">ⲛⲟⲩⲟⲩ</span></td>
-									</tr>
-								</table>
-								<p>En Ṣaꜥidique les formes sont les mêmes, mais avec <span class="coptic">ⲡ</span> et <span class="coptic">ⲧ</span>, au lieu des aspirées <span class="coptic">ⲫ</span> <span class="coptic">ⲑ</span> (24).</p>
-							</div>
-							<div class="fr">
-								<p>II. Pronoms possessifs.</p>
-								<p><i><b>1.</b> Formes.</i></p>
-								<p>Le pronom possessif a deux formes:</p>
-								<p><b>1.</b> une forme abrégée:</p>
-								<table>
-									<tr>
-										<th colspan="2">Sing.</th>
-										<th rowspan="2">Pl.</th>
-									</tr>
-									<tr>
-										<th>masc.</th>
-										<th>fém.</th>
-									</tr>
-									<tr>
-										<td><span class="coptic">ⲫⲁ-</span></td>
-										<td><span class="coptic">ⲑⲁ-</span></td>
-										<td><span class="coptic">ⲛⲁ-</span></td>
-									</tr>
-								</table>
-								<p><b>2.</b> une forme avec suffixes:</p>
-								<table>
-									<tr>
-										<th colspan="2"></th>
-										<th>masc. sing.</th>
-										<th>fém. sing.</th>
-										<th>pluriel</th>
-									</tr>
-									<tr>
-										<td rowspan="5">Sing.</td>
-										<td>1.</td>
-										<td><span class="coptic">ⲫⲱⲓ</span></td>
-										<td><span class="coptic">ⲑⲱⲓ</span></td>
-										<td><span class="coptic">ⲛⲟⲩⲓ</span></td>
-									</tr>
-									<tr>
-										<td>2 m.</td>
-										<td><span class="coptic">ⲫⲱⲕ</span></td>
-										<td><span class="coptic">ⲑⲱⲕ</span></td>
-										<td><span class="coptic">ⲛⲟⲩⲕ</span></td>
-									</tr>
-									<tr>
-										<td>f.</td>
-										<td><span class="coptic">ⲫⲱ</span></td>
-										<td><span class="coptic">ⲑⲱ</span></td>
-										<td><span class="coptic">ⲛⲟⲩ</span></td>
-									</tr>
-									<tr>
-										<td>3 m.</td>
-										<td><span class="coptic">ⲫⲱϥ</span></td>
-										<td><span class="coptic">ⲑⲱϥ</span></td>
-										<td><span class="coptic">ⲛⲟⲩϥ</span></td>
-									</tr>
-									<tr>
-										<td>f.</td>
-										<td><span class="coptic">ⲫⲱⲥ</span></td>
-										<td><span class="coptic">ⲑⲱⲥ</span></td>
-										<td><span class="coptic">ⲛⲟⲩⲥ</span></td>
-									</tr>
-									<tr>
-										<td rowspan="3">Plur.</td>
-										<td>1.</td>
-										<td><span class="coptic">ⲫⲱⲛ</span></td>
-										<td><span class="coptic">ⲑⲱⲛ</span></td>
-										<td><span class="coptic">ⲛⲟⲩⲛ</span></td>
-									</tr>
-									<tr>
-										<td>2.</td>
-										<td><span class="coptic">ⲫⲱⲧⲉⲛ</span></td>
-										<td><span class="coptic">ⲑⲱⲧⲉⲛ</span></td>
-										<td><span class="coptic">ⲛⲟⲩⲧⲉⲛ</span></td>
-									</tr>
-									<tr>
-										<td>3.</td>
-										<td><span class="coptic">ⲫⲱⲟⲩ</span></td>
-										<td><span class="coptic">ⲑⲱⲟⲩ</span></td>
-										<td><span class="coptic">ⲛⲟⲩⲟⲩ</span></td>
-									</tr>
-								</table>
-								<p>En Ṣaꜥidique les formes sont les mêmes, mais avec <span class="coptic">ⲡ</span> et <span class="coptic">ⲧ</span>, au lieu des aspirées <span class="coptic">ⲫ</span> <span class="coptic">ⲑ</span> (24).</p>
-							</div>
+					<div id="086" data-section="86" class="wip">
+						<div class="section">
+							<p>II. Pronoms possessifs.</p>
+							<p><i><b>1.</b> Formes.</i></p>
+							<p>Le pronom possessif a deux formes:</p>
+							<p><b>1.</b> une forme abrégée:</p>
+							<table>
+								<tr>
+									<th colspan="2">Sing.</th>
+									<th rowspan="2">Pl.</th>
+								</tr>
+								<tr>
+									<th>masc.</th>
+									<th>fém.</th>
+								</tr>
+								<tr>
+									<td><span class="coptic">ⲫⲁ-</span></td>
+									<td><span class="coptic">ⲑⲁ-</span></td>
+									<td><span class="coptic">ⲛⲁ-</span></td>
+								</tr>
+							</table>
+							<p><b>2.</b> une forme avec suffixes:</p>
+							<table>
+								<tr>
+									<th colspan="2"></th>
+									<th>masc. sing.</th>
+									<th>fém. sing.</th>
+									<th>pluriel</th>
+								</tr>
+								<tr>
+									<td rowspan="5">Sing.</td>
+									<td>1.</td>
+									<td><span class="coptic">ⲫⲱⲓ</span></td>
+									<td><span class="coptic">ⲑⲱⲓ</span></td>
+									<td><span class="coptic">ⲛⲟⲩⲓ</span></td>
+								</tr>
+								<tr>
+									<td>2 m.</td>
+									<td><span class="coptic">ⲫⲱⲕ</span></td>
+									<td><span class="coptic">ⲑⲱⲕ</span></td>
+									<td><span class="coptic">ⲛⲟⲩⲕ</span></td>
+								</tr>
+								<tr>
+									<td>f.</td>
+									<td><span class="coptic">ⲫⲱ</span></td>
+									<td><span class="coptic">ⲑⲱ</span></td>
+									<td><span class="coptic">ⲛⲟⲩ</span></td>
+								</tr>
+								<tr>
+									<td>3 m.</td>
+									<td><span class="coptic">ⲫⲱϥ</span></td>
+									<td><span class="coptic">ⲑⲱϥ</span></td>
+									<td><span class="coptic">ⲛⲟⲩϥ</span></td>
+								</tr>
+								<tr>
+									<td>f.</td>
+									<td><span class="coptic">ⲫⲱⲥ</span></td>
+									<td><span class="coptic">ⲑⲱⲥ</span></td>
+									<td><span class="coptic">ⲛⲟⲩⲥ</span></td>
+								</tr>
+								<tr>
+									<td rowspan="3">Plur.</td>
+									<td>1.</td>
+									<td><span class="coptic">ⲫⲱⲛ</span></td>
+									<td><span class="coptic">ⲑⲱⲛ</span></td>
+									<td><span class="coptic">ⲛⲟⲩⲛ</span></td>
+								</tr>
+								<tr>
+									<td>2.</td>
+									<td><span class="coptic">ⲫⲱⲧⲉⲛ</span></td>
+									<td><span class="coptic">ⲑⲱⲧⲉⲛ</span></td>
+									<td><span class="coptic">ⲛⲟⲩⲧⲉⲛ</span></td>
+								</tr>
+								<tr>
+									<td>3.</td>
+									<td><span class="coptic">ⲫⲱⲟⲩ</span></td>
+									<td><span class="coptic">ⲑⲱⲟⲩ</span></td>
+									<td><span class="coptic">ⲛⲟⲩⲟⲩ</span></td>
+								</tr>
+							</table>
+							<p>En Ṣaꜥidique les formes sont les mêmes, mais avec <span class="coptic">ⲡ</span> et <span class="coptic">ⲧ</span>, au lieu des aspirées <span class="coptic">ⲫ</span> <span class="coptic">ⲑ</span> (24).</p>
 						</div>
 					</div>
 					<div data-section="87">
@@ -2983,68 +2665,36 @@
 							</div>
 						</div>
 					</div>
-					<div data-section="97">
-						<div class="bilingual">
-							<div class="en">
-								<p id="chapter_04_iii">Pronom relatif.</p>
-								<p>Le pronom relatif a trois formes qui conviennent à tous les genres et à tous les nombres: <span class="coptic">ⲉ</span>, <span class="coptic">ⲉⲧ</span>, <span class="coptic">ⲉⲧⲉ</span>.</p>
-								<p>Ce pronom s'unit aux démonstratifs <span class="coptic">ⲫⲏ</span>, <span class="coptic">ⲑⲏ</span>, <span class="coptic">ⲛⲏ</span> pour former les composés suivants appelés relatifs démonstratifs:</p>
-								<table>
-									<tr>
-										<td rowspan="2">Sing.</td>
-										<td>masc.</td>
-										<td><span class="coptic">ⲫⲏ ⲉ</span></td>
-										<td><span class="coptic">ⲫⲏ ⲉⲧ</span></td>
-										<td><span class="coptic">ⲫⲏ ⲉⲧⲉ</span></td>
-										<td>«celui qui»;</td>
-									</tr>
-									<tr>
-										<td>fém.</td>
-										<td><span class="coptic">ⲑⲏ ⲉ</span></td>
-										<td><span class="coptic">ⲑⲏ ⲉⲧ</span></td>
-										<td><span class="coptic">ⲑⲏ ⲉⲧⲉ</span></td>
-										<td>«celle qui»;</td>
-									</tr>
-									<tr>
-										<td>Pluriel</td>
-										<td></td>
-										<td><span class="coptic">ⲛⲏ ⲉ</span></td>
-										<td><span class="coptic">ⲛⲏ ⲉⲧ</span></td>
-										<td><span class="coptic">ⲛⲏ ⲉⲧⲉ</span></td>
-										<td>«ceux qui».</td>
-									</tr>
-								</table>
-							</div>
-							<div class="fr">
-								<p id="chapter_04_iii">Pronom relatif.</p>
-								<p>Le pronom relatif a trois formes qui conviennent à tous les genres et à tous les nombres: <span class="coptic">ⲉ</span>, <span class="coptic">ⲉⲧ</span>, <span class="coptic">ⲉⲧⲉ</span>.</p>
-								<p>Ce pronom s'unit aux démonstratifs <span class="coptic">ⲫⲏ</span>, <span class="coptic">ⲑⲏ</span>, <span class="coptic">ⲛⲏ</span> pour former les composés suivants appelés relatifs démonstratifs:</p>
-								<table>
-									<tr>
-										<td rowspan="2">Sing.</td>
-										<td>masc.</td>
-										<td><span class="coptic">ⲫⲏ ⲉ</span></td>
-										<td><span class="coptic">ⲫⲏ ⲉⲧ</span></td>
-										<td><span class="coptic">ⲫⲏ ⲉⲧⲉ</span></td>
-										<td>«celui qui»;</td>
-									</tr>
-									<tr>
-										<td>fém.</td>
-										<td><span class="coptic">ⲑⲏ ⲉ</span></td>
-										<td><span class="coptic">ⲑⲏ ⲉⲧ</span></td>
-										<td><span class="coptic">ⲑⲏ ⲉⲧⲉ</span></td>
-										<td>«celle qui»;</td>
-									</tr>
-									<tr>
-										<td>Pluriel</td>
-										<td></td>
-										<td><span class="coptic">ⲛⲏ ⲉ</span></td>
-										<td><span class="coptic">ⲛⲏ ⲉⲧ</span></td>
-										<td><span class="coptic">ⲛⲏ ⲉⲧⲉ</span></td>
-										<td>«ceux qui».</td>
-									</tr>
-								</table>
-							</div>
+					<div id="097" data-section="97" class="wip">
+						<div class="section">
+							<p>Pronom relatif.</p>
+							<p>Le pronom relatif a trois formes qui conviennent à tous les genres et à tous les nombres: <span class="coptic">ⲉ</span>, <span class="coptic">ⲉⲧ</span>, <span class="coptic">ⲉⲧⲉ</span>.</p>
+							<p>Ce pronom s'unit aux démonstratifs <span class="coptic">ⲫⲏ</span>, <span class="coptic">ⲑⲏ</span>, <span class="coptic">ⲛⲏ</span> pour former les composés suivants appelés relatifs démonstratifs:</p>
+							<table>
+								<tr>
+									<td rowspan="2">Sing.</td>
+									<td>masc.</td>
+									<td><span class="coptic">ⲫⲏ ⲉ</span></td>
+									<td><span class="coptic">ⲫⲏ ⲉⲧ</span></td>
+									<td><span class="coptic">ⲫⲏ ⲉⲧⲉ</span></td>
+									<td>«celui qui»;</td>
+								</tr>
+								<tr>
+									<td>fém.</td>
+									<td><span class="coptic">ⲑⲏ ⲉ</span></td>
+									<td><span class="coptic">ⲑⲏ ⲉⲧ</span></td>
+									<td><span class="coptic">ⲑⲏ ⲉⲧⲉ</span></td>
+									<td>«celle qui»;</td>
+								</tr>
+								<tr>
+									<td>Pluriel</td>
+									<td></td>
+									<td><span class="coptic">ⲛⲏ ⲉ</span></td>
+									<td><span class="coptic">ⲛⲏ ⲉⲧ</span></td>
+									<td><span class="coptic">ⲛⲏ ⲉⲧⲉ</span></td>
+									<td>«ceux qui».</td>
+								</tr>
+							</table>
 						</div>
 					</div>
 					<div data-section="98">
@@ -5277,94 +4927,70 @@
 							<h3>Des Adjectifs en Particulier.</h3>
 						</div>
 					</div>
-					<div data-section="161">
-						<div class="bilingual">
-							<div class="en">
-								<p>I. Formation.</p>
-								<p>La langue copte possède relativement peu d'adjectifs proprement dits, surtout d'adjectifs primitifs. On a vu §§ 124, 125, la formation des adjectifs dérivés; et §§ 135, 137, 141, celle des adjectifs composés.</p>
-								<p>On supplée au manque d'adjectifs de deux manières:</p>
-								<p><b>1.</b> Au moyen de l'annexion (158, 1):</p>
-								<blockquote class="example">
-									<p><span class="coptic">ⲡⲓⲣⲁⲛ ⲛ̀ⲟⲩϫⲁⲓ</span></p>
-									<p>«le nom salutaire»<a href="#cite-footnote-chapter_08-001" class="footnote" id="footnote-chapter_08-001"><sup>[1]</sup></a>.</p>
-								</blockquote>
-								<blockquote class="example">
-									<p><span class="coptic">ϯⲥⲙⲏ ⲛ̀ⲛⲟⲩϯ</span></p>
-									<p>«la voix divine»<a href="#cite-footnote-chapter_08-002" class="footnote" id="footnote-chapter_08-002"><sup>[2]</sup></a>.</p>
-								</blockquote>
-							</div>
-							<div class="fr">
-								<p>I. Formation.</p>
-								<p>La langue copte possède relativement peu d'adjectifs proprement dits, surtout d'adjectifs primitifs. On a vu §§ 124, 125, la formation des adjectifs dérivés; et §§ 135, 137, 141, celle des adjectifs composés.</p>
-								<p>On supplée au manque d'adjectifs de deux manières:</p>
-								<p><b>1.</b> Au moyen de l'annexion (158, 1):</p>
-								<blockquote class="example">
-									<p><span class="coptic">ⲡⲓⲣⲁⲛ ⲛ̀ⲟⲩϫⲁⲓ</span></p>
-									<p>«le nom salutaire»<a href="#cite-footnote-chapter_08-001" class="footnote" id="footnote-chapter_08-001"><sup>[1]</sup></a>.</p>
-								</blockquote>
-								<blockquote class="example">
-									<p><span class="coptic">ϯⲥⲙⲏ ⲛ̀ⲛⲟⲩϯ</span></p>
-									<p>«la voix divine»<a href="#cite-footnote-chapter_08-002" class="footnote" id="footnote-chapter_08-002"><sup>[2]</sup></a>.</p>
-								</blockquote>
-							</div>
+					<div id="161" data-section="161" class="needs-english">
+						<div class="section">
+							<p class="fr">I. Formation</p>
+							<p class="en"></p>
+							<p class="fr">La langue copte possède relativement <i>peu d'adjectifs</i> proprement dits, surtout d'adjectifs primitifs. On a vu §§ 124, 125, la formation des adjectifs dérivés; et §§ 135, 137, 141, celle des adjectifs composés.</p>
+							<p class="en"></p>
+							<p class="fr">On supplée au manque d'adjectifs de deux manières:</p>
+							<p class="en"></p>
+							<p><b>1.</b> Au moyen de l'annexion (158, 1):</p>
+							<blockquote class="example">
+								<p><span class="coptic">ⲡⲓⲣⲁⲛ ⲛ̀ⲟⲩϫⲁⲓ</span> <span class="fr">(Th. 131)</span><span class="en">()</span></p>
+								<p class="fr">«le nom salutaire»</p>
+								<p class="en"></p>
+							</blockquote>
+							<blockquote class="example">
+								<p><span class="coptic">ϯⲥⲙⲏ ⲛ̀ⲛⲟⲩϯ</span> <span class="fr">(G. 84)</span><span class="en">()</span></p>
+								<p class="fr">«la voix divine»</p>
+								<p class="en"></p>
+							</blockquote>
 						</div>
 					</div>
-					<div data-section="162">
-						<div class="bilingual">
-							<div class="en">
-								<p><b>2.</b> Au moyen du qualitatif des verbes, précédé du relatif <span class="coptic">ⲉⲧ</span> pour les substantifs <i>déterminés</i> et de l'auxiliaire <span class="coptic">ⲉ⸗</span> avec les suffixes (3<sup>e</sup> présent) pour les substantifs <i>indéterminés</i>:</p>
-								<table>
-									<tr>
-										<td rowspan="2">Sg.</td>
-										<td><i>dét.</i></td>
-										<td><span class="coptic">ⲡⲓⲡⲛⲉⲩⲙⲁ ⲉⲑⲟⲩⲁⲃ</span></td>
-										<td>«L'Esprit-Saint»;</td>
-									</tr>
-									<tr>
-										<td><i>indét.</i></td>
-										<td><span class="coptic">ⲟⲩⲡⲛⲉⲩⲙⲁ ⲉϥⲟⲩⲁⲃ</span></td>
-										<td>«un esprit saint»<a href="#cite-footnote-chapter_08-003" class="footnote" id="footnote-chapter_08-003"><sup>[3]</sup></a>.</td>
-									</tr>
-									<tr>
-										<td rowspan="2">Pl.</td>
-										<td><i>dét.</i></td>
-										<td><span class="coptic">ⲛⲓⲙⲱⲓⲧ ⲉⲧⲥⲟⲩⲧⲱⲛ</span></td>
-										<td>«les voies droites»<a href="#cite-footnote-chapter_08-004" class="footnote" id="footnote-chapter_08-004"><sup>[4]</sup></a>;</td>
-									</tr>
-									<tr>
-										<td><i>indét.</i></td>
-										<td><span class="coptic">ϩⲁⲛⲙⲁⲛ̀ⲙⲟϣⲓ ⲉⲩⲥⲟⲩⲧⲱⲛ</span></td>
-										<td>«des voies droites»<a href="#cite-footnote-chapter_08-005" class="footnote" id="footnote-chapter_08-005"><sup>[5]</sup></a>.</td>
-									</tr>
-								</table>
-							</div>
-							<div class="fr">
-								<p><b>2.</b> Au moyen du qualitatif des verbes, précédé du relatif <span class="coptic">ⲉⲧ</span> pour les substantifs <i>déterminés</i> et de l'auxiliaire <span class="coptic">ⲉ⸗</span> avec les suffixes (3<sup>e</sup> présent) pour les substantifs <i>indéterminés</i>:</p>
-								<table>
-									<tr>
-										<td rowspan="2">Sg.</td>
-										<td><i>dét.</i></td>
-										<td><span class="coptic">ⲡⲓⲡⲛⲉⲩⲙⲁ ⲉⲑⲟⲩⲁⲃ</span></td>
-										<td>«L'Esprit-Saint»;</td>
-									</tr>
-									<tr>
-										<td><i>indét.</i></td>
-										<td><span class="coptic">ⲟⲩⲡⲛⲉⲩⲙⲁ ⲉϥⲟⲩⲁⲃ</span></td>
-										<td>«un esprit saint»<a href="#cite-footnote-chapter_08-003" class="footnote" id="footnote-chapter_08-003"><sup>[3]</sup></a>.</td>
-									</tr>
-									<tr>
-										<td rowspan="2">Pl.</td>
-										<td><i>dét.</i></td>
-										<td><span class="coptic">ⲛⲓⲙⲱⲓⲧ ⲉⲧⲥⲟⲩⲧⲱⲛ</span></td>
-										<td>«les voies droites»<a href="#cite-footnote-chapter_08-004" class="footnote" id="footnote-chapter_08-004"><sup>[4]</sup></a>;</td>
-									</tr>
-									<tr>
-										<td><i>indét.</i></td>
-										<td><span class="coptic">ϩⲁⲛⲙⲁⲛ̀ⲙⲟϣⲓ ⲉⲩⲥⲟⲩⲧⲱⲛ</span></td>
-										<td>«des voies droites»<a href="#cite-footnote-chapter_08-005" class="footnote" id="footnote-chapter_08-005"><sup>[5]</sup></a>.</td>
-									</tr>
-								</table>
-							</div>
+					<div id="162" data-section="162" class="needs-english">
+						<div class="section">
+							<p class="fr"><b>2.</b> Au moyen du qualitatif des verbes, précédé du relatif <span class="coptic">ⲉⲧ-</span> (A.E. <span class="egypt-translit">ntj</span>) pour les substantifs <i>déterminés</i> et de l'auxiliaire <span class="coptic">ⲉ⸗</span> avec les suffixes (3ème présent) pour les substantifs <i>indéterminés</i>:</p>
+							<p class="en"></p>
+							<table>
+								<tr>
+									<td></td><td><i>dét.</i></td><td><i>indét.</i></td>
+								</tr>
+								<tr>
+									<td>Sg.</td>
+									<td>
+										<blockquote class="example">
+											<p><span class="coptic">ⲡⲓⲡⲛⲉⲩⲙⲁ ⲉⲑⲟⲩⲁⲃ</span></p>
+											<p class="fr">«L'Esprit-Saint»</p>
+											<p class="en"></p>
+										</blockquote>
+									</td>
+									<td>
+										<blockquote class="example">
+											<p><span class="coptic">ⲟⲩⲡⲛⲉⲩⲙⲁ ⲉϥⲟⲩⲁⲃ</span> <span class="fr">(Th. 171)</span><span class="en">()</span></p>
+											<p class="fr">«un esprit saint»</p>
+											<p class="en"></p>
+										</blockquote>
+									</td>
+								</tr>
+								<tr>
+									<td>Pl.</td>
+									<td>
+										<blockquote class="example">
+											<p><span class="coptic">ⲛⲓⲙⲱⲓⲧ ⲉⲧⲥⲟⲩⲧⲱⲛ</span> <span class="fr">(Pr. 2, 13)</span><span class="en">(Proverbs 2:13)</span></p>
+											<p class="fr">«les voies droites»</p>
+											<p class="en"></p>
+										</blockquote>
+									</td>
+									<td>
+										<blockquote class="example">
+											<p><span class="coptic">ϩⲁⲛⲙⲁⲛ̀ⲙⲟϣⲓ ⲉⲩⲥⲟⲩⲧⲱⲛ</span> <span class="fr">(Pr. 2, 20)</span><span class="en">(Proverbs 2:20)</span></p>
+											<p class="fr">«des voies droites»</p>
+											<p class="en"></p>
+										</blockquote>
+									</td>
+								</tr>
+							</table>
 						</div>
 					</div>
 					<div data-section="163">
@@ -5821,660 +5447,345 @@
 							<h3>De la Numération.</h3>
 						</div>
 					</div>
-					<div data-section="175">
-						<div class="bilingual">
-							<div class="en">
-								<p>I. Les nombres.</p>
-								<p>Les nombres sont représentés par les lettres surmontées d'un seul trait jusqu'à mille et de deux à partir de mille.</p>
-							</div>
-							<div class="fr">
-								<p>I. Les nombres.</p>
-								<p>Les nombres sont représentés par les lettres surmontées d'un seul trait jusqu'à mille et de deux à partir de mille.</p>
-							</div>
+					<div data-section="175" class="needs-english">
+						<div class="section">
+							<p class="fr">I. Les nombres</p>
+							<p class="en"></p>
+							<p class="fr">Les nombres sont représentés par les lettres surmontées d'un seul trait jusqu'à mille et de deux à partir de mille.</p>
+							<p class="en"></p>
 						</div>
 					</div>
-					<div data-section="176">
-						<div class="bilingual">
-							<div class="en">
-								<p><b>1.</b> Nombres cardinaux.</p>
-								<p><i><b>1.</b> Les nombres simples.</i></p>
-								<table>
-									<tr>
-										<td></td>
-										<td></td>
-										<td>Boḥairique</td>
-										<td></td>
-										<td>Ṣaꜥidique</td>
-										<td></td>
-									</tr>
-									<tr>
-										<td></td>
-										<td></td>
-										<td>masc.</td>
-										<td>fém.</td>
-										<td>masc.</td>
-										<td>fém.</td>
-									</tr>
-									<tr>
-										<td>1</td>
-										<td><span class="coptic">ⲁ̅</span></td>
-										<td><span class="coptic">ⲟⲩⲁⲓ</span></td>
-										<td><span class="coptic">ⲟⲩⲓ</span></td>
-										<td><span class="coptic">ⲟⲩⲁ</span></td>
-										<td><span class="coptic">ⲟⲩⲉⲓ</span></td>
-									</tr>
-									<tr>
-										<td>2</td>
-										<td><span class="coptic">ⲃ̅</span></td>
-										<td><span class="coptic">ⲥⲛⲁⲩ</span></td>
-										<td><span class="coptic">ⲃ̅ϯ ⲥⲛⲟⲩϯ</span></td>
-										<td><span class="coptic">ⲥⲛⲁⲩ</span></td>
-										<td><span class="coptic">ⲥⲉⲛⲧⲉ</span></td>
-									</tr>
-									<tr>
-										<td>3</td>
-										<td><span class="coptic">ⲅ̅</span></td>
-										<td><span class="coptic">ϣⲟⲙⲧ</span></td>
-										<td><span class="coptic">ⲅ̅ϯ ϣⲟⲙϯ</span></td>
-										<td><span class="coptic">ϣⲟⲙⲛⲧ</span></td>
-										<td><span class="coptic">ϣⲟⲙⲧⲉ</span></td>
-									</tr>
-									<tr>
-										<td>4</td>
-										<td><span class="coptic">ⲇ̅</span></td>
-										<td><span class="coptic">ϥⲧⲱⲟⲩ, ϥⲧⲟⲩ-</span></td>
-										<td></td>
-										<td><span class="coptic">ϥⲧⲟⲟⲩ</span></td>
-										<td><span class="coptic">ϥⲧⲟⲉ, ϥⲧⲟ</span></td>
-									</tr>
-									<tr>
-										<td>5</td>
-										<td><span class="coptic">ⲉ̅</span></td>
-										<td><span class="coptic">ϯⲟⲩ</span></td>
-										<td></td>
-										<td><span class="coptic">ϯⲟⲩ</span></td>
-										<td><span class="coptic">ϯⲉ</span></td>
-									</tr>
-									<tr>
-										<td>6</td>
-										<td><span class="coptic">ⲋ̅</span></td>
-										<td><span class="coptic">ⲥⲟⲟⲩ</span></td>
-										<td></td>
-										<td><span class="coptic">ⲥⲟⲟⲩ</span></td>
-										<td><span class="coptic">ⲥⲟⲉ, ⲥⲟ</span></td>
-									</tr>
-									<tr>
-										<td>7</td>
-										<td><span class="coptic">ⲍ̅</span></td>
-										<td><span class="coptic">ϣⲁϣϥ</span></td>
-										<td><span class="coptic">ⲍ̅ϯ ϣⲁϣϥⲓ</span></td>
-										<td><span class="coptic">ⲥⲁϣϥ</span></td>
-										<td><span class="coptic">ⲥⲁϣϥⲉ</span></td>
-									</tr>
-									<tr>
-										<td>8</td>
-										<td><span class="coptic">ⲏ̅</span></td>
-										<td><span class="coptic">ϣⲙⲏⲛ</span></td>
-										<td><span class="coptic">ⲏ̅ϯ ϣⲙⲏⲛⲓ</span></td>
-										<td><span class="coptic">ϣⲙⲟⲩⲛ</span></td>
-										<td><span class="coptic">ϣⲙⲟⲩⲛⲉ</span></td>
-									</tr>
-									<tr>
-										<td>9</td>
-										<td><span class="coptic">ⲑ̅</span></td>
-										<td><span class="coptic">ⲯⲓⲧ</span></td>
-										<td><span class="coptic">ⲑ̅ϯ ⲯⲓϯ</span></td>
-										<td><span class="coptic">ⲯⲓⲥ</span></td>
-										<td><span class="coptic">ⲯⲓⲧⲉ</span></td>
-									</tr>
-									<tr>
-										<td>10</td>
-										<td><span class="coptic">ⲓ̅</span></td>
-										<td><span class="coptic">ⲙⲏⲧ, ⲙⲉⲧ-</span></td>
-										<td><span class="coptic">ⲓ̅ϯ ⲙⲏϯ</span></td>
-										<td><span class="coptic">ⲙⲏⲧ</span></td>
-										<td><span class="coptic">ⲙⲏⲧⲉ</span></td>
-									</tr>
-									<tr>
-										<td>20</td>
-										<td><span class="coptic">ⲕ̅</span></td>
-										<td><span class="coptic">ϫⲱⲧ</span></td>
-										<td><span class="coptic">ⲕ̅ϯ ϫⲱϯ</span></td>
-										<td><span class="coptic">ϫⲟⲩⲱⲧ</span></td>
-										<td><span class="coptic">ϫⲟⲩⲱⲧⲉ</span></td>
-									</tr>
-									<tr>
-										<td>30</td>
-										<td><span class="coptic">ⲗ̅</span></td>
-										<td><span class="coptic">ⲙⲁⲡ, ⲙⲁⲃ</span></td>
-										<td></td>
-										<td><span class="coptic">ⲙⲁⲁⲃ</span></td>
-										<td></td>
-									</tr>
-									<tr>
-										<td>40</td>
-										<td><span class="coptic">ⲙ̅</span></td>
-										<td><span class="coptic">ϩⲙⲉ</span></td>
-										<td></td>
-										<td><span class="coptic">ϩⲙⲏ, ϩⲙⲉ</span></td>
-										<td></td>
-									</tr>
-									<tr>
-										<td>50</td>
-										<td><span class="coptic">ⲛ̅</span></td>
-										<td><span class="coptic">ⲧⲉⲟⲩⲓ, ⲧⲁⲓⲟⲩ</span></td>
-										<td></td>
-										<td><span class="coptic">ⲧⲁⲓⲟⲩ</span></td>
-										<td></td>
-									</tr>
-									<tr>
-										<td>60</td>
-										<td><span class="coptic">ⲝ̅</span></td>
-										<td><span class="coptic">ⲥⲉ</span></td>
-										<td></td>
-										<td><span class="coptic">ⲥⲉ</span></td>
-										<td></td>
-									</tr>
-									<tr>
-										<td>70</td>
-										<td><span class="coptic">ⲟ̅</span></td>
-										<td><span class="coptic">ϣⲃⲉ, ϣϥⲉ</span></td>
-										<td></td>
-										<td><span class="coptic">ϣⲃⲉ, ϣϥⲉ</span></td>
-										<td></td>
-									</tr>
-									<tr>
-										<td>80</td>
-										<td><span class="coptic">ⲡ̅</span></td>
-										<td><span class="coptic">ϧⲁⲙⲛⲉ</span></td>
-										<td></td>
-										<td><span class="coptic">ϩⲙⲉⲛⲉ</span></td>
-										<td></td>
-									</tr>
-									<tr>
-										<td>90</td>
-										<td><span class="coptic">ϥ̅</span></td>
-										<td><span class="coptic">ⲡⲓⲥⲧⲉⲟⲩⲓ</span></td>
-										<td></td>
-										<td><span class="coptic">ⲡⲉⲥⲧⲁⲓⲟⲩ</span></td>
-										<td></td>
-									</tr>
-									<tr>
-										<td>100</td>
-										<td><span class="coptic">ⲣ̅</span></td>
-										<td><span class="coptic">ϣⲉ</span></td>
-										<td></td>
-										<td><span class="coptic">ϣⲉ</span></td>
-										<td></td>
-									</tr>
-									<tr>
-										<td>200</td>
-										<td><span class="coptic">ⲥ̅</span></td>
-										<td><span class="coptic">ϣⲏⲓ</span></td>
-										<td></td>
-										<td><span class="coptic">ϣⲏⲧ</span></td>
-										<td></td>
-									</tr>
-									<tr>
-										<td>1000</td>
-										<td><span class="coptic">ⲁ̿</span></td>
-										<td><span class="coptic">ϣⲟ</span></td>
-										<td></td>
-										<td><span class="coptic">ϣⲟ</span></td>
-										<td></td>
-									</tr>
-									<tr>
-										<td>10000</td>
-										<td><span class="coptic">ⲓ̿</span></td>
-										<td><span class="coptic">ⲑⲃⲁ</span></td>
-										<td></td>
-										<td><span class="coptic">ⲧⲃⲁ</span></td>
-										<td></td>
-									</tr>
-								</table>
-							</div>
-							<div class="fr">
-								<p><b>1.</b> Nombres cardinaux.</p>
-								<p><i><b>1.</b> Les nombres simples.</i></p>
-								<table>
-									<tr>
-										<td></td>
-										<td></td>
-										<td>Boḥairique</td>
-										<td></td>
-										<td>Ṣaꜥidique</td>
-										<td></td>
-									</tr>
-									<tr>
-										<td></td>
-										<td></td>
-										<td>masc.</td>
-										<td>fém.</td>
-										<td>masc.</td>
-										<td>fém.</td>
-									</tr>
-									<tr>
-										<td>1</td>
-										<td><span class="coptic">ⲁ̅</span></td>
-										<td><span class="coptic">ⲟⲩⲁⲓ</span></td>
-										<td><span class="coptic">ⲟⲩⲓ</span></td>
-										<td><span class="coptic">ⲟⲩⲁ</span></td>
-										<td><span class="coptic">ⲟⲩⲉⲓ</span></td>
-									</tr>
-									<tr>
-										<td>2</td>
-										<td><span class="coptic">ⲃ̅</span></td>
-										<td><span class="coptic">ⲥⲛⲁⲩ</span></td>
-										<td><span class="coptic">ⲃ̅ϯ ⲥⲛⲟⲩϯ</span></td>
-										<td><span class="coptic">ⲥⲛⲁⲩ</span></td>
-										<td><span class="coptic">ⲥⲉⲛⲧⲉ</span></td>
-									</tr>
-									<tr>
-										<td>3</td>
-										<td><span class="coptic">ⲅ̅</span></td>
-										<td><span class="coptic">ϣⲟⲙⲧ</span></td>
-										<td><span class="coptic">ⲅ̅ϯ ϣⲟⲙϯ</span></td>
-										<td><span class="coptic">ϣⲟⲙⲛⲧ</span></td>
-										<td><span class="coptic">ϣⲟⲙⲧⲉ</span></td>
-									</tr>
-									<tr>
-										<td>4</td>
-										<td><span class="coptic">ⲇ̅</span></td>
-										<td><span class="coptic">ϥⲧⲱⲟⲩ, ϥⲧⲟⲩ-</span></td>
-										<td></td>
-										<td><span class="coptic">ϥⲧⲟⲟⲩ</span></td>
-										<td><span class="coptic">ϥⲧⲟⲉ, ϥⲧⲟ</span></td>
-									</tr>
-									<tr>
-										<td>5</td>
-										<td><span class="coptic">ⲉ̅</span></td>
-										<td><span class="coptic">ϯⲟⲩ</span></td>
-										<td></td>
-										<td><span class="coptic">ϯⲟⲩ</span></td>
-										<td><span class="coptic">ϯⲉ</span></td>
-									</tr>
-									<tr>
-										<td>6</td>
-										<td><span class="coptic">ⲋ̅</span></td>
-										<td><span class="coptic">ⲥⲟⲟⲩ</span></td>
-										<td></td>
-										<td><span class="coptic">ⲥⲟⲟⲩ</span></td>
-										<td><span class="coptic">ⲥⲟⲉ, ⲥⲟ</span></td>
-									</tr>
-									<tr>
-										<td>7</td>
-										<td><span class="coptic">ⲍ̅</span></td>
-										<td><span class="coptic">ϣⲁϣϥ</span></td>
-										<td><span class="coptic">ⲍ̅ϯ ϣⲁϣϥⲓ</span></td>
-										<td><span class="coptic">ⲥⲁϣϥ</span></td>
-										<td><span class="coptic">ⲥⲁϣϥⲉ</span></td>
-									</tr>
-									<tr>
-										<td>8</td>
-										<td><span class="coptic">ⲏ̅</span></td>
-										<td><span class="coptic">ϣⲙⲏⲛ</span></td>
-										<td><span class="coptic">ⲏ̅ϯ ϣⲙⲏⲛⲓ</span></td>
-										<td><span class="coptic">ϣⲙⲟⲩⲛ</span></td>
-										<td><span class="coptic">ϣⲙⲟⲩⲛⲉ</span></td>
-									</tr>
-									<tr>
-										<td>9</td>
-										<td><span class="coptic">ⲑ̅</span></td>
-										<td><span class="coptic">ⲯⲓⲧ</span></td>
-										<td><span class="coptic">ⲑ̅ϯ ⲯⲓϯ</span></td>
-										<td><span class="coptic">ⲯⲓⲥ</span></td>
-										<td><span class="coptic">ⲯⲓⲧⲉ</span></td>
-									</tr>
-									<tr>
-										<td>10</td>
-										<td><span class="coptic">ⲓ̅</span></td>
-										<td><span class="coptic">ⲙⲏⲧ, ⲙⲉⲧ-</span></td>
-										<td><span class="coptic">ⲓ̅ϯ ⲙⲏϯ</span></td>
-										<td><span class="coptic">ⲙⲏⲧ</span></td>
-										<td><span class="coptic">ⲙⲏⲧⲉ</span></td>
-									</tr>
-									<tr>
-										<td>20</td>
-										<td><span class="coptic">ⲕ̅</span></td>
-										<td><span class="coptic">ϫⲱⲧ</span></td>
-										<td><span class="coptic">ⲕ̅ϯ ϫⲱϯ</span></td>
-										<td><span class="coptic">ϫⲟⲩⲱⲧ</span></td>
-										<td><span class="coptic">ϫⲟⲩⲱⲧⲉ</span></td>
-									</tr>
-									<tr>
-										<td>30</td>
-										<td><span class="coptic">ⲗ̅</span></td>
-										<td><span class="coptic">ⲙⲁⲡ, ⲙⲁⲃ</span></td>
-										<td></td>
-										<td><span class="coptic">ⲙⲁⲁⲃ</span></td>
-										<td></td>
-									</tr>
-									<tr>
-										<td>40</td>
-										<td><span class="coptic">ⲙ̅</span></td>
-										<td><span class="coptic">ϩⲙⲉ</span></td>
-										<td></td>
-										<td><span class="coptic">ϩⲙⲏ, ϩⲙⲉ</span></td>
-										<td></td>
-									</tr>
-									<tr>
-										<td>50</td>
-										<td><span class="coptic">ⲛ̅</span></td>
-										<td><span class="coptic">ⲧⲉⲟⲩⲓ, ⲧⲁⲓⲟⲩ</span></td>
-										<td></td>
-										<td><span class="coptic">ⲧⲁⲓⲟⲩ</span></td>
-										<td></td>
-									</tr>
-									<tr>
-										<td>60</td>
-										<td><span class="coptic">ⲝ̅</span></td>
-										<td><span class="coptic">ⲥⲉ</span></td>
-										<td></td>
-										<td><span class="coptic">ⲥⲉ</span></td>
-										<td></td>
-									</tr>
-									<tr>
-										<td>70</td>
-										<td><span class="coptic">ⲟ̅</span></td>
-										<td><span class="coptic">ϣⲃⲉ, ϣϥⲉ</span></td>
-										<td></td>
-										<td><span class="coptic">ϣⲃⲉ, ϣϥⲉ</span></td>
-										<td></td>
-									</tr>
-									<tr>
-										<td>80</td>
-										<td><span class="coptic">ⲡ̅</span></td>
-										<td><span class="coptic">ϧⲁⲙⲛⲉ</span></td>
-										<td></td>
-										<td><span class="coptic">ϩⲙⲉⲛⲉ</span></td>
-										<td></td>
-									</tr>
-									<tr>
-										<td>90</td>
-										<td><span class="coptic">ϥ̅</span></td>
-										<td><span class="coptic">ⲡⲓⲥⲧⲉⲟⲩⲓ</span></td>
-										<td></td>
-										<td><span class="coptic">ⲡⲉⲥⲧⲁⲓⲟⲩ</span></td>
-										<td></td>
-									</tr>
-									<tr>
-										<td>100</td>
-										<td><span class="coptic">ⲣ̅</span></td>
-										<td><span class="coptic">ϣⲉ</span></td>
-										<td></td>
-										<td><span class="coptic">ϣⲉ</span></td>
-										<td></td>
-									</tr>
-									<tr>
-										<td>200</td>
-										<td><span class="coptic">ⲥ̅</span></td>
-										<td><span class="coptic">ϣⲏⲓ</span></td>
-										<td></td>
-										<td><span class="coptic">ϣⲏⲧ</span></td>
-										<td></td>
-									</tr>
-									<tr>
-										<td>1000</td>
-										<td><span class="coptic">ⲁ̿</span></td>
-										<td><span class="coptic">ϣⲟ</span></td>
-										<td></td>
-										<td><span class="coptic">ϣⲟ</span></td>
-										<td></td>
-									</tr>
-									<tr>
-										<td>10000</td>
-										<td><span class="coptic">ⲓ̿</span></td>
-										<td><span class="coptic">ⲑⲃⲁ</span></td>
-										<td></td>
-										<td><span class="coptic">ⲧⲃⲁ</span></td>
-										<td></td>
-									</tr>
-								</table>
-							</div>
+					<div id="176" data-section="176" class="good">
+						<div class="section">
+							<p class="fr"><b>1.</b> Nombres cardinaux</p>
+							<p class="en"></p>
+							<p class="fr"><b>1.</b> <i>Les nombres simples</i></p>
+							<p class="en"></p>
+							<table>
+								<tr>
+									<td></td>
+									<td></td>
+									<td><span class="fr">Bohaïrique</span><span class="en">Bohairic</span></td>
+									<td></td>
+									<td><span class="fr">Saʿidique</span><span class="en">Sahidic</span></td>
+									<td></td>
+								</tr>
+								<tr>
+									<td></td>
+									<td></td>
+									<td><span class="fr">masc.</span><span class="en">masc.</span></td>
+									<td><span class="fr">fém.</span><span class="en">fem</span></td>
+									<td><span class="fr">masc.</span><span class="en">masc.</span></td>
+									<td><span class="fr">fém.</span><span class="en">fem.</span></td>
+								</tr>
+								<tr>
+									<td>1</td>
+									<td><span class="coptic">ⲁ̅</span></td>
+									<td><span class="coptic">ⲟⲩⲁⲓ</span></td>
+									<td><span class="coptic">ⲟⲩⲓ</span></td>
+									<td><span class="coptic">ⲟⲩⲁ</span></td>
+									<td><span class="coptic">ⲟⲩⲉⲓ</span></td>
+								</tr>
+								<tr>
+									<td>2</td>
+									<td><span class="coptic">ⲃ̅</span></td>
+									<td><span class="coptic">ⲥⲛⲁⲩ</span></td>
+									<td><span class="coptic">ⲃ̅ϯ ⲥⲛⲟⲩϯ</span></td>
+									<td><span class="coptic">ⲥⲛⲁⲩ</span></td>
+									<td><span class="coptic">ⲥⲉⲛⲧⲉ</span></td>
+								</tr>
+								<tr>
+									<td>3</td>
+									<td><span class="coptic">ⲅ̅</span></td>
+									<td><span class="coptic">ϣⲟⲙⲧ</span></td>
+									<td><span class="coptic">ⲅ̅ϯ ϣⲟⲙϯ</span></td>
+									<td><span class="coptic">ϣⲟⲙⲛⲧ</span></td>
+									<td><span class="coptic">ϣⲟⲙⲧⲉ</span></td>
+								</tr>
+								<tr>
+									<td>4</td>
+									<td><span class="coptic">ⲇ̅</span></td>
+									<td><span class="coptic">ϥⲧⲱⲟⲩ, ϥⲧⲟⲩ-</span></td>
+									<td></td>
+									<td><span class="coptic">ϥⲧⲟⲟⲩ</span></td>
+									<td><span class="coptic">ϥⲧⲟⲉ, ϥⲧⲟ</span></td>
+								</tr>
+								<tr>
+									<td>5</td>
+									<td><span class="coptic">ⲉ̅</span></td>
+									<td><span class="coptic">ϯⲟⲩ</span></td>
+									<td></td>
+									<td><span class="coptic">ϯⲟⲩ</span></td>
+									<td><span class="coptic">ϯⲉ</span></td>
+								</tr>
+								<tr>
+									<td>6</td>
+									<td><span class="coptic">ⲋ̅</span></td>
+									<td><span class="coptic">ⲥⲟⲟⲩ</span></td>
+									<td></td>
+									<td><span class="coptic">ⲥⲟⲟⲩ</span></td>
+									<td><span class="coptic">ⲥⲟⲉ, ⲥⲟ</span></td>
+								</tr>
+								<tr>
+									<td>7</td>
+									<td><span class="coptic">ⲍ̅</span></td>
+									<td><span class="coptic">ϣⲁϣϥ</span></td>
+									<td><span class="coptic">ⲍ̅ϯ ϣⲁϣϥⲓ</span></td>
+									<td><span class="coptic">ⲥⲁϣϥ</span></td>
+									<td><span class="coptic">ⲥⲁϣϥⲉ</span></td>
+								</tr>
+								<tr>
+									<td>8</td>
+									<td><span class="coptic">ⲏ̅</span></td>
+									<td><span class="coptic">ϣⲙⲏⲛ</span></td>
+									<td><span class="coptic">ⲏ̅ϯ ϣⲙⲏⲛⲓ</span></td>
+									<td><span class="coptic">ϣⲙⲟⲩⲛ</span></td>
+									<td><span class="coptic">ϣⲙⲟⲩⲛⲉ</span></td>
+								</tr>
+								<tr>
+									<td>9</td>
+									<td><span class="coptic">ⲑ̅</span></td>
+									<td><span class="coptic">ⲯⲓⲧ</span></td>
+									<td><span class="coptic">ⲑ̅ϯ ⲯⲓϯ</span></td>
+									<td><span class="coptic">ⲯⲓⲥ</span></td>
+									<td><span class="coptic">ⲯⲓⲧⲉ</span></td>
+								</tr>
+								<tr>
+									<td>10</td>
+									<td><span class="coptic">ⲓ̅</span></td>
+									<td><span class="coptic">ⲙⲏⲧ, ⲙⲉⲧ-</span></td>
+									<td><span class="coptic">ⲓ̅ϯ ⲙⲏϯ</span></td>
+									<td><span class="coptic">ⲙⲏⲧ</span></td>
+									<td><span class="coptic">ⲙⲏⲧⲉ</span></td>
+								</tr>
+								<tr>
+									<td>20</td>
+									<td><span class="coptic">ⲕ̅</span></td>
+									<td><span class="coptic">ϫⲱⲧ</span></td>
+									<td><span class="coptic">ⲕ̅ϯ ϫⲱϯ</span></td>
+									<td><span class="coptic">ϫⲟⲩⲱⲧ</span></td>
+									<td><span class="coptic">ϫⲟⲩⲱⲧⲉ</span></td>
+								</tr>
+								<tr>
+									<td>30</td>
+									<td><span class="coptic">ⲗ̅</span></td>
+									<td><span class="coptic">ⲙⲁⲡ, ⲙⲁⲃ</span></td>
+									<td></td>
+									<td><span class="coptic">ⲙⲁⲁⲃ</span></td>
+									<td></td>
+								</tr>
+								<tr>
+									<td>40</td>
+									<td><span class="coptic">ⲙ̅</span></td>
+									<td><span class="coptic">ϩⲙⲉ</span></td>
+									<td></td>
+									<td><span class="coptic">ϩⲙⲏ, ϩⲙⲉ</span></td>
+									<td></td>
+								</tr>
+								<tr>
+									<td>50</td>
+									<td><span class="coptic">ⲛ̅</span></td>
+									<td><span class="coptic">ⲧⲉⲟⲩⲓ, ⲧⲁⲓⲟⲩ</span></td>
+									<td></td>
+									<td><span class="coptic">ⲧⲁⲓⲟⲩ</span></td>
+									<td></td>
+								</tr>
+								<tr>
+									<td>60</td>
+									<td><span class="coptic">ⲝ̅</span></td>
+									<td><span class="coptic">ⲥⲉ</span></td>
+									<td></td>
+									<td><span class="coptic">ⲥⲉ</span></td>
+									<td></td>
+								</tr>
+								<tr>
+									<td>70</td>
+									<td><span class="coptic">ⲟ̅</span></td>
+									<td><span class="coptic">ϣⲃⲉ, ϣϥⲉ</span></td>
+									<td></td>
+									<td><span class="coptic">ϣⲃⲉ, ϣϥⲉ</span></td>
+									<td></td>
+								</tr>
+								<tr>
+									<td>80</td>
+									<td><span class="coptic">ⲡ̅</span></td>
+									<td><span class="coptic">ϧⲁⲙⲛⲉ</span></td>
+									<td></td>
+									<td><span class="coptic">ϩⲙⲉⲛⲉ</span></td>
+									<td></td>
+								</tr>
+								<tr>
+									<td>90</td>
+									<td><span class="coptic">ϥ̅</span></td>
+									<td><span class="coptic">ⲡⲓⲥⲧⲉⲟⲩⲓ</span></td>
+									<td></td>
+									<td><span class="coptic">ⲡⲉⲥⲧⲁⲓⲟⲩ</span></td>
+									<td></td>
+								</tr>
+								<tr>
+									<td>100</td>
+									<td><span class="coptic">ⲣ̅</span></td>
+									<td><span class="coptic">ϣⲉ</span></td>
+									<td></td>
+									<td><span class="coptic">ϣⲉ</span></td>
+									<td></td>
+								</tr>
+								<tr>
+									<td>200</td>
+									<td><span class="coptic">ⲥ̅</span></td>
+									<td><span class="coptic">ϣⲏⲓ</span></td>
+									<td></td>
+									<td><span class="coptic">ϣⲏⲧ</span></td>
+									<td></td>
+								</tr>
+								<tr>
+									<td>1000</td>
+									<td><span class="coptic">ⲁ̿</span></td>
+									<td><span class="coptic">ϣⲟ</span></td>
+									<td></td>
+									<td><span class="coptic">ϣⲟ</span></td>
+									<td></td>
+								</tr>
+								<tr>
+									<td>10000</td>
+									<td><span class="coptic">ⲓ̿</span></td>
+									<td><span class="coptic">ⲑⲃⲁ</span></td>
+									<td></td>
+									<td><span class="coptic">ⲧⲃⲁ</span></td>
+									<td></td>
+								</tr>
+							</table>
 						</div>
 					</div>
-					<div data-section="177">
-						<div class="bilingual">
-							<div class="en">
-								<p><i><b>2.</b> Les nombres composés.</i></p>
-								<p>Dizaines.</p>
-								<p>De 11 à 100 on forme les nombres en ajoutant les unités aux dizaines:</p>
-								<table>
-									<tr>
-										<td>11</td>
-										<td><span class="coptic">ⲓ̅ⲁ̅</span></td>
-										<td><span class="coptic">ⲙⲉⲧ-ⲟⲩⲁⲓ</span></td>
-									</tr>
-									<tr>
-										<td>12</td>
-										<td><span class="coptic">ⲓ̅ⲃ̅</span></td>
-										<td><span class="coptic">ⲙⲉⲧ-ⲥⲛⲁⲩ</span></td>
-									</tr>
-									<tr>
-										<td>23</td>
-										<td><span class="coptic">ⲕ̅ⲅ̅</span></td>
-										<td><span class="coptic">ϫⲱⲧ-ϣⲟⲙⲧ</span></td>
-									</tr>
-									<tr>
-										<td>34</td>
-										<td><span class="coptic">ⲗ̅ⲇ̅</span></td>
-										<td><span class="coptic">ⲙⲁⲡ-ϥⲧⲱⲟⲩ</span></td>
-									</tr>
-									<tr>
-										<td>45</td>
-										<td><span class="coptic">ⲙ̅ⲉ̅</span></td>
-										<td><span class="coptic">ϩⲙⲉ-ϯⲟⲩ</span></td>
-									</tr>
-									<tr>
-										<td>89</td>
-										<td><span class="coptic">ⲡ̅ⲑ̅</span></td>
-										<td><span class="coptic">ϧⲁⲙⲛⲉ-ⲯⲓⲧ</span></td>
-									</tr>
-								</table>
-								<p>etc.</p>
-							</div>
-							<div class="fr">
-								<p><i><b>2.</b> Les nombres composés.</i></p>
-								<p>Dizaines.</p>
-								<p>De 11 à 100 on forme les nombres en ajoutant les unités aux dizaines:</p>
-								<table>
-									<tr>
-										<td>11</td>
-										<td><span class="coptic">ⲓ̅ⲁ̅</span></td>
-										<td><span class="coptic">ⲙⲉⲧ-ⲟⲩⲁⲓ</span></td>
-									</tr>
-									<tr>
-										<td>12</td>
-										<td><span class="coptic">ⲓ̅ⲃ̅</span></td>
-										<td><span class="coptic">ⲙⲉⲧ-ⲥⲛⲁⲩ</span></td>
-									</tr>
-									<tr>
-										<td>23</td>
-										<td><span class="coptic">ⲕ̅ⲅ̅</span></td>
-										<td><span class="coptic">ϫⲱⲧ-ϣⲟⲙⲧ</span></td>
-									</tr>
-									<tr>
-										<td>34</td>
-										<td><span class="coptic">ⲗ̅ⲇ̅</span></td>
-										<td><span class="coptic">ⲙⲁⲡ-ϥⲧⲱⲟⲩ</span></td>
-									</tr>
-									<tr>
-										<td>45</td>
-										<td><span class="coptic">ⲙ̅ⲉ̅</span></td>
-										<td><span class="coptic">ϩⲙⲉ-ϯⲟⲩ</span></td>
-									</tr>
-									<tr>
-										<td>89</td>
-										<td><span class="coptic">ⲡ̅ⲑ̅</span></td>
-										<td><span class="coptic">ϧⲁⲙⲛⲉ-ⲯⲓⲧ</span></td>
-									</tr>
-								</table>
-								<p>etc.</p>
-							</div>
+					<div id="177" data-section="177" class="needs-english">
+						<div class="section">
+							<p class="fr"><b>2.</b> <i>Les nombres composés</i></p>
+							<p class="en"></p>
+							<p class="fr">Dizaines</p>
+							<p class="en"></p>
+							<p class="fr">De 11 à 100 on forme les nombres en ajoutant les unités aux dizaines:</p>
+							<p class="en"></p>
+							<table>
+								<tr>
+									<td>11</td>
+									<td><span class="coptic">ⲓ̅ⲁ̅</span></td>
+									<td><span class="coptic">ⲙⲉⲧ-ⲟⲩⲁⲓ</span></td>
+								</tr>
+								<tr>
+									<td>12</td>
+									<td><span class="coptic">ⲓ̅ⲃ̅</span></td>
+									<td><span class="coptic">ⲙⲉⲧ-ⲥⲛⲁⲩ</span></td>
+								</tr>
+								<tr>
+									<td>23</td>
+									<td><span class="coptic">ⲕ̅ⲅ̅</span></td>
+									<td><span class="coptic">ϫⲱⲧ-ϣⲟⲙⲧ</span></td>
+								</tr>
+								<tr>
+									<td>34</td>
+									<td><span class="coptic">ⲗ̅ⲇ̅</span></td>
+									<td><span class="coptic">ⲙⲁⲡ-ϥⲧⲱⲟⲩ</span></td>
+								</tr>
+								<tr>
+									<td>45</td>
+									<td><span class="coptic">ⲙ̅ⲉ̅</span></td>
+									<td><span class="coptic">ϩⲙⲉ-ϯⲟⲩ</span></td>
+								</tr>
+								<tr>
+									<td>89</td>
+									<td><span class="coptic">ⲡ̅ⲑ̅</span></td>
+									<td><span class="coptic">ϧⲁⲙⲛⲉ-ⲯⲓⲧ</span></td>
+								</tr>
+							</table>
+							<p>etc.</p>
 						</div>
 					</div>
-					<div data-section="178">
-						<div class="bilingual">
-							<div class="en">
-								<p>Centaines et mille.</p>
-								<p>On forme les centaines et les mille en plaçant les unités devant <span class="coptic">ϣⲉ</span> 100 et <span class="coptic">ϣⲟ</span> 1000 au moyen de <span class="coptic">ⲛ̀</span>. </p>
-								<p><span class="coptic">ⲥⲛⲁⲩ</span> se met généralement après, sans <span class="coptic">ⲛ̀</span>:</p>
-								<table>
-									<tr>
-										<td>200</td>
-										<td><span class="coptic">ⲥⲛⲁⲩ ⲛ̀-ϣⲉ</span>, <span class="coptic">ⲃ̅ϣⲉ</span>, <span class="coptic">ϣⲉⲥⲛⲁⲩ</span>.</td>
-									</tr>
-								</table>
-								<p>Pour 200 on peut aussi employer un mot spécial <span class="coptic">ϣⲏⲓ</span> qui est comme le duel de <span class="coptic">ϣⲉ</span>.</p>
-								<table>
-									<tr>
-										<td>300</td>
-										<td><span class="coptic">ⲧ̅</span></td>
-										<td><span class="coptic">ϣⲟⲙⲧ ⲛ̀ϣⲉ</span></td>
-									</tr>
-									<tr>
-										<td>400</td>
-										<td><span class="coptic">ⲩ̅</span></td>
-										<td><span class="coptic">ϥⲧⲱⲟⲩ ⲛ̀ϣⲉ</span></td>
-									</tr>
-									<tr>
-										<td>500</td>
-										<td><span class="coptic">ⲫ̅</span></td>
-										<td><span class="coptic">ϯⲟⲩ ⲛ̀ϣⲉ</span></td>
-									</tr>
-									<tr>
-										<td>600</td>
-										<td><span class="coptic">ⲭ̅</span></td>
-										<td><span class="coptic">ⲥⲟⲟⲩ ⲛ̀ϣⲉ</span></td>
-									</tr>
-									<tr>
-										<td>700</td>
-										<td><span class="coptic">ⲯ̅</span></td>
-										<td><span class="coptic">ϣⲁϣϥ ⲛ̀ϣⲉ</span></td>
-									</tr>
-									<tr>
-										<td>800</td>
-										<td><span class="coptic">ⲱ̅</span></td>
-										<td><span class="coptic">ϣⲙⲏⲛ ⲛ̀ϣⲉ</span></td>
-									</tr>
-									<tr>
-										<td>900</td>
-										<td><span class="coptic">ⳁ̅</span><a href="#cite-footnote-chapter_09-001" class="footnote" id="footnote-chapter_09-001"><sup>[1]</sup></a></td>
-										<td><span class="coptic">ⲯⲓⲧ ⲛ̀ϣⲉ</span></td>
-									</tr>
-									<tr>
-										<td>2000</td>
-										<td><span class="coptic">ⲃ̿</span></td>
-										<td><span class="coptic">ⲃ̅ϣⲟ</span>, <span class="coptic">ϣⲟ ⲥⲛⲁⲩ</span></td>
-									</tr>
-									<tr>
-										<td>3000</td>
-										<td><span class="coptic">ⲅ̿</span></td>
-										<td><span class="coptic">ϣⲟⲙⲧ ⲛ̀ϣⲟ</span></td>
-									</tr>
-								</table>
-								<p>etc.</p>
-								<p><i>Remarque.</i></p>
-								<p>Les mille peuvent aussi s'exprimer au moyen des centaines précédées des dizaines et unies par <span class="coptic">ⲛ̀</span>:</p>
-								<table>
-									<tr>
-										<td>2000</td>
-										<td><span class="coptic">ϫⲱⲧ ⲛ̀ϣⲉ</span></td>
-										<td>(vingt cents)</td>
-									</tr>
-									<tr>
-										<td>1100</td>
-										<td><span class="coptic">ⲙⲉⲧ-ⲟⲩⲁⲓ ⲛ̀ϣⲉ</span></td>
-										<td>«onze cents»</td>
-									</tr>
-									<tr>
-										<td>1200</td>
-										<td><span class="coptic">ⲙⲉⲧ-ⲥⲛⲁⲩ ⲛ̀ϣⲉ</span></td>
-										<td>«douze cents»</td>
-									</tr>
-								</table>
-								<p>etc.</p>
-							</div>
-							<div class="fr">
-								<p>Centaines et mille.</p>
-								<p>On forme les centaines et les mille en plaçant les unités devant <span class="coptic">ϣⲉ</span> 100 et <span class="coptic">ϣⲟ</span> 1000 au moyen de <span class="coptic">ⲛ̀</span>. </p>
-								<p><span class="coptic">ⲥⲛⲁⲩ</span> se met généralement après, sans <span class="coptic">ⲛ̀</span>:</p>
-								<table>
-									<tr>
-										<td>200</td>
-										<td><span class="coptic">ⲥⲛⲁⲩ ⲛ̀-ϣⲉ</span>, <span class="coptic">ⲃ̅ϣⲉ</span>, <span class="coptic">ϣⲉⲥⲛⲁⲩ</span>.</td>
-									</tr>
-								</table>
-								<p>Pour 200 on peut aussi employer un mot spécial <span class="coptic">ϣⲏⲓ</span> qui est comme le duel de <span class="coptic">ϣⲉ</span>.</p>
-								<table>
-									<tr>
-										<td>300</td>
-										<td><span class="coptic">ⲧ̅</span></td>
-										<td><span class="coptic">ϣⲟⲙⲧ ⲛ̀ϣⲉ</span></td>
-									</tr>
-									<tr>
-										<td>400</td>
-										<td><span class="coptic">ⲩ̅</span></td>
-										<td><span class="coptic">ϥⲧⲱⲟⲩ ⲛ̀ϣⲉ</span></td>
-									</tr>
-									<tr>
-										<td>500</td>
-										<td><span class="coptic">ⲫ̅</span></td>
-										<td><span class="coptic">ϯⲟⲩ ⲛ̀ϣⲉ</span></td>
-									</tr>
-									<tr>
-										<td>600</td>
-										<td><span class="coptic">ⲭ̅</span></td>
-										<td><span class="coptic">ⲥⲟⲟⲩ ⲛ̀ϣⲉ</span></td>
-									</tr>
-									<tr>
-										<td>700</td>
-										<td><span class="coptic">ⲯ̅</span></td>
-										<td><span class="coptic">ϣⲁϣϥ ⲛ̀ϣⲉ</span></td>
-									</tr>
-									<tr>
-										<td>800</td>
-										<td><span class="coptic">ⲱ̅</span></td>
-										<td><span class="coptic">ϣⲙⲏⲛ ⲛ̀ϣⲉ</span></td>
-									</tr>
-									<tr>
-										<td>900</td>
-										<td><span class="coptic">ⳁ̅</span><a href="#cite-footnote-chapter_09-001" class="footnote" id="footnote-chapter_09-001"><sup>[1]</sup></a></td>
-										<td><span class="coptic">ⲯⲓⲧ ⲛ̀ϣⲉ</span></td>
-									</tr>
-									<tr>
-										<td>2000</td>
-										<td><span class="coptic">ⲃ̿</span></td>
-										<td><span class="coptic">ⲃ̅ϣⲟ</span>, <span class="coptic">ϣⲟ ⲥⲛⲁⲩ</span></td>
-									</tr>
-									<tr>
-										<td>3000</td>
-										<td><span class="coptic">ⲅ̿</span></td>
-										<td><span class="coptic">ϣⲟⲙⲧ ⲛ̀ϣⲟ</span></td>
-									</tr>
-								</table>
-								<p>etc.</p>
-								<p><i>Remarque.</i></p>
-								<p>Les mille peuvent aussi s'exprimer au moyen des centaines précédées des dizaines et unies par <span class="coptic">ⲛ̀</span>:</p>
-								<table>
-									<tr>
-										<td>2000</td>
-										<td><span class="coptic">ϫⲱⲧ ⲛ̀ϣⲉ</span></td>
-										<td>(vingt cents)</td>
-									</tr>
-									<tr>
-										<td>1100</td>
-										<td><span class="coptic">ⲙⲉⲧ-ⲟⲩⲁⲓ ⲛ̀ϣⲉ</span></td>
-										<td>«onze cents»</td>
-									</tr>
-									<tr>
-										<td>1200</td>
-										<td><span class="coptic">ⲙⲉⲧ-ⲥⲛⲁⲩ ⲛ̀ϣⲉ</span></td>
-										<td>«douze cents»</td>
-									</tr>
-								</table>
-								<p>etc.</p>
-							</div>
+					<div id="178" data-section="178" class="needs-english">
+						<div class="section">
+							<p class="fr">Centaines et mille</p>
+							<p class="en"></p>
+							<p class="fr">On forme les centaines et les mille en plaçant les unités devant <span class="coptic">ϣⲉ</span> 100 et <span class="coptic">ϣⲟ</span> 1000 au moyen de <span class="coptic">ⲛ̀-</span>.</p>
+							<p class="en"></p>
+							<p class="fr"><span class="coptic">ⲥⲛⲁⲩ</span> se met généralement après, sans <span class="coptic">ⲛ̀-</span>:</p>
+							<p class="en"></p>
+							<table>
+								<tr>
+									<td>200</td>
+									<td><span class="coptic">ⲥⲛⲁⲩ ⲛ̀-ϣⲉ</span>, <span class="coptic">ⲃ̅ϣⲉ</span>, <span class="coptic">ϣⲉⲥⲛⲁⲩ</span>.</td>
+								</tr>
+							</table>
+							<p class="fr">Pour 200 on peut aussi employer un mot spécial <span class="coptic">ϣⲏⲓ</span> qui est comme le duel de <span class="coptic">ϣⲉ</span>.</p>
+							<p class="en"></p>
+							<table>
+								<tr>
+									<td>300</td>
+									<td><span class="coptic">ⲧ̅</span></td>
+									<td><span class="coptic">ϣⲟⲙⲧ ⲛ̀ϣⲉ</span></td>
+								</tr>
+								<tr>
+									<td>400</td>
+									<td><span class="coptic">ⲩ̅</span></td>
+									<td><span class="coptic">ϥⲧⲱⲟⲩ ⲛ̀ϣⲉ</span></td>
+								</tr>
+								<tr>
+									<td>500</td>
+									<td><span class="coptic">ⲫ̅</span></td>
+									<td><span class="coptic">ϯⲟⲩ ⲛ̀ϣⲉ</span></td>
+								</tr>
+								<tr>
+									<td>600</td>
+									<td><span class="coptic">ⲭ̅</span></td>
+									<td><span class="coptic">ⲥⲟⲟⲩ ⲛ̀ϣⲉ</span></td>
+								</tr>
+								<tr>
+									<td>700</td>
+									<td><span class="coptic">ⲯ̅</span></td>
+									<td><span class="coptic">ϣⲁϣϥ ⲛ̀ϣⲉ</span></td>
+								</tr>
+								<tr>
+									<td>800</td>
+									<td><span class="coptic">ⲱ̅</span></td>
+									<td><span class="coptic">ϣⲙⲏⲛ ⲛ̀ϣⲉ</span></td>
+								</tr>
+								<tr>
+									<td>900</td>
+									<td><span class="coptic">ⳁ̅</span><a href="#cite-footnote-chapter_09-001" class="footnote" id="footnote-chapter_09-001"><sup>[1]</sup></a></td>
+									<td><span class="coptic">ⲯⲓⲧ ⲛ̀ϣⲉ</span></td>
+								</tr>
+								<tr>
+									<td>2000</td>
+									<td><span class="coptic">ⲃ̿</span></td>
+									<td><span class="coptic">ⲃ̅ϣⲟ</span>, <span class="coptic">ϣⲟ ⲥⲛⲁⲩ</span></td>
+								</tr>
+								<tr>
+									<td>3000</td>
+									<td><span class="coptic">ⲅ̿</span></td>
+									<td><span class="coptic">ϣⲟⲙⲧ ⲛ̀ϣⲟ</span></td>
+								</tr>
+							</table>
+							<p>etc.</p>
+							<p class="fr"><i>Remarque.</i></p>
+							<p class="en"></p>
+							<p class="fr">Les mille peuvent aussi s'exprimer au moyen des centaines précédées des dizaines et unies par <span class="coptic">ⲛ̀-</span>:</p>
+							<p class="en"></p>
+							<table>
+								<tr>
+									<td>2000</td>
+									<td><span class="coptic">ϫⲱⲧ ⲛ̀ϣⲉ</span></td>
+									<td><span class="fr">«vingt cents»</span><span class="en"></span></td>
+								</tr>
+								<tr>
+									<td>1100</td>
+									<td><span class="coptic">ⲙⲉⲧ-ⲟⲩⲁⲓ ⲛ̀ϣⲉ</span></td>
+									<td><span class="fr">«onze cents»</span><span class="en"></span></td>
+								</tr>
+								<tr>
+									<td>1200</td>
+									<td><span class="coptic">ⲙⲉⲧ-ⲥⲛⲁⲩ ⲛ̀ϣⲉ</span></td>
+									<td><span class="fr">«douze cents»</span><span class="en"></span></td>
+								</tr>
+							</table>
+							<p>etc.</p>
 						</div>
 					</div>
 					<div data-section="179">
@@ -6747,162 +6058,83 @@
 							</div>
 						</div>
 					</div>
-					<div data-section="187">
-						<div class="bilingual">
-							<div class="en">
-								<p>II. Notation du temps.</p>
-								<p>L'année (<span class="coptic">ϯⲣⲟⲙⲡⲓ</span>) qui commence le 29 août<a href="#cite-footnote-chapter_09-023" class="footnote" id="footnote-chapter_09-023"><sup>[5]</sup></a> est composée de 12 mois (<span class="coptic">ⲁⲃⲟⲧ</span>) chacun de 30 jours. Elle est augmentée de 5 jours complémentaires (6 dans l'année bissextile) qui forment le petit mois (<span class="coptic">ⲡⲓⲕⲟⲩϫⲓ ⲛ̀ⲁⲃⲟⲧ</span>).</p>
-								<p>Voici les noms des mois:</p>
-								<table>
-									<tr>
-										<th>Boḥairique.</th>
-										<th>Ṣaꜥidique.</th>
-										<th></th>
-									</tr>
-									<tr>
-										<td><span class="coptic">ⲑⲱⲟⲩⲧ</span></td>
-										<td><span class="coptic">ⲑⲟⲟⲩⲧ</span>, <span class="coptic">ⲑⲁⲩⲧ</span></td>
-										<td><span class="arabic">توت</span></td>
-									</tr>
-									<tr>
-										<td><span class="coptic">ⲡⲁⲟⲡⲓ</span></td>
-										<td><span class="coptic">ⲡⲁⲁⲡⲉ</span>, <span class="coptic">ⲡⲟⲟⲡⲉ</span></td>
-										<td><span class="arabic">بابه</span></td>
-									</tr>
-									<tr>
-										<td><span class="coptic">ⲁⲑⲱⲣ</span></td>
-										<td><span class="coptic">ϩⲁⲧⲱⲣ</span></td>
-										<td><span class="arabic">هتور</span></td>
-									</tr>
-									<tr>
-										<td><span class="coptic">ⲭⲟⲓⲁⲕ</span></td>
-										<td><span class="coptic">ⲕⲓⲁϩⲕ</span>, <span class="coptic">ⲭⲟⲓⲁϩⲕ</span></td>
-										<td><span class="arabic">كيهك</span></td>
-									</tr>
-									<tr>
-										<td><span class="coptic">ⲧⲱⲃⲓ</span></td>
-										<td><span class="coptic">ⲧⲱⲃⲉ</span></td>
-										<td><span class="arabic">طوبه</span></td>
-									</tr>
-									<tr>
-										<td><span class="coptic">ⲙⲉⲭⲓⲣ</span></td>
-										<td><span class="coptic">ⲙ̄ϣⲓⲣ</span></td>
-										<td><span class="arabic">امشير</span></td>
-									</tr>
-									<tr>
-										<td><span class="coptic">ⲫⲁⲙⲉⲛⲱⲑ</span></td>
-										<td><span class="coptic">ⲡⲁⲣⲙϩⲁⲧ</span></td>
-										<td><span class="arabic">برمهات</span></td>
-									</tr>
-									<tr>
-										<td><span class="coptic">ⲫⲁⲣⲙⲟⲩⲑⲓ</span></td>
-										<td><span class="coptic">ⲡⲁⲣⲙⲟⲩⲧⲉ</span></td>
-										<td><span class="arabic">برموده</span></td>
-									</tr>
-									<tr>
-										<td><span class="coptic">ⲡⲁⲭⲱⲛ</span>, <span class="coptic">ⲡⲁϣⲟⲛⲥ</span></td>
-										<td><span class="coptic">ⲡⲁϣⲟⲛⲥ</span></td>
-										<td><span class="arabic">بشنس</span></td>
-									</tr>
-									<tr>
-										<td><span class="coptic">ⲡⲁⲱⲛⲓ</span></td>
-										<td><span class="coptic">ⲡⲁⲱⲛⲉ</span>, <span class="coptic">ⲡⲁⲁⲛⲉ</span></td>
-										<td><span class="arabic">بؤونه</span></td>
-									</tr>
-									<tr>
-										<td><span class="coptic">ⲉⲡⲏⲡ</span></td>
-										<td><span class="coptic">ⲉⲡⲉⲡ</span></td>
-										<td><span class="arabic">ابيب</span></td>
-									</tr>
-									<tr>
-										<td><span class="coptic">ⲙⲉⲥⲱⲣⲏ</span></td>
-										<td><span class="coptic">ⲙⲉⲥⲱⲣⲏ</span></td>
-										<td><span class="arabic">مسرى</span></td>
-									</tr>
-									<tr>
-										<td><span class="coptic">ⲡⲓⲕⲟⲩϫⲓ ⲛ̀ⲁⲃⲟⲧ</span></td>
-										<td></td>
-										<td><span class="arabic">خمسة ايام النسي</span></td>
-									</tr>
-								</table>
-							</div>
-							<div class="fr">
-								<p>II. Notation du temps.</p>
-								<p>L'année (<span class="coptic">ϯⲣⲟⲙⲡⲓ</span>) qui commence le 29 août<a href="#cite-footnote-chapter_09-023" class="footnote" id="footnote-chapter_09-023"><sup>[5]</sup></a> est composée de 12 mois (<span class="coptic">ⲁⲃⲟⲧ</span>) chacun de 30 jours. Elle est augmentée de 5 jours complémentaires (6 dans l'année bissextile) qui forment le petit mois (<span class="coptic">ⲡⲓⲕⲟⲩϫⲓ ⲛ̀ⲁⲃⲟⲧ</span>).</p>
-								<p>Voici les noms des mois:</p>
-								<table>
-									<tr>
-										<th>Boḥairique.</th>
-										<th>Ṣaꜥidique.</th>
-										<th></th>
-									</tr>
-									<tr>
-										<td><span class="coptic">ⲑⲱⲟⲩⲧ</span></td>
-										<td><span class="coptic">ⲑⲟⲟⲩⲧ</span>, <span class="coptic">ⲑⲁⲩⲧ</span></td>
-										<td><span class="arabic">توت</span></td>
-									</tr>
-									<tr>
-										<td><span class="coptic">ⲡⲁⲟⲡⲓ</span></td>
-										<td><span class="coptic">ⲡⲁⲁⲡⲉ</span>, <span class="coptic">ⲡⲟⲟⲡⲉ</span></td>
-										<td><span class="arabic">بابه</span></td>
-									</tr>
-									<tr>
-										<td><span class="coptic">ⲁⲑⲱⲣ</span></td>
-										<td><span class="coptic">ϩⲁⲧⲱⲣ</span></td>
-										<td><span class="arabic">هتور</span></td>
-									</tr>
-									<tr>
-										<td><span class="coptic">ⲭⲟⲓⲁⲕ</span></td>
-										<td><span class="coptic">ⲕⲓⲁϩⲕ</span>, <span class="coptic">ⲭⲟⲓⲁϩⲕ</span></td>
-										<td><span class="arabic">كيهك</span></td>
-									</tr>
-									<tr>
-										<td><span class="coptic">ⲧⲱⲃⲓ</span></td>
-										<td><span class="coptic">ⲧⲱⲃⲉ</span></td>
-										<td><span class="arabic">طوبه</span></td>
-									</tr>
-									<tr>
-										<td><span class="coptic">ⲙⲉⲭⲓⲣ</span></td>
-										<td><span class="coptic">ⲙ̄ϣⲓⲣ</span></td>
-										<td><span class="arabic">امشير</span></td>
-									</tr>
-									<tr>
-										<td><span class="coptic">ⲫⲁⲙⲉⲛⲱⲑ</span></td>
-										<td><span class="coptic">ⲡⲁⲣⲙϩⲁⲧ</span></td>
-										<td><span class="arabic">برمهات</span></td>
-									</tr>
-									<tr>
-										<td><span class="coptic">ⲫⲁⲣⲙⲟⲩⲑⲓ</span></td>
-										<td><span class="coptic">ⲡⲁⲣⲙⲟⲩⲧⲉ</span></td>
-										<td><span class="arabic">برموده</span></td>
-									</tr>
-									<tr>
-										<td><span class="coptic">ⲡⲁⲭⲱⲛ</span>, <span class="coptic">ⲡⲁϣⲟⲛⲥ</span></td>
-										<td><span class="coptic">ⲡⲁϣⲟⲛⲥ</span></td>
-										<td><span class="arabic">بشنس</span></td>
-									</tr>
-									<tr>
-										<td><span class="coptic">ⲡⲁⲱⲛⲓ</span></td>
-										<td><span class="coptic">ⲡⲁⲱⲛⲉ</span>, <span class="coptic">ⲡⲁⲁⲛⲉ</span></td>
-										<td><span class="arabic">بؤونه</span></td>
-									</tr>
-									<tr>
-										<td><span class="coptic">ⲉⲡⲏⲡ</span></td>
-										<td><span class="coptic">ⲉⲡⲉⲡ</span></td>
-										<td><span class="arabic">ابيب</span></td>
-									</tr>
-									<tr>
-										<td><span class="coptic">ⲙⲉⲥⲱⲣⲏ</span></td>
-										<td><span class="coptic">ⲙⲉⲥⲱⲣⲏ</span></td>
-										<td><span class="arabic">مسرى</span></td>
-									</tr>
-									<tr>
-										<td><span class="coptic">ⲡⲓⲕⲟⲩϫⲓ ⲛ̀ⲁⲃⲟⲧ</span></td>
-										<td></td>
-										<td><span class="arabic">خمسة ايام النسي</span></td>
-									</tr>
-								</table>
-							</div>
+					<div id="187" data-section="187" class="wip">
+						<div class="section">
+							<p>II. Notation du temps.</p>
+							<p>L'année (<span class="coptic">ϯⲣⲟⲙⲡⲓ</span>) qui commence le 29 août<a href="#cite-footnote-chapter_09-023" class="footnote" id="footnote-chapter_09-023"><sup>[5]</sup></a> est composée de 12 mois (<span class="coptic">ⲁⲃⲟⲧ</span>) chacun de 30 jours. Elle est augmentée de 5 jours complémentaires (6 dans l'année bissextile) qui forment le petit mois (<span class="coptic">ⲡⲓⲕⲟⲩϫⲓ ⲛ̀ⲁⲃⲟⲧ</span>).</p>
+							<p>Voici les noms des mois:</p>
+							<table>
+								<tr>
+									<th>Boḥairique.</th>
+									<th>Ṣaꜥidique.</th>
+									<th></th>
+								</tr>
+								<tr>
+									<td><span class="coptic">ⲑⲱⲟⲩⲧ</span></td>
+									<td><span class="coptic">ⲑⲟⲟⲩⲧ</span>, <span class="coptic">ⲑⲁⲩⲧ</span></td>
+									<td><span class="arabic">توت</span></td>
+								</tr>
+								<tr>
+									<td><span class="coptic">ⲡⲁⲟⲡⲓ</span></td>
+									<td><span class="coptic">ⲡⲁⲁⲡⲉ</span>, <span class="coptic">ⲡⲟⲟⲡⲉ</span></td>
+									<td><span class="arabic">بابه</span></td>
+								</tr>
+								<tr>
+									<td><span class="coptic">ⲁⲑⲱⲣ</span></td>
+									<td><span class="coptic">ϩⲁⲧⲱⲣ</span></td>
+									<td><span class="arabic">هتور</span></td>
+								</tr>
+								<tr>
+									<td><span class="coptic">ⲭⲟⲓⲁⲕ</span></td>
+									<td><span class="coptic">ⲕⲓⲁϩⲕ</span>, <span class="coptic">ⲭⲟⲓⲁϩⲕ</span></td>
+									<td><span class="arabic">كيهك</span></td>
+								</tr>
+								<tr>
+									<td><span class="coptic">ⲧⲱⲃⲓ</span></td>
+									<td><span class="coptic">ⲧⲱⲃⲉ</span></td>
+									<td><span class="arabic">طوبه</span></td>
+								</tr>
+								<tr>
+									<td><span class="coptic">ⲙⲉⲭⲓⲣ</span></td>
+									<td><span class="coptic">ⲙ̄ϣⲓⲣ</span></td>
+									<td><span class="arabic">امشير</span></td>
+								</tr>
+								<tr>
+									<td><span class="coptic">ⲫⲁⲙⲉⲛⲱⲑ</span></td>
+									<td><span class="coptic">ⲡⲁⲣⲙϩⲁⲧ</span></td>
+									<td><span class="arabic">برمهات</span></td>
+								</tr>
+								<tr>
+									<td><span class="coptic">ⲫⲁⲣⲙⲟⲩⲑⲓ</span></td>
+									<td><span class="coptic">ⲡⲁⲣⲙⲟⲩⲧⲉ</span></td>
+									<td><span class="arabic">برموده</span></td>
+								</tr>
+								<tr>
+									<td><span class="coptic">ⲡⲁⲭⲱⲛ</span>, <span class="coptic">ⲡⲁϣⲟⲛⲥ</span></td>
+									<td><span class="coptic">ⲡⲁϣⲟⲛⲥ</span></td>
+									<td><span class="arabic">بشنس</span></td>
+								</tr>
+								<tr>
+									<td><span class="coptic">ⲡⲁⲱⲛⲓ</span></td>
+									<td><span class="coptic">ⲡⲁⲱⲛⲉ</span>, <span class="coptic">ⲡⲁⲁⲛⲉ</span></td>
+									<td><span class="arabic">بؤونه</span></td>
+								</tr>
+								<tr>
+									<td><span class="coptic">ⲉⲡⲏⲡ</span></td>
+									<td><span class="coptic">ⲉⲡⲉⲡ</span></td>
+									<td><span class="arabic">ابيب</span></td>
+								</tr>
+								<tr>
+									<td><span class="coptic">ⲙⲉⲥⲱⲣⲏ</span></td>
+									<td><span class="coptic">ⲙⲉⲥⲱⲣⲏ</span></td>
+									<td><span class="arabic">مسرى</span></td>
+								</tr>
+								<tr>
+									<td><span class="coptic">ⲡⲓⲕⲟⲩϫⲓ ⲛ̀ⲁⲃⲟⲧ</span></td>
+									<td></td>
+									<td><span class="arabic">خمسة ايام النسي</span></td>
+								</tr>
+							</table>
 						</div>
 					</div>
 					<div data-section="188">
@@ -6933,132 +6165,68 @@
 							</div>
 						</div>
 					</div>
-					<div data-section="190">
-						<div class="bilingual">
-							<div class="en">
-								<p>Le jours de la semaine (<span class="coptic">ϯⲉⲃⲇⲟⲙⲁⲥ</span>) sont:</p>
-								<table>
-									<tr>
-										<td><span class="coptic">ϯⲕⲩⲣⲓⲁⲕⲏ</span></td>
-										<td><span class="arabic">الاحد</span></td>
-										<td>dimanche,</td>
-									</tr>
-									<tr>
-										<td><span class="coptic">ⲡⲓⲃ̅</span></td>
-										<td><span class="arabic">الاثنين</span></td>
-										<td>lundi,</td>
-									</tr>
-									<tr>
-										<td><span class="coptic">ⲡⲓⲅ̅</span></td>
-										<td><span class="arabic">الثلاثاء</span></td>
-										<td>mardi,</td>
-									</tr>
-									<tr>
-										<td><span class="coptic">ⲡⲓⲇ̅</span></td>
-										<td><span class="arabic">الاربعاء</span></td>
-										<td>mercredi,</td>
-									</tr>
-									<tr>
-										<td><span class="coptic">ⲡⲓⲉ̅</span></td>
-										<td><span class="arabic">الخميس</span></td>
-										<td>jeudi,</td>
-									</tr>
-									<tr>
-										<td><span class="coptic">ϯⲡⲁⲣⲁⲥⲕⲉⲩⲏ</span></td>
-										<td><span class="arabic">الجممة</span></td>
-										<td>vendredi,</td>
-									</tr>
-									<tr>
-										<td><span class="coptic">ⲡⲓⲥⲁⲃⲃⲁⲧⲟⲛ</span></td>
-										<td><span class="arabic">السبت</span></td>
-										<td>samedi.</td>
-									</tr>
-								</table>
-								<p>Ces noms peuvent aussi être précédés du mot <span class="coptic">ⲉϩⲟⲟⲩ</span> «jour»:</p>
-								<table>
-									<tr>
-										<td><span class="coptic">ⲡⲓ-ⲉϩⲟⲟⲩ ⲛ̀ⲕⲩⲣⲓⲁⲕⲟⲛ</span></td>
-										<td><span class="arabic">يوم الاحد</span></td>
-									</tr>
-									<tr>
-										<td><span class="coptic">ⲡ-ⲉϩⲟⲟⲩ ⲙ̀ⲡ-ⲃ̅</span></td>
-										<td><span class="arabic">يوم الاثنين</span></td>
-									</tr>
-								</table>
-								<p>Dans la table des Théotokies les jours sont encore désignés par les adjectifs ordinaux:</p>
-								<table>
-									<tr>
-										<td><span class="coptic">ⲡⲓⲉϩⲟⲟⲩ ⲙ̀ⲙⲁϩⲃ̅</span></td>
-										<td>le deuxième jour,</td>
-									</tr>
-									<tr>
-										<td><span class="coptic">ⲡⲓⲉϩⲟⲟⲩ ⲙ̀ⲙⲁϩⲅ̅</span></td>
-										<td>le troisième jour.</td>
-									</tr>
-								</table>
-							</div>
-							<div class="fr">
-								<p>Le jours de la semaine (<span class="coptic">ϯⲉⲃⲇⲟⲙⲁⲥ</span>) sont:</p>
-								<table>
-									<tr>
-										<td><span class="coptic">ϯⲕⲩⲣⲓⲁⲕⲏ</span></td>
-										<td><span class="arabic">الاحد</span></td>
-										<td>dimanche,</td>
-									</tr>
-									<tr>
-										<td><span class="coptic">ⲡⲓⲃ̅</span></td>
-										<td><span class="arabic">الاثنين</span></td>
-										<td>lundi,</td>
-									</tr>
-									<tr>
-										<td><span class="coptic">ⲡⲓⲅ̅</span></td>
-										<td><span class="arabic">الثلاثاء</span></td>
-										<td>mardi,</td>
-									</tr>
-									<tr>
-										<td><span class="coptic">ⲡⲓⲇ̅</span></td>
-										<td><span class="arabic">الاربعاء</span></td>
-										<td>mercredi,</td>
-									</tr>
-									<tr>
-										<td><span class="coptic">ⲡⲓⲉ̅</span></td>
-										<td><span class="arabic">الخميس</span></td>
-										<td>jeudi,</td>
-									</tr>
-									<tr>
-										<td><span class="coptic">ϯⲡⲁⲣⲁⲥⲕⲉⲩⲏ</span></td>
-										<td><span class="arabic">الجممة</span></td>
-										<td>vendredi,</td>
-									</tr>
-									<tr>
-										<td><span class="coptic">ⲡⲓⲥⲁⲃⲃⲁⲧⲟⲛ</span></td>
-										<td><span class="arabic">السبت</span></td>
-										<td>samedi.</td>
-									</tr>
-								</table>
-								<p>Ces noms peuvent aussi être précédés du mot <span class="coptic">ⲉϩⲟⲟⲩ</span> «jour»:</p>
-								<table>
-									<tr>
-										<td><span class="coptic">ⲡⲓ-ⲉϩⲟⲟⲩ ⲛ̀ⲕⲩⲣⲓⲁⲕⲟⲛ</span></td>
-										<td><span class="arabic">يوم الاحد</span></td>
-									</tr>
-									<tr>
-										<td><span class="coptic">ⲡ-ⲉϩⲟⲟⲩ ⲙ̀ⲡ-ⲃ̅</span></td>
-										<td><span class="arabic">يوم الاثنين</span></td>
-									</tr>
-								</table>
-								<p>Dans la table des Théotokies les jours sont encore désignés par les adjectifs ordinaux:</p>
-								<table>
-									<tr>
-										<td><span class="coptic">ⲡⲓⲉϩⲟⲟⲩ ⲙ̀ⲙⲁϩⲃ̅</span></td>
-										<td>le deuxième jour,</td>
-									</tr>
-									<tr>
-										<td><span class="coptic">ⲡⲓⲉϩⲟⲟⲩ ⲙ̀ⲙⲁϩⲅ̅</span></td>
-										<td>le troisième jour.</td>
-									</tr>
-								</table>
-							</div>
+					<div id="190" data-section="190" class="wip">
+						<div class="section">
+							<p>Le jours de la semaine (<span class="coptic">ϯⲉⲃⲇⲟⲙⲁⲥ</span>) sont:</p>
+							<table>
+								<tr>
+									<td><span class="coptic">ϯⲕⲩⲣⲓⲁⲕⲏ</span></td>
+									<td><span class="arabic">الاحد</span></td>
+									<td>dimanche,</td>
+								</tr>
+								<tr>
+									<td><span class="coptic">ⲡⲓⲃ̅</span></td>
+									<td><span class="arabic">الاثنين</span></td>
+									<td>lundi,</td>
+								</tr>
+								<tr>
+									<td><span class="coptic">ⲡⲓⲅ̅</span></td>
+									<td><span class="arabic">الثلاثاء</span></td>
+									<td>mardi,</td>
+								</tr>
+								<tr>
+									<td><span class="coptic">ⲡⲓⲇ̅</span></td>
+									<td><span class="arabic">الاربعاء</span></td>
+									<td>mercredi,</td>
+								</tr>
+								<tr>
+									<td><span class="coptic">ⲡⲓⲉ̅</span></td>
+									<td><span class="arabic">الخميس</span></td>
+									<td>jeudi,</td>
+								</tr>
+								<tr>
+									<td><span class="coptic">ϯⲡⲁⲣⲁⲥⲕⲉⲩⲏ</span></td>
+									<td><span class="arabic">الجممة</span></td>
+									<td>vendredi,</td>
+								</tr>
+								<tr>
+									<td><span class="coptic">ⲡⲓⲥⲁⲃⲃⲁⲧⲟⲛ</span></td>
+									<td><span class="arabic">السبت</span></td>
+									<td>samedi.</td>
+								</tr>
+							</table>
+							<p>Ces noms peuvent aussi être précédés du mot <span class="coptic">ⲉϩⲟⲟⲩ</span> «jour»:</p>
+							<table>
+								<tr>
+									<td><span class="coptic">ⲡⲓ-ⲉϩⲟⲟⲩ ⲛ̀ⲕⲩⲣⲓⲁⲕⲟⲛ</span></td>
+									<td><span class="arabic">يوم الاحد</span></td>
+								</tr>
+								<tr>
+									<td><span class="coptic">ⲡ-ⲉϩⲟⲟⲩ ⲙ̀ⲡ-ⲃ̅</span></td>
+									<td><span class="arabic">يوم الاثنين</span></td>
+								</tr>
+							</table>
+							<p>Dans la table des Théotokies les jours sont encore désignés par les adjectifs ordinaux:</p>
+							<table>
+								<tr>
+									<td><span class="coptic">ⲡⲓⲉϩⲟⲟⲩ ⲙ̀ⲙⲁϩⲃ̅</span></td>
+									<td>le deuxième jour,</td>
+								</tr>
+								<tr>
+									<td><span class="coptic">ⲡⲓⲉϩⲟⲟⲩ ⲙ̀ⲙⲁϩⲅ̅</span></td>
+									<td>le troisième jour.</td>
+								</tr>
+							</table>
 						</div>
 					</div>
 					<div data-section="191">
@@ -8718,203 +7886,199 @@
 							</div>
 						</div>
 					</div>
-					<div data-section="233">
-						<div class="bilingual">
-							<div class="en">
-								<p>Table Synoptique de la Conjugaison.</p>
-								<table>
-									<tr>
-										<th colspan="9">Indicatif</th>
-									</tr>
-									<tr>
-										<th colspan="3"></th>
-										<th colspan="3">Présent</th>
-										<th colspan="2">Présent d'habitude</th>
-										<th>Imparfait</th>
-									</tr>
-									<tr>
-										<th colspan="3"></th>
-										<th>1<sup>r</sup></th>
-										<th>2<sup>e</sup></th>
-										<th>3<sup>e</sup></th>
-										<th>affirmatif</th>
-										<th>négatif</th>
-										<th></th>
-									</tr>
-									<tr>
-										<th rowspan="8">Avec les suffixes.</th><th rowspan="5">Sing.</th><th>1.</th><td><span class="coptic">ϯ</span></td><td><span class="coptic">ⲁⲓ</span></td><td><span class="coptic">ⲉⲓ</span></td><td><span class="coptic">ϣⲁⲓ</span></td><td><span class="coptic">ⲙ̀ⲡⲁⲓ</span></td><td><span class="coptic">ⲛⲁⲓ</span></td>
-									</tr>
-									<tr>
-										<th>2 m.</th><td><span class="coptic">ⲕ</span></td><td><span class="coptic">ⲁⲕ</span></td><td><span class="coptic">ⲉⲕ</span></td><td><span class="coptic">ϣⲁⲕ</span></td><td><span class="coptic">ⲙ̀ⲡⲁⲕ</span></td><td><span class="coptic">ⲛⲁⲕ</span></td>
-									</tr>
-									<tr>
-										<th>f.</th><td><span class="coptic">ⲧⲉ</span></td><td><span class="coptic">ⲁⲣⲉ</span></td><td><span class="coptic">ⲉⲣⲉ</span></td><td><span class="coptic">ϣⲁⲣⲉ</span></td><td><span class="coptic">ⲙ̀ⲡⲁⲣⲉ</span></td><td><span class="coptic">ⲛⲁⲣⲉ</span></td>
-									</tr>
-									<tr>
-										<th>3 m.</th><td><span class="coptic">ϥ</span></td><td><span class="coptic">ⲁϥ</span></td><td><span class="coptic">ⲉϥ</span></td><td><span class="coptic">ϣⲁϥ</span></td><td><span class="coptic">ⲙ̀ⲡⲁϥ</span></td><td><span class="coptic">ⲛⲁϥ</span></td>
-									</tr>
-									<tr>
-										<th>f.</th><td><span class="coptic">ⲥ</span></td><td><span class="coptic">ⲁⲥ</span></td><td><span class="coptic">ⲉⲥ</span></td><td><span class="coptic">ϣⲁⲥ</span></td><td><span class="coptic">ⲙ̀ⲡⲁⲥ</span></td><td><span class="coptic">ⲛⲁⲥ</span></td>
-									</tr>
-									<tr>
-										<th rowspan="3">Plur.</th><th>1.</th><td><span class="coptic">ⲧⲉⲛ</span></td><td><span class="coptic">ⲁⲛ</span></td><td><span class="coptic">ⲉⲛ</span></td><td><span class="coptic">ϣⲁⲛ</span></td><td><span class="coptic">ⲙ̀ⲡⲁⲛ</span></td><td><span class="coptic">ⲛⲁⲛ</span></td>
-									</tr>
-									<tr>
-										<th>2.</th><td><span class="coptic">ⲧⲉⲧⲉⲛ</span></td><td><span class="coptic">ⲁⲣⲉⲧⲉⲛ</span></td><td><span class="coptic">ⲉⲣⲉⲧⲉⲛ</span></td><td><span class="coptic">ϣⲁⲣⲉⲧⲉⲛ</span></td><td><span class="coptic">ⲙ̀ⲡⲁⲣⲉⲧⲉⲛ</span></td><td><span class="coptic">ⲛⲁⲣⲉⲧⲉⲛ</span></td>
-									</tr>
-									<tr>
-										<th>3.</th><td><span class="coptic">ⲥⲉ</span></td><td><span class="coptic">ⲁⲩ</span></td><td><span class="coptic">ⲉⲩ</span></td><td><span class="coptic">ϣⲁⲩ</span></td><td><span class="coptic">ⲙ̀ⲡⲁⲩ</span></td><td><span class="coptic">ⲛⲁⲩ</span></td>
-									</tr>
-									<tr>
-										<th colspan="3">Devant un nom.</th><td><i>rien</i></td><td><span class="coptic">ⲁⲣⲉ-</span></td><td><span class="coptic">ⲉⲣⲉ-</span></td><td><span class="coptic">ϣⲁⲣⲉ-</span></td><td><span class="coptic">ⲙ̀ⲡⲁⲣⲉ-</span></td><td><span class="coptic">ⲛⲁⲣⲉ-</span></td>
-									</tr>
-									<tr>
-										<th colspan="3" rowspan="2">Avec négation.</th><td><span class="coptic">ⲛ̀ … ⲁⲛ</span></td><td rowspan="2"><span class="coptic">ⲛ̀ … ⲁⲛ</span></td><td></td><td></td><td></td><td><span class="coptic">… ⲁⲛ</span></td>
-									</tr>
-									<tr>
-										<td><span class="coptic">… ⲁⲛ</span></td><td></td><td></td><td></td><td></td>
-									</tr>
-									<tr>
-										<th colspan="3"></th>
-										<th colspan="3">Futur</th>
-										<th colspan="2">Futur énergique</th>
-										<th>Futur antérieur</th>
-									</tr>
-									<tr>
-										<th colspan="3"></th>
-										<th>1<sup>r</sup></th>
-										<th>2<sup>e</sup></th>
-										<th>3<sup>e</sup></th>
-										<th>affirmatif</th>
-										<th>négatif</th>
-										<th></th>
-									</tr>
-									<tr>
-										<th rowspan="8">Avec les suffixes.</th><th rowspan="5">Sing.</th><th>1.</th><td><span class="coptic">ϯⲛⲁ</span></td><td><span class="coptic">ⲁⲓⲛⲁ</span></td><td><span class="coptic">ⲉⲓⲛⲁ</span></td><td><span class="coptic">ⲉⲓⲉ</span></td><td><span class="coptic">ⲛ̀ⲛⲁ</span></td><td><span class="coptic">ⲛⲁⲓⲛⲁ</span></td>
-									</tr>
-									<tr>
-										<th>2 m.</th><td><span class="coptic">ⲭⲛⲁ</span></td><td><span class="coptic">ⲁⲭⲛⲁ</span></td><td><span class="coptic">ⲉⲭⲛⲁ</span></td><td><span class="coptic">ⲉⲕⲉ</span></td><td><span class="coptic">ⲛ̀ⲛⲉⲕ</span></td><td><span class="coptic">ⲛⲁⲭⲛⲁ</span></td>
-									</tr>
-									<tr>
-										<th>f.</th><td><span class="coptic">ⲧⲉⲣⲁ</span></td><td><span class="coptic">ⲁⲣⲉⲛⲁ</span></td><td><span class="coptic">ⲉⲣⲉⲛⲁ</span></td><td><span class="coptic">ⲉⲣⲉ</span></td><td><span class="coptic">ⲛ̀ⲛⲉ</span></td><td><span class="coptic">ⲛⲁⲣⲉⲛⲁ</span></td>
-									</tr>
-									<tr>
-										<th>3 m.</th><td><span class="coptic">ϥⲛⲁ</span></td><td><span class="coptic">ⲁϥⲛⲁ</span></td><td><span class="coptic">ⲉϥⲛⲁ</span></td><td><span class="coptic">ⲉϥⲉ</span></td><td><span class="coptic">ⲛ̀ⲛⲉϥ</span></td><td><span class="coptic">ⲛⲁϥⲛⲁ</span></td>
-									</tr>
-									<tr>
-										<th>f.</th><td><span class="coptic">ⲥⲛⲁ</span></td><td><span class="coptic">ⲁⲥⲛⲁ</span></td><td><span class="coptic">ⲉⲥⲛⲁ</span></td><td><span class="coptic">ⲉⲥⲉ</span></td><td><span class="coptic">ⲛ̀ⲛⲉⲥ</span></td><td><span class="coptic">ⲛⲁⲥⲛⲁ</span></td>
-									</tr>
-									<tr>
-										<th rowspan="3">Plur.</th><th>1.</th><td><span class="coptic">ⲧⲉⲛⲛⲁ</span></td><td><span class="coptic">ⲁⲛⲛⲁ</span></td><td><span class="coptic">ⲉⲛⲛⲁ</span></td><td><span class="coptic">ⲉⲛⲉ</span></td><td><span class="coptic">ⲛ̀ⲛⲉⲛ</span></td><td><span class="coptic">ⲛⲁⲛⲛⲁ</span></td>
-									</tr>
-									<tr>
-										<th>2.</th><td><span class="coptic">ⲧⲉⲧⲉⲛⲛⲁ</span></td><td><span class="coptic">ⲁⲣⲉⲧⲉⲛⲛⲁ</span></td><td><span class="coptic">ⲉⲣⲉⲧⲉⲛⲛⲁ</span></td><td><span class="coptic">ⲉⲣⲉⲧⲉⲛⲉ</span></td><td><span class="coptic">ⲛ̀ⲛⲉⲧⲉⲛ</span></td><td><span class="coptic">ⲛⲁⲣⲉⲧⲉⲛⲛⲁ</span></td>
-									</tr>
-									<tr>
-										<th>3.</th><td><span class="coptic">ⲥⲉⲛⲁ</span></td><td><span class="coptic">ⲁⲩⲛⲁ</span></td><td><span class="coptic">ⲉⲩⲛⲁ</span></td><td><span class="coptic">ⲉⲩⲉ</span></td><td><span class="coptic">ⲛ̀ⲛⲟⲩ</span></td><td><span class="coptic">ⲛⲁⲩⲛⲁ</span></td>
-									</tr>
-									<tr>
-										<th colspan="3">Devant un nom.</th><td><i>rien</i> <span class="coptic">ⲛⲁ</span></td><td><span class="coptic">ⲁⲣⲉ- ⲛⲁ</span></td><td><span class="coptic">ⲉⲣⲉ- ⲛⲁ</span></td><td><span class="coptic">ⲉⲣⲉ-</span></td><td><span class="coptic">ⲛ̀ⲛⲉ-</span></td><td><span class="coptic">ⲛⲁⲣⲉ- ⲛⲁ</span></td>
-									</tr>
-									<tr>
-										<th colspan="3" rowspan="2">Avec négation.</th><td><span class="coptic">ⲛ̀ … ⲁⲛ</span></td><td rowspan="2"><span class="coptic">ⲛ̀ … ⲁⲛ</span></td><td></td><td></td><td></td><td><span class="coptic">… ⲁⲛ</span></td>
-									</tr>
-									<tr>
-										<td><span class="coptic">… ⲁⲛ</span></td><td></td><td></td><td></td><td></td>
-									</tr>
-									<tr>
-										<th colspan="6">Indicatif (<i>suite</i>)</th>
-										<th colspan="3">Autres modes</th>
-									</tr>
-									<tr>
-										<th colspan="3"></th>
-										<th colspan="2">1<sup>r</sup> parfait</th>
-										<th>2<sup>e</sup> parfait</th>
-										<th colspan="2">Subjonctif</th>
-										<th>Optatif</th>
-									</tr>
-									<tr>
-										<th colspan="3"></th>
-										<th>affirmatif</th>
-										<th>négatif</th>
-										<th></th>
-										<th>affirmatif</th>
-										<th>négatif</th>
-										<th></th>
-									</tr>
-									<tr>
-										<th rowspan="8">Avec les suffixes.</th><th rowspan="5">Sing.</th><th>1.</th><td><span class="coptic">ⲁⲓ</span></td><td><span class="coptic">ⲙ̀ⲡⲓ</span></td><td><span class="coptic">ⲉⲧⲁⲓ</span></td><td><span class="coptic">ⲛ̀ⲧⲁ</span></td><td><span class="coptic">ⲛ̀ⲧⲁϣⲧⲉⲙ</span></td><td><span class="coptic">ⲙⲁⲣⲓ</span></td>
-									</tr>
-									<tr>
-										<th>2 m.</th><td><span class="coptic">ⲁⲕ</span></td><td><span class="coptic">ⲙ̀ⲡⲉⲕ</span></td><td><span class="coptic">ⲉⲧⲁⲕ</span></td><td><span class="coptic">ⲛ̀ⲧⲉⲕ</span></td><td><span class="coptic">ⲛ̀ⲧⲉⲕϣⲧⲉⲙ</span></td><td><span class="coptic">ⲙⲁⲣⲉⲕ</span></td>
-									</tr>
-									<tr>
-										<th>f.</th><td><span class="coptic">ⲁⲣⲉ</span></td><td><span class="coptic">ⲙ̀ⲡⲉ</span></td><td><span class="coptic">ⲉⲧⲁⲣⲉ</span></td><td><span class="coptic">ⲛ̀ⲧⲉ</span></td><td><span class="coptic">ⲛ̀ⲧⲉϣⲧⲉⲙ</span></td><td><span class="coptic">ⲙⲁⲣⲉ</span></td>
-									</tr>
-									<tr>
-										<th>3 m.</th><td><span class="coptic">ⲁϥ</span></td><td><span class="coptic">ⲙ̀ⲡⲉϥ</span></td><td><span class="coptic">ⲉⲧⲁϥ</span></td><td><span class="coptic">ⲛ̀ⲧⲉϥ</span></td><td><span class="coptic">ⲛ̀ⲧⲉϥϣⲧⲉⲙ</span></td><td><span class="coptic">ⲙⲁⲣⲉϥ</span></td>
-									</tr>
-									<tr>
-										<th>f.</th><td><span class="coptic">ⲁⲥ</span></td><td><span class="coptic">ⲙ̀ⲡⲉⲥ</span></td><td><span class="coptic">ⲉⲧⲁⲥ</span></td><td><span class="coptic">ⲛ̀ⲧⲉⲥ</span></td><td><span class="coptic">ⲛ̀ⲧⲉⲥϣⲧⲉⲙ</span></td><td><span class="coptic">ⲙⲁⲣⲉⲥ</span></td>
-									</tr>
-									<tr>
-										<th rowspan="3">Plur.</th><th>1.</th><td><span class="coptic">ⲁⲛ</span></td><td><span class="coptic">ⲙ̀ⲡⲉⲛ</span></td><td><span class="coptic">ⲉⲧⲁⲛ</span></td><td><span class="coptic">ⲛ̀ⲧⲉⲛ</span></td><td><span class="coptic">ⲛ̀ⲧⲉⲛϣⲧⲉⲙ</span></td><td><span class="coptic">ⲙⲁⲣⲉⲛ</span></td>
-									</tr>
-									<tr>
-										<th>2.</th><td><span class="coptic">ⲁⲧⲉⲧⲉⲛ</span></td><td><span class="coptic">ⲙ̀ⲡⲉⲧⲉⲛ</span></td><td><span class="coptic">ⲉⲧⲁⲣⲉⲧⲉⲛ</span></td><td><span class="coptic">ⲛ̀ⲧⲉⲧⲉⲛ</span></td><td><span class="coptic">ⲛ̀ⲧⲉⲧⲉⲛϣⲧⲉⲙ</span></td><td><span class="coptic">ⲙⲁⲣⲉⲧⲉⲛ</span></td>
-									</tr>
-									<tr>
-										<th>3.</th><td><span class="coptic">ⲁⲩ</span></td><td><span class="coptic">ⲙ̀ⲡⲟⲩ</span></td><td><span class="coptic">ⲉⲧⲁⲩ</span></td><td><span class="coptic">ⲛ̀ⲧⲟⲩ</span> <i>ou</i> <span class="coptic">ⲛ̀ⲥⲉ</span></td><td><span class="coptic">ⲛ̀ⲧⲟⲩϣⲧⲉⲙ</span></td><td><span class="coptic">ⲙⲁⲣⲟⲩ</span></td>
-									</tr>
-									<tr>
-										<th colspan="3">Devant un nom.</th><td><span class="coptic">ⲁ-</span></td><td><span class="coptic">ⲙ̀ⲡⲉ-</span></td><td><span class="coptic">ⲉⲧⲁ-</span></td><td><span class="coptic">ⲛ̀ⲧⲉ-</span></td><td><span class="coptic">ⲛ̀ⲧⲉϣⲧⲉⲙ-</span></td><td><span class="coptic">ⲙⲁⲣⲉ-</span></td>
-									</tr>
-									<tr>
-										<th colspan="3">Avec négation.</th><td></td><td></td><td><span class="coptic">ⲛ̀ … ⲁⲛ</span></td><td></td><td></td><td></td>
-									</tr>
-									<tr>
-										<th colspan="3"></th>
-										<th colspan="2">Conditionnel</th>
-										<th colspan="2">Pl.-q.-parfait</th>
-									</tr>
-									<tr>
-										<th colspan="3"></th>
-										<th>affirmatif</th>
-										<th>négatif</th>
-										<th>affirmatif</th>
-										<th>négatif</th>
-									</tr>
-									<tr>
-										<th rowspan="8">Avec les suffixes.</th><th rowspan="5">Sing.</th><th>1.</th><td><span class="coptic">ⲁⲓϣⲁⲛ</span></td><td><span class="coptic">ⲁⲓϣⲧⲉⲙ</span></td><td><span class="coptic">ⲛⲉ ⲁⲓ</span></td><td><span class="coptic">ⲛⲉ ⲙ̀ⲡⲓ</span></td>
-									</tr>
-									<tr>
-										<th>2 m.</th><td><span class="coptic">ⲁⲕϣⲁⲛ</span></td><td><span class="coptic">ⲁⲕϣⲧⲉⲙ</span></td><td><span class="coptic">ⲛⲉ ⲁⲕ</span></td><td><span class="coptic">ⲛⲉ ⲙ̀ⲡⲉⲕ</span></td>
-									</tr>
-									<tr>
-										<th>f.</th><td><span class="coptic">ⲁⲣⲉϣⲁⲛ</span></td><td><span class="coptic">ⲁⲣⲉϣⲧⲉⲙ</span></td><td><span class="coptic">ⲛⲉ ⲁⲣⲉ</span></td><td><span class="coptic">ⲛⲉ ⲙ̀ⲡⲉ</span></td>
-									</tr>
-									<tr>
-										<th>3 m.</th><td><span class="coptic">ⲁϥϣⲁⲛ</span></td><td><span class="coptic">ⲁϥϣⲧⲉⲙ</span></td><td><span class="coptic"></span></td><td><span class="coptic"></span></td>
-									</tr>
-									<tr>
-										<th>f.</th><td><span class="coptic">ⲁⲥϣⲁⲛ</span></td><td><span class="coptic">ⲁⲥϣⲧⲉⲙ</span></td><td><span class="coptic"></span></td><td><span class="coptic"></span></td>
-									</tr>
-									<tr>
-										<th rowspan="3">Plur.</th><th>1.</th><td><span class="coptic">ⲁⲛϣⲁⲛ</span></td><td><span class="coptic">ⲁⲛϣⲧⲉⲙ</span></td><td><span class="coptic"></span></td><td><span class="coptic"></span></td>
-									</tr>
-									<tr>
-										<th>2.</th><td><span class="coptic">ⲁⲣⲉⲧⲉⲛϣⲁⲛ</span></td><td><span class="coptic">ⲁⲣⲉⲧⲉⲛϣⲧⲉⲙ</span></td><td><span class="coptic"></span></td><td><span class="coptic"></span></td>
-									</tr>
-									<tr>
-										<th>3.</th><td><span class="coptic">ⲁⲩϣⲁⲛ</span></td><td><span class="coptic">ⲁⲩϣⲧⲉⲙ</span></td><td><span class="coptic"></span></td><td><span class="coptic"></span></td>
-									</tr>
-									<tr>
-										<th colspan="3">Devant un nom.</th><td><span class="coptic">ⲁⲣⲉϣⲁⲛ-</span></td><td><span class="coptic">ⲁⲣⲉϣⲧⲉⲙ-</span></td><td><span class="coptic"></span></td><td><span class="coptic"></span></td>
-									</tr>
-								</table>
-							</div>
-							<div class="fr">
-							</div>
+					<div id="233" data-section="233" class="wip">
+						<div class="section">
+							<p>Table Synoptique de la Conjugaison.</p>
+							<table>
+								<tr>
+									<th colspan="9">Indicatif</th>
+								</tr>
+								<tr>
+									<th colspan="3"></th>
+									<th colspan="3">Présent</th>
+									<th colspan="2">Présent d'habitude</th>
+									<th>Imparfait</th>
+								</tr>
+								<tr>
+									<th colspan="3"></th>
+									<th>1<sup>r</sup></th>
+									<th>2<sup>e</sup></th>
+									<th>3<sup>e</sup></th>
+									<th>affirmatif</th>
+									<th>négatif</th>
+									<th></th>
+								</tr>
+								<tr>
+									<th rowspan="8">Avec les suffixes.</th><th rowspan="5">Sing.</th><th>1.</th><td><span class="coptic">ϯ</span></td><td><span class="coptic">ⲁⲓ</span></td><td><span class="coptic">ⲉⲓ</span></td><td><span class="coptic">ϣⲁⲓ</span></td><td><span class="coptic">ⲙ̀ⲡⲁⲓ</span></td><td><span class="coptic">ⲛⲁⲓ</span></td>
+								</tr>
+								<tr>
+									<th>2 m.</th><td><span class="coptic">ⲕ</span></td><td><span class="coptic">ⲁⲕ</span></td><td><span class="coptic">ⲉⲕ</span></td><td><span class="coptic">ϣⲁⲕ</span></td><td><span class="coptic">ⲙ̀ⲡⲁⲕ</span></td><td><span class="coptic">ⲛⲁⲕ</span></td>
+								</tr>
+								<tr>
+									<th>f.</th><td><span class="coptic">ⲧⲉ</span></td><td><span class="coptic">ⲁⲣⲉ</span></td><td><span class="coptic">ⲉⲣⲉ</span></td><td><span class="coptic">ϣⲁⲣⲉ</span></td><td><span class="coptic">ⲙ̀ⲡⲁⲣⲉ</span></td><td><span class="coptic">ⲛⲁⲣⲉ</span></td>
+								</tr>
+								<tr>
+									<th>3 m.</th><td><span class="coptic">ϥ</span></td><td><span class="coptic">ⲁϥ</span></td><td><span class="coptic">ⲉϥ</span></td><td><span class="coptic">ϣⲁϥ</span></td><td><span class="coptic">ⲙ̀ⲡⲁϥ</span></td><td><span class="coptic">ⲛⲁϥ</span></td>
+								</tr>
+								<tr>
+									<th>f.</th><td><span class="coptic">ⲥ</span></td><td><span class="coptic">ⲁⲥ</span></td><td><span class="coptic">ⲉⲥ</span></td><td><span class="coptic">ϣⲁⲥ</span></td><td><span class="coptic">ⲙ̀ⲡⲁⲥ</span></td><td><span class="coptic">ⲛⲁⲥ</span></td>
+								</tr>
+								<tr>
+									<th rowspan="3">Plur.</th><th>1.</th><td><span class="coptic">ⲧⲉⲛ</span></td><td><span class="coptic">ⲁⲛ</span></td><td><span class="coptic">ⲉⲛ</span></td><td><span class="coptic">ϣⲁⲛ</span></td><td><span class="coptic">ⲙ̀ⲡⲁⲛ</span></td><td><span class="coptic">ⲛⲁⲛ</span></td>
+								</tr>
+								<tr>
+									<th>2.</th><td><span class="coptic">ⲧⲉⲧⲉⲛ</span></td><td><span class="coptic">ⲁⲣⲉⲧⲉⲛ</span></td><td><span class="coptic">ⲉⲣⲉⲧⲉⲛ</span></td><td><span class="coptic">ϣⲁⲣⲉⲧⲉⲛ</span></td><td><span class="coptic">ⲙ̀ⲡⲁⲣⲉⲧⲉⲛ</span></td><td><span class="coptic">ⲛⲁⲣⲉⲧⲉⲛ</span></td>
+								</tr>
+								<tr>
+									<th>3.</th><td><span class="coptic">ⲥⲉ</span></td><td><span class="coptic">ⲁⲩ</span></td><td><span class="coptic">ⲉⲩ</span></td><td><span class="coptic">ϣⲁⲩ</span></td><td><span class="coptic">ⲙ̀ⲡⲁⲩ</span></td><td><span class="coptic">ⲛⲁⲩ</span></td>
+								</tr>
+								<tr>
+									<th colspan="3">Devant un nom.</th><td><i>rien</i></td><td><span class="coptic">ⲁⲣⲉ-</span></td><td><span class="coptic">ⲉⲣⲉ-</span></td><td><span class="coptic">ϣⲁⲣⲉ-</span></td><td><span class="coptic">ⲙ̀ⲡⲁⲣⲉ-</span></td><td><span class="coptic">ⲛⲁⲣⲉ-</span></td>
+								</tr>
+								<tr>
+									<th colspan="3" rowspan="2">Avec négation.</th><td><span class="coptic">ⲛ̀ … ⲁⲛ</span></td><td rowspan="2"><span class="coptic">ⲛ̀ … ⲁⲛ</span></td><td></td><td></td><td></td><td><span class="coptic">… ⲁⲛ</span></td>
+								</tr>
+								<tr>
+									<td><span class="coptic">… ⲁⲛ</span></td><td></td><td></td><td></td><td></td>
+								</tr>
+								<tr>
+									<th colspan="3"></th>
+									<th colspan="3">Futur</th>
+									<th colspan="2">Futur énergique</th>
+									<th>Futur antérieur</th>
+								</tr>
+								<tr>
+									<th colspan="3"></th>
+									<th>1<sup>r</sup></th>
+									<th>2<sup>e</sup></th>
+									<th>3<sup>e</sup></th>
+									<th>affirmatif</th>
+									<th>négatif</th>
+									<th></th>
+								</tr>
+								<tr>
+									<th rowspan="8">Avec les suffixes.</th><th rowspan="5">Sing.</th><th>1.</th><td><span class="coptic">ϯⲛⲁ</span></td><td><span class="coptic">ⲁⲓⲛⲁ</span></td><td><span class="coptic">ⲉⲓⲛⲁ</span></td><td><span class="coptic">ⲉⲓⲉ</span></td><td><span class="coptic">ⲛ̀ⲛⲁ</span></td><td><span class="coptic">ⲛⲁⲓⲛⲁ</span></td>
+								</tr>
+								<tr>
+									<th>2 m.</th><td><span class="coptic">ⲭⲛⲁ</span></td><td><span class="coptic">ⲁⲭⲛⲁ</span></td><td><span class="coptic">ⲉⲭⲛⲁ</span></td><td><span class="coptic">ⲉⲕⲉ</span></td><td><span class="coptic">ⲛ̀ⲛⲉⲕ</span></td><td><span class="coptic">ⲛⲁⲭⲛⲁ</span></td>
+								</tr>
+								<tr>
+									<th>f.</th><td><span class="coptic">ⲧⲉⲣⲁ</span></td><td><span class="coptic">ⲁⲣⲉⲛⲁ</span></td><td><span class="coptic">ⲉⲣⲉⲛⲁ</span></td><td><span class="coptic">ⲉⲣⲉ</span></td><td><span class="coptic">ⲛ̀ⲛⲉ</span></td><td><span class="coptic">ⲛⲁⲣⲉⲛⲁ</span></td>
+								</tr>
+								<tr>
+									<th>3 m.</th><td><span class="coptic">ϥⲛⲁ</span></td><td><span class="coptic">ⲁϥⲛⲁ</span></td><td><span class="coptic">ⲉϥⲛⲁ</span></td><td><span class="coptic">ⲉϥⲉ</span></td><td><span class="coptic">ⲛ̀ⲛⲉϥ</span></td><td><span class="coptic">ⲛⲁϥⲛⲁ</span></td>
+								</tr>
+								<tr>
+									<th>f.</th><td><span class="coptic">ⲥⲛⲁ</span></td><td><span class="coptic">ⲁⲥⲛⲁ</span></td><td><span class="coptic">ⲉⲥⲛⲁ</span></td><td><span class="coptic">ⲉⲥⲉ</span></td><td><span class="coptic">ⲛ̀ⲛⲉⲥ</span></td><td><span class="coptic">ⲛⲁⲥⲛⲁ</span></td>
+								</tr>
+								<tr>
+									<th rowspan="3">Plur.</th><th>1.</th><td><span class="coptic">ⲧⲉⲛⲛⲁ</span></td><td><span class="coptic">ⲁⲛⲛⲁ</span></td><td><span class="coptic">ⲉⲛⲛⲁ</span></td><td><span class="coptic">ⲉⲛⲉ</span></td><td><span class="coptic">ⲛ̀ⲛⲉⲛ</span></td><td><span class="coptic">ⲛⲁⲛⲛⲁ</span></td>
+								</tr>
+								<tr>
+									<th>2.</th><td><span class="coptic">ⲧⲉⲧⲉⲛⲛⲁ</span></td><td><span class="coptic">ⲁⲣⲉⲧⲉⲛⲛⲁ</span></td><td><span class="coptic">ⲉⲣⲉⲧⲉⲛⲛⲁ</span></td><td><span class="coptic">ⲉⲣⲉⲧⲉⲛⲉ</span></td><td><span class="coptic">ⲛ̀ⲛⲉⲧⲉⲛ</span></td><td><span class="coptic">ⲛⲁⲣⲉⲧⲉⲛⲛⲁ</span></td>
+								</tr>
+								<tr>
+									<th>3.</th><td><span class="coptic">ⲥⲉⲛⲁ</span></td><td><span class="coptic">ⲁⲩⲛⲁ</span></td><td><span class="coptic">ⲉⲩⲛⲁ</span></td><td><span class="coptic">ⲉⲩⲉ</span></td><td><span class="coptic">ⲛ̀ⲛⲟⲩ</span></td><td><span class="coptic">ⲛⲁⲩⲛⲁ</span></td>
+								</tr>
+								<tr>
+									<th colspan="3">Devant un nom.</th><td><i>rien</i> <span class="coptic">ⲛⲁ</span></td><td><span class="coptic">ⲁⲣⲉ- ⲛⲁ</span></td><td><span class="coptic">ⲉⲣⲉ- ⲛⲁ</span></td><td><span class="coptic">ⲉⲣⲉ-</span></td><td><span class="coptic">ⲛ̀ⲛⲉ-</span></td><td><span class="coptic">ⲛⲁⲣⲉ- ⲛⲁ</span></td>
+								</tr>
+								<tr>
+									<th colspan="3" rowspan="2">Avec négation.</th><td><span class="coptic">ⲛ̀ … ⲁⲛ</span></td><td rowspan="2"><span class="coptic">ⲛ̀ … ⲁⲛ</span></td><td></td><td></td><td></td><td><span class="coptic">… ⲁⲛ</span></td>
+								</tr>
+								<tr>
+									<td><span class="coptic">… ⲁⲛ</span></td><td></td><td></td><td></td><td></td>
+								</tr>
+								<tr>
+									<th colspan="6">Indicatif (<i>suite</i>)</th>
+									<th colspan="3">Autres modes</th>
+								</tr>
+								<tr>
+									<th colspan="3"></th>
+									<th colspan="2">1<sup>r</sup> parfait</th>
+									<th>2<sup>e</sup> parfait</th>
+									<th colspan="2">Subjonctif</th>
+									<th>Optatif</th>
+								</tr>
+								<tr>
+									<th colspan="3"></th>
+									<th>affirmatif</th>
+									<th>négatif</th>
+									<th></th>
+									<th>affirmatif</th>
+									<th>négatif</th>
+									<th></th>
+								</tr>
+								<tr>
+									<th rowspan="8">Avec les suffixes.</th><th rowspan="5">Sing.</th><th>1.</th><td><span class="coptic">ⲁⲓ</span></td><td><span class="coptic">ⲙ̀ⲡⲓ</span></td><td><span class="coptic">ⲉⲧⲁⲓ</span></td><td><span class="coptic">ⲛ̀ⲧⲁ</span></td><td><span class="coptic">ⲛ̀ⲧⲁϣⲧⲉⲙ</span></td><td><span class="coptic">ⲙⲁⲣⲓ</span></td>
+								</tr>
+								<tr>
+									<th>2 m.</th><td><span class="coptic">ⲁⲕ</span></td><td><span class="coptic">ⲙ̀ⲡⲉⲕ</span></td><td><span class="coptic">ⲉⲧⲁⲕ</span></td><td><span class="coptic">ⲛ̀ⲧⲉⲕ</span></td><td><span class="coptic">ⲛ̀ⲧⲉⲕϣⲧⲉⲙ</span></td><td><span class="coptic">ⲙⲁⲣⲉⲕ</span></td>
+								</tr>
+								<tr>
+									<th>f.</th><td><span class="coptic">ⲁⲣⲉ</span></td><td><span class="coptic">ⲙ̀ⲡⲉ</span></td><td><span class="coptic">ⲉⲧⲁⲣⲉ</span></td><td><span class="coptic">ⲛ̀ⲧⲉ</span></td><td><span class="coptic">ⲛ̀ⲧⲉϣⲧⲉⲙ</span></td><td><span class="coptic">ⲙⲁⲣⲉ</span></td>
+								</tr>
+								<tr>
+									<th>3 m.</th><td><span class="coptic">ⲁϥ</span></td><td><span class="coptic">ⲙ̀ⲡⲉϥ</span></td><td><span class="coptic">ⲉⲧⲁϥ</span></td><td><span class="coptic">ⲛ̀ⲧⲉϥ</span></td><td><span class="coptic">ⲛ̀ⲧⲉϥϣⲧⲉⲙ</span></td><td><span class="coptic">ⲙⲁⲣⲉϥ</span></td>
+								</tr>
+								<tr>
+									<th>f.</th><td><span class="coptic">ⲁⲥ</span></td><td><span class="coptic">ⲙ̀ⲡⲉⲥ</span></td><td><span class="coptic">ⲉⲧⲁⲥ</span></td><td><span class="coptic">ⲛ̀ⲧⲉⲥ</span></td><td><span class="coptic">ⲛ̀ⲧⲉⲥϣⲧⲉⲙ</span></td><td><span class="coptic">ⲙⲁⲣⲉⲥ</span></td>
+								</tr>
+								<tr>
+									<th rowspan="3">Plur.</th><th>1.</th><td><span class="coptic">ⲁⲛ</span></td><td><span class="coptic">ⲙ̀ⲡⲉⲛ</span></td><td><span class="coptic">ⲉⲧⲁⲛ</span></td><td><span class="coptic">ⲛ̀ⲧⲉⲛ</span></td><td><span class="coptic">ⲛ̀ⲧⲉⲛϣⲧⲉⲙ</span></td><td><span class="coptic">ⲙⲁⲣⲉⲛ</span></td>
+								</tr>
+								<tr>
+									<th>2.</th><td><span class="coptic">ⲁⲧⲉⲧⲉⲛ</span></td><td><span class="coptic">ⲙ̀ⲡⲉⲧⲉⲛ</span></td><td><span class="coptic">ⲉⲧⲁⲣⲉⲧⲉⲛ</span></td><td><span class="coptic">ⲛ̀ⲧⲉⲧⲉⲛ</span></td><td><span class="coptic">ⲛ̀ⲧⲉⲧⲉⲛϣⲧⲉⲙ</span></td><td><span class="coptic">ⲙⲁⲣⲉⲧⲉⲛ</span></td>
+								</tr>
+								<tr>
+									<th>3.</th><td><span class="coptic">ⲁⲩ</span></td><td><span class="coptic">ⲙ̀ⲡⲟⲩ</span></td><td><span class="coptic">ⲉⲧⲁⲩ</span></td><td><span class="coptic">ⲛ̀ⲧⲟⲩ</span> <i>ou</i> <span class="coptic">ⲛ̀ⲥⲉ</span></td><td><span class="coptic">ⲛ̀ⲧⲟⲩϣⲧⲉⲙ</span></td><td><span class="coptic">ⲙⲁⲣⲟⲩ</span></td>
+								</tr>
+								<tr>
+									<th colspan="3">Devant un nom.</th><td><span class="coptic">ⲁ-</span></td><td><span class="coptic">ⲙ̀ⲡⲉ-</span></td><td><span class="coptic">ⲉⲧⲁ-</span></td><td><span class="coptic">ⲛ̀ⲧⲉ-</span></td><td><span class="coptic">ⲛ̀ⲧⲉϣⲧⲉⲙ-</span></td><td><span class="coptic">ⲙⲁⲣⲉ-</span></td>
+								</tr>
+								<tr>
+									<th colspan="3">Avec négation.</th><td></td><td></td><td><span class="coptic">ⲛ̀ … ⲁⲛ</span></td><td></td><td></td><td></td>
+								</tr>
+								<tr>
+									<th colspan="3"></th>
+									<th colspan="2">Conditionnel</th>
+									<th colspan="2">Pl.-q.-parfait</th>
+								</tr>
+								<tr>
+									<th colspan="3"></th>
+									<th>affirmatif</th>
+									<th>négatif</th>
+									<th>affirmatif</th>
+									<th>négatif</th>
+								</tr>
+								<tr>
+									<th rowspan="8">Avec les suffixes.</th><th rowspan="5">Sing.</th><th>1.</th><td><span class="coptic">ⲁⲓϣⲁⲛ</span></td><td><span class="coptic">ⲁⲓϣⲧⲉⲙ</span></td><td><span class="coptic">ⲛⲉ ⲁⲓ</span></td><td><span class="coptic">ⲛⲉ ⲙ̀ⲡⲓ</span></td>
+								</tr>
+								<tr>
+									<th>2 m.</th><td><span class="coptic">ⲁⲕϣⲁⲛ</span></td><td><span class="coptic">ⲁⲕϣⲧⲉⲙ</span></td><td><span class="coptic">ⲛⲉ ⲁⲕ</span></td><td><span class="coptic">ⲛⲉ ⲙ̀ⲡⲉⲕ</span></td>
+								</tr>
+								<tr>
+									<th>f.</th><td><span class="coptic">ⲁⲣⲉϣⲁⲛ</span></td><td><span class="coptic">ⲁⲣⲉϣⲧⲉⲙ</span></td><td><span class="coptic">ⲛⲉ ⲁⲣⲉ</span></td><td><span class="coptic">ⲛⲉ ⲙ̀ⲡⲉ</span></td>
+								</tr>
+								<tr>
+									<th>3 m.</th><td><span class="coptic">ⲁϥϣⲁⲛ</span></td><td><span class="coptic">ⲁϥϣⲧⲉⲙ</span></td><td><span class="coptic"></span></td><td><span class="coptic"></span></td>
+								</tr>
+								<tr>
+									<th>f.</th><td><span class="coptic">ⲁⲥϣⲁⲛ</span></td><td><span class="coptic">ⲁⲥϣⲧⲉⲙ</span></td><td><span class="coptic"></span></td><td><span class="coptic"></span></td>
+								</tr>
+								<tr>
+									<th rowspan="3">Plur.</th><th>1.</th><td><span class="coptic">ⲁⲛϣⲁⲛ</span></td><td><span class="coptic">ⲁⲛϣⲧⲉⲙ</span></td><td><span class="coptic"></span></td><td><span class="coptic"></span></td>
+								</tr>
+								<tr>
+									<th>2.</th><td><span class="coptic">ⲁⲣⲉⲧⲉⲛϣⲁⲛ</span></td><td><span class="coptic">ⲁⲣⲉⲧⲉⲛϣⲧⲉⲙ</span></td><td><span class="coptic"></span></td><td><span class="coptic"></span></td>
+								</tr>
+								<tr>
+									<th>3.</th><td><span class="coptic">ⲁⲩϣⲁⲛ</span></td><td><span class="coptic">ⲁⲩϣⲧⲉⲙ</span></td><td><span class="coptic"></span></td><td><span class="coptic"></span></td>
+								</tr>
+								<tr>
+									<th colspan="3">Devant un nom.</th><td><span class="coptic">ⲁⲣⲉϣⲁⲛ-</span></td><td><span class="coptic">ⲁⲣⲉϣⲧⲉⲙ-</span></td><td><span class="coptic"></span></td><td><span class="coptic"></span></td>
+								</tr>
+							</table>
 						</div>
 					</div>
 					<div data-section="234">
@@ -9520,100 +8684,146 @@
 							</div>
 						</div>
 					</div>
-					<div data-section="257">
-						<div class="bilingual">
-							<div class="en">
-								<p>Il est un troisième infinitif qu'on pourrait appeler <i>potentiel</i>; il se forme en plaçant <span class="coptic">ϣ-</span> «pouvoir» devant l'infinitif simple ou causatif: <span class="coptic">ϣⲃⲱⲗ</span> «pouvoir délier», <span class="coptic">ϣⲑⲣⲉ- ⲃⲱⲗ</span> «pouvoir faire délier». Il est en réalité composé de deux verbes, mais dont le premier <span class="coptic">ϣ-</span> ne s'emploie que dans ce cas particulier. Lorsque le second verbe commence par <span class="coptic">ⲥ</span>, cette lettre disparaît parfois après le <span class="coptic">ϣ</span>: <span class="coptic">ϣⲁϫⲓ</span> pour <span class="coptic">ϣⲥⲁϫⲓ</span> «pouvoir dire» qui est d'ailleurs la forme ordinaire.</p>
-								<p>Cet infinitif est d'un usage fréquent; il peut se rencontrer dans tous les verbes et à tous les temps:</p>
-								<p><span class="coptic">ⲙ̀ⲡⲁϥϣⲛⲁϩⲙⲉϥ ⲉⲃⲟⲗ ϧⲉⲛ ⲟⲩⲡⲟⲗⲉⲙⲟⲥ</span> «il ne peut se sauver de la guerre»<a href="#cite-footnote-chapter_11-104" class="footnote" id="footnote-chapter_11-104"><sup>[1]</sup></a>.</p>
-								<p><span class="coptic">ⲥⲉⲛⲁϣⲧⲱⲟⲩⲛⲟⲩ ⲙ̀ⲙⲁⲩⲁⲧⲟⲩ</span> «ils pourront se lever d'eux-mêmes»<a href="#cite-footnote-chapter_11-105" class="footnote" id="footnote-chapter_11-105"><sup>[2]</sup></a>.</p>
-								<p><span class="coptic">ⲟⲩⲣⲱⲙⲓ ⲙ̀ⲃⲉⲗⲗⲉ ⲛ̀ⲛⲟⲩϣⲑⲣⲉϥⲛⲁⲩ ⲙ̀ⲃⲟⲗ ⲟⲩⲣⲱⲙⲓ ⲉϥϧⲉⲛ ⲟⲩⲁⲛⲁⲅⲕⲏ ⲛ̀ⲛⲟⲩϣⲛⲁϩⲙⲉϥ</span> «ils ne pourront rendre la vue à l'aveugle, ils ne pourront délivrer l'homme de la nécessité»<a href="#cite-footnote-chapter_11-106" class="footnote" id="footnote-chapter_11-106"><sup>[3]</sup></a>.</p>
-								<p>A ce genre d'infinitif appartient le verbe si fréquent, <span class="coptic">ϣϫⲉⲙϫⲟⲙ</span> «pouvoir», composé de <span class="coptic">ϣ-ϫⲉⲙ-</span> «trouver» (231) et <span class="coptic">ϫⲟⲙ</span> «force». <span class="coptic">ϣ</span> s'unit aussi au substantif <span class="coptic">ϫⲟⲙ</span> dans les expressions de cette sorte: <span class="coptic">ⲙ̀ⲙⲟⲛ ϣϫⲟⲙ ⲛⲏⲓ</span> «je n'ai pas le pouvoir».</p>
-								<p><b>2.</b> Emploi de l'infinitif.</p>
-							</div>
-							<div class="fr">
-							</div>
+					<div id="257" data-section="257" class="wip">
+						<div class="section">
+							<p>Il est un troisième infinitif qu'on pourrait appeler <i>potentiel</i>; il se forme en plaçant <span class="coptic">ϣ-</span> «pouvoir» devant l'infinitif simple ou causatif: <span class="coptic">ϣⲃⲱⲗ</span> «pouvoir délier», <span class="coptic">ϣⲑⲣⲉ- ⲃⲱⲗ</span> «pouvoir faire délier». Il est en réalité composé de deux verbes, mais dont le premier <span class="coptic">ϣ-</span> ne s'emploie que dans ce cas particulier. Lorsque le second verbe commence par <span class="coptic">ⲥ</span>, cette lettre disparaît parfois après le <span class="coptic">ϣ</span>: <span class="coptic">ϣⲁϫⲓ</span> pour <span class="coptic">ϣⲥⲁϫⲓ</span> «pouvoir dire» qui est d'ailleurs la forme ordinaire.</p>
+							<p>Cet infinitif est d'un usage fréquent; il peut se rencontrer dans tous les verbes et à tous les temps:</p>
+							<p><span class="coptic">ⲙ̀ⲡⲁϥϣⲛⲁϩⲙⲉϥ ⲉⲃⲟⲗ ϧⲉⲛ ⲟⲩⲡⲟⲗⲉⲙⲟⲥ</span> «il ne peut se sauver de la guerre»<a href="#cite-footnote-chapter_11-104" class="footnote" id="footnote-chapter_11-104"><sup>[1]</sup></a>.</p>
+							<p><span class="coptic">ⲥⲉⲛⲁϣⲧⲱⲟⲩⲛⲟⲩ ⲙ̀ⲙⲁⲩⲁⲧⲟⲩ</span> «ils pourront se lever d'eux-mêmes»<a href="#cite-footnote-chapter_11-105" class="footnote" id="footnote-chapter_11-105"><sup>[2]</sup></a>.</p>
+							<p><span class="coptic">ⲟⲩⲣⲱⲙⲓ ⲙ̀ⲃⲉⲗⲗⲉ ⲛ̀ⲛⲟⲩϣⲑⲣⲉϥⲛⲁⲩ ⲙ̀ⲃⲟⲗ ⲟⲩⲣⲱⲙⲓ ⲉϥϧⲉⲛ ⲟⲩⲁⲛⲁⲅⲕⲏ ⲛ̀ⲛⲟⲩϣⲛⲁϩⲙⲉϥ</span> «ils ne pourront rendre la vue à l'aveugle, ils ne pourront délivrer l'homme de la nécessité»<a href="#cite-footnote-chapter_11-106" class="footnote" id="footnote-chapter_11-106"><sup>[3]</sup></a>.</p>
+							<p>A ce genre d'infinitif appartient le verbe si fréquent, <span class="coptic">ϣϫⲉⲙϫⲟⲙ</span> «pouvoir», composé de <span class="coptic">ϣ-ϫⲉⲙ-</span> «trouver» (231) et <span class="coptic">ϫⲟⲙ</span> «force». <span class="coptic">ϣ</span> s'unit aussi au substantif <span class="coptic">ϫⲟⲙ</span> dans les expressions de cette sorte: <span class="coptic">ⲙ̀ⲙⲟⲛ ϣϫⲟⲙ ⲛⲏⲓ</span> «je n'ai pas le pouvoir».</p>
 						</div>
 					</div>
-					<div data-section="258">
-						<div class="bilingual">
-							<div class="en">
-								<p>De même qu'en français, l'infinitif de tous les verbes coptes peut s'employer, avec ou sans son régime, comme sujet ou comme complément direct et indirect dans une proposition.</p>
-								<p><i><b>1.</b> Infinitif sujet.</i></p>
-							</div>
-							<div class="fr">
-							</div>
+					<div id="258" data-section="258" class="needs-english">
+						<div class="section">
+							<p class="fr"><b>2.</b> Emploi de l'infinitif</p>
+							<p class="en"></p>
+							<p class="fr">De même qu'en français, l'infinitif de tous les verbes coptes peut s'employer, avec ou sans son régime, comme sujet ou comme complément direct et indirect dans une proposition.</p>
+							<p class="en"></p>
 						</div>
 					</div>
-					<div data-section="259">
-						<div class="bilingual">
-							<div class="en">
-								<p>Les propositions coptes qui ont un infinitif comme sujet réel sont tout à fait semblables aux propositions françaises de même genre.</p>
-								<p>L'infinitif précédé de <span class="coptic">ⲉ</span> (en français <i>de</i>, <i>à</i>) vient toujours après l'attribut:</p>
-								<p><span class="coptic">ⲁⲛⲟⲕ ϫⲉ ⲟⲩⲁⲅⲁⲑⲟⲛ ⲛⲏⲓ ⲡⲉ ⲉ-ⲧⲟⲙ-ⲧ ⲉ ⲫϯ</span> «il est bon pour moi d'adhérer à Dieu»<a href="#cite-footnote-chapter_11-107" class="footnote" id="footnote-chapter_11-107"><sup>[1]</sup></a>.</p>
-								<p><span class="coptic">ⲟⲩⲟⲛⲧⲏⲓ ⲉ-ⲥⲁϫⲓ</span> «j'ai à parler»<a href="#cite-footnote-chapter_11-108" class="footnote" id="footnote-chapter_11-108"><sup>[2]</sup></a>.</p>
-							</div>
-							<div class="fr">
-							</div>
+					<div id="259" data-section="259" class="needs-english">
+						<div class="section">
+							<p class="fr"><b>1.</b> <i>Infinitif sujet</i></p>
+							<p class="en"></p>
+							<p class="fr">Les propositions coptes qui ont un infinitif comme sujet réel sont tout à fait semblables aux propositions françaises de même genre.</p>
+							<p class="en"></p>
+							<p class="fr">L'infinitif précédé de <span class="coptic">ⲉ</span> (en français <i>de</i>, <i>à</i>) vient toujours après l'attribut:</p>
+							<p class="en"></p>
+							<blockquote class="example">
+								<p><span class="coptic">ⲁⲛⲟⲕ ϫⲉ ⲟⲩⲁⲅⲁⲑⲟⲛ ⲛⲏⲓ ⲡⲉ ⲉ-ⲧⲟⲙ-ⲧ ⲉ ⲫϯ</span> <span class="fr">(Ps. 72, 28)</span><span class="en">(Psalms 72:28)</span></p>
+								<p class="fr">«il est bon pour moi d'adhérer à Dieu»</p>
+								<p class="en"></p>
+							</blockquote>
+							<blockquote class="example">
+								<p><span class="coptic">ⲟⲩⲟⲛⲧⲏⲓ ⲉ-ⲥⲁϫⲓ</span> <span class="fr">(Gen. 18, 31)</span><span class="en">(Genesis 18:31)</span></p>
+								<p class="fr">«j'ai à parler»</p>
+								<p class="en"></p>
+							</blockquote>
 						</div>
 					</div>
-					<div data-section="260">
-						<div class="bilingual">
-							<div class="en">
-								<p>Cette tournure s'emploie surtout avec le verbe <span class="coptic">ⲥϣⲉ</span> «il faut» et les verbes conjugués impersonnellement; dans ce cas on emploie <span class="coptic">ⲛ̀</span> quand l'infinitif, qui est sujet réel, suit immédiatement le verbe, <span class="coptic">ⲉ</span> quand il en est séparé:</p>
-								<p><span class="coptic">ⲡⲉⲧⲥϣⲉ ⲛ̀-ⲁⲓϥ ⲁⲛ</span> «ce qu'il ne faut pas faire»<a href="#cite-footnote-chapter_11-109" class="footnote" id="footnote-chapter_11-109"><sup>[3]</sup></a>.</p>
-								<p><span class="coptic">ⲥϣⲉ ⲛⲁⲛ ⲉ-ϯϩⲱϯ ⲙ̀ⲡⲟⲩⲣⲟ</span> «il nous faut payer le tribut au roi»<a href="#cite-footnote-chapter_11-110" class="footnote" id="footnote-chapter_11-110"><sup>[4]</sup></a>.</p>
-								<p><span class="coptic">ⲛⲁⲛⲉⲥ ⲁⲛ ⲉⲑⲣⲉ ⲡⲓⲣⲱⲙⲓ ϣⲱⲡⲓ ⲙ̀ⲙⲁⲩⲁⲧϥ</span> «il n'est pas bon que l'homme soit tout seul»<a href="#cite-footnote-chapter_11-111" class="footnote" id="footnote-chapter_11-111"><sup>[5]</sup></a>.</p>
-								<p><i>2. Infinitif complément.</i></p>
-							</div>
-							<div class="fr">
-							</div>
+					<div id="260" data-section="260" class="needs-english">
+						<div class="section">
+							<p class="fr">Cette tournure s'emploie surtout avec le verbe <span class="coptic">ⲥϣⲉ</span> «il faut» et les verbes conjugués impersonnellement; dans ce cas on emploie <span class="coptic">ⲛ̀</span> quand l'infinitif, qui est sujet réel, suit immédiatement le verbe, <span class="coptic">ⲉ</span> quand il en est séparé:</p>
+							<p class="en"></p>
+							<blockquote class="example">
+								<p><span class="coptic">ⲡⲉⲧⲥϣⲉ ⲛ̀-ⲁⲓϥ ⲁⲛ</span> <span class="fr">(Mt. 12, 2)</span><span class="en">(Matthew 12:2)</span></p>
+								<p class="fr">«ce qu'il ne faut pas faire»</p>
+								<p class="en"></p>
+							</blockquote>
+							<blockquote class="example">
+								<p><span class="coptic">ⲥϣⲉ ⲛⲁⲛ ⲉ-ϯϩⲱϯ ⲙ̀ⲡⲟⲩⲣⲟ</span> <span class="fr">(Luc 20, 22)</span><span class="en">(Luke 20:22</span></p>
+								<p class="fr">«il nous faut payer le tribut au roi»</p>
+								<p class="en"></p>
+							</blockquote>
+							<blockquote class="example">
+								<p><span class="coptic">ⲛⲁⲛⲉⲥ ⲁⲛ ⲉⲑⲣⲉ ⲡⲓⲣⲱⲙⲓ ϣⲱⲡⲓ ⲙ̀ⲙⲁⲩⲁⲧϥ</span> <span class="fr">(Gen. 2, 18)</span><span class="en">(Genesis 2:18)</span></p>
+								<p class="fr">«il n'est pas bon que l'homme soit tout seul»</p>
+								<p class="en"></p>
+							</blockquote>
 						</div>
 					</div>
-					<div data-section="261">
-						<div class="bilingual">
-							<div class="en">
-								<p><b>1.</b> Comme complément direct, l'infinitif se trouve quelquefois uni, sans particule, à la forme abrégée des verbes:</p>
-								<p><span class="coptic">ⲁⲩⲙⲉⲛⲣⲉ ⲕⲓⲙ ⲛ̀ⲛⲟⲩⲫⲁⲧ</span> «ils ont aimé remuer leurs pieds»<a href="#cite-footnote-chapter_11-112" class="footnote" id="footnote-chapter_11-112"><sup>[6]</sup></a>.</p>
-								<p><b>2.</b> En dehors de ce cas, assez rare d'ailleurs, l'infinitif, qu'il soit complément direct ou autre, prend toujours une préposition, en général <span class="coptic">ⲛ̀</span> ou <span class="coptic">ⲉ</span>.</p>
-								<p><b>a.</b> Infinitif complément avec <span class="coptic">ⲛ̀</span>.</p>
-							</div>
-							<div class="fr">
-							</div>
+					<div id="261" data-section="261"class="needs-english">
+						<div class="section">
+							<p class="fr">2. <i>Infinitif complément</i></p>
+							<p class="en"></p>
+							<p class="fr"><b>1.</b> Comme complément direct, l'infinitif se trouve quelquefois uni, sans particule, à la forme abrégée des verbes:</p>
+							<p class="en"></p>
+							<blockquote class="example">
+								<p><span class="coptic">ⲁⲩⲙⲉⲛⲣⲉ-ⲕⲓⲙ ⲛ̀ⲛⲟⲩⲫⲁⲧ</span> <span class="fr">(Jér. 14, 10)</span><span class="en">(Jeremiah 14:10)</span></p>
+								<p class="fr">«ils ont aimé remuer leurs pieds»</p>
+								<p class="en"></p>
+							</blockquote>
+							<p class="fr"><b>2.</b> En dehors de ce cas, assez rare d'ailleurs, l'infinitif, qu'il soit complément direct ou autre, prend toujours une préposition, en général <span class="coptic">ⲛ̀-</span> ou <span class="coptic">ⲉ-</span>.</p>
+							<p class="en"></p>
 						</div>
 					</div>
-					<div data-section="262">
-						<div class="bilingual">
-							<div class="en">
-								<p><span class="coptic">ⲛ̀</span> ne s'emploie qu'avec l'infinitif simple lorsqu'il suit <i>immédiatement</i> le mot dont il dépend.</p>
-								<p><b>1.</b> Comme complément direct:</p>
-								<p><span class="coptic">ⲧⲉⲧⲉⲛⲥⲱⲟⲩⲛ ⲛ̀ⲉⲣⲇⲟⲕⲓⲙⲁⲍⲓⲛ</span> «vous savez éprouver»<a href="#cite-footnote-chapter_11-113" class="footnote" id="footnote-chapter_11-113"><sup>[1]</sup></a>.</p>
-								<p><b>2.</b> Comme complément circonstantiel de manière:</p>
-								<p><span class="coptic">ⲁϥⲉⲣϩⲏⲧⲥ ⲛ̀ⲥⲁϫⲓ</span> «il commença à parler»<a href="#cite-footnote-chapter_11-114" class="footnote" id="footnote-chapter_11-114"><sup>[2]</sup></a>.</p>
-								<p><span class="coptic">ⲛⲁϥⲛⲏⲟⲩ ⲛ̀-ⲁϣⲁⲓ ⲡⲉ</span> «il allait en croissant»<a href="#cite-footnote-chapter_11-115" class="footnote" id="footnote-chapter_11-115"><sup>[3]</sup></a>.</p>
-								<p><b>3.</b> Comme complément déterminatif:</p>
-								<p><span class="coptic">ⲡⲥⲏⲟⲩ ⲛ̀-ϯ</span> «le temps de donner»<a href="#cite-footnote-chapter_11-116" class="footnote" id="footnote-chapter_11-116"><sup>[4]</sup></a>.</p>
-								<p><span class="coptic">ⲙ̀ⲡⲟⲩϣϫⲉⲙϫⲟⲙ ⲛ̀-ⲟϩⲓ</span> «ils ne purent rester»<a href="#cite-footnote-chapter_11-117" class="footnote" id="footnote-chapter_11-117"><sup>[5]</sup></a>.</p>
-								<p><b>4.</b> Après les verbes qui signifient «être facile, être difficile, être digne de»:</p>
-								<p><span class="coptic">ⲙⲟⲧⲉⲛ ⲛ̀-ϫⲉⲙ-ϥ</span> «facile à trouver»<a href="#cite-footnote-chapter_11-118" class="footnote" id="footnote-chapter_11-118"><sup>[6]</sup></a>.</p>
-								<p><span class="coptic">ϧⲟⲥⲓ ⲛ̀-ϫⲉⲙ-ⲟⲩ</span> «difficiles à trouver»<a href="#cite-footnote-chapter_11-119" class="footnote" id="footnote-chapter_11-119"><sup>[7]</sup></a>.</p>
-								<p><span class="coptic">ⲁⲣⲓⲧⲉⲛ ⲛ̀ⲉⲙⲡϣⲁ ⲛ̀ϫⲟⲥ</span> «rends-nous dignes de dire»<a href="#cite-footnote-chapter_11-120" class="footnote" id="footnote-chapter_11-120"><sup>[8]</sup></a>.</p>
-								<p>Dans tous ces cas, lorsque l'infinitif est <i>séparé</i> du mot dont il dépend, on emploie <span class="coptic">ⲉ</span>.</p>
-								<p><b>b.</b> Infinitif complément avec <span class="coptic">ⲉ</span>.</p>
-							</div>
-							<div class="fr">
-							</div>
+					<div id="262" data-section="262" class="needs-english">
+						<div class="section">
+							<p class="fr"><b>a)</b> Infinitif complément avec <span class="coptic">ⲛ̀-</span></p>
+							<p class="en"></p>
+							<p class="fr"><span class="coptic">ⲛ̀-</span> (A.E. <span class="egypt-translit">m</span>) ne s'emploie qu'avec l'infinitif simple lorsqu'il suit <i>immédiatement</i> le mot dont il dépend.</p>
+							<p class="en"></p>
+							<p><b>1.</b> Comme complément direct:</p>
+							<blockquote class="example">
+								<p><span class="coptic">ⲧⲉⲧⲉⲛⲥⲱⲟⲩⲛ ⲛ̀ⲉⲣⲇⲟⲕⲓⲙⲁⲍⲓⲛ</span> <span class="fr">(Luc 12, 56)</span><span class="en">(Luke 12:56)</span></p>
+								<p class="fr">«vous savez éprouver»</p>
+								<p class="en"></p>
+							</blockquote>
+							<p><b>2.</b> Comme complément circonstantiel de manière:</p>
+							<p class="en"></p>
+							<blockquote class="example">
+								<p><span class="coptic">ⲁϥⲉⲣϩⲏⲧⲥ ⲛ̀ⲥⲁϫⲓ</span> <span class="fr">(Luc 20, 9)</span><span class="en">(Luke 20:9)</span></p>
+								<p class="fr">«il commença à parler»</p>
+								<p class="en"></p>
+							</blockquote>
+							<blockquote class="example">
+								<p><span class="coptic">ⲛⲁϥⲛⲏⲟⲩ ⲛ̀-ⲁϣⲁⲓ ⲡⲉ</span> <span class="fr">(Act. 12, 24)</span><span class="en">(Acts 12:24)</span></p>
+								<p class="fr">«il allait en croissant»</p>
+								<p class="en"></p>
+							</blockquote>
+							<p><b>3.</b> Comme complément déterminatif:</p>
+							<blockquote class="example">
+								<p><span class="coptic">ⲡⲥⲏⲟⲩ ⲛ̀-ϯ</span> <span class="fr">(Th. 154)</span><span class="en">()</span></p>
+								<p class="fr">«le temps de donner»</p>
+								<p class="en"></p>
+							</blockquote>
+							<blockquote class="example">
+								<p><span class="coptic">ⲙ̀ⲡⲟⲩϣϫⲉⲙϫⲟⲙ ⲛ̀-ⲟϩⲓ</span> <span class="fr">(Ex. 12, 39)</span><span class="en">(Exodus 12:39)</span></p>
+								<p class="fr">«ils ne purent rester»</p>
+								<p class="en"></p>
+							</blockquote>
+							<p class="fr"><b>4.</b> Après les verbes qui signifient «être facile, être difficile, être digne de»:</p>
+							<p class="en"></p>
+							<blockquote class="example">
+								<p><span class="coptic">ⲙⲟⲧⲉⲛ ⲛ̀-ϫⲉⲙ-ϥ</span><span class="fr">(OSE. 17)</span><span class="en">()</span></p>
+								<p class="fr">«facile à trouver»</p>
+								<p class="en"></p>
+							</blockquote>
+							<blockquote class="example">
+								<p><span class="coptic">ϧⲟⲥⲓ ⲛ̀-ϫⲉⲙ-ⲟⲩ</span> <span class="fr">(OSE. 17)</span><span class="en">()</span></p>
+								<p class="fr">«difficiles à trouver»</p>
+								<p class="en"></p>
+							</blockquote>
+							<blockquote class="example">
+								<p><span class="coptic">ⲁⲣⲓⲧⲉⲛ ⲛ̀ⲉⲙⲡϣⲁ ⲛ̀ϫⲟⲥ</span> <span class="fr">(Th. 156)</span><span class="en">()</span></p>
+								<p class="fr">«rends-nous dignes de dire»</p>
+								<p class="en"></p>
+							</blockquote>
+							<p class="fr">Dans tous ces cas, lorsque l'infinitif est <i>séparé</i> du mot dont il dépend, on emploie <span class="coptic">ⲉ-</span>.</p>
+							<p class="en"></p>
 						</div>
 					</div>
-					<div data-section="263">
-						<div class="bilingual">
-							<div class="en">
-								<p>Avec <span class="coptic">ⲉ</span> on peut employer l'infinitif <i>simple</i> ou l'infinitif <i>causatif</i>.</p>
-								<p>L'infinitif causatif exprime le sujet; on l'emploie donc lorsque le sujet de l'infinitif doit être exprimé, c.-à-d. lorsqu'il est différent de celui du verbe principal ou même lorsqu'il n'est pas différent, mais qu'on veut le faire ressortir.</p>
-								<p>Il faut remarquer, dans ce cas, que l'infinitif causatif n'a plus son sens propre et se traduit comme l'infinitif simple.</p>
-							</div>
-							<div class="fr">
-							</div>
+					<div id="263" data-section="263" class="needs-english">
+					<div class="section">
+						<p><b>b)</b> Infinitif complément avec <span class="coptic">ⲉ-</span></p>
+						<p class="en"></p>
+						<p>Avec <span class="coptic">ⲉ-</span> (A.E. <span class="egypt-translit">r</span>) on peut employer l'infinitif <i>simple</i> ou l'infinitif <i>causatif</i>.</p>
+						<p class="en"></p>
+						<p>L'infinitif causatif exprime le sujet; on l'emploie donc lorsque le sujet de l'infinitif doit être exprimé, c.-à-d. lorsqu'il est différent de celui du verbe principal ou même lorsqu'il n'est pas différent, mais qu'on veut le faire ressortir.</p>
+						<p class="en"></p>
+						<p>Il faut remarquer, dans ce cas, que l'infinitif causatif n'a plus son sens propre et se traduit comme l'infinitif simple.</p>
+						<p class="en"></p>
 						</div>
 					</div>
 					<div data-section="264">
@@ -11368,160 +10578,82 @@
 							</div>
 						</div>
 					</div>
-					<div data-section="306">
-						<div class="bilingual">
-							<div class="en">
-								<h4><b>b.</b> Construct state</h4>
-								<table>
-									<tr>
-										<td rowspan="8">With the suffixes:</td>
-										<td rowspan="5">Sg.</td>
-										<td>1.</td>
-										<td><span class="coptic">ⲟⲩⲟⲛϯ</span></td>
-										<td><span class="coptic">ⲙ̀ⲙⲟⲛϯ</span></td>
-									</tr>
-									<tr>
-										<td>2 m.</td>
-										<td><span class="coptic">ⲟⲩⲟⲛⲧⲉⲕ</span></td>
-										<td><span class="coptic">ⲙ̀ⲙⲟⲛⲧⲉⲕ</span></td>
-									</tr>
-									<tr>
-										<td>f.</td>
-										<td><span class="coptic">ⲟⲩⲟⲛⲧⲉ</span></td>
-										<td><span class="coptic">ⲙ̀ⲙⲟⲛⲧⲉ</span></td>
-									</tr>
-									<tr>
-										<td>3 m.</td>
-										<td><span class="coptic">ⲟⲩⲟⲛⲧⲉϥ</span></td>
-										<td><span class="coptic">ⲙ̀ⲙⲟⲛⲧⲉϥ</span></td>
-									</tr>
-									<tr>
-										<td>f.</td>
-										<td><span class="coptic">ⲟⲩⲟⲛⲧⲉⲥ</span></td>
-										<td><span class="coptic">ⲙ̀ⲙⲟⲛⲧⲉⲥ</span></td>
-									</tr>
-									<tr>
-										<td rowspan="3">Pl.</td>
-										<td>1.</td>
-										<td>(<span class="coptic">ⲟⲩⲟⲛⲧⲉⲛ</span>)</td>
-										<td><span class="coptic">ⲙ̀ⲙⲟⲛⲧⲉⲛ</span></td>
-									</tr>
-									<tr>
-										<td>2.</td>
-										<td><span class="coptic">ⲟⲩⲟⲛⲧⲉⲧⲉⲛ</span></td>
-										<td><span class="coptic">ⲙ̀ⲙⲟⲛⲧⲉⲧⲉⲛ</span></td>
-									</tr>
-									<tr>
-										<td>3.</td>
-										<td><span class="coptic">ⲟⲩⲟⲛⲧⲟⲩ</span></td>
-										<td><span class="coptic">ⲙ̀ⲙⲟⲛⲧⲟⲩ</span></td>
-									</tr>
-									<tr>
-										<td>Before a noun:</td>
-										<td></td>
-										<td></td>
-										<td><span class="coptic">ⲟⲩⲟⲛⲧⲉ-</span></td>
-										<td><span class="coptic">ⲙ̀ⲙⲟⲛⲧⲉ-</span>.</td>
-									</tr>
-								</table>
-								<p><i>Syntax</i>: The real subject comes after without taking <span class="coptic">ⲛ̀</span>:</p>
-								<blockquote class="example">
-									<p><span class="coptic">ⲟⲩⲟⲛϯ ⲉⲣϣⲓϣⲓ ⲙ̀ⲙⲁⲩ</span></p>
-									<p>I have the power<a href="#cite-footnote-chapter_12-035" class="footnote" id="footnote-chapter_12-035"><sup>[4]</sup></a>.</p>
-								</blockquote>
-								<blockquote class="example">
-									<p><span class="coptic">ⲙ̀ⲙⲟⲛⲧⲟⲩ ϩⲗⲓ ⲙ̀ⲙⲁⲩ</span></p>
-									<p>they have nothing<a href="#cite-footnote-chapter_12-036" class="footnote" id="footnote-chapter_12-036"><sup>[5]</sup></a>.</p>
-								</blockquote>
-								<blockquote class="example">
-									<p><span class="coptic">ⲛⲉ ⲟⲩⲟⲛⲧⲉⲥ ⲟⲩⲃⲱⲕⲓ ⲙ̀ⲙⲁⲩ</span></p>
-									<p>she had a servant<a href="#cite-footnote-chapter_12-037" class="footnote" id="footnote-chapter_12-037"><sup>[6]</sup></a>.</p>
-								</blockquote>
-								<blockquote class="example">
-									<p><span class="coptic">ⲟⲩⲟⲛⲧⲉⲕ ⲟⲩϩⲗⲓ ⲙ̀ⲡⲁⲓⲙⲁ</span></p>
-									<p>do you have anything in this place?<a href="#cite-footnote-chapter_12-038" class="footnote" id="footnote-chapter_12-038"><sup>[7]</sup></a>.</p>
-								</blockquote>
-								<blockquote class="example">
-									<p><span class="coptic">ⲙ̀ⲙⲟⲛⲧⲉϥ ϧⲁⲏ</span></p>
-									<p>it has no end<a href="#cite-footnote-chapter_12-039" class="footnote" id="footnote-chapter_12-039"><sup>[8]</sup></a>.</p>
-								</blockquote>
-							</div>
-							<div class="fr">
-								<h4><b>b.</b> Etat construit</h4>
-								<table>
-									<tr>
-										<td rowspan="8">Avec les suffixes:</td>
-										<td rowspan="5">Sg.</td>
-										<td>1.</td>
-										<td><span class="coptic">ⲟⲩⲟⲛϯ</span></td>
-										<td><span class="coptic">ⲙ̀ⲙⲟⲛϯ</span></td>
-									</tr>
-									<tr>
-										<td>2 m.</td>
-										<td><span class="coptic">ⲟⲩⲟⲛⲧⲉⲕ</span></td>
-										<td><span class="coptic">ⲙ̀ⲙⲟⲛⲧⲉⲕ</span></td>
-									</tr>
-									<tr>
-										<td>f.</td>
-										<td><span class="coptic">ⲟⲩⲟⲛⲧⲉ</span></td>
-										<td><span class="coptic">ⲙ̀ⲙⲟⲛⲧⲉ</span></td>
-									</tr>
-									<tr>
-										<td>3 m.</td>
-										<td><span class="coptic">ⲟⲩⲟⲛⲧⲉϥ</span></td>
-										<td><span class="coptic">ⲙ̀ⲙⲟⲛⲧⲉϥ</span></td>
-									</tr>
-									<tr>
-										<td>f.</td>
-										<td><span class="coptic">ⲟⲩⲟⲛⲧⲉⲥ</span></td>
-										<td><span class="coptic">ⲙ̀ⲙⲟⲛⲧⲉⲥ</span></td>
-									</tr>
-									<tr>
-										<td rowspan="3">Pl.</td>
-										<td>1.</td>
-										<td>(<span class="coptic">ⲟⲩⲟⲛⲧⲉⲛ</span>)</td>
-										<td><span class="coptic">ⲙ̀ⲙⲟⲛⲧⲉⲛ</span></td>
-									</tr>
-									<tr>
-										<td>2.</td>
-										<td><span class="coptic">ⲟⲩⲟⲛⲧⲉⲧⲉⲛ</span></td>
-										<td><span class="coptic">ⲙ̀ⲙⲟⲛⲧⲉⲧⲉⲛ</span></td>
-									</tr>
-									<tr>
-										<td>3.</td>
-										<td><span class="coptic">ⲟⲩⲟⲛⲧⲟⲩ</span></td>
-										<td><span class="coptic">ⲙ̀ⲙⲟⲛⲧⲟⲩ</span></td>
-									</tr>
-									<tr>
-										<td>Devant un nom:</td>
-										<td></td>
-										<td></td>
-										<td><span class="coptic">ⲟⲩⲟⲛⲧⲉ-</span></td>
-										<td><span class="coptic">ⲙ̀ⲙⲟⲛⲧⲉ-</span>.</td>
-									</tr>
-								</table>
-								<p><i>Syntaxe</i>: Le sujet réel vient après sans prendre <span class="coptic">ⲛ̀-</span>:</p>
-								<blockquote class="example">
-									<p><span class="coptic">ⲟⲩⲟⲛϯ ⲉⲣϣⲓϣⲓ ⲙ̀ⲙⲁⲩ</span></p>
-									<p>«j'ai le pouvoir»<a href="#cite-footnote-chapter_12-035" class="footnote" id="footnote-chapter_12-035"><sup>[4]</sup></a>.</p>
-								</blockquote>
-								<blockquote class="example">
-									<p><span class="coptic">ⲙ̀ⲙⲟⲛⲧⲟⲩ ϩⲗⲓ ⲙ̀ⲙⲁⲩ</span></p>
-									<p>«ils n'ont rien»<a href="#cite-footnote-chapter_12-036" class="footnote" id="footnote-chapter_12-036"><sup>[5]</sup></a>.</p>
-								</blockquote>
-								<blockquote class="example">
-									<p><span class="coptic">ⲛⲉ ⲟⲩⲟⲛⲧⲉⲥ ⲟⲩⲃⲱⲕⲓ ⲙ̀ⲙⲁⲩ</span></p>
-									<p>«elle avait une servante»<a href="#cite-footnote-chapter_12-037" class="footnote" id="footnote-chapter_12-037"><sup>[6]</sup></a>.</p>
-								</blockquote>
-								<blockquote class="example">
-									<p><span class="coptic">ⲟⲩⲟⲛⲧⲉⲕ ⲟⲩϩⲗⲓ ⲙ̀ⲡⲁⲓⲙⲁ</span></p>
-									<p>«as-tu quelque chose en ce lieu?»<a href="#cite-footnote-chapter_12-038" class="footnote" id="footnote-chapter_12-038"><sup>[7]</sup></a>.</p>
-								</blockquote>
-								<blockquote class="example">
-									<p><span class="coptic">ⲙ̀ⲙⲟⲛⲧⲉϥ ϧⲁⲏ</span></p>
-									<p>«il n'a pas de fin»<a href="#cite-footnote-chapter_12-039" class="footnote" id="footnote-chapter_12-039"><sup>[8]</sup></a>.</p>
-								</blockquote>
-							</div>
+					<div id="306" data-section="306" class="wip">
+						<div class="section">
+							<h4><b>b.</b> Etat construit</h4>
+							<table>
+								<tr>
+									<td rowspan="8">Avec les suffixes:</td>
+									<td rowspan="5">Sg.</td>
+									<td>1.</td>
+									<td><span class="coptic">ⲟⲩⲟⲛϯ</span></td>
+									<td><span class="coptic">ⲙ̀ⲙⲟⲛϯ</span></td>
+								</tr>
+								<tr>
+									<td>2 m.</td>
+									<td><span class="coptic">ⲟⲩⲟⲛⲧⲉⲕ</span></td>
+									<td><span class="coptic">ⲙ̀ⲙⲟⲛⲧⲉⲕ</span></td>
+								</tr>
+								<tr>
+									<td>f.</td>
+									<td><span class="coptic">ⲟⲩⲟⲛⲧⲉ</span></td>
+									<td><span class="coptic">ⲙ̀ⲙⲟⲛⲧⲉ</span></td>
+								</tr>
+								<tr>
+									<td>3 m.</td>
+									<td><span class="coptic">ⲟⲩⲟⲛⲧⲉϥ</span></td>
+									<td><span class="coptic">ⲙ̀ⲙⲟⲛⲧⲉϥ</span></td>
+								</tr>
+								<tr>
+									<td>f.</td>
+									<td><span class="coptic">ⲟⲩⲟⲛⲧⲉⲥ</span></td>
+									<td><span class="coptic">ⲙ̀ⲙⲟⲛⲧⲉⲥ</span></td>
+								</tr>
+								<tr>
+									<td rowspan="3">Pl.</td>
+									<td>1.</td>
+									<td>(<span class="coptic">ⲟⲩⲟⲛⲧⲉⲛ</span>)</td>
+									<td><span class="coptic">ⲙ̀ⲙⲟⲛⲧⲉⲛ</span></td>
+								</tr>
+								<tr>
+									<td>2.</td>
+									<td><span class="coptic">ⲟⲩⲟⲛⲧⲉⲧⲉⲛ</span></td>
+									<td><span class="coptic">ⲙ̀ⲙⲟⲛⲧⲉⲧⲉⲛ</span></td>
+								</tr>
+								<tr>
+									<td>3.</td>
+									<td><span class="coptic">ⲟⲩⲟⲛⲧⲟⲩ</span></td>
+									<td><span class="coptic">ⲙ̀ⲙⲟⲛⲧⲟⲩ</span></td>
+								</tr>
+								<tr>
+									<td>Devant un nom:</td>
+									<td></td>
+									<td></td>
+									<td><span class="coptic">ⲟⲩⲟⲛⲧⲉ-</span></td>
+									<td><span class="coptic">ⲙ̀ⲙⲟⲛⲧⲉ-</span>.</td>
+								</tr>
+							</table>
+							<p><i>Syntaxe</i>: Le sujet réel vient après sans prendre <span class="coptic">ⲛ̀-</span>:</p>
+							<blockquote class="example">
+								<p><span class="coptic">ⲟⲩⲟⲛϯ ⲉⲣϣⲓϣⲓ ⲙ̀ⲙⲁⲩ</span></p>
+								<p>«j'ai le pouvoir»<a href="#cite-footnote-chapter_12-035" class="footnote" id="footnote-chapter_12-035"><sup>[4]</sup></a>.</p>
+							</blockquote>
+							<blockquote class="example">
+								<p><span class="coptic">ⲙ̀ⲙⲟⲛⲧⲟⲩ ϩⲗⲓ ⲙ̀ⲙⲁⲩ</span></p>
+								<p>«ils n'ont rien»<a href="#cite-footnote-chapter_12-036" class="footnote" id="footnote-chapter_12-036"><sup>[5]</sup></a>.</p>
+							</blockquote>
+							<blockquote class="example">
+								<p><span class="coptic">ⲛⲉ ⲟⲩⲟⲛⲧⲉⲥ ⲟⲩⲃⲱⲕⲓ ⲙ̀ⲙⲁⲩ</span></p>
+								<p>«elle avait une servante»<a href="#cite-footnote-chapter_12-037" class="footnote" id="footnote-chapter_12-037"><sup>[6]</sup></a>.</p>
+							</blockquote>
+							<blockquote class="example">
+								<p><span class="coptic">ⲟⲩⲟⲛⲧⲉⲕ ⲟⲩϩⲗⲓ ⲙ̀ⲡⲁⲓⲙⲁ</span></p>
+								<p>«as-tu quelque chose en ce lieu?»<a href="#cite-footnote-chapter_12-038" class="footnote" id="footnote-chapter_12-038"><sup>[7]</sup></a>.</p>
+							</blockquote>
+							<blockquote class="example">
+								<p><span class="coptic">ⲙ̀ⲙⲟⲛⲧⲉϥ ϧⲁⲏ</span></p>
+								<p>«il n'a pas de fin»<a href="#cite-footnote-chapter_12-039" class="footnote" id="footnote-chapter_12-039"><sup>[8]</sup></a>.</p>
+							</blockquote>
 						</div>
 					</div>
 					<div data-section="307">
@@ -15050,82 +14182,53 @@
 							<h3>Proposition Interrogative</h3>
 						</div>
 					</div>
-					<div class="bilingual">
-						<div class="en">
-							<p>Interrogation can be indicated in Coptic only by tone of voice, by an interrogative pronoun (100–107), or by an adverb.</p>
-							<p>The verb is generally in a secondary tense (2nd and 3rd present and future, 2nd perfect ).</p>
-						</div>
-						<div class="fr">
-							<p>L'interrogation peut être indiquée en copte uniquement par le ton de la voix, par un pronom interrogatif (100–107) ou par un adverbe.</p>
-							<p>Le verbe est généralement à un temps secondaire (2ème et 3ème prés. et fut., 2ème parfait).</p>
-						</div>
-					</div>
-					<div data-section="371">
-						<div class="bilingual">
-							<div class="en">
-								<h4>1. By the tone of voice</h4>
-								<p>The question is not indicated by any particle; it is only recognizable from the context:</p>
-								<blockquote class="example">
-									<p><span class="coptic">ⲛ̀ⲑⲟⲕ ⲡⲉ ⲡⲟⲩⲣⲟ ⲛ̀ⲧⲉ ⲛⲓⲓⲟⲩⲇⲁⲓ</span></p>
-									<p>are you the king of the Jews?<a href="#cite-footnote-chapter_19-001" class="footnote" id="footnote-chapter_19-001"><sup>[1]</sup></a>.</p>
-								</blockquote>
-								<blockquote class="example">
-									<p><span class="coptic">ⲛⲉ ⲡⲉⲧⲥϣⲉ ⲁⲛ ⲉⲃⲟⲗⲥ</span></p>
-									<p>shouldn’t she have been untied?<a href="#cite-footnote-chapter_19-002" class="footnote" id="footnote-chapter_19-002"><sup>[2]</sup></a>.</p>
-								</blockquote>
-								<blockquote class="example">
-									<p><span class="coptic">ⲉⲕⲛⲁϩⲉⲙⲥⲓ ⲛ̀ⲁⲧϣⲗⲏⲗ</span></p>
-									<p>will you stay without praying?<a href="#cite-footnote-chapter_19-003" class="footnote" id="footnote-chapter_19-003"><sup>[3]</sup></a>.</p>
-								</blockquote>
-								<p>For the interrogation in the 2nd present , see 237; in the 2nd future , see 240, 2.</p>
-							</div>
-							<div class="fr">
-								<h4>1. Par le ton de la voix</h4>
-								<p>L'interrogation n'est indiquée par aucune particule; elle se reconnaît seulement d'après le contexte:</p>
-								<blockquote class="example">
-									<p><span class="coptic">ⲛ̀ⲑⲟⲕ ⲡⲉ ⲡⲟⲩⲣⲟ ⲛ̀ⲧⲉ ⲛⲓⲓⲟⲩⲇⲁⲓ</span></p>
-									<p>«tu es le roi des Juifs?»<a href="#cite-footnote-chapter_19-001" class="footnote" id="footnote-chapter_19-001"><sup>[1]</sup></a>.</p>
-								</blockquote>
-								<blockquote class="example">
-									<p><span class="coptic">ⲛⲉ ⲡⲉⲧⲥϣⲉ ⲁⲛ ⲉⲃⲟⲗⲥ</span></p>
-									<p>«ne fallait-il pas la délier?»<a href="#cite-footnote-chapter_19-002" class="footnote" id="footnote-chapter_19-002"><sup>[2]</sup></a>.</p>
-								</blockquote>
-								<blockquote class="example">
-									<p><span class="coptic">ⲉⲕⲛⲁϩⲉⲙⲥⲓ ⲛ̀ⲁⲧϣⲗⲏⲗ</span></p>
-									<p>«tu resteras sans prier?»<a href="#cite-footnote-chapter_19-003" class="footnote" id="footnote-chapter_19-003"><sup>[3]</sup></a>.</p>
-								</blockquote>
-								<p>Pour l'interrogation au 2ème présent, voir 237; au 2ème futur, voir 240, 2.</p>
-							</div>
+					<div id="371" data-section="371" class="needs-english">
+						<div class="section">
+							<p class="fr">L'interrogation peut être indiquée en copte uniquement par le ton de la voix, par un pronom interrogatif (100–107) ou par un adverbe.</p>
+							<p class="en"></p>
+							<p class="fr">Le verbe est généralement à un temps secondaire (2ème et 3ème prés. et fut., 2ème parfait).</p>
+							<p class="en"></p>
+							<p class="fr">1. Par le ton de la voix</p>
+							<p class="en"></p>
+							<p class="fr">L'interrogation n'est indiquée par aucune particule; elle se reconnaît seulement d'après le contexte:</p>
+							<p class="en"></p>
+							<blockquote class="example">
+								<p><span class="coptic">ⲛ̀ⲑⲟⲕ ⲡⲉ ⲡⲟⲩⲣⲟ ⲛ̀ⲧⲉ ⲛⲓⲓⲟⲩⲇⲁⲓ</span> <span class="fr">(Luc 23, 3)</span><span class="en">(Luke 23:3)</span></p>
+								<p class="fr">«tu es le roi des Juifs?»</p>
+								<p class="en"></p>
+							</blockquote>
+							<blockquote class="example">
+								<p><span class="coptic">ⲛⲉ ⲡⲉⲧⲥϣⲉ ⲁⲛ ⲉⲃⲟⲗⲥ</span> <span class="fr">(Luc 13, 16)</span><span class="en">(Luke 13:16)</span></p>
+								<p class="fr">«ne fallait-il pas la délier?»</p>
+								<p class="en"></p>
+							</blockquote>
+							<blockquote class="example">
+								<p><span class="coptic">ⲉⲕⲛⲁϩⲉⲙⲥⲓ ⲛ̀ⲁⲧϣⲗⲏⲗ</span> <span class="fr">(MS. 423)</span><span class="en">()</span></p>
+								<p class="fr">«tu resteras sans prier?»</p>
+								<p class="en"></p>
+							</blockquote>
+							<p class="fr">Pour l'interrogation au 2ème présent, voir 237; au 2ème futur, voir 240, 2.</p>
+							<p class="en"></p>
 						</div>
 					</div>
-					<div data-section="372">
-						<div class="bilingual">
-							<div class="en">
-								<h4>2. Questioning using adverbs</h4>
-								<p><b>1.</b> <span class="coptic">ⲑⲱⲛ</span> (Ṣ. <span class="coptic">ⲧⲱⲛ</span>) «where?» without movement; <span class="coptic">ⲉⲑⲱⲛ</span> «where?» with movement; <span class="coptic">ⲉⲃⲟⲗ ⲑⲱⲛ</span> «from where?».</p>
-								<p><span class="coptic">ⲑⲱⲛ</span> is used in the 2nd present tense; the subject comes second without <span class="coptic">ⲛ̀ϫⲉ</span>:</p>
-								<blockquote class="example">
-									<p><span class="coptic">ⲁⲩⲑⲱⲛ ⲛⲏ ⲉⲧⲁⲩϯϩⲁⲡ ⲉⲣⲟ</span></p>
-									<p>«where are those who accused you?».</p>
-								</blockquote>
-								<blockquote class="example">
-									<p><span class="coptic">ⲛ̀ⲑⲟⲕ ⲟⲩⲉⲃⲟⲗ ⲑⲱⲛ</span></p>
-									<p>«where are you from?»<a href="#cite-footnote-chapter_19-004" class="footnote" id="footnote-chapter_19-004"><sup>[1]</sup></a>.</p>
-								</blockquote>
-							</div>
-							<div class="fr">
-								<h4>2. Interrogation au moyen d'adverbes</h4>
-								<p><b>1.</b> <span class="coptic">ⲑⲱⲛ</span> (S. <span class="coptic">ⲧⲱⲛ</span>; A.E. <span class="coptic">ṯnj</span>) «où?» sans mouvement; <span class="coptic">ⲉⲑⲱⲛ</span> «où?» avec mouvement; <span class="coptic">ⲉⲃⲟⲗ ⲑⲱⲛ</span> «d'où?».</p>
-								<p><span class="coptic">ⲑⲱⲛ</span> s'emploie au 2ème présent; le sujet vient au second rang sans <span class="coptic">ⲛ̀ϫⲉ-</span>:</p>
-								<blockquote class="example">
-									<p><span class="coptic">ⲁⲩⲑⲱⲛ ⲛⲏ ⲉⲧⲁⲩϯϩⲁⲡ ⲉⲣⲟ</span></p>
-									<p>«où sont ceux qui t'accusaient?».</p>
-								</blockquote>
-								<blockquote class="example">
-									<p><span class="coptic">ⲛ̀ⲑⲟⲕ ⲟⲩⲉⲃⲟⲗ ⲑⲱⲛ</span></p>
-									<p>«d'où es-tu?»<a href="#cite-footnote-chapter_19-004" class="footnote" id="footnote-chapter_19-004"><sup>[1]</sup></a>.</p>
-								</blockquote>
-							</div>
+					<div id="372" data-section="372" class="needs-english">
+						<div class="section">
+							<p class="fr">2. Interrogation au moyen d'adverbes</p>
+							<p class="en"></p>
+							<p class="fr"><b>1.</b> <span class="coptic">ⲑⲱⲛ</span> (S. <span class="coptic">ⲧⲱⲛ</span>; A.E. <span class="egypt-translit">ṯnj</span>) «où?» sans mouvement; <span class="coptic">ⲉⲑⲱⲛ</span> «où?» avec mouvement; <span class="coptic">ⲉⲃⲟⲗ ⲑⲱⲛ</span> «d'où?».</p>
+							<p class="en"></p>
+							<p class="fr"><span class="coptic">ⲑⲱⲛ</span> s'emploie au 2ème présent; le sujet vient au second rang sans <span class="coptic">ⲛ̀ϫⲉ-</span>:</p>
+							<p class="en"></p>
+							<blockquote class="example">
+								<p><span class="coptic">ⲁⲩⲑⲱⲛ ⲛⲏ ⲉⲧⲁⲩϯϩⲁⲡ ⲉⲣⲟ</span></p>
+								<p class="fr">«où sont ceux qui t'accusaient?»</p>
+								<p class="en"></p>
+							</blockquote>
+							<blockquote class="example">
+								<p><span class="coptic">ⲛ̀ⲑⲟⲕ ⲟⲩⲉⲃⲟⲗ ⲑⲱⲛ</span> <span class="fr">(Jean 19, 9)</span><span class="en">(John 19:9)</span></p>
+								<p class="fr">«d'où es-tu?»</p>
+								<p class="en"></p>
+							</blockquote>
 						</div>
 					</div>
 					<div data-section="373">
@@ -15308,30 +14411,20 @@
 							</div>
 						</div>
 					</div>
-					<div data-section="377">
-						<div class="bilingual">
-							<div class="en">
-								<p>We use indirect questioning after the verb <span class="coptic">ⲥⲱⲟⲩⲛ</span> «to know», even when it already has a direct object:</p>
-								<blockquote class="example">
-									<p><span class="coptic">ⲛⲁⲩⲥⲱⲟⲩⲛ ⲙ̀ⲙⲟϥ ⲁⲛ ⲡⲉ ϫⲉ ⲟⲩ ⲡⲉ</span></p>
-									<p>they did not know what it was<a href="#cite-footnote-chapter_19-021" class="footnote" id="footnote-chapter_19-021"><sup>[4]</sup></a>.</p>
-								</blockquote>
-								<blockquote class="example">
-									<p><span class="coptic">ⲙ̀ⲡⲉⲕⲥⲟⲩⲱⲛⲧ ϫⲉ ⲁⲛⲟⲕ ⲛⲓⲙ</span></p>
-									<p>you don’t know who I am?<a href="#cite-footnote-chapter_19-022" class="footnote" id="footnote-chapter_19-022"><sup>[5]</sup></a>.</p>
-								</blockquote>
-							</div>
-							<div class="fr">
-								<p>On emploie l'interrogation indirecte après le verbe <span class="coptic">ⲥⲱⲟⲩⲛ</span> «savoir», lors même que celui-ci a déjà un complément direct:</p>
-								<blockquote class="example">
-									<p><span class="coptic">ⲛⲁⲩⲥⲱⲟⲩⲛ ⲙ̀ⲙⲟϥ ⲁⲛ ⲡⲉ ϫⲉ ⲟⲩ ⲡⲉ</span></p>
-									<p>«ils ne savaient pas ce que c'était»<a href="#cite-footnote-chapter_19-021" class="footnote" id="footnote-chapter_19-021"><sup>[4]</sup></a>.</p>
-								</blockquote>
-								<blockquote class="example">
-									<p><span class="coptic">ⲙ̀ⲡⲉⲕⲥⲟⲩⲱⲛⲧ ϫⲉ ⲁⲛⲟⲕ ⲛⲓⲙ</span></p>
-									<p>«tu ne sais pas qui je suis?»<a href="#cite-footnote-chapter_19-022" class="footnote" id="footnote-chapter_19-022"><sup>[5]</sup></a>.</p>
-								</blockquote>
-							</div>
+					<div id="377" data-section="377" class="needs-english">
+						<div class="section">
+							<p class="fr">On emploie l'interrogation indirecte après le verbe <span class="coptic">ⲥⲱⲟⲩⲛ</span> «savoir», lors même que celui-ci a déjà un complément direct:</p>
+							<p class="en"></p>
+							<blockquote class="example">
+								<p><span class="coptic">ⲛⲁⲩⲥⲱⲟⲩⲛ ⲙ̀ⲙⲟϥ ⲁⲛ ⲡⲉ ϫⲉ ⲟⲩ ⲡⲉ</span> <span class="fr">(Ex. 16, 15)</span><span class="en">(Exodus 16:15)</span></p>
+								<p class="fr">«ils ne savaient pas ce que c'était»</p>
+								<p class="en"></p>
+							</blockquote>
+							<blockquote class="example">
+								<p><span class="coptic">ⲙ̀ⲡⲉⲕⲥⲟⲩⲱⲛⲧ ϫⲉ ⲁⲛⲟⲕ ⲛⲓⲙ</span> <span class="fr">(Kef. 416)</span><span class="en">()</span></p>
+								<p class="fr">«tu ne sais pas qui je suis?»</p>
+								<p class="en"></p>
+							</blockquote>
 						</div>
 					</div>
 				</div>
@@ -15346,68 +14439,36 @@
 							<h3>Proposition Relative</h3>
 						</div>
 					</div>
-					<div data-section="378">
-						<div class="bilingual">
-							<div class="en">
-								<p>A relative clause is one that begins with a relative pronoun, whether the pronoun is a subject or a complement. It is very common in Coptic. It can be expressed:</p>
-								<ol>
-									<li>By means of the tenses formed from <span class="coptic">ⲉ- ⲉⲣⲉ-</span>.</li>
-									<li>By means of the relative <span class="coptic">ⲉⲧ- ⲉⲧⲉ-</span>.</li>
-								</ol>
-								<p><span class="coptic">ⲉ- ⲉⲣⲉ-</span> are used with an indefinite antecedent , i.e. one that has no article or has the indefinite article.</p>
-								<p><span class="coptic">ⲉⲧ- ⲉⲧⲉ-</span> are used with an antecedent determined by the definite article or its derivatives.</p>
-								<p>The antecedent is a noun or a demonstrative pronoun.</p>
-								<p>The use of these words can be summarized in the following diagram:</p>
-								<table>
-									<tr>
-										<th></th>
-										<th>Definite antecedent</th>
-										<th>Indefinite antecedent</th>
-									</tr>
-									<tr>
-										<td>Before the infinitive and the qualitative:</td>
-										<td><span class="coptic">ⲉⲧ- ⲉⲧ⸗</span></td>
-										<td><span class="coptic">ⲉⲣⲉ- ⲉ⸗</span></td>
-									</tr>
-									<tr>
-										<td>Before a name, etc.:</td>
-										<td><span class="coptic">ⲉⲧⲉ-</span></td>
-										<td><span class="coptic">ⲉⲣⲉ- ⲉ-</span></td>
-									</tr>
-								</table>
-								<p><span class="coptic">ⲉ-</span> is used with the copula <span class="coptic">ⲡⲉ</span> <span class="coptic">ⲧⲉ</span> <span class="coptic">ⲛⲉ</span>, sometimes with <span class="coptic">ⲟⲩⲟⲛ ⲙ̀ⲙⲟⲛ</span>, never with the verb.</p>
-								<p><span class="coptic">ⲉⲣⲉ-</span> is also used with <span class="coptic">ⲟⲩⲟⲛ ⲙ̀ⲙⲟⲛ</span> or with the verb, but never with <span class="coptic">ⲡⲉ</span> <span class="coptic">ⲧⲉ</span> <span class="coptic">ⲛⲉ</span>.</p>
-							</div>
-							<div class="fr">
-								<p>La proposition relative est celle qui commence par un pronom relatif, que ce pronom soit sujet ou complément. Elle est très fréquente en copte. Elle peut être exprimée:</p>
-								<ol>
-									<li>Au moyen des temps formés de <span class="coptic">ⲉ- ⲉⲣⲉ-</span>.</li>
-									<li>Au moyen du relatif <span class="coptic">ⲉⲧ- ⲉⲧⲉ-</span>.</li>
-								</ol>
-								<p><span class="coptic">ⲉ- ⲉⲣⲉ-</span> s'emploient avec un antécédent <i>indéterminé</i>, c.-à-d. qui n'a point d'article ou qui a l'article indéfini.</p>
-								<p><span class="coptic">ⲉⲧ- ⲉⲧⲉ-</span> s'emploient avec un antécédent <i>déterminé</i> par l'article défini ou ses dérivés.</p>
-								<p>L'antécédent est un substantif ou un pronom démonstratif.</p>
-								<p>L'emploi de ces mots peut être résumé dans le schéma suivant:</p>
-								<table>
-									<tr>
-										<th></th>
-										<th>Ant. déterminé</th>
-										<th>Ant. indéterminé</th>
-									</tr>
-									<tr>
-										<td>Devant l'infinitif et le qualitatif:</td>
-										<td><span class="coptic">ⲉⲧ- ⲉⲧ⸗</span></td>
-										<td><span class="coptic">ⲉⲣⲉ- ⲉ⸗</span></td>
-									</tr>
-									<tr>
-										<td>Devant un nom, etc.:</td>
-										<td><span class="coptic">ⲉⲧⲉ-</span></td>
-										<td><span class="coptic">ⲉⲣⲉ- ⲉ-</span></td>
-									</tr>
-								</table>
-								<p><span class="coptic">ⲉ-</span> s'emploie avec la copule <span class="coptic">-ⲡⲉ</span> <span class="coptic">-ⲧⲉ</span> <span class="coptic">-ⲛⲉ</span>, quelquefois avec <span class="coptic">ⲟⲩⲟⲛ ⲙ̀ⲙⲟⲛ</span>, jamais avec le verbe.</p>
-								<p><span class="coptic">ⲉⲣⲉ-</span> s'emploie aussi avec <span class="coptic">ⲟⲩⲟⲛ ⲙ̀ⲙⲟⲛ</span> ou avec le verbe, mais jamais avec <span class="coptic">-ⲡⲉ</span> <span class="coptic">-ⲧⲉ</span> <span class="coptic">-ⲛⲉ</span>.</p>
-							</div>
+					<div id="378" data-section="378" class="wip">
+						<div class="section">
+							<p>La proposition relative est celle qui commence par un pronom relatif, que ce pronom soit sujet ou complément. Elle est très fréquente en copte. Elle peut être exprimée:</p>
+							<ol>
+								<li>Au moyen des temps formés de <span class="coptic">ⲉ- ⲉⲣⲉ-</span>.</li>
+								<li>Au moyen du relatif <span class="coptic">ⲉⲧ- ⲉⲧⲉ-</span>.</li>
+							</ol>
+							<p><span class="coptic">ⲉ- ⲉⲣⲉ-</span> s'emploient avec un antécédent <i>indéterminé</i>, c.-à-d. qui n'a point d'article ou qui a l'article indéfini.</p>
+							<p><span class="coptic">ⲉⲧ- ⲉⲧⲉ-</span> s'emploient avec un antécédent <i>déterminé</i> par l'article défini ou ses dérivés.</p>
+							<p>L'antécédent est un substantif ou un pronom démonstratif.</p>
+							<p>L'emploi de ces mots peut être résumé dans le schéma suivant:</p>
+							<table>
+								<tr>
+									<th></th>
+									<th>Ant. déterminé</th>
+									<th>Ant. indéterminé</th>
+								</tr>
+								<tr>
+									<td>Devant l'infinitif et le qualitatif:</td>
+									<td><span class="coptic">ⲉⲧ- ⲉⲧ⸗</span></td>
+									<td><span class="coptic">ⲉⲣⲉ- ⲉ⸗</span></td>
+								</tr>
+								<tr>
+									<td>Devant un nom, etc.:</td>
+									<td><span class="coptic">ⲉⲧⲉ-</span></td>
+									<td><span class="coptic">ⲉⲣⲉ- ⲉ-</span></td>
+								</tr>
+							</table>
+							<p><span class="coptic">ⲉ-</span> s'emploie avec la copule <span class="coptic">-ⲡⲉ</span> <span class="coptic">-ⲧⲉ</span> <span class="coptic">-ⲛⲉ</span>, quelquefois avec <span class="coptic">ⲟⲩⲟⲛ ⲙ̀ⲙⲟⲛ</span>, jamais avec le verbe.</p>
+							<p><span class="coptic">ⲉⲣⲉ-</span> s'emploie aussi avec <span class="coptic">ⲟⲩⲟⲛ ⲙ̀ⲙⲟⲛ</span> ou avec le verbe, mais jamais avec <span class="coptic">-ⲡⲉ</span> <span class="coptic">-ⲧⲉ</span> <span class="coptic">-ⲛⲉ</span>.</p>
 						</div>
 					</div>
 					<div data-section="379">
@@ -15874,38 +14935,27 @@
 							<h3>Proposition Conditionnelle</h3>
 						</div>
 					</div>
-					<div data-section="387">
-						<div class="bilingual">
-							<div class="en">
-								<p>The conditional clause generally precedes the main clause on which it depends.</p>
-								<p>The condition can be expressed without conjunction or by means of the conjunctions <span class="coptic">ϣⲁⲛ</span>, <span class="coptic">ⲉϣⲱⲡ</span>, <span class="coptic">ⲓⲥϫⲉ</span>.</p>
-							</div>
-							<div class="fr">
-								<p>La proposition conditionnelle précède généralement la proposition principale dont elle dépend.</p>
-								<p>La condition peut être exprimée sans conjonction ou au moyen des conjonctions <span class="coptic">ϣⲁⲛ</span>, <span class="coptic">ⲉϣⲱⲡ</span>, <span class="coptic">ⲓⲥϫⲉ</span>.</p>
-							</div>
+					<div id="387" data-section="387" class="needs-english">
+						<div class="section">
+							<p class="fr">La proposition conditionnelle précède généralement la proposition principale dont elle dépend.</p>
+							<p class="en"></p>
+							<p class="fr">La condition peut être exprimée sans conjonction ou au moyen des conjonctions <span class="coptic">ϣⲁⲛ</span>, <span class="coptic">ⲉϣⲱⲡ</span>, <span class="coptic">ⲓⲥϫⲉ</span>.</p>
+							<p class="en"></p>
 						</div>
 					</div>
-					<div data-section="388">
-						<div class="bilingual">
-							<div class="en">
-								<h4>1. Without conjunction</h4>
-								<p>The 3rd present and the 3rd future can sometimes express the condition by themselves:</p>
-								<blockquote class="example">
-									<p><span class="coptic">ⲛ̀ⲑⲟⲕ ⲇⲉ ⲉⲕⲛⲁⲧⲱⲃϩ ⲙⲁϣⲉ ⲛⲁⲕ ⲉϧⲟⲩⲛ ⲉⲡⲉⲕⲧⲁⲙⲓⲟⲛ</span></p>
-									<p>but you, if you want to pray, go into your room<a href="#cite-footnote-chapter_21-001" class="footnote" id="footnote-chapter_21-001"><sup>[1]</sup></a>.</p>
-								</blockquote>
-								<p>Most often, however, in these kinds of propositions, the condition is expressed by <span class="coptic">ⲉϣⲱⲡ</span> (391).</p>
-							</div>
-							<div class="fr">
-								<h4>1. Sans conjonction</h4>
-								<p>Le 3ème présent et le 3ème futur peuvent parfois exprimer par eux-mêmes la condition:</p>
-								<blockquote class="example">
-									<p><span class="coptic">ⲛ̀ⲑⲟⲕ ⲇⲉ ⲉⲕⲛⲁⲧⲱⲃϩ ⲙⲁϣⲉ ⲛⲁⲕ ⲉϧⲟⲩⲛ ⲉⲡⲉⲕⲧⲁⲙⲓⲟⲛ</span></p>
-									<p>«mais toi, si tu veux prier, entre dans ta chambre»<a href="#cite-footnote-chapter_21-001" class="footnote" id="footnote-chapter_21-001"><sup>[1]</sup></a>.</p>
-								</blockquote>
-								<p>Le plus souvent cependant, dans ces sortes de propositions, la condition est exprimée par <span class="coptic">ⲉϣⲱⲡ</span> (391).</p>
-							</div>
+					<div id="388" data-section="388" class="needs-english">
+						<div class="section">
+							<p class="fr">1. Sans conjonction</p>
+							<p class="en"></p>
+							<p class="fr">Le 3ème présent et le 3ème futur peuvent parfois exprimer par eux-mêmes la condition:</p>
+							<p class="en"></p>
+							<blockquote class="example">
+								<p><span class="coptic">ⲛ̀ⲑⲟⲕ ⲇⲉ ⲉⲕⲛⲁⲧⲱⲃϩ ⲙⲁϣⲉ ⲛⲁⲕ ⲉϧⲟⲩⲛ ⲉⲡⲉⲕⲧⲁⲙⲓⲟⲛ</span> <span class="fr">(Mt. 6, 6)</span><span class="en">(Matthew 6:6)</span></p>
+								<p class="fr">«mais toi, si tu veux prier, entre dans ta chambre»</p>
+								<p class="en"></p>
+							</blockquote>
+							<p class="fr">Le plus souvent cependant, dans ces sortes de propositions, la condition est exprimée par <span class="coptic">ⲉϣⲱⲡ</span> (391).</p>
+							<p class="en"></p>
 						</div>
 					</div>
 					<div data-section="389">
@@ -16064,32 +15114,22 @@
 							</div>
 						</div>
 					</div>
-					<div data-section="392">
-						<div class="bilingual">
-							<div class="en">
-								<h4>4. With <span class="coptic">ⲉϣⲱⲡ</span> and <span class="coptic">ϣⲁⲛ</span>.</h4>
-								<p>Most often the two conjunctions are used together:</p>
-								<blockquote class="example">
-									<p><span class="coptic">ⲉϣⲱⲡ ⲁⲕϣⲁⲛⲓⲣⲓ ⲙ̀ⲡⲁⲓⲥⲁϫⲓ</span></p>
-									<p>if you do this<a href="#cite-footnote-chapter_21-016" class="footnote" id="footnote-chapter_21-016"><sup>[4]</sup></a>.</p>
-								</blockquote>
-								<blockquote class="example">
-									<p><span class="coptic">ⲉϣⲱⲡ ⲁⲩϣⲁⲛϯϩⲟ ⲉⲣⲟⲕ</span></p>
-									<p>if we pray to you<a href="#cite-footnote-chapter_21-017" class="footnote" id="footnote-chapter_21-017"><sup>[5]</sup></a>.</p>
-								</blockquote>
-							</div>
-							<div class="fr">
-								<h4>4. Avec <span class="coptic">ⲉϣⲱⲡ</span> et <span class="coptic">ϣⲁⲛ</span>.</h4>
-								<p>Le plus souvent les deux conjonctions sont employées ensemble:</p>
-								<blockquote class="example">
-									<p><span class="coptic">ⲉϣⲱⲡ ⲁⲕϣⲁⲛⲓⲣⲓ ⲙ̀ⲡⲁⲓⲥⲁϫⲓ</span></p>
-									<p>«si tu fais cela»<a href="#cite-footnote-chapter_21-016" class="footnote" id="footnote-chapter_21-016"><sup>[4]</sup></a>.</p>
-								</blockquote>
-								<blockquote class="example">
-									<p><span class="coptic">ⲉϣⲱⲡ ⲁⲩϣⲁⲛϯϩⲟ ⲉⲣⲟⲕ</span></p>
-									<p>«si on te prie»<a href="#cite-footnote-chapter_21-017" class="footnote" id="footnote-chapter_21-017"><sup>[5]</sup></a>.</p>
-								</blockquote>
-							</div>
+					<div id="392" data-section="392" class="needs-english">
+						<div class="section">
+							<p class="fr">4. Avec <span class="coptic">ⲉϣⲱⲡ</span> et <span class="coptic">ϣⲁⲛ</span></p>
+							<p class="en"></p>
+							<p class="fr">Le plus souvent les deux conjonctions sont employées ensemble:</p>
+							<p class="en"></p>
+							<blockquote class="example">
+								<p><span class="coptic">ⲉϣⲱⲡ ⲁⲕϣⲁⲛⲓⲣⲓ ⲙ̀ⲡⲁⲓⲥⲁϫⲓ</span> <span class="fr">(Ex. 12, 23)</span><span class="en">(Exodus 12:23)</span></p>
+								<p class="fr">«si tu fais cela»</p>
+								<p class="en"></p>
+							</blockquote>
+							<blockquote class="example">
+								<p><span class="coptic">ⲉϣⲱⲡ ⲁⲩϣⲁⲛϯϩⲟ ⲉⲣⲟⲕ</span> <span class="fr">(Pr. 1, 11)</span><span class="en">(Proverbs 1:11)</span></p>
+								<p class="fr">«si on te prie»</p>
+								<p class="en"></p>
+							</blockquote>
 						</div>
 					</div>
 					<div data-section="393">
@@ -16150,173 +15190,118 @@
 							<h3>Proposition Temporelle</h3>
 						</div>
 					</div>
-					<div data-section="394">
-						<div class="bilingual">
-							<div class="en">
-								<p>A temporal clause is a dependent clause that expresses a circumstance or action occurring at the same time as the main clause. It corresponds to French clauses beginning with "lorque", "toute que", "comme".</p>
-								<p>It can precede or follow the main clause on which it depends. It is constructed without or with a conjunction.</p>
-							</div>
-							<div class="fr">
-								<p>La proposition temporelle est une proposition dépendante qui exprime une circonstance ou une action ayant lieu en <i>même temps</i> que celle de la proposition principale. Elle correspond aux propositions françaises commençant par «lorsque, tandis que, comme».</p>
-								<p>Elle peut précéder ou suivre la proposition principale dont elle dépend. Elle se construit sans ou avec conjonction.</p>
-							</div>
+					<div id="394" data-section="394" class="needs-english">
+						<div class="section">
+							<p class="fr">La proposition temporelle est une proposition dépendante qui exprime une circonstance ou une action ayant lieu en <i>même temps</i> que celle de la proposition principale. Elle correspond aux propositions françaises commençant par «lorsque, tandis que, comme».</p>
+							<p class="en"></p>
+							<p>Elle peut précéder ou suivre la proposition principale dont elle dépend. Elle se construit sans ou avec conjonction.</p>
+							<p class="en"></p>
 						</div>
 					</div>
-					<div data-section="395">
-						<div class="bilingual">
-							<div class="en">
-								<h4>1. Without conjunction</h4>
-								<p>The 3rd present and the 3rd future form temporal clauses by themselves:</p>
-								<blockquote class="example">
-									<p><span class="coptic">ⲉϥⲟⲓ ⲛ̀ⲟⲩⲕⲟⲩϫⲓ ⲛⲁϥⲁⲙⲟⲛⲓ ⲛ̀ⲛⲓⲉⲥⲱⲟⲩ ⲛ̀ⲧⲉ ⲡⲉϥⲓⲱⲧ</span></p>
-									<p>when he was little, he looked after his father’s sheep<a href="#cite-footnote-chapter_22-001" class="footnote" id="footnote-chapter_22-001"><sup>[2]</sup></a>.</p>
-								</blockquote>
-								<blockquote class="example">
-									<p><span class="coptic">ⲛⲁⲓ ⲉϥϫⲱ ⲙ̀ⲙⲱⲟⲩ ϩⲁⲛⲙⲏϣ ⲁⲩⲛⲁϩϯ ⲉⲣⲟϥ</span></p>
-									<p>while he was saying these things, many believed in him<a href="#cite-footnote-chapter_22-002" class="footnote" id="footnote-chapter_22-002"><sup>[1]</sup></a>.</p>
-								</blockquote>
-								<blockquote class="example">
-									<p><span class="coptic">ⲁⲥϣⲱⲡⲓ ⲉⲩⲭⲏ ϧⲉⲛ ⲧⲕⲟⲓ ⲁϥⲧⲱⲛϥ</span></p>
-									<p>it happened, while they were in the country, that he got up<a href="#cite-footnote-chapter_22-003" class="footnote" id="footnote-chapter_22-003"><sup>[2]</sup></a>.</p>
-								</blockquote>
-								<blockquote class="example">
-									<p><i>Why did you not come to celebrate our murder</i></p>
-									<p><span class="coptic">ⲉⲩⲛⲁϣⲁⲧⲉⲛ ⲙ̀ⲡⲉⲕⲛⲟⲩϯ</span></p>
-									<p>when we were about to be sacrificed to your god?<a href="#cite-footnote-chapter_22-004" class="footnote" id="footnote-chapter_22-004"><sup>[3]</sup></a>.</p>
-								</blockquote>
-								<blockquote class="example">
-									<p><span class="coptic">ⲉⲣⲉ ⲫⲣⲏ ⲇⲉ ⲛⲁϩⲱⲧⲡ ⲟⲩⲧⲱⲙⲧ ⲁϥⲓ̀ ⲉϫⲉⲛ ⲁⲃⲣⲁⲙ</span></p>
-									<p>as the sun was about to set, Abraham was astonished<a href="#cite-footnote-chapter_22-005" class="footnote" id="footnote-chapter_22-005"><sup>[4]</sup></a>.</p>
-								</blockquote>
-								<p>The 2nd perfect generally forms a temporal clause (245, 3).</p>
-								<p>The conditional clause formed from <span class="coptic">ϣⲁⲛ</span> often expresses a time condition:</p>
-								<blockquote class="example">
-									<p><span class="coptic">ⲧⲉⲛⲛⲁϣⲉ ⲛⲁⲛ ϣⲁ ⲙ̀ⲛⲁⲓ ⲟⲩⲟϩ ⲁⲛϣⲁⲛⲟⲩⲱϣⲧ ⲧⲉⲛⲛⲁⲧⲁⲥⲑⲟ ϩⲁⲣⲱⲧⲉⲛ</span></p>
-									<p>we will go there and, when we have worshipped, we will return to you<a href="#cite-footnote-chapter_22-006" class="footnote" id="footnote-chapter_22-006"><sup>[5]</sup></a>.</p>
-								</blockquote>
-							</div>
-							<div class="fr">
-								<h4>1. Sans conjonction</h4>
-								<p>Le 3ème présent et le 3ème futur forment par eux-mêmes des propositions temporelles:</p>
-								<blockquote class="example">
-									<p><span class="coptic">ⲉϥⲟⲓ ⲛ̀ⲟⲩⲕⲟⲩϫⲓ ⲛⲁϥⲁⲙⲟⲛⲓ ⲛ̀ⲛⲓⲉⲥⲱⲟⲩ ⲛ̀ⲧⲉ ⲡⲉϥⲓⲱⲧ</span></p>
-									<p>«lorsqu'il était petit, il gardait les moutons de son père»<a href="#cite-footnote-chapter_22-001" class="footnote" id="footnote-chapter_22-001"><sup>[2]</sup></a>.</p>
-								</blockquote>
-								<blockquote class="example">
-									<p><span class="coptic">ⲛⲁⲓ ⲉϥϫⲱ ⲙ̀ⲙⲱⲟⲩ ϩⲁⲛⲙⲏϣ ⲁⲩⲛⲁϩϯ ⲉⲣⲟϥ</span></p>
-									<p>«tandis qu'il disait ces choses, beaucoup crurent en lui»<a href="#cite-footnote-chapter_22-002" class="footnote" id="footnote-chapter_22-002"><sup>[1]</sup></a>.</p>
-								</blockquote>
-								<blockquote class="example">
-									<p><span class="coptic">ⲁⲥϣⲱⲡⲓ ⲉⲩⲭⲏ ϧⲉⲛ ⲧⲕⲟⲓ ⲁϥⲧⲱⲛϥ</span></p>
-									<p>«il arriva, comme ils étaient à la campagne, qu'il se leva»<a href="#cite-footnote-chapter_22-003" class="footnote" id="footnote-chapter_22-003"><sup>[2]</sup></a>.</p>
-								</blockquote>
-								<blockquote class="example">
-									<p><i>Pourquoi n'es-tu pas venu célébrer notre meurtre</i></p>
-									<p><span class="coptic">ⲉⲩⲛⲁϣⲁⲧⲉⲛ ⲙ̀ⲡⲉⲕⲛⲟⲩϯ</span></p>
-									<p>«lorsqu'on allait nous immoler à ton dieu?»<a href="#cite-footnote-chapter_22-004" class="footnote" id="footnote-chapter_22-004"><sup>[3]</sup></a>.</p>
-								</blockquote>
-								<blockquote class="example">
-									<p><span class="coptic">ⲉⲣⲉ ⲫⲣⲏ ⲇⲉ ⲛⲁϩⲱⲧⲡ ⲟⲩⲧⲱⲙⲧ ⲁϥⲓ̀ ⲉϫⲉⲛ ⲁⲃⲣⲁⲙ</span></p>
-									<p>«comme le soleil allait se coucher, Abraham fut saisi d'étonnement»<a href="#cite-footnote-chapter_22-005" class="footnote" id="footnote-chapter_22-005"><sup>[4]</sup></a>.</p>
-								</blockquote>
-								<p>Le 2ème parfait forme généralement une proposition temporelle (245, 3).</p>
-								<p>La proposition conditionnelle formée de <span class="coptic">ϣⲁⲛ-</span> (dém. <span class="coptic">ḫn</span>) exprime souvent une condition de temps:</p>
-								<blockquote class="example">
-									<p><span class="coptic">ⲧⲉⲛⲛⲁϣⲉ ⲛⲁⲛ ϣⲁ ⲙ̀ⲛⲁⲓ ⲟⲩⲟϩ ⲁⲛϣⲁⲛⲟⲩⲱϣⲧ ⲧⲉⲛⲛⲁⲧⲁⲥⲑⲟ ϩⲁⲣⲱⲧⲉⲛ</span></p>
-									<p>«nous irons là-bas, et, lorsque nous aurons adoré, nous reviendrons vers vous»<a href="#cite-footnote-chapter_22-006" class="footnote" id="footnote-chapter_22-006"><sup>[5]</sup></a>.</p>
-								</blockquote>
-							</div>
+					<div id="395" data-section="395" class="needs-english">
+						<div class="section">
+							<p class="fr">1. Sans conjonction</p>
+							<p class="en"></p>
+							<p class="fr">Le 3ème présent et le 3ème futur forment par eux-mêmes des propositions temporelles:</p>
+							<p class="en"></p>
+							<blockquote class="example">
+								<p><span class="coptic">ⲉϥⲟⲓ ⲛ̀ⲟⲩⲕⲟⲩϫⲓ ⲛⲁϥⲁⲙⲟⲛⲓ ⲛ̀ⲛⲓⲉⲥⲱⲟⲩ ⲛ̀ⲧⲉ ⲡⲉϥⲓⲱⲧ</span> <span class="fr">(Kef. 334)</span><span class="en">()</span></p>
+								<p class="fr">«lorsqu'il était petit, il gardait les moutons de son père»</p>
+								<p class="en"></p>
+							</blockquote>
+							<blockquote class="example">
+								<p><span class="coptic">ⲛⲁⲓ ⲉϥϫⲱ ⲙ̀ⲙⲱⲟⲩ ϩⲁⲛⲙⲏϣ ⲁⲩⲛⲁϩϯ ⲉⲣⲟϥ</span> <span class="fr">(Jean 8, 30)</span><span class="en">(John 8:30)</span></p>
+								<p class="fr">«tandis qu'il disait ces choses, beaucoup crurent en lui»</p>
+								<p class="en"></p>
+							</blockquote>
+							<blockquote class="example">
+								<p><span class="coptic">ⲁⲥϣⲱⲡⲓ ⲉⲩⲭⲏ ϧⲉⲛ ⲧⲕⲟⲓ ⲁϥⲧⲱⲛϥ</span> <span class="fr">(Gen. 4, 8)</span><span class="en">(Genesis 4:8)</span></p>
+								<p class="fr">«il arriva, comme ils étaient à la campagne, qu'il se leva»</p>
+								<p class="en"></p>
+							</blockquote>
+							<blockquote class="example">
+								<p class="fr"><i>Pourquoi n'es-tu pas venu célébrer notre meurtre</i></p>
+								<p class="en"></p>
+								<p><span class="coptic">ⲉⲩⲛⲁϣⲁⲧⲉⲛ ⲙ̀ⲡⲉⲕⲛⲟⲩϯ</span> <span class="fr">(MS. 424)</span><span class="en">()</span></p>
+								<p class="fr">«lorsqu'on allait nous immoler à ton dieu?»</p>
+								<p class="en"></p>
+							</blockquote>
+							<blockquote class="example">
+								<p><span class="coptic">ⲉⲣⲉ ⲫⲣⲏ ⲇⲉ ⲛⲁϩⲱⲧⲡ ⲟⲩⲧⲱⲙⲧ ⲁϥⲓ̀ ⲉϫⲉⲛ ⲁⲃⲣⲁⲙ</span> <span class="fr">(Ge. 15, 12)</span><span class="en">(Genesis 15:12)</span></p>
+								<p class="fr">«comme le soleil allait se coucher, Abraham fut saisi d'étonnement»</p>
+								<p class="en"></p>
+							</blockquote>
+							<p class="fr">Le 2ème parfait forme généralement une proposition temporelle (245, 3).</p>
+							<p class="en"></p>
+							<p class="fr">La proposition conditionnelle formée de <span class="coptic">ϣⲁⲛ-</span> (dém. <span class="egypt-translit">ḫn</span>) exprime souvent une condition de temps:</p>
+							<p class="en"></p>
+							<blockquote class="example">
+								<p><span class="coptic">ⲧⲉⲛⲛⲁϣⲉ ⲛⲁⲛ ϣⲁ ⲙ̀ⲛⲁⲓ ⲟⲩⲟϩ ⲁⲛϣⲁⲛⲟⲩⲱϣⲧ ⲧⲉⲛⲛⲁⲧⲁⲥⲑⲟ ϩⲁⲣⲱⲧⲉⲛ</span> <span class="fr">(Gen. 22, 5)</span><span class="en">(Genesis 22:5)</span></p>
+								<p class="fr">«nous irons là-bas, et, lorsque nous aurons adoré, nous reviendrons vers vous»</p>
+								<p class="en"></p>
+							</blockquote>
 						</div>
 					</div>
-					<div data-section="396">
-						<div class="bilingual">
-							<div class="en">
-								<h4>2. With <span class="coptic">ⲓⲥϫⲉⲛ-</span></h4>
-								<p>The preposition <span class="coptic">ⲓⲥϫⲉⲛ</span> since” is used with the 3rd present and the 2nd perfect to translate the conjunctive phrase “since”.</p>
-								<blockquote class="example">
-									<p><span class="coptic">ⲓⲥϫⲉⲛ ⲉⲓϧⲉⲛ ⲧⲟϯ</span></p>
-									<p>since I was in my mother’s womb<a href="#cite-footnote-chapter_22-007" class="footnote" id="footnote-chapter_22-007"><sup>[6]</sup></a>.</p>
-								</blockquote>
-								<blockquote class="example">
-									<p><span class="coptic">ⲓⲥϫⲉⲛ ⲉⲧⲁⲓⲛⲁⲩ</span></p>
-									<p>since I saw<a href="#cite-footnote-chapter_22-008" class="footnote" id="footnote-chapter_22-008"><sup>[7]</sup></a>.</p>
-								</blockquote>
-								<p><span class="coptic">ⲓⲥϫⲉⲛ</span> is also used with <span class="coptic">ⲙ̀ⲡⲁⲧⲉ</span> to mean "before" in the past:</p>
-								<blockquote class="example">
-									<p><span class="coptic">ⲓⲥϫⲉⲛ ⲙ̀ⲡⲁⲧⲟⲩⲉⲣⲃⲟⲕⲓ ⲙ̀ⲙⲟϥ</span></p>
-									<p>before it was conceived<a href="#cite-footnote-chapter_22-009" class="footnote" id="footnote-chapter_22-009"><sup>[1]</sup></a>.</p>
-								</blockquote>
-								<p>In the same sense we use <span class="coptic">ϧⲁⲧϩⲏ ⲙ̀ⲡⲁⲧⲉ</span>:</p>
-								<blockquote class="example">
-									<p><span class="coptic">ϧⲁⲧϩⲏ ⲙ̀ⲡⲁⲧⲉϥϭⲓⲥϩⲓⲙⲓ</span></p>
-									<p>before getting married<a href="#cite-footnote-chapter_22-010" class="footnote" id="footnote-chapter_22-010"><sup>[2]</sup></a>.</p>
-								</blockquote>
-							</div>
-							<div class="fr">
-								<h4>2. Avec <span class="coptic">ⲓⲥϫⲉⲛ-</span></h4>
-								<p>La préposition <span class="coptic">ⲓⲥϫⲉⲛ-</span> «depuis» s'emploie avec le 3ème présent et le 2ème parfait pour traduire la locution conjonctive «depuis que».</p>
-								<blockquote class="example">
-									<p><span class="coptic">ⲓⲥϫⲉⲛ ⲉⲓϧⲉⲛ ⲧⲟϯ</span></p>
-									<p>«depuis que j'étais dans le sein (de ma mère)»<a href="#cite-footnote-chapter_22-007" class="footnote" id="footnote-chapter_22-007"><sup>[6]</sup></a>.</p>
-								</blockquote>
-								<blockquote class="example">
-									<p><span class="coptic">ⲓⲥϫⲉⲛ ⲉⲧⲁⲓⲛⲁⲩ</span></p>
-									<p>«depuis que j'ai vu»<a href="#cite-footnote-chapter_22-008" class="footnote" id="footnote-chapter_22-008"><sup>[7]</sup></a>.</p>
-								</blockquote>
-								<p><span class="coptic">ⲓⲥϫⲉⲛ-</span> s'emploie aussi avec <span class="coptic">ⲙ̀ⲡⲁⲧⲉ</span> pour signifier «avant que» dans le passé:</p>
-								<blockquote class="example">
-									<p><span class="coptic">ⲓⲥϫⲉⲛ ⲙ̀ⲡⲁⲧⲟⲩⲉⲣⲃⲟⲕⲓ ⲙ̀ⲙⲟϥ</span></p>
-									<p>«avant qu'il ne fût conçu»<a href="#cite-footnote-chapter_22-009" class="footnote" id="footnote-chapter_22-009"><sup>[1]</sup></a>.</p>
-								</blockquote>
-								<p>Dans le même sens on emploie <span class="coptic">ϧⲁⲧϩⲏ ⲙ̀ⲡⲁⲧⲉ</span>:</p>
-								<blockquote class="example">
-									<p><span class="coptic">ϧⲁⲧϩⲏ ⲙ̀ⲡⲁⲧⲉϥϭⲓⲥϩⲓⲙⲓ</span></p>
-									<p>«avant de se marier»<a href="#cite-footnote-chapter_22-010" class="footnote" id="footnote-chapter_22-010"><sup>[2]</sup></a>.</p>
-								</blockquote>
-							</div>
+					<div id="396" data-section="396" class="needs-english">
+						<div class="section">
+							<p class="fr">2. Avec <span class="coptic">ⲓⲥϫⲉⲛ-</span></p>
+							<p class="en"></p>
+							<p class="fr">La préposition <span class="coptic">ⲓⲥϫⲉⲛ-</span> «depuis» s'emploie avec le 3ème présent et le 2ème parfait pour traduire la locution conjonctive «depuis que».</p>
+							<p class="en"></p>
+							<blockquote class="example">
+								<p><span class="coptic">ⲓⲥϫⲉⲛ ⲉⲓ ϧⲉⲛ ⲧⲟϯ</span> <span class="fr">(Ps. 21, 11)</span><span class="en">(Psalms 21:11)</span></p>
+								<p class="fr">«depuis que j'étais dans le sein (de ma mère)»</p>
+								<p class="en"></p>
+							</blockquote>
+							<blockquote class="example">
+								<p><span class="coptic">ⲓⲥϫⲉⲛ ⲉⲧⲁⲓⲛⲁⲩ</span> <span class="fr">(MS. 399)</span><span class="en">()</span></p>
+								<p class="fr">«depuis que j'ai vu»</p>
+								<p class="en"></p>
+							</blockquote>
+							<p class="fr"><span class="coptic">ⲓⲥϫⲉⲛ-</span> s'emploie aussi avec <span class="coptic">ⲙ̀ⲡⲁⲧⲉ-</span> pour signifier «avant que» dans le passé:</p>
+							<p class="en"></p>
+							<blockquote class="example">
+								<p><span class="coptic">ⲓⲥϫⲉⲛ ⲙ̀ⲡⲁⲧⲟⲩⲉⲣⲃⲟⲕⲓ ⲙ̀ⲙⲟϥ</span> <span class="fr">(Luc 2, 21)</span><span class="en">(Luke 2:21)</span></p>
+								<p class="fr">«avant qu'il ne fût conçu»</p>
+								<p class="en"></p>
+							</blockquote>
+							<p class="fr">Dans le même sens on emploie <span class="coptic">ϧⲁⲧϩⲏ ⲙ̀ⲡⲁⲧⲉ</span>:</p>
+							<p class="en"></p>
+							<blockquote class="example">
+								<p><span class="coptic">ϧⲁⲧϩⲏ ⲙ̀ⲡⲁⲧⲉϥϭⲓⲥϩⲓⲙⲓ</span> <span class="fr">(Z. 61)</span><span class="en">()</span></p>
+								<p class="fr">«avant de se marier»</p>
+								<p class="en"></p>
+							</blockquote>
 						</div>
 					</div>
-					<div data-section="397">
-						<div class="bilingual">
-							<div class="en">
-								<h4>3. With Greek conjunctions</h4>
-								<p>The main Greek conjunctions of time used in Coptic are:</p>
-								<p><b>1.</b> <span class="coptic">ϩⲱⲥ</span> (<span class="greek">ὡς</span>) 'while, while', <span class="coptic">ϩⲟⲥⲟⲛ</span>, <span class="coptic">ⲉⲫⲟⲥⲟⲛ</span> (<span class="greek">ὅσον</span>, <span class="greek">ἐφ'ὅσον</span>) 'as, while'.</p>
-								<p>These conjunctions are used especially with the 3rd present :</p>
-								<blockquote class="example">
-									<p><span class="coptic">ϩⲱⲥ ⲉⲕⲭⲏ ⲛⲉⲙⲁϥ</span></p>
-									<p>as long as you are with him<a href="#cite-footnote-chapter_22-011" class="footnote" id="footnote-chapter_22-011"><sup>[3]</sup></a>.</p>
-								</blockquote>
-								<blockquote class="example">
-									<p><span class="coptic">ϩⲟⲥⲟⲛ ⲉⲩⲭⲏ ϧⲉⲛ ⲡⲓⲉⲣⲫⲉⲓ</span></p>
-									<p>as they were in the temple<a href="#cite-footnote-chapter_22-012" class="footnote" id="footnote-chapter_22-012"><sup>[4]</sup></a>.</p>
-								</blockquote>
-								<blockquote class="example">
-									<p><span class="coptic">ϩⲟⲥⲟⲛ ⲉⲣⲉ ⲡⲓⲣⲉϥⲙⲱⲟⲩⲧ ⲟϩⲓ ⲉⲣⲁⲧϥ ϩⲓⲣⲉⲛ ⲫⲣⲟ ⲙ̀ⲡⲓⲙ̀ϩⲁⲩ ⲁⲥϣⲱⲡⲓ ⲛ̀ϫⲉ ⲟⲩⲥⲙⲏ</span></p>
-									<p>as the dead man stood at the door of the tomb, a voice was heard<a href="#cite-footnote-chapter_22-013" class="footnote" id="footnote-chapter_22-013"><sup>[5]</sup></a>.</p>
-								</blockquote>
-							</div>
-							<div class="fr">
-								<h4>3. Avec des conjonctions grecques</h4>
-								<p>Les principales conjonctions grecques de temps employées en copte sont:</p>
-								<p><b>1.</b> <span class="coptic">ϩⲱⲥ</span> (<span class="greek">ὡς</span>) «tandis que, tant que», <span class="coptic">ϩⲟⲥⲟⲛ</span>, <span class="coptic">ⲉⲫⲟⲥⲟⲛ</span> (<span class="greek">ὅσον</span>, <span class="greek">ἐφ'ὅσον</span>) «comme, tant que».</p>
-								<p>Ces conjonctions s'emploient surtout avec le 3ème présent:</p>
-								<blockquote class="example">
-									<p><span class="coptic">ϩⲱⲥ ⲉⲕⲭⲏ ⲛⲉⲙⲁϥ</span></p>
-									<p>«tant que tu es avec lui»<a href="#cite-footnote-chapter_22-011" class="footnote" id="footnote-chapter_22-011"><sup>[3]</sup></a>.</p>
-								</blockquote>
-								<blockquote class="example">
-									<p><span class="coptic">ϩⲟⲥⲟⲛ ⲉⲩⲭⲏ ϧⲉⲛ ⲡⲓⲉⲣⲫⲉⲓ</span></p>
-									<p>«comme ils étaient dans le temple»<a href="#cite-footnote-chapter_22-012" class="footnote" id="footnote-chapter_22-012"><sup>[4]</sup></a>.</p>
-								</blockquote>
-								<blockquote class="example">
-									<p><span class="coptic">ϩⲟⲥⲟⲛ ⲉⲣⲉ ⲡⲓⲣⲉϥⲙⲱⲟⲩⲧ ⲟϩⲓ ⲉⲣⲁⲧϥ ϩⲓⲣⲉⲛ ⲫⲣⲟ ⲙ̀ⲡⲓⲙ̀ϩⲁⲩ ⲁⲥϣⲱⲡⲓ ⲛ̀ϫⲉ ⲟⲩⲥⲙⲏ</span></p>
-									<p>«comme le mort se tenait debout à la porte du tombeau, une voix se fit entendre»<a href="#cite-footnote-chapter_22-013" class="footnote" id="footnote-chapter_22-013"><sup>[5]</sup></a>.</p>
-								</blockquote>
-							</div>
+					<div id="397" data-section="397" class="needs-english">
+						<div class="section">
+							<p class="fr">3. Avec des conjonctions grecques</p>
+							<p class="en"></p>
+							<p class="fr">Les principales conjonctions grecques de temps employées en copte sont:</p>
+							<p class="en"></p>
+							<p class="fr"><b>1.</b> <span class="coptic">ϩⲱⲥ</span> (<span class="greek">ὡς</span>) «tandis que, tant que», <span class="coptic">ϩⲟⲥⲟⲛ</span>, <span class="coptic">ⲉⲫⲟⲥⲟⲛ</span> (<span class="greek">ὅσον</span>, <span class="greek">ἐφ'ὅσον</span>) «comme, tant que».</p>
+							<p class="en"></p>
+							<p class="fr">Ces conjonctions s'emploient surtout avec le 3ème présent:</p>
+							<p class="en"></p>
+							<blockquote class="example">
+								<p><span class="coptic">ϩⲱⲥ ⲉⲕⲭⲏ ⲛⲉⲙⲁϥ</span> <span class="fr">(Mt. 5, 25)</span><span class="en">(Matthew 5:25)</span></p>
+								<p class="fr">«tant que tu es avec lui»</p>
+								<p class="en"></p>
+							</blockquote>
+							<blockquote class="example">
+								<p><span class="coptic">ϩⲟⲥⲟⲛ ⲉⲩⲭⲏ ϧⲉⲛ ⲡⲓⲉⲣⲫⲉⲓ</span> <span class="fr">(AM. 15)</span><span class="en">()</span></p>
+								<p class="fr">«comme ils étaient dans le temple»</p>
+								<p class="en"></p>
+							</blockquote>
+							<blockquote class="example">
+								<p><span class="coptic">ϩⲟⲥⲟⲛ ⲉⲣⲉ ⲡⲓⲣⲉϥⲙⲱⲟⲩⲧ ⲟϩⲓ ⲉⲣⲁⲧϥ ϩⲓⲣⲉⲛ ⲫⲣⲟ ⲙ̀ⲡⲓⲙ̀ϩⲁⲩ ⲁⲥϣⲱⲡⲓ ⲛ̀ϫⲉ ⲟⲩⲥⲙⲏ</span> <span class="fr">(HM. 227)</span><span class="en">()</span></p>
+								<p class="fr">«comme le mort se tenait debout à la porte du tombeau, une voix se fit entendre»</p>
+								<p class="en"></p>
+							</blockquote>
 						</div>
 					</div>
-					<div data-section="398" class="needs-english">
+					<div id="398" data-section="398" class="needs-english">
 						<div class="section">
 							<p class="fr"><b>2.</b> <span class="coptic">ϩⲟⲧⲉ</span>, <span class="coptic">ϩⲟⲧⲁⲛ</span> (<span class="greek">ὅτε</span>, <span class="greek">ὅταν</span>) «quand, lorsque».</p>
 							<p class="en"></p>
@@ -16341,7 +15326,7 @@
 							</blockquote>
 						</div>
 					</div>
-					<div data-section="399" class="needs-english">
+					<div id="399" data-section="399" class="needs-english">
 						<div class="section">
 							<p><span class="coptic">ϩⲟⲧⲁⲛ</span> est généralement suivi du conditionnel.</p>
 							<p class="en"></p>
@@ -16381,6 +15366,17 @@
 			//		x.classList.toggle("collapse");
 			//	});
 			//});
+			/*
+			const button = document.querySelector("#toggle-lang");
+			const enTags = document.querySelectorAll(".en");
+			button.addEventListener("click", function (e) {
+				enTags.forEach(x => {
+					
+						x.classList.toggle("en-hide");
+				
+					});
+				});
+				*/
 		</script>
 		<!--<script src="../../scripts/scripts.js"></script>-->
 		<!--<script src="./scripts/collapsible.js"></script>-->
