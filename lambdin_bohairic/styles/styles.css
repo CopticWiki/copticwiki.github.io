@@ -20,6 +20,10 @@
 	cursor: pointer;
 }
 
+.hide {
+	display: none;
+}
+
 .en-hide {
 	opacity: 0;
 	transition: opacity .5s;
