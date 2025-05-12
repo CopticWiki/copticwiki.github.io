@@ -29,6 +29,13 @@
 	transition: opacity .5s;
 }
 
+th {
+	background: #12306d;
+	color: white;
+	font-weight: normal;
+}
+
+
 p.en:empty:before {
 	content: "—english translation here—";
 	opacity: .5;
