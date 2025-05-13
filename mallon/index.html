@@ -13,13 +13,30 @@
 			body {
 				font-size: 1.2em;
 			}
+			/*
+			div[data-section].needs-english .section {
+				height: 1.5em;
+				background: #000000;
+				outline: 1px solid #ffffff22 !important;
+			}
+			div[data-section].needs-english .section > * {
+				display: none;
+				position: relative;
+			}
+			div[data-section].needs-english:before {
+				color: #ffffff77;
+				position: absolute;
+				display: block;
+				padding-left: .5em;
+			}
+			*/
 		</style>
 	</head>
 	<body>
+		<!--
 		<h1>CopticWiki</h1>
 		<h2>Grammaire Copte (Quatrième édition)</h2>
 		<h2>Alexis Mallon</h2>
-		<!--
 		<div id="toggle-lang"></div>
 		-->
 		<div id="container">
@@ -34,588 +51,838 @@
 				</div>
 				<div id="chapter_01" class="chapter">
 					<div class="chapter_title">
-						<div class="en">
-							<h2>Chapter 1</h2>
-							<h3>The Article</h3>
-						</div>
 						<div class="fr">
 							<h2>Chaptire I</h2>
 							<h3>De l'Article</h3>
 						</div>
-					</div>
-					<div id="041" data-section="41" class="wip">
-						<div class="section">
-							<p>A. Formes</p>
-							<p>Il y a en copte deux articles: l'article défini et l'article indéfini.</p>
-							<p>I. Article défini</p>
-							<p>L'article défini se divise en faible et en fort:</p>
-							<table>
-								<tr>
-									<th></th><th>faible</th><th>fort</th><th>N.E.</th>
-								</tr>
-								<tr>
-									<td>masc.</td><td><span class="coptic">ⲡ-</span> <span class="coptic">ⲫ-</span></td><td><span class="coptic">ⲡⲓ-</span></td><td><span class="egypt-translit">pꜣ-</span></td>
-								</tr>
-								<tr>
-									<td>fém.</td><td><span class="coptic">ⲧ-</span> <span class="coptic">ⲑ-</span></td><td><span class="coptic">ϯ-</span></td><td><span class="egypt-translit">tꜣ-</span></td>
-								</tr>
-								<tr>
-									<td>pl.</td><td colspan="2"><span class="coptic">ⲛⲓ-</span> <span class="coptic">ⲛⲉⲛ-</span></td><td><span class="egypt-translit">nꜣ-</span>, <span class="egypt-translit">nꜣ n</span></td>
-								</tr>
-							</table>
-							<p><span class="coptic">ⲫ</span> et <span class="coptic">ⲑ</span> s'emploient au lieu de <span class="coptic">ⲡ</span> <span class="coptic">ⲧ</span> devant les lettres <span class="coptic">ⲃ</span> <span class="coptic">ⲗ</span> <span class="coptic">ⲙ</span> <span class="coptic">ⲛ</span> <span class="coptic">ⲣ</span> et quelquefois devant <span class="coptic">ⲓ</span> <span class="coptic">ⲟⲩ</span>.</p>
-							<p>L'article faible détermine d'une manière moins précise; il se place devant les noms génériques ou abstraits et devant les noms d'êtres uniques.</p>
+						<div class="en">
+							<h2>Chapter 1</h2>
+							<h3>The Article</h3>
 						</div>
 					</div>
-					<div id="042" data-section="42" class="wip">
+					<div id="041" data-section="41" class="needs-english">
 						<div class="section">
-							<p>L'article fort <span class="coptic">ⲡⲓ-</span> <span class="coptic">ϯ-</span> détermine avec plus de précision, il indique un individu en particulier.</p>
+							<p class="fr">A. Formes</p>
+							<p class="en"></p>
+							<p class="fr">Il y a en copte deux articles: l'article défini et l'article indéfini.</p>
+							<p class="en"></p>
+							<p class="fr">I. Article défini</p>
+							<p class="en"></p>
+							<p class="fr">L'article défini se divise en faible et en fort:</p>
+							<p class="en"></p>
 							<table>
 								<tr>
-									<th colspan="2">Weak article</th>
-									<th colspan="2">Strong article</th>
+									<th></th><th class="fr"></th><th><span class="fr">faible</span><span class="en"></span></th><th><span class="fr">fort</span><span class="en"></span></th><th>N.E.</th>
+								</tr>
+								<tr>
+									<th><span class="fr">masc.</span><span class="en"></span></th><td class="fr"><span>le</span></td><td><span class="coptic">ⲡ-</span> <span class="coptic">ⲫ-</span></td><td><span class="coptic">ⲡⲓ-</span></td><td><span class="egypt-translit">pꜣ-</span></td>
+								</tr>
+								<tr>
+									<th><span class="fr">fém.</span><span class="en"></span></th><td class="fr"><span>la</span></td><td><span class="coptic">ⲧ-</span> <span class="coptic">ⲑ-</span></td><td><span class="coptic">ϯ-</span></td><td><span class="egypt-translit">tꜣ-</span></td>
+								</tr>
+								<tr>
+									<th><span class="fr">pl.</span><span class="en"></span></th><td class="fr"><span>les</span></td><td colspan="2"><span class="coptic">ⲛⲓ-</span> <span class="coptic">ⲛⲉⲛ-</span></td><td><span class="egypt-translit">nꜣ-</span>, <span class="egypt-translit">nꜣ n</span></td>
+								</tr>
+							</table>
+							<p class="fr"><span class="coptic">ⲫ</span> et <span class="coptic">ⲑ</span> s'emploient au lieu de <span class="coptic">ⲡ</span> <span class="coptic">ⲧ</span> devant les lettres <span class="coptic">ⲃ</span> <span class="coptic">ⲗ</span> <span class="coptic">ⲙ</span> <span class="coptic">ⲛ</span> <span class="coptic">ⲣ</span> et quelquefois devant <span class="coptic">ⲓ</span> <span class="coptic">ⲟⲩ</span>.</p>
+							<p class="en"></p>
+							<p class="fr">L'article faible détermine d'une manière moins précise; il se place devant les noms génériques ou abstraits et devant les noms d'êtres uniques.</p>
+							<p class="en"></p>
+						</div>
+					</div>
+					<div id="042" data-section="42" class="needs-english">
+						<div class="section">
+							<p class="fr">L'article fort <span class="coptic">ⲡⲓ-</span> <span class="coptic">ϯ-</span> détermine avec plus de précision, il indique un individu en particulier.</p>
+							<p class="en"></p>
+							<table>
+								<tr>
+									<th colspan="2"><span class="fr">Article faible</span><span class="en"></span></th>
+									<th colspan="2"><span class="fr">Article fort</span><span class="en"></span></th>
 								</tr>
 								<tr>
 									<td><span class="coptic">ⲫ-ⲛⲟⲩϯ</span></td>
-									<td>God,</td>
+									<td><span class="fr">Dieu</span><span class="en"></span></td>
 									<td><span class="coptic">ⲡⲓ-ⲛⲟⲩϯ</span></td>
-									<td>the god;</td>
+									<td><span class="fr">le dieu</span><span class="en"></span></td>
 								</tr>
 								<tr>
 									<td><span class="coptic">ⲧ-ⲫⲉ</span></td>
-									<td>the sky, heaven</td>
-									<td><span class="coptic">ϯ-ⲫⲉ ⲙ̀ⲃⲉⲣⲓ</span></td>
-									<td>the new heaven<a href="#cite-footnote-chapter_01-001" class="footnote" id="footnote-chapter_01-001"><sup>[1]</sup></a>;</td>
+									<td><span class="fr">le ciel</span><span class="en"></span></td>
+									<td><span class="coptic">ϯ-ⲫⲉ ⲙ̀ⲃⲉⲣⲓ</span> <span class="fr">(Théot. 117)</span><span class="en">()</span></td>
+									<td><span class="fr">le ciel nouveau</span><span class="en"></span></td>
 								</tr>
 								<tr>
 									<td><span class="coptic">ⲫ-ⲣⲏ</span></td>
-									<td>the sun,</td>
-									<td><span class="coptic">ⲡⲓ-ⲣⲏ ⲛ̀ⲧⲉ ϯ-ⲙⲉⲑⲙⲏⲓ</span></td>
-									<td>the Sun of Justice<a href="#cite-footnote-chapter_01-002" class="footnote" id="footnote-chapter_01-002"><sup>[1]</sup></a>.</td>
+									<td><span class="fr">le soleil</span><span class="en"></span></td>
+									<td><span class="coptic">ⲡⲓ-ⲣⲏ ⲛ̀ⲧⲉ ϯ-ⲙⲉⲑⲙⲏⲓ</span> <span class="fr">(Théot. 117)</span><span class="en">()</span></td>
+									<td><span class="fr">le Soleil de Justice</span><span class="en"></span></td>
 								</tr>
 							</table>
-							<p>En général, on emploie l'un ou l'autre article selon le degré de détermination qu'on veut donner au nom.</p>
+							<p class="fr">En général, on emploie l'un ou l'autre article selon le degré de détermination qu'on veut donner au nom.</p>
+							<p class="en"></p>
 						</div>
 					</div>
-					<div id="043" data-section="43" class="wip">
+					<div id="043" data-section="43" class="needs-english">
 						<div class="section">
-							<p><i>Remarques.</i></p>
+							<p class="fr"><i>Remarques.</i></p>
+							<p class="en"></p>
 							<ol>
 								<li>
-									<p>Words that begin with <span class="coptic">ⲁ</span> generally take the article <span class="coptic">ⲡⲓ-</span> and those that begin with <span class="coptic">ⲟⲩ</span>, <span class="coptic">ⲱ</span>, the article <span class="coptic">ⲡ-</span>: <span class="coptic">ⲡⲓ-ⲁⲥⲉⲃⲏⲥ</span> "the impious one", <span class="coptic">ⲡⲓ-ⲁⲧϩⲏⲧ</span> "the foolish one", <span class="coptic">ⲡ-ⲟⲩⲣⲟ</span> "the king", <span class="coptic">ⲡ-ⲱⲛϧ</span> "the life".</p>
+									<p class="fr">Les mots qui commencent par <span class="coptic">ⲁ</span> prennent généralement l'article <span class="coptic">ⲡⲓ-</span> et ceux qui commencent par <span class="coptic">ⲟⲩ</span>, <span class="coptic">ⲱ</span>, l'article <span class="coptic">ⲡ-</span>:</p>
+									<p class="en"></p>
+									<p><span class="coptic">ⲡⲓ-ⲁⲥⲉⲃⲏⲥ</span> <span class="fr">«l'impie»</span><span class="en"></span></p>
+									<p><span class="coptic">ⲡⲓ-ⲁⲧϩⲏⲧ</span> <span class="fr">«l'insensé»</span><span class="en"></span></p>
+									<p><span class="coptic">ⲡ-ⲟⲩⲣⲟ</span> <span class="fr">«le roi»</span><span class="en"></span></p>
+									<p><span class="coptic">ⲡ-ⲱⲛϧ</span> <span class="fr">«la vie»</span><span class="en"></span></p>
 								</li>
 								<li>
-									<p>To avoid any ambiguity, we say:</p>
-									<p><span class="coptic">ⲫ-ⲓⲱⲧ</span> "the father", <span class="coptic">ⲡ-ⲓⲱⲧ</span> "the barley";</p>
-									<p><span class="coptic">ⲫ-ⲓⲟⲙ</span> "the sea", <span class="coptic">ⲡ-ⲓⲟⲙ</span> "the wine press".</p>
+									<p class="fr">Pour éviter toute équivoque on dit:</p>
+									<p class="en"></p>
+									<p><span class="coptic">ⲫ-ⲓⲱⲧ</span> <span class="fr">«le père»</span><span class="en"></span></p>
+									<p><span class="coptic">ⲡ-ⲓⲱⲧ</span> <span class="fr">«l'orge»</span><span class="en"></span></p>
+									<p><span class="coptic">ⲫ-ⲓⲟⲙ</span> <span class="fr">«la mer»</span><span class="en"></span></p>
+									<p><span class="coptic">ⲡ-ⲓⲟⲙ</span> <span class="fr">«le récipient du pressoir»</span><span class="en"></span></p>
 								</li>
 							</ol>
 						</div>
 					</div>
-					<div id="044" data-section="44" class="wip">
+					<div id="044" data-section="44" class="needs-english">
 						<div class="section">
-							<p>L'article <span class="coptic">ⲛⲉⲛ-</span> ne s'emploie que devant un nom mis en annexion, <span class="coptic">ⲛⲓ-</span> peut être usité partout:</p>
+							<p class="fr">L'article <span class="coptic">ⲛⲉⲛ-</span> ne s'emploie que devant un nom mis en annexion, <span class="coptic">ⲛⲓ-</span> peut être usité partout:</p>
+							<p class="en"></p>
 							<blockquote class="example">
 								<p><span class="coptic">ⲛⲉⲛ-ϣⲏⲣⲓ ⲙ̀ⲡⲓ︤ⲥ︦ⲗ︥</span></p>
-								<p>«les fils d'Israël»</p>
+								<p class="fr">«les fils d'Israël»</p>
+								<p class="en"></p>
 							</blockquote>
 							<blockquote class="example">
-								<p><span class="coptic">ⲛⲉⲛ-ⲙⲱⲓⲧ ⲙ̀ⲫⲣⲱⲙⲓ</span></p>
-								<p>«les voies de l'homme» <a href="#cite-footnote-chapter_01-003" class="footnote" id="footnote-chapter_01-003"><sup>[2]</sup></a></p>
+								<p><span class="coptic">ⲛⲉⲛ-ⲙⲱⲓⲧ ⲙ̀ⲫⲣⲱⲙⲓ</span> <span class="fr">(Pr. 5, 21)</span><span class="en">(Proverbs 5:21)</span></p>
+								<p class="fr">«les voies de l'homme»</p>
+								<p class="en"></p>
 							</blockquote>
 						</div>
 					</div>
-					<div id="045" data-section="45" class="wip">
+					<div id="045" data-section="45" class="needs-english">
 						<div class="section">
-							<p>II. Article indéfini</p>
-							<p>Sing. <span class="coptic">ⲟⲩ-</span> «un, une» (A.E. <span class="egypt-translit">wꜥ-</span>), plur. <span class="coptic">ϩⲁⲛ-</span><sup>1</sup> «des»; (état construit du subst. dém. <span class="egypt-translit">hín</span>, (S) <span class="coptic">ϩⲟⲉⲓⲛⲉ</span> «quelques»):</p>
-							<p>Ex.</p>
+							<p class="fr">II. Article indéfini</p>
+							<p class="en"></p>
+							<p class="fr">Sing. <span class="coptic">ⲟⲩ-</span> «un, une» (A.E. <span class="egypt-translit">wꜥ-</span>), plur. <span class="coptic">ϩⲁⲛ-</span><sup>1</sup> «des»; (état construit du subst. dém. <span class="egypt-translit">hín</span>, (S) <span class="coptic">ϩⲟⲉⲓⲛⲉ</span> «quelques»):</p>
+							<p class="en"></p>
+							<p class="fr">Ex.</p>
 							<blockquote class="example">
 								<p><span class="coptic">ⲟⲩ-ⲣⲱⲙⲓ</span></p>
-								<p>«un homme»</p>
+								<p class="fr">«un homme»</p>
+								<p class="en"></p>
 							</blockquote>
 							<blockquote class="example">
 								<p><span class="coptic">ϩⲁⲛ-ⲣⲱⲙⲓ</span></p>
-								<p>«des hommes»</p>
+								<p class="fr">«des hommes»</p>
+								<p class="en"></p>
 							</blockquote>
 							<blockquote class="example">
 								<p><span class="coptic">ⲟⲩ-ⲥϩⲓⲙⲓ</span></p>
-								<p>«une femme»</p>
+								<p class="fr">«une femme»</p>
+								<p class="en"></p>
 							</blockquote>
 							<blockquote class="example">
 								<p><span class="coptic">ϩⲁⲛ-ϩⲓⲟⲙⲓ</span></p>
-								<p>«des femmes».</p>
+								<p class="fr">«des femmes»</p>
+								<p class="en"></p>
 							</blockquote>
-							<p>Lorsque <span class="coptic">ⲟⲩ-</span> est précédé de la préposition <span class="coptic">ⲉ-</span> «vers», on contracte <span class="coptic">ⲉ ⲟⲩ</span> en <span class="coptic">ⲉⲩ</span>:</p>
+							<p class="fr">Lorsque <span class="coptic">ⲟⲩ-</span> est précédé de la préposition <span class="coptic">ⲉ-</span> «vers», on contracte <span class="coptic">ⲉ ⲟⲩ</span> en <span class="coptic">ⲉⲩ</span>:</p>
 							<blockquote class="example">
 								<p><span class="coptic">ⲉⲩϣⲁϥⲉ</span></p>
-								<p>«vers un désert»</p>
+								<p class="fr">«vers un désert»</p>
+								<p class="en"></p>
 							</blockquote>
 							<blockquote class="example">
 								<p><span class="coptic">ⲉⲩⲥⲟⲡ</span></p>
-								<p>«en une fois»</p>
+								<p class="fr">«en une fois»</p>
+								<p class="en"></p>
 							</blockquote>
-							<p><span class="coptic">ⲟⲩ-</span> est une forme abrégée de <span class="coptic">ⲟⲩⲁⲓ</span> «un» (A.E. <span class="egypt-translit">wꜥ.w</span>).</p>
+							<p class="fr"><span class="coptic">ⲟⲩ-</span> est une forme abrégée de <span class="coptic">ⲟⲩⲁⲓ</span> «un» (A.E. <span class="egypt-translit">wꜥ.w</span>).</p>
+							<p class="en"></p>
 						</div>
 					</div>
-					<div id="046" data-section="46" class="wip">
+					<div id="046" data-section="46" class="needs-english">
 						<div class="section">
-							<p>B. Syntaxe de l'article</p>
-							<p>I. Emploi de l'article</p>
-							<p>Défini et indéfini</p>
-							<p>Placé devant un adverbe ou une construction prépositive <a href="#cite-footnote-chapter_01-004" class="footnote" id="footnote-chapter_01-004"><sup>[1]</sup></a>, l'article défini ou indéfini lui donne le sens d'un substantif ou d'un adjectif:</p>
+							<p class="fr">B. Syntaxe de l'article</p>
+							<p class="en"></p>
+							<p class="fr">I. Emploi de l'article</p>
+							<p class="en"></p>
+							<p class="fr">Défini et indéfini</p>
+							<p class="en"></p>
+							<p class="fr">Placé devant un adverbe ou une construction prépositive, l'article défini ou indéfini lui donne le sens d'un substantif ou d'un adjectif:</p>
+							<p class="en"></p>
 							 <blockquote class="example">
 								<p><span class="coptic">ⲛⲓ-ⲉϩⲣⲏⲓ</span></p>
-								<p>«les supérieurs (litt. les au-dessus)»</p>
+								<p class="fr">«les supérieurs (litt. les au-dessus)»</p>
+								<p class="en"></p>
 							</blockquote>
 							 <blockquote class="example">
 								<p><span class="coptic">ⲡⲓ-ⲥⲁⲃⲟⲗ</span></p>
-								<p>«l'extérieur, le dehors»</p>
+								<p class="fr">«l'extérieur, le dehors»</p>
+								<p class="en"></p>
 							</blockquote>
 							 <blockquote class="example">
 								<p><span class="coptic">ⲡⲓ-ⲥⲁϧⲟⲩⲛ</span></p>
-								<p>«l'intérieur, le dedans»</p>
+								<p class="fr">«l'intérieur, le dedans»</p>
+								<p class="en"></p>
 							</blockquote>
 							 <blockquote class="example">
 								<p><span class="coptic">ⲡⲓ-ϣⲁ-ⲉⲛⲉϩ</span></p>
-								<p>«l'Eternel (litt. le jusqu'à l'éternité)»</p>
+								<p class="fr">«l'Eternel (litt. le jusqu'à l'éternité)»</p>
+								<p class="en"></p>
 							</blockquote>
 							 <blockquote class="example">
-								<p><span class="coptic">ⲓⲱⲥⲉⲫ ⲡⲓ ⲉⲃⲟⲗ ϧⲉⲛ ⲛⲁⲍⲁⲣⲉⲑ</span></p>
-								<p>«Joseph de Nazareth» <a href="#cite-footnote-chapter_01-005" class="footnote" id="footnote-chapter_01-005"><sup>[2]</sup></a>.</p>
+								<p><span class="coptic">ⲓⲱⲥⲉⲫ ⲡⲓ ⲉⲃⲟⲗ ϧⲉⲛ ⲛⲁⲍⲁⲣⲉⲑ</span> <span class="fr">(Jean 1, 46)</span><span class="en">(John 1:46)</span></p>
+								<p class="fr">«Joseph de Nazareth»</p>
+								<p class="en"></p>
 							</blockquote>
 							 <blockquote class="example">
-								<p><span class="coptic">ⲟⲩ ⲉⲃⲟⲗ ⲑⲱⲛ ⲡⲉ ⲡⲁⲓⲣⲱⲙⲓ</span></p>
-								<p>d'où est «cet homme?» <a href="#cite-footnote-chapter_01-006" class="footnote" id="footnote-chapter_01-006"><sup>[3]</sup></a>.</p>
+								<p><span class="coptic">ⲟⲩ ⲉⲃⲟⲗ ⲑⲱⲛ ⲡⲉ ⲡⲁⲓⲣⲱⲙⲓ</span> <span class="fr">(Kef. 355)</span><span class="en">()</span></p>
+								<p class="fr">d'où est «cet homme?»</p>
+								<p class="en"></p>
 							</blockquote>
 							 <blockquote class="example">
-								<p><span class="coptic">ⲑⲙⲉⲧⲟⲩⲣⲟ ⲙ̀ⲡⲁⲓⲕⲟⲥⲙⲟⲥ ⲟⲩ-ⲡⲣⲟⲥ-ⲟⲩ-ⲥⲏⲟⲩ ⲧⲉ ⲑⲙⲉⲧⲟⲩⲣⲟ ⲛ̀ⲑⲟϥ ⲙ̀ⲡⲉⲛϭ︤ⲥ︥ ⲟⲩ-ϣⲁ-ⲉⲛⲉϩ ⲧⲉ.</span></p>
-								<p>«Le royaume de ce monde est éphémère, mais celui de N.-S. est éternel» <a href="#cite-footnote-chapter_01-007" class="footnote" id="footnote-chapter_01-007"><sup>[4]</sup></a>.</p>
+								<p><span class="coptic">ⲑⲙⲉⲧⲟⲩⲣⲟ ⲙ̀ⲡⲁⲓⲕⲟⲥⲙⲟⲥ ⲟⲩ-ⲡⲣⲟⲥ-ⲟⲩ-ⲥⲏⲟⲩ ⲧⲉ ⲑⲙⲉⲧⲟⲩⲣⲟ ⲛ̀ⲑⲟϥ ⲙ̀ⲡⲉⲛϭ︤ⲥ︥ ⲟⲩ-ϣⲁ-ⲉⲛⲉϩ ⲧⲉ.</span> <span class="fr">(AM. 17, 20)</span><span class="en">()</span></p>
+								<p class="fr">«Le royaume de ce monde est éphémère, mais celui de N.-S. est éternel»</p>
+								<p class="en"></p>
 							</blockquote>
 						</div>
 					</div>
-					<div id="047" data-section="47" class="wip">
+					<div id="047" data-section="47" class="needs-english">
 						<div class="section">
-							<p>2. Article défini seul</p>
-							<p>L'article défini accompagne généralement les mots au vocatif, soit seul, soit avec l'interjection <span class="coptic">ⲱ</span>:</p>
+							<p class="fr">2. Article défini seul</p>
+							<p class="en"></p>
+							<p class="fr">L'article défini accompagne généralement les mots au vocatif, soit seul, soit avec l'interjection <span class="coptic">ⲱ</span>:</p>
+							<p class="en"></p>
 							 <blockquote class="example">
-								<p><span class="coptic">ⲣⲁϣⲓ ⲧ-ϣⲉⲣⲓ ⲛ̀ⲥⲓⲱⲛ</span></p>
-								<p>«réjouis-toi, fille de Sion» <a href="#cite-footnote-chapter_01-008" class="footnote" id="footnote-chapter_01-008"><sup>[1]</sup></a>.</p>
+								<p><span class="coptic">ⲣⲁϣⲓ ⲧ-ϣⲉⲣⲓ ⲛ̀ⲥⲓⲱⲛ</span> <span class="fr">(Zach. 2, 10)</span><span class="en">(Zechariah 2:10)</span></p>
+								<p class="fr">«réjouis-toi, fille de Sion»</p>
+								<p class="en"></p>
 							</blockquote>
 							 <blockquote class="example">
-								<p><span class="coptic">ⲁⲙⲏ ⲉⲡⲉⲥⲏⲧ ϯ-ⲡⲁⲣⲑⲉⲛⲟⲥ ⲧ-ϣⲉⲣⲓ ⲙ̀ⲃⲁⲃⲩⲗⲱⲛ</span> «descends, ô vierge, fille de Babylone»</p>
-								<p><a href="#cite-footnote-chapter_01-009" class="footnote" id="footnote-chapter_01-009"><sup>[2]</sup></a>.</p>
+								<p><span class="coptic">ⲁⲙⲏ ⲉⲡⲉⲥⲏⲧ ϯ-ⲡⲁⲣⲑⲉⲛⲟⲥ ⲧ-ϣⲉⲣⲓ ⲙ̀ⲃⲁⲃⲩⲗⲱⲛ</span> <span class="fr">(Is. 47, 1)</span><span class="en">(Isaiah 47:1)</span></p>
+								<p class="fr">«descends, ô vierge, fille de Babylone»</p>
+								<p class="en"></p>
 							</blockquote>
 							 <blockquote class="example">
-								<p><span class="coptic">ⲱ ⲡϭ︤ⲥ︥ ⲛⲟϩⲉⲙ ⲛ̀ⲧⲁⲯⲩⲭⲏ</span></p>
-								<p>«Seigneur, sauve mon âme» <a href="#cite-footnote-chapter_01-010" class="footnote" id="footnote-chapter_01-010"><sup>[3]</sup></a>.</p>
+								<p><span class="coptic">ⲱ ⲡϭ︤ⲥ︥ ⲛⲟϩⲉⲙ ⲛ̀ⲧⲁⲯⲩⲭⲏ</span> <span class="fr">(Ps. 114, 5)</span><span class="en">(Psalms 114:5)</span></p>
+								<p class="fr">«Seigneur, sauve mon âme»</p>
+								<p class="en"></p>
 							</blockquote>
 						</div>
 					</div>
-					<div id="048" data-section="48" class="wip">
+					<div id="048" data-section="48" class="needs-english">
 						<div class="section">
-							<p>On dit régulièrement avec l'article défini <span class="coptic">ⲫ-ⲛⲟⲩϯ</span> «Dieu». Les autres noms propres ne prennent généralement pas d'article. On trouve cependant quelques noms de lieu avec l'article défini:</p>
-							<p><span class="coptic">ⲃⲁⲃⲩⲗⲱⲛ</span> et <span class="coptic">ⲑ-ⲃⲁⲃⲩⲗⲱⲛ</span> «Babylone», <span class="coptic">ⲧ-ⲕⲁⲛⲁ</span> «Cana» <a href="#cite-footnote-chapter_01-011" class="footnote" id="footnote-chapter_01-011"><sup>[4]</sup></a>, <span class="coptic">ⲑ-ⲃⲁⲥⲁⲛ</span> <a href="#cite-footnote-chapter_01-012" class="footnote" id="footnote-chapter_01-012"><sup>[5]</sup></a> et <span class="coptic">ϯ-ⲃⲁⲥⲁⲛ</span> <a href="#cite-footnote-chapter_01-013" class="footnote" id="footnote-chapter_01-013"><sup>[6]</sup></a> «Bassan» <a href="#cite-footnote-chapter_01-014" class="footnote" id="footnote-chapter_01-014"><sup>[7]</sup></a>.</p>
-						</div>
-					</div>
-					<div id="049" data-section="49" class="wip">
-						<div class="section">
-							<p>3. Article indéfini seul</p>
-							<p>Outre les cas du § 46, l'article indéfini s'emploie:</p>
-							<p>1. Dans un sens partitif comme l'article partitif français <i>du</i>, <i>des</i>:</p>
+							<p class="fr">On dit régulièrement avec l'article défini <span class="coptic">ⲫ-ⲛⲟⲩϯ</span> «Dieu». Les autres noms propres ne prennent généralement pas d'article. On trouve cependant quelques noms de lieu avec l'article défini:</p>
+							<p class="en"></p>
 							<blockquote class="example">
-								<p><span class="coptic">ⲟⲩ-ⲛⲟⲩⲃ ⲛⲉⲙ ⲟⲩ-ⲗⲓⲃⲁⲛⲟⲥ ⲛⲉⲙ ⲟⲩ-ϣⲁⲗ</span></p>
-								<p>«de l'or, de l'encens et de la myrrhe» <a href="#cite-footnote-chapter_01-015" class="footnote" id="footnote-chapter_01-015"><sup>[8]</sup></a>.</p>
-							</blockquote>
-							<p>2. Avec les noms abstraits et génériques; il se traduit alors en français par l'article défini:</p>
-							 <blockquote class="example">
-								<p><span class="coptic">ⲟⲩ-ⲣⲁⲙⲁⲟ ⲛⲉⲙ ⲟⲩ-ϩⲏⲕⲓ</span></p>
-								<p>«le riche et le pauvre»</p>
-							</blockquote>
-							 <blockquote class="example">
-								<p><span class="coptic">ⲟⲩ-ⲥⲟⲫⲓⲁ ⲛⲉⲙ ⲟⲩ-ⲥⲃⲱ</span></p>
-								<p>«la sagesse et la science» <a href="#cite-footnote-chapter_01-016" class="footnote" id="footnote-chapter_01-016"><sup>[9]</sup></a></p>
-							</blockquote>
-							<p>3. Dans les expressions adverbiales comme:</p>
-							 <blockquote class="example">
-								<p><span class="coptic">ϧⲉⲛ ⲟⲩ-ⲥⲱⲟⲩⲧⲉⲛ</span></p>
-								<p>«avec droiture»</p>
+								<p><span class="coptic">ⲃⲁⲃⲩⲗⲱⲛ</span>, <span class="coptic">ⲑ-ⲃⲁⲃⲩⲗⲱⲛ</span></p>
+								<p class="fr">«Babylone»</p>
+								<p class="en"></p>
 							</blockquote>
 							<blockquote class="example">
-								<p><span class="coptic">ϧⲉⲛ ⲟⲩ-ⲙⲉⲧⲟϫⲓ</span></p>
-								<p>«avec iniquité» <a href="#cite-footnote-chapter_01-017" class="footnote" id="footnote-chapter_01-017"><sup>[10]</sup></a></p>
+								<p><span class="coptic">ⲧ-ⲕⲁⲛⲁ</span> <span class="fr">(Jean 2, 1)</span><span class="en">(John 2:1)</span></p>
+								<p class="fr">«Cana»</p>
+								<p class="en"></p>
+							</blockquote>
+							<blockquote class="example">
+								<p><span class="coptic">ⲑ-ⲃⲁⲥⲁⲛ</span> <span class="fr">(Deut. 3, 3)</span><span class="en">(Deuteronomy 3:3)</span></p>
+								<p><span class="coptic">ϯ-ⲃⲁⲥⲁⲛ</span> <span class="fr">(Deut. 3, 13)</span><span class="en">(Deuteronomy 3:13)</span></p>
+								<p class="fr">«Bassan» <span class="fr">(Cf. AB. 54, 55)</span><span class="en">()</span></p>
+								<p class="en"></p>
 							</blockquote>
 						</div>
 					</div>
-					<div id="050" data-section="50" class="wip">
+					<div id="049" data-section="49" class="needs-english">
 						<div class="section">
-							<p>II. Suppression de l'article</p>
-							<p>Un substantif ne prend pas d'article:</p>
-							<p>1. Quand il est uni intimement à un autre substantif qui le précède, de manière à ne former avec lui qu'un seul tout, soit que le premier ait la <i>forme abrégée</i> ou la <i>forme pleine</i>:</p>
+							<p class="fr">3. Article indéfini seul</p>
+							<p class="en"></p>
+							<p class="fr">Outre les cas du § 46, l'article indéfini s'emploie:</p>
+							<p class="en"></p>
+							<ol>
+								<li>
+									<p class="fr">Dans un sens partitif comme l'article partitif français <i>du</i>, <i>des</i>:</p>
+									<p class="en"></p>
+									<blockquote class="example">
+										<p><span class="coptic">ⲟⲩ-ⲛⲟⲩⲃ ⲛⲉⲙ ⲟⲩ-ⲗⲓⲃⲁⲛⲟⲥ ⲛⲉⲙ ⲟⲩ-ϣⲁⲗ</span> <span class="fr">(Mt. 2, 11)</span><span class="en">(Matthew 2:11)</span></p>
+										<p class="fr">«de l'or, de l'encens et de la myrrhe»</p>
+										<p class="en"></p>
+									</blockquote>
+								</li>
+								<li>
+									<p class="fr">Avec les noms abstraits et génériques; il se traduit alors en français par l'article défini:</p>
+									<p class="en"></p>
+									 <blockquote class="example">
+										<p><span class="coptic">ⲟⲩ-ⲣⲁⲙⲁⲟ ⲛⲉⲙ ⲟⲩ-ϩⲏⲕⲓ</span></p>
+										<p class="fr">«le riche et le pauvre»</p>
+										<p class="en"></p>
+									</blockquote>
+									 <blockquote class="example">
+										<p><span class="coptic">ⲟⲩ-ⲥⲟⲫⲓⲁ ⲛⲉⲙ ⲟⲩ-ⲥⲃⲱ</span> <span class="fr">(Pr. 1, 2)</span><span class="en">(Proverbs 1:2)</span></p>
+										<p class="fr">«la sagesse et la science»</p>
+										<p class="en"></p>
+									</blockquote>
+								</li>
+								<li>
+									<p class="fr">Dans les expressions adverbiales comme:</p>
+									<p class="en"></p>
+									 <blockquote class="example">
+										<p><span class="coptic">ϧⲉⲛ ⲟⲩ-ⲥⲱⲟⲩⲧⲉⲛ</span></p>
+										<p class="fr">«avec droiture»</p>
+										<p class="en"></p>
+									</blockquote>
+									<blockquote class="example">
+										<p><span class="coptic">ϧⲉⲛ ⲟⲩ-ⲙⲉⲧⲟϫⲓ</span> <span class="fr">(Pr. 1, 11)</span><span class="en">(Proverbs 1:11)</span></p>
+										<p class="fr">«avec iniquité»</p>
+										<p class="en"></p>
+									</blockquote>
+								</li>
+							</ol>
+						</div>
+					</div>
+					<div id="050" data-section="50" class="needs-english">
+						<div class="section">
+							<p class="fr">II. Suppression de l'article</p>
+							<p class="en"></p>
+							<p class="fr">Un substantif ne prend pas d'article:</p>
+							<p class="en"></p>
+							<p class="fr">1. Quand il est uni intimement à un autre substantif qui le précède, de manière à ne former avec lui qu'un seul tout, soit que le premier ait la <i>forme abrégée</i> ou la <i>forme pleine</i>:</p>
+							<p class="en"></p>
 							 <blockquote class="example">
 								<p><span class="coptic">ⲡⲓ-ⲛⲉⲃ-ⲏⲓ</span></p>
-								<p>«le maître de la maison»</p>
+								<p class="fr">«le maître de la maison»</p>
+								<p class="en"></p>
 							</blockquote>
 							 <blockquote class="example">
 								<p><span class="coptic">ⲟⲩ-ⲓⲁϩ-ϫⲱⲓⲧ</span></p>
-								<p>«une plantation d'oliviers»</p>
+								<p class="fr">«une plantation d'oliviers»</p>
+								<p class="en"></p>
 							</blockquote>
 							 <blockquote class="example">
 								<p><span class="coptic">ⲟⲩ-ⲭⲗⲟⲙ ⲛ̀ⲛⲟⲩⲃ</span></p>
-								<p>«une couronne d'or»</p>
+								<p class="fr">«une couronne d'or»</p>
+								<p class="en"></p>
 							</blockquote>
 						</div>
 					</div>
-					<div id="051" data-section="51" class="wip">
+					<div id="051" data-section="51" class="needs-english">
 						<div class="section">
-							<p>2. Quand il s'unit à un verbe précédent pour former un nom ou un verbe composé:</p>
+							<p class="fr">2. Quand il s'unit à un verbe précédent pour former un nom ou un verbe composé:</p>
+							<p class="en"></p>
 							<blockquote class="example">
 								<p><span class="coptic">ⲙⲁⲥ-ⲛⲟⲩϯ</span></p>
-								<p>«mère de Dieu»</p>
+								<p class="fr">«mère de Dieu»</p>
+								<p class="en"></p>
 							</blockquote>
 							<blockquote class="example">
 								<p><span class="coptic">ϯ-ⲱⲟⲩ</span></p>
-								<p>«glorifier»</p>
+								<p class="fr">«glorifier»</p>
+								<p class="en"></p>
 							</blockquote>
 							<blockquote class="example">
 								<p><span class="coptic">ⲟⲩⲁⲙ-ⲥⲛⲟϥ</span></p>
-								<p>«sanguinaire»</p>
+								<p class="fr">«sanguinaire»</p>
+								<p class="en"></p>
 							</blockquote>
 							<blockquote class="example">
 								<p><span class="coptic">ⲉⲣ-ⲛⲟⲃⲓ</span></p>
-								<p>«pécher»</p>
+								<p class="fr">«pécher»</p>
+								<p class="en"></p>
 							</blockquote>
 						</div>
 					</div>
-					<div id="052" data-section="52" class="wip">
+					<div id="052" data-section="52" class="needs-english">
 						<div class="section">
-							<p>3. Un nom indéterminé précédé d'une préposition est quelquefois sans article:</p>
+							<p class="fr">3. Un nom indéterminé précédé d'une préposition est quelquefois sans article:</p>
+							<p class="en"></p>
 							<blockquote class="example">
-								<p><span class="coptic">ⲁϥⲛⲁⲩ ⲉ-ⲣⲁⲥⲟⲩⲓ</span></p>
-								<p>«il vit un songe» <a href="#cite-footnote-chapter_01-018" class="footnote" id="footnote-chapter_01-018"><sup>[1]</sup></a></p>
+								<p><span class="coptic">ⲁϥⲛⲁⲩ ⲉ-ⲣⲁⲥⲟⲩⲓ</span> <span class="fr">(Jér. 23, 28)</span><span class="en">(Jeremiah 23:28)</span></p>
+								<p class="fr">«il vit un songe»</p>
+								<p class="en"></p>
 							</blockquote>
 							<blockquote class="example">
-								<p><span class="coptic">ⲉϥⲕⲱϯ ⲛ̀ⲥⲁ ⲱⲓⲕ</span></p>
-								<p>«cherchant du pain» <a href="#cite-footnote-chapter_01-019" class="footnote" id="footnote-chapter_01-019"><sup>[2]</sup></a></p>
+								<p><span class="coptic">ⲉϥⲕⲱϯ ⲛ̀ⲥⲁ ⲱⲓⲕ</span> <span class="fr">(Ps. 36, 25)</span><span class="en">(Psalms 36:25)</span></p>
+								<p class="fr">«cherchant du pain»</p>
+								<p class="en"></p>
 							</blockquote>
 						</div>
 					</div>
-					<div id="053" data-section="53" class="wip">
+					<div id="053" data-section="53" class="needs-english">
 						<div class="section">
-							<p>4. Dans les énumérations de noms, spécialement quand les parties sont unies par <span class="coptic">ϩⲓ</span>, <span class="coptic">ⲓⲉ</span>, <span class="coptic">ⲉⲓⲧⲉ</span>, <span class="coptic">ⲟⲩⲇⲉ</span>:</p>
+							<p class="fr">4. Dans les énumérations de noms, spécialement quand les parties sont unies par <span class="coptic">ϩⲓ</span>, <span class="coptic">ⲓⲉ</span>, <span class="coptic">ⲉⲓⲧⲉ</span>, <span class="coptic">ⲟⲩⲇⲉ</span>:</p>
+							<p class="en"></p>
 							<blockquote class="example">
-								<p><span class="coptic">ⲟⲩⲟⲛ ⲛⲓⲃⲉⲛ ⲉⲧⲁϥⲭⲁ ⲥⲟⲛ ⲛ̀ⲥⲱϥ ⲓⲉ ⲥⲱⲛⲓ ⲓⲉ ⲓⲱⲧ ⲓⲉ ⲙⲁⲩ ⲓⲉ ⲥϩⲓⲙⲓ ⲓⲉ ϣⲏⲣⲓ ⲓⲉ ⲓⲟϩⲓ ⲓⲉ ⲏⲓ</span></p>
-								<p>«quiconque aura quitté son frère ou sa sœur ou son père ou sa mère ou sa femme ou ses enfants ou son champ ou sa maison» <a href="#cite-footnote-chapter_01-020" class="footnote" id="footnote-chapter_01-020"><sup>[3]</sup></a></p>
+								<p><span class="coptic">ⲟⲩⲟⲛ ⲛⲓⲃⲉⲛ ⲉⲧⲁϥⲭⲁ ⲥⲟⲛ ⲛ̀ⲥⲱϥ ⲓⲉ ⲥⲱⲛⲓ ⲓⲉ ⲓⲱⲧ ⲓⲉ ⲙⲁⲩ ⲓⲉ ⲥϩⲓⲙⲓ ⲓⲉ ϣⲏⲣⲓ ⲓⲉ ⲓⲟϩⲓ ⲓⲉ ⲏⲓ</span> <span class="fr">(Mt. 19, 29)</span><span class="en">(Matthew 19:29)</span></p>
+								<p class="fr">«quiconque aura quitté son frère ou sa sœur ou son père ou sa mère ou sa femme ou ses enfants ou son champ ou sa maison»</p>
+								<p class="en"></p>
 							</blockquote>
 						</div>
 					</div>
-					<div id="054" data-section="54" class="wip">
+					<div id="054" data-section="54" class="needs-english">
 						<div class="section">
-							<p>5. Devant la <i>forme avec suffixes</i> des substantifs, qu'ils aient les autres formes ou non. La détermination se fait alors par le pronom suffixe qui s'accorde avec le mot mis en annexion. Tels sont:</p>
-							<p><span class="coptic">ⲁⲩⲣⲏϫ⸗</span> extrémité</p>
-							<p><span class="coptic">ⲓⲁⲧ⸗</span> regard</p>
-							<p><span class="coptic">ⲕⲉⲛ⸗</span> sein</p>
-							<p><span class="coptic">ⲣⲁⲧ⸗</span> pied</p>
-							<p><span class="coptic">ⲣⲱ⸗</span> (<span class="coptic">ⲣⲟ</span>) bouche</p>
-							<p><span class="coptic">ⲥⲟⲩⲉⲛ⸗</span> prix</p>
-							<p><span class="coptic">ⲧⲟⲧ⸗</span> main</p>
-							<p><span class="coptic">ϧⲏⲧ⸗</span> milieu, ventre</p>
-							<p><span class="coptic">ϩⲏⲧ⸗</span> bout (de la main, du pied)</p>
-							<p><span class="coptic">ϩⲑⲏ⸗</span> (<span class="coptic">ϩⲏⲧ</span>) cœur</p>
-							<p><span class="coptic">ϩⲣ⸗</span> (<span class="coptic">ϩⲟ</span>) face</p>
-							<p><span class="coptic">ϫⲱ⸗</span> tête</p>
-							<p>Ex:</p>
+							<p class="fr">5. Devant la <i>forme avec suffixes</i> des substantifs, qu'ils aient les autres formes ou non. La détermination se fait alors par le pronom suffixe qui s'accorde avec le mot mis en annexion. Tels sont:</p>
+							<p class="en"></p>
+							<table>
+								<tr>
+									<td><span class="coptic">ⲁⲩⲣⲏϫ⸗</span></td><td><span class="fr">extrémité</span><span class="en"></span></td>
+								</tr>
+								<tr>
+									<td><span class="coptic">ⲓⲁⲧ⸗</span></td><td><span class="fr">regard</span><span class="en"></span></td>
+								</tr>
+								<tr>
+									<td><span class="coptic">ⲕⲉⲛ⸗</span></td><td><span class="fr">sein</span><span class="en"></span></td>
+								</tr>
+								<tr>
+									<td><span class="coptic">ⲣⲁⲧ⸗</span></td><td><span class="fr">pied</span><span class="en"></span></td>
+								</tr>
+								<tr>
+									<td><span class="coptic">ⲣⲱ⸗</span> (<span class="coptic">ⲣⲟ</span>)</td><td><span class="fr">bouche</span><span class="en"></span></td>
+								</tr>
+								<tr>
+									<td><span class="coptic">ⲥⲟⲩⲉⲛ⸗</span></td><td><span class="fr">prix</span><span class="en"></span></td>
+								</tr>
+								<tr>
+									<td><span class="coptic">ⲧⲟⲧ⸗</span></td><td><span class="fr">main</span><span class="en"></span></td>
+								</tr>
+								<tr>
+									<td><span class="coptic">ϧⲏⲧ⸗</span></td><td><span class="fr">milieu, ventre</span><span class="en"></span></td>
+								</tr>
+								<tr>
+									<td><span class="coptic">ϩⲏⲧ⸗</span></td><td><span class="fr">bout (de la main, du pied)</span><span class="en"></span></td>
+								</tr>
+								<tr>
+									<td><span class="coptic">ϩⲑⲏ⸗</span> (<span class="coptic">ϩⲏⲧ</span>)</td><td><span class="fr">cœur</span><span class="en"></span></td>
+								</tr>
+								<tr>
+									<td><span class="coptic">ϩⲣ⸗</span> (<span class="coptic">ϩⲟ</span>)</td><td><span class="fr">face</span><span class="en"></span></td>
+								</tr>
+								<tr>
+									<td><span class="coptic">ϫⲱ⸗</span></td><td><span class="fr">tête</span><span class="en"></span></td>
+								</tr>
+							</table>
+							<p class="fr">Ex:</p>
+							<p class="en"></p>
 							<blockquote class="example">
-								<p><span class="coptic">ⲣⲱⲟⲩ ⲛ̀ⲛⲓⲁⲥⲉⲃⲏⲥ</span></p>
-								<p>«la bouche des impies» <a href="#cite-footnote-chapter_01-021" class="footnote" id="footnote-chapter_01-021"><sup>[1]</sup></a> (<i>litt.</i> leur bouche des impies)</p>
+								<p><span class="coptic">ⲣⲱⲟⲩ ⲛ̀ⲛⲓⲁⲥⲉⲃⲏⲥ</span> <span class="fr">(Pr. 10, 32)</span><span class="en">(Proverbs 10:32)</span></p>
+								<p class="fr">«la bouche des impies» (<i>litt.</i> leur bouche des impies)</p>
+								<p class="en"></p>
 							</blockquote>
 							<blockquote class="example">
-								<p><span class="coptic">ϩⲏⲧⲥ ⲛ̀ⲧϫⲓϫ</span></p>
-								<p>«le bout de la main» <a href="#cite-footnote-chapter_01-022" class="footnote" id="footnote-chapter_01-022"><sup>[2]</sup></a> (<i>litt.</i> son bout de la main).</p>
+								<p><span class="coptic">ϩⲏⲧⲥ ⲛ̀ⲧϫⲓϫ</span> <span class="fr">(Lév. 8, 23)</span><span class="en">(Leviticus 8:23)</span></p>
+								<p class="fr">«le bout de la main» (<i>litt.</i> son bout de la main)</p>
+								<p class="en"></p>
 							</blockquote>
 						</div>
 					</div>
-					<div id="055" data-section="55" class="wip">
+					<div id="055" data-section="55" class="needs-english">
 						<div class="section">
-							<p>Cette tournure est régulièrement employée dans les prépositions formées de ces mots:</p>
+							<p class="fr">Cette tournure est régulièrement employée dans les prépositions formées de ces mots:</p>
+							<p class="en"></p>
 							<blockquote class="example">
-								<p><span class="coptic">ϧⲁ-ⲣⲁⲧϥ ⲙ̀ⲡⲓϣϣⲏⲛ</span></p>
-								<p>«au pied de l'arbre» <a href="#cite-footnote-chapter_01-023" class="footnote" id="footnote-chapter_01-023"><sup>[3]</sup></a></p>
+								<p><span class="coptic">ϧⲁ-ⲣⲁⲧϥ ⲙ̀ⲡⲓϣϣⲏⲛ</span> <span class="fr">(Gen. 18, 8)</span><span class="en">(Genesis 18:8)</span></p>
+								<p class="fr">«au pied de l'arbre»</p>
+								<p class="en"></p>
 							</blockquote>
 							<blockquote class="example">
-								<p><span class="coptic">ⲉ-ⲧⲟⲧⲟⲩ ⲛ̀ⲛⲉϥϣⲏⲣⲓ</span></p>
-								<p>«aux mains de ses fils» <a href="#cite-footnote-chapter_01-024" class="footnote" id="footnote-chapter_01-024"><sup>[4]</sup></a></p>
+								<p><span class="coptic">ⲉ-ⲧⲟⲧⲟⲩ ⲛ̀ⲛⲉϥϣⲏⲣⲓ</span> <span class="fr">(Gen. 30, 35)</span><span class="en">(Genesis 30:35)</span></p>
+								<p class="fr">«aux mains de ses fils»</p>
+								<p class="en"></p>
 							</blockquote>
 							<blockquote class="example">
-								<p><span class="coptic">ϧⲁ-ϫⲱϥ ⲙ̀ⲡⲉϥⲁⲗⲟⲩ</span></p>
-								<p>«devant son enfant» <a href="#cite-footnote-chapter_01-025" class="footnote" id="footnote-chapter_01-025"><sup>[5]</sup></a>.</p>
+								<p><span class="coptic">ϧⲁ-ϫⲱϥ ⲙ̀ⲡⲉϥⲁⲗⲟⲩ</span> <span class="fr">(Gen. 33, 14)</span><span class="en">(Genesis 33:14)</span> Cf. AB. 50</p>
+								<p class="fr">«devant son enfant»</p>
+								<p class="en"></p>
 							</blockquote>
 						</div>
 					</div>
-					<div id="056" data-section="56" class="wip">
+					<div id="056" data-section="56" class="needs-english">
 						<div class="section">
-							<p><i>Remarques</i></p>
-							<p>1. Il ne faut pas confondre <span class="coptic">ⲣⲟ</span> <span class="coptic">ⲣⲱ⸗</span> «bouche» et <span class="coptic">ⲣⲟ</span> <i>pl.</i> <span class="coptic">ⲣⲱⲟⲩ</span> «porte»; dans ce dernier sens on emploie l'article:</p>
+							<p class="fr"><i>Remarques.</i></p>
+							<p class="en"></p>
+							<p class="fr">1. Il ne faut pas confondre <span class="coptic">ⲣⲟ</span> <span class="coptic">ⲣⲱ⸗</span> «bouche» et <span class="coptic">ⲣⲟ</span> <i>pl.</i> <span class="coptic">ⲣⲱⲟⲩ</span> «porte»; dans ce dernier sens on emploie l'article:</p>
+							<p class="en"></p>
 							<blockquote class="example">
-								<p><span class="coptic">ⲛⲓ-ⲣⲱⲟⲩ ⲛ̀ⲧⲉ ⲡⲉⲥⲏⲓ</span></p>
-								<p>«les portes de sa maison» <a href="#cite-footnote-chapter_01-026" class="footnote" id="footnote-chapter_01-026"><sup>[6]</sup></a>.</p>
+								<p><span class="coptic">ⲛⲓ-ⲣⲱⲟⲩ ⲛ̀ⲧⲉ ⲡⲉⲥⲏⲓ</span> <span class="fr">(Pr. 5, 8)</span><span class="en">(Proverbs 5:8)</span></p>
+								<p class="fr">«les portes de sa maison»</p>
+								<p class="en"></p>
 							</blockquote>
 						</div>
 					</div>
-					<div id="057" data-section="57" class="wip">
+					<div id="057" data-section="57" class="needs-english">
 						<div class="section">
-							<p>2. Les trois noms <span class="coptic">ⲧⲟⲧ⸗</span>, <span class="coptic">ϩⲣ⸗</span> et <span class="coptic">ϫⲱ⸗</span> semblent avoir eu une forme abrégée qui s'est conservée dans les prépositions formées de ces mots: <span class="coptic">ϩⲓ-ⲧⲉⲛ-</span> «par le moyen de», <span class="coptic">ⲛⲁ-ϩⲣⲉⲛ-</span> «devant», <span class="coptic">ⲉ-ϫⲉⲛ-</span> «sur».</p>
+							<p class="fr">2. Les trois noms <span class="coptic">ⲧⲟⲧ⸗</span>, <span class="coptic">ϩⲣ⸗</span> et <span class="coptic">ϫⲱ⸗</span> semblent avoir eu une forme abrégée qui s'est conservée dans les prépositions formées de ces mots:</p>
+							<p class="en"></p>
+							<p><span class="coptic">ϩⲓ-ⲧⲉⲛ-</span></p>
+							<p class="fr">«par le moyen de»</p>
+							<p class="en"></p>
+							<p><span class="coptic">ⲛⲁ-ϩⲣⲉⲛ-</span></p>
+							<p class="fr">«devant»</p>
+							<p class="en"></p>
+							<p><span class="coptic">ⲉ-ϫⲉⲛ-</span></p>
+							<p class="fr">«sur»</p>
+							<p class="en"></p>
 						</div>
 					</div>
 				</div>
 				<div id="chapter_02" class="chapter">
 					<div class="chapter_title">
+						<div class="fr">
+							<h2>Chapitre II</h2>
+							<h3>Pronoms Personnels</h3>
+						</div>
 						<div class="en">
 							<h2>Chapter 2</h2>
-							<h3>Pronoms Personnels.</h3>
-						</div>
-						<div class="fr">
-							<h2>Chapter 2</h2>
-							<h3>Pronoms Personnels.</h3>
+							<h3>Personal Pronouns</h3>
 						</div>
 					</div>
-					<div id="058" data-section="58" class="wip">
+					<div id="058" data-section="58" class="needs-english">
 						<div class="section">
-							<p>I. Pronoms affixes.</p>
+							<p class="fr">I. Pronoms suffixes</p>
+							<p class="en"></p>
 							<table>
 								<tr>
-									<th colspan="3">Sing.</th>
-									<th colspan="3">Plur.</th>
-								</tr>
-								<tr>
-									<td>1.</td>
-									<td><span class="coptic">ⲓ</span> <span class="coptic">ⲧ</span></td>
+									<th>1.</th>
+									<td><span class="coptic">-ⲓ</span> <span class="coptic">-ⲧ</span></td>
+									<td>A.E. <span class="egypt-translit">-ꞽ</span></td>
 									<td><span class="arabic">ي</span></td>
-									<td>1.</td>
-									<td><span class="coptic">ⲛ</span></td>
-									<td><span class="arabic">نا</span></td>
 								</tr>
 								<tr>
-									<td>2m.</td>
-									<td><span class="coptic">ⲕ</span></td>
+									<th>2 m.</th>
+									<td><span class="coptic">-ⲕ</span></td>
+									<td>A.E. <span class="egypt-translit">-k</span></td>
 									<td><span class="arabic">كَ</span></td>
-									<td rowspan="2">2.</td>
-									<td rowspan="2"><span class="coptic">ⲧⲉⲛ</span></td>
-									<td rowspan="2"><span class="arabic">كُم</span></td>
 								</tr>
 								<tr>
-									<td>f.</td>
-									<td><i>rien ou</i> <span class="coptic">ⲓ</span></td>
+									<th>f.</th>
+									<td><i>rien ou</i> <span class="coptic">-ⲓ</span></td>
+									<td>A.E. <span class="egypt-translit">-ṯ</span></td>
 									<td><span class="arabic">كِ</span></td>
 								</tr>
 								<tr>
-									<td>3m.</td>
-									<td><span class="coptic">ϥ</span></td>
+									<th>3 m.</th>
+									<td><span class="coptic">-ϥ</span></td>
+									<td>A.E. <span class="egypt-translit">-f</span></td>
 									<td><span class="arabic">ه</span></td>
-									<td rowspan="2">3.</td>
-									<td rowspan="2"><span class="coptic">ⲟⲩ</span></td>
-									<td rowspan="2"><span class="arabic">هم</span></td>
 								</tr>
 								<tr>
-									<td>f.</td>
-									<td><span class="coptic">ⲥ</span></td>
+									<th>f.</th>
+									<td><span class="coptic">-ⲥ</span></td>
+									<td>A.E. <span class="egypt-translit">-s</span></td>
 									<td><span class="arabic">ها</span></td>
 								</tr>
 								<tr>
-									<td colspan="6">Neutre singulier: <span class="coptic">ⲥ</span>.</td>
+								<tr>
+									<th>1.</th>
+									<td><span class="coptic">-ⲛ</span></td>
+									<td>A.E. <span class="egypt-translit">-n</span></td>
+									<td><span class="arabic">نا</span></td>
+								</tr>
+									<th>2.</th>
+									<td><span class="coptic">-ⲧⲉⲛ</span></td>
+									<td>A.E. <span class="egypt-translit">-ṯn</span></td>
+									<td><span class="arabic">كُم</span></td>
+								</tr>
+								<tr>
+									<th>3.</th>
+									<td><span class="coptic">-ⲟⲩ</span></td>
+									<td>N.E. <span class="egypt-translit">-w</span></td>
+									<td><span class="arabic">هم</span></td>
+								</tr>
+								<tr>
+									<th>Neutre singulier:</th>
+									<td><span class="coptic">-ⲥ</span></td>
+									<td></td>
 								</tr>
 							</table>
 						</div>
 					</div>
-					<div id="059" data-section="59" class="wip">
+					<div id="059" data-section="59" class="needs-english">
 						<div class="section">
-							<p>Ces pronoms s'ajoutent à l'article (74), aux noms (54), aux verbes (280), aux prépositions, pour indiquer les personnes auxquelles se rapportent ces mots. C'est ce qu'on appelle la <i>suffixation</i>; elle se fait directement, sans intermédiaire, ou au moyen d'une voyelle qui sera indiquée pour chaque classe de mots.</p>
-							<p>Il importe de remarquer que <span class="coptic">ⲧ</span> de la première pers. du sing. n'était pas un pronom à l'origine. «En fait, il n'y a qu'un pronom du singulier, <i>i</i>; dans certains mots qui prenaient le suffixe <i>-tou</i>, ainsi <i>tot</i> «la main», <i>tot-tou-i</i>, <i>tot-t-i</i>, «ma main», est devenu <i>tot-t</i>, puis <i>tot</i> par chute de <i>-i</i> final; de même après les thèmes en <i>a</i> final, <i>pa-i</i> «mon», l'<i>i</i> est tombé et le thème est demeuré nu»<a href="#cite-footnote-chapter_02-001" class="footnote" id="footnote-chapter_02-001"><sup>[1]</sup></a>. Dans la suite, <span class="coptic">ⲧ</span> a été employé comme pronom par les Coptes.</p>
+							<p class="fr">Ces pronoms s'ajoutent à l'article (74), aux noms (54), aux verbes (280), aux prépositions, pour indiquer les personnes auxquelles se rapportent ces mots. C'est ce que l'on appelle la <i>suffixation</i>; elle se fait directement, sans intermédiaire, ou au moyen d'une voyelle qui sera indiquée pour chaque classe de mots.</p>
+							<p class="en"></p>
+							<p class="fr">Il importe de remarquer que <span class="coptic">ⲧ</span> de la première personne sing. n'était pas à l'origine un pronom. Le vrai pronom de cette personne est <span class="coptic">ⲓ</span>; il correspond à <span class="egypt-translit">-ꞽ</span> de l'ancienne langue, semi-consonne qui ne s'est conservée en copte qu'après les voyelles portant l'accent tonique. Il en résulte que tous les mots coptes se terminant par une consonne à l'état pronominal, doivent rester, en l'occurrence, sans suffixe du tout. Or, il arrive que la grande majorité de ces mots ont leur finale <span class="coptic">ⲧ</span>. C'est précisément ce radical qui a été, finalement, pris pour un pronom suffixe particular, applicable à tous les mots de cette catégorie.</p>
+							<p class="en"></p>
 						</div>
 					</div>
-					<div id="060" data-section="60" class="wip">
+					<div id="060" data-section="60" class="needs-english">
 						<div class="section">
-							<p>La 2 pl. a un pronom d'un fréquent usage <span class="coptic">-ⲑⲏⲛⲟⲩ</span> qui est toujours régime; c'est une forme pleine, qui exige devant elle une forme abrégée<a href="#cite-footnote-chapter_02-002" class="footnote" id="footnote-chapter_02-002"><sup>[2]</sup></a>.</p>
+							<p class="fr">La 2ème personne pl. a un pronom d'un fréquent usage <span class="coptic">-ⲑⲏⲛⲟⲩ</span> qui est toujours régime; c'est une forme pleine (dém. <span class="egypt-translit">tn. w</span>), qui exige devant elle une forme abrégée.</p>
+							<p class="en"></p>
 						</div>
 					</div>
-					<div id="061" data-section="61" class="wip">
+					<div id="061" data-section="61" class="needs-english">
 						<div class="section">
-							<p>Comme exemple, nous donnons ici la suffixation aux deux prépositions les plus usitées <span class="coptic">ⲉ- ⲉⲣⲟ⸗</span> «vers, à <span class="arabic">الى</span>», <span class="coptic">ⲛ̀- ⲛ⸗</span> «à <span class="arabic">لِ</span>»:</p>
-							<p>Sur <span class="coptic">ⲛ̀-</span> se modèlent la particule du génitif <span class="coptic">ⲛ̀ⲧⲉ- ⲛ̀⸗</span> «de» et la préposition <span class="coptic">ⲛⲉⲙ⸗</span> «avec».</p>
+							<p class="fr">Comme exemple, nous donnons ici la suffixation aux deux prépositions les plus usitées <span class="coptic">ⲉ- ⲉⲣⲟ⸗</span> «vers, à <span class="arabic">الى</span>» (A.E. <span class="egypt-translit">r- ꞽr⸗</span>), <span class="coptic">ⲛ̀- ⲛ⸗</span> «à <span class="arabic">لِ</span>» (A.E. <span class="egypt-translit">n-</span>):</p>
+							<p class="en"></p>
 							<table>
 								<tr>
-									<td>Sing.</td>
-									<td>1.</td>
+									<th>Sing.</th>
+									<th>1.</th>
 									<td><span class="coptic">ⲉⲣⲟⲓ</span></td>
+									<td><span class="egypt-translit">ꞽr.ꞽ</span></td>
 									<td><span class="arabic">الي</span></td>
+								</tr>
+								<tr>
+									<th></th>
+									<th>2. m.</th>
+									<td><span class="coptic">ⲉⲣⲟⲕ</span></td>
+									<td><span class="egypt-translit">ꞽr.k</span></td>
+									<td><span class="arabic">اليكَ</span></td>
+								</tr>
+								<tr>
+									<th></th>
+									<th>f.</th>
+									<td><span class="coptic">ⲉⲣⲟ</span></td>
+									<td><span class="egypt-translit">ꞽr.ṯ</span></td>
+									<td><span class="arabic">اليكِ</span></td>
+								</tr>
+								<tr>
+									<th></th>
+									<th>3. m.</th>
+									<td><span class="coptic">ⲉⲣⲟϥ</span></td>
+									<td><span class="egypt-translit">ꞽr.f</span></td>
+									<td><span class="arabic">اليه</span></td>
+								</tr>
+								<tr>
+									<th></th>
+									<th>f.</th>
+									<td><span class="coptic">ⲉⲣⲟⲥ</span></td>
+									<td><span class="egypt-translit">ꞽr.s</span></td>
+									<td><span class="arabic">اليها</span></td>
+								</tr>
+								<tr>
+									<th>Pl.</th>
+									<th>1.</th>
+									<td><span class="coptic">ⲉⲣⲟⲛ</span></td>
+									<td><span class="egypt-translit">ꞽr.n</span></td>
+									<td><span class="arabic">الينا</span></td>
+								</tr>
+								<tr>
+									<th></th>
+									<th>2.</th>
+									<td><span class="coptic">ⲉⲣⲱⲧⲉⲛ</span></td>
+									<td><span class="egypt-translit">ꞽr.ṯn</span></td>
+									<td><span class="arabic">اليكم</span></td>
+								</tr>
+								<tr>
+									<th></th>
+									<th>3.</th>
+									<td><span class="coptic">ⲉⲣⲱⲟⲩ</span></td>
+									<td><span class="egypt-translit">ꞽr.w</span></td>
+									<td><span class="arabic">اليهم</span></td>
+								</tr>
+							</table>
+							<table>
+								<tr>
+									<th>Sing.</th>
+									<th>1.</th>
 									<td><span class="coptic">ⲛⲏⲓ</span></td>
+									<td><span class="egypt-translit">n.ꞽ</span></td>
 									<td><span class="arabic">لي</span></td>
 								</tr>
 								<tr>
-									<td></td>
-									<td>2. m.</td>
-									<td><span class="coptic">ⲉⲣⲟⲕ</span></td>
-									<td><span class="arabic">اليكَ</span></td>
+									<th></th>
+									<th>2. m.</th>
 									<td><span class="coptic">ⲛⲁⲕ</span></td>
+									<td><span class="egypt-translit">n.k</span></td>
 									<td><span class="arabic">لكَ</span></td>
 								</tr>
 								<tr>
-									<td></td>
-									<td>f.</td>
-									<td><span class="coptic">ⲉⲣⲟ</span></td>
-									<td><span class="arabic">اليكِ</span></td>
+									<th></th>
+									<th>f.</th>
 									<td><span class="coptic">ⲛⲉ</span></td>
+									<td><span class="egypt-translit">n.ṯ</span></td>
 									<td><span class="arabic">لكِ</span></td>
 								</tr>
 								<tr>
-									<td></td>
-									<td>3. m.</td>
-									<td><span class="coptic">ⲉⲣⲟϥ</span></td>
-									<td><span class="arabic">اليه</span></td>
+									<th></th>
+									<th>3. m.</th>
 									<td><span class="coptic">ⲛⲁϥ</span></td>
+									<td><span class="egypt-translit">n.f</span></td>
 									<td><span class="arabic">لهُ</span></td>
 								</tr>
 								<tr>
-									<td></td>
-									<td>f.</td>
-									<td><span class="coptic">ⲉⲣⲟⲥ</span></td>
-									<td><span class="arabic">اليها</span></td>
+									<th></th>
+									<th>f.</th>
 									<td><span class="coptic">ⲛⲁⲥ</span></td>
+									<td><span class="egypt-translit">n.s</span></td>
 									<td><span class="arabic">لها</span></td>
 								</tr>
 								<tr>
-									<td>Pl.</td>
-									<td>1.</td>
-									<td><span class="coptic">ⲉⲣⲟⲛ</span></td>
-									<td><span class="arabic">الينا</span></td>
+									<th>Pl.</th>
+									<th>1.</th>
 									<td><span class="coptic">ⲛⲁⲛ</span></td>
+									<td><span class="egypt-translit">n.n</span></td>
 									<td><span class="arabic">لنا</span></td>
 								</tr>
 								<tr>
-									<td></td>
-									<td>2.</td>
-									<td><span class="coptic">ⲉⲣⲱⲧⲉⲛ</span></td>
-									<td><span class="arabic">اليكم</span></td>
+									<th></th>
+									<th>2.</th>
 									<td><span class="coptic">ⲛⲱⲧⲉⲛ</span></td>
+									<td><span class="egypt-translit">n.ṯn</span></td>
 									<td><span class="arabic">لكُم</span></td>
 								</tr>
 								<tr>
-									<td></td>
-									<td>3.</td>
-									<td><span class="coptic">ⲉⲣⲱⲟⲩ</span></td>
-									<td><span class="arabic">اليهم</span></td>
+									<th></th>
+									<th>3.</th>
 									<td><span class="coptic">ⲛⲱⲟⲩ</span></td>
+									<td><span class="egypt-translit">n.w</span></td>
 									<td><span class="arabic">لهُم</span></td>
 								</tr>
 							</table>
+							<p class="fr">Sur <span class="coptic">ⲛ̀-</span> se modèlent la particule du génitif <span class="coptic">ⲛ̀ⲧⲉ- ⲛ̀⸗</span> «de» et la préposition <span class="coptic">ⲛⲉⲙ- ⲛⲉⲙⲁ⸗</span> «avec».</p>
+							<p class="en"></p>
 						</div>
 					</div>
-					<div id="062" data-section="62" class="wip">
+					<div id="062" data-section="62" class="needs-english">
 						<div class="section">
-							<p>II. Pronoms absolus.</p>
+							<p class="fr">II. Pronoms absolus</p>
+							<p class="en"></p>
 							<table>
 								<tr>
+									<th></th>
+									<th></th>
 									<th colspan="3">Sing.</th>
 									<th colspan="3">Pl.</th>
 								</tr>
 								<tr>
-									<td>1.</td>
+									<th>1.</th>
+									<th></th>
 									<td><span class="coptic">ⲁⲛⲟⲕ</span></td>
+									<td>A.E. <span class="egypt-translit">ꞽnk</span></td>
 									<td>moi</td>
-									<td>1.</td>
 									<td><span class="coptic">ⲁⲛⲟⲛ</span></td>
+									<td>N.E. <span class="egypt-translit">ꞽnn</span></td>
 									<td>nous</td>
 								</tr>
 								<tr>
-									<td>2 m.</td>
+									<th rowspan="2">2</th>
+									<th>m.</th>
 									<td><span class="coptic">ⲛ̀ⲑⲟⲕ</span></td>
+									<td>A.E. <span class="egypt-translit">nt.k</span></td>
 									<td>toi</td>
-									<td rowspan="2">2.</td>
 									<td rowspan="2"><span class="coptic">ⲛ̀ⲑⲱⲧⲉⲛ</span></td>
+									<td rowspan="2">A.E. <span class="egypt-translit">nt.ṯn</span></td>
 									<td rowspan="2">vous</td>
 								</tr>
 								<tr>
-									<td>f.</td>
+									<th>f.</th>
 									<td><span class="coptic">ⲛ̀ⲑⲟ</span></td>
-									<td>toi <i>f.</i></td>
+									<td>A.E. <span class="egypt-translit">nt.ṯ</span></td>
+									<td>toi</td>
 								</tr>
 								<tr>
-									<td>3 m.</td>
+									<th rowspan="2">3</th>
+									<th>m.</th>
 									<td><span class="coptic">ⲛ̀ⲑⲟϥ</span></td>
+									<td>A.E. <span class="egypt-translit">nt.f</span></td>
 									<td>lui</td>
-									<td rowspan="2">3.</td>
 									<td rowspan="2"><span class="coptic">ⲛ̀ⲑⲱⲟⲩ</span></td>
-									<td rowspan="2">eux, elles.</td>
+									<td rowspan="2">N.E. <span class="egypt-translit">nt.w</span></td>
+									<td rowspan="2">eux, elles</td>
 								</tr>
 								<tr>
-									<td>f.</td>
+									<th>f.</th>
 									<td><span class="coptic">ⲛ̀ⲑⲟⲥ</span></td>
+									<td>A.E. <span class="egypt-translit">nt.s</span></td>
 									<td>elle</td>
 								</tr>
 							</table>
 						</div>
 					</div>
-					<div id="063" data-section="63" class="wip">
+					<div id="063" data-section="63" class="needs-english">
 						<div class="section">
-							<p>Le pronom personnel absolu remplit deux fonctions principales: 1. Il est sujet et attribut dans la proposition nominale (355); 2. il s'emploie comme apposition à un autre pronom pour en renforcer le sens (<span class="arabic">توكيد</span>).</p>
-							<p>Apposition au sujet:</p>
+							<p class="fr">Le pronom personnel absolu remplit deux fonctions principales:</p>
+							<p class="en"></p>
+							<ol>
+								<li>
+									<p class="fr">il est sujet et attribut dans la proposition nominale (355)</p>
+									<p class="en"></p>
+								</li>
+								<li>
+									<p class="fr">il s'emploie comme apposition à un autre pronom pour en renforcer le sens (<span class="arabic">توكيد</span>)</p>
+									<p class="en"></p>
+								</li>
+							</ol>
+							<p class="fr">Apposition au sujet:</p>
+							<p class="en"></p>
 							<blockquote class="example">
-								<p><span class="coptic">ⲫⲁⲓ ⲡⲉ ⲫⲏ ⲉⲧⲁⲓϫⲟⲥ ⲁⲛⲟⲕ ⲉⲑⲃⲏⲧϥ</span></p>
-								<p>«c'est de celui-là que j'ai parlé moi-même»<a href="#cite-footnote-chapter_02-003" class="footnote" id="footnote-chapter_02-003"><sup>[1]</sup></a>.</p>
+								<p><span class="coptic">ⲫⲁⲓ ⲡⲉ ⲫⲏ ⲉⲧⲁⲓϫⲟⲥ ⲁⲛⲟⲕ ⲉⲑⲃⲏⲧϥ</span> <span class="fr">(Jean 1, 30)</span><span class="en">(John 1:30)</span></p>
+								<p class="fr">«c'est de celui-là que j'ai parlé moi-même»</p>
+								<p class="en"></p>
 							</blockquote>
 							<blockquote class="example">
-								<p><span class="coptic">ⲁⲓⲉⲙⲓ ϫⲉ ⲕⲉⲣϩⲟϯ ⲛ̀ⲑⲟⲕ ϧⲁⲧϩⲏ ⲙ̀ⲫⲛⲟⲩϯ</span></p>
-								<p>«je sais que tu crains Dieu, toi»<a href="#cite-footnote-chapter_02-004" class="footnote" id="footnote-chapter_02-004"><sup>[2]</sup></a>.</p>
+								<p><span class="coptic">ⲁⲓⲉⲙⲓ ϫⲉ ⲕⲉⲣϩⲟϯ ⲛ̀ⲑⲟⲕ ϧⲁⲧϩⲏ ⲙ̀ⲫⲛⲟⲩϯ</span> <span class="fr">(Gen. 22, 12)</span><span class="en">(Genesis 22:12)</span></p>
+								<p class="fr">«je sais que tu crains Dieu, toi»</p>
+								<p class="en"></p>
 							</blockquote>
 						</div>
 					</div>
-					<div id="064" data-section="64" class="wip">
+					<div id="064" data-section="64" class="needs-english">
 						<div class="section">
-							<p>Apposition au complément:</p>
+							<p class="fr">Apposition au complément:</p>
+							<p class="en"></p>
 							<blockquote class="example">
-								<p><span class="coptic">ⲫⲁⲓ ⲁⲛⲟⲕ ⲉⲧⲁⲩⲭⲁⲧ ⲛⲁϥ ⲛ̀ⲣⲉϥϩⲓⲱⲓϣ</span></p>
-								<p>l'Evangile «pour lequel on m'a établi moi-même prédicateur»<a href="#cite-footnote-chapter_02-005" class="footnote" id="footnote-chapter_02-005"><sup>[3]</sup></a>.</p>
+								<p><span class="coptic">ⲫⲁⲓ ⲁⲛⲟⲕ ⲉⲧⲁⲩⲭⲁⲧ ⲛⲁϥ ⲛ̀ⲣⲉϥϩⲓⲱⲓϣ</span> <span class="fr">(2 Tim. 1, 11)</span><span class="en">(2 Timothy 1:11)</span></p>
+								<p class="fr">l'Evangile «pour lequel on m'a établi moi-même prédicateur»</p>
+								<p class="en"></p>
 							</blockquote>
-							<p>Apposition à l'adjectif possessif:</p>
+							<p class="fr">Apposition à l'adjectif possessif:</p>
+							<p class="en"></p>
 							<blockquote class="example">
-								<p><span class="coptic">ⲛⲉⲛ-ⲏⲟⲩ ⲁⲛⲟⲛ</span></p>
-								<p>«nos maisons à nous»<a href="#cite-footnote-chapter_02-006" class="footnote" id="footnote-chapter_02-006"><sup>[4]</sup></a>.</p>
+								<p><span class="coptic">ⲛⲉⲛ-ⲏⲟⲩ ⲁⲛⲟⲛ</span> <span class="fr">(Ex. 12, 27)</span><span class="en">(Exodus 12:27)</span></p>
+								<p class="fr">«nos maisons à nous»</p>
+								<p class="en"></p>
 							</blockquote>
 						</div>
 					</div>
-					<div id="065" data-section="65" class="wip">
+					<div id="065" data-section="65" class="needs-english">
 						<div class="section">
-							<p>III. Génitif et accusatif du pronom personnel.</p>
+							<p class="fr">III. Génitif et accusatif du pronom personnel</p>
+							<p class="en"></p>
 							<table>
 								<tr>
+									<th></th>
+									<th></th>
 									<th colspan="2">Sing.</th>
 									<th colspan="2">Pl.</th>
 								</tr>
 								<tr>
-									<td>1.</td>
+									<th>1.</th>
+									<th></th>
 									<td><span class="coptic">ⲙ̀ⲙⲟⲓ</span></td>
-									<td>1.</td>
+									<td><span class="egypt-translit">n-ꞽm.ꞽ</span></td>
 									<td><span class="coptic">ⲙ̀ⲙⲟⲛ</span></td>
+									<td><span class="egypt-translit">n-ꞽm.n</span></td>
 								</tr>
 								<tr>
-									<td>2 m.</td>
+									<th rowspan="2">2</th>
+									<th>m.</th>
 									<td><span class="coptic">ⲙ̀ⲙⲟⲕ</span></td>
-									<td rowspan="2">2.</td>
+									<td><span class="egypt-translit">n-ꞽm.k</span></td>
 									<td rowspan="2"><span class="coptic">ⲙ̀ⲙⲱⲧⲉⲛ</span></td>
+									<td rowspan="2"><span class="egypt-translit">n-ꞽm.ṯn</span></td>
 								</tr>
 								<tr>
-									<td>f.</td>
+									<th>f.</th>
 									<td><span class="coptic">ⲙ̀ⲙⲟ</span></td>
+									<td><span class="egypt-translit">n-ꞽm.ṯ</span></td>
 								</tr>
 								<tr>
-									<td>3 m.</td>
+									<th rowspan="2">3</th>
+									<th>m.</th>
 									<td><span class="coptic">ⲙ̀ⲙⲟϥ</span></td>
-									<td rowspan="2">3.</td>
+									<td><span class="egypt-translit">n-ꞽm.f</span></td>
 									<td rowspan="2"><span class="coptic">ⲙ̀ⲙⲱⲟⲩ</span></td>
+									<td rowspan="2"><span class="egypt-translit">n-ꞽm.w</span></td>
 								</tr>
 								<tr>
-									<td>f.</td>
+									<th>f.</th>
 									<td><span class="coptic">ⲙ̀ⲙⲟⲥ</span></td>
+									<td><span class="egypt-translit">n-ꞽm.s</span></td>
 								</tr>
 							</table>
 						</div>
