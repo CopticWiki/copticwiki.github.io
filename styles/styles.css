@@ -224,6 +224,11 @@ sup.non-italic {
 	font-family: rk_aramaic;
 	color: coral;
 	color: #eeeeee88;
+	font-size: 1.2em;
+	line-height: 0;
+	color: springgreen;
+	color: #ded97b;
+	color: #ff9090;
 }
 
 .amharic {
