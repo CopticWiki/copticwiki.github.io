@@ -49,6 +49,7 @@ span.en:empty:before {
 span.fr,
 span.en {
 	color: #ffffffbb;
+	color: #a0c7eebb;
 }
 
 .section {
@@ -58,11 +59,6 @@ span.en {
 }
 .scroll-horizontal {
 	overflow-x: auto;
-}
-
-[data-section="233"] .section {
-	//width: 50%;
-	//overflow-x: auto;
 }
 
 * {
@@ -132,6 +128,18 @@ div[data-section] {
 	//position: relative;
 	//outline: 1px solid #ffffff22;
 	//padding: 1em 1em 0;
+}
+
+div[data-section] ol li ul {
+	padding-left: 0em;
+}
+
+div[data-section] ol li ul li {
+	list-style-type: none;
+}
+
+div[data-section] ol li ul li blockquote.example {
+	margin-left: 0em;
 }
 
 [data-section].needs-english .section {
