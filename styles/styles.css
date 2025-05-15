@@ -1,8 +1,18 @@
 @import url("./fonts.css");
 
+.author {
+	font-variant: small-caps;
+}
+
+
+
 * {
 	box-sizing: border-box;
 }
+
+
+
+
 
 ::placeholder {
 	//color: orangered;
@@ -27,6 +37,53 @@ body {
 	color: #938282;
 	background: #0d1117;
 }
+
+
+
+#home-container {
+	display: grid;
+	padding: .5em;
+	border: 1px solid #ffffff22;
+	grid-template-columns: 1fr 1fr;
+	gap: .5em;
+}
+
+@media screen and (max-width: 480px) {
+	h1 {
+		text-align: center;
+	}
+	#home-container {
+		grid-template-columns: 1fr;
+	}
+}
+
+.home-section {
+	font-size: 1.5em;
+	color: #b49f9d;
+	color: #a2947a;
+	background: linear-gradient(to right, #395f7830, #5a385d30);
+	padding: 0em .5em;
+	border: 1px solid color-mix(in srgb, currentColor 50%, transparent);
+}
+
+.home-section a {
+	text-decoration: none;
+}
+
+.home-section p.book-title,
+.home-section p.author {
+	margin: .5em 0
+}
+
+.home-section p.book-title {
+	font-weight: 500;
+	margin-bottom: 0em;
+}
+
+.home-section p.author {
+	//margin-top: 0em;
+}
+
 
 #crum_sample {
 	//background: linear-gradient(145deg, #ffffff22, transparent);
@@ -128,11 +185,6 @@ em {
 b {
 	font-family: bold;
 	color: #7baba6;
-}
-
-
-.author {
-	font-variant: small-caps;
 }
 
 .coptic.headword {
