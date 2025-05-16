@@ -29,11 +29,7 @@
 	transition: opacity .5s;
 }
 
-th {
-	background: #12306d;
-	color: white;
-	font-weight: normal;
-}
+
 
 
 p.en:empty:before {
@@ -359,21 +355,107 @@ h4 {
 
 /*div[id^="lesson_"] table,*/
 table {
-	//border-collapse: collapse;
-	border-spacing: 0;
-	border: 1px solid steelblue;
-	border-radius: 5px;
-	width: 100%;
+	border-collapse: collapse;
+	min-width: 80%;
+	margin: 0 auto;
 	margin-block-start: 1em;
 	margin-block-end: 1em;
+}
+
+table + table {
+	margin-top: 2em;
+}
+
+table.generic tr:nth-child(2) th:nth-child(2) {
+	visibility: visible;
+}
+
+table.generic tr:nth-child(3) th:nth-child(2),
+table.generic tr:nth-child(4) th:nth-child(1),
+table.generic tr:nth-child(5) th:nth-child(2),
+table.generic tr:nth-child(6) th:nth-child(1) {
+	background: #0e545f;
+}
+
+table.generic tr:nth-child(4) th:nth-child(1),
+table.generic tr:nth-child(5) th:nth-child(2),
+table.generic tr:nth-child(6) th:nth-child(1) {
+	border-top: 1px solid #ffffff22;
+}
+
+table.generic tr:nth-child(1) th:nth-child(3) {
+	border-left: 1px solid #ffffff22;
+}
+
+th {
+	background: #12306d;
+	color: white;
+	font-weight: normal;
+}
+
+th:empty {
+	visibility: hidden;
 }
 
 /*div[id^="lesson_"] td,
 #lesson_01 th*/
 td, th {
-	border: 1px solid #ffffff22;
 	padding: .5em;
 }
+
+th + td {
+	border-left: 0;
+}
+
+td {
+	border: 1px solid #474747;
+	border: 1px solid #ffffff22;
+	background: #ffffff11;
+}
+td:last-child {
+	border-right: 0;
+}
+
+tr:nth-child(2) td {
+	border-top: 0;
+}
+
+tr:last-child td {
+	border-bottom: 0;
+}
+
+tr td[rowspan="2"] {
+	border-bottom: 0;
+	//background: #ffffff22;
+}
+
+tr:first-child th:nth-child(2) {
+	border-top-left-radius: .5em;
+}
+
+tr:first-child th:nth-child(3) {
+	border-top-right-radius: .5em;
+}
+
+tr th:first-child {
+	//border-right: 1px solid gold;
+}
+
+tr th:nth-child(2) {
+	//border-right: 5px solid;
+	//display: none;
+}
+
+sub {
+	//position: relative;
+	//left: 0;
+}
+
+sub + sup {
+	//position: relative;
+	//left: 0;
+}
+
 
 div[id^="lesson_"] table th:first-child,
 div[id^="lesson_"] table tr:first-child td:first-child {
