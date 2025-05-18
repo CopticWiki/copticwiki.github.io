@@ -350,7 +350,7 @@ div[id^="lesson_"] h3,
 
 
 table {
-	font-size: clamp(1rem, 0rem + 3.2vw, 1.8rem);
+	font-size: clamp(1rem, 0rem + 3.2vw, 1.6rem);
 	border-collapse: collapse;
 	//min-width: 80%;
 	margin: 0em auto;
@@ -359,6 +359,10 @@ table {
 
 table + table {
 	margin-top: 2em;
+}
+
+table.align-gender tr:is(:nth-child(5), :nth-child(7)) td:nth-child(1) {
+	text-align: right;
 }
 
 table.generic tr :nth-child(6) {
