@@ -8,10 +8,35 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<meta charset="UTF-8">
 		<style>
+			#greek_words {
+			}
+			#greek_words .coptic {
+				//font-size: 1rem;
+				color: #508f45;
+			}
 			
-			li.coptic,
-			li.it,
-			li.en {
+			#greek_words .greek {
+				//font-size: 1rem;
+				color: #4994a9;
+			}
+			
+			#greek_words > ul {
+				padding: 0em;
+			}
+			
+			#greek_words > ul > li {
+				display: inline-flex;
+				font-size: 1.5em;
+			}
+			
+			#greek_words > ul > li > ul {
+				padding: .5em;
+				//background: #ffffff11;
+				//border: 1px solid #ffffff33;
+				margin: .5em 0 0;
+			}
+			
+			#container ol :is(li.coptic, li.it, li.en) {
 				font-size: 1.5em;
 			}
 			
@@ -68,6 +93,347 @@
 		<h1>CopticWiki</h1>
 		<h2>Life of Longinus and Lucius WIP</h2>
 		<div id="container">
+			Greek words:
+			<div id="greek_words">
+				<ul>
+					<li>
+						<ul>
+							<li class="coptic">ⲃⲓⲟⲥ</li>
+							<li class="greek">βίος</li>
+						</ul>
+					</li>
+					<li>
+						<ul>
+							<li class="coptic">ⲡⲟⲗⲓⲧⲉⲓⲁ</li>
+							<li class="greek">πολιτεία</li>
+						</ul>
+					</li>
+					<li>
+						<ul>
+							<li class="coptic">ⲡⲟⲗⲓⲧⲉⲩⲙⲁ</li>
+							<li class="greek">πολίτευμα</li>
+						</ul>
+					</li>
+					<li>
+						<ul>
+							<li class="coptic">ⲡⲛⲉⲩⲙⲁⲧⲓⲕⲟⲥ</li>
+							<li class="greek">πνευματικός</li>
+						</ul>
+					</li>
+					<li>
+						<ul>
+							<li class="coptic">ⲁⲥⲕⲏⲧⲏⲥ</li>
+							<li class="greek">ἀσκητής</li>
+						</ul>
+					</li>
+					<li>
+						<ul>
+							<li class="coptic">ⲉⲓⲣⲏⲛⲏ</li>
+							<li class="greek">εἰρήνη</li>
+						</ul>
+					</li>
+					<li>
+						<ul>
+							<li class="coptic">ⲫⲟⲣⲉⲓ</li>
+							<li class="greek">φορέω</li>
+						</ul>
+					</li>
+					<li>
+						<ul>
+							<li class="coptic">ⲥⲁⲣⲝ</li>
+							<li class="greek">σάρξ</li>
+						</ul>
+					</li>
+					<li>
+						<ul>
+							<li class="coptic">ⲉⲥⲧⲱ</li>
+							<li class="greek">ἔστω</li>
+						</ul>
+					</li>
+					<li>
+						<ul>
+							<li class="coptic">ⲉⲡⲁⲓⲛⲟⲥ</li>
+							<li class="greek">ἔπαινος</li>
+						</ul>
+					</li>
+					<li>
+						<ul>
+							<li class="coptic">ⲕⲁⲧⲟⲣⲑⲱⲙⲁ</li>
+							<li class="greek">κατόρθωμα</li>
+						</ul>
+					</li>
+					<li>
+						<ul>
+							<li class="coptic">ⲥⲭⲉⲇⲟⲛ</li>
+							<li class="greek">σχεδόν</li>
+						</ul>
+					</li>
+					<li>
+						<ul>
+							<li class="coptic">ⲭⲣⲉⲓⲁ</li>
+							<li class="greek">χρεία</li>
+						</ul>
+					</li>
+					<li>
+						<ul>
+							<li class="coptic">ⲁⲥⲱⲙⲁⲧⲟⲥ</li>
+							<li class="greek">ἀσώματος</li>
+						</ul>
+					</li>
+					<li>
+						<ul>
+							<li class="coptic">ⲁⲅⲅⲉⲗⲓⲕⲟⲛ</li>
+							<li class="greek">ἀγγελικός</li>
+						</ul>
+					</li>
+					<li>
+						<ul>
+							<li class="coptic">ⲕⲱⲗⲩ</li>
+							<li class="greek">κωλύω</li>
+						</ul>
+					</li>
+					<li>
+						<ul>
+							<li class="coptic">ϩⲓⲥⲁⲅⲅⲉⲗⲟⲥ</li>
+							<li class="greek">ἰσάγγελος</li>
+						</ul>
+					</li>
+					<li>
+						<ul>
+							<li class="coptic">ϩⲓⲉⲣⲟⲥ</li>
+							<li class="greek">?</li>
+						</ul>
+					</li>
+					<li>
+						<ul>
+							<li class="coptic">ⲁⲡⲟⲥⲧⲟⲗⲟⲥ</li>
+							<li class="greek">ἀπόστολος</li>
+						</ul>
+					</li>
+					<li>
+						<ul>
+							<li class="coptic">ⲥⲱⲧⲏⲣ</li>
+							<li class="greek">σωτήρ</li>
+						</ul>
+					</li>
+					<li>
+						<ul>
+							<li class="coptic">ⲁⲑⲗⲟⲛ</li>
+							<li class="greek">ἆθλον</li>
+						</ul>
+					</li>
+					<li>
+						<ul>
+							<li class="coptic">ⲁⲅⲱⲛ</li>
+							<li class="greek">?</li>
+						</ul>
+					</li>
+					<li>
+						<ul>
+							<li class="coptic">ⲁⲡⲟⲣⲉⲓ</li>
+							<li class="greek">ἀπορέω</li>
+						</ul>
+					</li>
+					<li>
+						<ul>
+							<li class="coptic">ⲁⲥⲑⲉⲛⲉⲓⲁ</li>
+							<li class="greek">ἀσθένεια</li>
+						</ul>
+					</li>
+					<li>
+						<ul>
+							<li class="coptic">ⲁⲣⲉⲧⲏ</li>
+							<li class="greek">ἀρετή</li>
+						</ul>
+					</li>
+					<li>
+						<ul>
+							<li class="coptic">ⲡⲉⲧⲣⲁ</li>
+							<li class="greek">πέτρα</li>
+						</ul>
+					</li>
+					<li>
+						<ul>
+							<li class="coptic">ⲉⲡⲓⲭⲏⲣⲓ</li>
+							<li class="greek">ἐπιχειρέω</li>
+						</ul>
+					</li>
+					<li>
+						<ul>
+							<li class="coptic">ⲥⲩⲅⲅⲛⲱⲙⲏ</li>
+							<li class="greek">συγγνώμη</li>
+						</ul>
+					</li>
+					<li>
+						<ul>
+							<li class="coptic">ⲟⲡⲧⲁⲥⲓⲁ</li>
+							<li class="greek">ὀπτασία</li>
+						</ul>
+					</li>
+					<li>
+						<ul>
+							<li class="coptic">ⲡⲓⲥⲧⲓⲥ</li>
+							<li class="greek">πίστις</li>
+						</ul>
+					</li>
+					<li>
+						<ul>
+							<li class="coptic">ⲧⲉⲗⲉⲓⲁ</li>
+							<li class="greek">τέλειος</li>
+						</ul>
+					</li>
+					<li>
+						<ul>
+							<li class="coptic">ⲕⲣⲓⲙⲁ</li>
+							<li class="greek">κρίμα</li>
+						</ul>
+					</li>
+					<li>
+						<ul>
+							<li class="coptic">ⲁⲡⲉⲓⲗⲉ</li>
+							<li class="greek">ἀπειλέω</li>
+						</ul>
+					</li>
+					<li>
+						<ul>
+							<li class="coptic">ϩⲟⲗⲱⲥ</li>
+							<li class="greek">ὅλως</li>
+						</ul>
+					</li>
+					<li>
+						<ul>
+							<li class="coptic">ⲛⲟⲏⲧⲟⲥ</li>
+							<li class="greek">νοητός</li>
+						</ul>
+					</li>
+					<li>
+						<ul>
+							<li class="coptic">ⲟⲩⲛ</li>
+							<li class="greek">οὖν</li>
+						</ul>
+					</li>
+					<li>
+						<ul>
+							<li class="coptic">ⲫⲑⲟⲛⲉⲓ</li>
+							<li class="greek">φθονέω</li>
+						</ul>
+					</li>
+					<li>
+						<ul>
+							<li class="coptic">ⲯⲩⲭⲏ</li>
+							<li class="greek">ψυχή</li>
+						</ul>
+					</li>
+					<li>
+						<ul>
+							<li class="coptic">ⲙⲉⲣⲟⲥ</li>
+							<li class="greek">μέρος</li>
+						</ul>
+					</li>
+					<li>
+						<ul>
+							<li class="coptic">ⲙⲁⲗⲓⲥⲧⲁ</li>
+							<li class="greek">μάλιστα</li>
+						</ul>
+					</li>
+					<li>
+						<ul>
+							<li class="coptic">ⲕⲏⲣⲩⲝ</li>
+							<li class="greek">κῆρυξ</li>
+						</ul>
+					</li>
+					<li>
+						<ul>
+							<li class="coptic">ⲡⲁⲣⲁⲅⲅⲉⲗⲉ</li>
+							<li class="greek">παραγγέλλω</li>
+						</ul>
+					</li>
+					<li>
+						<ul>
+							<li class="coptic">ⲁⲛⲁⲥⲧⲣⲟⲫⲏ</li>
+							<li class="greek">?</li>
+						</ul>
+					</li>
+					<li>
+						<ul>
+							<li class="coptic">ⲱⲫⲉⲗⲉⲓⲁ</li>
+							<li class="greek">ὠφέλεια</li>
+						</ul>
+					</li>
+					<li>
+						<ul>
+							<li class="coptic">ⲡⲟⲗⲓⲧⲉⲩⲉ</li>
+							<li class="greek">πολιτεύω</li>
+						</ul>
+					</li>
+					<li>
+						<ul>
+							<li class="coptic">ⲡⲁⲧⲣⲓⲁⲣⲭⲏⲥ</li>
+							<li class="greek">πατριάρχης</li>
+						</ul>
+					</li>
+					<li>
+						<ul>
+							<li class="coptic">ⲡⲁⲗⲁⲓⲁ</li>
+							<li class="greek">παλαιός</li>
+						</ul>
+					</li>
+					<li>
+						<ul>
+							<li class="coptic">ⲇⲓⲁⲑⲏⲕⲏ</li>
+							<li class="greek">διαθήκη</li>
+						</ul>
+					</li>
+					<li>
+						<ul>
+							<li class="coptic">ⲕⲗⲏⲣⲟⲛⲟⲙⲉⲓ</li>
+							<li class="greek">κληρονομέω</li>
+						</ul>
+					</li>
+					<li>
+						<ul>
+							<li class="coptic">ⲁⲛⲁⲅⲕⲁⲓⲟⲛ</li>
+							<li class="greek">ἀναγκαῖος</li>
+						</ul>
+					</li>
+					<li>
+						<ul>
+							<li class="coptic">ⲁⲣⲭⲉⲥⲑⲁⲓ</li>
+							<li class="greek">ἄρχω</li>
+						</ul>
+					</li>
+					<li>
+						<ul>
+							<li class="coptic">ⲇⲓⲕⲁⲓⲟⲥ</li>
+							<li class="greek">δίκαιος</li>
+						</ul>
+					</li>
+					<li>
+						<ul>
+							<li class="coptic">ⲉⲩⲫⲣⲁⲛⲉ</li>
+							<li class="greek">εὐφραίνω</li>
+						</ul>
+					</li>
+					<li>
+						<ul>
+							<li class="coptic">ⲥⲟⲫⲟⲥ</li>
+							<li class="greek">σοφός</li>
+						</ul>
+					</li>
+					<li>
+						<ul>
+							<li class="coptic">ⲗⲁⲩⲣⲁ</li>
+							<li class="greek">λαύρα</li>
+						</ul>
+					</li>
+					<li>
+						<ul>
+							<li class="coptic"></li>
+							<li class="greek"></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
 			<h2>Part 1</h2>
 			<ul>
 				<li>Ch. 0
@@ -76,14 +442,14 @@
 							<ul>
 								<li class="coptic">ⲡⲃⲓⲟⲥ ⲁⲩⲱ ⲧⲡⲟⲗⲏⲧⲓⲁ ⲛ̄ⲛ̄ⲉⲓⲟⲧⲉ ⲉⲧⲟⲩⲁⲁⲃ ⲉⲧⲧⲁⲓⲏⲩ ⲛ̄ⲁⲥⲕⲏⲧⲏⲥ, ⲁⲡⲁ ⲗⲟⲅⲅⲓⲛⲟⲥ ⲙⲛ̄ⲁⲡⲁ ⲗⲟⲩⲅⲓⲟⲥ ⲡⲉϥⲉⲓⲱⲧ ⲙ̄ⲡⲛⲉⲩⲙⲁⲧⲓⲕⲟⲥ.</li>
 								<li class="it">La vita e la “politeia” dei santi padri onorati gli asceti apa Longino e apa Lucio, suo padre spirituale.</li>
-								<li class="en">The life and conduct of our dear holy ascetic fathers, Apa Longinus and Apa Lucius, his spiritual father.</li>
+								<li class="en">The life and conduct of our honorable ascetic holy fathers, Apa Longinus and Apa Lucius, his spiritual father.</li>
 							</ul>
 						</li>
 						<li>
 							<ul>
 								<li class="coptic">ⲛⲧⲁⲩϫⲱⲕ ⲇⲉ ⲉⲃⲟⲗ ⲙ̄ⲡⲉⲩⲃⲓⲟⲥ ⲉⲧⲧⲁⲓⲏⲩ ⲛ̄ⲥⲟⲩⲥⲛⲁⲩ ⲙ̄ⲡⲉⲃⲟⲧ ⲙϣⲓⲣ, ϩⲛ̄ⲟⲩⲉⲓⲣⲏⲛⲏ ⲛ̄ⲧⲉⲡⲛⲟⲩⲧⲉ. ϩⲁⲙⲏⲛ.</li>
 								<li class="it">Essi compirono la loro vita onorata il giorno 2 del mese di Mescir. Nella pace del Signore. Amen.</li>
-								<li class="en">And their dear lives came to an end on the 2nd day of the month of Emshir, through God's peace. Amen.</li>
+								<li class="en">Their dear lives concluded on the 2nd day of the month of Emshir, through God's peace. Amen.</li>
 							</ul>
 						</li>
 					</ol>
@@ -94,35 +460,35 @@
 							<ul>
 								<li class="coptic">ⲛⲉⲛⲧⲁⲩϫⲱⲕ ⲙⲉⲛ ⲉⲃⲟⲗ ⲛ̄ϩⲉⲛⲡⲟⲗⲏϯⲁ ⲉⲩⲧⲟⲟⲙⲉ ⲉϩⲉⲛⲣⲱⲙⲉ ⲉⲩⲫⲟⲣⲉⲓ ⲛⲧⲥⲁⲣⲝ,</li>
 								<li class="it">Quelli che compirono delle “politeia” commisurate a uomini carnali,</li>
-								<li class="en"></li>
+								<li class="en">Indeed, those who have achieved conduct fitting for flesh-bearing men,</li>
 							</ul>
 						</li>
 						<li>
 							<ul>
 								<li class="coptic">ⲉⲥⲧⲱ ⲇⲉ ϩⲉⲛⲗⲁⲥ ⲛ ⲥⲁⲣⲝ ϫⲱ ⲉⲣⲟⲟⲩ ⲛ̄ϩⲉⲛⲁⲓⲡⲁⲓⲛⲟⲥ, ⲛⲉⲛⲧⲁⲩⲣ̄-ⲡⲉⲧⲡⲉ ⲙ̄ⲡϣⲓ ⲛ̄ⲛ̄ⲣⲱⲙⲉ ϩⲛ̄ⲧⲉⲩⲡⲟⲗⲏϯⲁ, ⲁⲩⲱ ⲁ-ⲛⲉⲩⲕⲁⲧⲟⲣⲑⲟⲙⲁ ⲣ̄-ⲡⲉⲧⲡⲉ ⲙ̄ⲡⲉϩⲣⲟϣ ⲛ̄ⲛⲉⲧⲫⲟⲣⲉⲓ ⲛⲧⲥⲁⲣⲝ, ⲥⲭⲉⲇⲱⲛ ⲉⲙⲛ̄ⲥⲁⲣⲝ ⲧⲟ ϩⲓⲱⲟⲩ, ⲁϣ ⲛ̄ⲗⲁⲥ ⲛ̄ⲥⲁⲣⲝ ⲡⲉⲧⲛⲁϣ̄ϫⲱ ⲙ̄ⲡⲧⲁⲉⲓⲟ ⲛ̄ⲛⲉⲧⲙⲙⲁⲩ, ⲛⲁⲓ ⲛ̄ⲧⲉⲓⲙⲓⲛⲉ ⲥⲉⲣ̄ⲭⲣⲉⲓⲁ ⲙ̄ⲡⲗⲁⲥ ⲛ̄ϩⲉⲛⲁⲥⲱⲙⲁⲧⲟⲥ ⲉⲧⲣⲉⲩϫⲱ ⲛ̄ϩⲉⲛⲁⲓⲡⲁⲓⲛⲟⲥ ⲉⲣⲟⲟⲩ,</li>
 								<li class="it">ebbene delle lingue carnali dicono le loro lodi. Quelli che compirono (cose) al disopra del limite degli uomini con le loro “politeia” e le cui azioni furono al disopra del peso di coloro che portano la carne, quasi che non fossero rivestiti di carne, quale lingua carnale potrebbe dire la lode di costoro? Quelli di questo genere han bisogno di persone incorporee per dire le loro lodi,</li>
-								<li class="en"></li>
+								<li class="en">Were it fitting for carnal tongues to speak praises, those who have performed above the measure of the men with their conduct, and whose rightful deeds were above the burden of those who bear flesh, with nearly no flesh on them, which carnal tongue could speak the praise of those ones? Those of this kind need the tongue of incorporeal people to speak praises for them,</li>
 							</ul>
 						</li>
 						<li>
 							<ul>
 								<li class="coptic">ⲛ̄ⲧϩⲉ ⲟⲛ ⲛ̄ⲛ̄ⲧⲁⲩϫⲱⲕ ⲉⲃⲟⲗ ⲛ̄ⲛⲉⲩⲡⲟⲗⲏϯⲁ ⲛ̄ⲁⲅⲅⲉⲗⲓⲕⲟⲛ, ⲛⲁⲓ ⲉⲧⲉⲙ̄ⲡⲉ-ⲡⲉϩⲣⲟϣ ⲛ̄ⲧⲥⲁⲣⲝ ⲕⲱⲗⲩ ⲙ̄ⲙⲟⲟⲩ ⲛ̄ⲗⲁⲁⲩ ⲉⲧⲣⲉⲩϣⲱⲡⲉ ⲛ̄ϩⲓⲥⲁⲅⲅⲉⲗⲟⲥ, ⲁⲩⲱ ⲛ̄ⲥⲉϩⲱⲕ ⲉⲃⲟⲗ ⲛ̄ ⲛⲙ̄ ⲡⲟⲗⲏϯⲁ ⲛ̄ⲛⲉⲧϩⲛ̄ⲙ̄ⲡⲏⲩⲉ ⲉⲩϣⲟⲟⲡ ϩⲓϫⲙ̄ⲡⲕⲁϩ, ⲕⲁⲧⲁⲡⲉⲛⲧⲁ-ⲡϩⲓⲉⲣⲟⲥ ⲛ̄ⲁⲡⲟⲥⲧⲟⲗⲟⲥ ϫⲟⲟϥ, ϫⲉ</li>
 								<li class="it">proprio come essi compirono le loro angeliche “politeia”; questi a cui il peso della carne non fu affatto d'impedimento ad essere simili agli angeli e a compiere le “politeia” di color che sono nei cieli, pur essendo essi sulla terra, secondo quanto disse il santo apostolo:</li>
-								<li class="en"></li>
+								<li class="en">just like they fulfilled their angelic conduct, these who were not at all hindered by the burden of the flesh from becoming equal to angels and fulfilling the conduct of those who are in heaven, whilst located on earth, just like the holy apostle said:</li>
 							</ul>
 						</li>
 						<li>
 							<ul>
 								<li class="coptic">“ⲁⲛⲟⲛ ⲇⲉ ⲉⲣⲉ-ⲡⲉⲛⲡⲟⲗⲓⲧⲉⲩⲙⲁ ϩⲛ̄ⲙ̄ⲡⲏⲩⲉ, ⲡⲙⲁ ⲉⲧⲛ̄ϭⲱϣⲧ ⲉⲃⲟⲗ ⲛ̄ϩⲏⲧϥ̄ ⲙ̄ⲡⲉⲛⲥⲱⲧⲏⲣ ⲡⲉⲛϫⲟⲉⲓⲥ,</li>
 								<li class="it">“Quanto a noi, la nostra cittadinanza è nel cielo, il luogo in cui vediamo che è il nostro salvatore nostro Signore,</li>
-								<li class="en"></li>
+								<li class="en">“As for us, our citizenship is in heaven, where we await our Savior, our Lord,</li>
 							</ul>
 						</li>
 						<li>
 							<ul>
 								<li class="coptic">ⲡⲁⲓ ⲉⲧⲛⲁϣⲃⲃⲉ ⲙ̄ⲡⲉⲛⲑⲃⲃⲓⲟ ⲉⲡⲉⲓⲛⲉ ⲙ̄ⲡⲥⲱⲙⲁ ⲙ̄ⲡⲉϥⲉⲟⲟⲩ.”</li>
 								<li class="it">che renderà simile la nostra umiltà al corpo della sua gloria” (Phil. 3, 20–21).</li>
-								<li class="en"></li>
+								<li class="en">who will change our humility into the likeness of the body of his glory.”</li>
 							</ul>
 						</li>
 					</ol>
@@ -133,35 +499,35 @@
 							<ul>
 								<li class="coptic">ⲉⲧⲃⲉⲡⲁⲓ, ⲛ̄ⲧⲉⲣⲓⲟⲩⲱϣ ⲉⲕⲱ ⲉϩⲣⲁⲓ ⲛ̄ⲧϩⲓⲥⲧⲱⲣⲓⲁ ⲙ̄ⲡⲡⲉⲧⲟⲩⲁⲁⲃ ⲁⲡⲁ ⲗⲟⲅⲅⲓⲛⲟⲥ ⲙⲛ̄ⲡⲉϥⲉⲓⲱⲧ ⲙ̄ⲡⲛⲉⲩⲙⲁⲧⲓⲕⲟⲥ ⲁⲡⲁ ⲗⲟⲩⲅⲓⲟⲥ, ⲛⲁⲓ ⲛ̄ⲧⲁⲩϫⲱⲕ ⲉⲃⲟⲗ ⲛ̄ⲛⲉⲩⲡⲟⲗⲏⲧⲓⲁ, ϫⲉ ⲛ̄ⲛⲁϫⲟⲟⲥ ϫⲉ ⲛⲉⲩⲁⲑⲗⲱⲛ ⲙⲛ̄ⲛⲉⲩⲁⲅⲱⲛ, ⲁⲓ ⲁⲡⲟⲣⲉⲓ ϩⲣⲁⲓ ⲛ̄ϩⲏⲧ ϩⲱⲥ ⲉⲓⲥⲟⲟⲩⲛ ⲛ̄ⲧⲁⲁⲥⲑⲉⲛⲉⲓⲁ ⲙ̄ⲙⲓⲛⲙ̄ⲙⲟⲓ ⲙⲛ̄ⲡϫⲓⲥⲉ ⲛ̄ⲛ̄ⲁⲣⲉⲧⲏ ⲙ̄ⲡⲡⲉⲧⲟⲩⲁⲁⲃ ⲉⲧⲙⲙⲁⲩ, ⲛ̄ⲧϩⲉ ⲛ̄ⲛ̄ⲟⲩⲁ ⲉϥⲁϩⲉⲣⲁⲧϥ̄ ϩⲁⲟⲩⲡⲉⲧⲣⲁ ⲉⲥϫⲟⲥⲉ ⲉⲙⲁⲧⲉ ⲉϥⲉⲡⲉⲓⲭⲉⲣⲉⲓ ⲉϫⲓ-ⲧⲡⲉⲧⲣⲁ ⲉⲧⲙⲙⲁⲩ ⲏ ⲉⲃⲱⲕ ⲉϩⲣⲁⲓ ⲛ̄ϩⲏⲧⲥ̄, ⲉⲓⲁⲡⲟⲣⲉⲓ ⲛ̄ⲥⲁⲥⲁ ⲛⲓⲙ, ϫⲉ ⲉⲓⲛⲁϣ̄ϭⲙϭⲟⲙ ⲛ̄ⲁϣ ⲛ̄ϩⲉ ⲉⲃⲱⲕ ⲉϩⲣⲁⲓ ⲉϫⲛ̄ⲧⲡⲉⲧⲣⲁ ⲉⲧⲙⲙⲁⲩ, ⲙⲁ-ϯ ⲛⲁⲓ ⲛ̄ⲟⲩⲥⲩⲅⲛⲱⲙⲏ ⲉⲧⲣⲁϫⲟⲟⲥ ϫⲉ ⲧⲡⲉⲧⲣⲁ ⲉ-ⲛⲉ-ⲡⲉⲭⲣⲓⲥⲧⲟⲥ ⲡⲉ.</li>
 								<li class="it">Per questo, dopo che io volli comporre la storia del santo apa Longino e del suo padre spirituale apa Lucio, che fecero le loro “politeia”, per non chiamarle le loro gare o le loro lotte, io dubitai dentro di me, ben conoscendo la mia propria debolezza e l'altezza della virtù di quel santo, come uno che stia davanti ad una roccia molto alta e tenti di raggiungere quella roccia o di salirvi; dubitando io da ogni parte come possa salire su quella roccia. E perdonate il fatto che io la chiami roccia - ed era Cristo.</li>
-								<li class="en"></li>
+								<li class="en">Therefore, when I wanted to compose the story of the holy Apa Longinus and his spiritual father Apa Lucius—whose conduct was fulfilled so that I should not refer to their contests or their fights—I doubted within myself as though I were aware of my own weakness and the height of the virtues of that saint, like someone who stands under a very tall rock, attempting to take that rock or go up it, as I'm doubting from all sides how I'd be able to surmount that rock. Pardon my calling it a rock—it was Christ.</li>
 							</ul>
 						</li>
 						<li>
 							<ul>
 								<li class="coptic">ⲡⲙⲁ ⲅⲁⲣ ⲉⲧⲉⲣⲉ-ⲛⲉⲧⲟⲩⲁⲁⲃ ⲛ̄ϩⲏⲧϥ̄, ϥⲙ̄ⲙⲁⲩ ⲛ̄ϭⲓⲡϫⲟⲉⲓⲥ ⲛ̄ⲛⲉⲧⲟⲩⲁⲁⲃ.</li>
 								<li class="it">Infatti, nel luogo in cui sono i santi c'è il Signore dei santi.</li>
-								<li class="en"></li>
+								<li class="en">For, wherever the saints are, the Lord of the saints is there.</li>
 							</ul>
 						</li>
 						<li>
 							<ul>
 								<li class="coptic">ⲡⲉⲧⲉⲙ̄ⲡⲉϥϯⲥⲟ ⲅⲁⲣ ⲉⲃⲱⲕ ⲉϩⲣⲁⲓ ⲉⲛ̄ⲧⲟⲟⲩ ⲙⲛ̄ⲡⲉⲧⲣⲟⲥ ⲙⲛ̄ⲓⲱϩⲁⲛⲛⲏⲥ,</li>
 								<li class="it">Colui infatti che non sdegnò di andare sulle montagne con Pietro e Giovanni,</li>
-								<li class="en"></li>
+								<li class="en">For, whoever has not refrained from going into the mountains with Peter and John,</li>
 							</ul>
 						</li>
 						<li>
 							<ul>
-								<li class="coptic">ⲙ̄ⲡⲉϥϯⲥⲟ ⲟⲛ ⲉⲟⲩⲱϩ ⲙⲛ̄ⲁⲡⲁ ⲗⲟⲅⲅⲓⲛⲟⲥ ⲙⲛ̄ⲁⲡⲁ ⲗⲟⲩⲅⲓⲟⲥ ⲡⲉϥⲉⲓⲱⲧ ϩⲙ̄ⲡⲙⲁ ⲉ-ⲛⲉⲩⲛ̄ϩⲏⲧϥ̄, ⲁⲩⲱ ⲁⲣⲏⲩ ⲛ̄ⲧϩⲉ ⲛ̄ⲧⲁⲧⲟⲡⲧⲁⲥⲓⲁ ⲉⲧⲙ̄ⲙⲁⲩ ⲧⲥⲁⲃⲟ ⲙ̄ⲡⲉⲧⲣⲟⲥ ⲙⲛ̄ⲓⲱϩⲁⲛⲛⲏⲥ, ϫⲉ ⲛⲓⲙ ⲡⲉⲛⲧⲁϥⲃⲱⲕ ⲉϩⲣⲁⲓ ⲉⲧⲡⲉⲧⲣⲁ ⲉⲧⲙ̄ⲙⲁⲩ,</li>
+								<li class="coptic">ⲙ̄ⲡⲉϥϯⲥⲟ ⲟⲛ ⲉⲟⲩⲱϩ ⲙⲛ̄ⲁⲡⲁ ⲗⲟⲅⲅⲓⲛⲟⲥ ⲙⲛ̄ⲁⲡⲁ ⲗⲟⲩⲅⲓⲟⲥ ⲡⲉϥⲉⲓⲱⲧ ϩⲙ̄ⲡⲙⲁ ⲉ-ⲛⲉⲩⲛ̄ϩⲏⲧϥ̄, ⲁⲩⲱ ⲁⲣⲏⲩ ⲛ̄ⲧϩⲉ ⲛ̄ⲧⲁ-ⲧⲟⲡⲧⲁⲥⲓⲁ ⲉⲧⲙ̄ⲙⲁⲩ ⲧⲥⲁⲃⲟ ⲙ̄ⲡⲉⲧⲣⲟⲥ ⲙⲛ̄ⲓⲱϩⲁⲛⲛⲏⲥ, ϫⲉ ⲛⲓⲙ ⲡⲉⲛⲧⲁϥⲃⲱⲕ ⲉϩⲣⲁⲓ ⲉⲧⲡⲉⲧⲣⲁ ⲉⲧⲙ̄ⲙⲁⲩ,</li>
 								<li class="it">non sdegnò di stare con apa Longino e apa Lucio suo padre nel luogo in cui erano (cf. Mt. 7, 1–3, Mc. 9, 2–13, Lc. 9, 28–36). E certo, come quella (tale) visione indicò a Pietro e a Giovanni chi era colui che era andato su quella montagna,</li>
-								<li class="en"></li>
+								<li class="en">he, too, did not refrain from dwelling with Apa Longinus and Apa Lucius his father where they were, and perhaps like how that sight showed to Peter and John who it was who'd gone into that rocky place,</li>
 							</ul>
 						</li>
 						<li>
 							<ul>
 								<li class="coptic">ⲧⲁⲓ ⲟⲛ ⲧⲉ ⲧϩⲉ ⲛ̄ⲧⲁϥⲧⲥⲁⲃⲉ-ⲁⲡⲁ ⲗⲟⲩⲅⲓⲟⲥ ⲙⲛ̄ⲁⲡⲁ ⲗⲟⲅⲅⲓⲛⲟⲥ ⲉⲧⲡⲓⲥⲧⲓⲥ ⲉⲧⲥⲟⲩⲧⲱⲛ, ⲧⲁⲓ ⲛ̄ⲧⲁ-ϩⲁϩ ⲙⲁⲧⲉ ⲙ̄ⲙⲟⲥ ⲉⲃⲟⲗ ϩⲓⲧⲟⲟⲧⲟⲩ, ⲕⲁⲧⲁⲧϩⲉ ⲉⲧⲛ̄ⲛⲁⲟⲩⲉⲛϩ-ⲡⲁⲓ ⲉⲃⲟⲗ ϩⲙ̄ⲡⲧⲣⲉⲛⲙⲟⲟϣⲉ ⲉⲧϩⲏ.</li>
 								<li class="it">così Egli insegnò as apa Lucio e apa Longino la fede ortodossa che molti ottennero per mezzo loro, come mostreremo in seguito.</li>
-								<li class="en"></li>
+								<li class="en">this too is how he showed to Apa Longinus and Apa Lucius the correct faith, which many obtained through them, just like how we'll reveal this whilst we travel ahead.</li>
 							</ul>
 						</li>
 					</ol>
@@ -172,28 +538,28 @@
 							<ul>
 								<li class="coptic">ⲡⲗⲏⲛ ϩⲱⲥ ⲉⲓⲥⲟⲟⲩ ⲛ̄ⲛⲁϭⲱϫⲃ ⲙ̄ⲙⲓⲛⲙ̄ⲙⲟⲓ, ⲉⲓⲟⲩⲱϣ ⲉⲕⲁⲣⲱⲓ ⲉⲧϩⲓⲥⲧⲱⲣⲓⲁ ⲛ̄ⲛⲉⲧⲟⲩⲁⲁⲃ ⲉⲧⲙ̄ⲙⲁⲩ ⲉⲧⲃⲉⲡⲉⲩϫⲓⲥⲉ ⲙⲛ̄ⲧⲁⲉⲩⲧⲉⲗⲉⲓⲁ ϩⲱ,</li>
 								<li class="it">D'altra parte, mentre riconosco le debolezze mie proprie e vorrei tacere la storia di quei santi, a causa della loro altezza e della mia pochezza;</li>
-								<li class="en"></li>
+								<li class="en">Nevertheless, while I recognize my own weaknesses and would like to be silent about the story of those saints due to their importance and my insignificance,</li>
 							</ul>
 						</li>
 						<li>
 							<ul>
 								<li class="coptic">ⲉϣϫⲉ ⲉⲓⲛⲁⲩ ⲉⲡⲉⲕⲣⲓⲙⲙⲁ ϩⲱⲱϥ ⲙ̄ⲡⲙⲧⲟ ⲛ̄ⲛⲁⲃⲁⲗ ⲉϥⲁⲡⲉⲓⲗⲉ ⲛⲁⲓ ⲛ̄ⲧⲉⲓϩⲉ, ϫⲉ ⲁⲣⲁ ⲧⲉⲓⲙⲛⲧⲣⲉϥⲣϩⲟⲧⲉ ⲛ̄ⲧⲉⲓⲙⲓⲛⲉ ⲣ̄-ⲁⲛⲁϥ ⲙ̄ⲡⲛⲟⲩⲧⲉ. ⲉϣϫⲉ ϩⲟⲗⲱⲥ ⲕϩⲟⲙⲟⲗⲟⲅⲉⲓ ϫⲉ ϩⲉⲛⲡⲉⲧⲟⲩⲁⲁⲃ ⲛⲉ, ⲁⲩⲱ ϩⲉⲛⲡⲁⲣⲁⲛⲏⲧⲟⲥ ⲛⲉ, ⲁⲩⲱ ϫⲉ ⲁ-ⲛⲉⲩⲡⲟⲗⲏϯⲁ ϫⲓⲥⲉ ⲛ̄ⲧⲉⲓϩⲉ ⲧⲏⲣⲥ̄ ⲕⲁⲧⲁⲧϩⲉ ⲉⲧⲉⲕϫⲱ ⲙ̄ⲙⲟⲥ,</li>
 								<li class="it">mi accade come se vedessi davanti ai miei occhi una accusa che mi minaccia così: “Forse che una tale paura è gradita a Dio? Se sei veramente convinto che costoro sono dei santi e dei buoni esempi, e che le loro “politeia” sono eccelse a tal punto, secondo quel che dici,</li>
-								<li class="en"></li>
+								<li class="en">if I were to see the sentence itself before my eyes, admonishing me as such: “So, does fear of this sort please God? If you wholly confess that they're saints, and beyond intelligent, and that their conduct was entirely this important, just like you're saying,</li>
 							</ul>
 						</li>
 						<li>
 							<ul>
 								<li class="coptic">ⲁⲩⲱ ϫⲉ ⲟⲩⲛ̄-ϭⲟⲙ ⲉⲧⲣⲉ-ⲡⲉⲩⲃⲓⲟⲥ ϣⲏⲣⲉ ⲛ̄ⲕⲱⲧ ⲛ̄ⲛ̄ⲧⲉⲛⲁⲥⲟⲧⲙⲉϥ. ⲉⲧⲃⲉⲟⲩ ⲕⲥⲱⲧⲡ ⲙ̄ⲡⲕⲁⲣⲱⲧ ⲉⲧⲙ̄ϫⲱ ⲛⲁⲛ ⲙ̄ⲡⲃⲓⲟⲥ ⲛ̄ⲛⲉⲧⲟⲩⲁⲁⲃ ⲉⲧⲙ̄ⲙⲁⲩ?</li>
 								<li class="it">e che è possibile che le loro vite siano di edificazione per quelli che le ascoltano, perché preferisci tacere e non narrarci la vita di questi santi?</li>
-								<li class="en"></li>
+								<li class="en">and that it's possible for their lives to build, should we not hear it? Why do you prefer silence to not tell us about the lives of those saints?</li>
 							</ul>
 						</li>
 						<li>
 							<ul>
 								<li class="coptic">ⲕⲁⲛ ⲉϣϫⲉ ⲙⲉⲕⲉϣϭⲙϭⲟⲙ ⲉϫⲱ ⲛⲁⲛ ⲛ̄ⲧⲡⲟⲗⲏϯⲁ ⲛ̄ⲛⲉⲧⲟⲩⲁⲁⲃ ⲉⲧⲙ̄ⲙⲁⲩ ⲉⲧⲙⲉϩ ⲛ̄ⲁⲣⲉⲧⲏ ⲛⲓⲙ, ⲁⲗⲗⲁ ⲟⲩⲛ ϫⲱ ⲙ̄ⲡⲉⲧⲕ̄ⲛⲁⲉϣⲧⲁϩⲟϥ ϩⲛ̄ⲟⲩⲑⲃⲃⲓⲟ ϫⲉ ⲛ̄ⲛⲉⲕϣⲱⲡⲉ. ⲉϣϫⲉ ⲉⲕⲫⲑⲟⲛⲓ ⲉⲡϩⲡⲩ ⲛ̄ⲛⲉⲯⲩⲭⲏ ⲛ̄ⲛⲉⲧⲛⲁⲥⲱⲧⲙ ⲉⲡⲃⲓⲟⲥ ⲙ̄ⲡⲁⲣⲁⲛⲉⲧⲟⲥ ⲉⲧⲟⲩⲁⲁⲃ ⲉⲧⲙ̄ⲙⲁⲩ ⲛ̄ⲥⲉⲟⲩⲁϩⲟⲩ ⲛ̄ⲥⲁⲟⲩⲙⲉⲣⲟⲥ ϣⲏⲙ ⲛ̄ϩⲏⲧⲟⲩ.</li>
 								<li class="it">Se non ti è possibile narrarci le “politeia” di questi santi pieni di ogni virtù, almeno di' ciò che ti sarà possibile mettere insieme, con umiltà, affinché tu non diventi come di ostacolo all'utilità di quelli che ascolteranno quella vita lodevole e santa, e ne porranno una piccola parte dentro di loro.</li>
-								<li class="en"></li>
+								<li class="en">Even if you cannot tell us about the conduct of those saints who are filled with every virtue, but therefore humbly tell whatever you could manage, you aren't. If you envy the benefit of the souls of those who will hear about the holy intelligent life and they'll follow a small part of them.</li>
 							</ul>
 						</li>
 					</ol>
@@ -204,35 +570,35 @@
 							<ul>
 								<li class="coptic">ⲙⲁⲗⲓⲥⲧⲁ ⲉⲣⲉ-ⲡⲕⲩⲣⲝ ⲛ̄ⲧⲙⲉ ⲡⲥⲁϩ ⲡⲁⲩⲗⲟⲥ ⲡⲁⲣⲁⲅⲅⲉⲓⲗⲉ, ϫⲉ</li>
 								<li class="it">Soprattutto perché l'araldo della verità, il dottore Paolo proclama:</li>
-								<li class="en"></li>
+								<li class="en">In particular, the herald of truth, the master Paul, sends a message:</li>
 							</ul>
 						</li>
 						<li>
 							<ul>
 								<li class="coptic">“ⲁⲣⲓ-ⲡⲙⲉⲉⲩⲉ ⲛ̄ⲛⲉⲧⲛ̄ⲛⲟϭ ⲛⲁⲓ ⲛ̄ⲧⲁⲩϫⲱ ⲛⲏⲧⲛ̄ ⲙ̄ⲡϣⲁϫⲉ ⲙ̄ⲡⲛⲟⲩⲧⲉ, ⲛⲁⲓ ⲉⲧⲉⲧⲛ̄ϭⲱϣⲧ ⲉⲡϫⲓⲥⲉ ⲛ̄ⲧⲉⲩⲁⲛⲁⲥⲧⲣⲟⲫⲏ ⲧⲛⲧⲛ-ⲧⲏⲩⲧⲛ̄ ⲉⲧⲉⲩⲡⲓⲥⲧⲓⲥ, ⲁⲩⲱ ϩⲱⲥ ⲉⲣⲉ-ⲡⲛⲟⲩⲧⲉ ⲥⲟⲟⲩⲛ ϫⲉ ⲥⲉⲛⲁϣⲱⲡⲉ ⲛ̄ⲱⲫⲉⲗⲓⲁ ⲛ̄ⲛⲉⲧⲛⲁⲥⲱⲧⲙ ⲉⲡⲃⲓⲟⲥ ⲛ̄ⲛⲉⲛⲧⲁⲩⲡⲟⲗⲓⲧⲉⲩⲉ ⲕⲁⲧⲁⲡⲉϥⲟⲩⲱϣ ⲁϥⲥϩⲁⲓ ⲛⲁⲛ ϩⲓⲧⲙ̄ⲡⲉϥⲡⲛⲉⲩⲙⲁ ⲉⲧⲟⲩⲁⲁⲃ ⲙ̄ⲡⲃⲓⲟⲥ ⲛ̄ⲙ̄ⲡⲁⲧⲣⲓⲁⲣⲭⲏⲥ ⲙⲛ̄ⲡⲕⲉⲥⲉⲉⲡⲉ ⲛ̄ⲛⲉⲧⲟⲩⲁⲁⲃ,</li>
 								<li class="it">“Ricordatevi dei grandi, quelli che vi dissero la parola di Dio; questi, all'altezza della cui condotta voi guardate, imitate la loro fede” (Heb. 13, 7). E sapendo Dio che esse saranno di utilità per coloro che ascolteranno la vta di quelli che si comportarono da asceti secondo il suo volere, egli scrisse per noi, per opera del suo Spirito Santo, la vita dei patriarchi e degli altri santi -</li>
-								<li class="en"></li>
+								<li class="en">“Remember the great ones, those who've told you the word of God, those whose ways of life you view with importance. Compare yourselves to their faith.” As God knows that they will be an advantage to those who will hear about the lives they led according to his will. He wrote to us through his holy spirit about the lives of the patriarchs and the rest of the saints,</li>
 							</ul>
 						</li>
 						<li>
 							<ul>
 								<li class="coptic">ⲛⲁⲓ ⲛ̄ⲧⲁⲩϣⲱⲡⲉ ϩⲛ̄ⲧⲡⲁⲗⲁⲓⲁ ⲇⲓⲁⲑⲏⲕⲏ ⲙⲛ̄ⲧⲕⲩⲛⲏ, ϫⲉⲕⲁⲥ ⲛⲛ̄ⲁⲥⲱⲧⲙ ⲉⲣⲟⲟⲩ ⲙ̄ⲙⲁⲧⲉ ⲁⲛ, ⲁⲗⲗⲁ ϫⲉⲕⲁⲥ ⲉⲛⲛⲁⲧⲛⲧⲱⲛⲛ̄ ⲉⲡⲉⲩⲥⲙⲟⲧ ⲧⲛ̄ⲕⲗⲏⲣⲟⲛⲟⲙⲉⲓ ϩⲱⲱⲛ ⲛ̄ⲛ̄ⲉⲣⲏⲧ ⲛ̄ⲧⲁ-ⲡⲛⲟⲩⲧⲉ ⲉⲣⲏⲧ ⲙ̄ⲙⲟⲟⲩ ⲛ̄ⲛⲉⲧⲙⲉ ⲙ̄ⲙⲟϥ.</li>
 								<li class="it">quelli che furono nell'Antico Testamento e nel Nuovo - affinché noi non soltanto le ascoltiamo, ma anche ci rendiamo simili ai loro esempi e anche noi siamo eredi delle promesse che Dio fece a quelli che lo amano.”</li>
-								<li class="en"></li>
+								<li class="en">those who were in the Old and New Testament, so that we not only listen to them, but also imitate their forms and ourselves inherit the promises God made to those who love him.”</li>
 							</ul>
 						</li>
 						<li>
 							<ul>
 								<li class="coptic">ⲛⲁⲓ ⲟⲩⲛ ⲉⲓⲙⲉⲉⲩⲉ ⲉⲣⲟⲟⲩ ϩⲣⲁⲓ ⲛ̄ϩⲏⲧ ⲁⲓⲟⲡϥ̄ ϫⲉ ⲟⲩⲁⲛⲁⲅⲕⲁⲓⲟⲛ ⲡⲉ ⲉⲧⲣⲁⲁⲣⲭⲓⲥⲑⲁⲓ ⲉⲧϩⲓⲥⲧⲱⲣⲓⲁ ⲛ̄ⲛⲉⲧⲟⲩⲁⲁⲃ, ⲁⲩⲱ ⲉⲧⲣⲁϯ-ⲡⲣⲡⲙⲉⲉⲩⲉ ⲛ̄ⲛⲉⲩⲡⲟⲗⲏϯⲁ ⲛⲏⲧⲛ̄, ⲉⲓⲥⲟⲟⲩⲛ ϩⲛ̄ⲟⲩⲱⲣϫ ϫⲉ ⲟⲩⲣⲡⲙⲉⲉⲩⲉ ⲉⲛⲁⲛⲟⲩϥ ⲡⲉ ⲡⲣⲡⲙⲉⲉⲩⲉ ⲙ̄ⲡⲇⲓⲕⲁⲓⲟⲥ, ⲁⲩⲱ ϫⲉ ϣⲁⲣⲉ-ⲡⲥⲟⲉⲓⲧ ⲉⲧⲛⲁⲛⲟⲩϥ ⲉⲩⲫⲣⲁⲛⲉ ⲙ̄ⲡϩⲏⲧ, ⲙⲁⲗⲓⲥⲧⲁ ϫⲉ ϣⲁⲣⲉ-ⲛ̄ⲗⲁⲟⲥ ⲉⲩⲫⲣⲁⲛⲉ ⲉⲩϣⲁϫⲉ ⲉⲛ̄ⲇⲓⲕⲁⲓⲟⲥ, ⲕⲁⲧⲁⲛⲉⲛⲧⲁ-ⲡⲥⲟⲫⲟⲥ ⲥⲟⲗⲟⲙⲱⲛ ϫⲟⲟⲩ.</li>
 								<li class="it">Queste cose dunque pensando fra me, io stimai che fosse necessario cominciare la storia dei santi e commemorarvi le loro “politeia”; sapendo con sicurezza che “è un bel ricordo il ricordo del giusto” (Prov. 10, 7) e che “la fama buona rallegra il cuore” (Prov. 15, 30) e soprattutto che “i popoli si rallegrano parlando dei giusti” (Prov. 29, 2) secondo quanto disse il saggio Salomone.</li>
-								<li class="en"></li>
+								<li class="en">These things I thus think within myself, and I considered it necessary to begin the story of the saints, and to give the memory of their conduct to you. I am acutely aware that the memory of a righteous person is a good memory, and that a good reputation rejoices the heart, for the people especially speak rejoicingly about the righteous, just like the wise Solomon had said.</li>
 							</ul>
 						</li>
 						<li>
 							<ul>
 								<li class="coptic">ⲧⲡⲟⲗⲏϯⲁ ⲙⲛ̄ⲡⲃⲓⲟⲥ ⲙ̄ⲡⲉⲛⲉⲓⲱⲧ ⲉⲧⲟⲩⲁⲁⲃ ⲁⲡⲁ ⲗⲟⲅⲅⲓⲛⲟⲥ, ⲉ-ⲛⲉⲩⲉⲃⲟⲗ ⲡⲉ ϩⲛ̄ⲧⲗⲁⲩⲣⲁ ⲙ̄ⲡϩⲉⲛⲁⲧⲟⲛ ⲛ̄ⲣⲁⲕⲟⲧⲉ.</li>
 								<li class="it">“La vita e le “politeia” del nostro santo padre apa Longinol egli apparteneva alla laura dell'Ennaton di Alessandria”.</li>
-								<li class="en"></li>
+								<li class="en">The conduct and life of our holy father Apa Longinus, who was from the alley of the Enaton of Alexandria.</li>
 							</ul>
 						</li>
 					</ol>
