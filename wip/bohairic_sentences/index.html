@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Bohairic Sentences</title>
+		<link rel="stylesheet" href="../../styles/styles.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta charset="UTF-8">
+		<style>
+			html {
+				color: seagreen;
+				color: violet;
+				color: #643c64;
+				color: #435655;
+				scrollbar-color: currentColor transparent;
+				overflow-y: scroll;
+			}
+			body {
+				color: inherit;
+				border: 1px solid;
+				border: none;
+				margin: 1em;
+			}
+			ul {
+				padding-inline-start: 1em;
+			}
+			ul.coptic {
+				color: inherit;
+				font-size: 2em;
+			}
+			li {
+				//background-image: linear-gradient(to right, #528f74, #4f4a2e);
+				-webkit-background-clip: text;
+				//-webkit-text-fill-color: transparent;
+				list-style: none;
+			}
+			li + li {
+				margin-top: 1em;
+			}
+			li::selection {
+				color: inherit;
+				color: #83827d;
+				background: #242436;
+			}
+			ul.coptic > li {
+				//color: #ffffff;
+				//background: #111111;
+				//background: #ffb700aa;
+				position: relative;
+			}
+			ul.coptic > li:hover ul {
+				bottom: -3em;
+				color: inherit;
+			}
+			ul.coptic > li > ul {
+				//color: #ffffff;
+				color: transparent;
+				//display: block;
+				width: 100%;
+				//height: 300px;
+				background: purple;
+				//background: #ffb70033;
+				background: none;
+				//position: absolute;
+				bottom: 0em;
+				//top: 0em;
+				transition:
+					bottom .2s,
+					color .2s;
+				z-index: -999;
+				mix-blend-mode: hard-light;
+				filter: invert(1);
+			}
+		</style>
+	</head>
+	<body>
+		<ul class="coptic">
+			<li>ⲟⲩⲟϩ ⲡⲉϫⲁϥ ⲛⲱⲟⲩ, ϫⲉ “ⲉⲑⲃⲉⲟⲩ ⲧⲉⲧⲉⲛϣⲟⲗϩ ⲛ̀ϩⲏⲧ, ⲛⲁ-ⲡⲓⲕⲟⲩϫⲓ ⲛ̀ⲛⲁϩϯ?”
+				<ul>
+					<li class="translation">And he said to them, “Why are you fearful, you of little faith?”</li>
+				</ul>
+			</li>
+			<li>ϯⲛⲟⲩ ⲉⲣⲉⲧⲉⲛⲉⲣ-ⲟⲩ ⲙ̀ⲡⲁⲓⲙⲁ?
+				<ul>
+					<li class="translation">Why are you here now?</li>
+				</ul>
+			</li>
+			<li>ⲟⲩⲟϩ ⲡⲉϫⲁϥ ⲛⲱⲟⲩ, ϫⲉ “ⲉⲑⲃⲉⲟⲩ ⲧⲉⲧⲉⲛⲉⲣϩⲟϯ? ⲙ̀ⲡⲁⲧⲉ-ⲛⲁϩϯ ϣⲱⲡⲓ ϧⲉⲛⲑⲏⲛⲟⲩ?”
+				<ul>
+					<li class="translation">And he said to them, “Why are you afraid? Has faith not yet arisen in you?”</li>
+				</ul>
+			</li>
+			<li>ⲙⲏ ⲙ̀ⲡⲓⲥⲁϫⲓ ⲛⲉⲙⲁⲕ, ⲉⲓϫⲱ ⲙ̀ⲙⲟⲥ, ϫⲉ “ⲡⲓⲥⲁϫⲓ ⲉⲧⲉⲫⲛⲟⲩϯ ⲛⲁϫⲟϥ, ⲫⲁⲓ ⲡⲉϯⲛⲁⲁⲓϥ”?
+				<ul>
+					<li class="translation">Didn't I speak with you, saying, “Whatever thing God says, I'll do this”?</li>
+				</ul>
+			</li>
+			<li>ⲙⲏ ⲙⲱⲩⲥⲏⲥ ⲙ̀ⲙⲁⲩⲁⲧϥ ⲉⲧⲁ-ⲡϭⲟⲓⲥ ⲥⲁϫⲓ ⲛⲉⲙⲁϥ? ⲙⲏ ⲙ̀ⲡⲉϥⲥⲁϫⲓ ⲛⲉⲙⲁⲛ ⲁⲛⲟⲛ?
+				<ul>
+					<li class="translation">Did the Lord speak with Moses only? Has he not spoken with us?</li>
+				</ul>
+			</li>
+		</ul>
+	</body>
+</html>
