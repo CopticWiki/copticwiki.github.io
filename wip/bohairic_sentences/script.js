@@ -1,6 +1,6 @@
 // Replace with your actual Spreadsheet ID
-const spreadsheetId = 'e/2PACX-1vShz06pVOzmNvBcBl0Dq71i1bqdJB52-ETEQVDUOouDsaIDN36y3diJOWP--nCbqe-p1pU0g0PDzH-m';
-//const spreadsheetId = '1joD_lLF1kbvQozNPpMXXwPQ_iYL0JmMyv2nJy2uicz0';
+//const spreadsheetId = '2PACX-1vShz06pVOzmNvBcBl0Dq71i1bqdJB52-ETEQVDUOouDsaIDN36y3diJOWP--nCbqe-p1pU0g0PDzH-m';
+const spreadsheetId = '1joD_lLF1kbvQozNPpMXXwPQ_iYL0JmMyv2nJy2uicz0';
 
 // Replace with your API Key
 const apiKey = 'AIzaSyABf_IFY_ZyNQk_9xQL19v_vEgZfBa0Dt4';
@@ -21,7 +21,7 @@ async function fetchGoogleSheetData() {
 		const tableBody = document.querySelector('#data-table tbody');
 		
 		// Loop through the rows (starting from row 1 to skip headers)
-		for (let i = 1; i < rows.length; i++) {
+		for (let i = 0; i < rows.length; i++) {
 			const row = document.createElement('tr');
 
 			// Loop through each cell in the row and create a table cell for each
