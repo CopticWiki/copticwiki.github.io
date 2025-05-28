@@ -6,6 +6,12 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<meta charset="UTF-8">
 		<style>
+			#content {
+				width: 400px;
+				height: 400px;
+				color: gold;
+				background: #ffffff11
+			}
 			html {
 				color: seagreen;
 				color: violet;
@@ -46,10 +52,29 @@
 				//background: #111111;
 				//background: #ffb700aa;
 				position: relative;
+				opacity: 1;
+				transition: opacity .2s;
+			}
+			ul.coptic > li cite {
+				font-size: .8em;
+				position: absolute;
+				//bottom: 0em;
+				//right: 0em;
+				top: -1.5em;
+				font-family: sans-serif;
+				font-style: normal;
+				color: transparent;
+				transition: color .5s;
+			}
+			ul.coptic:has(> li:hover) > li:not(:hover) {
+				opacity: .2;
 			}
 			ul.coptic > li:hover ul {
 				bottom: -3em;
 				color: inherit;
+			}
+			ul.coptic > li:hover cite {
+				color: #506a9d;
 			}
 			ul.coptic > li > ul {
 				//color: #ffffff;
@@ -63,42 +88,189 @@
 				//position: absolute;
 				bottom: 0em;
 				//top: 0em;
-				transition:
-					bottom .2s,
-					color .2s;
+				transition: color .5s;
 				z-index: -999;
 				mix-blend-mode: hard-light;
 				filter: invert(1);
+				padding-inline-start: 0em;
+			}
+			ul.coptic > li > ul > li {
+				border-left: .5em solid;
+				padding-left: .5em;
 			}
 		</style>
 	</head>
 	<body>
+		<div>
+		</div>
+		<p>Sheets API Quickstart</p>
+		<!--Add buttons to initiate auth sequence and sign out-->
+		<button id="authorize_button" onclick="handleAuthClick()">Authorize</button>
+		<button id="signout_button" onclick="handleSignoutClick()">Sign Out</button>
+		<pre id="content" style="white-space: pre-wrap;"></pre>
 		<ul class="coptic">
-			<li>ⲟⲩⲟϩ ⲡⲉϫⲁϥ ⲛⲱⲟⲩ, ϫⲉ “ⲉⲑⲃⲉⲟⲩ ⲧⲉⲧⲉⲛϣⲟⲗϩ ⲛ̀ϩⲏⲧ, ⲛⲁ-ⲡⲓⲕⲟⲩϫⲓ ⲛ̀ⲛⲁϩϯ?”
+			<li><cite>Matthew 8:26</cite>ⲟⲩⲟϩ ⲡⲉϫⲁϥ ⲛⲱⲟⲩ, ϫⲉ “ⲉⲑⲃⲉⲟⲩ ⲧⲉⲧⲉⲛϣⲟⲗϩ ⲛ̀ϩⲏⲧ, ⲛⲁ-ⲡⲓⲕⲟⲩϫⲓ ⲛ̀ⲛⲁϩϯ?”
 				<ul>
 					<li class="translation">And he said to them, “Why are you fearful, you of little faith?”</li>
 				</ul>
 			</li>
-			<li>ϯⲛⲟⲩ ⲉⲣⲉⲧⲉⲛⲉⲣ-ⲟⲩ ⲙ̀ⲡⲁⲓⲙⲁ?
+			<li><cite>Isaiah 52:5</cite>ϯⲛⲟⲩ ⲉⲣⲉⲧⲉⲛⲉⲣ-ⲟⲩ ⲙ̀ⲡⲁⲓⲙⲁ?
 				<ul>
 					<li class="translation">Why are you here now?</li>
 				</ul>
 			</li>
-			<li>ⲟⲩⲟϩ ⲡⲉϫⲁϥ ⲛⲱⲟⲩ, ϫⲉ “ⲉⲑⲃⲉⲟⲩ ⲧⲉⲧⲉⲛⲉⲣϩⲟϯ? ⲙ̀ⲡⲁⲧⲉ-ⲛⲁϩϯ ϣⲱⲡⲓ ϧⲉⲛⲑⲏⲛⲟⲩ?”
+			<li><cite>Mark 4:40</cite>ⲟⲩⲟϩ ⲡⲉϫⲁϥ ⲛⲱⲟⲩ, ϫⲉ “ⲉⲑⲃⲉⲟⲩ ⲧⲉⲧⲉⲛⲉⲣϩⲟϯ? ⲙ̀ⲡⲁⲧⲉ-ⲛⲁϩϯ ϣⲱⲡⲓ ϧⲉⲛⲑⲏⲛⲟⲩ?”
 				<ul>
 					<li class="translation">And he said to them, “Why are you afraid? Has faith not yet arisen in you?”</li>
 				</ul>
 			</li>
-			<li>ⲙⲏ ⲙ̀ⲡⲓⲥⲁϫⲓ ⲛⲉⲙⲁⲕ, ⲉⲓϫⲱ ⲙ̀ⲙⲟⲥ, ϫⲉ “ⲡⲓⲥⲁϫⲓ ⲉⲧⲉⲫⲛⲟⲩϯ ⲛⲁϫⲟϥ, ⲫⲁⲓ ⲡⲉϯⲛⲁⲁⲓϥ”?
+			<li><cite>Numbers 23:26</cite>ⲙⲏ ⲙ̀ⲡⲓⲥⲁϫⲓ ⲛⲉⲙⲁⲕ, ⲉⲓϫⲱ ⲙ̀ⲙⲟⲥ, ϫⲉ “ⲡⲓⲥⲁϫⲓ ⲉⲧⲉⲫⲛⲟⲩϯ ⲛⲁϫⲟϥ, ⲫⲁⲓ ⲡⲉϯⲛⲁⲁⲓϥ”?
 				<ul>
 					<li class="translation">Didn't I speak with you, saying, “Whatever thing God says, I'll do this”?</li>
 				</ul>
 			</li>
-			<li>ⲙⲏ ⲙⲱⲩⲥⲏⲥ ⲙ̀ⲙⲁⲩⲁⲧϥ ⲉⲧⲁ-ⲡϭⲟⲓⲥ ⲥⲁϫⲓ ⲛⲉⲙⲁϥ? ⲙⲏ ⲙ̀ⲡⲉϥⲥⲁϫⲓ ⲛⲉⲙⲁⲛ ⲁⲛⲟⲛ?
+			<li><cite>Numbers 12:2</cite>ⲙⲏ ⲙⲱⲩⲥⲏⲥ ⲙ̀ⲙⲁⲩⲁⲧϥ ⲉⲧⲁ-ⲡϭⲟⲓⲥ ⲥⲁϫⲓ ⲛⲉⲙⲁϥ? ⲙⲏ ⲙ̀ⲡⲉϥⲥⲁϫⲓ ⲛⲉⲙⲁⲛ ⲁⲛⲟⲛ?
 				<ul>
 					<li class="translation">Did the Lord speak with Moses only? Has he not spoken with us?</li>
 				</ul>
 			</li>
+			<li><cite>Matthew 21:42</cite>ⲙ̀ⲡⲉⲧⲉⲛⲱϣ ⲉⲛⲉϩ ϧⲉⲛⲛⲓⲅⲣⲁⲫⲏ, ϫⲉ “ⲡⲓⲱⲛⲓ ⲉⲧⲁⲩϣⲟϣϥ ⲛ̀ϫⲉⲛⲏ ⲉⲧⲕⲱⲧ, ⲫⲁⲓ ⲁϥϣⲱⲡⲓ ⲛ̀ϫⲱϫ ⲛ̀ⲗⲁⲕϩ. ⲉⲧⲁ-ⲫⲁⲓ ϣⲱⲡⲓ ⲉⲃⲟⲗ ϩⲓⲧⲉⲛⲡϭⲟⲓⲥ, ⲟⲩⲟϩ ϥⲟⲓ ⲛ̀ϣⲫⲏⲣⲓ ϧⲉⲛⲛⲉⲛⲃⲁⲗ.”?
+				<ul>
+					<li class="translation">Have you never read in the Scriptures that “This very stone that the builders rejected became head of the corner. This came about through the Lord, and it is marvelous in our eyes.”?</li>
+				</ul>
+			</li>
 		</ul>
+		
+		<script type="text/javascript">
+			/* exported gapiLoaded */
+			/* exported gisLoaded */
+			/* exported handleAuthClick */
+			/* exported handleSignoutClick */
+			// TODO(developer): Set to client ID and API key from the Developer Console
+			const CLIENT_ID = '44181862856-r60mmv88qpttjaum9m83nj0i2vvd21np.apps.googleusercontent.com';
+			const API_KEY = 'AIzaSyB6x5d2ubjV6bEvn3Xm9MmL6GrSxD5TLd8';
+			
+			// Discovery doc URL for APIs used by the quickstart
+			const DISCOVERY_DOC = 'https://sheets.googleapis.com/$discovery/rest?version=v4';
+			
+			// Authorization scopes required by the API; multiple scopes can be
+			// included, separated by spaces.
+			const SCOPES = 'https://www.googleapis.com/auth/spreadsheets.readonly';
+			let tokenClient;
+			let gapiInited = false;
+			let gisInited = false;
+			
+			document.getElementById('authorize_button').style.visibility = 'hidden';
+			document.getElementById('signout_button').style.visibility = 'hidden';
+			
+			/**
+			* Callback after api.js is loaded.
+			*/
+			function gapiLoaded() {
+				gapi.load('client', initializeGapiClient);
+			}
+			
+			/**
+			* Callback after the API client is loaded. Loads the
+			* discovery doc to initialize the API.
+			*/
+			async function initializeGapiClient() {
+				await gapi.client.init({
+					apiKey: API_KEY,
+					discoveryDocs: [DISCOVERY_DOC],
+				});
+				gapiInited = true;
+				maybeEnableButtons();
+			}
+
+			/**
+			* Callback after Google Identity Services are loaded.
+			*/
+			function gisLoaded() {
+				tokenClient = google.accounts.oauth2.initTokenClient({
+					client_id: CLIENT_ID,
+					scope: SCOPES,
+					callback: '', // defined later
+				});
+				gisInited = true;
+				maybeEnableButtons();
+			}
+
+			/**
+			* Enables user interaction after all libraries are loaded.
+			*/
+			function maybeEnableButtons() {
+				if (gapiInited && gisInited) {
+					document.getElementById('authorize_button').style.visibility = 'visible';
+				}
+			}
+
+			/**
+			*  Sign in the user upon button click.
+			*/
+			function handleAuthClick() {
+				tokenClient.callback = async (resp) => {
+					if (resp.error !== undefined) {
+						throw (resp);
+					}
+					document.getElementById('signout_button').style.visibility = 'visible';
+					document.getElementById('authorize_button').innerText = 'Refresh';
+					await listMajors();
+				};
+
+				if (gapi.client.getToken() === null) {
+					// Prompt the user to select a Google Account and ask for consent to share their data
+					// when establishing a new session.
+					tokenClient.requestAccessToken({prompt: 'consent'});
+				} else {
+					// Skip display of account chooser and consent dialog for an existing session.
+					tokenClient.requestAccessToken({prompt: ''});
+				}
+			}
+
+			/**
+			*  Sign out the user upon button click.
+			*/
+			function handleSignoutClick() {
+				const token = gapi.client.getToken();
+				if (token !== null) {
+					google.accounts.oauth2.revoke(token.access_token);
+					gapi.client.setToken('');
+					document.getElementById('content').innerText = '';
+					document.getElementById('authorize_button').innerText = 'Authorize';
+					document.getElementById('signout_button').style.visibility = 'hidden';
+				}
+			}
+
+			/**
+			* Print the names and majors of students in a sample spreadsheet:
+			* https://docs.google.com/spreadsheets/d/1BxiMVs0XRA5nFMdKvBdBZjgmUUqptlbs74OgvE2upms/edit
+			*/
+			async function listMajors() {
+				let response;
+				try {
+					// Fetch first 10 files
+					response = await gapi.client.sheets.spreadsheets.values.get({
+					spreadsheetId: '1joD_lLF1kbvQozNPpMXXwPQ_iYL0JmMyv2nJy2uicz0',
+					range: 'Sheet 1!A1',
+				});
+				} catch (err) {
+					document.getElementById('content').innerText = err.message;
+					return;
+				}
+				const range = response.result;
+				if (!range || !range.values || range.values.length == 0) {
+					document.getElementById('content').innerText = 'No values found.';
+					return;
+				}
+				// Flatten to string to display
+				const output = range.values.reduce(
+					(str, row) => `${str}${row[0]}, ${row[4]}\n`,
+					'Name, Major:\n');
+				document.getElementById('content').innerText = output;
+			}
+		</script>
+		<script async defer src="https://apis.google.com/js/api.js" onload="gapiLoaded()"></script>
+		<script async defer src="https://accounts.google.com/gsi/client" onload="gisLoaded()"></script>
 	</body>
 </html>
