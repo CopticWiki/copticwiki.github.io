@@ -7,6 +7,10 @@ const apiKey = 'AIzaSyABf_IFY_ZyNQk_9xQL19v_vEgZfBa0Dt4';
 
 // Construct the URL for Google Sheets API v4
 const url = `https://sheets.googleapis.com/v4/spreadsheets/${spreadsheetId}/values/Sheet1?key=${apiKey}`;
+
+let isSameNumber = "";
+let newNum = "";
+
 async function fetchGoogleSheetData() {
 	try {
 		
@@ -16,19 +20,29 @@ async function fetchGoogleSheetData() {
 		
 		// Extract rows from the data
 		const rows = data.values;
+		console.log(rows);
 
 		// Get the table body element
 		const tableBody = document.querySelector('#data-table tbody');
 		
-		let collectValues = "";
+		function htmlEncode(text) {
+			return text.replace(/<i>/g, '&lt;b&gt;')
+			.replace(/<\/i>/g, '&lt;/b&gt;');
+		}
 		
 		function getRandomInt(min, max) {
-			const minCeiled = Math.ceil(min);
-			const maxFloored = Math.floor(max);
-			return Math.floor(Math.random() * (maxFloored - minCeiled) + minCeiled); // The maximum is exclusive and the minimum is inclusive
+			let minCeiled = Math.ceil(min);
+			let maxFloored = Math.floor(max);
+			// The maximum is exclusive and the minimum is inclusive
+			newNum = Math.floor(Math.random() * (maxFloored - minCeiled) + minCeiled);
+			if (newNum == isSameNumber) {
+				getRandomInt(min, max);
+			}
+			isSameNumber = newNum;
+			return newNum;
 		}
 		let randomNumber = getRandomInt(1, rows.length);
-		console.log(randomNumber);
+		console.log("~~~" + randomNumber + "~~~");
 		let selectedRow = rows[randomNumber];
 		
 		
@@ -41,6 +55,7 @@ async function fetchGoogleSheetData() {
 		cellElement1.textContent = verse;
 		
 		let english = selectedRow[2];
+		//english = htmlEncode(english);
 		let cellElement2 = document.querySelector("#data-table tr:nth-child(3) td");
 		cellElement2.textContent = english;
 /*
