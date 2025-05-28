@@ -20,20 +20,61 @@ async function fetchGoogleSheetData() {
 		// Get the table body element
 		const tableBody = document.querySelector('#data-table tbody');
 		
+		let collectValues = "";
+		
+		function getRandomInt(min, max) {
+			const minCeiled = Math.ceil(min);
+			const maxFloored = Math.floor(max);
+			return Math.floor(Math.random() * (maxFloored - minCeiled) + minCeiled); // The maximum is exclusive and the minimum is inclusive
+		}
+		let randomNumber = getRandomInt(1, rows.length);
+		console.log(randomNumber);
+		let selectedRow = rows[randomNumber];
+		
+		
+		let coptic = selectedRow[1];
+		let cellElement0 = document.querySelector("#data-table tr:nth-child(1) td");
+		cellElement0.textContent = coptic;
+		
+		let verse = selectedRow[0];
+		let cellElement1 = document.querySelector("#data-table tr:nth-child(2) td");
+		cellElement1.textContent = verse;
+		
+		let english = selectedRow[2];
+		let cellElement2 = document.querySelector("#data-table tr:nth-child(3) td");
+		cellElement2.textContent = english;
+/*
+		rows[randomNumber].forEach(cell => {
+			const cellElement = document.createElement('td');
+			cellElement.textContent = cell;
+			row.appendChild(cellElement);
+			collectValues += cell + "\n";
+		});
+*/
+		
+		// Append the row to the table
+		//tableBody.appendChild(row);
+		
+		
+		
+		
+		
+		
 		// Loop through the rows (starting from row 1 to skip headers)
-		for (let i = 0; i < rows.length; i++) {
-			const row = document.createElement('tr');
+		//for (let i = 0; i < rows.length; i++) {
+		//	const row = document.createElement('tr');
 
-			// Loop through each cell in the row and create a table cell for each
-			rows[i].forEach(cell => {
-				const cellElement = document.createElement('td');
-				cellElement.textContent = cell;
-				row.appendChild(cellElement);
-			});
+		//	// Loop through each cell in the row and create a table cell for each
+		//	rows[i].forEach(cell => {
+		//		const cellElement = document.createElement('td');
+		//		cellElement.textContent = cell;
+		//		row.appendChild(cellElement);
+		//		collectValues += cell + "\n";
+		//	});
 			
 			// Append the row to the table
-			tableBody.appendChild(row);
-		}
+		//	tableBody.appendChild(row);
+		//}
 	}
 	catch (error) {
 		console.error('Error fetching Google Sheets data:', error);
@@ -42,3 +83,4 @@ async function fetchGoogleSheetData() {
 
 // Call the function to fetch and display data
 document.addEventListener('DOMContentLoaded', fetchGoogleSheetData);
+document.querySelector("#reload-sentence").addEventListener("click", fetchGoogleSheetData);
