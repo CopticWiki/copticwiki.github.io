@@ -6,11 +6,48 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<meta charset="UTF-8">
 		<style>
+			#reload-sentence {
+				font-size: 3em;
+				//width: 5em;
+				//aspect-ratio: 1;
+				//background: white;
+				position: fixed;
+				top: 0em;
+				left: 0em;
+				//border-radius: 50%;
+				margin: .5em;
+				margin: .1em;
+			}
+			#reload-sentence:before {
+				content: "🔄";
+				//mix-blend-mode: difference;
+			}
 			#content {
 				width: 400px;
 				height: 400px;
 				color: gold;
 				background: #ffffff11
+			}
+			#data-table {
+				font-family: rk_coptic;
+				font-size: 2em;
+				margin-left: 2.5em;
+				margin-left: 1.7em;
+			}
+			#data-table td {
+				//background: #ffffff11;
+				vertical-align: top;
+				opacity: 1;
+				transition: opacity .5s;
+			}
+			#data-table .coptic {
+				color: goldenrod;
+			}
+			#data-table .verse {
+				color: lightblue;
+			}
+			#data-table .english {
+				color: #aaaaaa;
 			}
 			html {
 				color: seagreen;
@@ -101,10 +138,16 @@
 		</style>
 	</head>
 	<body>
-		<table id="data-table" style="min-height: 400px;">
+		<div id="reload-sentence">
+		</div>
+		<table id="data-table">
 			<tbody>
+				<tr><td class="verse"></td></tr>
+				<tr><td class="coptic"></td></tr>
+				<tr><td class="english"></td></tr>
 			</tbody>
 		</table>
+		<!--
 		<ul class="coptic">
 			<li><cite>Matthew 8:26</cite>ⲟⲩⲟϩ ⲡⲉϫⲁϥ ⲛⲱⲟⲩ, ϫⲉ “ⲉⲑⲃⲉⲟⲩ ⲧⲉⲧⲉⲛϣⲟⲗϩ ⲛ̀ϩⲏⲧ, ⲛⲁ-ⲡⲓⲕⲟⲩϫⲓ ⲛ̀ⲛⲁϩϯ?”
 				<ul>
@@ -137,6 +180,7 @@
 				</ul>
 			</li>
 		</ul>
+		-->
 		<script src="script.js">
 		</script>
 	</body>
