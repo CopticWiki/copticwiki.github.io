@@ -1,10 +1,11 @@
-import { apiKey } from "../../../secrets.js";
+//import { apiKey } from "../../../secrets.js";
 import arrayStyling from "../../../scripts/dictionary_regexes.js";
 
 const spreadsheetId = '1G9yatQe8I-FTeAKXm66f7-1X2GNDu84VPo5J0hh25gc';
 //const spreadsheetId = '2PACX-1vS9eqfhUiqnzmm4DakfUSkkkwKfow7rWWFUWgnKPf-84II_HIZ2h15y7ybo9cflrtJ2aLBAIDO5zLGr';
-const apiKey1 = apiKey;
-const url = `https://sheets.googleapis.com/v4/spreadsheets/${spreadsheetId}/values/dictionary?key=${apiKey1}`;
+//const apiKey1 = apiKey;
+const apiKey = "AIzaSyDGt571w0kPSIFxBHvYLWJbp7R1IVBogFM";
+const url = `https://sheets.googleapis.com/v4/spreadsheets/${spreadsheetId}/values/dictionary?key=${apiKey}`;
 
 let fullViewToRender = document.querySelector("#full-view");
 let collectedEntries = [];
