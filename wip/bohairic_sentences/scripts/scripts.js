@@ -1,19 +1,10 @@
-// Replace with your actual Spreadsheet ID
-//const spreadsheetId = '2PACX-1vShz06pVOzmNvBcBl0Dq71i1bqdJB52-ETEQVDUOouDsaIDN36y3diJOWP--nCbqe-p1pU0g0PDzH-m';
 const spreadsheetId = '1joD_lLF1kbvQozNPpMXXwPQ_iYL0JmMyv2nJy2uicz0';
-
-// Replace with your API Key
 const apiKey = 'AIzaSyABf_IFY_ZyNQk_9xQL19v_vEgZfBa0Dt4';
-
-// Construct the URL for Google Sheets API v4
 const url = `https://sheets.googleapis.com/v4/spreadsheets/${spreadsheetId}/values/Sheet1?key=${apiKey}`;
-
 let isSameNumber = "";
 let newNum = "";
-
 async function fetchGoogleSheetData() {
 	try {
-		
 		// Fetch data from Google Sheets API
 		const response = await fetch(url);
 		const data = await response.json();
@@ -21,7 +12,7 @@ async function fetchGoogleSheetData() {
 		// Extract rows from the data
 		const rows = data.values;
 		console.log(rows);
-
+		
 		// Get the table body element
 		const tableBody = document.querySelector('#data-table tbody');
 		
@@ -42,7 +33,7 @@ async function fetchGoogleSheetData() {
 			return newNum;
 		}
 		let randomNumber = getRandomInt(1, rows.length);
-		console.log("~~~" + randomNumber + "~~~");
+		//console.log("~~~" + randomNumber + "~~~");
 		let selectedRow = rows[randomNumber];
 		
 		
@@ -54,10 +45,14 @@ async function fetchGoogleSheetData() {
 		let cellElement1 = document.querySelector("#data-table tr:nth-child(2) td");
 		cellElement1.textContent = verse;
 		
+		let tags = selectedRow[3];
+		let cellElement2 = document.querySelector("#data-table tr:nth-child(3) td");
+		cellElement2.textContent = tags;
+		
 		let english = selectedRow[2];
 		//english = htmlEncode(english);
-		let cellElement2 = document.querySelector("#data-table tr:nth-child(3) td");
-		cellElement2.textContent = english;
+		let cellElement3 = document.querySelector("#data-table tr:nth-child(4) td");
+		cellElement3.textContent = english;
 /*
 		rows[randomNumber].forEach(cell => {
 			const cellElement = document.createElement('td');

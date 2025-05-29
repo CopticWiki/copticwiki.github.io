@@ -16,6 +16,10 @@ body {
 	//color: #6a6a6a;
 }
 
+body:hover #interface {
+	height: 50dvh;
+}
+
 #editor_text,
 #rendered_view {
 	font-size: 1.5rem;
@@ -27,6 +31,7 @@ body {
 	grid-template-columns: repeat(2, 1fr);
 	gap: 1em;
 	height: calc(100dvh - 2em);
+	transition: height .2s;
 }
 
 #editor_text {
@@ -91,4 +96,27 @@ body {
 	overflow: scroll;
 	transition: width .2s;
 	outline: none;
+}
+
+#full-view {
+	scrollbar-color: #64496a transparent;
+	overflow: scroll;
+	transition: width .2s;
+	outline: none;
+	border: none;
+	box-sizing: border-box;
+	font-size: 1.5rem;
+}
+
+#full-view p {
+	margin: 0;
+	text-indent: 1em;
+}
+
+#full-view p + p {
+	margin: 1em 0 0;
+}
+
+#full-view p .coptic.headword {
+	line-height: 1;
 }

@@ -3,138 +3,11 @@
 	<head>
 		<title>Bohairic Sentences</title>
 		<link rel="stylesheet" href="../../styles/styles.css">
+		<link rel="stylesheet" href="./styles/styles.css">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<meta charset="UTF-8">
 		<style>
-			#reload-sentence {
-				font-size: 3em;
-				//width: 5em;
-				//aspect-ratio: 1;
-				//background: white;
-				position: fixed;
-				top: 0em;
-				left: 0em;
-				//border-radius: 50%;
-				margin: .5em;
-				margin: .1em;
-			}
-			#reload-sentence:before {
-				content: "🔄";
-				//mix-blend-mode: difference;
-			}
-			#content {
-				width: 400px;
-				height: 400px;
-				color: gold;
-				background: #ffffff11
-			}
-			#data-table {
-				font-family: rk_coptic;
-				font-size: 2em;
-				margin-left: 2.5em;
-				margin-left: 1.7em;
-			}
-			#data-table td {
-				//background: #ffffff11;
-				vertical-align: top;
-				opacity: 1;
-				transition: opacity .5s;
-			}
-			#data-table .coptic {
-				color: goldenrod;
-			}
-			#data-table .verse {
-				color: lightblue;
-			}
-			#data-table .english {
-				color: #aaaaaa;
-			}
-			html {
-				color: seagreen;
-				color: violet;
-				color: #643c64;
-				color: #435655;
-				scrollbar-color: currentColor transparent;
-				overflow-y: scroll;
-			}
-			body {
-				color: inherit;
-				border: 1px solid;
-				border: none;
-				margin: 1em;
-			}
-			ul {
-				padding-inline-start: 1em;
-			}
-			ul.coptic {
-				color: inherit;
-				font-size: 2em;
-			}
-			li {
-				//background-image: linear-gradient(to right, #528f74, #4f4a2e);
-				-webkit-background-clip: text;
-				//-webkit-text-fill-color: transparent;
-				list-style: none;
-			}
-			li + li {
-				margin-top: 1em;
-			}
-			li::selection {
-				color: inherit;
-				color: #83827d;
-				background: #242436;
-			}
-			ul.coptic > li {
-				//color: #ffffff;
-				//background: #111111;
-				//background: #ffb700aa;
-				position: relative;
-				opacity: 1;
-				transition: opacity .2s;
-			}
-			ul.coptic > li cite {
-				font-size: .8em;
-				position: absolute;
-				//bottom: 0em;
-				//right: 0em;
-				top: -1.5em;
-				font-family: sans-serif;
-				font-style: normal;
-				color: transparent;
-				transition: color .5s;
-			}
-			ul.coptic:has(> li:hover) > li:not(:hover) {
-				opacity: .2;
-			}
-			ul.coptic > li:hover ul {
-				bottom: -3em;
-				color: inherit;
-			}
-			ul.coptic > li:hover cite {
-				color: #506a9d;
-			}
-			ul.coptic > li > ul {
-				//color: #ffffff;
-				color: transparent;
-				//display: block;
-				width: 100%;
-				//height: 300px;
-				background: purple;
-				//background: #ffb70033;
-				background: none;
-				//position: absolute;
-				bottom: 0em;
-				//top: 0em;
-				transition: color .5s;
-				z-index: -999;
-				mix-blend-mode: hard-light;
-				filter: invert(1);
-				padding-inline-start: 0em;
-			}
-			ul.coptic > li > ul > li {
-				border-left: .5em solid;
-				padding-left: .5em;
-			}
+			
 		</style>
 	</head>
 	<body>
@@ -144,9 +17,10 @@
 			<tbody>
 				<tr><td class="verse"></td></tr>
 				<tr><td class="coptic"></td></tr>
+				<tr><td class="tags"></td></tr>
 				<tr><td class="english"></td></tr>
 			</tbody>
 		</table>
-		<script src="script.js"></script>
+		<script src="./scripts/scripts.js"></script>
 	</body>
 </html>
