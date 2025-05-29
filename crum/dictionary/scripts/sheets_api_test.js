@@ -1,4 +1,4 @@
-import arrayStyling from "../../scripts/dictionary_regexes.js";
+import arrayStyling from "../../../scripts/dictionary_regexes.js";
 
 const spreadsheetId = '1G9yatQe8I-FTeAKXm66f7-1X2GNDu84VPo5J0hh25gc';
 //const spreadsheetId = '2PACX-1vS9eqfhUiqnzmm4DakfUSkkkwKfow7rWWFUWgnKPf-84II_HIZ2h15y7ybo9cflrtJ2aLBAIDO5zLGr';
