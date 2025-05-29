@@ -7,6 +7,7 @@ jobs:
     steps:
       - run: echo "🎉 The job was automatically triggered by a ${{ github.event_name }} event."
       - run: echo "🐧 This job is now running on a ${{ runner.os }} server hosted by GitHub!"
+      - run: echo "ϫ This repository's secret is ${{ secrets.GOOGLE_SHEETS_API_KEY_CRUM_DICTIONARY }} for the Google Sheets API Key."
       - run: echo "🔎 The name of your branch is ${{ github.ref }} and your repository is ${{ github.repository }}."
       - name: Check out repository code
         uses: actions/checkout@v4
