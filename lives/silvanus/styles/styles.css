@@ -1,0 +1,64 @@
+body {
+	
+}
+
+body::selection {
+	background: #33313122;
+	background: #ffb600;
+	background: #144b76;
+	background: transparent;
+	background: #28292a;
+	background: #202020;
+	color: #ae51a4;
+	color: #3daba7;
+	color: #000000;
+	color: #eeeeee;
+	color: #1c914b;
+	color: #38ff0042;
+	color: #7fd467b3;
+}
+
+h1,
+h2 {
+	display: none;
+}
+
+sup {
+	//color: violet;
+	padding: 0 5px;
+}
+.coptic {
+	color: inherit;
+	color: #7f9b9c;
+	background: linear-gradient(to right, #2b6d95, #666a2d);
+	background-clip: text;
+	color: transparent;
+}
+
+.translation {
+	font-size: .9em;
+}
+
+.italian,
+.translation {
+	//display: none;
+}
+
+#container {
+	font-size: 2.5em;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-columns: repeat(2, 1fr);
+	//grid-template-columns: repeat(1, 1fr);
+	gap: .5em;
+	line-height: 1.5;
+}
+
+#container > * {
+	padding: 0;
+}
+
+.sentence {
+	//color: lightgreen;
+	//cursor: pointer;
+}
