@@ -1,22 +1,11 @@
 @import url("./fonts.css");
 
-.author {
-	font-variant: small-caps;
-}
-
-
-
 * {
 	box-sizing: border-box;
 }
 
-
-
-
-
-::placeholder {
-	//color: orangered;
-	//opacity: 1;
+.author {
+	font-variant: small-caps;
 }
 
 [contenteditable=true]:empty:before {
