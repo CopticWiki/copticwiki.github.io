@@ -1,20 +1,5 @@
-body {
-	
-}
-
 body::selection {
-	background: #33313122;
-	background: #ffb600;
-	background: #144b76;
-	background: transparent;
-	background: #28292a;
 	background: #202020;
-	color: #ae51a4;
-	color: #3daba7;
-	color: #000000;
-	color: #eeeeee;
-	color: #1c914b;
-	color: #38ff0042;
 	color: #7fd467b3;
 }
 
@@ -28,20 +13,36 @@ sup {
 	padding: 0 5px;
 }
 .coptic {
-	color: inherit;
-	color: #7f9b9c;
 	background: linear-gradient(to right, #2b6d95, #666a2d);
 	background-clip: text;
 	color: transparent;
+	
 }
 
 .translation {
-	font-size: .9em;
+	//font-size: .9em;
+	scrollbar-color: #64496a transparent;
+	position: fixed;
+	right: 0;
+	height: 98dvh;
+	width: 50%;
+	overflow-y: auto;
+	opacity: .5;
+	transition: opacity .5s;
 }
 
-.italian,
+.translation:hover {
+	opacity: 1;
+}
+
+.italian {
+	display: none;
+}
+
+.coptic,
 .translation {
-	//display: none;
+	//overflow-y: auto;
+	//scrollbar-color: #64496a transparent;
 }
 
 #container {
@@ -52,6 +53,7 @@ sup {
 	//grid-template-columns: repeat(1, 1fr);
 	gap: .5em;
 	line-height: 1.5;
+	height: 98dvh;
 }
 
 #container > * {
