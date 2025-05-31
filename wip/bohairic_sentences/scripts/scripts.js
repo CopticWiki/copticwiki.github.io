@@ -1,5 +1,5 @@
 const spreadsheetId = '1joD_lLF1kbvQozNPpMXXwPQ_iYL0JmMyv2nJy2uicz0';
-const apiKey = 'AIzaSyABf_IFY_ZyNQk_9xQL19v_vEgZfBa0Dt4';
+const apiKey = '';
 const url = `https://sheets.googleapis.com/v4/spreadsheets/${spreadsheetId}/values/Sheet1?key=${apiKey}`;
 let isSameNumber = "";
 let newNum = "";
