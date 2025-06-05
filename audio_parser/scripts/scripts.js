@@ -1,3 +1,22 @@
+let textMorphemes = [
+["ⲟⲩ"],
+["ⲡ", "ⲉⲧ", "ⲕ̄", "ⲛⲁ", "ⲁⲁ", "ϥ"],
+["ⲉ", "ⲕ", "ϣⲁⲛ", "ϩⲉ"],
+["ⲉϩⲣⲁⲓ"],
+["ⲉ", "ⲛⲉⲩ", "ϭⲓϫ"]
+];
+
+let buildText {
+	for (i = 0; i < textMorphemes.length; i++) {
+		let newGroup = "";
+		let newMorpheme = "";
+		newMorpheme = document.createElement("span");
+		newMorpheme.classList.add("c");
+		newMorpheme.textContent = textMorphemes[i][0];
+		
+	}
+}
+
 const morphemes = document.getElementsByClassName("c");
 	let myAudio = document.querySelector("audio");
 	//let myTimestamp = myAudio.currentTime;
