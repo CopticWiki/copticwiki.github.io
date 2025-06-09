@@ -2,6 +2,18 @@
 	padding: 0em;
 }
 
+#intro table tr td {
+	vertical-align: top;
+}
+
+#intro table tr td:nth-child(1) {
+	white-space: nowrap;
+}
+
+#intro ol li {
+	outline: none;
+}
+
 ul#text {
 	padding: 0em;
 }
