@@ -1,3 +1,8 @@
+.ready {
+	outline: 1px solid #90ee90;
+	background: linear-gradient(135deg, #90ee9022, #90ee9000);
+}
+
 #container h2 {
 	padding: 0em;
 }

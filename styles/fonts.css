@@ -59,6 +59,10 @@
 		U+2019, /* single quote right */
 		U+201C, /* double quote left */
 		U+201D, /* double quote right */
+		U+007B, /* curly bracket left */
+		U+007D, /* curly bracket right */
+		U+27e8, /* editorial angle bracket left */
+		U+27e9, /* editorial angle bracket right */
 		U+003B; /* semicolon */
 }
 @font-face { /* coptic -> headword */
