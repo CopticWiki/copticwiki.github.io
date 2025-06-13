@@ -124,6 +124,7 @@ ul > li {
 }
 ol > li {
 	outline: 1px solid #ffffff22;
+	border-radius: .5rem;
 }
 ol > li + li {
 	margin-top: 1em;
