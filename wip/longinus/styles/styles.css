@@ -1,6 +1,10 @@
 .ready {
-	outline: 1px solid #90ee90;
-	background: linear-gradient(135deg, #90ee9022, #90ee9000);
+	//outline: 1px solid #90ee90;
+	//background: linear-gradient(135deg, #90ee9022, #90ee9000);
+}
+
+li.it {
+	display: none;
 }
 
 #container h2 {
