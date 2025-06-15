@@ -1,3 +1,7 @@
+body {
+	color: #666363;
+}
+
 body::selection {
 	background: #202020;
 	color: #7fd467b3;
@@ -9,13 +13,27 @@ h2 {
 }
 
 sup {
-	//color: violet;
+	color: goldenrod;
+	font-size: 0px;
 	padding: 0 5px;
+	//position: absolute;
+	//width: 0px;
+	display: none;
+	transition: font-size .2s, display .2s;
 }
-.coptic {
-	background: linear-gradient(to right, #2b6d95, #666a2d);
+
+#coptic:hover sup {
+	//color: transparent;
+	//display: initial;
+	//font-size: 32px;
+	//width: 100px;
+}
+
+#coptic {
+	//background: linear-gradient(to right, #2b6d95, #666a2d);
+	//color: transparent;
 	background-clip: text;
-	color: transparent;
+	background-clip: revert;
 	
 }
 
@@ -60,7 +78,75 @@ sup {
 	padding: 0;
 }
 
-.sentence {
-	//color: lightgreen;
-	//cursor: pointer;
+p {
+	line-height: 1.4;
 }
+
+#translation {
+	//border-left: 1px solid;
+}
+
+#container #coptic {
+	background: linear-gradient(to right, #2b6d95, #666a2d);
+	color: transparent;
+	background-clip: text;
+	transition: color .2s;
+}
+
+#container #coptic .sentence {
+	transition: color .2s;
+}
+
+#container #coptic .sentence:hover {
+	//background: linear-gradient(to right, #2b6d95, #666a2d);
+	color: #90ee90;
+	color: #7dc483;
+	//background: white;
+	//mix-blend-mode: exclusion;
+	//background-clip: text;
+}
+
+#container:has(#coptic .sentence[data-number="001"]:hover) #translation .sentence[data-number="001"],
+#container:has(#coptic .sentence[data-number="002"]:hover) #translation .sentence[data-number="002"],
+#container:has(#coptic .sentence[data-number="003"]:hover) #translation .sentence[data-number="003"],
+#container:has(#coptic .sentence[data-number="004"]:hover) #translation .sentence[data-number="004"],
+#container:has(#coptic .sentence[data-number="005"]:hover) #translation .sentence[data-number="005"],
+#container:has(#coptic .sentence[data-number="006"]:hover) #translation .sentence[data-number="006"],
+#container:has(#coptic .sentence[data-number="007"]:hover) #translation .sentence[data-number="007"],
+#container:has(#coptic .sentence[data-number="008"]:hover) #translation .sentence[data-number="008"],
+#container:has(#coptic .sentence[data-number="009"]:hover) #translation .sentence[data-number="009"],
+#container:has(#coptic .sentence[data-number="010"]:hover) #translation .sentence[data-number="010"],
+#container:has(#coptic .sentence[data-number="011"]:hover) #translation .sentence[data-number="011"],
+#container:has(#coptic .sentence[data-number="012"]:hover) #translation .sentence[data-number="012"],
+#container:has(#coptic .sentence[data-number="013"]:hover) #translation .sentence[data-number="013"],
+#container:has(#coptic .sentence[data-number="014"]:hover) #translation .sentence[data-number="014"],
+#container:has(#coptic .sentence[data-number="015"]:hover) #translation .sentence[data-number="015"],
+#container:has(#coptic .sentence[data-number="016"]:hover) #translation .sentence[data-number="016"],
+#container:has(#coptic .sentence[data-number="017"]:hover) #translation .sentence[data-number="017"],
+#container:has(#coptic .sentence[data-number="018"]:hover) #translation .sentence[data-number="018"],
+#container:has(#coptic .sentence[data-number="019"]:hover) #translation .sentence[data-number="019"],
+#container:has(#coptic .sentence[data-number="020"]:hover) #translation .sentence[data-number="020"],
+#container:has(#coptic .sentence[data-number="021"]:hover) #translation .sentence[data-number="021"],
+#container:has(#coptic .sentence[data-number="022"]:hover) #translation .sentence[data-number="022"],
+#container:has(#coptic .sentence[data-number="023"]:hover) #translation .sentence[data-number="023"],
+#container:has(#coptic .sentence[data-number="024"]:hover) #translation .sentence[data-number="024"],
+#container:has(#coptic .sentence[data-number="025"]:hover) #translation .sentence[data-number="025"],
+#container:has(#coptic .sentence[data-number="026"]:hover) #translation .sentence[data-number="026"],
+#container:has(#coptic .sentence[data-number="027"]:hover) #translation .sentence[data-number="027"],
+#container:has(#coptic .sentence[data-number="028"]:hover) #translation .sentence[data-number="028"],
+#container:has(#coptic .sentence[data-number="029"]:hover) #translation .sentence[data-number="029"],
+#container:has(#coptic .sentence[data-number="030"]:hover) #translation .sentence[data-number="030"],
+#container:has(#coptic .sentence[data-number="031"]:hover) #translation .sentence[data-number="031"],
+#container:has(#coptic .sentence[data-number="032"]:hover) #translation .sentence[data-number="032"],
+#container:has(#coptic .sentence[data-number="033"]:hover) #translation .sentence[data-number="033"],
+#container:has(#coptic .sentence[data-number="034"]:hover) #translation .sentence[data-number="034"],
+#container:has(#coptic .sentence[data-number="035"]:hover) #translation .sentence[data-number="035"],
+#container:has(#coptic .sentence[data-number="036"]:hover) #translation .sentence[data-number="036"],
+#container:has(#coptic .sentence[data-number="037"]:hover) #translation .sentence[data-number="037"],
+#container:has(#coptic .sentence[data-number="038"]:hover) #translation .sentence[data-number="038"],
+#container:has(#coptic .sentence[data-number="039"]:hover) #translation .sentence[data-number="039"] {
+	color: #7dc483;
+	transition: color .2s;
+}
+
+
