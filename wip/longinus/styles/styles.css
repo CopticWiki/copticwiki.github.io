@@ -23,11 +23,11 @@ li.it {
 	outline: none;
 }
 
-ul#text {
+ul.part {
 	padding: 0em;
 }
 
-ul#text ol {
+ul.part ol {
 	padding: 1em;
 }
 
