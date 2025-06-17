@@ -15,7 +15,7 @@
 		<h1>CopticWiki</h1>
 		<h2>Life of Longinus and Lucius</h2>
 		<div id="container">
-			<div id="greek_words">
+			<div id="greek_words" style="display: none;">
 				<h2>Greek words:</h2>
 				<ul>
 					<li>
@@ -716,7 +716,7 @@
 					</li>
 				</ul>
 			</div>
-			<div id="intro">
+			<div id="intro" style="display: none;">
 				<h2>Introduzione</h2>
 				<p>La vita dei monaci Longino e Lucio suo maestro (= VL), vissuti nella seconda parte della loro vita all'Ennaton, presso Alessandria, è tramandata anonima in lingua copta (dialetto saidico)<sup>1</sup> da un unico manoscritto<sup>2</sup>, ora conservato presso la Pierpont Morgan Library di New York (M 579; edizione fotografica<sup>3</sup> vol. XXXVII; sigla: M). Esso proviene dalla biblioteca del monastero di s. Michele arcangelo presso Hamuli, nel Faium, che fu scoperta nel 1910<sup>4</sup>, e della quale 50 codici sono ora a New York; altri 6 al Museo Copto del Cairo.</p>
 				<p><i>Descrizione del codice.</i></p>
@@ -827,7 +827,7 @@
 				</ul>
 			</div>
 			<h2>Part 1</h2>
-			<ul id="text">
+			<ul class="part">
 				<li>Ch. 0
 					<ol>
 						<li class="ready">
@@ -1219,23 +1219,71 @@
 					</ol>
 				</li>
 			</ul>
-			<!--
 			<h2>Part 2</h2>
 			<ul>
 				<li>Ch. 10
 					<ol>
 						<li>
 							<ul>
-								<li class="coptic"></li>
+								<li class="coptic">ϯⲛⲁϫⲱ ⲇⲉ ⲟⲛ ⲛ̄ⲕⲉϣⲡⲏⲣⲉ ⲉ-ⲁ-ⲡⲛⲟⲩⲧⲉ ⲁⲁⲥ ⲉⲃⲟⲗ ϩⲓⲧⲟⲟⲧⲟⲩ ⲛ̄ⲛⲉϥϩⲙϩⲁⲗ. ⲛⲉⲩⲛ̄-ⲟⲩⲣⲱⲙⲉ ϩⲛ̄ⲧⲡⲉⲣⲓⲭⲱⲣⲟⲥ ⲉⲧⲙ̄ⲙⲁⲩ, ⲉ-ⲟⲩⲛ̄ⲧⲁϥ ⲙ̄ⲙⲁⲩ ⲛ̄ⲟⲩϣⲏⲣⲉ ⲛ̄ⲉⲩⲅⲉⲛⲏⲥ, ⲉ-ⲁϥⲉⲓ ⲉⲧϩⲏⲗⲏⲕⲓⲁ ⲛ̄ⲧⲙⲛⲧϣⲏⲣⲉ ϣⲏⲙ.</li>
 								<li class="it"></li>
-								<li class="en"></li>
+								<li class="en">Moreover, I will tell of another miracle that God had done through his servants. There was a man in that area, who had a kind son, who'd arrived at the age of youth.</li>
 							</ul>
 						</li>
 						<li>
 							<ul>
-								<li class="coptic"></li>
+								<li class="coptic">ⲛⲉⲩⲛ̄-ⲟⲩⲥϩⲓⲙⲉ ⲇⲉ ϫⲉ ⲫⲗⲁⲃⲓⲁ, ⲁⲥϭⲟⲓⲗⲉ ⲛ̄ⲟⲩⲅⲣⲁⲙⲙⲁⲧⲓⲟⲛ ⲉⲛ̄ⲉⲓⲟⲧⲉ ⲙ̄ⲡϣⲏⲣⲉ ϣⲏⲙ ⲉⲧⲙ̄ⲙⲁⲩ,</li>
 								<li class="it"></li>
-								<li class="en"></li>
+								<li class="en">And there was a woman, Flavia. She deposited a letter to the parents of that boy,</li>
+							</ul>
+						</li>
+						<li>
+							<ul>
+								<li class="coptic">ⲁ-ⲛⲁⲓ ⲇⲉ ⲧⲁⲁϥ ⲙ̄ⲡⲉⲩϣⲏⲣⲉ ⲉⲧⲣⲉϥⲥⲕⲉⲡⲁⲍⲉ ⲙ̄ⲙⲟϥ.</li>
+								<li class="it"></li>
+								<li class="en">These things were done for their son to get him to prepare himself.</li>
+							</ul>
+						</li>
+						<li>
+							<ul>
+								<li class="coptic">ⲁⲥϣⲱⲡⲉ ⲇⲉ ⲛ̄ⲧⲉⲣⲉ-ⲡϣⲏⲣⲉ ϣⲏⲙ ⲙⲟⲩ ϩⲛ̄ⲟⲩϣⲡⲛϣⲱⲡ ⲉ-ⲛⲉⲣⲉ-ⲛⲉϥⲉⲓⲟⲧⲉ ⲡⲉ ⲟ ⲛ̄ⲁⲧⲥⲟⲟⲩⲛ ⲉⲡⲙⲁ ⲉⲧⲉⲣⲉ-ⲡⲉⲕⲣⲁⲙⲁⲇⲓⲟⲛ ⲛ̄ϩⲏⲧϥ̄,</li>
+								<li class="it"></li>
+								<li class="en">When it happened that the boy died while being nursed, his parents having been ignorant to where the is,</li>
+							</ul>
+						</li>
+						<li>
+							<ul>
+								<li class="coptic">ⲁ-ⲧⲉⲥϩⲓⲙⲉ ⲉⲧⲙ̄ⲙⲁⲩ ⲫⲗⲁⲃⲓⲁⲛⲏ ⲉⲓ ⲉⲥϣⲓⲛⲉ ⲛ̄ⲥⲁⲧⲉⲥⲡⲁⲣⲁⲑⲏⲕⲏ ⲉⲧⲉⲡⲉⲅⲣⲁⲙⲙⲁⲧⲓⲟⲛ ⲡⲉ ⲛ̄ⲧⲁⲥϭⲁⲱϥ ⲉⲣⲟⲟⲩ. ⲁⲩⲱ ⲛ̄ⲧⲉⲣⲟⲩⲁⲡⲟⲣⲉⲓ ⲙ̄ⲡⲟⲩϭⲛⲧϥ̄,</li>
+								<li class="it"></li>
+								<li class="en">That woman Flaviane came seeking a deposit, i.e., the letter, and she them. And when they were in doubt, they couldn't find him,</li>
+							</ul>
+						</li>
+						<li>
+							<ul>
+								<li class="coptic">ⲉⲃⲟⲗ ϫⲉ ⲙ̄ⲡⲟⲩⲉⲓⲙⲉ ⲉⲡⲙⲁ ⲛ̄ⲧⲁ-ⲡϣⲏⲣⲉ ϣⲏⲙ ⲕⲁⲁϥ ⲛ̄ϩⲏⲧϥ̄.</li>
+								<li class="it"></li>
+								<li class="en">because they didn't know where the boy was put.</li>
+							</ul>
+						</li>
+						<li>
+							<ul>
+								<li class="coptic">ⲁⲥⲁⲡⲉⲓⲗⲉ ⲇⲉ ⲛⲁⲩ ϩⲛ̄ⲟⲩⲛⲟϭ ⲛ̄ϭⲱⲛⲧ, ϩⲱⲥⲧⲉ ⲛ̄ⲥⲁⲁⲩ ⲛⲁⲥ ⲛ̄ϩⲙϩⲁⲗ. ⲛ̄ⲧⲉⲣⲟⲩⲥⲱⲧⲙ ⲉⲛⲁⲓ ⲛ̄ϭⲓⲛⲉⲓⲙⲁⲕⲁⲣⲓⲟⲥ, ⲉⲩϣⲁⲛⲧⲙ̄ⲁⲡⲟⲕⲁⲑⲓⲥⲧⲁ ⲛⲁⲥ ⲙ̄ⲡⲉⲥⲅⲣⲁⲙⲙⲁⲧⲓⲟⲛ. ⲧⲟⲧⲉ ⲛ̄ⲉⲓⲟⲧⲉ ⲙ̄ⲡϣⲏⲣⲉ ϣⲏⲙ, ⲛ̄ⲧⲉⲣⲟⲩϭⲱ ⲉⲩⲉⲛⲱⲭⲗⲉⲓ ⲛⲁⲩ ϩⲓⲧⲛ̄ⲧⲉⲥϩⲓⲙⲉ ⲉⲧⲙ̄ⲙⲁⲩ ⲁⲩⲕⲱ ⲙ̄ⲡⲉⲩϣⲏⲣⲉ ⲛ̄ⲟⲩⲉϣ ⲛ̄ⲧⲟⲙⲥ, ⲁⲩϯ ⲙ̄ⲡⲉⲩⲟⲩⲟⲓ ϩⲛ̄ⲟⲩϭⲉⲡⲏ ⲉⲡⲧⲟⲡⲟⲥ ⲉⲧⲉⲣⲉ-ⲛⲉⲧⲟⲩⲁⲁⲃ ⲛ̄ϩⲏⲧϥ̄ ⲙⲛ̄ϩⲉⲛⲕⲉⲛⲟϭ ⲙ̄ⲙⲏⲏϣⲉ ⲉⲩⲟⲩⲏϩ ⲛ̄ⲥⲱⲟⲩ, ⲉⲧⲉⲛⲉⲩⲥⲩⲅⲅⲉⲛⲏⲥ ⲛⲉ ⲙⲛ̄ⲛⲉⲩⲣⲙⲣⲁⲩⲏ. ⲁⲩⲡⲁϩⲧⲟⲩ ϩⲁⲣⲁⲧⲟⲩ ⲛ̄ⲛⲉⲟⲩⲉⲣⲏⲧⲉ ⲛ̄ⲁⲡⲁ ⲗⲟⲩⲕⲓⲟⲥ ⲙⲛ̄ⲁⲡⲁ ⲗⲟⲅⲅⲓⲛⲟⲥ, ⲉⲏⲡⲁⲣⲁⲕⲁⲗⲉⲓ ⲙ̄ⲙⲟⲟⲩ ⲉⲩϫⲱ ⲙ̄ⲙⲟⲥ, ϫⲉ</li>
+								<li class="it"></li>
+								<li class="en">She threatened them with great anger, so much so that she did for herself these servile things. When these blessed ones heard these things, when they wouldn't hand her back her letter. Then, the boy's parents, when they remained bothered by that woman, they let their son without burial, and they quickly made their way to the shrine, in which the saints and other important crowds were following them, who were their relatives and their neighbors, and they bowed to the feet of Apa Lucius and Apa Longinus, pleading to them,</li>
+							</ul>
+						</li>
+						<li>
+							<ul>
+								<li class="coptic">“ⲥⲟⲡⲥ ⲙ̄ⲡϫⲟⲉⲓⲥ ⲡⲉⲭⲣⲓⲥⲧⲟⲥ ⲡⲉⲧⲉⲧⲛ̄ⲟ ⲛⲁϥ ⲛ̄ϩⲙϩⲁⲗ, ϫⲉⲕⲁⲁⲥ ⲉϥⲉⲟⲩⲱⲛϩ ⲉⲃⲟⲗ ⲛ̄ⲧⲉⲯⲩⲭⲏ ⲙ̄ⲡⲉⲛϣⲏⲣⲉ ⲛ̄ⲧⲁϥⲙⲟⲩ ⲛ̄ⲧⲛ̄ⲉⲓⲙⲉ ⲉⲃⲟⲗ ϩⲓⲧⲟⲟⲧϥ̄ ϫⲉ ⲛ̄ⲧⲁϥⲟⲩⲁϩ ⲡⲉⲅⲣⲁⲙⲙⲁⲧⲓⲟⲛ ⲧⲱⲛ,</li>
+								<li class="it"></li>
+								<li class="en">“Beg the Lord Christ, He to whom you are enslaved, so that he shall reveal the soul of our son who died, and we'll know through him where the letter is located,</li>
+							</ul>
+						</li>
+						<li>
+							<ul>
+								<li class="coptic">ⲡⲁⲓ ⲛ̄ⲧⲁ-ⲟⲩⲥϩⲓⲙⲉ ⲛ̄ⲣⲙⲙⲁⲟ ϭⲁⲗⲱⲱϥ ⲉⲣⲟⲛ ⲉⲥⲁⲡⲉⲓⲗⲏ ⲉⲣⲟⲛ ⲧⲉⲛⲟⲩ ⲉⲧⲣⲉⲥⲁⲁⲛ ⲛ̄ϩⲙϩⲁⲗ. ⲉϣⲱⲡⲉ ⲙ̄ⲡⲉⲛϭⲛ-ⲡⲉⲅⲣⲁⲙⲙⲁⲧⲓⲟⲛ, ⲛ̄ⲧⲛ̄ⲧⲁⲁϥ ⲛⲁⲥ.”</li>
+								<li class="it"></li>
+								<li class="en">which the wealthy woman to us, now threatening to have us enslaved. If we don't find the letter, we'll do it for her.”</li>
 							</ul>
 						</li>
 					</ol>
@@ -1244,16 +1292,31 @@
 					<ol>
 						<li>
 							<ul>
-								<li class="coptic"></li>
+								<li class="coptic">ⲁⲩⲱ ⲛ̄ⲧⲉⲣⲟⲩⲥⲱⲧⲙ ⲉⲛⲁⲓ ⲛ̄ϭⲓⲙ̄ⲙⲁⲕⲁⲣⲓⲟⲥ ϩⲓⲧⲛ̄ⲛ̄ⲉⲓⲟⲧⲉ ⲙ̄ⲡϣⲏⲣⲉ ϣⲏⲙ ⲁⲩϣⲛ-ϩⲧⲏⲩ ϩⲁⲣⲟⲟⲩ ϩⲓⲧⲛ̄ⲧⲁⲅⲁⲡⲏ ⲙⲛ̄ⲧⲙⲛⲧϣⲁⲛϩⲧⲏϥ ⲙ̄ⲡⲉⲭⲣⲓⲥⲧⲟⲥ ⲉⲧⲛ̄ϩⲏⲧⲟⲩ. ⲁⲩⲧⲱⲟⲩⲛ ϩⲛ̄ⲟⲩϭⲉⲡⲏ ⲁⲩⲟⲩⲁϩⲟⲩ ⲛ̄ⲥⲱⲟⲩ ⲁϫⲛ̄ⲗⲁⲁⲩ ⲛ̄ϣⲧⲟⲣⲧⲣ ϩⲓⲙⲛⲧⲣⲉϥϫⲛⲁⲁⲩ. ⲁⲩⲱ ⲛ̄ⲧⲉⲣⲟⲩⲡⲱϩ ⲉⲡⲏⲓ ⲉⲧⲉⲣⲉ-ⲡϣⲏⲣⲉ ϣⲏⲙ ⲉϥⲙⲟⲟⲩⲧ ⲛ̄ϩⲏⲧϥ̄ ⲁⲩⲱⲕ ⲉϩⲟⲩⲛ ⲉⲡⲙⲁ ⲉⲧⲉⲣⲉ-ⲡⲉⲧⲙⲟⲟⲩⲧ ⲛⲕⲟⲧⲕ ⲛ̄ϩⲏⲧϥ̄, ⲁⲩⲕⲱⲗϫ ⲛ̄ⲛⲉⲩⲡⲁⲧ ⲁⲩϣⲗⲏⲗ ϩⲱⲥ ⲉⲣⲉ-ⲡⲛⲟⲩⲧⲉ ⲟⲩⲱϣ ⲉⲟⲩⲱⲛϩ ⲉⲃⲟⲗ ⲛ̄ⲧⲉϣⲡⲏⲣⲉ ⲉⲡⲙⲁⲕⲁⲣⲓⲟⲥ ⲁⲡⲁ ⲗⲟⲅⲅⲓⲛⲟⲥ ⲡⲉⲧⲙⲉϩ ⲛ̄ⲁⲣⲉⲧⲏ. ⲛ̄ⲧⲉⲩⲛⲟⲩ ⲁϥⲙⲟⲩϩ ⲉⲃⲟⲗ ϩⲙ̄ⲡⲉⲡⲛⲉⲩⲙⲁ ⲉⲧⲟⲩⲁⲁⲃ ⲁϥⲁⲙⲁϩⲧⲉ ⲛ̄ⲧϭⲓϫ ⲙ̄ⲡϣⲏⲣⲉ ϣⲏⲙ ⲙ̄ⲡⲉⲙⲧⲟ ⲉⲃⲟⲗ ⲙ̄ⲡⲙⲏⲏϣⲉ, ⲁⲩⲱ ⲡⲉϫⲁϥ ⲛ̄ⲧⲉⲓϩⲉ, ϫⲉ “ⲡⲛⲟⲩⲧⲉ ⲛ̄ⲧⲁϥⲧⲟⲩⲛⲉⲥ-ⲗⲁⲍⲁⲣⲟⲥ ⲙ̄ⲡⲉⲓⲟⲩⲟⲉⲓϣ ⲛⲧⲟϥ ⲟⲛ ⲧⲉⲛⲟⲩ ⲡⲉⲧⲛⲁⲕⲧⲟ ⲉⲣⲟⲕ ⲙ̄ⲡⲉⲕⲡⲛⲉⲩⲙⲁ, ϫⲉⲕⲁⲁⲥ ⲉⲕⲛⲁⲧⲁⲙⲟⲛ ϫⲉ ⲛ̄ⲧⲁⲕⲕⲁ-ⲡⲉⲅⲣⲁⲙⲙⲁⲧⲓⲟⲛ ⲛ̄ⲧⲉⲥϩⲓⲙⲉ ⲛ̄ⲣⲙⲙⲁⲟ ⲉⲧⲱⲛ, ϫⲉ ⲛ̄ⲛⲉⲥϥⲓ ⲛ̄ⲛⲉⲕⲉⲓⲟⲧⲉ ⲛ̄ϩⲙϩⲁⲗ.”</li>
 								<li class="it"></li>
-								<li class="en"></li>
+								<li class="en">And when the blessed ones heard these things through the boy's parents, they were moved with compassion through love and patience of Christ within themselves, and they arose in a hurry and followed them without any trouble or delay. And when they reached the house that the dead boy was in, they entered the spot where the dead one lay, and they knelt and prayed, as if God wished to reveal the miracle to the blessed Apa Longinus, who was full of virtue. Immediately, he was filled with the holy spirit, and he held the boy's hand in front of the crowd, and he said thus: “God once raised Lazarus; furthermore, now it is he who will return your holy spirit to you, so that you'll tell us where you left the wealthy woman's letter, so that she won't take your parents as slaves.”
+								</li>
 							</ul>
 						</li>
 						<li>
 							<ul>
-								<li class="coptic"></li>
+								<li class="coptic">ⲁⲩⲱ ⲛ̄ⲧⲉⲩⲛⲟⲩ ⲁ-ⲡⲉⲡⲛⲉⲩⲙⲁ ⲙ̄ⲡϣⲏⲣⲉ ϣⲏⲙ ⲕⲧⲟϥ ⲉⲣⲟϥ ⲁϥⲧⲱⲟⲩⲛ ⲁϥϩⲙⲟⲟⲥ ⲁϥⲟⲩⲱⲛ ⲛⲣⲱϥ, ⲉⲣⲉ-ⲛⲉⲧⲁϩⲉⲣⲁⲧⲟⲩ ⲧⲏⲣⲟⲩ ⲥⲱⲧⲙ, ⲁϥⲧⲁⲙⲟⲟⲩ ϫⲉ ⲉⲣⲉ-ⲡⲉⲅⲣⲁⲙⲙⲁⲧⲓⲟⲛ ⲟⲩⲏϩ ⲧⲱⲛ ϩⲙ̄ⲡⲏⲓ,</li>
 								<li class="it"></li>
-								<li class="en"></li>
+								<li class="en">And immediately, the boy's spirit returned to him, and he got up, and sat, and opened his mouth, with all those standing listening to him. He told them where in the house the letter was located.</li>
+							</ul>
+						</li>
+						<li>
+							<ul>
+								<li class="coptic">ⲁⲩⲱ ⲁⲩϫⲛⲟⲩϥ ⲛ̄ϭⲓⲛⲉϥⲉⲓⲟⲧⲉ ⲉϩⲉⲛⲕⲉϩⲃⲏⲩⲉ ⲉⲩⲟ ⲛ̄ⲁⲧⲥⲟⲟⲩⲛ ⲉⲣⲟⲟⲩ ⲁϥⲁⲡⲟⲗⲟⲅⲓⲍⲉ ⲛⲁⲩ ⲉⲧⲃⲉϩⲱⲃ ⲛⲓⲙ ⲛ̄ⲧⲁⲩϫⲛⲟⲩϥ ⲉⲣⲟⲟⲩ, ⲁⲩⲱ ⲛ̄ⲧⲉⲓϩⲉ ⲁϥⲛⲕⲟⲧⲕ ⲛ̄ⲧⲉⲩⲛⲟⲩ.</li>
+								<li class="it"></li>
+								<li class="en">And he was asked about other ignorant things by his parents, and he explained to them everything they asked about, and like this he immediately lay to rest.</li>
+							</ul>
+						</li>
+						<li>
+							<ul>
+								<li class="coptic">ⲛ̄ⲧⲉⲣⲟⲩⲛⲁⲩ ⲇⲉ ⲛ̄ϭⲓ ⲛ̄ⲣⲱⲙⲉ ⲛ̄ⲧⲗⲩⲕⲓⲁ ⲉⲡⲉⲓϩⲱⲃ ⲛ̄ϣⲡⲏⲣⲉ ⲛ̄ⲧⲁϥϣⲱⲡⲉ ϩⲓⲧⲛ̄ⲛⲉⲧⲟⲩⲁⲁⲃ, ⲁⲩϯⲉⲟⲟⲩ ⲙ̄ⲡⲛⲟⲩⲧⲉ ⲡⲉⲧⲉⲓⲣⲉ ⲛ̄ⲛⲉⲓϣⲡⲏⲣⲉ ⲙⲁⲩⲁⲁϥ.</li>
+								<li class="it"></li>
+								<li class="en">And when the people of Lycia saw this miraculous deed that took place through the saints, they glorified God, the sole performer of these miracles.</li>
 							</ul>
 						</li>
 					</ol>
@@ -1262,6 +1325,38 @@
 					<ol>
 						<li>
 							<ul>
+								<li class="coptic">ⲛ̄ⲧⲉⲣⲉ-ⲡⲥⲟⲉⲓⲧ ⲇⲉ ⲙⲟⲟϣⲉ ⲉⲧⲃⲏⲏⲧⲟⲩ ϩⲛ̄ⲧⲉⲭⲱⲣⲁ ⲉⲧⲙ̄ⲙⲁⲩ ⲛⲉⲣⲉ-ⲡⲙⲏⲏϣⲉ ⲧⲏⲣϥ̄ ⲉⲓⲛⲉ ϣⲁⲣⲟⲟⲩ ⲛ̄ⲛⲉⲩⲣⲱⲙⲉ ⲉⲧϣⲱⲛⲉ ϩⲛ̄ϣⲱⲛⲉ ⲛⲓⲙ ⲉⲧⲣⲉⲩϣⲗⲏⲗ ⲉϫⲱⲟⲩ ⲛ̄ⲥⲉⲧⲁⲗϭⲟⲟⲩ, ⲁⲩⲱ ⲛⲉⲩϯ ⲛⲁⲩ ϩⲛ̄ⲛⲟϭ ⲛ̄ⲧⲁⲉⲓⲟ. ⲛ̄ⲧⲉⲣⲟⲩϩⲟϫϩϫ ϩⲓⲧⲙ̄ⲡⲉϩⲟⲩⲟ ⲙ̄ⲡⲙⲏⲏϣⲉ ⲉⲧⲉⲛⲱⲭⲗⲉⲓ ⲛⲁⲩ ⲙⲛ̄ⲡⲉⲟⲟⲩ ⲉⲧⲟⲩϯ ⲙ̄ⲙⲟϥ ⲛⲁⲩ, ⲡⲁⲓ ⲉ-ⲛ̄ϥⲏⲡ ⲁⲛ ⲛⲁϩⲣⲁⲩ ⲉⲧⲃⲉⲡⲉⲩⲛⲟϭ ⲛ̄ⲑⲃⲃⲓⲟ, ⲁⲩϫⲓϣⲟϫⲛⲉ ⲗⲟⲓⲡⲟⲛ ⲉⲧⲣⲉⲩⲡⲱⲧ ⲛ̄ϫⲓⲟⲩⲉ ⲛ̄ⲥⲉⲗⲟ ϩⲛ̄ⲛⲉⲧⲟϣ ⲉⲧⲙ̄ⲙⲁⲩ.</li>
+								<li class="it"></li>
+								<li class="en">When the report about them travelled around the area, the entire crowd brought their sick, with every disease, so that they'd pray for them and they be healed, and they were given great honors. When they were distressed by the majority of the bothersome crowd and the glory which was given to them, which didn't belong to them owing to their great humility, they decided to flee in stealth and stay away from those ones who were numerous.</li>
+							</ul>
+						</li>
+						<li>
+							<ul>
+								<li class="coptic">ⲛ̄ⲧⲉⲣⲟⲩⲉⲓⲙⲉ ⲇⲉ ⲛ̄ϭⲓⲛⲉⲧⲟⲩⲏϩ ϩⲙ̄ⲡⲉⲩⲕⲱⲧⲉ ⲁⲩϭⲱ ⲉⲩⲣⲟⲉⲓⲥ ⲉⲣⲟⲟⲩ ϩⲱⲥ ⲉ-ⲛ̄ⲥⲉⲟⲩⲱϣ ⲁⲛ ⲛ̄ϩⲟⲩⲣⲱⲟⲩ ⲙ̄ⲡⲉⲩⲥⲙⲟⲩ ⲙⲛ̄ⲧⲉⲩϭⲓⲛⲟⲩⲱϩ ϩⲁⲧⲏⲩ.</li>
+								<li class="it"></li>
+								<li class="en">When those living around them understood, they remained observing them, as if not wishing to their blessing and their way about life with them.</li>
+							</ul>
+						</li>
+						<li>
+							<ul>
+								<li class="coptic">ⲛⲉⲩϣⲟⲟⲡ ⲅⲁⲣ ⲛ̄ϣⲟⲩϣⲟⲩ ⲛ̄ⲧⲉⲭⲱⲣⲁ ⲧⲏⲣⲥ̄ ⲉⲧⲙ̄ⲙⲁⲩ ⲉⲧⲃⲉⲧⲁϣⲏ ⲛ̄ⲛⲉϣⲡⲏⲣⲉ ⲉⲧϣⲟⲟⲡ ⲉⲃⲟⲗ ϩⲓⲧⲟⲟⲧⲟⲩ</li>
+								<li class="it"></li>
+								<li class="en">In fact, they were boastful all throughout that country, due to the abundance of the miracles existing through them.</li>
+							</ul>
+						</li>
+					</ol>
+				</li>
+				<li>Ch. 13
+					<ol>
+						<li>
+							<ul>
+								<li class="coptic">ⲧⲟⲧⲉ ⲡⲙⲁⲕⲁⲣⲓⲟⲥ ⲗⲟⲩⲅⲓⲟⲥ ⲁϥϫⲓ</li>
+								<li class="it"></li>
+								<li class="en"></li>
+							</ul>
+						</li>
+						<li>
+							<ul>
 								<li class="coptic"></li>
 								<li class="it"></li>
 								<li class="en"></li>
@@ -1274,10 +1369,6 @@
 								<li class="en"></li>
 							</ul>
 						</li>
-					</ol>
-				</li>
-				<li>Ch. 13
-					<ol>
 						<li>
 							<ul>
 								<li class="coptic"></li>
@@ -1772,7 +1863,6 @@
 					</ol>
 				</li>
 			</ul>
-			-->
 		</div>
 		<script>
 		</script>

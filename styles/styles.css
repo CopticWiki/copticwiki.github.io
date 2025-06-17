@@ -230,6 +230,7 @@ sup.non-italic {
 	font-size: inherit;
 	transition: font-size .5s;
 	font-family: rk_coptic;
+	//font-family: handmade, rk_coptic;
 	color: #46a65d;
 	color: #397f50;
 	color: #5f8e6e;

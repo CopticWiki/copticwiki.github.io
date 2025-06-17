@@ -1,3 +1,7 @@
+@font-face { /* handmade font */
+	font-family: handmade;
+	src: url("./fonts/Untitled.ttf");
+}
 @font-face { /* body */
 	font-family: body;
 	src: url("./fonts/UbuntuSans.ttf");
