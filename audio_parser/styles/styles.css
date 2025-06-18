@@ -1,0 +1,157 @@
+.ready {
+	color: #90ee90;
+}
+
+#player {
+	background: #ffffff88;
+	background: #1a1a1a;
+	position: sticky;
+	top: 0em;
+	z-index: 999;
+}
+
+audio {
+	mix-blend-mode: lighten;
+	filter: invert(1);
+	width: 100%;
+	display: block;
+}
+
+.norm {
+	transition: color .5s;
+}
+
+/* remove all glossing */
+/*
+.morpheme .norm {
+	color: #222222;
+	transition: color .5s;
+}
+.group .morpheme {
+	border-left: none !important;
+}
+.morpheme span:nth-child(1) {
+	padding: .2em 0em .2em !important;
+	background: transparent !important;
+}
+.morpheme span:nth-child(2),
+.morpheme span:nth-child(3) {
+	display: none;
+}
+.line {
+	gap: 0em !important;
+}
+.line .group:after {
+	content: "\00a0";
+}
+*/
+
+#container {
+	margin-top: 1em;
+}
+
+#plain {
+	font-size: 1.5em;
+}
+
+#english {
+	display: none;
+}
+
+#interlinear {
+	font-size: 1.5em;
+}
+
+.line {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	gap: .2em .5em;
+	margin-top: .2em;
+}
+
+p + .line {
+	margin-top: 3em;
+}
+
+.group {
+	display: flex;
+	flex-direction: row;
+	border-radius: .2em;
+}
+
+.morpheme {
+	color: #ffffff77;
+	display: flex;
+	flex-direction: column;
+	padding: .2em 0;
+	font-size: 1em;
+	align-items: center;
+	border-left: 1px dashed;
+	transition: opacity .2s;
+}
+
+.group .morpheme:nth-child(1) {
+	border-left: none;
+}
+
+.group:hover {
+	cursor: pointer;
+}
+
+.group:hover .morpheme,
+.group:active .morpheme {
+	color: #ffffff;
+	border-color: transparent;
+	opacity: .1;
+}
+
+.group:hover .morpheme:hover {
+	opacity: 1;
+}
+
+.morpheme:first-child .norm {
+	border-top-left-radius: .2em;
+	border-bottom-left-radius: .2em;
+}
+
+.morpheme:last-child .norm {
+	border-top-right-radius: .2em;
+	border-bottom-right-radius: .2em;
+}
+
+.morpheme span {
+	line-height: 1;
+	padding: 0 .5em;
+}
+
+.morpheme .norm {
+	//order: 2;
+	color: lightgreen;
+	color: #90c5df;
+	background: #ffffff11;
+	background: #2c2d31;
+	width: 100%;
+	text-align: center;
+	font-family: rk_coptic;
+	padding: .2em .5em .2em;
+}
+
+.morpheme .gloss {
+	//order: 3;
+	color: violet;
+	opacity: .75;
+	font-size: .5em;
+	font-family: sans-serif;
+	padding-top: .5em;
+}
+
+.morpheme .pos {
+	//order: 1;
+	color: gold;
+	opacity: .75;
+	font-size: .5em;
+	font-family: sans-serif;
+	font-variant: small-caps;
+	padding-bottom: .5em;
+}
