@@ -1,27 +1,28 @@
 import morphemeList from "./silvanus.js";
-console.log(morphemeList);
+//console.log(morphemeList);
 let myAudio = document.querySelector("audio");
 let i = 0;
 let ij = 0;
 let ijk = 0;
 let ijkl = 0;
+let xyz = 0;
 for (i = 0; i < morphemeList.length; i++) {
 	
-	console.log("<li> " + i);
+	//console.log("<li> " + i);
 	
 	// #interlinear li
 	let newLine = document.createElement("li");
 	newLine.classList.add("line");
 	document.querySelector("#interlinear").appendChild(newLine);
 	
-	console.log("\t<ul>");
+	//console.log("\t<ul>");
 	
 	// #interlinear li.line ul.sub-line
 	let newSubLine = document.createElement("ul");
 	newSubLine.classList.add("sub-line");
 	document.getElementsByClassName("line")[i].appendChild(newSubLine);
 	
-	console.log("\t\t<li class=\"whole-morpheme\">");
+	//console.log("\t\t<li class=\"whole-morpheme\">");
 	
 	// #interlinear li.line ul.sub-line li[0]
 	let newWholeMorpheme = document.createElement("li");
@@ -30,14 +31,14 @@ for (i = 0; i < morphemeList.length; i++) {
 	
 	for (ij = 0; ij < morphemeList[i][0].length; ij++) {
 		
-		console.log("\t\t\t<div class=\"group\">" + ij);
+		//console.log("\t\t\t<div class=\"group\">" + ij);
 		let newGroup = document.createElement("div");
 		newGroup.classList.add("group");
 		document.getElementsByClassName("line")[i].getElementsByClassName("sub-line")[0].getElementsByClassName("whole-morpheme")[0].appendChild(newGroup);
 		
 		for (ijk = 0; ijk < morphemeList[i][0][ij].length; ijk++) {
 			
-			console.log("\t\t\t\t<div class=\"morpheme\">" + ijk);
+			//console.log("\t\t\t\t<div class=\"morpheme\">" + ijk);
 			let newMorpheme = document.createElement("a");
 			newMorpheme.classList.add("morpheme");
 			document.getElementsByClassName("line")[i].getElementsByClassName("sub-line")[0].getElementsByClassName("whole-morpheme")[0].getElementsByClassName("group")[ij].appendChild(newMorpheme);
@@ -81,7 +82,7 @@ for (i = 0; i < morphemeList.length; i++) {
 		}
 	}
 	
-	console.log("\t\t<li class=\"whole-gloss\">");
+	//console.log("\t\t<li class=\"whole-gloss\">");
 	// #interlinear li.line ul.sub-line li[1]
 	let newWholeGloss = document.createElement("li");
 	newWholeGloss.classList.add("whole-gloss");
@@ -89,14 +90,21 @@ for (i = 0; i < morphemeList.length; i++) {
 	document.getElementsByClassName("line")[i].getElementsByClassName("sub-line")[0].appendChild(newWholeGloss);
 	
 }
+const line = document.getElementsByClassName("line");
+line[0].classList.add("current");
 const timestamps = document.getElementsByClassName("morpheme");
 myAudio.addEventListener("timeupdate", () => {
 	for (i = 0; i < timestamps.length; i++) {
-		timestamps[i].getElementsByClassName("norm")[0].style.color = "gray";
+		timestamps[i].getElementsByClassName("norm")[0].style.color = "#40576a";
 	}
 	for (i = 0; i < timestamps.length; i++) {
 		if (timestamps[i].getAttribute("data-timestamp") < myAudio.currentTime) {
-			timestamps[i].getElementsByClassName("norm")[0].style.color = "gold";
+			for (xyz = 0; xyz < line.length; xyz++) {
+				line[xyz].classList.remove("current");
+			}
+			//console.log(timestamps[i].parentElement.parentElement.parentElement.parentElement);
+			timestamps[i].parentElement.parentElement.parentElement.parentElement.classList.add("current");
+			timestamps[i].getElementsByClassName("norm")[0].style.color = "#5781af";
 		}
 	}
 });

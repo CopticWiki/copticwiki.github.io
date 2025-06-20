@@ -20,7 +20,7 @@ body {
 	font-size: 16px;
 	font-weight: 300;
 	line-height: 1.5;
-	margin: .5em;
+	margin: .5rem;
 	color: #eeeeee88;
 	color: #a19a4c;
 	color: #938282;
@@ -121,7 +121,7 @@ body {
 
 #container > * {
 	//outline: 1px solid #ffffff22;
-	padding: 1em;
+	//padding: 1em;
 }
 
 #container.half {

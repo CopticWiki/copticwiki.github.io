@@ -1,263 +1,178 @@
-.ready {
-	color: #90ee90;
-}
-
-#player {
-	background: #ffffff88;
-	background: #1a1a1a;
-	position: sticky;
-	top: 0em;
-	z-index: 999;
-}
-
-audio {
-	mix-blend-mode: lighten;
-	filter: invert(1);
-	width: 100%;
-	display: block;
-}
-
-.norm {
-	transition: color .5s;
-}
-
-/* remove all glossing */
-/*
-.morpheme .norm {
-	color: #222222;
-	transition: color .5s;
-}
-.group .morpheme {
-	border-left: none !important;
-}
-.morpheme span:nth-child(1) {
-	padding: .2em 0em .2em !important;
-	background: transparent !important;
-}
-.morpheme span:nth-child(2),
-.morpheme span:nth-child(3) {
-	display: none;
-}
-.line {
-	gap: 0em !important;
-}
-.line .group:after {
-	content: "\00a0";
-}
-*/
-
-#container {
-	margin-top: 1em;
-}
-
-#plain {
-	font-size: 1.5em;
-}
-
-#english {
-	display: none;
-}
-
-#interlinear {
-	font-size: 1.5em;
-}
-
-.line {
-	display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
-	gap: .2em .5em;
-	margin-top: .2em;
-}
-
-p + .line {
-	margin-top: 3em;
-}
-
-.group {
-	display: flex;
-	flex-direction: row;
-	border-radius: .2em;
-}
-
-.morpheme {
-	color: #ffffff77;
-	display: flex;
-	flex-direction: column;
-	padding: .2em 0;
-	font-size: 1em;
-	align-items: center;
-	border-left: 1px dashed;
-	transition: opacity .2s;
-}
-
-.group .morpheme:nth-child(1) {
-	border-left: none;
-}
-
-.group:hover {
-	cursor: pointer;
-}
-
-.group:hover .morpheme,
-.group:active .morpheme {
-	color: #ffffff;
-	border-color: transparent;
-	opacity: .1;
-}
-
-.group:hover .morpheme:hover {
-	opacity: 1;
-}
-
-.morpheme:first-child .norm {
-	border-top-left-radius: .2em;
-	border-bottom-left-radius: .2em;
-}
-
-.morpheme:last-child .norm {
-	border-top-right-radius: .2em;
-	border-bottom-right-radius: .2em;
-}
-
-.morpheme span {
-	line-height: 1;
-	padding: 0 .5em;
-	text-decoration: none;
-	transition: text-decoration;
-}
-
-.morpheme .norm {
-	//order: 2;
-	color: lightgreen;
-	color: #90c5df;
-	background: #ffffff11;
-	background: #2c2d31;
-	width: 100%;
-	text-align: center;
-	font-family: rk_coptic;
-	padding: .2em .5em .2em;
-}
-
-.morpheme .gloss {
-	//order: 3;
-	color: violet;
-	opacity: .75;
-	font-size: .5em;
-	font-family: sans-serif;
-	padding-top: .5em;
-}
-
-.morpheme .pos {
-	//order: 1;
-	color: gold;
-	opacity: .75;
-	font-size: .5em;
-	font-family: sans-serif;
-	font-variant: small-caps;
-	padding-bottom: .5em;
-}
-
 #toggle {
-	background: #ffb70033;
 	background: #222;
 	outline: 1px solid #90ee90;
-	width: 10px;
-	height: 5em;
+	aspect-ratio: 1;
+	height: 54px;
 	display: block;
-	position: relative;
-	left: 0em;
-	top: 0%;
-	z-index: 999;
+	display: none;
 }
-
 #toggle:hover {
 	background: #333;
 }
-
+.ready {
+	color: #90ee90;
+}
 #player {
-	//position: relative;
+	display: flex;
+	flex-direction: row;
+	gap: .5rem;
+	padding: 0em;
+	position: sticky;
+	top: .5rem;
+	z-index: 979;
+}
+audio {
+	filter: invert(1);
+	//outline: 1px solid;
+	width: 100%;
+	display: block;
+	opacity: 0;
+	transition: opacity .2s;
+}
+audio:hover {
+	opacity: 1;
 }
 
-#interlinear {
+#container {
+	font-size: 4rem;
+	display: flex;
+	flex-direction: column;
+	gap: .5rem;
 	//position: absolute;
-	//top: 0;
 }
 
-
-#container .morpheme {
-	text-decoration: none;
+.line {
+	position: absolute;
+	//outline: 1px solid #90ee90;
+	//background: #000000;
+	top: 3em;
+	left: 2em;
+	right: 2em;
+	//z-index: 999;
+	opacity: 0;
+	//transition: opacity .5s;
+}
+.line.current {
+	opacity: 1;
+}
+p + .line {
+	
+}
+#interlinear {
+	position: relative;
+	outline: 1px double;
+	margin: 0rem;
+	padding: 2rem;
+	list-style-type: none;
+	overflow-y: auto;
+	position: relative;
+	width: calc(100dvw - 1rem);
+	height: calc(100dvh - 1rem);
+	//height: 100%;
+	scrollbar-color: #64496a transparent;
 }
 
+#brand {
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	padding: 1em;
+	text-align: center;
+	//outline: 1px solid;
+	//height: 54px;
+	//height: auto;
+}
+
+/*
+.line + .line {
+	margin-top: 1em;
+}
+.line + .line:before {
+	content: "";
+	width: 100%;
+	height: 1px;
+	display: block;
+	background: linear-gradient(to right, transparent, currentColor, currentColor, currentColor, transparent);
+}
+.line + .line > ul {
+	margin-top: 1em;
+}
+*/
+
+.line > ul {
+	padding: 0rem;
+	list-style-type: none;
+}
 .whole-morpheme {
 	display: flex;
 	flex-wrap: wrap;
 }
-
-.line {
-	//display: initial;
+.whole-gloss {
+	margin-top: 1em;
 }
-
-.line + .line {
-	margin-top: 2em;
+.group {
+	display: flex;
+	flex-direction: row;
+	border-radius: .2em;
+	line-height: 1.2;
 }
-
 .group:after {
 	content: "\00a0";
-	
 }
-
-.sub-line {
-	list-style-type: none;
+.morpheme {
+	display: flex;
+	flex-direction: column;
+	padding: .2em 0;
+	align-items: center;
+	border-left: 1px dashed;
+	text-decoration: none;
 }
-
+.morpheme:focus {
+	color: #90ee90 !important;
+}
+.morpheme:focus-visible {
+	outline: none;
+}
+.norm {
+	font-family: rk_coptic;
+	transition: color .5s;
+}
 
 /* hide linguistic info */
 
 #container.hide-ling .group:hover .morpheme,
 #container.hide-ling .group:active .morpheme {
-	color: #90ee90 !important;
-	color: transparent !important;
-	opacity: 1 !important;
+	//color: #90ee90 !important;
+	//color: transparent !important;
+	//opacity: 1 !important;
 }
 
 #container.hide-ling {
-	color: transparent;
-	background: linear-gradient(to right, #2b6d95, #666a2d);
-	background-clip: text;
+	//color: transparent;
+	//color: steelblue;
+	//background: linear-gradient(to right, #2b6d95, #666a2d);
+	//background-clip: text;
 }
 
-#container.hide-ling .morpheme {
+#container .morpheme {
 	border: none;
 	padding: 0em;
-	font-size: 1.5em;
+	//font-size: 1.5em;
 }
 
 #container.hide-ling .morpheme:focus {
-	background: #90ee90;
-	background-clip: text;
-	//text-decoration: underline;
+	//background: #90ee90;
+	//background-clip: text;
 }
 
-#container.hide-ling .morpheme:focus-visible {
-	outline: 1px solid #90ee90;
-	outline: none;
-	outline-offset: 5px;
-}
-
-#container.hide-ling .morpheme span {
-	//text-decoration: overline;
-	text-decoration-color: #a0956d;
-}
-
-#container.hide-ling .morpheme .gloss,
-#container.hide-ling .morpheme .pos {
+#container .morpheme .gloss,
+#container .morpheme .pos {
 	display: none;
 }
 
-#container.hide-ling .morpheme .norm {
+#container .morpheme .norm {
 	//color: seagreen;
-	color: transparent !important;
-	background: transparent;
+	//color: transparent !important;
+	//background: transparent;
 	padding: .2em 0em .2em;
 }
