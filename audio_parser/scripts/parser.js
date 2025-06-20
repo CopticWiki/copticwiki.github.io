@@ -5,33 +5,32 @@ let i = 0;
 let j = 0;
 let k = 0;
 for (i = 0; i < morphemeList.length; i++) {
-	let newLine = document.createElement("div");
+	
+	// li for each line
+	let newLine = document.createElement("li");
 	newLine.classList.add("line");
 	document.querySelector("#interlinear").appendChild(newLine);
 	
-	for (j = 0; j < morphemeList[i].length; j++) {
+	// ul for each sub-line
+	let newSubLine = document.createElement("ul");
+	newSubLine.classList.add("sub-line");
+	document.getElementsByClassName("line")[i].appendChild(newSubLine);
+	
+	// li for each whole-morpheme
+	let newWholeMorpheme = document.createElement("li");
+	newWholeMorpheme.classList.add("whole-morpheme");
+	document.getElementsByClassName("line")[i].getElementsByClassName("sub-line")[0].appendChild(newWholeMorpheme);
+	
+	// li for each whole-gloss
+	let newWholeGloss = document.createElement("li");
+	newWholeGloss.classList.add("whole-gloss");
+	document.getElementsByClassName("line")[i].getElementsByClassName("sub-line")[0].appendChild(newWholeGloss);
+	
+	for (j = 0; j < morphemeList[i][0].length; j++) {
+		console.log(morphemeList[i][0].length);
 		let newGroup = document.createElement("div");
 		newGroup.classList.add("group");
-		document.getElementsByClassName("line")[i].appendChild(newGroup);
-		
-		for (k = 0; k < morphemeList[i][j].length; k++) {
-			let newMorpheme = document.createElement("div");
-			let newNorm = document.createElement("span");
-			let newGloss = document.createElement("span");
-			let newPos = document.createElement("span");
-			newMorpheme.classList.add("morpheme");
-			newNorm.classList.add("norm");
-			newGloss.classList.add("gloss");
-			newPos.classList.add("pos");
-			newMorpheme.setAttribute("data-timestamp", morphemeList[i][j][k][0]);
-			newNorm.textContent = morphemeList[i][j][k][1];
-			newGloss.textContent = morphemeList[i][j][k][2];
-			newPos.textContent = morphemeList[i][j][k][3];
-			document.getElementsByClassName("line")[i].getElementsByClassName("group")[j].appendChild(newMorpheme);
-			document.getElementsByClassName("line")[i].getElementsByClassName("group")[j].getElementsByClassName("morpheme")[k].appendChild(newPos);
-			document.getElementsByClassName("line")[i].getElementsByClassName("group")[j].getElementsByClassName("morpheme")[k].appendChild(newNorm);
-			document.getElementsByClassName("line")[i].getElementsByClassName("group")[j].getElementsByClassName("morpheme")[k].appendChild(newGloss);
-		}
+		document.getElementsByClassName("line")[i].getElementsByClassName("sub-line")[0].getElementsByClassName("whole-morpheme")[0].appendChild(newGroup);
 	}
 }
 const timestamps = document.getElementsByClassName("morpheme");

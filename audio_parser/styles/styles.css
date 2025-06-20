@@ -123,6 +123,8 @@ p + .line {
 .morpheme span {
 	line-height: 1;
 	padding: 0 .5em;
+	text-decoration: none;
+	transition: text-decoration;
 }
 
 .morpheme .norm {
@@ -154,4 +156,86 @@ p + .line {
 	font-family: sans-serif;
 	font-variant: small-caps;
 	padding-bottom: .5em;
+}
+
+#toggle {
+	background: #ffb70033;
+	background: #222;
+	outline: 1px solid #90ee90;
+	width: 10px;
+	height: 5em;
+	display: block;
+	position: relative;
+	left: 0em;
+	top: 0%;
+	z-index: 999;
+}
+
+#toggle:hover {
+	background: #333;
+}
+
+#player {
+	//position: relative;
+}
+
+#interlinear {
+	//position: absolute;
+	//top: 0;
+}
+
+
+#container .morpheme {
+	text-decoration: none;
+}
+
+
+/* hide linguistic info */
+
+#container.hide-ling .group:hover .morpheme,
+#container.hide-ling .group:active .morpheme {
+	color: #90ee90 !important;
+	color: transparent !important;
+	opacity: 1 !important;
+}
+
+#container.hide-ling {
+	color: transparent;
+	background: linear-gradient(to right, #2b6d95, #666a2d);
+	background-clip: text;
+}
+
+#container.hide-ling .morpheme {
+	border: none;
+	padding: 0em;
+	font-size: 1.5em;
+}
+
+#container.hide-ling .morpheme:focus {
+	background: #90ee90;
+	background-clip: text;
+	//text-decoration: underline;
+}
+
+#container.hide-ling .morpheme:focus-visible {
+	outline: 1px solid #90ee90;
+	outline: none;
+	outline-offset: 5px;
+}
+
+#container.hide-ling .morpheme span {
+	//text-decoration: overline;
+	text-decoration-color: #a0956d;
+}
+
+#container.hide-ling .morpheme .gloss,
+#container.hide-ling .morpheme .pos {
+	display: none;
+}
+
+#container.hide-ling .morpheme .norm {
+	//color: seagreen;
+	color: transparent !important;
+	background: transparent;
+	padding: .2em 0em .2em;
 }

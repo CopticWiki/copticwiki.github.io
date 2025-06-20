@@ -140,7 +140,7 @@ div[data-section] ol li ul li blockquote.example {
 }
 
 [data-section].needs-english .section {
-	outline: 1px solid #ffeb3b88;
+	border: 10px double #ffeb3b88;
 }
 
 [data-section].good .section {
