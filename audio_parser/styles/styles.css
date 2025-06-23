@@ -1,5 +1,6 @@
 body {
 	outline: .5rem double #40576a;
+	outline: .5rem double #8c6a2d;
 	padding: 1em;
 	overflow-y: hidden;
 }
@@ -65,6 +66,7 @@ audio:hover {
 
 .line {
 	color: #40576a;
+	color: #8c6a2d;
 	position: absolute;
 	//outline: 1px solid #90ee90;
 	//background: #000000;
@@ -97,6 +99,7 @@ p + .line {
 
 #brand {
 	color: #40576a;
+	color: #8c6a2d;
 	//position: fixed;
 	bottom: 0;
 	width: 100%;

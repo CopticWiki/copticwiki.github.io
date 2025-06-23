@@ -1,4 +1,4 @@
-import morphemeList from "./silvanus.js";
+import morphemeList from "./1_corinthians_3_16.js";
 //console.log(morphemeList);
 let myAudio = document.querySelector("audio");
 let i = 0;
@@ -95,7 +95,8 @@ line[0].classList.add("current");
 const timestamps = document.getElementsByClassName("morpheme");
 myAudio.addEventListener("timeupdate", () => {
 	for (i = 0; i < timestamps.length; i++) {
-		timestamps[i].getElementsByClassName("norm")[0].style.color = "#40576a";
+		//timestamps[i].getElementsByClassName("norm")[0].style.color = "#40576a";
+		timestamps[i].getElementsByClassName("norm")[0].style.color = "#8c6a2d";
 	}
 	for (i = 0; i < timestamps.length; i++) {
 		if (timestamps[i].getAttribute("data-timestamp") < myAudio.currentTime) {
@@ -104,7 +105,8 @@ myAudio.addEventListener("timeupdate", () => {
 			}
 			//console.log(timestamps[i].parentElement.parentElement.parentElement.parentElement);
 			timestamps[i].parentElement.parentElement.parentElement.parentElement.classList.add("current");
-			timestamps[i].getElementsByClassName("norm")[0].style.color = "#3daba7";
+			//timestamps[i].getElementsByClassName("norm")[0].style.color = "#3daba7";
+			timestamps[i].getElementsByClassName("norm")[0].style.color = "#e4ba6c";
 		}
 	}
 });
