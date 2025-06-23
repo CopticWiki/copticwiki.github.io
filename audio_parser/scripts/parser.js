@@ -104,7 +104,7 @@ myAudio.addEventListener("timeupdate", () => {
 			}
 			//console.log(timestamps[i].parentElement.parentElement.parentElement.parentElement);
 			timestamps[i].parentElement.parentElement.parentElement.parentElement.classList.add("current");
-			timestamps[i].getElementsByClassName("norm")[0].style.color = "#5781af";
+			timestamps[i].getElementsByClassName("norm")[0].style.color = "#3daba7";
 		}
 	}
 });
