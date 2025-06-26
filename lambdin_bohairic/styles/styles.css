@@ -104,23 +104,69 @@ body {
 	margin: 5px 0;
 }
 
+.mallon {
+	//outline: 1px dashed gold;
+	border: 1px solid #90ee90;
+	//background: #ffb70022;
+	padding: 1em;
+	color: #90ee90;
+	border-color: #90ee90;
+	border-collapse: collapse;
+}
+
+.mallon table {
+	border: none;
+}
+
+.mallon + .mallon {
+	margin-top: 1em;
+}
+
+.mallon th,
+.mallon td {
+	color: #90ee90;
+	//border-color: #90ee90;
+	//border-color: transparent;
+	border-width: 0;
+	background: transparent;
+}
+
+.mallon .coptic b {
+	color: #90ee90;
+	font-family: inherit;
+	font-weight: normal;
+}
+
+.mallon th.right {
+	text-align: right;
+}
+
+
+
+
+
+
+
+.mallon:before {
+	content: "Mallon " attr(data-mallon);
+}
 
 .mallon h2 {
-	color: lightblue;
-	text-align: center;
+	//color: lightblue;
+	//text-align: center;
 }
 
 .mallon h3 {
-	color: lightblue;
-	text-decoration: none;
+	//color: lightblue;
+	//text-decoration: none;
 }
 
 .mallon h4 {
-	color: lightblue;
+	//color: lightblue;
 }
 
 .mallon ol li {
-	list-style-type: decimal;
+	//list-style-type: decimal;
 }
 
 .hide {
@@ -172,8 +218,7 @@ div[data-section] + div[data-section] {
 	
 }
 
-.lambdin,
-.mallon {
+.lambdin {
 	clear: both;
 	width: 100%;
 //	mix-blend-mode: screen;
@@ -181,13 +226,11 @@ div[data-section] + div[data-section] {
 	padding: 1em;
 }
 
-.lambdin p,
-.mallon p {
+.lambdin p {
 	width: 100%;
 }
 
-.lambdin:before,
-.mallon:before {
+.lambdin:before {
 	//padding: -.5em .5em 0;
 	display: inline-block;
 	font-variant: small-caps;
@@ -200,20 +243,10 @@ div[data-section] + div[data-section] {
 	//background: #ffffff11;
 }
 
-.mallon:before {
-	content: "Mallon";
-	color: lightgreen;
-	//background: #ffffff11;
-}
 
 .lambdin {
 	float: left;
 	outline: 1px dashed violet;
-}
-
-.mallon {
-	float: right;
-	outline: 1px dashed lightgreen;
 }
 
 .lambdin h3,
