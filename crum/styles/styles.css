@@ -84,11 +84,11 @@ sup {
 
 
 #container {
-	display: initial;
+	
 	flex-grow: 1;
 	//height: 80dvh;
-	max-height: 100%;
-	overflow-y: auto;
+	
+	//overflow-y: auto;
 }
 
 h1 {
