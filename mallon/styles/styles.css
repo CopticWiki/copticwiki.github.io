@@ -20,6 +20,10 @@
 	cursor: pointer;
 }
 
+.en {
+	display: none;
+}
+
 .hide {
 	display: none;
 }
