@@ -3,10 +3,16 @@ import arrayStyling from "../../scripts/dictionary_regexes.js";
 const xmlhttp = new XMLHttpRequest();
 let url = "";
 
-url = "../../crum/scripts/crum_entries.json";
+//url = "../../crum/scripts/crum_entries.json";
+url = "https://docs.google.com/spreadsheets/d/e/2PACX-1vRi58_OjFmoocU2cuHIV_4Vg0usWmEO_Gsz3cWfGGY2wnJo17y_88XV1aDBtClyoA/pub?gid=29611264&single=true&output=tsv";
+
 xmlhttp.onreadystatechange = function() {
 	if (this.readyState == 4 && this.status == 200) {
-		const fetchFromJSON = JSON.parse(this.responseText);
+		//const fetchFromJSON = JSON.parse(this.responseText);
+		const fetchFromJSON = this.responseText.trim().split('\n').map(line => line.trim()).filter(Boolean).slice(1).map(line => {
+				return { headword: line.split('\t')[7 /* column index */] };
+			});
+		console.log(fetchFromJSON);
 		const appliedRegexes = applyRegexesDictionary(fetchFromJSON);
 		const convertedEntries = appliedRegexes;
 		const addToDictionary = document.querySelector("#dictionary ul");
@@ -29,10 +35,15 @@ function applyRegexesDictionary(x) {
 		let headword = x[i].headword;
 		for (let key in arrayStyling) {
 			let regexStyling = new RegExp(arrayStyling[key][0], "msg");
+			if (!headword) {
+				 continue;
+			}
 			headword = headword.replace(regexStyling, arrayStyling[key][1]);
 			//headword = headword.replace(/\\\\/, "");
 		}
-		processedText += '<li class="entry"><div class="togglable"></div><div class="definition"><p>' + headword + '</p></div></li>\n';
+		if (headword) {
+			processedText += '<li class="entry"><div class="togglable"></div><div class="definition"><p>' + headword + '</p></div></li>\n';
+		}
 	}
 	let y = processedText;
 	return y;
