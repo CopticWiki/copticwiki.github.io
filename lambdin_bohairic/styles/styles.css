@@ -29,6 +29,10 @@
 	transition: opacity .5s;
 }
 
+.lesson {
+	margin: 1em;
+}
+
 th {
 	background: #12306d;
 	color: white;
