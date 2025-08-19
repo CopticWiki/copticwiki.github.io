@@ -112,7 +112,7 @@
 }
 @font-face { /* amharic */
 	font-family: rk_amharic;
-	src: url("./fonts/NotoSansEthiopic.ttf");
+	src: url("./fonts/AbyssinicaSIL.ttf");
 	unicode-range:
 		U+1200-137f,
 		U+1380-139f,
