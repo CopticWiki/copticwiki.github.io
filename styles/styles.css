@@ -401,8 +401,11 @@ sup.non-italic {
 
 .amharic {
 	font-family: rk_amharic;
-	color: lightseagreen;
+	font-size: 1.2em;
+	line-height: 0;
 	color: #eeeeee88;
+	color: lightseagreen;
+	color: #d48080;
 }
 
 .egypt-hiero {
