@@ -93,7 +93,8 @@
 	font-family: rk_arabic;
 	src: url("./fonts/NotoSansArabic.ttf");
 	unicode-range:
-		U+0600-06FF,
+		U+002d,
+		U+0600-06ff;
 }
 @font-face { /* hebrew */
 	font-family: rk_hebrew;
