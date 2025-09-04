@@ -1,4 +1,7 @@
 Styling guidelines for entries in Crum's dictionary:
 
-\[\[\[word\]\]\] \/\/ headword (large font)
-\[\[word\]\] \/\/ word (non-Latin font)
+- \[\[\[ϣⲁϫⲉ\]\]\] \/\/ headword (large font)
+- \[\[S\]\] \/\/ dialect
+- \[\[S^f\]\] \/\/ subdialect
+- \[\[ⲛⲓϣϯ\]\] \/\/ word (non-Latin font)
+- \\n \/\/ line break \+ indentation
