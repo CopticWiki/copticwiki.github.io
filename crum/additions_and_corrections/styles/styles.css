@@ -1,0 +1,37 @@
+#additions_and_corrections p {
+	margin-bottom: 0;
+	text-indent: 0;
+}
+
+#additions_and_corrections table {
+	margin: .5em;
+	border-spacing: 0 .5em;
+}
+
+#additions_and_corrections td {
+	padding: .5em;
+	line-height: 1.5;
+	border: 1px solid #ffffff33;
+}
+
+#additions_and_corrections td.page {
+	color: #ffffff;
+	text-align: right;
+	white-space: nowrap;
+	vertical-align: top;
+	background: #ffffff11;
+	border-top-left-radius: 5px;
+	border-bottom-left-radius: 5px;
+}
+
+#additions_and_corrections td.note {
+	background: #ffffff07;
+	border-top-right-radius: 5px;
+	border-bottom-right-radius: 5px;
+	border-left: none;
+}
+
+#additions_and_corrections td.note p {
+	text-indent: 1em;
+	margin: 0;
+}
