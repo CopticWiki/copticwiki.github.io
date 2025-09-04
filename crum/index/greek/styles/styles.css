@@ -1,0 +1,20 @@
+#greek_index table {
+	margin: 1em;
+	width: calc(100% - 2em);
+}
+
+#greek_index table td {
+	padding: .2em .5em;
+	line-height: 1.5;
+	border: 1px solid #ffffff33;
+}
+
+#greek_index table td.term {
+	color: lightblue;
+	white-space: nowrap;
+	background: #ffffff11;
+}
+
+#greek_index table td.page {
+	background: #ffffff07;
+}
