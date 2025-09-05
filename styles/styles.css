@@ -4,30 +4,49 @@
 	box-sizing: border-box;
 }
 
-a {
-	text-decoration: none;
+h1 {
+	font-family: rk_serif;
+	font-weight: normal;
+	color: #729990;
+	margin: 0rem;
 }
 
-em {
-	color: honeydew;
-	color: #d4b741;
+i {
+	font-style: normal;
+	font-family: italic;
+	color: #eeeeeebb;
+	color: #c6b850bb;
+}
+
+i.dialect {
+	font-weight: 400;
+}
+
+h3 {
+	font-weight: normal;
+}
+
+a {
+	color: seagreen;
+	color: inherit;
+	//text-decoration: none;
+}
+
+a i {
+	color: inherit;
+}
+
+a {
+	text-decoration: none;
 }
 
 b {
 	font-family: bold;
 	color: #7baba6;
-	//color: #90ee90;
 }
 
-.author {
-	//font-variant: small-caps;
-}
-
-[contenteditable=true]:empty:before {
-	//content: attr(placeholder);
-	//pointer-events: none;
-	//display: block; /* For Firefox */
-	//color: orangered;
+em {
+	color: #d4b741;
 }
 
 body {
@@ -36,61 +55,32 @@ body {
 	font-weight: 300;
 	line-height: 1.5;
 	margin: .5rem;
-	//height: 100dvh;
 	color: #eeeeee88;
 	color: #a19a4c;
 	color: #938282;
 	background: #0d1117;
 }
 
-
-
 #container {
 	display: flex;
 	flex-direction: column;
 	gap: .5rem;
-	//height: 100dvh;
-	//overflow-y: auto;
 }
 
 header {
 	outline: 1px solid #ffffff22;
-	//background: linear-gradient(45deg, #ffffff22, #ffffff00);
-	//background: linear-gradient(to bottom, #ffffff, #000000);
 	position: relative;
+	position: sticky;
 	display: flex;
-	//flex-wrap: wrap;
 	justify-content: space-between;
-	//align-items: center;
 	padding: .5rem;
 	gap: .5rem;
-	//height: 20dvh;
-	//grid-template-columns: .2fr 1.8fr;
 }
 
-h1 {
-	font-family: rk_serif;
-	font-weight: normal;
-	color: #67749b;
-	color: #989c91;
-	color: gold;
-	//outline: 1px solid #ffffff22;
-	//background: linear-gradient(45deg, #ffffff22, #ffffff00);
-	//background: linear-gradient(to bottom, #ffffff, #000000);
-	//display: block;
-	//width: auto;
-	margin: 0rem;
-}
+
 
 nav {
-	//outline: 1px solid #ffffff22;
-	//background: linear-gradient(45deg, #ffffff22, #ffffff00);
 	width: 100%;
-	//margin: .5rem;
-	//padding: .5rem .5rem 0rem;
-	//padding-bottom: .5rem;
-	//padding-left: .5rem;
-	//max-width: 50%;
 	overflow-y: auto;
 }
 
@@ -125,7 +115,6 @@ footer {
 }
 
 nav ul {
-	//width: 100%;
 	margin: 0rem;
 	padding-left: 0em;
 	display: flex;
@@ -135,7 +124,6 @@ nav ul {
 nav li {
 	background: #ffffff44;
 	border: 1px solid lightblue;
-	//width: 100%;
 	display: inline-block;
 	margin: 0rem .5rem .5rem 0rem;
 	padding: .5rem;
@@ -180,7 +168,7 @@ main li:empty {
 
 @media screen and (max-width: 480px) {
 	header {
-		text-align: center;
+		//text-align: center;
 		flex-direction: column;
 	}
 }
@@ -274,30 +262,9 @@ main li:empty {
 
 
 
-h3 {
-	font-weight: normal;
-}
 
-a {
-	color: seagreen;
-	color: inherit;
-	//text-decoration: none;
-}
 
-a i {
-	color: inherit;
-}
 
-i {
-	font-style: normal;
-	font-family: italic;
-	color: #eeeeeebb;
-	color: #c6b850bb;
-}
-
-i.dialect {
-	font-weight: 400;
-}
 
 
 
