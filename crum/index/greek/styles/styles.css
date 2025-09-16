@@ -1,3 +1,5 @@
+@import url("../../../../styles/styles.css"); /* base styles */
+
 #greek_index table {
 	margin: 1em;
 	width: calc(100% - 2em);

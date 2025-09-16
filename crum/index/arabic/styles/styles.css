@@ -1,3 +1,5 @@
+@import url("../../../../styles/styles.css"); /* base styles */
+
 #arabic_index table {
 	direction: rtl;
 	margin: 1em;
