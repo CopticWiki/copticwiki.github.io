@@ -1,3 +1,5 @@
+@import url("../../../styles/styles.css"); /* base styles */
+
 #list_of_abbreviations > ul > li > ul {
 	display: table;
 	border-collapse: collapse;

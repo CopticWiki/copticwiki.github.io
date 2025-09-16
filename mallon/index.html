@@ -6,44 +6,18 @@
 		<link rel="stylesheet" href="./styles/styles.css">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<style>
-			.collapse div {
-				display: none;
-			}
-			
-			body {
-				//font-size: 1.2em;
-			}
-			/*
-			div[data-section].needs-english .section {
-				height: 1.5em;
-				background: #000000;
-				outline: 1px solid #ffffff22 !important;
-			}
-			div[data-section].needs-english .section > * {
-				display: none;
-				position: relative;
-			}
-			div[data-section].needs-english:before {
-				color: #ffffff77;
-				position: absolute;
-				display: block;
-				padding-left: .5em;
-			}
-			*/
-			
 		</style>
 	</head>
 	<body>
-		<!--
-		<h1>CopticWiki</h1>
-		<h2>Grammaire Copte (Quatrième édition)</h2>
-		<h2>Alexis Mallon</h2>
-		<div id="toggle-lang"></div>
-		-->
 		<div id="container">
-			<div id="mallon">
-				<div id="abreviations_conventionnelles">
-					<h2>Abréviations Conventionnelles</h2>
+			<header>
+				<h1>CopticWiki</h1>
+				<h2>Grammaire Copte</h2>
+				<h2>Alexis Mallon</h2>
+			</header>
+			<main id="mallon">
+				<div id="abreviations_conventionnelles" class="section">
+					<h3>Abréviations Conventionnelles</h3>
 					<ul>
 						<li><span>AB.</span> <i>Ausgewaehlte Bemerkungen über den bohairischen Dialect im Pentateuch koptisch</i></li>
 						<li><span>AC.</span> The Apostolical Constitutions or canons of the Apostels in coptic</li>
@@ -76,25 +50,25 @@
 				</div>
 				<div class="chapter_title"><!-- Articles et Pronoms -->
 					<div class="en">
-						<h2>1. Articles and Pronouns</h2>
+						<h3>1. Articles and Pronouns</h3>
 					</div>
 					<div class="fr">
-						<h2>1. Articles et Pronoms</h2>
+						<h3>1. Articles et Pronoms</h3>
 					</div>
 				</div>
 				<div id="chapter_01" class="chapter">
 					<div class="chapter_title">
 						<div class="fr">
-							<h2>Chaptire I</h2>
-							<h3>De l'Article</h3>
+							<h3>Chaptire I</h3>
+							<h4>De l'Article</h4>
 						</div>
 						<div class="en">
-							<h2>Chapter 1</h2>
-							<h3>The Article</h3>
+							<h3>Chapter 1</h3>
+							<h4>The Article</h4>
 						</div>
 					</div>
 					<div id="041" data-section="41" class="needs-english">
-						<div class="section">
+						<div class="subsection">
 							<p class="fr">A. Formes</p>
 							<p class="en"></p>
 							<p class="fr">Il y a en copte deux articles: l'article défini et l'article indéfini.</p>
@@ -103,7 +77,7 @@
 							<p class="en"></p>
 							<p class="fr">L'article défini se divise en faible et en fort:</p>
 							<p class="en"></p>
-							<table>
+							<table class="chart">
 								<tr>
 									<th></th><th class="fr"></th><th><span class="fr">faible</span><span class="en"></span></th><th><span class="fr">fort</span><span class="en"></span></th><th>N.E.</th>
 								</tr>
@@ -124,10 +98,10 @@
 						</div>
 					</div>
 					<div id="042" data-section="42" class="needs-english">
-						<div class="section">
+						<div class="subsection">
 							<p class="fr">L'article fort <span class="coptic">ⲡⲓ-</span> <span class="coptic">ϯ-</span> détermine avec plus de précision, il indique un individu en particulier.</p>
 							<p class="en"></p>
-							<table>
+							<table class="chart">
 								<tr>
 									<th colspan="2"><span class="fr">Article faible</span><span class="en"></span></th>
 									<th colspan="2"><span class="fr">Article fort</span><span class="en"></span></th>
@@ -156,7 +130,7 @@
 						</div>
 					</div>
 					<div id="043" data-section="43" class="needs-english">
-						<div class="section">
+						<div class="subsection">
 							<p class="fr"><i>Remarques.</i></p>
 							<p class="en"></p>
 							<ol>
@@ -11829,19 +11803,31 @@
 						</div>
 					</div>
 					<div id="399" data-section="399" class="needs-english">
-						<div class="section">
+						<div class="subsection">
 							<p><span class="coptic">ϩⲟⲧⲁⲛ</span> est généralement suivi du conditionnel.</p>
 							<p class="en"></p>
-							<blockquote class="example">
-								<p><span class="coptic">ⲛⲓⲙ ⲉⲧⲛⲁϣⲱⲛϧ ϩⲟⲧⲁⲛ ⲁⲣⲉϣⲁⲛ ⲫⲛⲟⲩϯ ϯ ⲛ̀ⲛⲁⲓ</span> <span class="fr">(Nomb. 24, 23)</span><span class="en">(Numbers 24:23)</span></p>
-								<p class="fr">«qui pourra vivre, lorsque Dieu aura donné ces choses?»</p>
-								<p class="en"></p>
-							</blockquote>
-							<blockquote class="example">
-								<p><span class="coptic">ϩⲟⲧⲁⲛ ⲁⲓϣⲁⲛϩⲓⲟⲩⲓ ⲛ̀ϩⲁⲛⲉⲑⲛⲟⲥ ⲉⲃⲟⲗ</span> <span class="fr">(Ex. 23, 18)</span><span class="en">(Exodus 23:18)</span></p>
-								<p>«lorsque je chasserai les étrangers»</p>
-								<p class="en"></p>
-							</blockquote>
+							<table class="example">
+								<tr>
+									<td><span class="coptic">ⲛⲓⲙ ⲉⲧⲛⲁϣⲱⲛϧ ϩⲟⲧⲁⲛ ⲁⲣⲉϣⲁⲛ ⲫⲛⲟⲩϯ ϯ ⲛ̀ⲛⲁⲓ</span></td>
+								</tr>
+								<tr>
+									<td><span class="fr">«qui pourra vivre, lorsque Dieu aura donné ces choses?»</span></td>
+								</tr>
+								<tr>
+									<td><span class="fr">(Nomb. 24, 23)</span><span class="en">(Numbers 24:23)</span></td>
+								</tr>
+							</table>
+							<table class="example">
+								<tr>
+								<td><span class="coptic">ϩⲟⲧⲁⲛ ⲁⲓϣⲁⲛϩⲓⲟⲩⲓ ⲛ̀ϩⲁⲛⲉⲑⲛⲟⲥ ⲉⲃⲟⲗ</span></td>
+								</tr>
+								<tr>
+									<td><span class="fr">«lorsque je chasserai les étrangers»</span></td>
+								</tr>
+								<tr>
+									<td><span class="fr">(Ex. 23, 18)</span><span class="en">(Exodus 23:18)</span></td>
+								</tr>
+							</table>
 							<p class="fr">On trouve aussi <span class="coptic">ϩⲱⲥⲧⲉ</span>, <span class="coptic">ϩⲟⲥⲧⲉ</span> (<span class="greek">ὡς δε</span>) dans le sens de «comme, lorsque», avec le 2ème parfait:</p>
 							<p class="en"></p>
 							<blockquote class="example">
@@ -11859,30 +11845,7 @@
 						</div>
 					</div>
 				</div>
-			</div>
+			</main>
 		</div>
-		<script>
-			//const chapters = document.querySelectorAll(".chapter");
-			//chapters.forEach(x => {
-			//	x.addEventListener("click", function (e) {
-			//		x.classList.toggle("collapse");
-			//	});
-			//});
-			/*
-			const button = document.querySelector("#toggle-lang");
-			const enTags = document.querySelectorAll(".en");
-			button.addEventListener("click", function (e) {
-				enTags.forEach(x => {
-					
-						x.classList.toggle("en-hide");
-				
-					});
-				});
-				*/
-		</script>
-		<!--<script src="../../scripts/scripts.js"></script>
-		-->
-		<!--<script src="./scripts/collapsible.js"></script>
-		-->
 	</body>
 </html>
