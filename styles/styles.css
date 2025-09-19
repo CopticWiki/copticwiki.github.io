@@ -9,13 +9,70 @@
 	--accent: #a68395;
 }
 
+* {
+	box-sizing: border-box;
+}
+
 body {
 	color: var(--primary);
 	background: var(--background);
+	font-family: rk_serif;
+	margin: .5rem;
+	outline: 1px solid;
+	height: calc(100dvh - 1rem);
+}
+
+#container {
+	display: flex;
+	flex-direction: column;
+	height: stretch;
+}
+
+header {
+	//outline: 1px dashed;
+	display: flex;
+	flex-direction: row-reverse;
+	justify-content: space-between;
+	padding: .5rem;
+	gap: 10%;
+}
+
+main {
+	padding-left: 1rem;
+	overflow-y: scroll;
+	scrollbar-color: #64496a transparent;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+	font-family: rk_serif;
+	margin-block: 0rem;
+}
+
+h1 {
+	color: var(--rk_coptic);
+	font-weight: normal;
+}
+
+h2 {
+	color: var(--primary);
+	font-weight: normal;
 }
 
 h3 {
+	color: gold;
+	position: sticky;
+	top: 0rem;
+	padding-block: 1rem;
 	background: linear-gradient(to bottom, var(--background), var(--background), var(--background), transparent);
+}
+
+p {
+	text-indent: 1.5rem;
+	line-height: 2;
 }
 
 sup {
@@ -130,20 +187,10 @@ i {
 
 
 
-* {
-	box-sizing: border-box;
-}
+
 
 a {
 	color: var(--accent);
-}
-
-h1 {
-	color: var(--rk_coptic);
-}
-
-h2 {
-	color: var(--primary);
 }
 
 a.permalink {
@@ -195,69 +242,6 @@ a.permalink:before {
 
 .subsection table.chart th {
 	
-}
-
-
-
-
-
-
-html {
-	
-}
-
-body {
-	font-family: rk_serif;
-	margin: .5rem;
-	border: 5px double;
-	height: stretch;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5 {
-	font-family: rk_serif;
-	margin-block: 0rem;
-	//text-align: center;
-}
-
-h3,
-h4 {
-	margin-block: 1rem;
-}
-
-p {
-	text-indent: 2em;
-	line-height: 1.5;
-}
-
-#container,
-header,
-main,
-main > div,
-footer {
-	
-}
-
-#container {
-	padding: .5rem;
-}
-
-header {
-	
-}
-
-header:hover,
-main > div:hover {
-	outline: 1px dashed;
-}
-
-main > div {
-	
-	margin-block: .5rem;
-	padding: .5rem;
 }
 
 ul {
