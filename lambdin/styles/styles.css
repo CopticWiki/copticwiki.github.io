@@ -1,8 +1,4 @@
-h3 {
-	position: sticky;
-	top: 0em;
-	padding-block: 1em;
-}
+
 
 #toc_outline,
 #table_of_contents,
@@ -51,11 +47,36 @@ function convertForClamp(vOldMax, vOldMin, fMax, fMin) {
 
 .subsection.exercises ol {
 	vertical-align: top;
+	padding-inline-start: 1.5rem;
 }
+
+li ul {
+	list-style-type: none;
+	padding: 0;
+	display: inline-table;
+	width: calc(100% - 2rem);
+}
+
+/*
+.subsection.exercises ol {
+	list-style: none;
+	counter-reset: items;
+}
+.subsection.exercises ol li {
+	counter-increment: items;
+}
+
+.subsection.exercises ol li:before {
+	vertical-align: top;
+}
+
+.subsection.exercises ol li:nth-child(n+10):before {
+	content: counter(items) ". ";
+}
+*/
 
 .subsection.exercises > ol.list-abc-upper {
 	list-style-type: upper-alpha;
-	
 }
 
 .subsection.exercises > ol > li {
@@ -114,13 +135,17 @@ function convertForClamp(vOldMax, vOldMin, fMax, fMin) {
 	//list-style-type: none;
 }
 
+li:has(> input[type="checkbox"]) {
+	margin-block: 1rem;
+}
+
 tr:has(> td > input[type="checkbox"]) + tr td,
-li:has(> input[type="checkbox"]) + li {
+li:has(> input[type="checkbox"]) > ul > li:last-child {
 	opacity: 0;
 	transition: opacity .5s ease;
 }
 
 tr:has(> td > input[type="checkbox"]:checked) + tr td,
-li:has(> input[type="checkbox"]:checked) + li {
+li:has(> input[type="checkbox"]:checked) > ul > li:last-child {
 	opacity: 1;
 }
