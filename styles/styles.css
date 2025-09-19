@@ -26,6 +26,7 @@ body {
 	display: flex;
 	flex-direction: column;
 	height: stretch;
+	height: calc(100dvh - 1rem);
 }
 
 header {
