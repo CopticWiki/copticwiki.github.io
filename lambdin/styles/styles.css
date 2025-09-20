@@ -5,7 +5,38 @@
 #toc,
 #abbreviations_and_conventions,
 #introduction
-/*.subsection.exercises*/
+/*
+#preface,
+#lesson_01,
+#lesson_02,
+#lesson_03,
+#lesson_04,
+#lesson_05,
+#lesson_06,
+#lesson_07,
+#lesson_08,
+#lesson_09,
+#lesson_10,
+#lesson_12,
+#lesson_13,
+#lesson_14,
+#lesson_15,
+#lesson_16,
+#lesson_17,
+#lesson_18,
+#lesson_19,
+#lesson_20,
+#lesson_21,
+#lesson_22,
+#lesson_23,
+#lesson_24,
+#lesson_25,
+#lesson_26,
+#lesson_27,
+#lesson_28,
+#lesson_29,
+#lesson_30
+*/
  {
 	display: none;
 }
@@ -55,6 +86,26 @@ li ul {
 	padding: 0;
 	display: inline-table;
 	width: calc(100% - 2rem);
+	//outline: 1px solid gold;
+}
+
+.list-2-part > li > ul {
+	display: inline-block;
+	width: calc(50% - 2rem);
+	//outline: 1px solid;
+	position: relative;
+}
+
+.list-2-part > li > ul:last-child {
+	margin-left: 2rem;
+}
+
+.list-2-part > li > ul:first-child:after {
+	content: "→";
+	//font-size: 2em;
+	position: absolute;
+	top: 1rem;
+	right: 0rem;
 }
 
 /*
@@ -140,12 +191,14 @@ li:has(> input[type="checkbox"]) {
 }
 
 tr:has(> td > input[type="checkbox"]) + tr td,
-li:has(> input[type="checkbox"]) > ul > li:last-child {
+li:has(> input[type="checkbox"]) > ul > li:last-child,
+.list-2-part > li > ul:last-child li:has(> input[type="checkbox"]) > ul > li {
 	opacity: 0;
 	transition: opacity .5s ease;
 }
 
 tr:has(> td > input[type="checkbox"]:checked) + tr td,
-li:has(> input[type="checkbox"]:checked) > ul > li:last-child {
+li:has(> input[type="checkbox"]:checked) > ul > li:last-child,
+.list-2-part > li > ul:last-child li:has(> input[type="checkbox"]:checked) > ul > li {
 	opacity: 1;
 }

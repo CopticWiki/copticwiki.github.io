@@ -40,6 +40,7 @@ header {
 
 main {
 	padding-left: 1rem;
+	overflow-x: hidden;
 	overflow-y: scroll;
 	scrollbar-color: #64496a transparent;
 }
