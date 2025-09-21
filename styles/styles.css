@@ -45,6 +45,11 @@ header div:nth-child(1) {
 	gap: 10%;
 }
 
+nav ul {
+	//display: flex;
+	list-style-type: none;
+}
+
 main {
 	padding-left: 1rem;
 	overflow-x: hidden;
@@ -86,6 +91,19 @@ h5 {
 h1 {
 	color: var(--rk_coptic);
 	font-weight: normal;
+	transition: font-size .5s ease-in-out;
+}
+
+h1 a {
+	transition: color .25s ease-in-out;
+}
+
+h1 a:hover {
+	color: var(--primary);
+}
+
+h1 a {
+	text-decoration: none;
 }
 
 h2 {
