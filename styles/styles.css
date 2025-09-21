@@ -66,8 +66,11 @@ main {
 }
 
 @media screen and (max-width: 480px) {
-	h1, h2 {
+	h1, h2, h3 {
 		font-size: 1em;
+	}
+	main {
+		padding-right: 1rem;
 	}
 }
 
@@ -91,7 +94,8 @@ h2 {
 }
 
 h3 {
-	color: gold;
+	color: var(--text);
+	font-weight: normal;
 	position: sticky;
 	top: 0rem;
 	padding-block: 1rem;
@@ -222,12 +226,13 @@ a {
 }
 
 a.permalink {
+	color: var(--text);
 	font-weight: bold;
 	margin-inline: .25rem;
 }
 
 a.permalink:before {
-	content: "🔗";
+	//content: "🔗";
 }
 
 .subsection {
