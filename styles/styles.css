@@ -9,6 +9,10 @@
 	--accent: #a68395;
 }
 
+.hide {
+	display: none;
+}
+
 * {
 	box-sizing: border-box;
 }
@@ -31,6 +35,9 @@ body {
 
 header {
 	//outline: 1px dashed;
+}
+
+header div:nth-child(1) {
 	display: flex;
 	flex-direction: row-reverse;
 	justify-content: space-between;
@@ -43,6 +50,25 @@ main {
 	overflow-x: hidden;
 	overflow-y: scroll;
 	scrollbar-color: #64496a transparent;
+}
+
+.text-align-right {
+	text-align: right;
+}
+
+.preface-end-author {
+	text-align: right;
+}
+
+.preface-end-author p {
+	text-indent: 0;
+	margin: 0;
+}
+
+@media screen and (max-width: 480px) {
+	h1, h2 {
+		font-size: 1em;
+	}
 }
 
 h1,
