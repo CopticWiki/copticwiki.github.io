@@ -1,3 +1,6 @@
+@import url("../../../styles/styles.css"); /* base styles */
+@import url("../../styles/styles.css"); /* crum */
+
 #preface .signed {
 	float: right;
 }

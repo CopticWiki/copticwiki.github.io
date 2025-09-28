@@ -1,3 +1,27 @@
+@import url("../../styles/styles.css"); /* base styles */
+
+#menu ul {	
+	width: 100%;
+	padding: 0;
+	list-style-type: none;
+	display: grid;
+	grid-template-columns: auto auto auto auto auto auto auto auto auto auto auto;
+}
+
+#menu li {
+	text-align: center;
+}
+
+#menu a {
+	padding-block: .5rem;
+	display: block;
+	text-decoration: none;
+}
+
+#menu a:hover {
+	background: #ffffff33;
+}
+
 .en {
 	display: none;
 }
