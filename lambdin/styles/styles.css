@@ -1,10 +1,10 @@
 #toc_outline,
 /* #table_of_contents */
 /* #toc */
-#abbreviations_and_conventions,
-#introduction,
-#preface
+#introduction
 /*
+#abbreviations_and_conventions,
+#preface,
 #lesson_01,
 #lesson_02,
 #lesson_03,
@@ -39,44 +39,37 @@
 	display: none;
 }
 
-#toc {
-	//border: 1px solid;
-	//position: relative;
-	//top: 0;
-	//z-index: 9999;
-	//background: linear-gradient(to right, #ffffff22, transparent);
-}
-
 #toc > ul {
 	margin: 0;
 	padding: 0;
 }
 
-#toc_lessons {	
-	//overflow-y: scroll;
-	//position: absolute;
+ul#toc_lessons {	
 	width: 100%;
 	display: grid;
 	grid-template-columns: auto auto auto auto auto auto auto auto auto auto;
-	//gap: 2px;
 }
 
-#toc_lessons li {
-	//outline: 1px solid;
-	display: inline;
-	width: 100%;
+ul#toc_lessons li {
 	text-align: center;
 }
 
-#toc_lessons a {
-	width: 100%;
+ul#toc_lessons a {
 	padding-block: .5rem;
 	display: block;
 	text-decoration: none;
 }
 
-#toc_lessons a:hover {
+ul#toc_lessons a:hover {
 	background: #ffffff33;
+}
+
+#abbreviations_and_conventions > ul {
+	width: 100%;
+	display: flex;
+	//flex-direction: column;
+	flex-wrap: wrap;
+	//grid-template-columns: auto auto;
 }
 
 #introduction #alphabet {
