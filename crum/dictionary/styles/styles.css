@@ -1,4 +1,5 @@
 @import url("../../../styles/styles.css"); /* base styles */
+@import url("../../styles/styles.css"); /* crum */
 
 #dictionary ul {
 	list-style-type: none;

@@ -13,6 +13,33 @@
 	display: none;
 }
 
+.current-link {
+	background: #ffffff22;
+}
+
+#menu ul {	
+	width: 100%;
+	padding: 0;
+	list-style-type: none;
+	display: grid;
+	grid-template-columns: auto auto auto;
+}
+
+#menu li {
+	
+	//text-align: center;
+}
+
+#menu a {
+	padding: .5rem;
+	display: block;
+	text-decoration: none;
+}
+
+#menu a:hover {
+	background: #ffffff33;
+}
+
 * {
 	box-sizing: border-box;
 }
@@ -31,6 +58,7 @@ body {
 	flex-direction: column;
 	height: stretch;
 	height: calc(100dvh - 1rem);
+	justify-content: space-between;
 }
 
 header {
@@ -55,6 +83,7 @@ main {
 	overflow-x: hidden;
 	overflow-y: scroll;
 	scrollbar-color: #64496a transparent;
+	height: 100%;
 }
 
 .text-align-right {
