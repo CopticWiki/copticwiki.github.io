@@ -1,3 +1,5 @@
+@import url("../../../styles/styles.css"); /* base styles */
+
 .ready {
 	outline: 1px solid #90ee90;
 	background: linear-gradient(135deg, #90ee9022, #90ee9000);
