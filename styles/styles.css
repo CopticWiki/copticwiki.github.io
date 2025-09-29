@@ -149,6 +149,10 @@ h3 {
 	background: linear-gradient(to bottom, var(--background), var(--background), var(--background), transparent);
 }
 
+h4 {
+	font-weight: normal;
+}
+
 p {
 	text-indent: 1.5rem;
 	line-height: 2;
