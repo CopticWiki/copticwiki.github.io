@@ -7,6 +7,7 @@
 }
 
 #interface {
+	font-size: 1.5em !important;
 	display: grid;
 	grid-template-rows: repeat(2, 1fr);
 	grid-template-columns: repeat(2, 1fr);
@@ -44,6 +45,7 @@
 }
 
 #rendered_view p {
+	line-height: 1.5;
 	margin: 0;
 	text-indent: 1em;
 }

@@ -194,6 +194,7 @@ i {
 	font-size: 1.5em;
 	font-family: rk_coptic;
 	color: #c95795;
+	line-height: 0;
 }
 
 .greek {
