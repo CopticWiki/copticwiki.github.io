@@ -1,6 +1,50 @@
 @import url("../../../styles/styles.css"); /* base styles */
 @import url("../../styles/styles.css"); /* crum */
 
+#abbreviations {
+	border-collapse: collapse;
+	width: 100%;
+}
+
+#abbreviations td {
+	border: 1px solid #ffffff22;
+	padding: .5em;
+}
+
+.volumes {
+	vertical-align: top;
+	width: 120px;
+}
+
+.volumes a {
+	display: inline-block;
+}
+
+.volumes a + a {
+	//padding-left: .5em;
+}
+
+.bible,
+.non-source {
+	//display: none;
+}
+
+.source,
+.bible,
+.non-source {
+	vertical-align: top;
+}
+
+tr:has(.bible) {
+	background: #90ee9011;
+}
+
+tr:has(.non-source) {
+	background: #ffffff11;
+}
+
+/*
+
 #list_of_abbreviations > ul > li > ul {
 	display: table;
 	border-collapse: collapse;
