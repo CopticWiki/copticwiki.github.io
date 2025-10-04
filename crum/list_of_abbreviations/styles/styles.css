@@ -1,6 +1,17 @@
 @import url("../../../styles/styles.css"); /* base styles */
 @import url("../../styles/styles.css"); /* crum */
 
+:root {
+	--archive: url(../../images/archive.jpg);
+	--google-books: url(../../images/google-books.png);
+	--hathi-trust: url(../../images/hathitrust.png);
+	--jstor: url(../../images/jstor_16.png);
+	--scribd: url(../../images/scribd.ico);
+	--uni-bonn: url(../../images/uni-bonn.ico);
+	--bnf: url(../../images/bnf.ico);
+	--getty: url(../../images/getty.png);
+}
+
 #abbreviations {
 	border-collapse: collapse;
 	width: 100%;
@@ -9,29 +20,6 @@
 #abbreviations td {
 	border: 1px solid #ffffff22;
 	padding: .5em;
-}
-
-.volumes {
-	vertical-align: top;
-	width: 120px;
-}
-
-.volumes a {
-	display: inline-block;
-}
-
-.volumes a + a {
-	//padding-left: .5em;
-}
-
-.bible,
-.non-source {
-	//display: none;
-}
-
-.source,
-.bible,
-.non-source {
 	vertical-align: top;
 }
 
@@ -43,58 +31,21 @@ tr:has(.non-source) {
 	background: #ffffff11;
 }
 
-/*
-
-#list_of_abbreviations > ul > li > ul {
-	display: table;
-	border-collapse: collapse;
+.volumes {
+	width: 120px;
 }
 
-#list_of_abbreviations > ul > li > ul > li {
-	display: table-row;
-}
-
-#list_of_abbreviations > ul > li > ul > li > .cell {
-	display: table-cell;
-	padding: .2em;
-	border: 1px solid #333;
-}
-
-#list_of_abbreviations a {
+.volumes a {
+	display: block;
 	text-decoration: none;
 }
 
-#list_of_abbreviations .abbr {
-	color: seagreen;
-}
-
-#list_of_abbreviations #all .non-source,
-#list_of_abbreviations #all .bible {
-	display: none;
-}
-
-#list_of_abbreviations {
-	--archive: url(../images/archive.jpg);
-	--google-books: url(../images/google-books.png);
-	--hathi-trust: url(../images/hathitrust.png);
-	--jstor: url(../images/jstor_16.png);
-	--scribd: url(../images/scribd.ico);
-	--uni-bonn: url(../images/uni-bonn.ico);
-	--bnf: url(../images/bnf.ico);
-	--getty: url(../images/getty.png);
-}
-
-#list_of_abbreviations li .cell:has(> a) a:before {
+.volumes:has(> a) a:before {
 	content: "[↵]";
 	color: gold;
-	background-size: 16px 16px;
-	width: 16px;
-	height: 16px;
-	display: inline-block;
-	vertical-align: middle;
 }
 
-#list_of_abbreviations li .cell :is(
+.volumes :is(
 	a[href^="https://archive.org/"],
 	a[href^="https://books.google.com/"],
 	a[href^="https://babel.hathitrust.org/"],
@@ -111,35 +62,34 @@ tr:has(.non-source) {
 	height: 16px;
 }
 
-#list_of_abbreviations li .cell a[href^="https://archive.org/"]:before {
+.volumes a[href^="https://archive.org/"]:before {
 	background-image: var(--archive);
-	mix-blend-mode: screen;
 }
 
-#list_of_abbreviations li a[href^="https://books.google.com/"]:before {
+.volumes a[href^="https://books.google.com/"]:before {
 	background-image: var(--google-books);
 }
 
-#list_of_abbreviations li a[href^="https://babel.hathitrust.org/"]:before {
+.volumes a[href^="https://babel.hathitrust.org/"]:before {
 	background-image: var(--hathi-trust);
 }
 
-#list_of_abbreviations li a[href^="https://www.jstor.org/"]:before {
+.volumes a[href^="https://www.jstor.org/"]:before {
 	background-image: var(--jstor);
 }
 
-#list_of_abbreviations li a[href^="https://www.scribd.com/"]:before {
+.volumes a[href^="https://www.scribd.com/"]:before {
 	background-image: var(--scribd);
 }
 
-#list_of_abbreviations li a[href^="https://digitale-sammlungen.ulb.uni-bonn.de/"]:before {
+.volumes a[href^="https://digitale-sammlungen.ulb.uni-bonn.de/"]:before {
 	background-image: var(--uni-bonn);
 }
 
-#list_of_abbreviations li a[href^="https://gallica.bnf.fr/"]:before {
+.volumes a[href^="https://gallica.bnf.fr/"]:before {
 	background-image: var(--bnf);
 }
 
-#list_of_abbreviations li a[href^="http://archives.getty.edu"]:before {
+.volumes a[href^="http://archives.getty.edu"]:before {
 	background-image: var(--getty);
 }

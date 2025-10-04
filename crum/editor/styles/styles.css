@@ -1,0 +1,53 @@
+@import url("../../../styles/styles.css"); /* base styles */
+@import url("../../styles/styles.css"); /* crum */
+
+main {
+	font-size: 1.5em;
+	overflow-y: hidden;
+	background: #111;
+	padding-left: 0;
+}
+
+#interface {
+	display: flex;
+}
+
+#rendered_view::selection {
+	background: transparent;
+	background: #144b76;
+	color: #eeeeee;
+}
+
+#editor_text {
+	grid-area: 1/2/2/3;
+	line-height: 2;
+	white-space: pre-wrap;
+	font-family: rk_coptic, rk_greek;
+	font-weight: normal;
+	border: none;
+	line-height: 1.5;
+	tab-size: 1em;
+	outline: none;
+	caret-color: lightgreen;
+	padding-bottom: 2em !important;
+}
+
+#editor_text,
+#rendered_view {
+	background: #000000;
+	outline: 1px solid #ffffff55;
+	width: 50dvw;
+	margin: .5em;
+	padding: .5em;
+	overflow-y: scroll;
+}
+
+#rendered_view p {
+	line-height: 1.5;
+	margin: 0;
+	text-indent: 1em;
+}
+
+#rendered_view p p {
+	margin: 1em 0 0 0;
+}

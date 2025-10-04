@@ -1,0 +1,12 @@
+@import url("../../../styles/styles.css"); /* base styles */
+@import url("../../styles/styles.css"); /* crum */
+
+#index {
+	border-collapse: collapse;
+	width: 100%;
+}
+
+#index td {
+	border: 1px solid #ffffff22;
+	padding: .5em;
+}
