@@ -1,0 +1,34 @@
+@import url("../../../styles/styles.css"); /* base styles */
+
+main > div {
+	display: grid;
+	grid-template-columns: auto 1fr 1fr 1fr;
+	//border: 1px solid;
+	gap: 1em;
+	//position: sticky;
+	//top: 0;
+	margin-inline: 1em;
+}
+
+main > div:before {
+	content: attr(id);
+	line-height: 2;
+	//position: sticky;
+	//top: 0;
+}
+
+main > div > *:first-child {
+	//outline: 1px solid magenta;
+}
+
+main > div > .coptic {
+	color: hsl(170, 48%, 45%);
+	color: steelblue;
+}
+
+main > div > .coptic,
+main > div > .italian,
+main > div > .english {
+	//border: 1px solid;
+	margin: 0;
+}
