@@ -1,13 +1,19 @@
 @import url("../../../styles/styles.css"); /* base styles */
 
 main > div {
+	//font-size: 1.5em;
 	display: grid;
 	grid-template-columns: auto 1fr 1fr 1fr;
+	grid-template-columns: auto 1fr 1fr;
 	//border: 1px solid;
 	gap: 1em;
 	//position: sticky;
 	//top: 0;
-	margin-inline: 1em;
+	margin-right: .5em;
+}
+
+main > div + div {
+	margin-top: 1em;
 }
 
 main > div:before {
@@ -23,7 +29,11 @@ main > div > *:first-child {
 
 main > div > .coptic {
 	color: hsl(170, 48%, 45%);
-	color: steelblue;
+	color: mediumseagreen;
+}
+
+main > div > .english {
+	display: none;
 }
 
 main > div > .coptic,
@@ -31,4 +41,5 @@ main > div > .italian,
 main > div > .english {
 	//border: 1px solid;
 	margin: 0;
+	text-indent: 0;
 }
