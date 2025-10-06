@@ -5,6 +5,7 @@ main > div {
 	display: grid;
 	grid-template-columns: auto 1fr 1fr 1fr;
 	grid-template-columns: auto 1fr 1fr;
+	grid-template-columns: auto 1fr;
 	//border: 1px solid;
 	gap: 1em;
 	//position: sticky;
@@ -32,6 +33,7 @@ main > div > .coptic {
 	color: mediumseagreen;
 }
 
+main > div > .italian,
 main > div > .english {
 	display: none;
 }
