@@ -162,6 +162,10 @@ sup {
 	line-height: 0;
 }
 
+b {
+	color: violet;
+}
+
 em {
 	color: #d4b741;
 }
