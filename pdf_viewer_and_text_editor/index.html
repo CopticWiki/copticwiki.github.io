@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Randy's PDF Viewer + Text Editor</title>
+		<!--
+		-->
+		<link rel="stylesheet" href="./styles/styles.css">
+		<link rel="stylesheet" href="../styles/fonts.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<style>
+			
+		</style>
+	</head>
+	<body>
+		<div id="container">
+			<div id="pdf">
+				<embed src="./i_am_amazed.pdf" type="application/pdf" width="100%" height="100%">
+			</div>
+			<div id="editor_bg">
+				<div id="editor_text" class="coptic" contenteditable="true" spellcheck="false" placeholder="Type text here…">
+				</div>
+			</div>
+			<!--
+			<div id="document">
+				
+			
+			</div>
+			-->
+		</div>
+		<script>
+		
+			let images = document.querySelector("#document");
+			//baseImgPath = "./images/crum_1939/";
+			baseImgPath = "./images/crum_1939/";
+			//baseImgPath = "C:/Users/ptera/OneDrive/Desktop/crum_1939/";
+			let zeroes = "";
+			let count = "";
+			let newAnchorElement = document.createElement("a");
+			//let newImgElement = document.createElement("img");
+			for (i = 1; i < 993; i++) {
+				let newImgElement = document.createElement("img");
+				if (i < 1000) {
+					zeroes = "0";
+				}
+				if (i < 100) {
+					zeroes = "00";
+				}
+				if (i < 10) {
+					zeroes = "000";
+				}
+				count = zeroes + i;
+				newImgElement.setAttribute("id", count);
+				newImgElement.src = baseImgPath + "copticdictionary0000crum_" + count + ".jpg";
+				//newAnchorElement.appendChild(newImgElement);
+				images.appendChild(newImgElement);
+			}
+		</script>
+	</body>
+</html>
