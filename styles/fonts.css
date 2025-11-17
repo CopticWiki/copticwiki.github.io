@@ -49,6 +49,7 @@
 		U+0302, /* combine circumflex pointed */
 		U+0311, /* combine circumflex curved */
 		U+0361, /* wide inverted breve */
+		U+037a, /* combine iota subscript */
 		U+0308, /* combine diaeresis */
 		U+00b7, /* middle dot */
 		U+2e17, /* slanted double hyphen */
@@ -94,8 +95,19 @@
 	src: url("./fonts/NotoSansArabic.ttf");
 	unicode-range:
 		U+0600-06ff,
+		U+0763, /* ݣ */
 		U+fe70-feff;
 }
+
+
+/*
+
+U+132b8 // 𓊸 not used in Crum
+U+132ae // 𓊮 used in Crum
+
+*/
+
+
 @font-face { /* hebrew */
 	font-family: rk_hebrew;
 	src: url("./fonts/NotoSansHebrew.ttf");
