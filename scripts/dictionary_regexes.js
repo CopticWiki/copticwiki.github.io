@@ -31,6 +31,7 @@
 	//leftParenthesis: [/(%\(%)/,"("],
 	//rightParenthesis: [/(%\)%)/,")"],
 	qualitative: [/†/, "<sup>†<\/sup>"],
-	lineBreaks: [/\\n/, "</p><p>"]
+	lineBreaks: [/\\n/, "</p><p>"],
+	additionsAndCorrections: [/\/\/(.*?)\/\/(.*?)\/\//, "<del>$1</del><ins>$2</ins>"],
 };
 export default arrayStyling;
