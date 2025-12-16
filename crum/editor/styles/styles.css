@@ -1,6 +1,10 @@
 @import url("../../../styles/styles.css"); /* base styles */
 @import url("../../styles/styles.css"); /* crum */
 
+header {
+	display: none;
+}
+
 main {
 	font-size: 1.5em;
 	overflow-y: hidden;
