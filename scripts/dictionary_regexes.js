@@ -1,4 +1,4 @@
-function langauge_replace(_, g1) {
+function language_replace(_, g1) {
 	let lang;
 	if (/\p{Script=Greek}/u.test(g1) || g1 === '·') {
 		lang = "greek";
@@ -12,7 +12,7 @@ function langauge_replace(_, g1) {
 		lang = "aramaic";
 	} else if (/\p{Script=Ethiopic}/u.test(g1)) {
 		lang = "amharic";
-	} else if (/^(?:[\p{Script=Latin}ꜢꜤ]\p{M}*| )+$/ui.exec(g1)) {
+	} else if (/^(?:[\p{Script=Latin}ꜢꜤ]\p{M}*| )+$/ui.test(g1)) {
 		lang = "demotic";
 	} else {
 		console.error('Error! Can not determine the language of bracketed expression:', g1);
@@ -37,7 +37,7 @@ function langauge_replace(_, g1) {
 	subdialectLyco: [/\[\[(A\^2)\]\]/, "<i class=\"dialect\">A<sup class=\"non-italic\">2<\/sup><\/i>"],
 	superscript: [/\^(\w+)/, "<sup>$1<\/sup>"],
 	headword: [/\[\[\[(\(?\)?\[?\]?\.?\…?-?[\u2c80-\u2cff\u03e2-\u03ef].*?\]?)\]\]\]/, "<span class=\"headword coptic\">$1<\/span>"],
-	language: [/(?<!\[)\[\[(.*?)\]\](?!\])/, langauge_replace],
+	language: [/(?<!\[)\[\[(.*?)\]\](?!\])/, language_replace],
 	qualitative: [/†/, "<sup>†<\/sup>"],
 	lineBreaks: [/\\n/, "</p><p>"],
 	additionsAndCorrections: [/\/\/(.*?)\/\/(.*?)\/\//, "<del>$1</del><ins>$2</ins>"],
