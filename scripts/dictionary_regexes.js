@@ -41,6 +41,8 @@ function language_replace(_, g1) {
 	qualitative: [/†/, "<sup>†<\/sup>"],
 	lineBreaks: [/\\n/, "</p><p>"],
 	additionsAndCorrections: [/\/\/(.*?)\/\/(.*?)\/\//, "<del>$1</del><ins>$2</ins>"],
+	footnotes: [/{{{.*?}}}/, ''],
+	braces: [/[{}]/, ''],
 };
 
 export default arrayStyling;
