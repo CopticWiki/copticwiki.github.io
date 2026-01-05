@@ -42,7 +42,7 @@ function language_replace(_, g1) {
 	lineBreaks: [/\\n/, "</p><p>"],
 	additionsAndCorrections: [/\/\/(.*?)\/\/(.*?)\/\//, "<del>$1</del><ins>$2</ins>"],
 	footnotes: [/{{.*?}}/, ''],
-	braces: [/[{}]/, ''],
+	manual: [/{(.*?)}(?:{.*?})?/, '$1'],
 };
 
 export default arrayStyling;
