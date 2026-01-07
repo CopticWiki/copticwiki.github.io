@@ -12,7 +12,7 @@ function language_replace(_, g1) {
 		lang = "aramaic";
 	} else if (/\p{Script=Ethiopic}/u.test(g1)) {
 		lang = "amharic";
-	} else if (/^(?:[\p{Script=Latin}ꜢꜤʾʿ]\p{M}*|[ \-=\.])+$/ui.test(g1)) {
+	} else if (/^(?:[\p{Script=Latin}ꜢꜤʾʿ]\p{M}*|[ '\-=\.])+$/ui.test(g1)) {
 		lang = "demotic";
 	} else {
 		console.error('Error! Can not determine the language of bracketed expression:', g1);
