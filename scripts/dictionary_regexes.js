@@ -12,7 +12,7 @@ function language_replace(_, g1) {
 		lang = "aramaic";
 	} else if (/\p{Script=Ethiopic}/u.test(g1)) {
 		lang = "amharic";
-	} else if (/^(?:[\p{Script=Latin}ꜢꜤʾʿ]\p{M}*|[ \-=\.])+$/ui.test(g1)) {
+	} else if (/^(?:[\p{Script=Latin}ꜢꜤʾʿ]\p{M}*|[ '\-=\.])+$/ui.test(g1)) {
 		lang = "demotic";
 	} else {
 		console.error('Error! Can not determine the language of bracketed expression:', g1);
@@ -35,7 +35,7 @@ function language_replace(_, g1) {
 	dialect: [/\[\[(S|B|A|F|O)\]\]/, "<i class=\"dialect\">$1<\/i>"],
 	subdialect: [/\[\[(S|F|B|O)\^(a|f|b|af)\]\]/, "<i class=\"dialect\">$1<sup>$2<\/sup><\/i>"],
 	subdialectLyco: [/\[\[(A\^2)\]\]/, "<i class=\"dialect\">A<sup class=\"non-italic\">2<\/sup><\/i>"],
-	superscript: [/\^(\w+)/, "<sup>$1<\/sup>"],
+	superscript: [/\^([-–—\w]+)/, "<sup>$1<\/sup>"],
 	headword: [/\[\[\[(\(?\)?\[?\]?\.?\…?-?[\u2c80-\u2cff\u03e2-\u03ef].*?\]?)\]\]\]/, "<span class=\"headword coptic\">$1<\/span>"],
 	language: [/(?<!\[)\[\[(.*?)\]\](?!\])/, language_replace],
 	qualitative: [/†/, "<sup>†<\/sup>"],
