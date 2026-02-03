@@ -55,7 +55,7 @@ body {
 	background: var(--background);
 	font-family: rk_serif;
 	margin: .5rem;
-	outline: 1px solid;
+	//outline: 1px solid;
 	height: calc(100dvh - 1rem);
 }
 
@@ -89,6 +89,7 @@ main {
 	overflow-x: hidden;
 	overflow-y: scroll;
 	scrollbar-color: #64496a transparent;
+	scrollbar-color: darkseagreen transparent;
 	height: 100%;
 }
 
