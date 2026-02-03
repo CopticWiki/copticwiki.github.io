@@ -5,8 +5,13 @@
 	--text: #e4e2ea;
 	--background: #060608;
 	--primary: #aeabc3;
+	--primary: #4f755e;
 	--secondary: #5f445b;
 	--accent: #a68395;
+}
+
+::selection {
+	background: #144b76;
 }
 
 .hide {
@@ -46,6 +51,7 @@
 
 body {
 	color: var(--primary);
+	color: #4f755e;
 	background: var(--background);
 	font-family: rk_serif;
 	margin: .5rem;
@@ -106,18 +112,6 @@ main {
 	main {
 		padding-right: 1rem;
 	}
-}
-
-p.coptic::first-letter {
-	text-transform: uppercase;
-	font-size: 2.5em;
-	color: gold;
-	margin-right: 5px;
-	padding: 3px 5px 0;
-	width: 5em;
-	line-height: 0;
-	border: 1px solid #ffb70055;
-	border-radius: .25rem;
 }
 
 h1,
@@ -204,6 +198,7 @@ i {
 .coptic {
 	font-family: rk_coptic;
 	color: #46a65d;
+	color: #747264;
 }
 
 .headword {
