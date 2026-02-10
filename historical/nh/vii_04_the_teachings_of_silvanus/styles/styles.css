@@ -1,0 +1,12 @@
+#toc_lessons {
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+main h3 {
+	top: 344px;
+}
+
+rt {
+	font-size: 80%;
+	color: lightblue;
+}

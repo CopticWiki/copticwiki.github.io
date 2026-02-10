@@ -1,6 +1,14 @@
-@import url("../../styles/styles.css"); /* base styles */
+#toc_lessons {
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+}
 
-#menu ul {	
+main h3 {
+	top: 200px;
+}
+
+
+
+#menu ul {
 	width: 100%;
 	padding: 0;
 	list-style-type: none;
