@@ -1,28 +1,11 @@
-@import url("../../../styles/styles.css");
-@import url("../../styles/styles.css");
-
-#toggle-lang {
-	content: "";
-	background: firebrick;
-	background: #2e5144;
-	display: block;
-	width: 1.5rem;
-	height: 30dvh;
-	position: fixed;
-	right: 0em;
-	border-top-left-radius: .5em;
-	border-bottom-left-radius: .5em;
-	transition: background .5s;
+#toc_lessons {
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
 }
 
-#toggle-lang:hover {
-	background: #ff5722;
-	cursor: pointer;
+main h3 {
+	top: 208px;
 }
 
-.hide {
-	display: none;
-}
 
 .en-hide {
 	opacity: 0;
@@ -30,7 +13,7 @@
 }
 
 .lesson {
-	margin: 1em;
+	//margin: 1em;
 }
 
 th {
@@ -67,22 +50,6 @@ span.en {
 [data-section="233"] .section {
 	//width: 50%;
 	//overflow-x: auto;
-}
-
-* {
-	box-sizing: border-box;
-}
-
-body {
-	margin: 0em;
-}
-
-.chapter_title {
-	display: grid;
-	grid-template-columns: 1fr 1fr;
-	gap: .5em;
-	gap: 1em;
-	text-align: center;
 }
 
 .bilingual {
@@ -247,23 +214,9 @@ div[data-section] + div[data-section] {
 	//background: #ffffff11;
 }
 
-
 .lambdin {
 	float: left;
 	outline: 1px dashed violet;
-}
-
-.lambdin h3,
-.mallon .chapter,
-.mallon b[id^="chapter_"] {
-//	border: 1px solid #333333cc;
-	margin-top: .5em;
-}
-
-.mallon b[id^="chapter_"] {
-//	font-size: 1em;
-//	color: steelblue;
-//	font-weight: normal;
 }
 
 ol.lower-alpha {
@@ -287,27 +240,9 @@ ol.lower-alpha {
 	//background: #ffffff11;
 }
 
-/*
-
-convertForClamp(840, 360, 2.5, 1);
-function convertForClamp(vOldMax, vOldMin, fMax, fMin) {
-	let vNewMax = vOldMax / 16;
-	let vNewMin = vOldMin / 16;
-	let slope = ((fMax - fMin) / (vNewMax - vNewMin));
-	let yAxisIntersection = -vNewMin * slope + fMin;
-	let preferredValue = slope * 100;
-	console.log("Slope:" + slope + "\nY AxisIntersection: " + yAxisIntersection + "\n\nclamp(" + fMin + "rem, " + yAxisIntersection + "rem + " + preferredValue + "vw, " + fMax + "rem)");
-}
-
-*/
-
 #introduction #alphabet li .coptic {
 	margin-right: .2em;
 	width: 1em;
-}
-
-#toc {
-	
 }
 
 #table_of_contents h3 {
@@ -471,38 +406,3 @@ li:has(> input[type="checkbox"]) > ul {
 	list-style-type: none;
 	padding-left: 0;
 }
-
-/* regex:
-
-\t*<li><span class=\"coptic\">(.+?)<\/span>\n\t+<ul>\n\t+<li>(.+?)<\/li>\n\t+<\/ul>\n\t+<\/li>
-
-or
-
-\t*<li><span class=\"coptic\">(.+?)<\/span><ul><li>(.+?)<\/li><\/ul><\/li>
-
-*/
-
-/* substitute:
-
-<li><input type="checkbox">\n\t<ul>\n\t\t<li class="coptic">$1</li>\n\t\t<li>$2</li>\n\t</ul>\n</li>
-
-*/
-
-/* notepad++ version (i.e. has \r)
-
-\t*<li><span class=\"coptic\">(.+?)<\/span>\r\n\t+<ul>\r\n\t+<li>(.+?)<\/li>\r\n\t+<\/ul>\r\n\t+<\/li>
-
-or
-
-\t*<li><span class=\"coptic\">(.+?)<\/span><ul><li>(.+?)<\/li><\/ul><\/li>
-
-
-
-
-
-
-
-
-<li><input type="checkbox">\r\n\t<ul>\r\n\t\t<li class="coptic">$1</li>\r\n\t\t<li>$2</li>\r\n\t</ul>\r\n</li>
-
-*/

@@ -1,347 +1,413 @@
-@import url("./fonts.css");
+/* universal properties */
 
-:root {
-	--rk_coptic: lightgreen;
-	--text: #e4e2ea;
-	--background: #060608;
-	--primary: #aeabc3;
-	--primary: #4f755e;
-	--secondary: #5f445b;
-	--accent: #a68395;
+* {
+	box-sizing: border-box;
 }
 
-::selection {
-	background: #144b76;
+main > ul {
+	margin: 0;
+}
+
+.linkpath {
+	line-height: 1;
+	margin-inline: 1rem;
+}
+
+.linkpath a {
+	//font-size: 16px;
+	color: lightblue;
+	text-decoration: none;
+}
+
+.linkpath a:hover {
+	text-decoration: revert;
+}
+
+main b {
+	color: steelblue;
+}
+
+body {
+	color: #ffffffaa;
+	background: #212121;
+	font-family: "Noto Sans";
+	margin: 0em auto;
+	max-width: 600px;
+}
+
+#container {
+	position: relative;
+	max-width: 600px;
+	margin: 0em;
+	display: flex;
+	flex-direction: column;
+}
+
+header {
+	padding-top: 0.5em;
+	position: sticky;
+	top: 0em;
+	z-index: 9999;
+	background: #212121;
+	//outline: 1px solid yellow;
+}
+
+main {
+	padding-inline: 1.5em;
+	//outline: 1px dashed gold;
+}
+
+footer {
+	display: none;
+}
+
+header h2,
+header h3 {
+	margin: 0.5rem 1rem 0;
+	line-height: 1;
+	font-weight: normal;
+	font-size: 1em;
+}
+
+main h3 {
+	color: orange;
+	background: #ffffff55;
+	font-weight: normal;
+	position: sticky;
+	z-index: 999;
+	font-size: 24px;
+	//outline: 1px solid red;
+	top: 80px;
+	line-height: 1;
+	margin: 0;
+	padding: 1rem 0 2rem;
+	background: linear-gradient(to bottom, #212121, #212121, #212121, transparent);
+}
+
+#logos {
+	display: flex;
+	justify-content: space-between;
+	max-height: 48px;
+	margin-inline: 1rem;
+}
+
+h1 {
+	font-size: 2.5em;
+	font-family: rk_h1;
+	font-weight: normal;
+	letter-spacing: 2px;
+	margin-block: 0;
+}
+
+h1 a {
+	text-decoration: none;
+}
+
+.socials a img {
+	height: 2em;
+	margin-left: .5em;
+	vertical-align: middle;
+}
+
+.logo-buymeacoffee {
+	border-radius: 50%;
+}
+
+.logo-youtube {
+	height: 3em;
+	margin-left: 0;
+}
+
+main h2 {
+	position: sticky;
+	top: 0;
+	margin-block: 0;
+}
+
+
+main a {
+	color: #ffffffcc;
 }
 
 .hide {
 	display: none;
 }
 
-.current-link {
-	background: #ffffff22;
+::selection {
+	color: white;
+	background: darkgreen;
 }
 
-#menu ul {	
+.coptic {
+	font-family: "Noto Sans Coptic";
+	color: limegreen;
+}
+
+.greek {
+	color: cadetblue;
+}
+
+.arabic {
+	font-family: "Noto Sans Arabic";
+	color: yellow;
+}
+
+@font-face {
+	font-family: rk_h1;
+	src: url("./fonts/Shopping for Gifts.ttf");
+}
+
+h1 a {
+	background: linear-gradient(to right, oklch(50% .3 200), oklch(70% .3 100));
+	-webkit-background-clip: text;
+	color: transparent;
+}
+
+/* chapter selection */
+
+#toc {
+	position: relative;
+}
+
+#toc > ul {
+	list-style-type: none;
+	padding-left: 0;
+}
+
+#toc_lessons {
+	width: 100%;
+	//max-width: calc(6rem);
+	background: #212121;
+	//background: green;
+	//position: absolute;
+	//top: 0rem;
+	display: grid;
+	padding-left: 0;
+	list-style-type: none;
+}
+
+#toc_lessons li {
+	text-align: center;
+}
+
+#toc_lessons li a {
+	color: lightgreen;
+	display: block;
+	line-height: 1.5;
+}
+
+#toc_lessons li a:hover {
+	color: lightgreen;
+	background: #ffffff33;
+}
+
+
+
+
+
+/* new 02.08.2026 *
+
+
+/* lambdin */
+
+#toc_outline,
+/* #table_of_contents */
+/* #toc */
+#introduction
+/*
+#abbreviations_and_conventions,
+#preface,
+#lesson_01,
+#lesson_02,
+#lesson_03,
+#lesson_04,
+#lesson_05,
+#lesson_06,
+#lesson_07,
+#lesson_08,
+#lesson_09,
+#lesson_10,
+#lesson_12,
+#lesson_13,
+#lesson_14,
+#lesson_15,
+#lesson_16,
+#lesson_17,
+#lesson_18,
+#lesson_19,
+#lesson_20,
+#lesson_21,
+#lesson_22,
+#lesson_23,
+#lesson_24,
+#lesson_25,
+#lesson_26,
+#lesson_27,
+#lesson_28,
+#lesson_29,
+#lesson_30
+*/
+ {
+	display: none;
+}
+
+#introduction #alphabet {
+	font-size: clamp(.4rem, -0.125rem + 5vw, 3rem);
+	max-height: 9em;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	gap: 0em 1em;
+	padding: 0;
+	justify-content: space-between;
+	align-content: center;
+}
+
+.subsection .vocabulary {
+	//list-style-type: none;
+	//line-height: 2;
+}
+
+.subsection .vocabulary .coptic {
+	//color: maroon;
+}
+
+.subsection.exercises ol {
+	//vertical-align: top;
+	//padding-inline-start: 1.5rem;
+}
+
+li ul {
+	//list-style-type: none;
+	//padding: 0;
+	//display: inline-table;
+	//width: calc(100% - 2rem);
+	//outline: 1px solid gold;
+}
+
+.list-2-part > li > ul {
+	//display: inline-block;
+	//width: calc(50% - 2rem);
+	//outline: 1px solid;
+	//position: relative;
+}
+
+.list-2-part > li > ul:last-child {
+	//margin-left: 2rem;
+}
+
+.list-2-part > li > ul:first-child:after {
+	//content: "→";
+	//font-size: 2em;
+	//position: absolute;
+	//top: 1rem;
+	//right: 0rem;
+}
+
+.subsection.exercises ol {
+	//list-style: none;
+	//counter-reset: items;
+}
+.subsection.exercises ol li {
+	//counter-increment: items;
+}
+
+.subsection.exercises ol li:before {
+	//vertical-align: top;
+}
+
+.subsection.exercises ol li:nth-child(n+10):before {
+	//content: counter(items) ". ";
+}
+
+.subsection.exercises > ol.list-abc-upper {
+	//list-style-type: upper-alpha;
+}
+
+.subsection.exercises > ol > li {
+	//display: inline-block;
+}
+
+.subsection.exercises table {
+	//border-collapse: collapse;
+}
+
+.subsection.exercises td {
+	//border: 1px solid;
+	//padding: .5rem;
+}
+
+.subsection.exercises td[colspan="2"] {
+	//text-align: center;
+}
+
+.subsection.exercises td input {
+	//margin: 0;
+	//margin: .5rem;
+}
+
+.subsection.exercises td:has(input) {
+	//vertical-align: top;
+	//padding: 0;
+}
+
+.subsection.exercises td .coptic {
+	//padding: .5rem;
+}
+
+.subsection.exercises td:has(> .coptic) {
+	//width: 100%;
+}
+
+.exercises.has-subsection {
+	//padding-left: 0;
+	//list-style-position: inside;
+}
+
+.exercises.has-subsection > li {
+	//list-style-type: upper-alpha;
+}
+
+.exercises li.subsection ol > li > ul {
+	//display: inline-grid;
+}
+
+.exercises li.subsection ol ul {
+	//list-style-type: none;
+}
+
+li:has(> input[type="checkbox"]) {
+	//margin-block: 1rem;
+}
+
+
+
+ul#toc_lessons a {
+	//background: #ffffff33;
+	//padding-block: .5rem;
+	//display: block;
+	text-decoration: none;
+}
+
+ul#toc_lessons a:hover {
+	//background: #ffffffff;
+}
+
+
+
+/* mallon */
+
+/* mallon - chapter selection */
+
+#menu {
+	position: sticky;
+	top: 2em;
+	
+}
+
+#menu ul {
 	width: 100%;
 	padding: 0;
 	list-style-type: none;
 	display: grid;
-	grid-template-columns: auto auto auto;
-}
-
-#menu li {
-	
-	//text-align: center;
-}
-
-#menu a {
-	padding: .5rem;
-	display: block;
-	text-decoration: none;
-}
-
-#menu a:hover {
-	background: #ffffff33;
-}
-
-* {
-	box-sizing: border-box;
-}
-
-body {
-	color: var(--primary);
-	color: #4f755e;
-	background: var(--background);
-	font-family: rk_serif;
-	margin: .5rem;
-	//outline: 1px solid;
-	height: calc(100dvh - 1rem);
-}
-
-#container {
-	display: flex;
-	flex-direction: column;
-	height: stretch;
-	height: calc(100dvh - 1rem);
-	justify-content: space-between;
-}
-
-header {
-	//outline: 1px dashed;
-}
-
-header div:nth-child(1) {
-	display: flex;
-	flex-direction: row-reverse;
-	justify-content: space-between;
-	padding: .5rem;
-	gap: 10%;
-}
-
-nav ul {
-	//display: flex;
-	list-style-type: none;
-}
-
-main {
-	padding-left: 1rem;
-	overflow-x: hidden;
-	overflow-y: scroll;
-	scrollbar-color: #64496a transparent;
-	scrollbar-color: darkseagreen transparent;
-	height: 100%;
-}
-
-.text-align-right {
-	text-align: right;
-}
-
-.preface-end-author {
-	text-align: right;
-}
-
-.preface-end-author p {
-	text-indent: 0;
-	margin: 0;
-}
-
-@media screen and (max-width: 480px) {
-	h1, h2, h3 {
-		font-size: 1em;
-	}
-	main {
-		padding-right: 1rem;
-	}
-}
-
-h1,
-h2,
-h3,
-h4,
-h5 {
-	font-family: rk_serif;
-	margin-block: 0rem;
-}
-
-h1 {
-	color: var(--rk_coptic);
-	font-weight: normal;
-	transition: font-size .5s ease-in-out;
-}
-
-h1 a {
-	transition: color .25s ease-in-out;
-}
-
-h1 a:hover {
-	color: var(--primary);
-}
-
-h1 a {
-	text-decoration: none;
-}
-
-h2 {
-	color: var(--primary);
-	font-weight: normal;
-}
-
-h3 {
-	color: var(--text);
-	font-weight: normal;
-	position: sticky;
-	top: 0rem;
-	padding-block: 1rem;
-	background: linear-gradient(to bottom, var(--background), var(--background), var(--background), transparent);
-}
-
-h4 {
-	font-weight: normal;
-}
-
-p {
-	text-indent: 1.5rem;
-	line-height: 2;
-}
-
-sup {
-	line-height: 0;
-}
-
-b {
-	color: violet;
-}
-
-em {
-	color: #d4b741;
-}
-
-i {
-	font-style: normal;
-	font-family: italic;
-	color: #c6b850bb;
-}
-
-.dialect {
-	font-weight: 400;
-	color: #a794f1;
-	color: #eeeeee;
-	color: #9b5792;
-	color: #427daf;
-}
-
-.dialect sup.non-italic {
-	font-style: normal;
-	font-family: body;
-}
-
-.coptic {
-	font-family: rk_coptic;
-	color: #46a65d;
-	color: #747264;
-}
-
-.headword {
-	font-size: 1.5em;
-	font-family: rk_coptic;
-	color: #c95795;
-	line-height: 0;
-}
-
-.greek {
-	font-family: rk_greek, rk_coptic;
-	color: #54b0c3;
-}
-
-.arabic,
-.hebrew,
-.aramaic {
-	direction: rtl;
-	unicode-bidi: isolate;
-}
-
-.arabic {
-	font-family: rk_arabic, rk_hebrew;
-	font-size: 1.2em;
-	line-height: 0;
-	color: #ded97b;
-}
-
-.hebrew {
-	font-family: rk_hebrew;
-	font-size: 1.2em;
-	line-height: 0;
-	color: #a1bbff;
-}
-
-.aramaic {
-	font-family: rk_aramaic;
-	font-size: 1.5em;
-	line-height: 0;
-	color: #ff9090;
-}
-
-.amharic {
-	font-family: rk_amharic;
-	font-size: 1.2em;
-	line-height: 0;
-	color: #659db8;
-}
-
-.egypt-hiero {
-	font-family: rk_egypt-hiero;
-	font-size: 2em;
-	color: gold;
-	color: #eeeeee88;
-}
-
-.egypt-hiero_precomposed {
-	font-family: rk_egypt-hiero_precomposed;
-	font-size: 2em;
-	color: lightgreen;
-}
-
-.egypt-hiero-test {
-	font-family: rk_egypt-hiero-pdf, rk_egypt-hiero-pdf-2;
-	color: gold;
-	color: #eeeeee88;
-}
-
-.egypt-translit {
-	font-family: rk_egypt-translit;
-	font-style: italic;
-	color: lightblue;
-	color: #eeeeee88;
-}
-
-
-
-
-
-
-
-
-
-
-
-a {
-	color: var(--accent);
-}
-
-a.permalink {
-	color: var(--text);
-	font-weight: bold;
-	margin-inline: .25rem;
-}
-
-a.permalink:before {
-	//content: "🔗";
-}
-
-.subsection {
-	margin-block: 1rem;
-}
-
-.subsection table.chart {
-	display: inline-block;
-	margin-inline: 2em;
-	border-collapse: collapse;
-}
-
-.subsection table.chart + .chart {
-	
-}
-
-.subsection table.example {
-	
-	margin-inline: 2em;
-	margin-block: 2em;
-	//border: 1px solid;
-	border-collapse: collapse;
-}
-
-.subsection table.example {
-	
-}
-
-.subsection table.chart th,
-.subsection table.chart td {
-	//border: 1px solid;
-	padding: .5em;
-	
-}
-
-.subsection table.example td {
-	padding: .5em;
-	
-}
-
-.subsection table.chart th {
-	
-}
-
-ul {
-	list-style-type: square;
-	padding-block: 1rem;
-}
+	grid-template-columns: auto auto auto auto auto auto auto auto auto auto auto;
