@@ -1,22 +1,119 @@
 /* universal properties */
 
+.translation {
+	color: inherit;
+}
+
+h3 + p {
+	margin-top: 0;
+}
+
+.coptic .word {
+	color: green;
+}
+
+.coptic .word a {
+	color: #ffb70099;
+	text-decoration: none;
+}
+
+.coptic .word a:hover {
+	color: gold;
+	text-decoration: underline;
+}
+
+.coptic b { /* punctuation, i.e. non-words */
+	//color: yellow;
+	color: inherit;
+}
+
+header a {
+	line-height: 1;
+}
+
 * {
 	box-sizing: border-box;
 }
 
-main > ul {
+#toc_lessons.has-subsections {
+	display: flex;
+	//display: grid;
+	//flex-direction: column;
+	flex-wrap: wrap;
+	//height: 100px;
+}
+
+#toc_lessons.has-subsections li {
+	//display: flex;
+	//flex-direction: row;
+	//width: auto;
+}
+
+#toc_lessons.has-subsections li a {
+	display: initial;
+	//display: flex;
+	flex-direction: row;
+	//flex-wrap: wrap;
+	margin-right: 0.5rem;
+}
+
+#toc_lessons.has-subsections li a:last-child {
+	padding-right: 0.5rem;
+}
+
+main ul {
 	margin: 0;
+	padding-left: 0;
+	list-style-type: none;
+}
+
+main ol {
+	//padding-left: 0;
+}
+
+main > ul > li > ol {
+	list-style-type: none;
+	//padding: initial;
+}
+
+main > ul > li > ol {
+	
+}
+
+main ol li {
+	margin-top: 1rem;
+}
+
+ul li.coptic,
+ul li.it,
+ul li.en {
+	list-style-type: none;
+	//padding-left: 0;
+}
+
+ul li.coptic {
+	color: goldenrod;
+}
+
+ul li.it {
+	color: pink;
+}
+
+ul li.en {
+	//color: limegreen;
+	line-height: 2;
 }
 
 .linkpath {
 	line-height: 1;
-	margin-inline: 1rem;
+	//margin: 0.5rem 0 0;
 }
 
 .linkpath a {
 	//font-size: 16px;
 	color: lightblue;
 	text-decoration: none;
+	line-height: 1;
 }
 
 .linkpath a:hover {
@@ -28,7 +125,7 @@ main b {
 }
 
 body {
-	color: #ffffffaa;
+	color: gray;
 	background: #212121;
 	font-family: "Noto Sans";
 	margin: 0em auto;
@@ -44,11 +141,15 @@ body {
 }
 
 header {
-	padding-top: 0.5em;
+	//padding-top: 0.5em;
+	margin-inline: 1.5rem;
+	//margin-left: -3em;
+	//padding-left: 3em;
 	position: sticky;
 	top: 0em;
 	z-index: 9999;
 	background: #212121;
+	//background: linear-gradient(to bottom, #212121 0, #212121 76px, cyan 142px, green 202px, transparent);
 	//outline: 1px solid yellow;
 }
 
@@ -58,45 +159,72 @@ main {
 }
 
 footer {
-	display: none;
+	//display: none;
+	margin: 2rem 1.5rem;
+}
+
+hr {
+	height: 1px;
+	background: linear-gradient(to right, transparent, lightgray, lightgray, lightgray, transparent);
+	width: 100%;
+	border: none;
+	margin: 2rem 0 0;
+}
+
+.socials {
+	//padding-top: 0.25em;
 }
 
 header h2,
 header h3 {
-	margin: 0.5rem 1rem 0;
+	margin: 0.5rem 0 0;
 	line-height: 1;
 	font-weight: normal;
 	font-size: 1em;
 }
 
-main h3 {
-	color: orange;
+main h2 {
+	color: cyan;
 	background: #ffffff55;
 	font-weight: normal;
 	position: sticky;
 	z-index: 999;
-	font-size: 24px;
 	//outline: 1px solid red;
 	top: 80px;
 	line-height: 1;
 	margin: 0;
 	padding: 1rem 0 2rem;
-	background: linear-gradient(to bottom, #212121, #212121, #212121, transparent);
+	//background: linear-gradient(to bottom, #212121, #212121, #212121, transparent);
+}
+
+main h3 {
+	color: lightgray;
+	background: #212121;
+	font-weight: normal;
+	position: sticky;
+	z-index: 999;
+	font-size: 1rem;
+	//outline: 1px solid red;
+	top: 80px;
+	line-height: 1;
+	margin: 0;
+	padding: 1rem 0 1rem;
+	//background: linear-gradient(to bottom, #212121, #212121, #212121, transparent);
 }
 
 #logos {
 	display: flex;
 	justify-content: space-between;
 	max-height: 48px;
-	margin-inline: 1rem;
+	//margin-inline: 1.5rem;
 }
 
 h1 {
-	font-size: 2.5em;
 	font-family: rk_h1;
 	font-weight: normal;
 	letter-spacing: 2px;
 	margin-block: 0;
+	line-height: 1;
 }
 
 h1 a {
@@ -118,12 +246,6 @@ h1 a {
 	margin-left: 0;
 }
 
-main h2 {
-	position: sticky;
-	top: 0;
-	margin-block: 0;
-}
-
 
 main a {
 	color: #ffffffcc;
@@ -140,7 +262,7 @@ main a {
 
 .coptic {
 	font-family: "Noto Sans Coptic";
-	color: limegreen;
+	color: gray;
 }
 
 .greek {
@@ -163,10 +285,16 @@ h1 a {
 	color: transparent;
 }
 
+.title {
+	margin-block: 0.5rem;
+}
+
 /* chapter selection */
 
 #toc {
 	position: relative;
+	margin: 0 0 0.5rem;
+	//padding: 0.5rem 0 0;
 }
 
 #toc > ul {
@@ -176,6 +304,8 @@ h1 a {
 
 #toc_lessons {
 	width: 100%;
+	margin-block: 0;
+	//padding-top: 0.5rem;
 	//max-width: calc(6rem);
 	background: #212121;
 	//background: green;
@@ -187,12 +317,13 @@ h1 a {
 }
 
 #toc_lessons li {
-	text-align: center;
+	//text-align: center;
 }
 
 #toc_lessons li a {
-	color: lightgreen;
-	display: block;
+	//color: lightgreen;
+	color: lightgray;
+	display: inline-block;
 	line-height: 1.5;
 }
 
@@ -361,7 +492,7 @@ li ul {
 
 .exercises.has-subsection {
 	//padding-left: 0;
-	//list-style-position: inside;
+	list-style-position: inside;
 }
 
 .exercises.has-subsection > li {
