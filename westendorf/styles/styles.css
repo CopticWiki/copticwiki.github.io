@@ -1,4 +1,6 @@
-@import url("../../../styles/styles.css");
+main h3 {
+	top: 104px;
+}
 
 h1 span {
 	font-size: .5em;
@@ -280,7 +282,7 @@ h1, h2, h3, h4, h5 {
 }
 
 h1, h2 {
-	text-transform: uppercase;
+	//text-transform: uppercase;
 }
 
 #introduction,

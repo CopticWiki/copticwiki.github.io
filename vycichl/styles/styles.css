@@ -1,4 +1,10 @@
-@import url("../../../styles/styles.css");
+img {
+	max-width: 100%;
+}
+
+main h3 {
+	top: 104px;
+}
 
 #menu {
 	border: 1px solid #ccc;
