@@ -1,5 +1,11 @@
 /* universal properties */
 
+.flex-horz-wrap {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 1em;
+}
+
 .translation {
 	color: inherit;
 }
@@ -127,7 +133,7 @@ main b {
 body {
 	color: gray;
 	background: #212121;
-	font-family: "Noto Sans";
+	font-family: rk_sansserif;
 	margin: 0em auto;
 	max-width: 600px;
 }

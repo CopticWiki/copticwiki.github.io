@@ -1,3 +1,8 @@
+@font-face { /* sans-serif */
+	font-family: rk_sansserif;
+	src: url("./fonts/UbuntuSans.ttf");
+}
+
 @font-face { /* handmade font */
 	//font-family: handmade;
 	//src: url("./fonts/Untitled.ttf");
