@@ -1,68 +1,42 @@
 /* universal properties */
 
 main h3 {
-	background: linear-gradient(to right, #39654a, goldenrod) !important;
+	padding-left: 0;
+	background: #212121;
+	transition: background .5s, padding-left .5s;
 }
 
 h3:has(:before) {
-	//width: 50%;
+	
 }
 
 h3:before {
 	content: "<H3>";
-	color: #98ac79;
-	color: #ffd700;
-	color: limegreen;
-	//background: linear-gradient(to right, oklch(50% .3 200), oklch(70% .3 140));
-	//-webkit-background-clip: text;
-	//color: transparent;
-	margin-bottom: 1rem;
-	//border: 1px dashed;
-	//border: 1px solid transparent;
-	//border: 1px solid black;
-	border-radius: 50%;
-	//corner-shape: squircle;
-	background: steelblue;
-	background: transparent;
-	background: #0000ff;
-	//outline: 0px solid transparent;
-	box-shadow: 0px 0px 10px limegreen inset;
-	blur: 0px;
-	transition: background .5s, outline .2s, blur .5s;
-	padding: 1em;
-	padding-right: 1em;
-	padding-top: 1em;
+	color: yellow;
+	outline: 1px solid transparent;
+	opacity: 0;
+	transition: background .5s, outline .2s, blur .5s, opacity .5s, padding-right .5s;
 	position: absolute;
-	top: 0em;
-	left: -3.5em;
-	margin-right: 1.5em;
-	//right: -50%;
-	//width: 7em;
-	//width: 100%;
-	width: 1rem;
-	//height: 10%;
+	right: 1em;
 	z-index: 99;
-	//background: linear-gradient(to right, #000000ff, #000000ff);
 	mix-blend-mode: normal;
-	//text-align: right;
 }
 
 h3:hover {
 	color: yellow;
 	outline: 1px solid;
-	background: transparent !important;
-	//padding: 1em;
+	background: #21212177 !important;
+	padding-left: 1em;
 	
 }
 
 h3:hover:before {
-	color: limegreen;
-	//opacity: .4;
-	background: #000000aa;
-	//outline: 5px solid #000000;
-	//filter: blur(1px);
-	
-	border: 1px solid;
+	opacity: 1;
+	background: #212121;
+}
+
+h3:has(:hover) {
+	padding: 0 1em;
 }
 
 .flex-horz-wrap {
@@ -219,7 +193,7 @@ header {
 	position: sticky;
 	top: 0em;
 	z-index: 98;
-	//background: #212121;
+	background: #212121;
 	//background: linear-gradient(to bottom, #212121 0, #212121 76px, cyan 142px, green 202px, transparent);
 	//outline: 1px solid yellow;
 }
