@@ -1,5 +1,17 @@
 /* universal properties */
 
+.coptic.ready {
+	font-size: 1.5em;
+	text-shadow: 0 0 1em #efd8ffaa;
+	text-shadow: 0 0 1em #000000ff;
+	//box-shadow: 0 0 1em #efd8ffaa;
+	background: linear-gradient(to right, oklch(0.61 0.05 17.24), oklch(0.66 0.07 117.41));
+	-webkit-background-clip: text;
+	color: transparent;
+	//box-sizing: content-box;
+	padding: 1em;
+}
+
 main h3 {
 	padding-left: 0;
 	background: #212121;
@@ -177,6 +189,10 @@ body {
 	max-width: 600px;
 }
 
+body {
+	//color: #ffffff22;
+}
+
 #container {
 	position: relative;
 	max-width: 600px;
@@ -301,13 +317,25 @@ main a {
 }
 
 ::selection {
-	color: white;
-	background: darkgreen;
+	//color: white;
+	//background: darkgreen;
+	
+}
+
+p.coptic.ready.rk_normalize::selection {
+	color: #6cadd7;
+	background: #ffffff11;
+	background: transparent;
+	outline: 1px solid #ffffffff;
 }
 
 .coptic {
 	font-family: "Noto Sans Coptic";
 	color: gray;
+}
+
+.coptic {
+	color: #ffffff11;
 }
 
 .greek {
@@ -587,3 +615,11 @@ ul#toc_lessons a:hover {
 	list-style-type: none;
 	display: grid;
 	grid-template-columns: auto auto auto auto auto auto auto auto auto auto auto;
+	
+	
+	
+	
+	
+	
+	
+	
