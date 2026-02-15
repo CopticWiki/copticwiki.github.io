@@ -1,5 +1,8 @@
-@import url("../../../styles/styles.css");
-@import url("../../styles/styles.css");
+main h3 {
+	top: 104px;
+}
+
+/*
 
 sup.dialect,
 sup.lang {
@@ -121,3 +124,5 @@ sup.lang {
 #list_of_abbreviations li a[href^="http://archives.getty.edu"]:before {
 	background-image: var(--getty);
 }
+
+*/

@@ -1,4 +1,25 @@
-@import url("../../../styles/styles.css"); /* base styles */
+
+#container {
+	//left: -28em;
+}
+
+.italian {
+	color: #ffb70055;
+}
+
+.italian::selection {
+	color: lightgreen;
+}
+
+.english::selection {
+	color: #ffffffaa;
+}
+
+p.coptic.ready.rk_normalize::selection {
+	color: #6cadd7;
+	background: #ffffff22;
+	background: transparent;
+}
 
 h3 {
 	display: none;
@@ -6,7 +27,7 @@ h3 {
 
 main > div {
 	//font-size: 1.5em;
-	display: grid;
+	//display: grid;
 	grid-template-columns: auto 1fr 1fr 1fr;
 	grid-template-columns: auto 1fr 1fr;
 	grid-template-columns: auto 1fr;
@@ -35,11 +56,12 @@ main > div > *:first-child {
 main > div > .coptic {
 	color: hsl(170, 48%, 45%);
 	color: mediumseagreen;
+	color: #ffffff11;
 }
 
 main > div > .italian,
 main > div > .english {
-	display: none;
+	//display: none;
 }
 
 main > div > .coptic,
