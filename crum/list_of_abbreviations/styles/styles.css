@@ -1,6 +1,3 @@
-@import url("../../../styles/styles.css"); /* base styles */
-@import url("../../styles/styles.css"); /* crum */
-
 :root {
 	--archive: url(../../images/archive.jpg);
 	--google-books: url(../../images/google-books.png);
