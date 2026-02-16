@@ -2,6 +2,10 @@
 	//font-size: 1.5em;
 }
 
+p:has(> .headword) {
+	text-indent: 1em;
+}
+
 ins {
 	color: lightgreen;
 }
@@ -92,6 +96,7 @@ i {
 	font-size: 1.2em;
 	line-height: 0;
 	color: #659db8;
+	color: #65b8ab;
 }
 
 .egypt-hiero {
