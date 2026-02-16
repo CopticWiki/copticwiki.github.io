@@ -17,16 +17,16 @@
 	//src: url("./fonts/NunitoSans-VariableFont_YTLC,opsz,wdth,wght.ttf");
 }
 @font-face { /* i */
-	//font-family: italic;
-	//src: url("./fonts/FiraSans-Italic.ttf");
-	//src: url("./fonts/Figtree-Italic-VariableFont_wght.ttf");
-	//src: url("./fonts/Arvo-Italic.ttf");
-	//src: url("./fonts/NunitoSans-Italic-VariableFont_YTLC,opsz,wdth,wght.ttf");
+	font-family: italic;
+	src: url("./fonts/FiraSans-Italic.ttf");
+	src: url("./fonts/Figtree-Italic-VariableFont_wght.ttf");
+	src: url("./fonts/Arvo-Italic.ttf");
+	src: url("./fonts/NunitoSans-Italic-VariableFont_YTLC,opsz,wdth,wght.ttf");
 	//src: url("./fonts/NunitoSans-VariableFont_YTLC,opsz,wdth,wght.ttf");
 }
 @font-face { /* b */
-	//font-family: bold;
-	//src: url("./fonts/Arvo-Bold.ttf");
+	font-family: bold;
+	src: url("./fonts/Arvo-Bold.ttf");
 }
 @font-face { /* serif */
 	//font-family: rk_serif;
