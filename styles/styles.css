@@ -1,5 +1,40 @@
 /* universal properties */
 
+.coptic {
+	font-family: rk_coptic;
+	color: #46a65d;
+}
+
+.arabic {
+	font-family: rk_arabic, rk_hebrew;
+	color: #ded97b;
+}
+
+.hebrew {
+	font-family: rk_hebrew;
+	color: #a1bbff;
+}
+
+.aramaic {
+	font-family: rk_aramaic;
+	color: #ff9090;
+}
+
+.amharic {
+	font-family: rk_amharic;
+	color: #65b8ab;
+}
+
+.egypt-hiero {
+	font-family: rk_egypt-hiero;
+	color: #eeeeee88;
+}
+
+.egypt-translit {
+	font-family: rk_egypt-translit;
+	color: lightblue;
+}
+
 .coptic.ready {
 	font-size: 1.5em;
 	text-shadow: 0 0 1em #efd8ffaa;
@@ -184,7 +219,7 @@ main b {
 body {
 	color: gray;
 	background: #212121;
-	font-family: rk_sansserif;
+	font-family: rk_sans-serif;
 	margin: 0em auto;
 	max-width: 600px;
 }
@@ -327,29 +362,6 @@ p.coptic.ready.rk_normalize::selection {
 	background: #ffffff11;
 	background: transparent;
 	outline: 1px solid #ffffffff;
-}
-
-.coptic {
-	font-family: "Noto Sans Coptic";
-	color: gray;
-}
-
-.coptic {
-	//color: #ffffff11;
-}
-
-.greek {
-	color: cadetblue;
-}
-
-.arabic {
-	font-family: "Noto Sans Arabic";
-	color: yellow;
-}
-
-@font-face {
-	font-family: rk_h1;
-	src: url("./fonts/Shopping for Gifts.ttf");
 }
 
 h1 a {
@@ -615,11 +627,4 @@ ul#toc_lessons a:hover {
 	list-style-type: none;
 	display: grid;
 	grid-template-columns: auto auto auto auto auto auto auto auto auto auto auto;
-	
-	
-	
-	
-	
-	
-	
-	
+}

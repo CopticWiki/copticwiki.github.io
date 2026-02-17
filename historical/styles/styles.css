@@ -1,0 +1,36 @@
+main > ol {
+	padding-left: 1em;
+}
+
+.languages {
+	
+}
+
+.languages.letter {
+	background: #ffffff11;
+	border: 1px solid #73aac455;
+	padding: 1em;
+	//margin-top: 1em;
+	//mix-blend-mode: normal;
+}
+
+.languages.letter + .letter {
+	border-top: none;
+	//padding-top: 0;
+	margin-top: 0;
+}
+
+.languages.letter:has(+ .letter) {
+	border-bottom: none;
+}
+
+.languages.letter,
+.languages.letter .coptic {
+	//margin-top: 0;
+	//padding-top: 0;
+}
+
+.languages.letter .coptic,
+.languages.letter a {
+	color: #73aac4;
+}

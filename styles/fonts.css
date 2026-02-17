@@ -1,43 +1,30 @@
-@font-face { /* sans-serif */
-	font-family: rk_sansserif;
+@font-face {
+	font-family: rk_h1;
+	src: url("./fonts/Shopping for Gifts.ttf");
+}
+
+@font-face {
+	font-family: rk_sans-serif;
 	src: url("./fonts/UbuntuSans.ttf");
 }
 
-@font-face { /* handmade font */
-	//font-family: handmade;
-	//src: url("./fonts/Untitled.ttf");
-}
-@font-face { /* body */
-	//font-family: body;
-	//src: url("./fonts/UbuntuSans.ttf");
-	//src: url("./fonts/OpenSans.ttf");
-	//src: url("./fonts/NotoSans.ttf");
-	//src: url("./fonts/Figtree-VariableFont_wght.ttf");
-	//src: url("./fonts/Arvo-Regular.ttf");
-	//src: url("./fonts/NunitoSans-VariableFont_YTLC,opsz,wdth,wght.ttf");
-}
-@font-face { /* i */
-	font-family: italic;
-	src: url("./fonts/FiraSans-Italic.ttf");
-	src: url("./fonts/Figtree-Italic-VariableFont_wght.ttf");
-	src: url("./fonts/Arvo-Italic.ttf");
-	src: url("./fonts/NunitoSans-Italic-VariableFont_YTLC,opsz,wdth,wght.ttf");
-	//src: url("./fonts/NunitoSans-VariableFont_YTLC,opsz,wdth,wght.ttf");
-}
-@font-face { /* b */
-	font-family: bold;
+@font-face {
+	font-family: rk_bold;
 	src: url("./fonts/Arvo-Bold.ttf");
 }
-@font-face { /* serif */
-	//font-family: rk_serif;
-	//src: url("./fonts/Merriweather-VariableFont_opsz,wdth,wght.ttf");
+
+@font-face {
+	font-family: rk_italic;
+	src: url("./fonts/FiraSans-Italic.ttf");
+	//src: url("./fonts/Figtree-Italic-VariableFont_wght.ttf");
+	//src: url("./fonts/Arvo-Italic.ttf");
+	//src: url("./fonts/NunitoSans-Italic-VariableFont_YTLC,opsz,wdth,wght.ttf");
+	//src: url("./fonts/NunitoSans-VariableFont_YTLC,opsz,wdth,wght.ttf");
 }
 
-
-@font-face { /* coptic */
+@font-face {
 	font-family: rk_coptic;
 	src: url("./fonts/NotoSansCoptic.ttf");
-/*	src: url("./fonts/Antinoou.ttf");*/
 	unicode-range:
 		U+03e2-03ef, /* greek and coptic */ 
 		U+2c80-2Cff, /* coptic */
@@ -78,66 +65,51 @@
 		U+a7a8, /* s with oblique stroke */
 		U+003b; /* semicolon */
 }
-@font-face { /* coptic -> headword */
-	font-family: headword;
-	src: url("./fonts/Antinoou.ttf");
-}
-@font-face { /* greek */
+
+@font-face {
 	font-family: rk_greek;
 	src: url("./fonts/GentiumPlus-Regular.ttf");
 	unicode-range:
-		U+0323,
+		U+0323, /* combining dot below */
 		U+0028, /* left parenthesis */
 		U+0029, /* right parenthesis */
 		U+0342, /* combining greek circumflex */
-		U+0370-03FF,
-		U+1F00-1FFF,
+		U+0370-03FF, /* greek and coptic */
+		U+1F00-1FFF, /* greek extended */
 		U+0FE24, /* left half stroke */
 		U+0FE26, /* long stroke */
 		U+0FE25, /* right half stroke */;
 }
-@font-face { /* arabic */
+@font-face {
 	font-family: rk_arabic;
 	src: url("./fonts/NotoSansArabic.ttf");
 	unicode-range:
-		U+0600-06ff,
+		U+0600-06ff, /* arabic */
 		U+0763, /* ݣ */
-		U+fe70-feff;
+		U+fe70-feff; /* arabic presentation forms-b */
 }
 
-
-/*
-
-U+132b8 // 𓊸 not used in Crum
-U+132ae // 𓊮 used in Crum
-
-*/
-
-
-@font-face { /* hebrew */
+@font-face {
 	font-family: rk_hebrew;
-	src: url("./fonts/NotoSansHebrew.ttf");
-	src: url("./fonts/Arimo-VariableFont_wght.ttf");
-	src: url("./fonts/SecularOne-Regular.ttf");
 	src: url("./fonts/BonaNovaSC-Regular.ttf");
 	unicode-range:
-		U+0590-05FF;
+		U+0590-05FF; /* hebrew */
 }
-@font-face {/* aramaic */
+@font-face {
 	font-family: rk_aramaic; 
 	src: url("./fonts/SertoAntiochBible.ttf");
 	unicode-range:
-		U+0700-074f;
+		U+0700-074f; /* syriac */
 }
-@font-face { /* amharic */
+@font-face {
 	font-family: rk_amharic;
 	src: url("./fonts/AbyssinicaSIL.ttf");
 	unicode-range:
-		U+1200-137f,
-		U+1380-139f,
-		U+2d80-2ddf,
-		U+ab00-ab2f,
-		U+1e7e0-1e7ff;
+		U+1200-137f, /* ethiopic */
+		U+1380-139f, /* ethiopic supplement */
+		U+2d80-2ddf, /* ethiopic extended */
+		U+ab00-ab2f, /* ethiopic extended-a */
+		U+1e7e0-1e7ff; /* ethiopic extended-b */
 }
 
 @font-face {
@@ -145,38 +117,11 @@ U+132ae // 𓊮 used in Crum
 	src: url("./fonts/eot.ttf");
 	unicode-range:
 		U+FE00-FE0F, /* variation selectors */
-		U+13000-1342F, /* hieroglyphs */
-		U+13430-1345F, /* format controls */
-		U+13460-143FF; /* hieroglyphs extended-a */
-}
-
-@font-face {
-	font-family: rk_egypt-hiero_precomposed;
-	//src: url("./fonts/EgyptianHiero4.03.ttf");
-	src: url("./fonts/EgyptianHiero3.03b.woff");
-}
-
-@font-face {
-	font-family: rk_variant-selectors;
-	src: url("./fonts/NOILMP-SpecialsUC6.ttf");
-}
-
-@font-face {
-	font-family: rk_egypt-format;
-	/*src: url("./fonts/eot.ttf");*/
-	src: local("Open Sans");
-	unicode-range:
-		U+13430-1345F; /* format controls */
-}
-
-@font-face {
-	font-family: rk_egypt-hiero-pdf;
-	src: url("./fonts/NMHNNB-SpecialsUC6.ttf");
-}
-
-@font-face {
-	font-family: rk_egypt-hiero-pdf-2;
-	src: url("./fonts/NMHOPK-UniHieroglyphica.ttf");
+		U+13000-1342F, /* egyptian hieroglyphs */
+		U+13430-1345F, /* egyptian hieroglyph format controls */
+		U+13460-143FF; /* egyptian hieroglyphs extended-a */
+		/* U+132b8 // 𓊸 not used in Crum */
+		/* U+132ae // 𓊮 used in Crum */
 }
 
 @font-face {
