@@ -28,7 +28,7 @@ main em {
 
 i {
 	font-style: normal;
-	font-family: italic;
+	font-family: rk_italic;
 	color: #c6b850bb;
 }
 
@@ -43,12 +43,6 @@ i {
 .dialect sup.non-italic {
 	font-style: normal;
 	font-family: body;
-}
-
-.coptic {
-	font-family: rk_coptic;
-	color: #46a65d;
-	//color: #747264;
 }
 
 .headword {
@@ -71,58 +65,30 @@ i {
 }
 
 .arabic {
-	font-family: rk_arabic, rk_hebrew;
 	font-size: 1.2em;
 	line-height: 0;
-	color: #ded97b;
 }
 
 .hebrew {
-	font-family: rk_hebrew;
 	font-size: 1.2em;
 	line-height: 0;
-	color: #a1bbff;
 }
 
 .aramaic {
-	font-family: rk_aramaic;
 	font-size: 1.5em;
 	line-height: 0;
-	color: #ff9090;
 }
 
 .amharic {
-	font-family: rk_amharic;
-	font-size: 1.2em;
 	line-height: 0;
-	color: #659db8;
-	color: #65b8ab;
 }
 
 .egypt-hiero {
-	font-family: rk_egypt-hiero;
 	font-size: 2em;
-	color: gold;
-	color: #eeeeee88;
-}
-
-.egypt-hiero_precomposed {
-	font-family: rk_egypt-hiero_precomposed;
-	font-size: 2em;
-	color: lightgreen;
-}
-
-.egypt-hiero-test {
-	font-family: rk_egypt-hiero-pdf, rk_egypt-hiero-pdf-2;
-	color: gold;
-	color: #eeeeee88;
 }
 
 .egypt-translit {
-	font-family: rk_egypt-translit;
 	font-style: italic;
-	color: lightblue;
-	color: #eeeeee88;
 }
 
 #dictionary ul {
