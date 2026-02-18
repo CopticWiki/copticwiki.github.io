@@ -1,9 +1,13 @@
-main > ol > li > ol {
+main > ol {
 	list-style-type: none;
 }
 
+main > ol > li > ol {
+	//list-style-type: none;
+}
+
 main h3 {
-	display: none;
+	//display: none;
 }
 
 #toc_lessons {
