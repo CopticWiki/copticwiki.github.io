@@ -1,3 +1,11 @@
+main > ol > li > ol {
+	list-style-type: none;
+}
+
+main h3 {
+	display: none;
+}
+
 #toc_lessons {
 	grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
 }

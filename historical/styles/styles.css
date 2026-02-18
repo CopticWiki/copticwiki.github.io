@@ -1,22 +1,24 @@
 main > ol {
-	padding-left: 1em;
+	padding-left: 0;
+	list-style-position: inside;
 }
 
-.languages {
-	
+main > ol > li {
+	margin-top: 1em;
+}
+
+.languages + .languages {
+	margin-top: 2em;
 }
 
 .languages.letter {
-	background: #ffffff11;
-	border: 1px solid #73aac455;
+	background: #ffffff00;
+	border: 5px double #73aac455;
 	padding: 1em;
-	//margin-top: 1em;
-	//mix-blend-mode: normal;
 }
 
 .languages.letter + .letter {
 	border-top: none;
-	//padding-top: 0;
 	margin-top: 0;
 }
 
@@ -24,13 +26,16 @@ main > ol {
 	border-bottom: none;
 }
 
-.languages.letter,
-.languages.letter .coptic {
-	//margin-top: 0;
-	//padding-top: 0;
-}
-
 .languages.letter .coptic,
 .languages.letter a {
 	color: #73aac4;
+	margin-top: 0;
+}
+
+.italian {
+	color: #5e825e;
+}
+
+.english {
+	color: #ffffffaa;
 }
