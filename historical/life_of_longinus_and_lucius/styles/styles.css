@@ -2,10 +2,6 @@ main > ol {
 	list-style-type: none;
 }
 
-#toc_lessons {
-	grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-}
-
-main h3 {
-	top: 160px;
+main > ol > li > ol {
+	padding-left: 0;
 }
