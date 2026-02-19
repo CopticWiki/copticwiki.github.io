@@ -131,7 +131,7 @@ header a {
 	display: flex;
 	//display: grid;
 	//flex-direction: column;
-	flex-wrap: wrap;
+	//flex-wrap: wrap;
 	//height: 100px;
 }
 
@@ -197,8 +197,11 @@ ul li.en {
 }
 
 .linkpath {
-	line-height: 1;
-	//margin: 0.5rem 0 0;
+	background: #212121ff;
+	position: sticky;
+	top: 2.5em;
+	padding-block: 0.5em;
+	line-height: 1.5;
 }
 
 .linkpath a {
@@ -231,27 +234,23 @@ body {
 #container {
 	position: relative;
 	max-width: 600px;
-	margin: 0em;
+	margin: 0 1em;
 	display: flex;
 	flex-direction: column;
 }
 
 header {
-	//padding-top: 0.5em;
-	margin-inline: 1.5rem;
-	//margin-left: -3em;
-	//padding-left: 3em;
+	width: 100%;
+	max-width: 600px;
+	padding-top: 0.5em;
 	position: sticky;
 	top: 0em;
 	z-index: 98;
-	background: #212121;
-	//background: linear-gradient(to bottom, #212121 0, #212121 76px, cyan 142px, green 202px, transparent);
-	//outline: 1px solid yellow;
+	background: #212121ff;
 }
 
 main {
-	padding-inline: 1.5em;
-	//outline: 1px dashed gold;
+	position: relative;
 }
 
 footer {
@@ -311,8 +310,6 @@ main h3 {
 #logos {
 	display: flex;
 	justify-content: space-between;
-	max-height: 48px;
-	//margin-inline: 1.5rem;
 }
 
 h1 {
@@ -371,15 +368,29 @@ h1 a {
 }
 
 .title {
-	margin-block: 0.5rem;
+	margin-block: 2em;
+}
+
+.title h2,
+.title h3 {
+	position: static;
+	color: #ffffffaa;
+	font-size: 1rem;
+	padding: 0;
+	margin-block: 1em;
+	background: none;
 }
 
 /* chapter selection */
 
 #toc {
-	position: relative;
-	margin: 0 0 0.5rem;
-	//padding: 0.5rem 0 0;
+	position: sticky;
+	top: calc(32px + 48px);
+	background: #212121ff;
+	overflow-x: scroll;
+	scrollbar-color: #ffffff99 transparent;
+	scrollbar-width: thin;
+	margin-top: 0.5em;
 }
 
 #toc > ul {
@@ -388,21 +399,19 @@ h1 a {
 }
 
 #toc_lessons {
+	background: none;
+	display: flex;
+	gap: 0.5em;
+	padding-bottom: 0.5em;
+	
 	width: 100%;
 	margin-block: 0;
-	//padding-top: 0.5rem;
-	//max-width: calc(6rem);
-	background: #212121;
-	//background: green;
-	//position: absolute;
-	//top: 0rem;
-	display: grid;
 	padding-left: 0;
 	list-style-type: none;
 }
 
 #toc_lessons li {
-	//text-align: center;
+	font-size: 80%;
 }
 
 #toc_lessons li a {

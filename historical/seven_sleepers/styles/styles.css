@@ -4,6 +4,7 @@ main > ol {
 
 main > ol > li > ol {
 	//list-style-type: none;
+	padding-left: 0;
 }
 
 main h3 {

@@ -6,6 +6,16 @@ main > ol {
 
 main > ol > li {
 	margin-top: 0;
+	padding-bottom: 4em;
+	//outline: 1px dashed white;
+}
+
+main h3 {
+	//text-transform: uppercase;
+}
+
+li:has(> h3) {
+	scroll-margin-top: 8em;
 }
 
 .languages + .languages {

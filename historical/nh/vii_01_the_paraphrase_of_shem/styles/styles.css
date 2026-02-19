@@ -1,12 +1,20 @@
-#toc_lessons {
-	grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+main > ol {
+	list-style-type: none;
 }
 
-main h3 {
-	top: 280px;
+main > ol > li > ol {
+	padding-left: 0;
 }
 
 rt {
 	font-size: 80%;
-	color: lightgray;
+	color: #93bbda;
+}
+
+.english:has(ruby) {
+	line-height: 2.5;
+}
+
+.coptic:has(~ .english ruby) {
+	line-height: 2.5;
 }

@@ -4,13 +4,9 @@ main > ol {
 
 main > ol > li > ol {
 	list-style-type: none;
+	padding-left: 0;
 }
 
-#toc_lessons {
-	grid-template-columns:
-		1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-}
-
-main h3 {
-	top: 136px;
+ol h3 {
+	display: none;
 }
