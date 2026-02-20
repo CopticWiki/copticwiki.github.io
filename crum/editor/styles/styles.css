@@ -1,3 +1,8 @@
+#interface {
+	height: 100dvh;
+	scrollbar-color: currentColor transparent;
+}
+
 
 body,
 #container {
