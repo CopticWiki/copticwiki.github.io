@@ -1,5 +1,27 @@
 /* universal properties */
 
+.coptic > table {
+	width: 100%;
+	border-collapse: collapse;
+}
+
+.folio,
+.line {
+	text-align: right;
+}
+
+.folio {
+	color: #ffffff55;
+}
+
+.line {
+	color: #ffffff33;
+}
+
+.text {
+	padding-left: 1ch;
+}
+
 .coptic {
 	font-family: rk_coptic;
 	color: #46a65d;
