@@ -5,3 +5,7 @@ main > ol {
 main > ol > li > ol {
 	padding-left: 0;
 }
+
+.languages {
+	scroll-margin-top: 10em;
+}
