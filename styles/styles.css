@@ -27,6 +27,12 @@
 	color: #46a65d;
 }
 
+rt,
+.greek {
+	font-family: rk_greek;
+	color: #93bbda;
+}
+
 .arabic {
 	font-family: rk_arabic, rk_hebrew;
 	color: #ded97b;
