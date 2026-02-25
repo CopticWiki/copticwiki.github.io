@@ -4,6 +4,10 @@
 	line-height: 2;
 }
 
+.languages {
+	//font-size: 1.5em;
+}
+
 .languages li {
 	position: relative;
 	padding-left: 2em;
