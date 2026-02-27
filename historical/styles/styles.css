@@ -1,3 +1,175 @@
+.open-double-quote,
+.close-double-quote {
+	position: relative;
+}
+
+.open-double-quote:before {
+	content: "“";
+	color: grey;
+	//color: gold;
+	position: absolute;
+	left: 0ch;
+}
+
+.close-double-quote:after {
+	content: "”";
+	color: grey;
+	//color: gold;
+	position: absolute;
+	right: 0ch;
+}
+
+.word a {
+	padding-block: 5px;
+}
+
+/* current word */
+.word:has(a:focus) {
+}
+
+.word a:first-of-type {
+	padding-left: 5px;
+}
+
+.word a:last-of-type {
+	padding-right: 5px;
+}
+
+.word:has(a:focus) a {
+}
+
+.word:has(a:focus) a {
+	color: #e7dec5;
+	background: #283e51;
+}
+
+.coptic .word a {
+	color: #7f7f7f;
+}
+
+.word:has(a:focus) {
+}
+
+.word:has(a:focus) a:first-of-type {
+}
+
+.word:has(a:focus) a:last-of-type {
+}
+
+span.word a:focus {
+	color: white;
+	background: #186091;
+	outline: none;
+}
+
+.word a:first-of-type:focus {
+	
+}
+
+.word:has(a:focus) a:last-of-type {
+	
+}
+
+/* 1st word to the left */
+/* 1st word to the right */
+.word:has(+ .word a:focus),
+.word:has(a:focus) + .word {
+	background: #274a6744;
+	border-radius: 5px;
+}
+
+/* 2nd word to the left */
+/* 2nd word to the right */
+.word:has(+ .word + .word a:focus),
+.word:has(a:focus) + .word + .word {
+	background: #274a6733;
+	border-radius: 5px;
+}
+
+/* 3rd word to the left */
+/* 3rd word to the right */
+.word:has(+ .word + .word + .word a:focus),
+.word:has(a:focus) + .word + .word + .word {
+	background: #274a6722;
+	border-radius: 5px;
+}
+
+/* 4th word to the left */
+/* 4th word to the right */
+.word:has(+ .word + .word + .word + .word a:focus),
+.word:has(a:focus) + .word + .word + .word + .word {
+	background: #274a6711;
+	border-radius: 5px;
+}
+
+.word:has(a:focus) + .word a {
+}
+
+.word:has(+ .word a:focus) {
+}
+
+/* 2nd from the right */
+.word:has(a:focus) + .word + .word a:first-of-type {
+	border-top-left-radius: 5px;
+	border-bottom-left-radius: 5px;
+}
+
+/* 2nd from the right */
+.word:has(a:focus) + .word + .word a:last-of-type {
+	border-top-right-radius: 5px;
+	border-bottom-right-radius: 5px;
+}
+
+
+
+.word:has(+ .word + .word a:focus) a {
+	border-top-left-radius: 5px;
+	border-bottom-left-radius: 5px;
+}
+
+
+
+.word:has(+ .word a:focus) a {
+}
+
+/* 1st from the left, 1st morpheme */
+.word:has(+ .word a:focus) a:first-of-type {
+	border-top-left-radius: 5px;
+	border-bottom-left-radius: 5px;
+}
+
+.word:has(+ .word a:focus) a:last-of-type {
+	border-top-right-radius: 5px;
+	border-bottom-right-radius: 5px;
+}
+
+.word:has(a:focus) a:last-child {
+	border-top-right-radius: 5px;
+	border-bottom-right-radius: 5px;
+}
+
+.word:has(a:focus) a:first-of-type {
+	border-top-left-radius: 5px;
+	border-bottom-left-radius: 5px;
+}
+
+ul li.coptic {
+	background: linear-gradient(to right, oklch(0.56 0.09 210.12), oklch(0.51 0 0));
+	-webkit-background-clip: text;
+	color: transparent;
+	//font-size: 2em;
+}
+
+::selection {
+	//color: lightgreen;
+	//background: #000000aa;
+}
+
+.coptic .word a:hover {
+	color: lightgreen;
+	color: #e7dec5;
+}
+
 .coptic,
 .italian,
 .english {
