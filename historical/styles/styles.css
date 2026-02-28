@@ -1,3 +1,17 @@
+.sentence {
+	color: #ffffff55;
+	text-shadow: none;
+	text-decoration: none;
+	transition: color .25s ease-in-out, text-shadow .25s;
+	outline: none;
+}
+
+.sentence:focus {
+	color: #7cc96e;
+	//text-shadow: 0px 0px 1em #858686;
+}
+
+
 .open-double-quote,
 .close-double-quote {
 	position: relative;
@@ -39,12 +53,12 @@
 }
 
 .word:has(a:focus) a {
-	color: #e7dec5;
-	background: #283e51;
+	//color: #e7dec5;
+	//background: #283e51;
 }
 
 .coptic .word a {
-	color: #7f7f7f;
+	//color: #7f7f7f;
 }
 
 .word:has(a:focus) {
@@ -57,9 +71,9 @@
 }
 
 span.word a:focus {
-	color: white;
-	background: #186091;
-	outline: none;
+	//color: white;
+	//background: #186091;
+	//outline: none;
 }
 
 .word a:first-of-type:focus {
@@ -74,32 +88,32 @@ span.word a:focus {
 /* 1st word to the right */
 .word:has(+ .word a:focus),
 .word:has(a:focus) + .word {
-	background: #274a6744;
-	border-radius: 5px;
+	//background: #274a6744;
+	//border-radius: 5px;
 }
 
 /* 2nd word to the left */
 /* 2nd word to the right */
 .word:has(+ .word + .word a:focus),
 .word:has(a:focus) + .word + .word {
-	background: #274a6733;
-	border-radius: 5px;
+	//background: #274a6733;
+	//border-radius: 5px;
 }
 
 /* 3rd word to the left */
 /* 3rd word to the right */
 .word:has(+ .word + .word + .word a:focus),
 .word:has(a:focus) + .word + .word + .word {
-	background: #274a6722;
-	border-radius: 5px;
+	//background: #274a6722;
+	//border-radius: 5px;
 }
 
 /* 4th word to the left */
 /* 4th word to the right */
 .word:has(+ .word + .word + .word + .word a:focus),
 .word:has(a:focus) + .word + .word + .word + .word {
-	background: #274a6711;
-	border-radius: 5px;
+	//background: #274a6711;
+	//border-radius: 5px;
 }
 
 .word:has(a:focus) + .word a {
@@ -110,21 +124,21 @@ span.word a:focus {
 
 /* 2nd from the right */
 .word:has(a:focus) + .word + .word a:first-of-type {
-	border-top-left-radius: 5px;
-	border-bottom-left-radius: 5px;
+	//border-top-left-radius: 5px;
+	//border-bottom-left-radius: 5px;
 }
 
 /* 2nd from the right */
 .word:has(a:focus) + .word + .word a:last-of-type {
-	border-top-right-radius: 5px;
-	border-bottom-right-radius: 5px;
+	//border-top-right-radius: 5px;
+	//border-bottom-right-radius: 5px;
 }
 
 
 
 .word:has(+ .word + .word a:focus) a {
-	border-top-left-radius: 5px;
-	border-bottom-left-radius: 5px;
+	//border-top-left-radius: 5px;
+	//border-bottom-left-radius: 5px;
 }
 
 
@@ -134,29 +148,29 @@ span.word a:focus {
 
 /* 1st from the left, 1st morpheme */
 .word:has(+ .word a:focus) a:first-of-type {
-	border-top-left-radius: 5px;
-	border-bottom-left-radius: 5px;
+	//border-top-left-radius: 5px;
+	//border-bottom-left-radius: 5px;
 }
 
 .word:has(+ .word a:focus) a:last-of-type {
-	border-top-right-radius: 5px;
-	border-bottom-right-radius: 5px;
+	//border-top-right-radius: 5px;
+	//border-bottom-right-radius: 5px;
 }
 
 .word:has(a:focus) a:last-child {
-	border-top-right-radius: 5px;
-	border-bottom-right-radius: 5px;
+	//border-top-right-radius: 5px;
+	//border-bottom-right-radius: 5px;
 }
 
 .word:has(a:focus) a:first-of-type {
-	border-top-left-radius: 5px;
-	border-bottom-left-radius: 5px;
+	//border-top-left-radius: 5px;
+	//border-bottom-left-radius: 5px;
 }
 
 ul li.coptic {
-	background: linear-gradient(to right, oklch(0.56 0.09 210.12), oklch(0.51 0 0));
-	-webkit-background-clip: text;
-	color: transparent;
+	//background: linear-gradient(to right, oklch(0.56 0.09 210.12), oklch(0.51 0 0));
+	//-webkit-background-clip: text;
+	//color: transparent;
 	//font-size: 2em;
 }
 
@@ -219,12 +233,12 @@ ul li.coptic {
 }
 
 .submitted {
-	color: #c668c6;
-	color: gray;
+	//color: #c668c6;
+	//color: gray;
 }
 
 .submitted * {
-	color: inherit !important;
+	//color: inherit !important;
 }
 
 .review {
