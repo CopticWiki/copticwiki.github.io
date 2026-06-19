@@ -1,3 +1,7 @@
+/* Noto Sans supplies the Latin glottal stop characters (e.g. ꜥ, ꜣ, ꞽ)
+   used in Demotic transliteration, which rk_sans-serif lacks. */
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+
 /* universal properties */
 
 .coptic > table {
@@ -250,7 +254,9 @@ main b {
 body {
 	color: gray;
 	background: #212121;
-	font-family: rk_sans-serif;
+	/* "Noto Sans" fallback covers the Latin glottal characters used in Demotic
+	   transliteration (e.g. ꜥ, ꜣ, ꞽ), which rk_sans-serif does not include. */
+	font-family: rk_sans-serif, "Noto Sans";
 	margin: 0em auto;
 	max-width: 600px;
 }
