@@ -52,6 +52,21 @@ i {
 	line-height: 0;
 }
 
+/* Stacked letters: two letters written on top of one another (e.g. a vertical
+ * ligature). Compact line-height keeps them almost touching, within a single
+ * character's footprint on the line. */
+.stack {
+	display: inline-flex;
+	flex-direction: column;
+	align-items: center;
+	line-height: 0.6;
+	vertical-align: middle;
+}
+
+.stack .stack-top {
+	font-size: small;
+}
+
 .greek {
 	font-family: rk_greek, rk_coptic;
 	color: #54b0c3;

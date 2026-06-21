@@ -37,6 +37,12 @@ function language_replace(_, g1) {
 	dialect: [/\[\[(S|B|A|F|O)\]\]/, "<i class=\"dialect\">$1<\/i>"],
 	subdialect: [/\[\[(S|F|B|O)\^(a|f|b|af)\]\]/, "<i class=\"dialect\">$1<sup>$2<\/sup><\/i>"],
 	subdialectLyco: [/\[\[(A\^2)\]\]/, "<i class=\"dialect\">A<sup class=\"non-italic\">2<\/sup><\/i>"],
+	// Stacked letters: two letters written on top of one another, joined by a
+	// double caret (e.g. ⲁ^^ⲃ). This must precede `superscript`, so the `^^` is
+	// consumed before a lone `^` can grab it. These regexes run without the `u`
+	// flag, so `\p{Letter}` is unavailable; we match the Coptic and Greek letter
+	// ranges.
+	stack: [/([ⲁ-ⲱϣ-ϯⳉα-ωΑ-Ω])\^\^([ⲁ-ⲱϣ-ϯⳉα-ωΑ-Ω])/, "<span class=\"stack\"><span class=\"stack-top\">$2<\/span><span class=\"stack-bottom\">$1<\/span><\/span>"],
 	superscript: [/\^([-–—\wα-ωΑ-Ω]+)/, "<sup>$1<\/sup>"],
 	headword: [/\[\[\[(\(?\)?\[?\]?\.?\…?-?[\u2c80-\u2cff\u03e2-\u03ef].*?\]?)\]\]\]/, "<span class=\"headword coptic\">$1<\/span>"],
 	language: [/(?<!\[)\[\[(.*?)\]\](?!\])/, language_replace],
