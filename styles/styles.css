@@ -2,6 +2,10 @@
    used in Demotic transliteration, which rk_sans-serif lacks. */
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap");
 
+/* Noto Sans Symbols 2 supplies the Ancient Greek Numbers (e.g. 𐅵 = U+10175
+   GREEK ONE HALF SIGN), which rk_greek (Gentium Plus) lacks. */
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+Symbols+2&display=swap");
+
 /* universal properties */
 
 .coptic > table {
@@ -33,7 +37,7 @@
 
 rt,
 .greek {
-	font-family: rk_greek;
+	font-family: rk_greek, "Noto Sans Symbols 2";
 	color: #93bbda;
 }
 
