@@ -67,6 +67,13 @@
 }
 
 @font-face {
+	/* Fallback for Coptic characters missing from rk_coptic (NotoSansCoptic),
+	   e.g. U+0345 COMBINING GREEK YPOGEGRAMMENI. */
+	font-family: rk_coptic-fallback;
+	src: url("./fonts/Antinoou.ttf");
+}
+
+@font-face {
 	font-family: rk_greek;
 	src: url("./fonts/GentiumPlus-Regular.ttf");
 	unicode-range:
