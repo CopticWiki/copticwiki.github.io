@@ -44,6 +44,10 @@ function language_replace(_, g1) {
 	// ranges.
 	stack: [/([ⲁ-ⲱϣ-ϯⳉα-ωΑ-Ω])\^\^([ⲁ-ⲱϣ-ϯⳉα-ωΑ-Ω])/, "<span class=\"stack\"><span class=\"stack-top\">$2<\/span><span class=\"stack-bottom\">$1<\/span><\/span>"],
 	superscript: [/\^([-–—\wα-ωΑ-Ω]+)/, "<sup>$1<\/sup>"],
+	// Four square brackets mark special-font (old) Coptic. This must precede
+	// the triple-bracket (headword) and double-bracket (language) rules, so the
+	// extra brackets are consumed first.
+	oldCoptic: [/(?<!\[)\[\[\[\[(.*?)\]\]\]\](?!\])/, "<span class=\"old coptic\">$1<\/span>"],
 	headword: [/\[\[\[(\(?\)?\[?\]?\.?\…?-?[\u2c80-\u2cff\u03e2-\u03ef].*?\]?)\]\]\]/, "<span class=\"headword coptic\">$1<\/span>"],
 	language: [/(?<!\[)\[\[(.*?)\]\](?!\])/, language_replace],
 	qualitative: [/†/, "<sup>†<\/sup>"],
