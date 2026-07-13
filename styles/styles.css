@@ -36,6 +36,10 @@
 	color: #46a65d;
 }
 
+.old.coptic {
+	font-family: old-coptic, rk_coptic, rk_coptic-fallback;
+}
+
 rt,
 .greek {
 	font-family: rk_greek, "Noto Sans Symbols 2";

@@ -157,3 +157,8 @@
 		U+2E23, /* right half bracket */
 		U+2E17; /* coptic oblique hyphen */
 }
+
+@font-face {
+  font-family: old-coptic;
+  src: url('fonts/old-coptic.woff2') format('woff2');
+}
