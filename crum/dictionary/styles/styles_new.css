@@ -1,0 +1,41 @@
+body {
+	background: #111;
+	color: #eee;
+}
+
+h3 {
+	text-align: center;
+}
+
+ul {
+	padding-left: 0;
+}
+
+li {
+	//border: 1px solid;
+	line-height: 32px;
+	//list-style: outside;
+	text-indent: 1em;
+}
+
+li + li {
+	margin-top: 1em;
+}
+
+.headword.coptic {
+	font-size: 1.5em;
+	line-height: 0;
+	
+}
+
+.coptic {
+	font-family: "Noto Sans Coptic";
+}
+
+.arabic {
+	font-family: "Noto Sans Arabic";
+}
+
+.greek {
+	font-family: "Gentium Plus";
+}
