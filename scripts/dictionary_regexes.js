@@ -53,7 +53,16 @@ function language_replace(_, g1) {
 	qualitative: [/†/, "<sup>†<\/sup>"],
 	lineBreaks: [/\\n/, "</p><p>"],
 	additionsAndCorrections: [/\/\/(.*?)\/\/(.*?)\/\//, "<del>$1</del><ins>$2</ins>"],
-	footnotes: [/{{.*?}}/, ''],
+	// A footnote — `{text}{{note}}` — is an editorial note on an error of
+	// Crum's. The note is nested inside the mark, rather than stashed in a data
+	// attribute, so its HTML needs no escaping. This must precede `manual`, so
+	// the paired braces are consumed before a lone `{...}` can grab them, and it
+	// must follow `em` and `italic`, so that markup inside the note is already
+	// rendered by the time it is captured.
+	// NOTE: A footnote may contain neither a newline nor a `\n` token. Those are
+	// substituted into paragraph breaks above, which would spill out of the
+	// tooltip and corrupt the nesting.
+	footnotes: [/{([^{}]*)}{{(.*?)}}/, "<span class=\"footnoted\"><span class=\"footnote-target\">$1<\/span><span class=\"mark\" tabindex=\"0\">※<span class=\"tooltip\">$2<\/span><\/span><\/span>"],
 	manual: [/{(.*?)}(?:{.*?})?/, '$1'],
 };
 

@@ -114,3 +114,99 @@ i {
 	list-style-type: none;
 	padding: 0 1em;
 }
+
+/* Footnotes: an editorial note on an error of Crum's. The mark (※) flags the
+ * note's presence and reveals it on hover or focus. The note is nested inside
+ * the mark, rather than inside `.footnoted`, so that hovering the footnoted
+ * text alone doesn't trigger it. */
+.mark {
+	/* Raise the mark by painting it above the baseline, rather than through
+	 * `vertical-align: super`, which grows the line box and pushes the line
+	 * away from the one above it. */
+	position: relative;
+	bottom: 0.4em;
+	font-size: small;
+	line-height: 0;
+	cursor: help;
+}
+
+.mark .tooltip {
+	display: none;
+	position: absolute;
+	top: 1.4em;
+	left: 0;
+	z-index: 1;
+
+	/* The note is prose, so it undoes the mark's shrink and flattened leading,
+	 * and wraps rather than trailing off. */
+	width: max-content;
+	max-width: min(400px, 80vw);
+	font-size: 1rem;
+	line-height: 1.4;
+	white-space: normal;
+	text-align: left;
+	color: #cccccc;
+	background: #383838;
+	border: 1px solid #ffffff33;
+	border-radius: 4px;
+	padding: 0.2em 0.5em;
+	box-shadow: 0 8px 16px rgb(0 0 0 / 40%);
+}
+
+.mark:hover .tooltip,
+.mark:focus-within .tooltip {
+	display: block;
+}
+
+/* Footnotes mark errors rather than add information, so it is appropriate to
+ * dim the (incorrect) text while its note is showing. The dim is scoped to
+ * `.footnote-target` rather than applied to `.footnoted`, because `opacity`
+ * composites the whole subtree: on the wrapper it would fade the tooltip along
+ * with the text it is explaining. */
+.footnoted:has(.mark:hover) .footnote-target,
+.footnoted:has(.mark:focus-within) .footnote-target {
+	text-decoration: underline gray;
+	opacity: 0.6;
+}
+
+/* Progressive enhancement: keep the note on screen.
+ *
+ * The rules above pin the note to the mark's left edge, so a footnote falling
+ * near the end of a line pushes its note off the right of the viewport. Where
+ * CSS anchor positioning is available, anchor the note to the mark and let the
+ * browser slide it back into view instead.
+ *
+ * `anchor-scope` confines the anchor name to each `.footnoted`, which is what
+ * lets every mark reuse a single name. Without it the duplicate names resolve
+ * across entries and notes point at the wrong mark, so it is the right feature
+ * to gate on: engines that lack it ignore this block and keep the placement
+ * above.
+ *
+ * `fixed` rather than `absolute` puts the note in the viewport's coordinate
+ * space, so the overflow that triggers the fallback is measured against the
+ * viewport rather than against the mark. */
+@supports (anchor-scope: all) {
+	.footnoted {
+		anchor-scope: --footnote;
+	}
+
+	.mark {
+		anchor-name: --footnote;
+	}
+
+	.mark .tooltip {
+		position: fixed;
+		position-anchor: --footnote;
+		top: anchor(bottom);
+		left: anchor(left);
+		margin-top: 0.4em;
+		position-try-fallbacks: --footnote-shift;
+	}
+}
+
+/* Pin the note's right edge just inside the viewport — the smallest shift that
+ * keeps it fully visible. */
+@position-try --footnote-shift {
+	left: auto;
+	right: 8px;
+}
