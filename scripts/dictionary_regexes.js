@@ -52,7 +52,11 @@ function language_replace(_, g1) {
 	language: [/(?<!\[)\[\[(.*?)\]\](?!\])/, language_replace],
 	qualitative: [/†/, "<sup>†<\/sup>"],
 	lineBreaks: [/\\n/, "</p><p>"],
-	additionsAndCorrections: [/\/\/(.*?)\/\/(.*?)\/\//, "<del>$1</del><ins>$2</ins>"],
+	// An addendum may name the page it comes from, written immediately
+	// after the closing `//` (e.g. `//ⲁ//ⲃ//717a`). It is matched so that
+	// it is consumed rather than left in the text, and then dropped —
+	// this rendering has nowhere to show it.
+	additionsAndCorrections: [/\/\/(.*?)\/\/(.*?)\/\/(?:(?:\d{1,3}|[xiv]+)[ab])?/, "<del>$1</del><ins>$2</ins>"],
 	// A footnote — `{text}{{note}}` — is an editorial note on an error of
 	// Crum's. The note is nested inside the mark, rather than stashed in a data
 	// attribute, so its HTML needs no escaping. This must precede `manual`, so
