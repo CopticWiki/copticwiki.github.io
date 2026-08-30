@@ -2,7 +2,7 @@ function language_replace(_, g1) {
 	let lang;
 	if (/\p{Script=Greek}/u.test(g1) || g1 === '·') {
 		lang = "greek";
-	} else if (/\p{Script=Coptic}/u.test(g1)) {
+	} else if (/\p{Script=Coptic}/u.test(g1) || g1 === '―') {
 		lang = "coptic";
 	} else if (/\p{Script=Arabic}/u.test(g1)) {
 		lang = "arabic";
@@ -14,7 +14,7 @@ function language_replace(_, g1) {
 		lang = "amharic";
 	} else if (/\p{Script=Egyptian_Hieroglyphs}/u.test(g1)) {
 		lang = "egypt-hiero";
-	} else if (/^(?:[\p{Script=Latin}ꜢꜤʾʿ]\p{M}*|[ '\-=\.])+$/ui.test(g1)) {
+	} else if (/^(?:[\p{Script=Latin}ꜢꜤʾʿ]\p{M}*|[ '\-=\.·()])+$/ui.test(g1)) {
 		lang = "demotic";
 	} else {
 		console.error('Error! Can not determine the language of bracketed expression:', g1);
