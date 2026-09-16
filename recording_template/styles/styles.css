@@ -1,0 +1,51 @@
+.ready {
+	color: #90ee90;
+	color: goldenrod;
+}
+
+#player {
+	background: lightgreen;
+	margin: 3em 0;
+}
+audio {
+	mix-blend-mode: multiply;
+	background: #ffffff;
+	filter: invert(1);
+	width: 100%;
+	display: block;
+}
+
+.morpheme span.c {
+	transition: color .5s;
+}
+
+#interlinear {
+	font-size: 1.5em;
+}
+.line {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	gap: .2em .5em;
+}
+p + .line {
+	margin-top: 3em;
+}
+.line .group {
+	display: flex;
+}
+.group .morpheme {
+	color: #ffffff77;
+	display: flex;
+	flex-direction: column;
+	padding: 0em 0;
+}
+
+.morpheme span {
+	line-height: 1;
+}
+.morpheme span:nth-child(1) {
+	//background: #ffffff66;
+	font-family: rk_coptic;
+	padding: .2em 0em .2em;
+}
