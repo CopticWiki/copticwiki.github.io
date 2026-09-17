@@ -19,24 +19,26 @@ audio {
 	transition: color .5s;
 }
 
-#ap_222,
-#ap_223,
-#ap_224 {
-	display: none;
-}
-
 #ap_218,
 #ap_222,
 #ap_223,
 #ap_224 {
 	font-size: 1.5em;
 }
+
+#ap_222,
+#ap_223,
+#ap_224 {
+	display: none;
+}
+
 .line {
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
 	gap: .2em .5em;
 }
+
 p + .line {
 	margin-top: 3em;
 }
