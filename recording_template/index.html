@@ -11,12 +11,22 @@
 		<meta charset="UTF-8">
 	</head>
 	<body>
+		<div id="player">
+			 <audio controls src="./audio/2026-09-16_ap_218.wav"></audio>
+		</div>
 		<div id="container">
 			<main>
-				<div id="player">
-					 <audio controls src="./audio/2026-09-16_ap_218.wav"></audio>
-				</div>
 				<div id="ap_218">
+					<div style="display: flex; justify-content: space-between;">
+						<div>
+							<h3>Apophthegmata Patrum 218</h3>
+							<h4>Source: M. Chaîne (1960)</h4>
+						</div>
+						<div>
+							<h3 style="color: lightgreen !important;">© 2026 CopticWiki</h3>
+							<h4 style="color: lightblue !important; text-align: right;">coptic.wiki</h4>
+						</div>
+					</div>
 					<div class="line">
 						<div class="group">
 							<div class="morpheme">
@@ -135,7 +145,7 @@
 							</div>
 						</div>
 					</div>
-					<p>At another time, too, as we went to another elder, the sun was about to set, and the elder prayed, saying:</p>
+					<p class="trans">Now once again, as we were about to go to another elder, the sun was about to set, and the elder prayed, saying:</p>
 					<div class="line">
 						<div class="group">
 							<div class="morpheme">
@@ -206,7 +216,7 @@
 							</div>
 						</div>
 					</div>
-					<p>“I beseech You, Lord, may the sun stand still until I reach Your servant.”</p>
+					<p class="trans">“I beseech You, Lord: May the sun stand still until I reach Your servant.”</p>
 					<div class="line">
 						<div class="group">
 							<div class="morpheme">
@@ -233,7 +243,7 @@
 							</div>
 						</div>
 					</div>
-					<p>And so it came to pass.</p>
+					<p class="trans">And so it came to pass.</p>
 				</div>
 				<div id="ap_222">
 					<div class="line">
@@ -1514,66 +1524,68 @@
 		</div>
 		<script>
 			const morphemes = document.getElementsByClassName("c");
+			const lines = document.getElementsByClassName("line");
+			const trans = document.getElementsByClassName("trans");
 			
 			let myAudio = document.querySelector("audio");
 			//let myTimestamp = myAudio.currentTime;
 			let morphemeList = [
-				0.81, // n
-				0.97, // ke
-				1.12, // sop
-				1.36, // de
-				1.49, // on
-				1.88, // e
-				1.99, // n
-				2.05, // na
-				2.20, // bok
-				2.44, // sha
-				2.59, // ke
-				2.83, // hllo
-				3.25, // a
-				3.50, // p
-				3.60, // re
-				3.89, // ei
-				4.27, // e
-				4.37, // f
-				4.50, // na
-				4.60, // hotp
-				5.32, // awo
-				5.74, // a
-				5.80, // p
-				5.91, // hllo
-				6.91, // sops
-				7.17, // e
-				7.27, // f
-				7.45, // jo
-				7.60, // mmo
-				7.61, // s
+				0.77, // n
+				0.78, // ke
+				0.79, // sop
+				1.34, // de
+				1.54, // on
+				1.86, // e
+				1.87, // n
+				1.88, // na
+				1.89, // bok
+				2.62, // sha
+				2.63, // ke
+				2.64, // hllo
+				3.36, // a
+				3.37, // p
+				3.38, // re
+				3.84, // i
+				4.34, // e
+				4.35, // f
+				4.36, // na
+				4.37, // hotp
+				5.37, // awo
+				5.47, // a
+				5.48, // p
+				5.49, // hllo
+				6.63, // sops
+				6.92, // e
+				6.93, // f
+				6.94, // jo
+				6.95, // mmo
+				6.96, // s
 				
-				8.20, // je
-				8.38, // ti
-				8.54, // tobh
-				8.88, // mmo
-				8.91, // k
-				9.28, // p
-				9.40, // jois
-				10.06, // mare
-				10.29, // p
-				10.31, // re
-				10.62, // aherat
-				11.06, // f
-				11.34, // shan
-				11.59, // ti
-				11.81, // poh
-				12.15, // e
-				12.26, // pek
-				12.39, // hmhal
+				8.12, // je
+				8.15, // ti
+				8.19, // tobh
+				8.38, // mmo
+				8.39, // k
+				8.83, // p
+				9.12, // jois
+				9.81, // mare
+				10.05, // p
+				10.27, // re
+				10.46, // aherat
+				10.72, // f
+				10.91, // shan
+				11.33, // ti
+				11.62, // poh
+				11.81, // e
+				12.10, // pek
+				12.29, // hmhal
 				
-				13.66, // awo
-				14.04, // a
-				14.05, // s
-				14.09, //shope
-				14.54, // hi
-				14.63 // nai
+				13.54, // awo
+				13.66, // a
+				13.67, // s
+				14.05, // shope
+				14.30, // hi
+				14.53 // nai
 			];
 			myAudio.addEventListener("timeupdate", () => {
 				for (i = 0; i < morphemes.length; i++) {
@@ -1583,6 +1595,30 @@
 					if (morphemeList[i] < myAudio.currentTime) {
 						morphemes[i].style.color = "lightgreen";
 					}
+				}
+				if (myAudio.currentTime > "0") {
+					lines[0].style.display = "flex";
+					trans[0].style.display = "block";
+					lines[1].style.display = "none";
+					trans[1].style.display = "none";
+					lines[2].style.display = "none";
+					trans[2].style.display = "none";
+				}
+				if (myAudio.currentTime > "8.12") {
+					lines[0].style.display = "none";
+					trans[0].style.display = "none";
+					lines[1].style.display = "flex";
+					trans[1].style.display = "block";
+					lines[2].style.display = "none";
+					trans[2].style.display = "none";
+				}
+				if (myAudio.currentTime > "13.54") {
+					lines[0].style.display = "none";
+					trans[0].style.display = "none";
+					lines[1].style.display = "none";
+					trans[1].style.display = "none";
+					lines[2].style.display = "flex";
+					trans[2].style.display = "block";
 				}
 			});
 		</script>

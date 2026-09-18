@@ -1,3 +1,34 @@
+body {
+	background: #111111;
+	margin: 0em 1em 1em;
+}
+
+h3 {
+	color: goldenrod !important;
+	background: transparent !important;
+	font-size: 1rem !important;
+}
+
+h4 {
+	color: goldenrod !important;
+	background: transparent !important;
+	font-size: 1rem !important;
+	font-weight: normal;
+	margin-top: 0;
+}
+
+#container {
+	border: 1px solid lightgreen;
+	width: 1920px;
+	max-width: 640px;
+	height: 360px;
+	padding: 1em 2em;
+}
+
+p {
+	//margin-top: 0;
+}
+
 .ready {
 	color: #90ee90;
 	color: goldenrod;
@@ -5,7 +36,7 @@
 
 #player {
 	background: lightgreen;
-	margin: 3em 0;
+	margin: 0em 0 1em;
 }
 audio {
 	mix-blend-mode: multiply;
@@ -39,9 +70,15 @@ audio {
 	gap: .2em .5em;
 }
 
-p + .line {
-	margin-top: 3em;
+.line {
+	margin-top: 1em;
+	//font-size: 1.5em;
 }
+
+.trans {
+	//font-size: 1.5em;
+}
+
 .line .group {
 	display: flex;
 }
