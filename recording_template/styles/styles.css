@@ -7,6 +7,7 @@ h3 {
 	color: goldenrod !important;
 	background: transparent !important;
 	font-size: 1rem !important;
+	position: static !important;
 }
 
 h4 {
@@ -15,6 +16,7 @@ h4 {
 	font-size: 1rem !important;
 	font-weight: normal;
 	margin-top: 0;
+	position: static !important;
 }
 
 #container {
