@@ -56,7 +56,13 @@ audio {
 #ap_222,
 #ap_223,
 #ap_224 {
-	font-size: 1.0em;
+	font-size: 2.0em;
+}
+
+#ap_218,
+#ap_222,
+#ap_223 {
+	//display: none;
 }
 
 .line {
