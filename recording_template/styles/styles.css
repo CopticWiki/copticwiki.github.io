@@ -20,7 +20,7 @@ h4 {
 }
 
 #container {
-	border: 1px solid lightgreen;
+	//border: 1px solid lightgreen;
 	width: 1920px;
 	max-width: 640px;
 	height: 360px;
@@ -36,7 +36,7 @@ p {
 	color: goldenrod;
 }
 
-#player {
+.player {
 	background: lightgreen;
 	margin: 0em 0 1em;
 }
@@ -56,13 +56,7 @@ audio {
 #ap_222,
 #ap_223,
 #ap_224 {
-	font-size: 1.5em;
-}
-
-#ap_222,
-#ap_223,
-#ap_224 {
-	display: none;
+	font-size: 1.0em;
 }
 
 .line {
@@ -79,6 +73,7 @@ audio {
 
 .trans {
 	//font-size: 1.5em;
+	color: #ffffff33;
 }
 
 .line .group {
