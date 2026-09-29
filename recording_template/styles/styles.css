@@ -52,17 +52,53 @@ audio {
 	transition: color .5s;
 }
 
-#ap_218,
-#ap_222,
-#ap_223,
-#ap_224 {
-	font-size: 2.0em;
+.punct {
+	color: gray;
 }
 
 #ap_218,
+#ap_219,
+#ap_220,
+#ap_221,
 #ap_222,
-#ap_223 {
-	//display: none;
+#ap_223,
+#ap_224,
+#ap_225,
+#ap_226,
+#ap_227,
+#ap_228,
+#ap_229,
+#ap_230,
+#ap_231,
+#ap_232,
+#ap_233,
+#ap_234,
+#ap_235,
+#ap_236,
+#ap_237,
+#ap_238,
+#ap_239 {
+	font-size: 2.0em;
+}
+
+#ap_219,
+#ap_220,
+#ap_221,
+#ap_225,
+#ap_226,
+#ap_227,
+#ap_228,
+#ap_229,
+#ap_230,
+#ap_232,
+#ap_233,
+#ap_234,
+#ap_235,
+#ap_236,
+#ap_237,
+#ap_238,
+#ap_239 {
+	display: none;
 }
 
 .line {
