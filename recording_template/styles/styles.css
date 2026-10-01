@@ -53,7 +53,15 @@ audio {
 }
 
 .punct {
-	color: gray;
+	//color: gray;
+}
+
+main {
+	//display: flex;
+}
+
+main > div {
+	//border: 1px solid;
 }
 
 #ap_218,
@@ -90,14 +98,22 @@ audio {
 #ap_228,
 #ap_229,
 #ap_230,
-#ap_232,
-#ap_233,
-#ap_234,
-#ap_235,
-#ap_236,
-#ap_237,
 #ap_238,
 #ap_239 {
+	display: none;
+}
+
+#ap_218 .line, #ap_218 .trans,
+#ap_222 .line, #ap_222 .trans,
+#ap_223 .line, #ap_223 .trans,
+#ap_224 .line, #ap_224 .trans,
+#ap_231 .line, #ap_231 .trans,
+#ap_232 .line, #ap_232 .trans,
+#ap_233 .line, #ap_233 .trans,
+#ap_234 .line, #ap_234 .trans,
+#ap_235 .line, #ap_235 .trans,
+#ap_236 .line, #ap_236 .trans,
+#ap_237 .line, #ap_237 .trans {
 	display: none;
 }
 
