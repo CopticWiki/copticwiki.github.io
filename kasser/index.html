@@ -25,8 +25,16 @@
 				vertical-align: top;
 				padding: .5em;
 			}
+			sup,
+			sub {
+				line-height: 0;
+			}
+			.coptic sup {
+				font-family: sans-serif;
+			}
 			#dictionary tr,
-			#sigles-et-abreviations tr {
+			#sigles-et-abreviations tr,
+			#addenda tr {
 				border: 1px solid;
 			}
 			#noms-dauteurs {
@@ -36,15 +44,24 @@
 			#noms-dauteurs tr td:nth-child(2) {
 				color: goldenrod;
 			}
-			#noms-dauteurs tr td:nth-child(1) {
+			#noms-dauteurs tr td:nth-child(1),
+			#addenda td:nth-child(1),
+			#addenda td:nth-child(2),
+			#addenda td:nth-child(3) {
 				white-space: nowrap;
 			}
 			#noms-dauteurs tr td:nth-child(2) {
 				font-variant: small-caps;
 			}
+			.author-initials,
+			.author-case {
+				color: goldenrod;
+			}
 			.author-case {
 				font-variant: small-caps;
-				color: goldenrod;
+			}
+			.ibid-arrow {
+				text-align: center;
 			}
 			#sigles-et-abreviations .square-brackets {
 				border-top: 1px solid transparent;
@@ -137,23 +154,76 @@
 					</ol>
 				</div>
 				<div id="">
+					<h3>Dictionary</h3>
+					<table id="dictionary">
+						<tr>
+							<td>1a</td><td><span class="coptic">ⲁ-</span></td><td>«environ» <span class="dialect"><i>A</i><sup>2</sup><sub>0</sub></span> (ManiP), <span class="coptic">ⲛⲁ</span> <span class="dialect"><i>M</i><sup><i>f</i></sup></span> (M<sub>8</sub>);</td><td></td>
+						</tr>
+						<tr>
+							<td>1b</td><td></td><td><i>idem</i>, ajouter ici (?) <span class="coptic">ⲁ-</span> «comme» <span class="dialect"><i>S</i><sub>0</sub></span> (Lm 1,6 <span class="coptic">ⲁⲛⲉⲥⲁⲣⲭⲱⲛ ϣⲱⲡⲉ ⲁ</span> (<span class="greek">ὡς</span>, <span class="dialect"><i>F</i><sub>0</sub></span> <span class="coptic">ⲛⲑⲏ</span>, <span class="dialect"><i>B</i></span> <span class="coptic">ⲙⲫⲣⲏϯ</span>: lire <span class="coptic">ⲉ-</span> ?) <span class="coptic">ϩⲉⲛⲟⲉⲓⲗⲉ ⲉⲛⲥⲉϩⲏⲩ ⲁⲛ ⲉⲙⲁ ⲙ̄ⲙⲟⲟⲛⲉ</span>).</td><td></td>
+						</tr>
+						<tr>
+							<td></td><td><span class="coptic">ⲁⲓⲁⲓ</span></td><td>«augmenter» <span class="dialect"><i>A</i><sup>2</sup><sub>0</sub></span> (ManiP), <span class="coptic">ⲁⲉⲓⲁⲓ</span> <span class="dialect"><i>S</i><sub>0</sub></span> (Ex 1,7), <span class="coptic">ⲁⲓⲁⲉⲓ</span> <span class="dialect"><i>S</i><sub>0</sub></span> (Mc) <span class="dialect"><i>S</i></span> (HornerS: Lc. 1,18 etc.), <span class="coptic">ⲁⲉⲓⲁⲉⲓ</span> <span class="dialect"><i>S</i><sub>0</sub></span> (Js 23,1,2), <span class="coptic">ⲁⲉⲓⲉⲩ</span> <span class="dialect"><i>A</i><sup>2</sup><sub>0</sub></span> (I,2), <span class="coptic">ⲁⲓⲉⲩⲧⲉ</span> <span class="dialect"><i>A</i><sup>2</sup><sub>0</sub></span> (ManiK: 14,30 etc.), <span class="coptic">ⲁⲓⲏ(ⲏ)ⲓⲧⲉ</span> <span class="dialect"><i>P</i><sub>0</sub></span>, <span class="coptic">ⲱⲉⲓ<sup>†</sup></span> <span class="dialect"><i>S</i><sub>vl</sub></span> (PM 567:I Rois 22,14), <span class="coptic">ⲁⲓ<sup>†</sup></span> <span class="dialect"><i>A</i><sup>2</sup><sub>0</sub></span> (ManiP K:42,3 etc.).</td><td></td>
+						</tr>
+						<tr>
+							<td>2a</td><td></td><td><i>idem</i>, <span class="coptic">ⲣⲉϥⲁⲓⲁⲉⲓ</span> <span class="dialect"><i>S</i><sub>vl</sub></span> (Jern.P.177); <span class="coptic">ⲣ ⲁⲓϩⲏⲧ</span> «s'enhardir» <span class="dialect"><i>A</i><sup>2</sup><sub>0</sub></span> (ManiK:50,18); <span class="coptic">ⲙⲛⲧⲁⲓϩⲉ</span> «vie dissipée» <span class="dialect"><i>A</i><sup>2</sup><sub>0</sub></span> (Mani K:213,5,10).</td><td></td>
+						</tr>
+						<tr>
+							<td></td><td><span class="coptic">ⲁⲓⲃⲉ</span></td><td>«défaut» <span class="dialect"><i>A</i><sup>2</sup><sub>0</sub></span> (ManiK:205,3<sub>2</sub> P); <span class="coptic">ⲁⲧⲁⲓⲃⲉ</span> <span class="dialect"><i>A</i><sup>2</sup><sub>0</sub></span> (ManiP); cf. <span class="coptic">ⲁϥ</span> 23 b.</td><td></td>
+						</tr>
+					</table>
+					<h3>Addenda</h3>
+					<table id="addenda">
+						<tr><td>p. 4,</td><td>col. droite,</td><td>l. 2:</td><td><span class="coptic">ⲁ-</span> <span class="dialect">S<sub>vl</sub></span> (Wor.Mi.196 <span class="coptic">ⲁ⟨ⲧ⟩ϭⲟⲙ</span>).</td></tr>
+						<tr><td>p. 7,</td><td>col. gauche,</td><td>l. 32:</td><td><span class="coptic">ϥⲏⲕⲉ</span> <span class="dialect"><i>S</i><sub>vl</sub></span> (Wor.Mi.203).</td></tr>
+						<tr><td>p. 11,</td><td>col. droite,</td><td>l. 22–23:</td><td><span class="coptic">ⲉⲧⲛⲓⳉ</span> «cendre (?)», cf. <span class="coptic">ⲁⲧⲛⲓϣ</span> <span class="dialect"><i>S</i><sub>vl</sub></span> (Wor.Mi.251), et <span class="coptic">ⲉⲓⲧⲛ</span> 87 b.</td></tr>
+						<tr><td>p. 13,</td><td>col. droite,</td><td>l. 33–34:</td><td><span class="coptic">ⲓⲉⲃⲧⲉ</span> n., sens inconnu, <span class="dialect"><i>S</i><sub>vl</sub></span> (Wor.Mi.251).</td></tr>
+						<tr><td>p. 16,</td><td>col. droite,</td><td>l. 16:</td><td>cf. <span class="coptic">ⲉⲗⲉⲃⲓⲱϩⲉ</span> «qui déserte la campagne (?)» <span class="dialect"><i>S</i><sub>vl</sub></span> (Wor.Mi.194).</td></tr>
+						<tr><td>p. 17,</td><td>col. droite,</td><td>l. 17:</td><td><span class="coptic">ⲕⲓ<sup>†</sup></span> <span class="dialect"><i>S</i><sub>vl</sub></span> (Wor.Mi.205).</td></tr>
+						<tr><td>p. 22,</td><td>col. droite,</td><td>l. 34–35:</td><td><span class="coptic">ⲕⲁⲁϫ</span> n., instrument agricole (?) <span class="dialect"><i>S</i><sub>vl</sub></span> (Wor.Mi.251).</td></tr>
+						<tr><td>p. 24,</td><td>col. droite,</td><td>l. 27:</td><td>cf. <span class="coptic">ⲗⲓⲗⲱϩⲉ</span> <span class="dialect"><i>S</i><sub>vl</sub></span> (Wor.Mi.184) et <span class="coptic">ⲗⲓⲗⲟⲟϩⲉ</span> 142 a.</td></tr>
+						<tr><td>p. 26,</td><td>col. gauche,</td><td>l. 7:</td><td><span class="coptic">ⲙⲁⲛⲟⲩϩⲉ</span> (=<span class="coptic">ⲙⲟⲩⲗⲟⲛ</span>) <span class="dialect"><i>S</i><sub>vl</sub></span> (Wor.Mi.260), cf. <span class="coptic">ⲟⲩⲱϩ</span> ou <span class="coptic">ⲛⲟⲩϩⲉ</span> ??</td></tr>
+						<tr><td class="ibid-arrow">»</td><td>col. droite,</td><td>l. 12–13:</td><td><span class="coptic">ⲙⲏⲓ</span> n., sens inconnu <span class="dialect"><i>S</i><sub>vl</sub></span> (Wor.Mi.237) <span class="coptic">ⲙⲏⲓ ⲛⲉⲗⲟⲟⲗⲉ</span>), cf. <span class="coptic">ⲙⲏ</span> 158 a ?</td></tr>
+						<tr><td>p. 28,</td><td>col. gauche,</td><td>l. 12:</td><td><span class="coptic">ⲙⲟⲛ-</span> <span class="dialect"><i>B</i><sub>0</sub></span> (Wor.Mi.177).</td></tr>
+						<tr><td>p. 31,</td><td>col. gauche,</td><td>l. 36:</td><td><span class="coptic">ⲙⲟⲧⲛⲏϥ</span> <span class="dialect"><i>S</i><sub>vl</sub></span> (Wor.Mi.183).</td></tr>
+						<tr><td>p. 32,</td><td>col. droite,</td><td>l. 16:</td><td></td></tr>
+						<tr><td>p. 35,</td><td>col. gauche,</td><td>l. 10:</td><td></td></tr>
+						<tr><td>p. 47,</td><td>col. gauche,</td><td>l. 1:</td><td></td></tr>
+						<tr><td>p. 53,</td><td>col. gauche,</td><td>l. 13–14:</td><td></td></tr>
+						<tr><td>p. 55,</td><td>col. droite,</td><td>l. 2–3:</td><td></td></tr>
+						<tr><td>p. 57,</td><td>col. droite,</td><td>l. 19:</td><td></td></tr>
+						<tr><td>p. 60,</td><td>col. gauche,</td><td>l. 26:</td><td></td></tr>
+						<tr><td class="ibid-arrow">»</td><td class="ibid-arrow">»</td><td>l. 39:</td><td></td></tr>
+						<tr><td>p. 62,</td><td>col. gauche,</td><td>l. 22:</td><td></td></tr>
+						<tr><td>p. 64,</td><td>col. droite,</td><td>l. 12:</td><td></td></tr>
+						<tr><td>p. 67,</td><td>col. gauche,</td><td>l. 34:</td><td></td></tr>
+						<tr><td>p. 68,</td><td>col. gauche,</td><td>l. 33:</td><td></td></tr>
+						<tr><td class="ibid-arrow">»</td><td>col. droite,</td><td>l. 17:</td><td></td></tr>
+						<tr><td>p. 76,</td><td>col. droite,</td><td>l. 13:</td><td></td></tr>
+						<tr><td>p. 77,</td><td>col. droite,</td><td>l. 41:</td><td></td></tr>
+						<tr><td>p. 78,</td><td>col. droite,</td><td>l. 27:</td><td></td></tr>
+						<tr><td>p. 84,</td><td>col. droite,</td><td>l. 8:</td><td></td></tr>
+						<tr><td>p. 85,</td><td>col. gauche,</td><td>l. 22 etc.:</td><td></td></tr>
+						<tr><td>p. 90,</td><td>col. gauche,</td><td>l. 12:</td><td></td></tr>
+						<tr><td>p. 91,</td><td>col. droite,</td><td>l. 34:</td><td></td></tr>
+					</table>
 					<h3>Sigles et Abréviations</h3>
 					<table id="sigles-et-abreviations">
 						<tr><td><span class="dialect"><i>A</i></span></td><td>dialecte akhmîmique.</td></tr>
 						<tr><td><span class="dialect"><i>A</i><sup>2</sup></span></td><td>dialecte subakhmîmique.</td></tr>
 						<tr><td>AB</td><td>Analecta Bollandiana, Bruxelles.</td></tr>
-						<tr class="square-brackets"><td></td><td>[P. <span class="author-case">Devos</span>, <i>Le Juif et le chrétien</i>, vol. LXXVIII, p. 275–308.]</td></tr>
+						<tr class="square-brackets"><td></td><td>[<span class="author-initials">P.</span> <span class="author-case">Devos</span>, <i>Le Juif et le chrétien</i>, vol. LXXVIII, p. 275–308.]</td></tr>
 						<tr><td>Ac.</td><td>livre des Actes des Apôtres en général.</td></tr>
 						<tr><td>A.Cl.Lg.</td><td>Bulletin de l'Association des Classiques de l'Université de Liège, Liège.</td></tr>
-						<tr class="square-brackets"><td></td><td>[P. <span class="author-case">Mertens</span>, <i>Sur un papyrus liégeois</i>, vol. V, p. 1–6.]</td></tr>
+						<tr class="square-brackets"><td></td><td>[<span class="author-initials">P.</span> <span class="author-case">Mertens</span>, <i>Sur un papyrus liégeois</i>, vol. V, p. 1–6.]</td></tr>
 						<tr><td>Act</td><td>manuscrit des Acta Pauli (papyrus), inédit, cf. <i>supra</i>, p. xv.</td></tr>
 						<tr><td>Aeg.</td><td>Aegyptus, Milan.</td></tr>
-						<tr class="square-brackets"><td></td><td>[E. <span class="author-case">Balogh</span> et P. E. <span class="author-case">Kahle</span>, <i>Two Coptic documents relating to marriage</i>, vol. XXXIII, p. 331–340. E. M. <span class="author-case">Husselman</span>, <i>Some Coptic documents dealing with the poll-tax, vol. XXXI, p. 332–338. P. E. <span class="author-case">Kahle</span>, voir E. <span class="author-case">Balogh</span>. W. <span class="author-case">Till</span>, <i>Der griechisch-koptische Wiener Papyrus K 4912: Testament und Lieferverträge</i>, vol. XXXIII, p. 193–208.]</td></tr>
+						<tr class="square-brackets"><td></td><td>[<span class="author-initials">E.</span> <span class="author-case">Balogh</span> et <span class="author-initials">P. E.</span> <span class="author-case">Kahle</span>, <i>Two Coptic documents relating to marriage</i>, vol. XXXIII, p. 331–340. <span class="author-initials">E. M.</span> <span class="author-case">Husselman</span>, <i>Some Coptic documents dealing with the poll-tax</i>, vol. XXXI, p. 332–338. <span class="author-initials">P. E.</span> <span class="author-case">Kahle</span>, voir <span class="author-initials">E.</span> <span class="author-case">Balogh</span>. <span class="author-initials">W.</span> <span class="author-case">Till</span>, <i>Der griechisch-koptische Wiener Papyrus K 4912: Testament und Lieferverträge</i>, vol. XXXIII, p. 193–208.]</td></tr>
 						<tr><td>AJSL</td><td>The American Journal of Semitic Languages and Literatures, Chicago.</td></tr>
-						<tr class="square-brackets"><td></td><td>[E. <span class="author-case">Stefanski</span>, <i>A Coptic magical text</i>, vol. LVI.]</td></tr>
+						<tr class="square-brackets"><td></td><td>[<span class="author-initials">E.</span> <span class="author-case">Stefanski</span>, <i>A Coptic magical text</i>, vol. LVI.]</td></tr>
 						<tr><td>Ann.</td><td>voir ASAE.</td></tr>
 						<tr><td>AO</td><td>Acta Orientalia, Copenhague.</td></tr>
-						<tr class="square-brackets"><td></td><td>[S. <span class="author-case">Donadoni</span>, <i>Un frammento della versione copta del Libro di Enoch</i>, vol. XXV, p. 197–202. S. <span class="author-case">Giversen</span>, <i>Acrostical St. Menas hymn in Sahidic</i>, vol. XXIII, p. 19–32; <i>Ad Abgarum</i>, the Sagidic version of the letter to Abgar on a wooden tablet, vol. XXIV, p. 71–82.]</td></tr>
+						<tr class="square-brackets"><td></td><td>[<span class="author-initials">S.</span> <span class="author-case">Donadoni</span>, <i>Un frammento della versione copta del Libro di Enoch</i>, vol. XXV, p. 197–202. <span class="author-initials">S.</span> <span class="author-case">Giversen</span>, <i>Acrostical St. Menas hymn in Sahidic</i>, vol. XXIII, p. 19–32; <i>Ad Abgarum</i>, the Sagidic version of the letter to Abgar on a wooden tablet, vol. XXIV, p. 71–82.]</td></tr>
 					</table>
 					<h3>Noms d'Auteurs</h3>
 					<table id="noms-dauteurs">
@@ -264,25 +334,7 @@
 						<tr><td>J.</td><td>Zandee</td><td>voir VC, I,3.</td></tr>
 						<tr><td>G.</td><td>Zoega</td><td>voir Z 1, etc.</td></tr>
 					</table>
-					<h3>Dictionary</h3>
-					<table id="dictionary">
-						<tr>
-							<td>1a</td><td><span class="coptic">ⲁ-</span></td><td>«environ» <span class="dialect"><i>A</i><sup>2</sup><sub>0</sub></span> (ManiP), <span class="coptic">ⲛⲁ</span> <span class="dialect"><i>M</i><sup><i>f</i></sup></span> (M<sub>8</sub>);</td><td></td>
-						</tr>
-						<tr>
-							<td>1b</td><td></td><td><i>idem</i>, ajouter ici (?) <span class="coptic">ⲁ-</span> «comme» <span class="dialect"><i>S</i><sub>0</sub></span> (Lm 1,6 <span class="coptic">ⲁⲛⲉⲥⲁⲣⲭⲱⲛ ϣⲱⲡⲉ ⲁ</span> (<span class="greek">ὡς</span>, <span class="dialect"><i>F</i><sub>o</sub></span> <span class="coptic">ⲛⲑⲏ</span>, <span class="dialect"><i>B</i></span> <span class="coptic">ⲙⲫⲣⲏϯ</span>: lire <span class="coptic">ⲉ-</span> ?) <span class="coptic">ϩⲉⲛⲟⲉⲓⲗⲉ ⲉⲛⲥⲉϩⲏⲩ ⲁⲛ ⲉⲙⲁ ⲙ̄ⲙⲟⲟⲛⲉ</span>).</td><td></td>
-						</tr>
-						<tr>
-							<td></td><td><span class="coptic">ⲁⲓⲁⲓ</span></td><td>«augmenter» <span class="dialect"><i>A</i><sup>2</sup><sub>0</sub></span> (ManiP), <span class="coptic">ⲁⲉⲓⲁⲓ</span> <span class="dialect"><i>S</i><sub>0</sub></span> (Ex 1,7), <span class="coptic">ⲁⲓⲁⲉⲓ</span> <span class="dialect"><i>S</i><sub>0</sub></span> (Mc) <i>S</i> (HornerS: Lc. 1,18 etc.), <span class="coptic">ⲁⲉⲓⲁⲉⲓ</span> <span class="dialect"><i>S</i><sub>0</sub></span> (Js 23,1,2), <span class="coptic">ⲁⲉⲓⲉⲩ</span> <span class="dialect"><i>A</i><sup>2</sup><sub>0</sub></span> (I,2), <span class="coptic">ⲁⲓⲉⲩⲧⲉ</span> <span class="dialect"><i>A</i><sup>2</sup><sub>0</sub></span> (ManiK: 14,30 etc.), <span class="coptic">ⲁⲓⲏ(ⲏ)ⲓⲧⲉ</span> <span class="dialect"><i>P</i><sub>0</sub></span>, <span class="coptic">ⲱⲉⲓ<sup>†</sup></span> <span class="dialect"><i>S</i><sub>vl</sub></span> (PM 567:I Rois 22,14), <span class="coptic">ⲁⲓ<sup>†</sup></span> <span class="dialect"><i>A</i><sup>2</sup><sub>0</sub></span> (ManiP K:42,3 etc.).</td><td></td>
-						</tr>
-						<tr>
-							<td>2a</td><td></td><td><i>idem</i>, <span class="coptic">ⲣⲉϥⲁⲓⲁⲉⲓ</span> <span class="dialect"><i>S</i><sub>vl</sub></span> (Jern.P.177); <span class="coptic">ⲣ ⲁⲓϩⲏⲧ</span> «s'enhardir» <span class="dialect"><i>A</i><sup>2</sup><sub>0</sub></span> (ManiK:50,18); <span class="coptic">ⲙⲛⲧⲁⲓϩⲉ</span> «vie dissipée» <span class="dialect"><i>A</i><sup>2</sup><sub>0</sub></span> (Mani K:213,5,10).</td><td></td>
-						</tr>
-						<tr>
-							<td></td><td><span class="coptic">ⲁⲓⲃⲉ</span></td><td>«défaut» <span class="dialect"><i>A</i><sup>2</sup><sub>0</sub></span> (ManiK:205,3<sub>2</sub> P); <span class="coptic">ⲁⲧⲁⲓⲃⲉ</span> <span class="dialect"><i>A</i><sup>2</sup><sub>0</sub></span> (ManiP); cf. <span class="coptic">ⲁϥ</span> 23 b.</td><td></td>
-						</tr>
-					</table>
-				</div>
+					</div>
 			</main>
 			<hr>
 			<footer>
