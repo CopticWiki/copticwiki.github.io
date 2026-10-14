@@ -11,10 +11,54 @@
 		<meta charset="UTF-8">
 		<style>
 			.coptic {
-				color: hotpink;
+				color: goldenrod;
 			}
-			.coptic {
-				color: gold !important;
+			.dialect {
+				color: steelblue;
+			}
+			table {
+				border-collapse: collapse;
+			}
+			tr {
+			}
+			td {
+				vertical-align: top;
+				padding: .5em;
+			}
+			#dictionary tr,
+			#sigles-et-abreviations tr {
+				border: 1px solid;
+			}
+			#noms-dauteurs {
+				border: 1px solid;
+			}
+			#noms-dauteurs tr td:nth-child(1),
+			#noms-dauteurs tr td:nth-child(2) {
+				color: goldenrod;
+			}
+			#noms-dauteurs tr td:nth-child(1) {
+				white-space: nowrap;
+			}
+			#noms-dauteurs tr td:nth-child(2) {
+				font-variant: small-caps;
+			}
+			.author-case {
+				font-variant: small-caps;
+				color: goldenrod;
+			}
+			#sigles-et-abreviations .square-brackets {
+				border-top: 1px solid transparent;
+				padding-top: 0;
+			}
+			#sigles-et-abreviations tr:has(+ .square-brackets) {
+				border-bottom: 1px solid transparent;
+				padding-bottom: 0;
+			}
+			#sigles-et-abreviations .square-brackets td {
+				padding-top: 0;
+			}
+			#sigles-et-abreviations tr:has(+ .square-brackets) td {
+				padding-bottom: 0;
 			}
 		</style>
 	</head>
@@ -93,7 +137,151 @@
 					</ol>
 				</div>
 				<div id="">
-					
+					<h3>Sigles et Abréviations</h3>
+					<table id="sigles-et-abreviations">
+						<tr><td><span class="dialect"><i>A</i></span></td><td>dialecte akhmîmique.</td></tr>
+						<tr><td><span class="dialect"><i>A</i><sup>2</sup></span></td><td>dialecte subakhmîmique.</td></tr>
+						<tr><td>AB</td><td>Analecta Bollandiana, Bruxelles.</td></tr>
+						<tr class="square-brackets"><td></td><td>[P. <span class="author-case">Devos</span>, <i>Le Juif et le chrétien</i>, vol. LXXVIII, p. 275–308.]</td></tr>
+						<tr><td>Ac.</td><td>livre des Actes des Apôtres en général.</td></tr>
+						<tr><td>A.Cl.Lg.</td><td>Bulletin de l'Association des Classiques de l'Université de Liège, Liège.</td></tr>
+						<tr class="square-brackets"><td></td><td>[P. <span class="author-case">Mertens</span>, <i>Sur un papyrus liégeois</i>, vol. V, p. 1–6.]</td></tr>
+						<tr><td>Act</td><td>manuscrit des Acta Pauli (papyrus), inédit, cf. <i>supra</i>, p. xv.</td></tr>
+						<tr><td>Aeg.</td><td>Aegyptus, Milan.</td></tr>
+						<tr class="square-brackets"><td></td><td>[E. <span class="author-case">Balogh</span> et P. E. <span class="author-case">Kahle</span>, <i>Two Coptic documents relating to marriage</i>, vol. XXXIII, p. 331–340. E. M. <span class="author-case">Husselman</span>, <i>Some Coptic documents dealing with the poll-tax, vol. XXXI, p. 332–338. P. E. <span class="author-case">Kahle</span>, voir E. <span class="author-case">Balogh</span>. W. <span class="author-case">Till</span>, <i>Der griechisch-koptische Wiener Papyrus K 4912: Testament und Lieferverträge</i>, vol. XXXIII, p. 193–208.]</td></tr>
+						<tr><td>AJSL</td><td>The American Journal of Semitic Languages and Literatures, Chicago.</td></tr>
+						<tr class="square-brackets"><td></td><td>[E. <span class="author-case">Stefanski</span>, <i>A Coptic magical text</i>, vol. LVI.]</td></tr>
+						<tr><td>Ann.</td><td>voir ASAE.</td></tr>
+						<tr><td>AO</td><td>Acta Orientalia, Copenhague.</td></tr>
+						<tr class="square-brackets"><td></td><td>[S. <span class="author-case">Donadoni</span>, <i>Un frammento della versione copta del Libro di Enoch</i>, vol. XXV, p. 197–202. S. <span class="author-case">Giversen</span>, <i>Acrostical St. Menas hymn in Sahidic</i>, vol. XXIII, p. 19–32; <i>Ad Abgarum</i>, the Sagidic version of the letter to Abgar on a wooden tablet, vol. XXIV, p. 71–82.]</td></tr>
+					</table>
+					<h3>Noms d'Auteurs</h3>
+					<table id="noms-dauteurs">
+						<tr><td>Y.</td><td>Abd Al Masiḥ</td><td>voir BIFAO, BSAC, Mus., II,2.</td></tr>
+						<tr><td>C. R. C.</td><td>Allberry</td><td>voir JEA, ManiP.</td></tr>
+						<tr><td>E. B.</td><td>Allen</td><td>voir JAOS.</td></tr>
+						<tr><td>L.</td><td>Amundsen</td><td>voir Symb.Oslo.</td></tr>
+						<tr><td>T.</td><td>Andrzejewski</td><td>voir Kat.Rek.</td></tr>
+						<tr><td></td><td></td><td></td></tr>
+						<tr><td>J. W. B.</td><td>Barns</td><td>voir JTS.</td></tr>
+						<tr><td>H. I.</td><td>Bell</td><td>voir JEA, WS.</td></tr>
+						<tr><td>W. H.</td><td>Bell</td><td>voir JTS.</td></tr>
+						<tr><td>A.</td><td>Böhlig</td><td>voir Böh, ManiK, II,5.</td></tr>
+						<tr><td>C.</td><td>Bonner</td><td>voir Mag.Am.</td></tr>
+						<tr><td>P.</td><td>du Bourguet</td><td>voir BIFAO, BSAC.</td></tr>
+						<tr><td>A.</td><td>Bsciai</td><td>voir Bsciai.</td></tr>
+						<tr><td>O. H. E.</td><td>Burmester</td><td>voir BSAC, Mus.</td></tr>
+						<tr><td></td><td></td><td></td></tr>
+						<tr><td>J.</td><td>Černy</td><td>voir BIFAO, Hor., St.Crum.</td></tr>
+						<tr><td>M.</td><td>Chaîne</td><td>voir BSAC, Ch.Ap., Ch.Sym.</td></tr>
+						<tr><td>E.</td><td>Chassinat</td><td>voir BIFAO, Chass.</td></tr>
+						<tr><td>H. N.</td><td>Chittick</td><td>voir SAS.</td></tr>
+						<tr><td>G. H.</td><td>Costigan</td><td>voir BSAC.</td></tr>
+						<tr><td>M.</td><td>Cramer</td><td>voir Cramer.</td></tr>
+						<tr><td>W. E.</td><td>Crum</td><td>voir Crum, CrumAC, G, J.C.Eg., JEA, M<sub>10</sub>, WS.</td></tr>
+						<tr><td></td><td></td><td></td></tr>
+						<tr><td>A. N.</td><td>Dakin</td><td>voir JEA.</td></tr>
+						<tr><td>S.</td><td>Donadoni</td><td>voir AO.</td></tr>
+						<tr><td>J.</td><td>Doresse</td><td>voir Dor.Lanne.</td></tr>
+						<tr><td>R.</td><td>Draguet</td><td>voir Mus.</td></tr>
+						<tr><td>J.</td><td>Drescher</td><td>voir ASAE, BSAC, Drescher, Dr. Leg., JEA, St. Crum.</td></tr>
+						<tr><td>E.</td><td>Drioton</td><td>voir BSAC, Mus.</td></tr>
+						<tr><td></td><td></td><td></td></tr>
+						<tr><td>R. E.</td><td>Engelbach</td><td>voir ASAE, BSAC.</td></tr>
+						<tr><td>P.</td><td>Ernstedt</td><td>voir Jern.Er., Jern.P.</td></tr>
+						<tr><td></td><td></td><td></td></tr>
+						<tr><td>A.</td><td>Fakhry</td><td>voir ASAE.</td></tr>
+						<tr><td></td><td></td><td></td></tr>
+						<tr><td>G.</td><td>Garitte</td><td>voir C 117, Mus., OCP, St.Crum.</td></tr>
+						<tr><td>S.</td><td>Giversen</td><td>voir AO.</td></tr>
+						<tr><td>B.</td><td>Grotejahn</td><td>voir Mus.</td></tr>
+						<tr><td>A.</td><td>Guillaumont</td><td>voir Guil., II,2.</td></tr>
+						<tr><td>B.</td><td>Gunn</td><td>voir St.Crum.</td></tr>
+						<tr><td></td><td></td><td></td></tr>
+						<tr><td>R.</td><td>Habib</td><td>voir BIFAO.</td></tr>
+						<tr><td>I.</td><td>Habib el Masri</td><td>voir BSAC.</td></tr>
+						<tr><td>E.</td><td>Hammerschmidt</td><td>voir Ham., OC.</td></tr>
+						<tr><td>A.</td><td>Hebbelynck</td><td>voir Mus.</td></tr>
+						<tr><td>F.</td><td>Hintze</td><td>voir MIO.</td></tr>
+						<tr><td>G.</td><td>Horner</td><td>voir HornerB, HornerS.</td></tr>
+						<tr><td>E. M.</td><td>Husselman</td><td>voir M<sub>8</sub>, St.Crum, St.Cald.Par.</td></tr>
+						<tr><td>H.</td><td>Hyvernat</td><td>voir C 125, PM.</td></tr>
+						<tr><td></td><td></td><td></td></tr>
+						<tr><td>S.</td><td>Jakobielski</td><td>voir Kat.Rek.</td></tr>
+						<tr><td></td><td></td><td></td></tr>
+						<tr><td>M.</td><td>Kabis</td><td>voir ZAS.</td></tr>
+						<tr><td>P.E.</td><td>Kahle</td><td>voir Bal., Hor., Mus.</td></tr>
+						<tr><td>R.</td><td>Kasser</td><td>voir Dt, Ex, Jn, Jr, Js, Mt, Pv.</td></tr>
+						<tr><td>M.</td><td>Krause</td><td>voir II,1.</td></tr>
+						<tr><td>K. H.</td><td>Kuhn</td><td>voir C 157, C 206, JTS, Mus.</td></tr>
+						<tr><td></td><td></td><td></td></tr>
+						<tr><td>P.</td><td>Labib</td><td>voir Labib II,1, II,5.</td></tr>
+						<tr><td>P.</td><td>Lacau</td><td>voir BIFAO, Mus.</td></tr>
+						<tr><td>E.</td><td>Lanne</td><td>voir Dor.Lanne, PO.</td></tr>
+						<tr><td>A.</td><td>van Lantschoot</td><td>voir Lant.Q, Mus., SA, ST, St.Crum, Va. II.</td></tr>
+						<tr><td>L. Th.</td><td>Lefort</td><td>voir C 107, C 135, C 150, C 159, Lef., Lef.P, Mus., St.Crum.</td></tr>
+						<tr><td>J.</td><td>Leipoldt</td><td>voir Till Leip., ZAS.</td></tr>
+						<tr><td></td><td></td><td></td></tr>
+						<tr><td>M.</td><td>Malinine</td><td>voir St.Crum I,2, I,3.</td></tr>
+						<tr><td>G.</td><td>Mattha</td><td>voir ASAE.</td></tr>
+						<tr><td>P.</td><td>Mertens</td><td>voir A.Cl.Lg.</td></tr>
+						<tr><td>T.</td><td>Mina</td><td>voir BSAC, Mina.</td></tr>
+						<tr><td>S.</td><td>Morenz</td><td>voir Mor.Jo.Zi.</td></tr>
+						<tr><td>G. D. G.</td><td>Müller</td><td>voir C 225, Mus.</td></tr>
+						<tr><td>H.</td><td>Munier</td><td>voir BSAC.</td></tr>
+						<tr><td>J.</td><td>Muyser</td><td>voir BSAC, Mus.</td></tr>
+						<tr><td>R. A.</td><td>Parker</td><td>voir Hor., JEA, RE.</td></tr>
+						<tr><td>F.</td><td>Pericoli Ridolfini</td><td>voir RSO.</td></tr>
+						<tr><td>H. J.</td><td>Polotsky</td><td>voir ManiH, ManiK, Polotsky.</td></tr>
+						<tr><td>H. C.</td><td>Puech</td><td>voir I,2, I,3, II,2.</td></tr>
+						<tr><td></td><td></td><td></td></tr>
+						<tr><td>H.</td><td>Quecke</td><td>voir Mus.</td></tr>
+						<tr><td>G.</td><td>Quispel</td><td>voir VC, I,2, I,3, II,2.</td></tr>
+						<tr><td></td><td></td><td></td></tr>
+						<tr><td>R.</td><td>Rémondon</td><td>voir BIFAO.</td></tr>
+						<tr><td>T.</td><td>Säve-Söderbergh</td><td>voir St.Crum.</td></tr>
+						<tr><td>A.</td><td>Schiller</td><td>voir St.Crum.</td></tr>
+						<tr><td>C.</td><td>Schmidt</td><td>voir ManiK.</td></tr>
+						<tr><td>L. A.</td><td>Shier</td><td>voir Worr.Mi.</td></tr>
+						<tr><td>P. L.</td><td>Shinnie</td><td>voir SAS.</td></tr>
+						<tr><td>P. C.</td><td>Smither</td><td>voir JEA.</td></tr>
+						<tr><td>G.</td><td>Sobhy</td><td>voir BSAC, MIFAO, S.Hel.St.</td></tr>
+						<tr><td>E.</td><td>Stefanski</td><td>voir AJSL.</td></tr>
+						<tr><td>V.</td><td>Stegemann</td><td>voir Mus.</td></tr>
+						<tr><td>G.</td><td>Steindorff</td><td>voir St.Crum.</td></tr>
+						<tr><td>S.</td><td>Strelcyn</td><td>voir Kat.Rek.</td></tr>
+						<tr><td></td><td></td><td></td></tr>
+						<tr><td>H.</td><td>Thompson</td><td>voir JEA, Th.Cop.</td></tr>
+						<tr><td>W.</td><td>Till</td><td>voir AOAW, BG, BJRL, BSAC, MDAIK, MDIAAK, Mus., Or, St.Crum, St.Cald.Par. Symb.Taub., Till Dial., Till Leip., Till Os., Till S Gram., Till Urk., WZKM, ZAS, I,2, I,3, II,2, II,3.</td></tr>
+						<tr><td></td><td></td><td></td></tr>
+						<tr><td>A.</td><td>Vaschalde</td><td>voir Mus.</td></tr>
+						<tr><td>J.</td><td>Vergote</td><td>voir Mus.</td></tr>
+						<tr><td></td><td></td><td></td></tr>
+						<tr><td>H.</td><td>Wiesmann</td><td>voir C 129.</td></tr>
+						<tr><td>R. McL.</td><td>Wilson</td><td>voir I,3.</td></tr>
+						<tr><td>W. H.</td><td>Worrell</td><td>voir BSAC, Not., Worr.Mi.</td></tr>
+						<tr><td></td><td></td><td></td></tr>
+						<tr><td>J.</td><td>Zandee</td><td>voir VC, I,3.</td></tr>
+						<tr><td>G.</td><td>Zoega</td><td>voir Z 1, etc.</td></tr>
+					</table>
+					<h3>Dictionary</h3>
+					<table id="dictionary">
+						<tr>
+							<td>1a</td><td><span class="coptic">ⲁ-</span></td><td>«environ» <span class="dialect"><i>A</i><sup>2</sup><sub>0</sub></span> (ManiP), <span class="coptic">ⲛⲁ</span> <span class="dialect"><i>M</i><sup><i>f</i></sup></span> (M<sub>8</sub>);</td><td></td>
+						</tr>
+						<tr>
+							<td>1b</td><td></td><td><i>idem</i>, ajouter ici (?) <span class="coptic">ⲁ-</span> «comme» <span class="dialect"><i>S</i><sub>0</sub></span> (Lm 1,6 <span class="coptic">ⲁⲛⲉⲥⲁⲣⲭⲱⲛ ϣⲱⲡⲉ ⲁ</span> (<span class="greek">ὡς</span>, <span class="dialect"><i>F</i><sub>o</sub></span> <span class="coptic">ⲛⲑⲏ</span>, <span class="dialect"><i>B</i></span> <span class="coptic">ⲙⲫⲣⲏϯ</span>: lire <span class="coptic">ⲉ-</span> ?) <span class="coptic">ϩⲉⲛⲟⲉⲓⲗⲉ ⲉⲛⲥⲉϩⲏⲩ ⲁⲛ ⲉⲙⲁ ⲙ̄ⲙⲟⲟⲛⲉ</span>).</td><td></td>
+						</tr>
+						<tr>
+							<td></td><td><span class="coptic">ⲁⲓⲁⲓ</span></td><td>«augmenter» <span class="dialect"><i>A</i><sup>2</sup><sub>0</sub></span> (ManiP), <span class="coptic">ⲁⲉⲓⲁⲓ</span> <span class="dialect"><i>S</i><sub>0</sub></span> (Ex 1,7), <span class="coptic">ⲁⲓⲁⲉⲓ</span> <span class="dialect"><i>S</i><sub>0</sub></span> (Mc) <i>S</i> (HornerS: Lc. 1,18 etc.), <span class="coptic">ⲁⲉⲓⲁⲉⲓ</span> <span class="dialect"><i>S</i><sub>0</sub></span> (Js 23,1,2), <span class="coptic">ⲁⲉⲓⲉⲩ</span> <span class="dialect"><i>A</i><sup>2</sup><sub>0</sub></span> (I,2), <span class="coptic">ⲁⲓⲉⲩⲧⲉ</span> <span class="dialect"><i>A</i><sup>2</sup><sub>0</sub></span> (ManiK: 14,30 etc.), <span class="coptic">ⲁⲓⲏ(ⲏ)ⲓⲧⲉ</span> <span class="dialect"><i>P</i><sub>0</sub></span>, <span class="coptic">ⲱⲉⲓ<sup>†</sup></span> <span class="dialect"><i>S</i><sub>vl</sub></span> (PM 567:I Rois 22,14), <span class="coptic">ⲁⲓ<sup>†</sup></span> <span class="dialect"><i>A</i><sup>2</sup><sub>0</sub></span> (ManiP K:42,3 etc.).</td><td></td>
+						</tr>
+						<tr>
+							<td>2a</td><td></td><td><i>idem</i>, <span class="coptic">ⲣⲉϥⲁⲓⲁⲉⲓ</span> <span class="dialect"><i>S</i><sub>vl</sub></span> (Jern.P.177); <span class="coptic">ⲣ ⲁⲓϩⲏⲧ</span> «s'enhardir» <span class="dialect"><i>A</i><sup>2</sup><sub>0</sub></span> (ManiK:50,18); <span class="coptic">ⲙⲛⲧⲁⲓϩⲉ</span> «vie dissipée» <span class="dialect"><i>A</i><sup>2</sup><sub>0</sub></span> (Mani K:213,5,10).</td><td></td>
+						</tr>
+						<tr>
+							<td></td><td><span class="coptic">ⲁⲓⲃⲉ</span></td><td>«défaut» <span class="dialect"><i>A</i><sup>2</sup><sub>0</sub></span> (ManiK:205,3<sub>2</sub> P); <span class="coptic">ⲁⲧⲁⲓⲃⲉ</span> <span class="dialect"><i>A</i><sup>2</sup><sub>0</sub></span> (ManiP); cf. <span class="coptic">ⲁϥ</span> 23 b.</td><td></td>
+						</tr>
+					</table>
 				</div>
 			</main>
 			<hr>
