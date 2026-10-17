@@ -1,10 +1,12 @@
-// Renders the Compléments entries from the Kasser sheet into #dictionary.
+// Renders the entries of one of Kasser's books from the Kasser sheet into
+// #dictionary. Each book has a tab of its own in the sheet, and the table names
+// its tab in a `data-gid` attribute.
 // The transcription syntax is defined in the ⲣⲉⲙⲛ̀Ⲭⲏⲙⲓ pipeline, at
 // dictionary/marcion_sourceforge_net/kasser.py. This is a port of its
 // substitutions, minus the validation, which the pipeline already enforces.
 
-// The Compléments tab of the sheet. (The Morphologiques have their own tab.)
-const url = "https://docs.google.com/spreadsheets/d/1sGTjLGFtehosDszPNPur_isYfIDo-jRoAfKax9mJJbU/export?format=tsv&gid=0";
+const dictionary = document.querySelector("#dictionary");
+const url = `https://docs.google.com/spreadsheets/d/1sGTjLGFtehosDszPNPur_isYfIDo-jRoAfKax9mJJbU/export?format=tsv&gid=${dictionary.dataset.gid}`;
 
 // A siglum: an optional asterisk, a base, then any sequence of superscripts
 // (`^`) and subscripts (`~`). A² is a base of its own.
@@ -106,7 +108,7 @@ fetch(url)
 	.then(tsv => {
 		const entries = parse(tsv);
 		if (entries.length) {
-			document.querySelector("#dictionary").innerHTML = rows(entries);
+			dictionary.innerHTML = rows(entries);
 		}
 	})
 	// The hand-written rows stay in place as a fallback.
