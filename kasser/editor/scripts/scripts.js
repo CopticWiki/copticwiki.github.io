@@ -15,3 +15,6 @@ function preview() {
 
 preview();
 editorText.addEventListener("input", preview);
+
+// Ask for confirmation before the page is closed.
+window.addEventListener("beforeunload", event => event.preventDefault());
