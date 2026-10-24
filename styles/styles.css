@@ -200,8 +200,6 @@ ul li.en {
 
 .linkpath {
 	background: #212121ff;
-	position: sticky;
-	top: 2.5em;
 	padding-block: 0.5em;
 	line-height: 1.5;
 }
