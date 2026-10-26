@@ -48,8 +48,10 @@ const substitutions = [
 	[/&/g, "&amp;"],
 	[/</g, "&lt;"],
 	[/>/g, "&gt;"],
-	// Italics take a single underscore or a double one, rendered alike.
-	[/(__?)(.+?)\1/g, "<i>$2</i>"],
+	// A double underscore marks a gloss, as in Crum. It must precede italics,
+	// which take a single underscore.
+	[/__(.+?)__/g, "<em>$1</em>"],
+	[/_(.+?)_/g, "<i>$1</i>"],
 	// A siglum must be matched before other bracketed text.
 	[/(?<!\[)\[\[(\*?\p{Script=Latin}[^\[\]]*)\]\](?!\])/gu, siglumReplace],
 	[/(?<!\[)\[\[(.*?)\]\](?!\])/gu, languageReplace],
